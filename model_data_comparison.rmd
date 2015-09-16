@@ -1,0 +1,165 @@
+---
+title: "Create database of amphibian dermal exposure data"
+---
+
+```{r eval=FALSE, echo=FALSE}
+#ctrl-shift k to knit r markdown
+#https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+```
+
+Introduction
+========================================================
+Comparison of proposed amphibian dermal exposure model (Draft 8/19/15) with collected dermal exposure data. Data set is from Van Meter et al. 2014 and Van Meter et al. 2015.
+
+Computational environment
+========================================================
+Location of this repository: 
+https://github.com/puruckertom/amphib_data
+```{r eval=FALSE, echo=FALSE}
+#library(installr) #windows only currently
+#updateR()
+```
+Version and installed libraries.
+```{r eval=TRUE, echo=TRUE}
+R.Version()$version.string
+Sys.info()[4]
+```
+
+```{r eval=TRUE, echo=FALSE}
+#tom computer
+if(Sys.info()[4]=="DC2626UTPURUCKE"){
+  amphibdir <- "C:\\git\\VanMeteretal2015_AECT\\data\\"
+}
+
+# marcia mac
+if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
+  amphibdir <- path.expand("~/git/VanMeteretal2015_AECT/data/")
+}
+
+# marcia mac
+if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
+  frogsoildir <- path.expand("~/git/VanMeteretal2016_ple_v_ols/")
+}
+
+#tom computer
+if(Sys.info()[4]=="DZ2626UTPURUCKE"){
+  frogsoildir <- "C:\\git\\VanMeteretal2016_ple_v_ols\\"
+}
+  
+# marcia mac
+if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
+  amphibdatadir <- path.expand("~/git/amphib_data/")
+}
+  
+#tom computer
+if(Sys.info()[4]=="DZ2626UTPURUCKE"){
+  amphibdatadir <- "C:\\git\\amphib_data\\"
+}
+```
+
+Import data from consolidated database
+```{r eval=TRUE, echo=FALSE}
+##################
+#the data set
+##################
+# import data 
+combined_data <- read.table(paste(amphibdatadir,"combined_data.csv",sep=""), header = TRUE, sep = ",") 
+```
+
+Models from dust_check.R
+``` {r eval=TRUE, echo=FALSE}
+#### X1 foliar spray exposure functions for bird and mammal ####
+X1_new_bird<-function(a,bw2){
+  x1_bird<- ((a*(10*bw2^0.667) * 6.01*6*0.079*0.2) + (a*(10*bw2^0.667) * 0.1)) / (bw2 /1000)                 
+  return(x1_bird)
+}
+
+X1_new_mamm<-function(a,bw2){
+  x1_mamm<- ((a*(12.3*bw2^0.65) * 6.01*6*0.079*0.2) + (a*(12.3*bw2^0.65) * 0.1)) / (bw2 /1000)                 
+  return(x1_mamm)
+}
+
+#### X3 bare ground exposure functions for bird and mammal ####
+# constants
+# assumed depth of soil = 1 (cm)
+# assumed soil density = 1300 (mg soil/cm3)
+# soil to skin adherence factor (upper bound human estimate of gardner's hands) = 0.958 (mg/cm2)
+
+x3_bird<-function(a,bw2){
+  x3<-(((a*1/(1*1300))*0.958*(10*bw2^0.667))+(a*(10*bw2^0.667)*0.1)) / (bw2 /1000)
+  return (x3)
+}
+x3_mamm<-function(a,bw2){
+  x3<-(((a*1/(1*1300))*0.958*(12.3*bw2^0.65))+(a*(12.3*bw2^0.65)*0.1)) / (bw2 /1000)
+  return (x3)
+}
+```
+
+Proposed dermal exposure model parameters for amphibians (Document 8/19/15):
+
+Dermal dose through direct spray-
+**** Equation 12. ****
+Dermal spray dose = [(Arate * 11.2) (SAtotal * 0.5) * DAF / BW ]* Fred
+
+Arate = application rate (lb a.i./A)
+11.2 = conversion from lb a.i./A to ug a.i./g-bw
+SAtotal = Total surface area of organism
+0.5 = Assumed that either the top half or the bottom half of the animal will be in contact with the ground or direct spray
+DAF = dermal adsorption fraction used to account for pesticide specific data that define a fraction of the pesticide mass present on the animal that is actually absorbed
+BW = body weight
+Fred = Dermal route equivalency factor applied to dermal exposure to derive an estimate of oral dose. Assumed to be 1 for amphibians.
+SAtotal = Surface area total = a3 * BW^b3
+a3 = 1.131
+b3= 0.579
+
+Same surface area formula used by Van Meter et al. 
+
+Dermal exposure function for dermal spray dose
+``` {r eval=TRUE, echo=FALSE}
+dermal_spray_dose<-function(Arate, SAtotal, DAF, BW, Fred){
+  dsd1<-(((Arate * 11.2) * (SAtotal * 0.5) * DAF / BW )* Fred)
+  return (dsd1)
+}
+#test function returns a value
+dermal_spray_dose(7,8,9,10,11)
+```
+
+Dermal dose through foliage contact-
+**** Equation 15. **** 
+Dermal contact dose = ( Cplant(t) * Fdfr * Rfoliar contact ^ (8*SAtotal*0.079*0.1)     / BW ) * Fred
+
+Cplant = Concentration of the pesticide in crop foliage at time t. Residue value used for broadleaf foliage concentration in the assessment of dietary exposure
+Fdfr = Dislodgeable foliar residue adjustment factor
+Rfoliar contact = Rate of foliar contact
+8 = number of hours per day the animal is active
+SAtotal = surface area total of the organism
+0.079 = represents the fraction of the animal in contact with the foliage
+0.1 = unit conversion to ug a.i./g-bw
+BW = body weight of organism
+Fred = Dermal route equivalency factor (1 for amphibians)
+
+Dermal exposure function for dermal dose through foliage contact
+``` {r eval=TRUE, echo=FALSE}
+dermal_contact_dose<-function(Cplant,Fdfr,Rfoliarcontact,SAtotal,BW,Fred){
+  dcd1<-( Cplant * Fdfr * Rfoliarcontact ^ (8*SAtotal*0.079*0.1)     / BW ) * Fred
+  return (dcd1)
+}
+#test function returns a value
+dermal_contact_dose (1,2,3,4,5,6)
+```
+
+Use input values from Van Meter et al. database to get estimated dermal spray dose and compare with measured body burdes
+``` {r eval=TRUE, echo=FALSE}
+combined_data$sa <- 1.131 * (combined_data$bodyweight ^ 0.579)
+DAF = 1
+Fred = 1
+dermal_spray_dose_out<-dermal_spray_dose(combined_data$app_rate_g_cm2, combined_data$sa, DAF, combined_data$bodyweight, Fred)
+
+```
+
+Use input values from Van Meter et al. database to get estimated dermal dose through foliar contact and compare with measured body burdes
+``` {r eval=TRUE, echo=FALSE}
+dermal_spray_dose_out<-dermal_spray_dose()
+```
+
+
