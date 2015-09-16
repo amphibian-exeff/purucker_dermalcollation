@@ -1,0 +1,153 @@
+---
+title: "Create database of amphibian dermal exposure data"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+---
+
+```{r eval=FALSE, echo=FALSE}
+#ctrl-shift k to knit r markdown
+#https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+```
+
+Introduction
+========================================================
+Data sets from Van Meter et al. 2014 and Van Meter et al. 2015.
+
+Computational environment
+========================================================
+Location of this repository: 
+https://github.com/puruckertom/amphib_data
+```{r eval=FALSE, echo=FALSE}
+#library(installr) #windows only currently
+#updateR()
+```
+Version and installed libraries.
+```{r eval=TRUE, echo=TRUE}
+R.Version()$version.string
+Sys.info()[4]
+```
+
+```{r eval=TRUE, echo=FALSE}
+#tom computer
+if(Sys.info()[4]=="DC2626UTPURUCKE"){
+  amphibdir <- "C:\\git\\VanMeteretal2015_AECT\\data\\"
+}
+
+# marcia mac
+if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
+  amphibdir <- path.expand("~/git/VanMeteretal2015_AECT/data/")
+}
+
+# marcia mac
+if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
+  frogsoildir <- path.expand("~/git/VanMeteretal2016_ple_v_ols/")
+}
+
+#tom computer
+if(Sys.info()[4]=="DZ2626UTPURUCKE"){
+  frogsoildir <- "C:\\git\\VanMeteretal2016_ple_v_ols\\"
+}
+  
+# marcia mac
+if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
+  amphibdatadir <- path.expand("~/git/amphib_data/")
+}
+  
+#tom computer
+if(Sys.info()[4]=="DZ2626UTPURUCKE"){
+  amphibdatadir <- "C:\\git\\amphib_data\\"
+}
+```
+
+Experimental data
+========================================================
+Original file with analytical data: 
+https://github.com/puruckertom/VanMeteretal2016_ple_v_ols/blob/master/RDATA.csv
+https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data/good_data.csv
+
+```{r eval=TRUE, echo=FALSE}
+##################
+#the data sets
+##################
+# import data from Soil organic matter toad paper
+  RDATA <- read.table(paste(frogsoildir,"RDATA.csv",sep=""), header = TRUE, sep = ",")
+# import data from VanMeter et al. 2014 Archives of Environmental Contamination 
+# and VanMeter et al. 2014 Environmental Pollution   
+good_data <- read.table(paste(amphibdir,"good_data.csv",sep=""), header = TRUE, sep = ",")  
+```
+
+Reformat good_data.csv for merge with RDATA.csv
+```{r eval=TRUE, echo=FALSE}
+#### reformat good_data.csv for merge with RDATA.csv #### 
+good_data2<-subset(good_data, select=c(-Sample, -Instrument, -good, -logKow, -BCF, -initialweight, 
+            -Solat20C_mgL, -Solat20C_gL, -molmass_gmol, -Density_gcm3,-AppFactor, -SA_cm2, -VapPrs_mPa,
+            -Koc_gmL, -HalfLife_day, -HabFac)) 
+names(good_data2)
+dim(good_data2)
+SoilType <- c(rep("PLE",nrow(good_data2)))
+unique(good_data2$Chemical)
+#[1] Atrazine             Deisopropyl Atrazine Desethyl Atrazine   
+#[4] Fipronil             Fipronil-Sulfone     Imidacloprid        
+#[7] Pendimethalin        Total Atrazine       Total Fipronil      
+#[10] Total Triadimefon    Triadimefon          Triadimenol      
+#assign values to new Parent column
+good_data2$Parent[good_data2$Chemical=="Atrazine"] <- 1
+good_data2$Parent[good_data2$Chemical=="Deisopropyl Atrazine"] <- 0
+good_data2$Parent[good_data2$Chemical=="Desethyl Atrazine"] <- 0
+good_data2$Parent[good_data2$Chemical=="Fipronil"] <- 1
+good_data2$Parent[good_data2$Chemical=="Fipronil-Sulfone"] <- 0
+good_data2$Parent[good_data2$Chemical=="Imidacloprid"] <- 1
+good_data2$Parent[good_data2$Chemical=="Pendimethalin"] <- 1
+good_data2$Parent[good_data2$Chemical=="Total Atrazine"] <- 0
+good_data2$Parent[good_data2$Chemical=="Total Fipronil"] <- 0
+good_data2$Parent[good_data2$Chemical=="Total Triadimefon"] <- 0
+good_data2$Parent[good_data2$Chemical=="Triadimefon"] <- 1
+good_data2$Parent[good_data2$Chemical=="Triadimenol"] <- 1
+#create column for Formulation
+Formulation <- (rep(0,nrow(good_data2)))
+Exp_duration<- (rep(8,nrow(good_data2)))
+good_data3<-cbind(good_data2, Formulation, SoilType, Exp_duration)
+
+```
+
+Reformat RDATA.csv for merge with good_data.csv
+```{r eval=TRUE, echo=FALSE}
+rdata2<-subset(RDATA, select=c(-Day,-Row, -Column, -Total))
+Species <- c(rep("American toad",nrow(rdata2)))
+Application <- c(rep("Indirect",nrow(rdata2)))
+Exp_duration<- (rep(8,nrow(rdata2)))
+rdata3<-cbind(rdata2, Species, Application, Exp_duration)
+#assign values to application rate
+unique(rdata3$Pesticide)
+rdata3$app_rate_g_cm2[rdata3$Pesticide=="ATZ"] <- 22.9e-6
+rdata3$app_rate_g_cm2[rdata3$Pesticide=="Imid"] <- 5.7e-6
+rdata3$app_rate_g_cm2[rdata3$Pesticide=="Fip"] <- 1.1e-6
+rdata3$app_rate_g_cm2[rdata3$Pesticide=="TDN"] <- 2.7e-6
+rdata3$app_rate_g_cm2[rdata3$Pesticide=="Pendi"] <- 69.8e-6
+```
+
+Combine two Van Meter et al. datasets
+```{r eval=TRUE, echo=FALSE}
+# standardize column names
+names(rdata3)
+#[1] "Pesticide"      "SoilType"       "BodyBurden"     "Soil"          
+#[5] "Weight"         "Formulation"    "Parent"         "Species"       
+#[9] "Application"    "Exp_duration"   "app_rate_g_cm2"
+colnames(rdata3)[1]<-"Chemical"
+colnames(rdata3)[3]<-"TissueConc"
+colnames(rdata3)[4]<-"SoilConc"
+colnames(rdata3)[5]<-"bodyweight"
+# reorder columns alphabetically to help with merge
+rdata4<-rdata3[,order(names(rdata3))]
+dim(rdata4)
+good_data4<-good_data3[,order(names(good_data3))]
+dim(good_data4)
+
+# combine two dataframes
+all_data1<-rbind(rdata4, good_data4)
+View(all_data1)
+write.csv(all_data1, file=paste(amphibdatadir,"combined_data.csv", sep=""))
+```
