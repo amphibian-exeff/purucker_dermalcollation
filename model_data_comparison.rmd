@@ -66,35 +66,6 @@ Import data from consolidated database
 combined_data <- read.table(paste(amphibdatadir,"combined_data.csv",sep=""), header = TRUE, sep = ",") 
 ```
 
-Models from dust_check.R
-``` {r eval=TRUE, echo=FALSE}
-#### X1 foliar spray exposure functions for bird and mammal ####
-X1_new_bird<-function(a,bw2){
-  x1_bird<- ((a*(10*bw2^0.667) * 6.01*6*0.079*0.2) + (a*(10*bw2^0.667) * 0.1)) / (bw2 /1000)                 
-  return(x1_bird)
-}
-
-X1_new_mamm<-function(a,bw2){
-  x1_mamm<- ((a*(12.3*bw2^0.65) * 6.01*6*0.079*0.2) + (a*(12.3*bw2^0.65) * 0.1)) / (bw2 /1000)                 
-  return(x1_mamm)
-}
-
-#### X3 bare ground exposure functions for bird and mammal ####
-# constants
-# assumed depth of soil = 1 (cm)
-# assumed soil density = 1300 (mg soil/cm3)
-# soil to skin adherence factor (upper bound human estimate of gardner's hands) = 0.958 (mg/cm2)
-
-x3_bird<-function(a,bw2){
-  x3<-(((a*1/(1*1300))*0.958*(10*bw2^0.667))+(a*(10*bw2^0.667)*0.1)) / (bw2 /1000)
-  return (x3)
-}
-x3_mamm<-function(a,bw2){
-  x3<-(((a*1/(1*1300))*0.958*(12.3*bw2^0.65))+(a*(12.3*bw2^0.65)*0.1)) / (bw2 /1000)
-  return (x3)
-}
-```
-
 Proposed dermal exposure model parameters for amphibians (Document 8/19/15):
 
 Dermal dose through direct spray-
@@ -116,19 +87,27 @@ Same surface area formula used by Van Meter et al.
 
 Dermal exposure function for dermal spray dose
 ``` {r eval=TRUE, echo=FALSE}
+#convert from g/cm2 to lbs/Acre for input into dermal spray dose function
+convert_app_rate<-function(app_rate){
+  new_app_rate<-(app_rate * 89217.9122)
+  return(new_app_rate)
+}
+#function to calculate dermal direct spray dose
 dermal_spray_dose<-function(Arate, SAtotal, DAF, BW, Fred){
   dsd1<-(((Arate * 11.2) * (SAtotal * 0.5) * DAF / BW )* Fred)
   return (dsd1)
 }
 #test function returns a value
+convert_app_rate(8)
 dermal_spray_dose(7,8,9,10,11)
 ```
 
 Dermal dose through foliage contact-
 **** Equation 15. **** 
-Dermal contact dose = ( Cplant(t) * Fdfr * Rfoliar contact ^ (8*SAtotal*0.079*0.1)     / BW ) * Fred
+Dermal contact foliar dose = ( Cplant(t) * Fdfr * Rfoliar contact ^ (8*SAtotal*0.079*0.1)     / BW ) * Fred
 
 Cplant = Concentration of the pesticide in crop foliage at time t. Residue value used for broadleaf foliage concentration in the assessment of dietary exposure
+For broadleaf plants Cplant = 135 * application rate (lbs a.i./hectare)
 Fdfr = Dislodgeable foliar residue adjustment factor
 Rfoliar contact = Rate of foliar contact
 8 = number of hours per day the animal is active
@@ -138,28 +117,111 @@ SAtotal = surface area total of the organism
 BW = body weight of organism
 Fred = Dermal route equivalency factor (1 for amphibians)
 
-Dermal exposure function for dermal dose through foliage contact
+Dermal exposure function for indirect dermal dose through foliage contact
 ``` {r eval=TRUE, echo=FALSE}
+# 220462 = unit conversion from g/cm2 to lbs/hectare
+# 135 = used in T-Rex to calculate residue on broadleaf plant
+# function to calculate Cplant (broadleaf foliar residue from T-Rex)
+Cplant_calc<-function(app_rate_g_cm2){
+  Cplant_out<-(app_rate_g_cm2 * 220462 * 135)
+  return(Cplant_out)
+  }
+# function to calculate dermal exposure through indirect foliar contact
 dermal_contact_dose<-function(Cplant,Fdfr,Rfoliarcontact,SAtotal,BW,Fred){
   dcd1<-( Cplant * Fdfr * Rfoliarcontact ^ (8*SAtotal*0.079*0.1)     / BW ) * Fred
   return (dcd1)
 }
 #test function returns a value
-dermal_contact_dose (1,2,3,4,5,6)
+out1<-Cplant_calc(4)
+dermal_contact_dose (out1,2,3,4,5,6)
 ```
 
-Use input values from Van Meter et al. database to get estimated dermal spray dose and compare with measured body burdes
+Use input values from Van Meter et al. database to get estimated dermal spray dose through direct spray and compare with measured body burdens
 ``` {r eval=TRUE, echo=FALSE}
+# surface area calculation
 combined_data$sa <- 1.131 * (combined_data$bodyweight ^ 0.579)
-DAF = 1
-Fred = 1
-dermal_spray_dose_out<-dermal_spray_dose(combined_data$app_rate_g_cm2, combined_data$sa, DAF, combined_data$bodyweight, Fred)
+# direct dermal spray dose estimated
+DAF = 1 #constant
+Fred = 1 #constant
+combined_data$app_rate_lbs_A<-convert_app_rate(combined_data$app_rate_g_cm)
+combined_data$dermal_spray_dose_out<-dermal_spray_dose(combined_data$app_rate_lbs_A, combined_data$sa, DAF, combined_data$bodyweight, Fred)
+combined_data$ratio_out<-combined_data$dermal_spray_dose_out / combined_data$TissueConc
+```
+Use input values from Van Meter et al. database to get estimated dermal spray dose through indirect foliage and compare with measured body burdens
+``` {r eval=TRUE, echo=FALSE}
+# surface area calculation
+combined_data$sa <- 1.131 * (combined_data$bodyweight ^ 0.579)
+# DAF = 1 #constant
+# Fred = 1 #constant
+# Fdfr = 0.62
+# Rfoliarcontact = 6.01
 
+combined_data$Cplant<-Cplant_calc(combined_data$app_rate_g_cm2)
+combined_data$dermal_foliage_dose_out<-dermal_contact_dose(combined_data$Cplant, 0.62, 6.01, combined_data$sa, combined_data$bodyweight, 1)
+combined_data$ratio_out_foliage<-combined_data$dermal_foliage_dose_out / combined_data$TissueConc
 ```
 
-Use input values from Van Meter et al. database to get estimated dermal dose through foliar contact and compare with measured body burdes
-``` {r eval=TRUE, echo=FALSE}
-dermal_spray_dose_out<-dermal_spray_dose()
+Plots comparing modeled with measured endpoints for direct vs. direct and indirect vs. indirect
+```{r fig.width=7, fig.height=6}
+#plots for direct spray dose equation
+max1<-max(combined_data$TissueConc, na.rm=TRUE)
+min<-0
+plot(combined_data$dermal_spray_dose_out~combined_data$TissueConc, xlim=c(min,max1), ylim=c(min,max1), xlab="Measured body burden", ylab="DUST direct spray")
+abline(0, 1, col="red")
+title(main=c("Direct spray with all body burden data"))
+#histogram of ratios
+hist(combined_data$ratio_out)
+#plots for indirect foliage dose 
+max1<-max(combined_data$dermal_foliage_dose_out, na.rm=TRUE)
+min<-0
+plot(combined_data$dermal_foliage_dose_out~combined_data$TissueConc, xlim=c(min,max1), ylim=c(min,max1), xlab="Measured body burden", ylab="DUST indirect foliage")
+abline(0, 1, col="red")
+title(main=c("Indirect foliage spray with all body burden data"))
+
+hist(combined_data$ratio_out_foliage)
+```
+
+Plot by chemical modeled with measured endpoints for all comparisons
+```{r fig.width=7, fig.height=6}
+unique.chemicals<-unique(combined_data$Chemical)
+# create consistent chemical names
+combined_data$Chemical[combined_data$Chemical=="ATZ"]<-"Atrazine"
+combined_data$Chemical[combined_data$Chemical=="Imid"]<-"Imidacloprid"
+combined_data$Chemical[combined_data$Chemical=="Fip"]<-"Fipronil"
+combined_data$Chemical[combined_data$Chemical=="Pendi"]<-"Pendimethalin"
+combined_data$Chemical[combined_data$Chemical=="TDN"]<-"Triadimefon"
+chemicals2<-c("Atrazine","Imidacloprid","Fipronil","Pendimethalin","Triadimefon")
+
+
+par(mfrow=c(1,1))
+# direct dermal DUST vs. measured direct
+max1<-max(combined_data$TissueConc)
+min<-0 
+plot(combined_data$dermal_spray_dose_out[which(combined_data$Application=="Direct")]~combined_data$TissueConc[which(combined_data$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1),pch=16, col=combined_data$Species[which(combined_data$Application=="Direct")])
+abline(0, 1, col="red")
+title(main=c("Direct dermal DUST vs. measured direct"))
+
+# direct dermal DUST vs. measured indirect
+max1<-max(combined_data$TissueConc)
+min<-0 
+plot(combined_data$dermal_spray_dose_out[which(combined_data$Application=="Indirect")]~combined_data$TissueConc[which(combined_data$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data$Species[which(combined_data$Application=="Indirect")])
+abline(0, 1, col="red")
+title(main=c("Direct dermal DUST vs. measured indirect"))
+
+# indirect dermal DUST vs. measured indirect
+max1<-max(combined_data$TissueConc)
+min<-0 
+plot(combined_data$dermal_foliage_dose_out[which(combined_data$Application=="Indirect")]~combined_data$TissueConc[which(combined_data$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data$Species[which(combined_data$Application=="Indirect")])
+abline(0, 1, col="red")
+title(main=c("Indirect dermal DUST vs. measured indirect"))
+
+# indirect dermal DUST vs. measured direct
+max1<-max(combined_data$TissueConc[which(combined_data$Application=="Direct")])
+min<-0 
+plot(combined_data$dermal_foliage_dose_out[which(combined_data$Application=="Direct")]~combined_data$TissueConc[which(combined_data$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data$Species[which(combined_data$Application=="Direct")])
+abline(0, 1, col="red")
+title(main=c("Indirect dermal DUST vs. measured direct"))
+
 ```
 
 
