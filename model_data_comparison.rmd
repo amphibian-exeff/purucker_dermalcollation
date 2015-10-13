@@ -1,5 +1,5 @@
 ---
-title: "Create database of amphibian dermal exposure data"
+title: "Compare data of amphibian dermal exposure with DUST model values"
 ---
 
 ```{r eval=FALSE, echo=FALSE}
@@ -7,11 +7,11 @@ title: "Create database of amphibian dermal exposure data"
 #https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 ```
 
-Introduction
+## Introduction
 ========================================================
-Comparison of proposed amphibian dermal exposure model (Draft 8/19/15) with collected dermal exposure data. Data set is from Van Meter et al. 2014 and Van Meter et al. 2015.
+Comparison of proposed amphibian dermal exposure model (Draft 8/19/15) with collected dermal exposure data. Data is from Van Meter et al. 2014 and Van Meter et al. 2015.
 
-Computational environment
+## Computational environment
 ========================================================
 Location of this repository: 
 https://github.com/puruckertom/amphib_data
@@ -57,8 +57,9 @@ if(Sys.info()[4]=="DZ2626UTPURUCKE"){
 }
 ```
 
-Import data from consolidated database
+
 ```{r eval=TRUE, echo=FALSE}
+# Import data from consolidated database
 ##################
 #the data set
 ##################
@@ -66,27 +67,27 @@ Import data from consolidated database
 combined_data <- read.table(paste(amphibdatadir,"combined_data.csv",sep=""), header = TRUE, sep = ",") 
 ```
 
-Proposed dermal exposure model parameters for amphibians (Document 8/19/15):
+# Proposed dermal exposure model parameters for amphibians (Document 8/19/15):
 
-Dermal dose through direct spray-
-**** Equation 12. ****
+## Dermal dose through direct spray-
+**Equation 12.**
 Dermal spray dose = [(Arate * 11.2) (SAtotal * 0.5) * DAF / BW ]* Fred
 
-Arate = application rate (lb a.i./A)
-11.2 = conversion from lb a.i./A to ug a.i./g-bw
-SAtotal = Total surface area of organism
-0.5 = Assumed that either the top half or the bottom half of the animal will be in contact with the ground or direct spray
-DAF = dermal adsorption fraction used to account for pesticide specific data that define a fraction of the pesticide mass present on the animal that is actually absorbed
-BW = body weight
-Fred = Dermal route equivalency factor applied to dermal exposure to derive an estimate of oral dose. Assumed to be 1 for amphibians.
-SAtotal = Surface area total = a3 * BW^b3
-a3 = 1.131
-b3= 0.579
+* Arate = application rate (lb a.i./A)
+* 11.2 = conversion from lb a.i./A to ug a.i./g-bw
+* SAtotal = Total surface area of organism
+* 0.5 = Assumed that either the top half or the bottom half of the animal will be in contact with the ground or direct spray
+* DAF = dermal adsorption fraction used to account for pesticide specific data that define a fraction of the pesticide mass present on the animal that is actually absorbed
+* BW = body weight
+* Fred = Dermal route equivalency factor applied to dermal exposure to derive an estimate of oral dose. Assumed to be 1 for amphibians.
+* SAtotal = Surface area total = a3 * BW^b3
+* a3 = 1.131
+* b3= 0.579
 
 Same surface area formula used by Van Meter et al. 
 
-Dermal exposure function for dermal spray dose
-``` {r eval=TRUE, echo=FALSE}
+## Dermal exposure function for dermal spray dose
+``` {r eval=TRUE, echo=TRUE}
 #convert from g/cm2 to lbs/Acre for input into dermal spray dose function
 convert_app_rate<-function(app_rate){
   new_app_rate<-(app_rate * 89217.9122)
@@ -102,23 +103,23 @@ convert_app_rate(8)
 dermal_spray_dose(7,8,9,10,11)
 ```
 
-Dermal dose through foliage contact-
-**** Equation 15. **** 
+## Dermal dose through foliage contact-
+**Equation 15.**
 Dermal contact foliar dose = ( Cplant(t) * Fdfr * Rfoliar contact ^ (8*SAtotal*0.079*0.1)     / BW ) * Fred
 
-Cplant = Concentration of the pesticide in crop foliage at time t. Residue value used for broadleaf foliage concentration in the assessment of dietary exposure
-For broadleaf plants Cplant = 135 * application rate (lbs a.i./hectare)
-Fdfr = Dislodgeable foliar residue adjustment factor
-Rfoliar contact = Rate of foliar contact
-8 = number of hours per day the animal is active
-SAtotal = surface area total of the organism
-0.079 = represents the fraction of the animal in contact with the foliage
-0.1 = unit conversion to ug a.i./g-bw
-BW = body weight of organism
-Fred = Dermal route equivalency factor (1 for amphibians)
+* Cplant = Concentration of the pesticide in crop foliage at time t. Residue value used for broadleaf foliage concentration in the assessment of dietary exposure
+* For broadleaf plants Cplant = 135 * application rate (lbs a.i./hectare)
+* Fdfr = Dislodgeable foliar residue adjustment factor
+* Rfoliar contact = Rate of foliar contact
+* 8 = number of hours per day the animal is active
+* SAtotal = surface area total of the organism
+* 0.079 = represents the fraction of the animal in contact with the foliage
+* 0.1 = unit conversion to ug a.i./g-bw
+* BW = body weight of organism
+* Fred = Dermal route equivalency factor (1 for amphibians)
 
 Dermal exposure function for indirect dermal dose through foliage contact
-``` {r eval=TRUE, echo=FALSE}
+``` {r eval=TRUE, echo=TRUE}
 # 220462 = unit conversion from g/cm2 to lbs/hectare
 # 135 = used in T-Rex to calculate residue on broadleaf plant
 # function to calculate Cplant (broadleaf foliar residue from T-Rex)
@@ -177,51 +178,145 @@ min<-0
 plot(combined_data$dermal_foliage_dose_out~combined_data$TissueConc, xlim=c(min,max1), ylim=c(min,max1), xlab="Measured body burden", ylab="DUST indirect foliage")
 abline(0, 1, col="red")
 title(main=c("Indirect foliage spray with all body burden data"))
-
 hist(combined_data$ratio_out_foliage)
 ```
 
-Plot by chemical modeled with measured endpoints for all comparisons
-```{r fig.width=7, fig.height=6}
+
+```{r fig.width=7, fig.height=6, echo=FALSE}
+#Creating consistent chemical names in dataset
 unique.chemicals<-unique(combined_data$Chemical)
 # create consistent chemical names
 combined_data$Chemical[combined_data$Chemical=="ATZ"]<-"Atrazine"
-combined_data$Chemical[combined_data$Chemical=="Imid"]<-"Imidacloprid"
 combined_data$Chemical[combined_data$Chemical=="Fip"]<-"Fipronil"
-combined_data$Chemical[combined_data$Chemical=="Pendi"]<-"Pendimethalin"
 combined_data$Chemical[combined_data$Chemical=="TDN"]<-"Triadimefon"
-chemicals2<-c("Atrazine","Imidacloprid","Fipronil","Pendimethalin","Triadimefon")
+combined_data$Chemical[combined_data$Chemical=="Pendi"]<-"Pendimethalin" #no metabolites measured
+combined_data$Chemical[combined_data$Chemical=="Imid"]<-"Imidacloprid" #no metabolites measured
+combined_data$Chemical[combined_data$Chemical=="ATZTOT"]<-"Total Atrazine"
+combined_data$Chemical[combined_data$Chemical=="FipTOT"]<-"Total Fipronil"
+combined_data$Chemical[combined_data$Chemical=="TNDTOT "]<-"Total Triadimefon"
 
-
-par(mfrow=c(1,1))
-# direct dermal DUST vs. measured direct
-max1<-max(combined_data$TissueConc)
-min<-0 
-plot(combined_data$dermal_spray_dose_out[which(combined_data$Application=="Direct")]~combined_data$TissueConc[which(combined_data$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1),pch=16, col=combined_data$Species[which(combined_data$Application=="Direct")])
-abline(0, 1, col="red")
-title(main=c("Direct dermal DUST vs. measured direct"))
-
-# direct dermal DUST vs. measured indirect
-max1<-max(combined_data$TissueConc)
-min<-0 
-plot(combined_data$dermal_spray_dose_out[which(combined_data$Application=="Indirect")]~combined_data$TissueConc[which(combined_data$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data$Species[which(combined_data$Application=="Indirect")])
-abline(0, 1, col="red")
-title(main=c("Direct dermal DUST vs. measured indirect"))
-
-# indirect dermal DUST vs. measured indirect
-max1<-max(combined_data$TissueConc)
-min<-0 
-plot(combined_data$dermal_foliage_dose_out[which(combined_data$Application=="Indirect")]~combined_data$TissueConc[which(combined_data$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data$Species[which(combined_data$Application=="Indirect")])
-abline(0, 1, col="red")
-title(main=c("Indirect dermal DUST vs. measured indirect"))
-
-# indirect dermal DUST vs. measured direct
-max1<-max(combined_data$TissueConc[which(combined_data$Application=="Direct")])
-min<-0 
-plot(combined_data$dermal_foliage_dose_out[which(combined_data$Application=="Direct")]~combined_data$TissueConc[which(combined_data$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data$Species[which(combined_data$Application=="Direct")])
-abline(0, 1, col="red")
-title(main=c("Indirect dermal DUST vs. measured direct"))
-
+chemicals2<-c("Total Atrazine","Imidacloprid","Total Fipronil","Pendimethalin","Total Triadimefon")
+#create dataframe with total active ingredients for use in comparison
+combined_data2<-subset(combined_data, Chemical %in% c("Total Atrazine","Imidacloprid","Total Fipronil","Pendimethalin","Total Triadimefon"))
+View(combined_data2)
+combined_data2$Chemical<-factor(combined_data2$Chemical)
 ```
 
+Plots comparing modeled and measured data direct and indirect with total active ingredient data only colored by active ingredient. 
+
+
+```{r fig.width=7, fig.height=6}
+par(mfrow=c(1,1))
+# direct dermal DUST vs. measured direct
+max1<-max(combined_data2$TissueConc)
+min<-0 
+plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1),pch=16, col=combined_data2$Chemical[which(combined_data2$Application=="Direct")])
+abline(0, 1, col="red")
+title(main=c("Direct dermal DUST vs. measured direct"))
+legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
+```
+
+The figure compares DUST model direct spray modelled values with the measured tissue concentration from direct spray of five active ingredients. The model underestimates body burdens for atrazine, triadimefon and fipronil exposures.
+
+
+```{r fig.width=7, fig.height=6}
+# direct dermal DUST vs. measured indirect
+max1<-max(combined_data2$TissueConc)
+min<-0 
+plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Chemical[which(combined_data2$Application=="Indirect")])
+abline(0, 1, col="red")
+title(main=c("Direct dermal DUST vs. measured indirect"))
+legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
+```
+
+The figure compares DUST model direct spray modelled values with the measured tissue concentration from indirect spray for five active ingredients. While the tissue concentrations from indirect uptake is less than tissue concentrations from indirect uptake, the model underestimates body burdens for atrazine, fipronil, and triadimefon active ingredients. 
+
+```{r fig.width=7, fig.height=6}
+# indirect dermal DUST vs. measured indirect
+max1<-max(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")])
+min<-0 
+plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Chemical[which(combined_data2$Application=="Indirect")])
+abline(0, 1, col="red")
+title(main=c("Indirect dermal DUST vs. measured indirect"))
+legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
+```
+
+The figure compares DUST model indirect foliage uptake modelled values with the measured indirect uptake for three active ingredients. The modelled values are conservative for all the active ingredients.
+
+
+```{r fig.width=7, fig.height=6}
+# indirect dermal DUST vs. measured direct
+max1<-max(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")])
+min<-0 
+plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Chemical[which(combined_data2$Application=="Direct")])
+abline(0, 1, col="red")
+title(main=c("Indirect dermal DUST vs. measured direct"))
+legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
+```
+
+The figure compares DUST model indirect foliage uptake modelled values with the measured direct uptake for five active ingredients. The modelled values are conservative for all the active ingredients.
+
+
+Plot comparing direct vs. indirect DUST model output. The inputs are the combined data set of application rates and body weights from the amphibians exposed to derive body burdens. Indirect dermal uptake from foliage results are a magnitude of order higher than direct dermal spray uptake. 
+
+```{r fig.width=7, fig.height=6}
+#plot comparing direct vs. indirect DUST model output
+plot(combined_data2$dermal_foliage_dose_out~combined_data2$dermal_spray_dose_out, col=combined_data2$Chemical)
+legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
+abline(0,1, col="red")
+```
+
+Plots comparing modeled and measured data direct and indirect with total active ingredient data only colored by species.
+
+```{r fig.width=7, fig.height=6}
+par(mfrow=c(1,1))
+# direct dermal DUST vs. measured direct
+max1<-max(combined_data2$TissueConc)
+min<-0 
+plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1),pch=16, col=combined_data2$Species[which(combined_data2$Application=="Direct")])
+abline(0, 1, col="red")
+title(main=c("Direct dermal DUST vs. measured direct"))
+legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+```
+
+Modeled direct overspray of tissue concentration from DUST underestimates measured tissue concentration of some species body burdens when compared to measured direct exposure body burdens.
+
+```{r fig.width=7, fig.height=6}
+# direct dermal DUST vs. measured indirect
+max1<-max(combined_data2$TissueConc)
+min<-0 
+plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Species[which(combined_data2$Application=="Indirect")])
+abline(0, 1, col="red")
+title(main=c("Direct dermal DUST vs. measured indirect"))
+legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+```
+
+Modeled indirect overspray of tissue concentration from DUST underestimates measured tissue concentration of some species body burdens when compared to measured direct exposure body burdens.
+
+```{r fig.width=7, fig.height=6}
+# indirect dermal DUST vs. measured indirect
+max1<-max(combined_data2$TissueConc)
+min<-0 
+plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Species[which(combined_data2$Application=="Indirect")])
+abline(0, 1, col="red")
+title(main=c("Indirect dermal DUST vs. measured indirect"))
+legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+```
+
+Modeled indirect overspray of tissue concentration from DUST is conservative of measured tissue concentration of all species body burdens when compared to measured indirect exposure body burdens.
+
+```{r fig.width=7, fig.height=6}
+# indirect dermal DUST vs. measured direct
+max1<-max(combined_data2$TissueConc[which(combined_data2$Application=="Direct")])
+min<-0 
+plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Species[which(combined_data2$Application=="Direct")])
+abline(0, 1, col="red")
+title(main=c("Indirect dermal DUST vs. measured direct"))
+legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+#plot comparing direct vs. indirect DUST model output
+plot(combined_data2$dermal_foliage_dose_out~combined_data2$dermal_spray_dose_out, col=combined_data2$Species, pch=16)
+legend(x="topleft", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+```
+
+Dust modeled indirect foliage dermal exposure values are an order of magntide greater than dust direct spray dermal exposure values. 
 
