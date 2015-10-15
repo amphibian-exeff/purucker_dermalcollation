@@ -71,6 +71,7 @@ combined_data <- read.table(paste(amphibdatadir,"combined_data.csv",sep=""), hea
 
 ## Dermal dose through direct spray-
 **Equation 12.**
+#rmarkdown/latex
 Dermal spray dose = [(Arate * 11.2) (SAtotal * 0.5) * DAF / BW ]* Fred
 
 * Arate = application rate (lb a.i./A)
@@ -138,6 +139,8 @@ dermal_contact_dose (out1,2,3,4,5,6)
 ```
 
 Use input values from Van Meter et al. database to get estimated dermal spray dose through direct spray and compare with measured body burdens
+
+
 ``` {r eval=TRUE, echo=FALSE}
 # surface area calculation
 combined_data$sa <- 1.131 * (combined_data$bodyweight ^ 0.579)
@@ -162,7 +165,8 @@ combined_data$dermal_foliage_dose_out<-dermal_contact_dose(combined_data$Cplant,
 combined_data$ratio_out_foliage<-combined_data$dermal_foliage_dose_out / combined_data$TissueConc
 ```
 
-Plots comparing modeled with measured endpoints for direct vs. direct and indirect vs. indirect
+Plots comparing modeled with measured endpoints for direct vs. direct and indirect vs. indirect.
+
 ```{r fig.width=7, fig.height=6, echo=FALSE}
 #plots for direct spray dose equation
 max1<-max(combined_data$TissueConc, na.rm=TRUE)
@@ -172,10 +176,14 @@ abline(0, 1, col="red")
 title(main=c("Direct spray with all body burden data"))
 ```
 
+non-conservative for a number of testcases, break out by chemicals later
+
 ```{r fig.width=7, fig.height=6, echo=FALSE}
 #histogram of ratios
-hist(combined_data$ratio_out)
+hist(combined_data$ratio_out, breaks = 50)
 ```
+
+this should have more bins to be informative
 
 ```{r fig.width=7, fig.height=6, echo=FALSE}
 #plots for indirect foliage dose 
@@ -186,8 +194,10 @@ abline(0, 1, col="red")
 title(main=c("Indirect foliage spray with all body burden data"))
 ```
 
+this is extremely conservative, log scale?
+
 ```{r fig.width=7, fig.height=6, echo=FALSE}
-hist(combined_data$ratio_out_foliage)
+hist(combined_data$ratio_out_foliage, breaks = 50)
 ```
 
 
@@ -225,7 +235,10 @@ title(main=c("Figure 1. Direct dermal DUST vs. measured direct"))
 legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
 ```
 
-Figure 1 compares DUST model direct spray modelled values with the measured tissue concentration from direct spray of five active ingredients. The model underestimates body burdens for atrazine, triadimefon and fipronil exposures.
+Figure 1 compares DUST model direct spray modelled values with the measured tissue concentration from direct spray of five active ingredients. The model underestimates body burdens for atrazine, triadimefon and fipronil exposures. There is no chemical property information mapped to bioconcentration factors in the current model that might help to deal with this clustering.
+
+Kill the negatives on the x-axis.
+
 
 
 ```{r fig.width=7, fig.height=6}
@@ -280,6 +293,8 @@ Figure 5. The inputs are the combined data set of application rates and body wei
 
 Plots comparing modeled and measured data direct and indirect with total active ingredient data only colored by species.
 
+Is it weird that indirect uptake has such higher uptake than direct input?
+
 ```{r fig.width=7, fig.height=6}
 par(mfrow=c(1,1))
 # direct dermal DUST vs. measured direct
@@ -326,6 +341,7 @@ abline(0, 1, col="red")
 title(main=c("Fig. 9. Indirect dermal DUST vs. measured direct"))
 legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
 ```
+
 Fig 9. Based on data from green treefrog and barking treefrog species the indirect DUST output is conservative of direct overspray measured body burdens.
 
 
