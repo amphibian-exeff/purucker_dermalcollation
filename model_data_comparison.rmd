@@ -163,21 +163,30 @@ combined_data$ratio_out_foliage<-combined_data$dermal_foliage_dose_out / combine
 ```
 
 Plots comparing modeled with measured endpoints for direct vs. direct and indirect vs. indirect
-```{r fig.width=7, fig.height=6}
+```{r fig.width=7, fig.height=6, echo=FALSE}
 #plots for direct spray dose equation
 max1<-max(combined_data$TissueConc, na.rm=TRUE)
 min<-0
 plot(combined_data$dermal_spray_dose_out~combined_data$TissueConc, xlim=c(min,max1), ylim=c(min,max1), xlab="Measured body burden", ylab="DUST direct spray")
 abline(0, 1, col="red")
 title(main=c("Direct spray with all body burden data"))
+```
+
+```{r fig.width=7, fig.height=6, echo=FALSE}
 #histogram of ratios
 hist(combined_data$ratio_out)
+```
+
+```{r fig.width=7, fig.height=6, echo=FALSE}
 #plots for indirect foliage dose 
 max1<-max(combined_data$dermal_foliage_dose_out, na.rm=TRUE)
 min<-0
 plot(combined_data$dermal_foliage_dose_out~combined_data$TissueConc, xlim=c(min,max1), ylim=c(min,max1), xlab="Measured body burden", ylab="DUST indirect foliage")
 abline(0, 1, col="red")
 title(main=c("Indirect foliage spray with all body burden data"))
+```
+
+```{r fig.width=7, fig.height=6, echo=FALSE}
 hist(combined_data$ratio_out_foliage)
 ```
 
@@ -212,11 +221,11 @@ max1<-max(combined_data2$TissueConc)
 min<-0 
 plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1),pch=16, col=combined_data2$Chemical[which(combined_data2$Application=="Direct")])
 abline(0, 1, col="red")
-title(main=c("Direct dermal DUST vs. measured direct"))
+title(main=c("Figure 1. Direct dermal DUST vs. measured direct"))
 legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
 ```
 
-The figure compares DUST model direct spray modelled values with the measured tissue concentration from direct spray of five active ingredients. The model underestimates body burdens for atrazine, triadimefon and fipronil exposures.
+Figure 1 compares DUST model direct spray modelled values with the measured tissue concentration from direct spray of five active ingredients. The model underestimates body burdens for atrazine, triadimefon and fipronil exposures.
 
 
 ```{r fig.width=7, fig.height=6}
@@ -225,46 +234,49 @@ max1<-max(combined_data2$TissueConc)
 min<-0 
 plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Chemical[which(combined_data2$Application=="Indirect")])
 abline(0, 1, col="red")
-title(main=c("Direct dermal DUST vs. measured indirect"))
+title(main=c("Figure 2. Direct dermal DUST vs. measured indirect"))
 legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
 ```
 
-The figure compares DUST model direct spray modelled values with the measured tissue concentration from indirect spray for five active ingredients. While the tissue concentrations from indirect uptake is less than tissue concentrations from indirect uptake, the model underestimates body burdens for atrazine, fipronil, and triadimefon active ingredients. 
+Figure 2 compares DUST model direct spray modelled values with the measured tissue concentration from indirect spray for five active ingredients. While the tissue concentrations from indirect uptake is less than tissue concentrations from indirect uptake, the model underestimates body burdens for atrazine, fipronil, and triadimefon active ingredients. 
 
 ```{r fig.width=7, fig.height=6}
 # indirect dermal DUST vs. measured indirect
-max1<-max(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")])
+max1<-max(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")], na.rm=T)
 min<-0 
 plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Chemical[which(combined_data2$Application=="Indirect")])
 abline(0, 1, col="red")
-title(main=c("Indirect dermal DUST vs. measured indirect"))
+title(main=c("Figure 3. Indirect dermal DUST vs. measured indirect"))
 legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
 ```
 
-The figure compares DUST model indirect foliage uptake modelled values with the measured indirect uptake for three active ingredients. The modelled values are conservative for all the active ingredients.
+Figure 3 compares DUST model indirect foliage uptake modelled values with the measured indirect uptake for three active ingredients. The modelled values are conservative for all the active ingredients.
 
 
 ```{r fig.width=7, fig.height=6}
 # indirect dermal DUST vs. measured direct
-max1<-max(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")])
+max1<-max(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")], na.rm=T)
 min<-0 
 plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Chemical[which(combined_data2$Application=="Direct")])
 abline(0, 1, col="red")
-title(main=c("Indirect dermal DUST vs. measured direct"))
+title(main=c("Figure 4. Indirect dermal DUST vs. measured direct"))
 legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
 ```
 
-The figure compares DUST model indirect foliage uptake modelled values with the measured direct uptake for five active ingredients. The modelled values are conservative for all the active ingredients.
+Figure 4 compares DUST model indirect foliage uptake modelled values with the measured direct uptake for five active ingredients. The modelled values are conservative for all the active ingredients.
 
 
-Plot comparing direct vs. indirect DUST model output. The inputs are the combined data set of application rates and body weights from the amphibians exposed to derive body burdens. Indirect dermal uptake from foliage results are a magnitude of order higher than direct dermal spray uptake. 
+# Plots comparing direct DUST vs. indirect DUST model output. 
 
 ```{r fig.width=7, fig.height=6}
 #plot comparing direct vs. indirect DUST model output
-plot(combined_data2$dermal_foliage_dose_out~combined_data2$dermal_spray_dose_out, col=combined_data2$Chemical)
+plot(combined_data2$dermal_foliage_dose_out~combined_data2$dermal_spray_dose_out, col=combined_data2$Chemical, xlab=c("DUST direct"), ylab=c("DUST indirect"))
 legend(x="topright", legend = levels(combined_data2$Chemical), col=1:nlevels(combined_data2$Chemical), pch=16)
+title(main=c("Figure 5. Indirect DUST output vs. direct DUST output"))
 abline(0,1, col="red")
 ```
+
+Figure 5. The inputs are the combined data set of application rates and body weights from the amphibians exposed to derive body burdens. Indirect dermal uptake from foliage results are a magnitude of order higher than direct dermal spray uptake. 
 
 Plots comparing modeled and measured data direct and indirect with total active ingredient data only colored by species.
 
@@ -275,11 +287,11 @@ max1<-max(combined_data2$TissueConc)
 min<-0 
 plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1),pch=16, col=combined_data2$Species[which(combined_data2$Application=="Direct")])
 abline(0, 1, col="red")
-title(main=c("Direct dermal DUST vs. measured direct"))
+title(main=c("Fig. 6 Direct dermal DUST vs. measured direct"))
 legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
 ```
 
-Modeled direct overspray of tissue concentration from DUST underestimates measured tissue concentration of some species body burdens when compared to measured direct exposure body burdens.
+Fig. 6 Modeled direct overspray of tissue concentration from DUST underestimates measured tissue concentration of some species body burdens when compared to measured direct exposure body burdens.
 
 ```{r fig.width=7, fig.height=6}
 # direct dermal DUST vs. measured indirect
@@ -287,11 +299,11 @@ max1<-max(combined_data2$TissueConc)
 min<-0 
 plot(combined_data2$dermal_spray_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Direct"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Species[which(combined_data2$Application=="Indirect")])
 abline(0, 1, col="red")
-title(main=c("Direct dermal DUST vs. measured indirect"))
+title(main=c("Fig. 7. Direct dermal DUST vs. measured indirect"))
 legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
 ```
 
-Modeled indirect overspray of tissue concentration from DUST underestimates measured tissue concentration of some species body burdens when compared to measured direct exposure body burdens.
+Fig. 7. Modeled indirect overspray of tissue concentration from DUST underestimates measured tissue concentration of some species body burdens when compared to measured direct exposure body burdens.
 
 ```{r fig.width=7, fig.height=6}
 # indirect dermal DUST vs. measured indirect
@@ -299,11 +311,11 @@ max1<-max(combined_data2$TissueConc)
 min<-0 
 plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Indirect")]~combined_data2$TissueConc[which(combined_data2$Application=="Indirect")], xlab=c('Measured Tissue Concentration Indirect'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Species[which(combined_data2$Application=="Indirect")])
 abline(0, 1, col="red")
-title(main=c("Indirect dermal DUST vs. measured indirect"))
+title(main=c("Fig. 8. Indirect dermal DUST vs. measured indirect"))
 legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
 ```
 
-Modeled indirect overspray of tissue concentration from DUST is conservative of measured tissue concentration of all species body burdens when compared to measured indirect exposure body burdens.
+Fig. 8. Modeled indirect overspray of tissue concentration from DUST is conservative of measured tissue concentration of all species body burdens when compared to measured indirect exposure body burdens.
 
 ```{r fig.width=7, fig.height=6}
 # indirect dermal DUST vs. measured direct
@@ -311,11 +323,18 @@ max1<-max(combined_data2$TissueConc[which(combined_data2$Application=="Direct")]
 min<-0 
 plot(combined_data2$dermal_foliage_dose_out[which(combined_data2$Application=="Direct")]~combined_data2$TissueConc[which(combined_data2$Application=="Direct")], xlab=c('Measured Tissue Concentration Direct'), ylab=c("Modeled Tissue Concentration Indirect"),asp=1, pty='s', xlim=c(min,max1), ylim=c(min,max1), pch=16,col=combined_data2$Species[which(combined_data2$Application=="Direct")])
 abline(0, 1, col="red")
-title(main=c("Indirect dermal DUST vs. measured direct"))
+title(main=c("Fig. 9. Indirect dermal DUST vs. measured direct"))
 legend(x="topright", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+```
+Fig 9. Based on data from green treefrog and barking treefrog species the indirect DUST output is conservative of direct overspray measured body burdens.
+
+
+Plot comparing direct and indirect DUST model output
+```{r fig.width=7, fig.height=6}
 #plot comparing direct vs. indirect DUST model output
-plot(combined_data2$dermal_foliage_dose_out~combined_data2$dermal_spray_dose_out, col=combined_data2$Species, pch=16)
+plot(combined_data2$dermal_foliage_dose_out~combined_data2$dermal_spray_dose_out, col=combined_data2$Species, pch=16, xlab=c("Direct DUST"), ylab=c("Indirect DUST"))
 legend(x="topleft", legend = levels(combined_data2$Species), col=1:nlevels(combined_data2$Species), pch=16)
+title(main=c("Fig. 10"))
 ```
 
 Dust modeled indirect foliage dermal exposure values are an order of magntide greater than dust direct spray dermal exposure values. 
