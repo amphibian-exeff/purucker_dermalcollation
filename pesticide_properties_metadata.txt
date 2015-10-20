@@ -1,0 +1,3 @@
+solubility - solubility in water at 20 deg C (mg/L)
+logKow - logged octanol water partition coefficient
+Molecular weight - g/mol
