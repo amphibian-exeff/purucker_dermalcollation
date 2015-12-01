@@ -1,5 +1,6 @@
 ---
 title: "Compare data of amphibian dermal exposure with DUST model values"
+output: pdf_document
 ---
 
 ```{r eval=FALSE, echo=FALSE}
