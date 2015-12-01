@@ -357,4 +357,23 @@ mtext("B",side=3,line=-1.5,at=par("usr")[1]+0.075*diff(par("usr")[1:2]), cex=1.2
 Fig. 8. Modeled indirect overspray of tissue concentration from DUST is conservative of measured tissue concentration of some species body burdens when compared to measured direct and indirect exposure body burdens. Fig. 8B which is Based on data from green treefrog and barking treefrog species the indirect DUST output is conservative of direct overspray measured body burdens.
 
 
+Regression models with measured databased to determine if any of the pesticide chemical properties might be considered in the model as part of the bioconcentration factor. Pesticide properties considered are log Kow, molecular mass, and solubility i water. 
 
+
+```{r eval=TRUE, echo=FALSE}
+# add pesticide properties to combined_data2 table
+pesticide_properties <- read.csv("~/git/amphib_data/pesticide_properties.csv")
+combined_data3<-merge(combined_data2, pesticide_properties, by.x="Chemical", by.y="pesticide")
+View(combined_data3)
+```
+
+```{r eval=TRUE, echo=FALSE}
+library(MASS)
+fit <- lm(y~x1+x2+x3,data=mydata)
+step <- stepAIC(fit, direction="both")
+step$anova # display results 
+
+lm_all<-lm(TissueConc~logkow+solubility+molecular_mass, data=combined_data3)
+step<-stepAIC(lm_all, direction="both")
+step$anova
+```
