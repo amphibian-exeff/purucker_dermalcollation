@@ -1,0 +1,1495 @@
+time,parent,analyte,matrix,species,conc,ID,weight
+0,atrazine,atrazine,amphib,LF,2.579782807,LF A 0-1,1.8401
+0,atrazine,atrazine,amphib,LF,1.691182353,LF A 0-2,2.8486
+0,atrazine,atrazine,amphib,LF,12.52319717,LF A 0-3,2.307
+0,atrazine,atrazine,amphib,LF,2.970273811,LF A 0-4,2.2679
+0,atrazine,atrazine,amphib,LF,8.050942336,LF A 0-5,2.1439
+0,atrazine,atrazine,amphib,LF,7.478230678,LF A 0-6,1.8628
+2,atrazine,atrazine,amphib,LF,2.186808836,LF A 2-1,3.039
+2,atrazine,atrazine,amphib,LF,5.338854395,LF A 2-2,2.0345
+2,atrazine,atrazine,amphib,LF,1.693429589,LF A 2-3,2.196
+2,atrazine,atrazine,amphib,LF,8.968187875,LF A 2-4,2.6681
+2,atrazine,atrazine,amphib,LF,1.454206808,LF A 2-5,2.3648
+2,atrazine,atrazine,amphib,LF,1.718054357,LF A 2-6,1.9188
+4,atrazine,atrazine,amphib,LF,1.715569485,LF A 4-1,2.3476
+4,atrazine,atrazine,amphib,LF,6.984378843,LF A 4-2,2.6426
+4,atrazine,atrazine,amphib,LF,6.344470461,LF A 4-3,2.4232
+4,atrazine,atrazine,amphib,LF,5.22674822,LF A 4-4,2.445
+4,atrazine,atrazine,amphib,LF,6.179038725,LF A 4-5,2.948
+4,atrazine,atrazine,amphib,LF,6.938256641,LF A 4-6,1.6108
+6,atrazine,atrazine,amphib,LF,10.56528408,LF A 6-1,2.1958
+6,atrazine,atrazine,amphib,LF,3.335388968,LF A 6-2,1.2869
+6,atrazine,atrazine,amphib,LF,2.457491841,LF A 6-3,2.1608
+6,atrazine,atrazine,amphib,LF,3.983431248,LF A 6-4,1.6483
+6,atrazine,atrazine,amphib,LF,2.391884077,LF A 6-5,1.8843
+6,atrazine,atrazine,amphib,LF,11.18965486,LF A 6-6,2.469
+8,atrazine,atrazine,amphib,LF,2.162953353,LF A 8-1,3.1323
+8,atrazine,atrazine,amphib,LF,1.650446686,LF A 8-2,2.2558
+8,atrazine,atrazine,amphib,LF,6.76940713,LF A 8-3,1.446
+8,atrazine,atrazine,amphib,LF,6.916300496,LF A 8-4,2.0923
+8,atrazine,atrazine,amphib,LF,5.647878305,LF A 8-5,2.1607
+8,atrazine,atrazine,amphib,LF,5.714846427,LF A 8-6,1.8342
+10,atrazine,atrazine,amphib,LF,3.480676652,LF A 10-1,2.4663
+10,atrazine,atrazine,amphib,LF,1.886771004,LF A 10-2,2.0268
+10,atrazine,atrazine,amphib,LF,10.2979071,LF A 10-3,2.2651
+10,atrazine,atrazine,amphib,LF,8.724901716,LF A 10-4,2.3059
+10,atrazine,atrazine,amphib,LF,1.892744068,LF A 10-5,2.2861
+10,atrazine,atrazine,amphib,LF,3.632494432,LF A 10-6,2.2728
+0,atrazine,dia,amphib,LF,0.883956554,LF A 0-1,1.8401
+0,atrazine,dia,amphib,LF,0.205952276,LF A 0-2,2.8486
+0,atrazine,dia,amphib,LF,2.264216568,LF A 0-3,2.307
+0,atrazine,dia,amphib,LF,1.482399083,LF A 0-4,2.2679
+0,atrazine,dia,amphib,LF,3.373042598,LF A 0-5,2.1439
+0,atrazine,dia,amphib,LF,2.225213926,LF A 0-6,1.8628
+2,atrazine,dia,amphib,LF,0.471455178,LF A 2-1,3.039
+2,atrazine,dia,amphib,LF,1.949823738,LF A 2-2,2.0345
+2,atrazine,dia,amphib,LF,0.292870608,LF A 2-3,2.196
+2,atrazine,dia,amphib,LF,3.731628198,LF A 2-4,2.6681
+2,atrazine,dia,amphib,LF,0.14346792,LF A 2-5,2.3648
+2,atrazine,dia,amphib,LF,0.26117143,LF A 2-6,1.9188
+4,atrazine,dia,amphib,LF,0.6469172,LF A 4-1,2.3476
+4,atrazine,dia,amphib,LF,1.788309618,LF A 4-2,2.6426
+4,atrazine,dia,amphib,LF,2.700054508,LF A 4-3,2.4232
+4,atrazine,dia,amphib,LF,2.092548368,LF A 4-4,2.445
+4,atrazine,dia,amphib,LF,2.353271366,LF A 4-5,2.948
+4,atrazine,dia,amphib,LF,1.975622073,LF A 4-6,1.6108
+6,atrazine,dia,amphib,LF,3.855276739,LF A 6-1,2.1958
+6,atrazine,dia,amphib,LF,1.141669373,LF A 6-2,1.2869
+6,atrazine,dia,amphib,LF,0.927557192,LF A 6-3,2.1608
+6,atrazine,dia,amphib,LF,1.405738977,LF A 6-4,1.6483
+6,atrazine,dia,amphib,LF,1.161620282,LF A 6-5,1.8843
+6,atrazine,dia,amphib,LF,1.95303981,LF A 6-6,2.469
+8,atrazine,dia,amphib,LF,0.545024076,LF A 8-1,3.1323
+8,atrazine,dia,amphib,LF,0.408263481,LF A 8-2,2.2558
+8,atrazine,dia,amphib,LF,3.362166411,LF A 8-3,1.446
+8,atrazine,dia,amphib,LF,1.016458624,LF A 8-4,2.0923
+8,atrazine,dia,amphib,LF,0.36577586,LF A 8-5,2.1607
+8,atrazine,dia,amphib,LF,1.810445265,LF A 8-6,1.8342
+10,atrazine,dia,amphib,LF,2.258392125,LF A 10-1,2.4663
+10,atrazine,dia,amphib,LF,0.736112269,LF A 10-2,2.0268
+10,atrazine,dia,amphib,LF,2.600443851,LF A 10-3,2.2651
+10,atrazine,dia,amphib,LF,2.130334501,LF A 10-4,2.3059
+10,atrazine,dia,amphib,LF,0.439163266,LF A 10-5,2.2861
+10,atrazine,dia,amphib,LF,0.570875335,LF A 10-6,2.2728
+0,atrazine,dea,amphib,LF,0.685584346,LF A 0-1,1.8401
+0,atrazine,dea,amphib,LF,0.118879766,LF A 0-2,2.8486
+0,atrazine,dea,amphib,LF,1.338857338,LF A 0-3,2.307
+0,atrazine,dea,amphib,LF,1.093625539,LF A 0-4,2.2679
+0,atrazine,dea,amphib,LF,2.380726136,LF A 0-5,2.1439
+0,atrazine,dea,amphib,LF,1.682752858,LF A 0-6,1.8628
+2,atrazine,dea,amphib,LF,0.287109189,LF A 2-1,3.039
+2,atrazine,dea,amphib,LF,1.196575679,LF A 2-2,2.0345
+2,atrazine,dea,amphib,LF,0.189837807,LF A 2-3,2.196
+2,atrazine,dea,amphib,LF,2.474574759,LF A 2-4,2.6681
+2,atrazine,dea,amphib,LF,0.111010166,LF A 2-5,2.3648
+2,atrazine,dea,amphib,LF,0.20206445,LF A 2-6,1.9188
+4,atrazine,dea,amphib,LF,0.558891269,LF A 4-1,2.3476
+4,atrazine,dea,amphib,LF,1.389183511,LF A 4-2,2.6426
+4,atrazine,dea,amphib,LF,2.339546273,LF A 4-3,2.4232
+4,atrazine,dea,amphib,LF,1.869070547,LF A 4-4,2.445
+4,atrazine,dea,amphib,LF,1.557399508,LF A 4-5,2.948
+4,atrazine,dea,amphib,LF,1.558110176,LF A 4-6,1.6108
+6,atrazine,dea,amphib,LF,3.079389639,LF A 6-1,2.1958
+6,atrazine,dea,amphib,LF,0.933856532,LF A 6-2,1.2869
+6,atrazine,dea,amphib,LF,0.778610102,LF A 6-3,2.1608
+6,atrazine,dea,amphib,LF,0.853475907,LF A 6-4,1.6483
+6,atrazine,dea,amphib,LF,0.689705614,LF A 6-5,1.8843
+6,atrazine,dea,amphib,LF,1.229569015,LF A 6-6,2.469
+8,atrazine,dea,amphib,LF,0.309594142,LF A 8-1,3.1323
+8,atrazine,dea,amphib,LF,0.319681564,LF A 8-2,2.2558
+8,atrazine,dea,amphib,LF,2.116817307,LF A 8-3,1.446
+8,atrazine,dea,amphib,LF,0.762246202,LF A 8-4,2.0923
+8,atrazine,dea,amphib,LF,0.260688476,LF A 8-5,2.1607
+8,atrazine,dea,amphib,LF,1.001451498,LF A 8-6,1.8342
+10,atrazine,dea,amphib,LF,1.49583694,LF A 10-1,2.4663
+10,atrazine,dea,amphib,LF,0.490295537,LF A 10-2,2.0268
+10,atrazine,dea,amphib,LF,2.291578308,LF A 10-3,2.2651
+10,atrazine,dea,amphib,LF,1.908682536,LF A 10-4,2.3059
+10,atrazine,dea,amphib,LF,0.445776132,LF A 10-5,2.2861
+10,atrazine,dea,amphib,LF,0.614928403,LF A 10-6,2.2728
+0,atrazine,atrazine,soil,LF,10.28385855,LF A 0-1 S1,5.9135
+0,atrazine,atrazine,soil,LF,10.04358875,LF A 0-2 S1,4.5118
+0,atrazine,atrazine,soil,LF,10.18871524,LF A 0-3 S1,4.9146
+0,atrazine,atrazine,soil,LF,9.401012307,LF A 0-4 S1,6.28
+0,atrazine,atrazine,soil,LF,9.516150521,LF A 0-5 S1,5.4423
+0,atrazine,atrazine,soil,LF,9.708402094,LF A 0-6 S1,5.7435
+2,atrazine,atrazine,soil,LF,9.403882995,LF A 2-1 S1,4.3124
+2,atrazine,atrazine,soil,LF,12.1209408,LF A 2-2 S1,5.9805
+2,atrazine,atrazine,soil,LF,9.820321561,LF A 2-3 S1,5.0907
+2,atrazine,atrazine,soil,LF,13.65865567,LF A 2-4 S1,6.1589
+2,atrazine,atrazine,soil,LF,13.82500689,LF A 2-5 S1,3.409
+2,atrazine,atrazine,soil,LF,6.981617026,LF A 2-6 S1,4.9921
+4,atrazine,atrazine,soil,LF,8.71398867,LF A 4-1 S1,6.2392
+4,atrazine,atrazine,soil,LF,10.31826446,LF A 4-2 S1,5.9945
+4,atrazine,atrazine,soil,LF,9.424200962,LF A 4-3 S1,5.0274
+4,atrazine,atrazine,soil,LF,8.210686345,LF A 4-4 S1,5.9502
+4,atrazine,atrazine,soil,LF,12.47499464,LF A 4-5 S1,6.2421
+4,atrazine,atrazine,soil,LF,17.10511501,LF A 4-6 S1,4.7843
+6,atrazine,atrazine,soil,LF,15.28179321,LF A 6-1 S1,3.7613
+6,atrazine,atrazine,soil,LF,15.71271657,LF A 6-2 S1,5.6584
+6,atrazine,atrazine,soil,LF,9.706286223,LF A 6-3 S1,5.3989
+6,atrazine,atrazine,soil,LF,16.37966534,LF A 6-4 S1,5.226
+6,atrazine,atrazine,soil,LF,10.61265033,LF A 6-5 S1,4.7298
+6,atrazine,atrazine,soil,LF,12.59011285,LF A 6-6 S1,3.6917
+8,atrazine,atrazine,soil,LF,12.46770392,LF A 8-1 S1,6.2641
+8,atrazine,atrazine,soil,LF,10.90836606,LF A 8-2 S1,4.9191
+8,atrazine,atrazine,soil,LF,13.47173605,LF A 8-3 S1,4.7237
+8,atrazine,atrazine,soil,LF,10.84867262,LF A 8-4 S1,5.0384
+8,atrazine,atrazine,soil,LF,9.786848989,LF A 8-5 S1,5.191
+8,atrazine,atrazine,soil,LF,12.68276321,LF A 8-6 S1,6.3714
+10,atrazine,atrazine,soil,LF,7.717010983,LF A 10-1 S1,4.881
+10,atrazine,atrazine,soil,LF,9.412734091,LF A 10-2 S1,5.7379
+10,atrazine,atrazine,soil,LF,12.23989264,LF A 10-3 S1,6.538
+10,atrazine,atrazine,soil,LF,11.84987009,LF A 10-4 S1,5.6868
+10,atrazine,atrazine,soil,LF,8.395562665,LF A 10-5 S1,4.825
+10,atrazine,atrazine,soil,LF,7.01665685,LF A 10-6 S1,5.8398
+0,atrazine,dia,soil,LF,0.03213396,LF A 0-1 S1,5.9135
+0,atrazine,dia,soil,LF,0.039735645,LF A 0-2 S1,4.5118
+0,atrazine,dia,soil,LF,0.035786804,LF A 0-3 S1,4.9146
+0,atrazine,dia,soil,LF,0.046370059,LF A 0-4 S1,6.28
+0,atrazine,dia,soil,LF,0.071267615,LF A 0-5 S1,5.4423
+0,atrazine,dia,soil,LF,0.034245841,LF A 0-6 S1,5.7435
+2,atrazine,dia,soil,LF,0.037616706,LF A 2-1 S1,4.3124
+2,atrazine,dia,soil,LF,0.04219977,LF A 2-2 S1,5.9805
+2,atrazine,dia,soil,LF,0.033938574,LF A 2-3 S1,5.0907
+2,atrazine,dia,soil,LF,0.056362539,LF A 2-4 S1,6.1589
+2,atrazine,dia,soil,LF,0.052058052,LF A 2-5 S1,3.409
+2,atrazine,dia,soil,LF,0.037204939,LF A 2-6 S1,4.9921
+4,atrazine,dia,soil,LF,0.030773042,LF A 4-1 S1,6.2392
+4,atrazine,dia,soil,LF,0.041361374,LF A 4-2 S1,5.9945
+4,atrazine,dia,soil,LF,0.070353747,LF A 4-3 S1,5.0274
+4,atrazine,dia,soil,LF,0.032742838,LF A 4-4 S1,5.9502
+4,atrazine,dia,soil,LF,0.042338733,LF A 4-5 S1,6.2421
+4,atrazine,dia,soil,LF,0.037171878,LF A 4-6 S1,4.7843
+6,atrazine,dia,soil,LF,0.047740625,LF A 6-1 S1,3.7613
+6,atrazine,dia,soil,LF,0.034533625,LF A 6-2 S1,5.6584
+6,atrazine,dia,soil,LF,0.036314789,LF A 6-3 S1,5.3989
+6,atrazine,dia,soil,LF,0.04246275,LF A 6-4 S1,5.226
+6,atrazine,dia,soil,LF,0.041618552,LF A 6-5 S1,4.7298
+6,atrazine,dia,soil,LF,0.045366964,LF A 6-6 S1,3.6917
+8,atrazine,dia,soil,LF,0.029057887,LF A 8-1 S1,6.2641
+8,atrazine,dia,soil,LF,0.033800078,LF A 8-2 S1,4.9191
+8,atrazine,dia,soil,LF,0.034630556,LF A 8-3 S1,4.7237
+8,atrazine,dia,soil,LF,0.034346932,LF A 8-4 S1,5.0384
+8,atrazine,dia,soil,LF,0.03219457,LF A 8-5 S1,5.191
+8,atrazine,dia,soil,LF,0.027305273,LF A 8-6 S1,6.3714
+10,atrazine,dia,soil,LF,0.052085964,LF A 10-1 S1,4.881
+10,atrazine,dia,soil,LF,0.031311716,LF A 10-2 S1,5.7379
+10,atrazine,dia,soil,LF,0.028745734,LF A 10-3 S1,6.538
+10,atrazine,dia,soil,LF,0.047452892,LF A 10-4 S1,5.6868
+10,atrazine,dia,soil,LF,0.03427203,LF A 10-5 S1,4.825
+10,atrazine,dia,soil,LF,0.02862084,LF A 10-6 S1,5.8398
+0,atrazine,dea,soil,LF,0.021695507,LF A 0-1 S1,5.9135
+0,atrazine,dea,soil,LF,0.020985714,LF A 0-2 S1,4.5118
+0,atrazine,dea,soil,LF,0.0169438,LF A 0-3 S1,4.9146
+0,atrazine,dea,soil,LF,0.036549509,LF A 0-4 S1,6.28
+0,atrazine,dea,soil,LF,0.059143339,LF A 0-5 S1,5.4423
+0,atrazine,dea,soil,LF,0.01905291,LF A 0-6 S1,5.7435
+2,atrazine,dea,soil,LF,0.016220581,LF A 2-1 S1,4.3124
+2,atrazine,dea,soil,LF,0.036402229,LF A 2-2 S1,5.9805
+2,atrazine,dea,soil,LF,0.017401323,LF A 2-3 S1,5.0907
+2,atrazine,dea,soil,LF,0.049324989,LF A 2-4 S1,6.1589
+2,atrazine,dea,soil,LF,0.024514369,LF A 2-5 S1,3.409
+2,atrazine,dea,soil,LF,0.015483107,LF A 2-6 S1,4.9921
+4,atrazine,dea,soil,LF,0.01904063,LF A 4-1 S1,6.2392
+4,atrazine,dea,soil,LF,0.03435691,LF A 4-2 S1,5.9945
+4,atrazine,dea,soil,LF,0.068179407,LF A 4-3 S1,5.0274
+4,atrazine,dea,soil,LF,0.02647731,LF A 4-4 S1,5.9502
+4,atrazine,dea,soil,LF,0.034814925,LF A 4-5 S1,6.2421
+4,atrazine,dea,soil,LF,0.026439811,LF A 4-6 S1,4.7843
+6,atrazine,dea,soil,LF,0.029437985,LF A 6-1 S1,3.7613
+6,atrazine,dea,soil,LF,0.029266023,LF A 6-2 S1,5.6584
+6,atrazine,dea,soil,LF,0.022624179,LF A 6-3 S1,5.3989
+6,atrazine,dea,soil,LF,0.034093541,LF A 6-4 S1,5.226
+6,atrazine,dea,soil,LF,0.0286258,LF A 6-5 S1,4.7298
+6,atrazine,dea,soil,LF,0.020529628,LF A 6-6 S1,3.6917
+8,atrazine,dea,soil,LF,0.021728381,LF A 8-1 S1,6.2641
+8,atrazine,dea,soil,LF,0.020895864,LF A 8-2 S1,4.9191
+8,atrazine,dea,soil,LF,0.022134039,LF A 8-3 S1,4.7237
+8,atrazine,dea,soil,LF,0.02179931,LF A 8-4 S1,5.0384
+8,atrazine,dea,soil,LF,0.014853901,LF A 8-5 S1,5.191
+8,atrazine,dea,soil,LF,0.016976421,LF A 8-6 S1,6.3714
+10,atrazine,dea,soil,LF,0.038222389,LF A 10-1 S1,4.881
+10,atrazine,dea,soil,LF,0.018313636,LF A 10-2 S1,5.7379
+10,atrazine,dea,soil,LF,0.025390667,LF A 10-3 S1,6.538
+10,atrazine,dea,soil,LF,0.046216135,LF A 10-4 S1,5.6868
+10,atrazine,dea,soil,LF,0.015454452,LF A 10-5 S1,4.825
+10,atrazine,dea,soil,LF,0.015354169,LF A 10-6 S1,5.8398
+0,chloro,chloromet,amphib,LF,0.049534914,LF Cl 0-1,2.9374
+0,chloro,chloromet,amphib,LF,0.09431606,LF Cl 0-2,3.6896
+0,chloro,chloromet,amphib,LF,0.065894674,LF Cl 0-3,2.5049
+0,chloro,chloromet,amphib,LF,0.066735354,LF Cl 0-4,3.0961
+0,chloro,chloromet,amphib,LF,0.05459792,LF Cl 0-5,3.3543
+0,chloro,chloromet,amphib,LF,0.110663384,LF Cl 0-6,2.9449
+2,chloro,chloromet,amphib,LF,0.034119313,LF Cl 2-1,2.982
+2,chloro,chloromet,amphib,LF,0.137711222,LF Cl 2-2,1.1766
+2,chloro,chloromet,amphib,LF,0.038844494,LF Cl 2-3,2.5677
+2,chloro,chloromet,amphib,LF,0.034159045,LF Cl 2-4,3.9146
+2,chloro,chloromet,amphib,LF,0.189112734,LF Cl 2-5,2.4102
+2,chloro,chloromet,amphib,LF,0.073108651,LF Cl 2-6,2.5335
+4,chloro,chloromet,amphib,LF,0.046410221,LF Cl 4-1,2.1336
+4,chloro,chloromet,amphib,LF,0.054321653,LF Cl 4-2,1.3477
+4,chloro,chloromet,amphib,LF,0.047421024,LF Cl 4-3,1.9212
+4,chloro,chloromet,amphib,LF,0.077330002,LF Cl 4-4,2.2279
+4,chloro,chloromet,amphib,LF,0.061659489,LF Cl 4-5,1.2642
+4,chloro,chloromet,amphib,LF,0.075510303,LF Cl 4-6,2.5177
+6,chloro,chloromet,amphib,LF,0.027463652,LF Cl 6-1,2.6744
+6,chloro,chloromet,amphib,LF,0.051562219,LF Cl 6-2,1.9014
+6,chloro,chloromet,amphib,LF,0.177693722,LF Cl 6-3,1.8824
+6,chloro,chloromet,amphib,LF,0.029626977,LF Cl 6-4,2.5356
+6,chloro,chloromet,amphib,LF,0.040356887,LF Cl 6-5,1.9125
+6,chloro,chloromet,amphib,LF,0.048697065,LF Cl 6-6,1.6813
+8,chloro,chloromet,amphib,LF,0.100520033,LF Cl 8-1,3.1849
+8,chloro,chloromet,amphib,LF,0.066249062,LF Cl 8-2,2.1473
+8,chloro,chloromet,amphib,LF,0.135997717,LF Cl 8-3,1.5919
+8,chloro,chloromet,amphib,LF,0.086171947,LF Cl 8-4,1.8071
+8,chloro,chloromet,amphib,LF,0.039905604,LF Cl 8-5,1.8675
+8,chloro,chloromet,amphib,LF,0.07148401,LF Cl 8-6,2.3422
+10,chloro,chloromet,amphib,LF,0.026595904,LF Cl 10-1,2.8692
+10,chloro,chloromet,amphib,LF,0.033621317,LF Cl 10-2,2.2261
+10,chloro,chloromet,amphib,LF,0.027361678,LF Cl 10-3,3.3763
+10,chloro,chloromet,amphib,LF,0.034005049,LF Cl 10-4,2.3394
+10,chloro,chloromet,amphib,LF,0.074157011,LF Cl 10-5,2.4226
+10,chloro,chloromet,amphib,LF,0.032016276,LF Cl 10-6,2.5262
+0,chloro,chloromet,soil,LF,0.035439856,LF Cl 0-1 S,4.7266
+0,chloro,chloromet,soil,LF,0.031817107,LF Cl 0-2 S,3.37
+0,chloro,chloromet,soil,LF,0.024460784,LF Cl 0-3 S,3.6873
+0,chloro,chloromet,soil,LF,0.05242399,LF Cl 0-4 S,3.2009
+0,chloro,chloromet,soil,LF,0.028484496,LF Cl 0-5 S,3.2814
+0,chloro,chloromet,soil,LF,0.028878049,LF Cl 0-6 S,4.231
+2,chloro,chloromet,soil,LF,0.042042668,LF Cl 2-1 S,2.0763
+2,chloro,chloromet,soil,LF,0.043897245,LF Cl 2-2 S,3.6588
+2,chloro,chloromet,soil,LF,0.032071409,LF Cl 2-3 S,3.5107
+2,chloro,chloromet,soil,LF,0.02161534,LF Cl 2-4 S,3.2822
+2,chloro,chloromet,soil,LF,0.028614122,LF Cl 2-5 S,3.4377
+2,chloro,chloromet,soil,LF,0.023672556,LF Cl 2-6 S,3.3967
+4,chloro,chloromet,soil,LF,0.01955478,LF Cl 4-1 S,4.5524
+4,chloro,chloromet,soil,LF,0.027465103,LF Cl 4-2 S,3.8445
+4,chloro,chloromet,soil,LF,0.028391999,LF Cl 4-3 S,3.5277
+4,chloro,chloromet,soil,LF,0.036035854,LF Cl 4-4 S,3.8172
+4,chloro,chloromet,soil,LF,0.014400845,LF Cl 4-5 S,5.7603
+4,chloro,chloromet,soil,LF,0.02647358,LF Cl 4-6 S,3.7275
+6,chloro,chloromet,soil,LF,0.02495662,LF Cl 6-1 S,3.2504
+6,chloro,chloromet,soil,LF,0.029331508,LF Cl 6-2 S,3.7324
+6,chloro,chloromet,soil,LF,0.030301572,LF Cl 6-3 S,4.2609
+6,chloro,chloromet,soil,LF,0.025046843,LF Cl 6-4 S,3.2843
+6,chloro,chloromet,soil,LF,0.021140833,LF Cl 6-5 S,4.1343
+6,chloro,chloromet,soil,LF,0.018835428,LF Cl 6-6 S,4.14
+8,chloro,chloromet,soil,LF,0.032858824,LF Cl 8-1 S,2.9562
+8,chloro,chloromet,soil,LF,0.033659206,LF Cl 8-2 S,4.0203
+8,chloro,chloromet,soil,LF,0.019855881,LF Cl 8-3 S,3.8679
+8,chloro,chloromet,soil,LF,0.02468558,LF Cl 8-4 S,4.3986
+8,chloro,chloromet,soil,LF,0.02070677,LF Cl 8-5 S,4.3602
+8,chloro,chloromet,soil,LF,0.022588965,LF Cl 8-6 S,3.1494
+10,chloro,chloromet,soil,LF,0.02306099,LF Cl 10-1 S,3.5096
+10,chloro,chloromet,soil,LF,0.025883352,LF Cl 10-2 S,3.1516
+10,chloro,chloromet,soil,LF,0.031604685,LF Cl 10-3 S,3.6989
+10,chloro,chloromet,soil,LF,0.019487689,LF Cl 10-4 S,3.7193
+10,chloro,chloromet,soil,LF,0.031149257,LF Cl 10-5 S,2.9069
+10,chloro,chloromet,soil,LF,0.023836404,LF Cl 10-6 S,3.837
+0,chloro,chloro,amphib,LF,,LF Cl 0-1,2.9374
+0,chloro,chloro,amphib,LF,,LF Cl 0-2,3.6896
+0,chloro,chloro,amphib,LF,,LF Cl 0-3,2.5049
+0,chloro,chloro,amphib,LF,,LF Cl 0-4,3.0961
+0,chloro,chloro,amphib,LF,,LF Cl 0-5,3.3543
+0,chloro,chloro,amphib,LF,,LF Cl 0-6,2.9449
+2,chloro,chloro,amphib,LF,,LF Cl 2-1,2.982
+2,chloro,chloro,amphib,LF,,LF Cl 2-2,1.1766
+2,chloro,chloro,amphib,LF,,LF Cl 2-3,2.5677
+2,chloro,chloro,amphib,LF,,LF Cl 2-4,3.9146
+2,chloro,chloro,amphib,LF,,LF Cl 2-5,2.4102
+2,chloro,chloro,amphib,LF,,LF Cl 2-6,2.5335
+4,chloro,chloro,amphib,LF,,LF Cl 4-1,2.1336
+4,chloro,chloro,amphib,LF,,LF Cl 4-2,1.3477
+4,chloro,chloro,amphib,LF,,LF Cl 4-3,1.9212
+4,chloro,chloro,amphib,LF,,LF Cl 4-4,2.2279
+4,chloro,chloro,amphib,LF,,LF Cl 4-5,1.2642
+4,chloro,chloro,amphib,LF,,LF Cl 4-6,2.5177
+6,chloro,chloro,amphib,LF,,LF Cl 6-1,2.6744
+6,chloro,chloro,amphib,LF,,LF Cl 6-2,1.9014
+6,chloro,chloro,amphib,LF,,LF Cl 6-3,1.8824
+6,chloro,chloro,amphib,LF,,LF Cl 6-4,2.5356
+6,chloro,chloro,amphib,LF,,LF Cl 6-5,1.9125
+6,chloro,chloro,amphib,LF,,LF Cl 6-6,1.6813
+8,chloro,chloro,amphib,LF,,LF Cl 8-1,3.1849
+8,chloro,chloro,amphib,LF,,LF Cl 8-2,2.1473
+8,chloro,chloro,amphib,LF,,LF Cl 8-3,1.5919
+8,chloro,chloro,amphib,LF,,LF Cl 8-4,1.8071
+8,chloro,chloro,amphib,LF,,LF Cl 8-5,1.8675
+8,chloro,chloro,amphib,LF,,LF Cl 8-6,2.3422
+10,chloro,chloro,amphib,LF,,LF Cl 10-1,2.8692
+10,chloro,chloro,amphib,LF,,LF Cl 10-2,2.2261
+10,chloro,chloro,amphib,LF,,LF Cl 10-3,3.3763
+10,chloro,chloro,amphib,LF,,LF Cl 10-4,2.3394
+10,chloro,chloro,amphib,LF,,LF Cl 10-5,2.4226
+10,chloro,chloro,amphib,LF,,LF Cl 10-6,2.5262
+0,chloro,chloro,soil,LF,97.54771792,LF Cl 0-1 S,4.7266
+0,chloro,chloro,soil,LF,105.2068112,LF Cl 0-2 S,3.37
+0,chloro,chloro,soil,LF,104.0471325,LF Cl 0-3 S,3.6873
+0,chloro,chloro,soil,LF,87.83391191,LF Cl 0-4 S,3.2009
+0,chloro,chloro,soil,LF,85.2705886,LF Cl 0-5 S,3.2814
+0,chloro,chloro,soil,LF,110.2800296,LF Cl 0-6 S,4.231
+2,chloro,chloro,soil,LF,124.7136025,LF Cl 2-1 S,2.0763
+2,chloro,chloro,soil,LF,93.83616294,LF Cl 2-2 S,3.6588
+2,chloro,chloro,soil,LF,131.9151605,LF Cl 2-3 S,3.5107
+2,chloro,chloro,soil,LF,238.150189,LF Cl 2-4 S,3.2822
+2,chloro,chloro,soil,LF,126.1421937,LF Cl 2-5 S,3.4377
+2,chloro,chloro,soil,LF,93.01431818,LF Cl 2-6 S,3.3967
+4,chloro,chloro,soil,LF,54.02956223,LF Cl 4-1 S,4.5524
+4,chloro,chloro,soil,LF,83.94471454,LF Cl 4-2 S,3.8445
+4,chloro,chloro,soil,LF,95.16597984,LF Cl 4-3 S,3.5277
+4,chloro,chloro,soil,LF,108.8411455,LF Cl 4-4 S,3.8172
+4,chloro,chloro,soil,LF,107.8351603,LF Cl 4-5 S,5.7603
+4,chloro,chloro,soil,LF,112.551148,LF Cl 4-6 S,3.7275
+6,chloro,chloro,soil,LF,103.9346865,LF Cl 6-1 S,3.2504
+6,chloro,chloro,soil,LF,133.1324122,LF Cl 6-2 S,3.7324
+6,chloro,chloro,soil,LF,177.201436,LF Cl 6-3 S,4.2609
+6,chloro,chloro,soil,LF,80.2864709,LF Cl 6-4 S,3.2843
+6,chloro,chloro,soil,LF,107.9943699,LF Cl 6-5 S,4.1343
+6,chloro,chloro,soil,LF,75.82071048,LF Cl 6-6 S,4.14
+8,chloro,chloro,soil,LF,98.34669015,LF Cl 8-1 S,2.9562
+8,chloro,chloro,soil,LF,55.30487111,LF Cl 8-2 S,4.0203
+8,chloro,chloro,soil,LF,68.31816412,LF Cl 8-3 S,3.8679
+8,chloro,chloro,soil,LF,77.37304664,LF Cl 8-4 S,4.3986
+8,chloro,chloro,soil,LF,86.4407278,LF Cl 8-5 S,4.3602
+8,chloro,chloro,soil,LF,134.219346,LF Cl 8-6 S,3.1494
+10,chloro,chloro,soil,LF,102.4324273,LF Cl 10-1 S,3.5096
+10,chloro,chloro,soil,LF,56.13699941,LF Cl 10-2 S,3.1516
+10,chloro,chloro,soil,LF,149.7004603,LF Cl 10-3 S,3.6989
+10,chloro,chloro,soil,LF,69.83049,LF Cl 10-4 S,3.7193
+10,chloro,chloro,soil,LF,51.56836737,LF Cl 10-5 S,2.9069
+10,chloro,chloro,soil,LF,114.5675617,LF Cl 10-6 S,3.837
+0,metol,metol,amphib,LF,4.267677087,LF M 0-1,1.6635
+0,metol,metol,amphib,LF,5.721956829,LF M 0-2,2.0778
+0,metol,metol,amphib,LF,1.748897837,LF M 0-3,2.593
+0,metol,metol,amphib,LF,0.806456941,LF M 0-4,2.8358
+0,metol,metol,amphib,LF,10.63925511,LF M 0-5,1.8572
+0,metol,metol,amphib,LF,3.688639048,LF M 0-6,1.121
+2,metol,metol,amphib,LF,1.640306185,LF M 2-1,2.2456
+2,metol,metol,amphib,LF,5.639864337,LF M 2-2,2.4944
+2,metol,metol,amphib,LF,0.985224834,LF M 2-3,2.5987
+2,metol,metol,amphib,LF,1.159396793,LF M 2-4,2.0734
+2,metol,metol,amphib,LF,2.57235133,LF M 2-5,1.9886
+2,metol,metol,amphib,LF,3.19002649,LF M 2-6,2.7615
+4,metol,metol,amphib,LF,2.3898984,LF M 4-1,1.8156
+4,metol,metol,amphib,LF,1.780858408,LF M 4-2,3.0818
+4,metol,metol,amphib,LF,1.08822026,LF M 4-3,2.8691
+4,metol,metol,amphib,LF,1.829340286,LF M 4-4,2.2879
+4,metol,metol,amphib,LF,2.345929412,LF M 4-5,2.746
+4,metol,metol,amphib,LF,5.291092536,LF M 4-6,2.2357
+6,metol,metol,amphib,LF,2.100173605,LF M 6-1,2.9968
+6,metol,metol,amphib,LF,1.114810193,LF M 6-2,2.5795
+6,metol,metol,amphib,LF,1.378698045,LF M 6-3,2.5535
+6,metol,metol,amphib,LF,2.253704813,LF M 6-4,1.8
+6,metol,metol,amphib,LF,5.376753972,LF M 6-5,2.2348
+6,metol,metol,amphib,LF,1.702141197,LF M 6-6,1.7367
+8,metol,metol,amphib,LF,1.181846159,LF M 8-1,2.8781
+8,metol,metol,amphib,LF,0.746445245,LF M 8-2,3.0126
+8,metol,metol,amphib,LF,6.060241405,LF M 8-3,2.2216
+8,metol,metol,amphib,LF,3.979074337,LF M 8-4,2.076
+8,metol,metol,amphib,LF,0.90171309,LF M 8-5,1.7311
+8,metol,metol,amphib,LF,3.452448894,LF M 8-6,2.016
+10,metol,metol,amphib,LF,1.574839899,LF M 10-1,2.0918
+10,metol,metol,amphib,LF,1.123669198,LF M 10-2,1.8813
+10,metol,metol,amphib,LF,2.558654328,LF M 10-3,2.2104
+10,metol,metol,amphib,LF,1.949552248,LF M 10-4,3.201
+10,metol,metol,amphib,LF,2.179127319,LF M 10-5,2.6894
+10,metol,metol,amphib,LF,1.130277738,LF M 10-6,2.3257
+0,metol,mesa,amphib,LF,5.90E-06,LF M 0-1,1.6635
+0,metol,mesa,amphib,LF,3.20E-06,LF M 0-2,2.0778
+0,metol,mesa,amphib,LF,1.59E-05,LF M 0-3,2.593
+0,metol,mesa,amphib,LF,3.83E-06,LF M 0-4,2.8358
+0,metol,mesa,amphib,LF,0,LF M 0-5,1.8572
+0,metol,mesa,amphib,LF,1.94E-06,LF M 0-6,1.121
+2,metol,mesa,amphib,LF,0,LF M 2-1,2.2456
+2,metol,mesa,amphib,LF,2.20E-06,LF M 2-2,2.4944
+2,metol,mesa,amphib,LF,1.72E-06,LF M 2-3,2.5987
+2,metol,mesa,amphib,LF,0,LF M 2-4,2.0734
+2,metol,mesa,amphib,LF,1.16E-05,LF M 2-5,1.9886
+2,metol,mesa,amphib,LF,1.04E-05,LF M 2-6,2.7615
+4,metol,mesa,amphib,LF,6.69E-06,LF M 4-1,1.8156
+4,metol,mesa,amphib,LF,6.02E-06,LF M 4-2,3.0818
+4,metol,mesa,amphib,LF,0,LF M 4-3,2.8691
+4,metol,mesa,amphib,LF,7.91E-06,LF M 4-4,2.2879
+4,metol,mesa,amphib,LF,1.01E-06,LF M 4-5,2.746
+4,metol,mesa,amphib,LF,0,LF M 4-6,2.2357
+6,metol,mesa,amphib,LF,1.28E-06,LF M 6-1,2.9968
+6,metol,mesa,amphib,LF,9.92E-07,LF M 6-2,2.5795
+6,metol,mesa,amphib,LF,0,LF M 6-3,2.5535
+6,metol,mesa,amphib,LF,4.71E-06,LF M 6-4,1.8
+6,metol,mesa,amphib,LF,4.17E-06,LF M 6-5,2.2348
+6,metol,mesa,amphib,LF,1.92E-06,LF M 6-6,1.7367
+8,metol,mesa,amphib,LF,0,LF M 8-1,2.8781
+8,metol,mesa,amphib,LF,9.41E-07,LF M 8-2,3.0126
+8,metol,mesa,amphib,LF,1.19E-05,LF M 8-3,2.2216
+8,metol,mesa,amphib,LF,1.44E-05,LF M 8-4,2.076
+8,metol,mesa,amphib,LF,6.47E-06,LF M 8-5,1.7311
+8,metol,mesa,amphib,LF,1.08E-05,LF M 8-6,2.016
+10,metol,mesa,amphib,LF,2.60E-06,LF M 10-1,2.0918
+10,metol,mesa,amphib,LF,0,LF M 10-2,1.8813
+10,metol,mesa,amphib,LF,5.30E-06,LF M 10-3,2.2104
+10,metol,mesa,amphib,LF,0,LF M 10-4,3.201
+10,metol,mesa,amphib,LF,0,LF M 10-5,2.6894
+10,metol,mesa,amphib,LF,3.09E-06,LF M 10-6,2.3257
+0,metol,moxa,amphib,LF,4.66E-05,LF M 0-1,1.6635
+0,metol,moxa,amphib,LF,0.000180044,LF M 0-2,2.0778
+0,metol,moxa,amphib,LF,7.74E-05,LF M 0-3,2.593
+0,metol,moxa,amphib,LF,4.94E-05,LF M 0-4,2.8358
+0,metol,moxa,amphib,LF,0.00035287,LF M 0-5,1.8572
+0,metol,moxa,amphib,LF,0.000281637,LF M 0-6,1.121
+2,metol,moxa,amphib,LF,3.62E-05,LF M 2-1,2.2456
+2,metol,moxa,amphib,LF,6.95E-05,LF M 2-2,2.4944
+2,metol,moxa,amphib,LF,1.27E-05,LF M 2-3,2.5987
+2,metol,moxa,amphib,LF,5.38E-05,LF M 2-4,2.0734
+2,metol,moxa,amphib,LF,0.000140995,LF M 2-5,1.9886
+2,metol,moxa,amphib,LF,9.53E-05,LF M 2-6,2.7615
+4,metol,moxa,amphib,LF,6.27E-05,LF M 4-1,1.8156
+4,metol,moxa,amphib,LF,6.34E-05,LF M 4-2,3.0818
+4,metol,moxa,amphib,LF,3.99E-05,LF M 4-3,2.8691
+4,metol,moxa,amphib,LF,5.07E-05,LF M 4-4,2.2879
+4,metol,moxa,amphib,LF,3.53E-05,LF M 4-5,2.746
+4,metol,moxa,amphib,LF,0.00012665,LF M 4-6,2.2357
+6,metol,moxa,amphib,LF,1.45E-05,LF M 6-1,2.9968
+6,metol,moxa,amphib,LF,5.74E-05,LF M 6-2,2.5795
+6,metol,moxa,amphib,LF,3.78E-05,LF M 6-3,2.5535
+6,metol,moxa,amphib,LF,4.46E-05,LF M 6-4,1.8
+6,metol,moxa,amphib,LF,7.74E-05,LF M 6-5,2.2348
+6,metol,moxa,amphib,LF,4.26E-05,LF M 6-6,1.7367
+8,metol,moxa,amphib,LF,2.90E-05,LF M 8-1,2.8781
+8,metol,moxa,amphib,LF,4.06E-05,LF M 8-2,3.0126
+8,metol,moxa,amphib,LF,0.000139442,LF M 8-3,2.2216
+8,metol,moxa,amphib,LF,8.46E-05,LF M 8-4,2.076
+8,metol,moxa,amphib,LF,8.92E-05,LF M 8-5,1.7311
+8,metol,moxa,amphib,LF,0.000130999,LF M 8-6,2.016
+10,metol,moxa,amphib,LF,4.12E-05,LF M 10-1,2.0918
+10,metol,moxa,amphib,LF,0.000117096,LF M 10-2,1.8813
+10,metol,moxa,amphib,LF,3.74E-05,LF M 10-3,2.2104
+10,metol,moxa,amphib,LF,1.22E-05,LF M 10-4,3.201
+10,metol,moxa,amphib,LF,0.000111086,LF M 10-5,2.6894
+10,metol,moxa,amphib,LF,2.70E-05,LF M 10-6,2.3257
+0,metol,metol,soil,LF,40.64853462,LF M 0-1 S,3.7439
+0,metol,metol,soil,LF,48.47519919,LF M 0-2 S,4.0324
+0,metol,metol,soil,LF,41.79217276,LF M 0-3 S,4.2238
+0,metol,metol,soil,LF,24.38427683,LF M 0-4 S,4.3713
+0,metol,metol,soil,LF,77.00037621,LF M 0-5 S,3.2168
+0,metol,metol,soil,LF,48.49721515,LF M 0-6 S,3.7938
+2,metol,metol,soil,LF,21.427727,LF M 2-1 S,3.9132
+2,metol,metol,soil,LF,25.33585131,LF M 2-2 S,4.6139
+2,metol,metol,soil,LF,22.98479209,LF M 2-3 S,3.7128
+2,metol,metol,soil,LF,28.23363196,LF M 2-4 S,3.2535
+2,metol,metol,soil,LF,27.78584836,LF M 2-5 S,3.9968
+2,metol,metol,soil,LF,25.00006343,LF M 2-6 S,4.9066
+4,metol,metol,soil,LF,19.25500126,LF M 4-1 S,4.3729
+4,metol,metol,soil,LF,25.00425435,LF M 4-2 S,5.1517
+4,metol,metol,soil,LF,16.93924625,LF M 4-3 S,4.6967
+4,metol,metol,soil,LF,19.02585998,LF M 4-4 S,4.3734
+4,metol,metol,soil,LF,30.3513881,LF M 4-5 S,4.5143
+4,metol,metol,soil,LF,23.64525737,LF M 4-6 S,4.6927
+6,metol,metol,soil,LF,16.91928433,LF M 6-1 S,5.4047
+6,metol,metol,soil,LF,22.04401189,LF M 6-2 S,3.8719
+6,metol,metol,soil,LF,23.36243329,LF M 6-3 S,4.7515
+6,metol,metol,soil,LF,23.06676914,LF M 6-4 S,4.2709
+6,metol,metol,soil,LF,24.42190264,LF M 6-5 S,4.5916
+6,metol,metol,soil,LF,21.24319583,LF M 6-6 S,4.9347
+8,metol,metol,soil,LF,18.25491609,LF M 8-1 S,4.2879
+8,metol,metol,soil,LF,20.24836634,LF M 8-2 S,3.8405
+8,metol,metol,soil,LF,21.33112732,LF M 8-3 S,4.6632
+8,metol,metol,soil,LF,24.93070926,LF M 8-4 S,4.8497
+8,metol,metol,soil,LF,21.60699195,LF M 8-5 S,4.2957
+8,metol,metol,soil,LF,30.64444223,LF M 8-6 S,4.3194
+10,metol,metol,soil,LF,12.49664326,LF M 10-1 S,4.0952
+10,metol,metol,soil,LF,29.0739971,LF M 10-2 S,3.5968
+10,metol,metol,soil,LF,26.60999165,LF M 10-3 S,3.4627
+10,metol,metol,soil,LF,18.22540327,LF M 10-4 S,4.2973
+10,metol,metol,soil,LF,25.62284834,LF M 10-5 S,5.0904
+10,metol,metol,soil,LF,18.37523411,LF M 10-6 S,4.6801
+0,metol,mesa,soil,LF,4.13E-06,LF M 0-1 S,3.7439
+0,metol,mesa,soil,LF,1.15E-06,LF M 0-2 S,4.0324
+0,metol,mesa,soil,LF,6.38E-07,LF M 0-3 S,4.2238
+0,metol,mesa,soil,LF,7.92E-07,LF M 0-4 S,4.3713
+0,metol,mesa,soil,LF,0,LF M 0-5 S,3.2168
+0,metol,mesa,soil,LF,1.80E-06,LF M 0-6 S,3.7938
+2,metol,mesa,soil,LF,2.68E-07,LF M 2-1 S,3.9132
+2,metol,mesa,soil,LF,3.45E-07,LF M 2-2 S,4.6139
+2,metol,mesa,soil,LF,9.21E-07,LF M 2-3 S,3.7128
+2,metol,mesa,soil,LF,4.46E-07,LF M 2-4 S,3.2535
+2,metol,mesa,soil,LF,5.00E-07,LF M 2-5 S,3.9968
+2,metol,mesa,soil,LF,3.70E-07,LF M 2-6 S,4.9066
+4,metol,mesa,soil,LF,1.50E-06,LF M 4-1 S,4.3729
+4,metol,mesa,soil,LF,6.35E-07,LF M 4-2 S,5.1517
+4,metol,mesa,soil,LF,5.64E-07,LF M 4-3 S,4.6967
+4,metol,mesa,soil,LF,0,LF M 4-4 S,4.3734
+4,metol,mesa,soil,LF,8.09E-07,LF M 4-5 S,4.5143
+4,metol,mesa,soil,LF,1.96E-07,LF M 4-6 S,4.6927
+6,metol,mesa,soil,LF,8.21E-07,LF M 6-1 S,5.4047
+6,metol,mesa,soil,LF,7.32E-07,LF M 6-2 S,3.8719
+6,metol,mesa,soil,LF,3.82E-07,LF M 6-3 S,4.7515
+6,metol,mesa,soil,LF,1.45E-06,LF M 6-4 S,4.2709
+6,metol,mesa,soil,LF,1.19E-06,LF M 6-5 S,4.5916
+6,metol,mesa,soil,LF,1.04E-07,LF M 6-6 S,4.9347
+8,metol,mesa,soil,LF,7.43E-07,LF M 8-1 S,4.2879
+8,metol,mesa,soil,LF,1.27E-06,LF M 8-2 S,3.8405
+8,metol,mesa,soil,LF,5.18E-07,LF M 8-3 S,4.6632
+8,metol,mesa,soil,LF,1.62E-07,LF M 8-4 S,4.8497
+8,metol,mesa,soil,LF,2.50E-07,LF M 8-5 S,4.2957
+8,metol,mesa,soil,LF,5.16E-07,LF M 8-6 S,4.3194
+10,metol,mesa,soil,LF,8.78E-07,LF M 10-1 S,4.0952
+10,metol,mesa,soil,LF,2.63E-07,LF M 10-2 S,3.5968
+10,metol,mesa,soil,LF,6.61E-07,LF M 10-3 S,3.4627
+10,metol,mesa,soil,LF,9.86E-07,LF M 10-4 S,4.2973
+10,metol,mesa,soil,LF,2.08E-06,LF M 10-5 S,5.0904
+10,metol,mesa,soil,LF,1.90E-07,LF M 10-6 S,4.6801
+0,metol,moxa,soil,LF,5.44E-05,LF M 0-1 S,3.7439
+0,metol,moxa,soil,LF,2.64E-05,LF M 0-2 S,4.0324
+0,metol,moxa,soil,LF,0.000132873,LF M 0-3 S,4.2238
+0,metol,moxa,soil,LF,3.28E-05,LF M 0-4 S,4.3713
+0,metol,moxa,soil,LF,0.00011858,LF M 0-5 S,3.2168
+0,metol,moxa,soil,LF,3.20E-05,LF M 0-6 S,3.7938
+2,metol,moxa,soil,LF,8.07E-05,LF M 2-1 S,3.9132
+2,metol,moxa,soil,LF,1.64E-05,LF M 2-2 S,4.6139
+2,metol,moxa,soil,LF,2.86E-05,LF M 2-3 S,3.7128
+2,metol,moxa,soil,LF,2.25E-05,LF M 2-4 S,3.2535
+2,metol,moxa,soil,LF,5.40E-05,LF M 2-5 S,3.9968
+2,metol,moxa,soil,LF,2.26E-05,LF M 2-6 S,4.9066
+4,metol,moxa,soil,LF,2.17E-05,LF M 4-1 S,4.3729
+4,metol,moxa,soil,LF,1.43E-05,LF M 4-2 S,5.1517
+4,metol,moxa,soil,LF,4.86E-05,LF M 4-3 S,4.6967
+4,metol,moxa,soil,LF,4.68E-05,LF M 4-4 S,4.3734
+4,metol,moxa,soil,LF,1.29E-05,LF M 4-5 S,4.5143
+4,metol,moxa,soil,LF,9.82E-06,LF M 4-6 S,4.6927
+6,metol,moxa,soil,LF,1.30E-05,LF M 6-1 S,5.4047
+6,metol,moxa,soil,LF,4.59E-05,LF M 6-2 S,3.8719
+6,metol,moxa,soil,LF,2.65E-05,LF M 6-3 S,4.7515
+6,metol,moxa,soil,LF,3.54E-05,LF M 6-4 S,4.2709
+6,metol,moxa,soil,LF,1.87E-05,LF M 6-5 S,4.5916
+6,metol,moxa,soil,LF,7.92E-06,LF M 6-6 S,4.9347
+8,metol,moxa,soil,LF,1.86E-05,LF M 8-1 S,4.2879
+8,metol,moxa,soil,LF,4.30E-05,LF M 8-2 S,3.8405
+8,metol,moxa,soil,LF,1.30E-05,LF M 8-3 S,4.6632
+8,metol,moxa,soil,LF,3.69E-05,LF M 8-4 S,4.8497
+8,metol,moxa,soil,LF,2.60E-05,LF M 8-5 S,4.2957
+8,metol,moxa,soil,LF,2.66E-05,LF M 8-6 S,4.3194
+10,metol,moxa,soil,LF,8.26E-05,LF M 10-1 S,4.0952
+10,metol,moxa,soil,LF,6.76E-06,LF M 10-2 S,3.5968
+10,metol,moxa,soil,LF,4.06E-05,LF M 10-3 S,3.4627
+10,metol,moxa,soil,LF,1.80E-05,LF M 10-4 S,4.2973
+10,metol,moxa,soil,LF,2.82E-05,LF M 10-5 S,5.0904
+10,metol,moxa,soil,LF,5.45E-05,LF M 10-6 S,4.6801
+0,tdn,tdn,amphib,LF,0.930939899,LF T 0-1,2.2852
+0,tdn,tdn,amphib,LF,1.471139657,LF T 0-2,2.0488
+0,tdn,tdn,amphib,LF,0.829340824,LF T 0-3,1.764
+0,tdn,tdn,amphib,LF,0.833541754,LF T 0-4,1.52467
+0,tdn,tdn,amphib,LF,0.62294824,LF T 0-5,1.1919
+0,tdn,tdn,amphib,LF,0.78432732,LF T 0-6,2.5988
+2,tdn,tdn,amphib,LF,1.110827258,LF T 2-1,1.2971
+2,tdn,tdn,amphib,LF,0.723150994,LF T 2-2,1.7873
+2,tdn,tdn,amphib,LF,0.72766123,LF T 2-3,2.1663
+2,tdn,tdn,amphib,LF,0.680213893,LF T 2-4,2.631
+2,tdn,tdn,amphib,LF,1.064277918,LF T 2-5,1.7103
+2,tdn,tdn,amphib,LF,0.368484816,LF T 2-6,1.8285
+4,tdn,tdn,amphib,LF,0.635182857,LF T 4-1,1.5065
+4,tdn,tdn,amphib,LF,0.572624649,LF T 4-2,1.5337
+4,tdn,tdn,amphib,LF,0.504992098,LF T 4-3,1.842
+4,tdn,tdn,amphib,LF,0.46549435,LF T 4-4,1.5188
+4,tdn,tdn,amphib,LF,0.509286041,LF T 4-5,2.1926
+4,tdn,tdn,amphib,LF,0.284854462,LF T 4-6,1.6119
+6,tdn,tdn,amphib,LF,0.62355419,LF T 6-1,1.5704
+6,tdn,tdn,amphib,LF,0.938534356,LF T 6-2,1.6677
+6,tdn,tdn,amphib,LF,0.959499205,LF T 6-3,2.5715
+6,tdn,tdn,amphib,LF,0.910419362,LF T 6-4,2.3475
+6,tdn,tdn,amphib,LF,0.867963913,LF T 6-5,1.4964
+6,tdn,tdn,amphib,LF,0.734727511,LF T 6-6,2.0291
+8,tdn,tdn,amphib,LF,0.613327957,LF T 8-1,2.7226
+8,tdn,tdn,amphib,LF,0.411175415,LF T 8-2,2.5539
+8,tdn,tdn,amphib,LF,0.200725621,LF T 8-3,1.7762
+8,tdn,tdn,amphib,LF,0.284065308,LF T 8-4,1.649
+8,tdn,tdn,amphib,LF,1.106344271,LF T 8-5,1.0845
+8,tdn,tdn,amphib,LF,0.710860385,LF T 8-6,1.7104
+10,tdn,tdn,amphib,LF,0.41777656,LF T 10-1,0.9303
+10,tdn,tdn,amphib,LF,0.60216825,LF T 10-2,1.3548
+10,tdn,tdn,amphib,LF,0.560831784,LF T 10-3,1.9138
+10,tdn,tdn,amphib,LF,0.687153909,LF T 10-4,2.1421
+10,tdn,tdn,amphib,LF,0.654064226,LF T 10-5,1.5553
+10,tdn,tdn,amphib,LF,0.489223561,LF T 10-6,1.4596
+0,tdn,tdla,amphib,LF,0.030925012,LF T 0-1,2.2852
+0,tdn,tdla,amphib,LF,0.03773171,LF T 0-2,2.0488
+0,tdn,tdla,amphib,LF,0.026661741,LF T 0-3,1.764
+0,tdn,tdla,amphib,LF,0.042852147,LF T 0-4,1.52467
+0,tdn,tdla,amphib,LF,0.030868109,LF T 0-5,1.1919
+0,tdn,tdla,amphib,LF,0.026820601,LF T 0-6,2.5988
+2,tdn,tdla,amphib,LF,0.044374751,LF T 2-1,1.2971
+2,tdn,tdla,amphib,LF,0.035777188,LF T 2-2,1.7873
+2,tdn,tdla,amphib,LF,0.030967108,LF T 2-3,2.1663
+2,tdn,tdla,amphib,LF,0.022701673,LF T 2-4,2.631
+2,tdn,tdla,amphib,LF,0.03710433,LF T 2-5,1.7103
+2,tdn,tdla,amphib,LF,0.021613392,LF T 2-6,1.8285
+4,tdn,tdla,amphib,LF,0.027889841,LF T 4-1,1.5065
+4,tdn,tdla,amphib,LF,0.023804326,LF T 4-2,1.5337
+4,tdn,tdla,amphib,LF,0.018175218,LF T 4-3,1.842
+4,tdn,tdla,amphib,LF,0.024380721,LF T 4-4,1.5188
+4,tdn,tdla,amphib,LF,0.016311275,LF T 4-5,2.1926
+4,tdn,tdla,amphib,LF,0.018788567,LF T 4-6,1.6119
+6,tdn,tdla,amphib,LF,0.031996396,LF T 6-1,1.5704
+6,tdn,tdla,amphib,LF,0.041847321,LF T 6-2,1.6677
+6,tdn,tdla,amphib,LF,0.028252159,LF T 6-3,2.5715
+6,tdn,tdla,amphib,LF,0.025813791,LF T 6-4,2.3475
+6,tdn,tdla,amphib,LF,0.03370205,LF T 6-5,1.4964
+6,tdn,tdla,amphib,LF,0.025461477,LF T 6-6,2.0291
+8,tdn,tdla,amphib,LF,0.020895886,LF T 8-1,2.7226
+8,tdn,tdla,amphib,LF,0.013192474,LF T 8-2,2.5539
+8,tdn,tdla,amphib,LF,0.018943592,LF T 8-3,1.7762
+8,tdn,tdla,amphib,LF,0.014735258,LF T 8-4,1.649
+8,tdn,tdla,amphib,LF,0.035114212,LF T 8-5,1.0845
+8,tdn,tdla,amphib,LF,0.02085619,LF T 8-6,1.7104
+10,tdn,tdla,amphib,LF,0.029186033,LF T 10-1,0.9303
+10,tdn,tdla,amphib,LF,0.022615275,LF T 10-2,1.3548
+10,tdn,tdla,amphib,LF,0.022153021,LF T 10-3,1.9138
+10,tdn,tdla,amphib,LF,0.020433617,LF T 10-4,2.1421
+10,tdn,tdla,amphib,LF,0.024962956,LF T 10-5,1.5553
+10,tdn,tdla,amphib,LF,0.019790783,LF T 10-6,1.4596
+0,tdn,tdlb,amphib,LF,0.031020473,LF T 0-1,2.2852
+0,tdn,tdlb,amphib,LF,0.035801546,LF T 0-2,2.0488
+0,tdn,tdlb,amphib,LF,0.028804319,LF T 0-3,1.764
+0,tdn,tdlb,amphib,LF,0.06477127,LF T 0-4,1.52467
+0,tdn,tdlb,amphib,LF,0.029820333,LF T 0-5,1.1919
+0,tdn,tdlb,amphib,LF,0.052649353,LF T 0-6,2.5988
+2,tdn,tdlb,amphib,LF,0.034835971,LF T 2-1,1.2971
+2,tdn,tdlb,amphib,LF,0.02893873,LF T 2-2,1.7873
+2,tdn,tdlb,amphib,LF,0.064748791,LF T 2-3,2.1663
+2,tdn,tdlb,amphib,LF,0.02645829,LF T 2-4,2.631
+2,tdn,tdlb,amphib,LF,0.052672357,LF T 2-5,1.7103
+2,tdn,tdlb,amphib,LF,0.024666206,LF T 2-6,1.8285
+4,tdn,tdlb,amphib,LF,0.017652336,LF T 4-1,1.5065
+4,tdn,tdlb,amphib,LF,0.032085926,LF T 4-2,1.5337
+4,tdn,tdlb,amphib,LF,0.006728646,LF T 4-3,1.842
+4,tdn,tdlb,amphib,LF,0.011207839,LF T 4-4,1.5188
+4,tdn,tdlb,amphib,LF,0.020254526,LF T 4-5,2.1926
+4,tdn,tdlb,amphib,LF,0.012125832,LF T 4-6,1.6119
+6,tdn,tdlb,amphib,LF,0.018090742,LF T 6-1,1.5704
+6,tdn,tdlb,amphib,LF,0.056814923,LF T 6-2,1.6677
+6,tdn,tdlb,amphib,LF,0.032434833,LF T 6-3,2.5715
+6,tdn,tdlb,amphib,LF,0.034345963,LF T 6-4,2.3475
+6,tdn,tdlb,amphib,LF,0.047158056,LF T 6-5,1.4964
+6,tdn,tdlb,amphib,LF,0.02875954,LF T 6-6,2.0291
+8,tdn,tdlb,amphib,LF,0.034899069,LF T 8-1,2.7226
+8,tdn,tdlb,amphib,LF,0.015955837,LF T 8-2,2.5539
+8,tdn,tdlb,amphib,LF,0.01851288,LF T 8-3,1.7762
+8,tdn,tdlb,amphib,LF,0.01280366,LF T 8-4,1.649
+8,tdn,tdlb,amphib,LF,0.018338372,LF T 8-5,1.0845
+8,tdn,tdlb,amphib,LF,0.014965762,LF T 8-6,1.7104
+10,tdn,tdlb,amphib,LF,4.34E-03,LF T 10-1,0.9303
+10,tdn,tdlb,amphib,LF,0.008239235,LF T 10-2,1.3548
+10,tdn,tdlb,amphib,LF,0.006417204,LF T 10-3,1.9138
+10,tdn,tdlb,amphib,LF,0.018902715,LF T 10-4,2.1421
+10,tdn,tdlb,amphib,LF,0.018992786,LF T 10-5,1.5553
+10,tdn,tdlb,amphib,LF,0.006590532,LF T 10-6,1.4596
+0,tdn,tdn,soil,LF,4.130434828,LF T 0-1 S1,5.458
+0,tdn,tdn,soil,LF,2.985716329,LF T 0-2 S1,6.1906
+0,tdn,tdn,soil,LF,1.642733275,LF T 0-3 S1,4.3951
+0,tdn,tdn,soil,LF,2.414613283,LF T 0-4 S1,6.7819
+0,tdn,tdn,soil,LF,5.771808013,LF T 0-5 S1,5.4237
+0,tdn,tdn,soil,LF,1.937626035,LF T 0-6 S1,3.5567
+2,tdn,tdn,soil,LF,2.271520449,LF T 2-1 S1,5.9407
+2,tdn,tdn,soil,LF,4.918286446,LF T 2-2 S1,6.1285
+2,tdn,tdn,soil,LF,5.681194498,LF T 2-3 S1,5.9536
+2,tdn,tdn,soil,LF,3.706855988,LF T 2-4 S1,6.2289
+2,tdn,tdn,soil,LF,7.040172007,LF T 2-5 S1,5.9158
+2,tdn,tdn,soil,LF,5.554855056,LF T 2-6 S1,4.7454
+4,tdn,tdn,soil,LF,2.032910322,LF T 4-1 S1,4.9233
+4,tdn,tdn,soil,LF,4.664332334,LF T 4-2 S1,5.3202
+4,tdn,tdn,soil,LF,2.734473466,LF T 4-3 S1,4.7739
+4,tdn,tdn,soil,LF,2.622252408,LF T 4-4 S1,7.1452
+4,tdn,tdn,soil,LF,4.132548212,LF T 4-5 S1,6.5241
+4,tdn,tdn,soil,LF,3.806634854,LF T 4-6 S1,5.3294
+6,tdn,tdn,soil,LF,4.202597231,LF T 6-1 S1,4.5371
+6,tdn,tdn,soil,LF,4.502512043,LF T 6-2 S1,4.6491
+6,tdn,tdn,soil,LF,2.790064544,LF T 6-3 S1,5.8005
+6,tdn,tdn,soil,LF,3.966455208,LF T 6-4 S1,5.1028
+6,tdn,tdn,soil,LF,2.731170077,LF T 6-5 S1,4.7869
+6,tdn,tdn,soil,LF,3.617116849,LF T 6-6 S1,4.7984
+8,tdn,tdn,soil,LF,3.153568431,LF T 8-1 S1,4.5081
+8,tdn,tdn,soil,LF,4.090939835,LF T 8-2 S1,5.1817
+8,tdn,tdn,soil,LF,4.910453014,LF T 8-3 S1,3.8091
+8,tdn,tdn,soil,LF,3.7801442,LF T 8-4 S1,5.7578
+8,tdn,tdn,soil,LF,4.037190801,LF T 8-5 S1,4.5234
+8,tdn,tdn,soil,LF,2.929395097,LF T 8-6 S1,5.4905
+10,tdn,tdn,soil,LF,3.532352552,LF T 10-1 S1,4.2801
+10,tdn,tdn,soil,LF,2.533600442,LF T 10-2 S1,5.7299
+10,tdn,tdn,soil,LF,2.598936796,LF T 10-3 S1,6.3424
+10,tdn,tdn,soil,LF,2.560020486,LF T 10-4 S1,7.2481
+10,tdn,tdn,soil,LF,3.946266825,LF T 10-5 S1,5.3277
+10,tdn,tdn,soil,LF,2.772104224,LF T 10-6 S1,5.4112
+0,tdn,tdla,soil,LF,0.023383019,LF T 0-1 S1,5.458
+0,tdn,tdla,soil,LF,0.034459617,LF T 0-2 S1,6.1906
+0,tdn,tdla,soil,LF,0.018938602,LF T 0-3 S1,4.3951
+0,tdn,tdla,soil,LF,0.015594197,LF T 0-4 S1,6.7819
+0,tdn,tdla,soil,LF,0.012549234,LF T 0-5 S1,5.4237
+0,tdn,tdla,soil,LF,0.025096849,LF T 0-6 S1,3.5567
+2,tdn,tdla,soil,LF,0.022855057,LF T 2-1 S1,5.9407
+2,tdn,tdla,soil,LF,0.035275055,LF T 2-2 S1,6.1285
+2,tdn,tdla,soil,LF,0.034032869,LF T 2-3 S1,5.9536
+2,tdn,tdla,soil,LF,0.035527016,LF T 2-4 S1,6.2289
+2,tdn,tdla,soil,LF,0.020038117,LF T 2-5 S1,5.9158
+2,tdn,tdla,soil,LF,0.03323951,LF T 2-6 S1,4.7454
+4,tdn,tdla,soil,LF,0.024216646,LF T 4-1 S1,4.9233
+4,tdn,tdla,soil,LF,0.025176624,LF T 4-2 S1,5.3202
+4,tdn,tdla,soil,LF,0.017406321,LF T 4-3 S1,4.7739
+4,tdn,tdla,soil,LF,0.02040865,LF T 4-4 S1,7.1452
+4,tdn,tdla,soil,LF,0.021092278,LF T 4-5 S1,6.5241
+4,tdn,tdla,soil,LF,0.016782978,LF T 4-6 S1,5.3294
+6,tdn,tdla,soil,LF,0.033211492,LF T 6-1 S1,4.5371
+6,tdn,tdla,soil,LF,0.038990929,LF T 6-2 S1,4.6491
+6,tdn,tdla,soil,LF,0.031608356,LF T 6-3 S1,5.8005
+6,tdn,tdla,soil,LF,0.05206965,LF T 6-4 S1,5.1028
+6,tdn,tdla,soil,LF,0.031737082,LF T 6-5 S1,4.7869
+6,tdn,tdla,soil,LF,0.034116474,LF T 6-6 S1,4.7984
+8,tdn,tdla,soil,LF,0.037146451,LF T 8-1 S1,4.5081
+8,tdn,tdla,soil,LF,0.019451827,LF T 8-2 S1,5.1817
+8,tdn,tdla,soil,LF,0.015873268,LF T 8-3 S1,3.8091
+8,tdn,tdla,soil,LF,0.011619412,LF T 8-4 S1,5.7578
+8,tdn,tdla,soil,LF,0.015409514,LF T 8-5 S1,4.5234
+8,tdn,tdla,soil,LF,0.022520862,LF T 8-6 S1,5.4905
+10,tdn,tdla,soil,LF,0.040201602,LF T 10-1 S1,4.2801
+10,tdn,tdla,soil,LF,0.016608673,LF T 10-2 S1,5.7299
+10,tdn,tdla,soil,LF,0.025642399,LF T 10-3 S1,6.3424
+10,tdn,tdla,soil,LF,0.032503445,LF T 10-4 S1,7.2481
+10,tdn,tdla,soil,LF,0.017486227,LF T 10-5 S1,5.3277
+10,tdn,tdla,soil,LF,0.010579041,LF T 10-6 S1,5.4112
+0,tdn,tdlb,soil,LF,0.037591563,LF T 0-1 S1,5.458
+0,tdn,tdlb,soil,LF,0.051386041,LF T 0-2 S1,6.1906
+0,tdn,tdlb,soil,LF,0.020572407,LF T 0-3 S1,4.3951
+0,tdn,tdlb,soil,LF,0.023961172,LF T 0-4 S1,6.7819
+0,tdn,tdlb,soil,LF,0.021567223,LF T 0-5 S1,5.4237
+0,tdn,tdlb,soil,LF,0.02397682,LF T 0-6 S1,3.5567
+2,tdn,tdlb,soil,LF,0.03139891,LF T 2-1 S1,5.9407
+2,tdn,tdlb,soil,LF,0.06361665,LF T 2-2 S1,6.1285
+2,tdn,tdlb,soil,LF,0.048784438,LF T 2-3 S1,5.9536
+2,tdn,tdlb,soil,LF,0.046872854,LF T 2-4 S1,6.2289
+2,tdn,tdlb,soil,LF,0.028444341,LF T 2-5 S1,5.9158
+2,tdn,tdlb,soil,LF,0.052058563,LF T 2-6 S1,4.7454
+4,tdn,tdlb,soil,LF,0.02779243,LF T 4-1 S1,4.9233
+4,tdn,tdlb,soil,LF,0.037478618,LF T 4-2 S1,5.3202
+4,tdn,tdlb,soil,LF,0.020439403,LF T 4-3 S1,4.7739
+4,tdn,tdlb,soil,LF,0.031670542,LF T 4-4 S1,7.1452
+4,tdn,tdlb,soil,LF,0.02876584,LF T 4-5 S1,6.5241
+4,tdn,tdlb,soil,LF,0.01787763,LF T 4-6 S1,5.3294
+6,tdn,tdlb,soil,LF,0.049122052,LF T 6-1 S1,4.5371
+6,tdn,tdlb,soil,LF,0.060758055,LF T 6-2 S1,4.6491
+6,tdn,tdlb,soil,LF,0.045419868,LF T 6-3 S1,5.8005
+6,tdn,tdlb,soil,LF,0.080290575,LF T 6-4 S1,5.1028
+6,tdn,tdlb,soil,LF,0.054031457,LF T 6-5 S1,4.7869
+6,tdn,tdlb,soil,LF,0.05309626,LF T 6-6 S1,4.7984
+8,tdn,tdlb,soil,LF,0.057258053,LF T 8-1 S1,4.5081
+8,tdn,tdlb,soil,LF,0.028137927,LF T 8-2 S1,5.1817
+8,tdn,tdlb,soil,LF,0.016198968,LF T 8-3 S1,3.8091
+8,tdn,tdlb,soil,LF,0.014838053,LF T 8-4 S1,5.7578
+8,tdn,tdlb,soil,LF,0.016778958,LF T 8-5 S1,4.5234
+8,tdn,tdlb,soil,LF,0.030062794,LF T 8-6 S1,5.4905
+10,tdn,tdlb,soil,LF,0.063309172,LF T 10-1 S1,4.2801
+10,tdn,tdlb,soil,LF,0.023023327,LF T 10-2 S1,5.7299
+10,tdn,tdlb,soil,LF,0.034500067,LF T 10-3 S1,6.3424
+10,tdn,tdlb,soil,LF,0.055564428,LF T 10-4 S1,7.2481
+10,tdn,tdlb,soil,LF,0.023614695,LF T 10-5 S1,5.3277
+10,tdn,tdlb,soil,LF,0.0073477,LF T 10-6 S1,5.4112
+0,imid,imid,amphib,LF,0.73148169,LF I 0-1,1.2582
+0,imid,imid,amphib,LF,1.058790605,LF I 0-2,1.8819
+0,imid,imid,amphib,LF,0.729321829,LF I 0-3,1.0559
+0,imid,imid,amphib,LF,0.813666458,LF I 0-4,1.8364
+0,imid,imid,amphib,LF,0.607467098,LF I 0-5,1.0553
+0,imid,imid,amphib,LF,0.588522987,LF I 0-6,1.2669
+2,imid,imid,amphib,LF,0.378511527,LF I 2-1,1.3821
+2,imid,imid,amphib,LF,0.515549221,LF I 2-2,2.0607
+2,imid,imid,amphib,LF,0.247500973,LF I 2-3,2.613
+2,imid,imid,amphib,LF,0.706206114,LF I 2-4,1.1331
+2,imid,imid,amphib,LF,0.245622417,LF I 2-5,1.7318
+2,imid,imid,amphib,LF,0.393655166,LF I 2-6,1.3617
+4,imid,imid,amphib,LF,0.326749679,LF I 4-1,1.4804
+4,imid,imid,amphib,LF,0.356860152,LF I 4-2,2.2314
+4,imid,imid,amphib,LF,1.073747665,LF I 4-3,1.9358
+4,imid,imid,amphib,LF,1.269010141,LF I 4-4,1.5865
+4,imid,imid,amphib,LF,0.377722198,LF I 4-5,1.262
+4,imid,imid,amphib,LF,0.55755347,LF I 4-6,1.6033
+6,imid,imid,amphib,LF,0.10171172,LF I 6-1,2.912
+6,imid,imid,amphib,LF,0.65112938,LF I 6-2,1.7892
+6,imid,imid,amphib,LF,0.476857989,LF I 6-3,3.7094
+6,imid,imid,amphib,LF,0.325613627,LF I 6-4,3.1881
+6,imid,imid,amphib,LF,0.246360764,LF I 6-5,1.6021
+6,imid,imid,amphib,LF,1.581594004,LF I 6-6,1.8193
+8,imid,imid,amphib,LF,0.692484167,LF I 8-1,2.0296
+8,imid,imid,amphib,LF,0.424924938,LF I 8-2,1.7363
+8,imid,imid,amphib,LF,0.5739569,LF I 8-3,2.1186
+8,imid,imid,amphib,LF,0.204579215,LF I 8-4,1.6878
+8,imid,imid,amphib,LF,0.484179759,LF I 8-5,1.0083
+8,imid,imid,amphib,LF,0.405938147,LF I 8-6,1.8333
+10,imid,imid,amphib,LF,0.405218407,LF I 10-1,1.5084
+10,imid,imid,amphib,LF,0.601787596,LF I 10-2,1.5497
+10,imid,imid,amphib,LF,0.501054316,LF I 10-3,1.8833
+10,imid,imid,amphib,LF,0.630482061,LF I 10-4,1.4135
+10,imid,imid,amphib,LF,0.338901353,LF I 10-5,2.1209
+10,imid,imid,amphib,LF,0.2421998,LF I 10-6,2.1168
+0,imid,imid,soil,LF,0.796630992,LF I 0-1 S1,3.718
+0,imid,imid,soil,LF,0.73091969,LF I 0-2 S1,4.2135
+0,imid,imid,soil,LF,1.951106685,LF I 0-3 S1,3.9598
+0,imid,imid,soil,LF,1.440136114,LF I 0-4 S1,5.3374
+0,imid,imid,soil,LF,1.070180372,LF I 0-5 S1,3.1012
+0,imid,imid,soil,LF,0.872011851,LF I 0-6 S1,4.2252
+2,imid,imid,soil,LF,2.471016152,LF I 2-1 S1,4.1815
+2,imid,imid,soil,LF,1.977314477,LF I 2-2 S1,5.2594
+2,imid,imid,soil,LF,1.728533516,LF I 2-3 S1,4.9767
+2,imid,imid,soil,LF,0.687118856,LF I 2-4 S1,4.6985
+2,imid,imid,soil,LF,0.578877665,LF I 2-5 S1,4.2494
+2,imid,imid,soil,LF,1.906194111,LF I 2-6 S1,4.5537
+4,imid,imid,soil,LF,0.208026343,LF I 4-1 S1,3.4961
+4,imid,imid,soil,LF,1.64100778,LF I 4-2 S1,5.6656
+4,imid,imid,soil,LF,0.555449529,LF I 4-3 S1,4.6614
+4,imid,imid,soil,LF,0.608288865,LF I 4-4 S1,5.7555
+4,imid,imid,soil,LF,1.606632646,LF I 4-5 S1,3.9824
+4,imid,imid,soil,LF,0.201720786,LF I 4-6 S1,5.0253
+6,imid,imid,soil,LF,0.879358614,LF I 6-1 S1,3.7216
+6,imid,imid,soil,LF,0.655219548,LF I 6-2 S1,5.18
+6,imid,imid,soil,LF,0.207025856,LF I 6-3 S1,4.11
+6,imid,imid,soil,LF,0.871009475,LF I 6-4 S1,3.7049
+6,imid,imid,soil,LF,0.839527548,LF I 6-5 S1,3.7962
+6,imid,imid,soil,LF,0.631287079,LF I 6-6 S1,4.1147
+8,imid,imid,soil,LF,1.958668613,LF I 8-1 S1,3.8046
+8,imid,imid,soil,LF,0.934646981,LF I 8-2 S1,5.3611
+8,imid,imid,soil,LF,0.846438989,LF I 8-3 S1,4.1427
+8,imid,imid,soil,LF,0.321096879,LF I 8-4 S1,5.3967
+8,imid,imid,soil,LF,0.689399455,LF I 8-5 S1,4.6913
+8,imid,imid,soil,LF,0.566227325,LF I 8-6 S1,5.4561
+10,imid,imid,soil,LF,0.945309838,LF I 10-1 S1,4.6267
+10,imid,imid,soil,LF,1.292096809,LF I 10-2 S1,3.9445
+10,imid,imid,soil,LF,0.660569341,LF I 10-3 S1,4.3512
+10,imid,imid,soil,LF,0.60830659,LF I 10-4 S1,3.5198
+10,imid,imid,soil,LF,0.209484252,LF I 10-5 S1,6.2432
+10,imid,imid,soil,LF,1.037851792,LF I 10-6 S1,5.2543
+0,atrazine,atrazine,amphib,BA,5.570048564,BA A 0-1,0.9129
+0,atrazine,atrazine,amphib,BA,17.59483119,BA A 0-2,0.7719
+0,atrazine,atrazine,amphib,BA,3.074205015,BA A 0-3,1.07
+0,atrazine,atrazine,amphib,BA,15.89886245,BA A 0-4,1.5079
+0,atrazine,atrazine,amphib,BA,9.78279894,BA A 0-5,0.9096
+2,atrazine,atrazine,amphib,BA,10.23753505,BA A 2-1,1.1548
+2,atrazine,atrazine,amphib,BA,23.52791046,BA A 2-2,0.9611
+2,atrazine,atrazine,amphib,BA,9.934344481,BA A 2-3,1.0618
+2,atrazine,atrazine,amphib,BA,16.28574707,BA A 2-4,0.9384
+2,atrazine,atrazine,amphib,BA,13.26608122,BA A 2-5,1.1748
+4,atrazine,atrazine,amphib,BA,11.91207694,BA A 4-1,1.1869
+4,atrazine,atrazine,amphib,BA,8.377167028,BA A 4-2,0.9488
+4,atrazine,atrazine,amphib,BA,6.954592123,BA A 4-3,1.1718
+4,atrazine,atrazine,amphib,BA,16.17456476,BA A 4-4,1.2243
+4,atrazine,atrazine,amphib,BA,11.13571587,BA A 4-5,1.1315
+6,atrazine,atrazine,amphib,BA,2.757883195,BA A 6-1,1.1552
+6,atrazine,atrazine,amphib,BA,12.22026175,BA A 6-2,1.2815
+6,atrazine,atrazine,amphib,BA,11.20688617,BA A 6-3,1.0089
+6,atrazine,atrazine,amphib,BA,6.405223668,BA A 6-4,1.2956
+6,atrazine,atrazine,amphib,BA,3.694084956,BA A 6-5,1.0139
+8,atrazine,atrazine,amphib,BA,2.159341322,BA A 8-1,1.0626
+8,atrazine,atrazine,amphib,BA,4.104816901,BA A 8-2,1.132
+8,atrazine,atrazine,amphib,BA,3.707013001,BA A 8-3,0.9895
+8,atrazine,atrazine,amphib,BA,20.84894976,BA A 8-4,1.1003
+8,atrazine,atrazine,amphib,BA,2.737473998,BA A 8-5,0.9161
+10,atrazine,atrazine,amphib,BA,11.79072742,BA A 10-1,1.2022
+10,atrazine,atrazine,amphib,BA,2.638235074,BA A 10-2,1.13031
+10,atrazine,atrazine,amphib,BA,2.416921895,BA A 10-3,1.0534
+10,atrazine,atrazine,amphib,BA,3.137873235,BA A 10-4,1.0954
+10,atrazine,atrazine,amphib,BA,1.920017022,BA A 10-5,1.1421
+0,atrazine,dia,amphib,BA,7.766524884,BA A 0-1,0.9129
+0,atrazine,dia,amphib,BA,12.45131717,BA A 0-2,0.7719
+0,atrazine,dia,amphib,BA,5.320102588,BA A 0-3,1.07
+0,atrazine,dia,amphib,BA,5.715044717,BA A 0-4,1.5079
+0,atrazine,dia,amphib,BA,5.869261824,BA A 0-5,0.9096
+2,atrazine,dia,amphib,BA,10.58945333,BA A 2-1,1.1548
+2,atrazine,dia,amphib,BA,7.935939437,BA A 2-2,0.9611
+2,atrazine,dia,amphib,BA,7.112318994,BA A 2-3,1.0618
+2,atrazine,dia,amphib,BA,7.814099891,BA A 2-4,0.9384
+2,atrazine,dia,amphib,BA,12.53238825,BA A 2-5,1.1748
+4,atrazine,dia,amphib,BA,5.565718089,BA A 4-1,1.1869
+4,atrazine,dia,amphib,BA,8.712137195,BA A 4-2,0.9488
+4,atrazine,dia,amphib,BA,5.748126854,BA A 4-3,1.1718
+4,atrazine,dia,amphib,BA,9.890077584,BA A 4-4,1.2243
+4,atrazine,dia,amphib,BA,6.780861277,BA A 4-5,1.1315
+6,atrazine,dia,amphib,BA,3.334171705,BA A 6-1,1.1552
+6,atrazine,dia,amphib,BA,9.666234085,BA A 6-2,1.2815
+6,atrazine,dia,amphib,BA,6.720714318,BA A 6-3,1.0089
+6,atrazine,dia,amphib,BA,7.337542308,BA A 6-4,1.2956
+6,atrazine,dia,amphib,BA,4.857293999,BA A 6-5,1.0139
+8,atrazine,dia,amphib,BA,0.640285071,BA A 8-1,1.0626
+8,atrazine,dia,amphib,BA,1.10838183,BA A 8-2,1.132
+8,atrazine,dia,amphib,BA,5.145217209,BA A 8-3,0.9895
+8,atrazine,dia,amphib,BA,11.2826734,BA A 8-4,1.1003
+8,atrazine,dia,amphib,BA,1.138646826,BA A 8-5,0.9161
+10,atrazine,dia,amphib,BA,8.731598018,BA A 10-1,1.2022
+10,atrazine,dia,amphib,BA,2.25110159,BA A 10-2,1.13031
+10,atrazine,dia,amphib,BA,1.579451999,BA A 10-3,1.0534
+10,atrazine,dia,amphib,BA,3.129736515,BA A 10-4,1.0954
+10,atrazine,dia,amphib,BA,3.712971564,BA A 10-5,1.1421
+0,atrazine,dea,amphib,BA,3.058613146,BA A 0-1,0.9129
+0,atrazine,dea,amphib,BA,3.988922687,BA A 0-2,0.7719
+0,atrazine,dea,amphib,BA,2.3455216,BA A 0-3,1.07
+0,atrazine,dea,amphib,BA,2.269933443,BA A 0-4,1.5079
+0,atrazine,dea,amphib,BA,2.250226339,BA A 0-5,0.9096
+2,atrazine,dea,amphib,BA,3.784603495,BA A 2-1,1.1548
+2,atrazine,dea,amphib,BA,4.057496035,BA A 2-2,0.9611
+2,atrazine,dea,amphib,BA,2.771638269,BA A 2-3,1.0618
+2,atrazine,dea,amphib,BA,3.182355136,BA A 2-4,0.9384
+2,atrazine,dea,amphib,BA,4.164263322,BA A 2-5,1.1748
+4,atrazine,dea,amphib,BA,2.862619247,BA A 4-1,1.1869
+4,atrazine,dea,amphib,BA,3.263085055,BA A 4-2,0.9488
+4,atrazine,dea,amphib,BA,1.80792527,BA A 4-3,1.1718
+4,atrazine,dea,amphib,BA,3.861982528,BA A 4-4,1.2243
+4,atrazine,dea,amphib,BA,2.537392966,BA A 4-5,1.1315
+6,atrazine,dea,amphib,BA,1.056498768,BA A 6-1,1.1552
+6,atrazine,dea,amphib,BA,3.504700546,BA A 6-2,1.2815
+6,atrazine,dea,amphib,BA,2.146118293,BA A 6-3,1.0089
+6,atrazine,dea,amphib,BA,2.449565647,BA A 6-4,1.2956
+6,atrazine,dea,amphib,BA,1.401115269,BA A 6-5,1.0139
+8,atrazine,dea,amphib,BA,0.373247165,BA A 8-1,1.0626
+8,atrazine,dea,amphib,BA,0.513509916,BA A 8-2,1.132
+8,atrazine,dea,amphib,BA,1.950121281,BA A 8-3,0.9895
+8,atrazine,dea,amphib,BA,5.842955238,BA A 8-4,1.1003
+8,atrazine,dea,amphib,BA,0.422232929,BA A 8-5,0.9161
+10,atrazine,dea,amphib,BA,3.070027167,BA A 10-1,1.2022
+10,atrazine,dea,amphib,BA,0.697984876,BA A 10-2,1.13031
+10,atrazine,dea,amphib,BA,0.572242294,BA A 10-3,1.0534
+10,atrazine,dea,amphib,BA,1.122044618,BA A 10-4,1.0954
+10,atrazine,dea,amphib,BA,1.357626726,BA A 10-5,1.1421
+0,atrazine,atrazine,soil,BA,9.879328906,BA A 0-1 S1,3.9563
+0,atrazine,atrazine,soil,BA,12.45547599,BA A 0-2 S1,5.3406
+0,atrazine,atrazine,soil,BA,15.57844561,BA A 0-3 S1,3.5139
+0,atrazine,atrazine,soil,BA,15.1520148,BA A 0-4 S1,3.9402
+0,atrazine,atrazine,soil,BA,14.6984202,BA A 0-5 S1,3.8194
+2,atrazine,atrazine,soil,BA,12.38453564,BA A 2-1 S1,3.0206
+2,atrazine,atrazine,soil,BA,14.63994466,BA A 2-2 S1,4.4999
+2,atrazine,atrazine,soil,BA,13.03487815,BA A 2-3 S1,4.2538
+2,atrazine,atrazine,soil,BA,14.11139006,BA A 2-4 S1,4.6439
+2,atrazine,atrazine,soil,BA,15.33431537,BA A 2-5 S1,4.5928
+4,atrazine,atrazine,soil,BA,15.56081571,BA A 4-1 S1,3.8826
+4,atrazine,atrazine,soil,BA,11.04392922,BA A 4-2 S1,5.3966
+4,atrazine,atrazine,soil,BA,15.21711265,BA A 4-3 S1,3.6572
+4,atrazine,atrazine,soil,BA,15.6599606,BA A 4-4 S1,4.3613
+4,atrazine,atrazine,soil,BA,17.6440279,BA A 4-5 S1,2.7761
+6,atrazine,atrazine,soil,BA,13.38816703,BA A 6-1 S1,3.49
+6,atrazine,atrazine,soil,BA,11.681079,BA A 6-2 S1,4.0178
+6,atrazine,atrazine,soil,BA,15.18962201,BA A 6-3 S1,4.1866
+6,atrazine,atrazine,soil,BA,9.038038715,BA A 6-4 S1,5.8584
+6,atrazine,atrazine,soil,BA,10.67586793,BA A 6-5 S1,4.4847
+8,atrazine,atrazine,soil,BA,15.04668736,BA A 8-1 S1,2.7904
+8,atrazine,atrazine,soil,BA,14.11458967,BA A 8-2 S1,4.8135
+8,atrazine,atrazine,soil,BA,9.505611335,BA A 8-3 S1,3.83
+8,atrazine,atrazine,soil,BA,11.64743641,BA A 8-4 S1,3.5821
+8,atrazine,atrazine,soil,BA,10.16095762,BA A 8-5 S1,3.6664
+10,atrazine,atrazine,soil,BA,20.47418687,BA A 10-1 S1,4.0707
+10,atrazine,atrazine,soil,BA,9.68353939,BA A 10-2 S1,4.7201
+10,atrazine,atrazine,soil,BA,14.40605967,BA A 10-3 S1,4.7566
+10,atrazine,atrazine,soil,BA,18.9224483,BA A 10-4 S1,3.2987
+10,atrazine,atrazine,soil,BA,11.49634553,BA A 10-5 S1,3.529
+0,atrazine,dia,soil,BA,0.044381306,BA A 0-1 S1,3.9563
+0,atrazine,dia,soil,BA,0.060643282,BA A 0-2 S1,5.3406
+0,atrazine,dia,soil,BA,0.055442167,BA A 0-3 S1,3.5139
+0,atrazine,dia,soil,BA,0.068566609,BA A 0-4 S1,3.9402
+0,atrazine,dia,soil,BA,0.04730255,BA A 0-5 S1,3.8194
+2,atrazine,dia,soil,BA,0.05872073,BA A 2-1 S1,3.0206
+2,atrazine,dia,soil,BA,0.042419359,BA A 2-2 S1,4.4999
+2,atrazine,dia,soil,BA,0.045251185,BA A 2-3 S1,4.2538
+2,atrazine,dia,soil,BA,0.04174154,BA A 2-4 S1,4.6439
+2,atrazine,dia,soil,BA,0.046523102,BA A 2-5 S1,4.5928
+4,atrazine,dia,soil,BA,0.058812933,BA A 4-1 S1,3.8826
+4,atrazine,dia,soil,BA,0.057944766,BA A 4-2 S1,5.3966
+4,atrazine,dia,soil,BA,0.05102724,BA A 4-3 S1,3.6572
+4,atrazine,dia,soil,BA,0.048746429,BA A 4-4 S1,4.3613
+4,atrazine,dia,soil,BA,0.071914487,BA A 4-5 S1,2.7761
+6,atrazine,dia,soil,BA,0.056198054,BA A 6-1 S1,3.49
+6,atrazine,dia,soil,BA,0.060598482,BA A 6-2 S1,4.0178
+6,atrazine,dia,soil,BA,0.047587455,BA A 6-3 S1,4.1866
+6,atrazine,dia,soil,BA,0.039031234,BA A 6-4 S1,5.8584
+6,atrazine,dia,soil,BA,0.051559544,BA A 6-5 S1,4.4847
+8,atrazine,dia,soil,BA,0.062906647,BA A 8-1 S1,2.7904
+8,atrazine,dia,soil,BA,0.043020294,BA A 8-2 S1,4.8135
+8,atrazine,dia,soil,BA,0.048917098,BA A 8-3 S1,3.83
+8,atrazine,dia,soil,BA,0.04809055,BA A 8-4 S1,3.5821
+8,atrazine,dia,soil,BA,0.047142461,BA A 8-5 S1,3.6664
+10,atrazine,dia,soil,BA,0.053068072,BA A 10-1 S1,4.0707
+10,atrazine,dia,soil,BA,0.040746047,BA A 10-2 S1,4.7201
+10,atrazine,dia,soil,BA,0.039906946,BA A 10-3 S1,4.7566
+10,atrazine,dia,soil,BA,0.057510053,BA A 10-4 S1,3.2987
+10,atrazine,dia,soil,BA,0.052849149,BA A 10-5 S1,3.529
+0,atrazine,dea,soil,BA,0.062890109,BA A 0-1 S1,3.9563
+0,atrazine,dea,soil,BA,0.06808645,BA A 0-2 S1,5.3406
+0,atrazine,dea,soil,BA,0.076462062,BA A 0-3 S1,3.5139
+0,atrazine,dea,soil,BA,0.094030727,BA A 0-4 S1,3.9402
+0,atrazine,dea,soil,BA,0.068897342,BA A 0-5 S1,3.8194
+2,atrazine,dea,soil,BA,0.0747555,BA A 2-1 S1,3.0206
+2,atrazine,dea,soil,BA,0.065794603,BA A 2-2 S1,4.4999
+2,atrazine,dea,soil,BA,0.069682536,BA A 2-3 S1,4.2538
+2,atrazine,dea,soil,BA,0.062276633,BA A 2-4 S1,4.6439
+2,atrazine,dea,soil,BA,0.064010213,BA A 2-5 S1,4.5928
+4,atrazine,dea,soil,BA,0.081478407,BA A 4-1 S1,3.8826
+4,atrazine,dea,soil,BA,0.064690003,BA A 4-2 S1,5.3966
+4,atrazine,dea,soil,BA,0.079984333,BA A 4-3 S1,3.6572
+4,atrazine,dea,soil,BA,0.067363624,BA A 4-4 S1,4.3613
+4,atrazine,dea,soil,BA,0.097418212,BA A 4-5 S1,2.7761
+6,atrazine,dea,soil,BA,0.074555448,BA A 6-1 S1,3.49
+6,atrazine,dea,soil,BA,0.068754387,BA A 6-2 S1,4.0178
+6,atrazine,dea,soil,BA,0.067014992,BA A 6-3 S1,4.1866
+6,atrazine,dea,soil,BA,0.051552006,BA A 6-4 S1,5.8584
+6,atrazine,dea,soil,BA,0.064942611,BA A 6-5 S1,4.4847
+8,atrazine,dea,soil,BA,0.087672918,BA A 8-1 S1,2.7904
+8,atrazine,dea,soil,BA,0.072403291,BA A 8-2 S1,4.8135
+8,atrazine,dea,soil,BA,0.071631802,BA A 8-3 S1,3.83
+8,atrazine,dea,soil,BA,0.06940153,BA A 8-4 S1,3.5821
+8,atrazine,dea,soil,BA,0.065483807,BA A 8-5 S1,3.6664
+10,atrazine,dea,soil,BA,0.090153553,BA A 10-1 S1,4.0707
+10,atrazine,dea,soil,BA,0.058317407,BA A 10-2 S1,4.7201
+10,atrazine,dea,soil,BA,0.061020193,BA A 10-3 S1,4.7566
+10,atrazine,dea,soil,BA,0.089385924,BA A 10-4 S1,3.2987
+10,atrazine,dea,soil,BA,0.07719467,BA A 10-5 S1,3.529
+0,chloro,chloromet,amphib,BA,0.073700244,BA Cl 0-1,0.9583
+0,chloro,chloromet,amphib,BA,0.109722213,BA Cl 0-2,0.8457
+0,chloro,chloromet,amphib,BA,0.078574387,BA Cl 0-3,0.8989
+0,chloro,chloromet,amphib,BA,0.079830754,BA Cl 0-4,0.8843
+0,chloro,chloromet,amphib,BA,0.099619209,BA Cl 0-5,0.7097
+2,chloro,chloromet,amphib,BA,0.072874896,BA Cl 2-1,1.0144
+2,chloro,chloromet,amphib,BA,0.086024643,BA Cl 2-2,0.821
+2,chloro,chloromet,amphib,BA,0.092374798,BA Cl 2-3,0.7943
+2,chloro,chloromet,amphib,BA,0.064846902,BA Cl 2-4,1.0888
+2,chloro,chloromet,amphib,BA,0.087298087,BA Cl 2-5,0.8102
+4,chloro,chloromet,amphib,BA,0.085652238,BA Cl 4-1,0.8993
+4,chloro,chloromet,amphib,BA,0.081921027,BA Cl 4-2,0.8614
+4,chloro,chloromet,amphib,BA,0.103593147,BA Cl 4-3,0.6821
+4,chloro,chloromet,amphib,BA,0.093831051,BA Cl 4-4,0.7524
+4,chloro,chloromet,amphib,BA,0.066360019,BA Cl 4-5,1.098
+6,chloro,chloromet,amphib,BA,0.07063984,BA Cl 6-1,0.9994
+6,chloro,chloromet,amphib,BA,0.07145105,BA Cl 6-2,0.9878
+6,chloro,chloromet,amphib,BA,0.089348773,BA Cl 6-3,0.9357
+6,chloro,chloromet,amphib,BA,0.079091411,BA Cl 6-4,0.8934
+6,chloro,chloromet,amphib,BA,0.143725039,BA Cl 6-5,1.0993
+8,chloro,chloromet,amphib,BA,0.070210759,BA Cl 8-1,1.0066
+8,chloro,chloromet,amphib,BA,0.073540839,BA Cl 8-2,0.9629
+8,chloro,chloromet,amphib,BA,0.050197187,BA Cl 8-3,1.4069
+8,chloro,chloromet,amphib,BA,0.088529318,BA Cl 8-4,1.1711
+8,chloro,chloromet,amphib,BA,0.075353305,BA Cl 8-5,0.9393
+10,chloro,chloromet,amphib,BA,0.053909403,BA Cl 10-1,1.3103
+10,chloro,chloromet,amphib,BA,0.06896551,BA Cl 10-2,1.0264
+10,chloro,chloromet,amphib,BA,0.063794163,BA Cl 10-3,1.1206
+10,chloro,chloromet,amphib,BA,0.07005052,BA Cl 10-4,1.0174
+10,chloro,chloromet,amphib,BA,0.057094309,BA Cl 10-5,1.2458
+0,chloro,chloro,soil,BA,57.75651281,BA Cl 0-1 S1,3.4279
+0,chloro,chloro,soil,BA,102.3188471,BA Cl 0-2 S1,3.1749
+0,chloro,chloro,soil,BA,65.01196356,BA Cl 0-3 S1,3.6576
+0,chloro,chloro,soil,BA,57.35048527,BA Cl 0-4 S1,3.2787
+0,chloro,chloro,soil,BA,46.51376561,BA Cl 0-5 S1,3.5396
+2,chloro,chloro,soil,BA,33.60251806,BA Cl 2-1 S1,3.791
+2,chloro,chloro,soil,BA,59.29310488,BA Cl 2-2 S1,3.0581
+2,chloro,chloro,soil,BA,64.92323527,BA Cl 2-3 S1,2.4509
+2,chloro,chloro,soil,BA,31.45650376,BA Cl 2-4 S1,3.254
+2,chloro,chloro,soil,BA,61.33280569,BA Cl 2-5 S1,3.8997
+4,chloro,chloro,soil,BA,60.42139433,BA Cl 4-1 S1,3.4363
+4,chloro,chloro,soil,BA,47.39084331,BA Cl 4-2 S1,4.6877
+4,chloro,chloro,soil,BA,53.53514586,BA Cl 4-3 S1,3.6868
+4,chloro,chloro,soil,BA,55.85180318,BA Cl 4-4 S1,3.9113
+4,chloro,chloro,soil,BA,67.77044045,BA Cl 4-5 S1,3.9903
+6,chloro,chloro,soil,BA,33.86589381,BA Cl 6-1 S1,3.0158
+6,chloro,chloro,soil,BA,24.53526169,BA Cl 6-2 S1,4.5591
+6,chloro,chloro,soil,BA,71.16072307,BA Cl 6-3 S1,3.9135
+6,chloro,chloro,soil,BA,48.43648594,BA Cl 6-4 S1,2.8681
+6,chloro,chloro,soil,BA,33.49242945,BA Cl 6-5 S1,3.5315
+8,chloro,chloro,soil,BA,52.62528479,BA Cl 8-1 S1   ,3.5274
+8,chloro,chloro,soil,BA,37.1844573,BA Cl 8-2 S1,3.4453
+8,chloro,chloro,soil,BA,73.57869825,BA Cl 8-3 S1,3.2967
+8,chloro,chloro,soil,BA,74.75923468,BA Cl 8-4 S1,3.9054
+8,chloro,chloro,soil,BA,83.98589503,BA Cl 8-5 S1,3.5332
+10,chloro,chloro,soil,BA,38.25020684,BA Cl 10-1 S1,4.1822
+10,chloro,chloro,soil,BA,56.72626138,BA Cl 10-2 S1,3.2458
+10,chloro,chloro,soil,BA,68.01386873,BA Cl 10-3 S1,3.4718
+10,chloro,chloro,soil,BA,102.5827354,BA Cl 10-4 S1,3.6063
+10,chloro,chloro,soil,BA,79.54975475,BA Cl 10-5 S1,5.208
+0,chloro,chloromet,soil,BA,0.122328378,BA Cl 0-1 S1,3.4279
+0,chloro,chloromet,soil,BA,0.110588833,BA Cl 0-2 S1,3.1749
+0,chloro,chloromet,soil,BA,0.099328375,BA Cl 0-3 S1,3.6576
+0,chloro,chloromet,soil,BA,0.068120644,BA Cl 0-4 S1,3.2787
+0,chloro,chloromet,soil,BA,0.06037805,BA Cl 0-5 S1,3.5396
+2,chloro,chloromet,soil,BA,0.022192274,BA Cl 2-1 S1,3.791
+2,chloro,chloromet,soil,BA,0.123831322,BA Cl 2-2 S1,3.0581
+2,chloro,chloromet,soil,BA,0.056095804,BA Cl 2-3 S1,2.4509
+2,chloro,chloromet,soil,BA,0.067978535,BA Cl 2-4 S1,3.254
+2,chloro,chloromet,soil,BA,0.067568612,BA Cl 2-5 S1,3.8997
+4,chloro,chloromet,soil,BA,0.131934352,BA Cl 4-1 S1,3.4363
+4,chloro,chloromet,soil,BA,0.03789376,BA Cl 4-2 S1,4.6877
+4,chloro,chloromet,soil,BA,0.046559401,BA Cl 4-3 S1,3.6868
+4,chloro,chloromet,soil,BA,0.06283193,BA Cl 4-4 S1,3.9113
+4,chloro,chloromet,soil,BA,0.047123456,BA Cl 4-5 S1,3.9903
+6,chloro,chloromet,soil,BA,0.033231366,BA Cl 6-1 S1,3.0158
+6,chloro,chloromet,soil,BA,0.024539241,BA Cl 6-2 S1,4.5591
+6,chloro,chloromet,soil,BA,0.035038819,BA Cl 6-3 S1,3.9135
+6,chloro,chloromet,soil,BA,0.05070532,BA Cl 6-4 S1,2.8681
+6,chloro,chloromet,soil,BA,0.122034032,BA Cl 6-5 S1,3.5315
+8,chloro,chloromet,soil,BA,0.043885689,BA Cl 8-1 S1   ,3.5274
+8,chloro,chloromet,soil,BA,0.088287001,BA Cl 8-2 S1,3.4453
+8,chloro,chloromet,soil,BA,0.156687066,BA Cl 8-3 S1,3.2967
+8,chloro,chloromet,soil,BA,0.099963869,BA Cl 8-4 S1,3.9054
+8,chloro,chloromet,soil,BA,0.056237279,BA Cl 8-5 S1,3.5332
+10,chloro,chloromet,soil,BA,0.063594741,BA Cl 10-1 S1,4.1822
+10,chloro,chloromet,soil,BA,0.035490979,BA Cl 10-2 S1,3.2458
+10,chloro,chloromet,soil,BA,0.096867509,BA Cl 10-3 S1,3.4718
+10,chloro,chloromet,soil,BA,0.092997245,BA Cl 10-4 S1,3.6063
+10,chloro,chloromet,soil,BA,0.0470855,BA Cl 10-5 S1,5.208
+0,metol,metol,amphib,BA,2.931282055,BA M 0-1,0.7276
+0,metol,metol,amphib,BA,0.347103824,BA M 0-2,0.8474
+0,metol,metol,amphib,BA,0.747111843,BA M 0-3,0.8754
+0,metol,metol,amphib,BA,1.458126997,BA M 0-4,0.8769
+0,metol,metol,amphib,BA,0.842005182,BA M 0-5,1.1394
+2,metol,metol,amphib,BA,2.479837754,BA M 2-1,0.8325
+2,metol,metol,amphib,BA,0.390457959,BA M 2-2,0.9548
+2,metol,metol,amphib,BA,4.602085515,BA M 2-3,1.0286
+2,metol,metol,amphib,BA,16.00337772,BA M 2-4,1.0815
+2,metol,metol,amphib,BA,1.76131318,BA M 2-5,0.9169
+4,metol,metol,amphib,BA,0.649917011,BA M 4-1,0.7677
+4,metol,metol,amphib,BA,7.808781543,BA M 4-2,0.7978
+4,metol,metol,amphib,BA,3.96665148,BA M 4-3,0.8958
+4,metol,metol,amphib,BA,1.54276093,BA M 4-4,1.0415
+4,metol,metol,amphib,BA,3.211494858,BA M 4-5,0.8499
+6,metol,metol,amphib,BA,2.189307645,BA M 6-1,0.9489
+6,metol,metol,amphib,BA,3.779128738,BA M 6-2,1.0449
+6,metol,metol,amphib,BA,1.181637111,BA M 6-3,1.095
+6,metol,metol,amphib,BA,2.372274856,BA M 6-4,1.0956
+6,metol,metol,amphib,BA,1.347353954,BA M 6-5,0.9067
+8,metol,metol,amphib,BA,3.302635326,BA M 8-1,0.8966
+8,metol,metol,amphib,BA,2.478218461,BA M 8-2,0.7619
+8,metol,metol,amphib,BA,0.477943521,BA M 8-3,0.8689
+8,metol,metol,amphib,BA,2.62816273,BA M 8-4,1.1094
+8,metol,metol,amphib,BA,1.469074059,BA M 8-5,0.9821
+10,metol,metol,amphib,BA,3.784805012,BA M 10-1,1.0263
+10,metol,metol,amphib,BA,0.178266663,BA M 10-2,0.9157
+10,metol,metol,amphib,BA,0.83816974,BA M 10-3,1.2425
+10,metol,metol,amphib,BA,2.909853436,BA M 10-4,1.3226
+10,metol,metol,amphib,BA,3.06875616,BA M 10-5,1.0177
+0,metol,mesa,amphib,BA,2.46E-05,BA M 0-1,0.7276
+0,metol,mesa,amphib,BA,0.000191401,BA M 0-2,0.8474
+0,metol,mesa,amphib,BA,2.08E-05,BA M 0-3,0.8754
+0,metol,mesa,amphib,BA,8.13E-06,BA M 0-4,0.8769
+0,metol,mesa,amphib,BA,3.03E-05,BA M 0-5,1.1394
+2,metol,mesa,amphib,BA,1.61E-05,BA M 2-1,0.8325
+2,metol,mesa,amphib,BA,1.17E-05,BA M 2-2,0.9548
+2,metol,mesa,amphib,BA,0.002214968,BA M 2-3,1.0286
+2,metol,mesa,amphib,BA,0.000944609,BA M 2-4,1.0815
+2,metol,mesa,amphib,BA,0.000103842,BA M 2-5,0.9169
+4,metol,mesa,amphib,BA,1.66E-05,BA M 4-1,0.7677
+4,metol,mesa,amphib,BA,8.26E-05,BA M 4-2,0.7978
+4,metol,mesa,amphib,BA,5.49E-05,BA M 4-3,0.8958
+4,metol,mesa,amphib,BA,1.49E-05,BA M 4-4,1.0415
+4,metol,mesa,amphib,BA,0.000464958,BA M 4-5,0.8499
+6,metol,mesa,amphib,BA,2.48E-05,BA M 6-1,0.9489
+6,metol,mesa,amphib,BA,5.00E-05,BA M 6-2,1.0449
+6,metol,mesa,amphib,BA,0.000403367,BA M 6-3,1.095
+6,metol,mesa,amphib,BA,0.001100037,BA M 6-4,1.0956
+6,metol,mesa,amphib,BA,1.07E-05,BA M 6-5,0.9067
+8,metol,mesa,amphib,BA,3.71E-05,BA M 8-1,0.8966
+8,metol,mesa,amphib,BA,5.16E-05,BA M 8-2,0.7619
+8,metol,mesa,amphib,BA,9.81E-05,BA M 8-3,0.8689
+8,metol,mesa,amphib,BA,0.000247182,BA M 8-4,1.1094
+8,metol,mesa,amphib,BA,1.63E-05,BA M 8-5,0.9821
+10,metol,mesa,amphib,BA,9.78E-05,BA M 10-1,1.0263
+10,metol,mesa,amphib,BA,1.27E-05,BA M 10-2,0.9157
+10,metol,mesa,amphib,BA,0.003537708,BA M 10-3,1.2425
+10,metol,mesa,amphib,BA,0.000432232,BA M 10-4,1.3226
+10,metol,mesa,amphib,BA,4.31E-05,BA M 10-5,1.0177
+0,metol,moxa,amphib,BA,0.000294108,BA M 0-1,0.7276
+0,metol,moxa,amphib,BA,0.000558097,BA M 0-2,0.8474
+0,metol,moxa,amphib,BA,0.000283749,BA M 0-3,0.8754
+0,metol,moxa,amphib,BA,6.83E-05,BA M 0-4,0.8769
+0,metol,moxa,amphib,BA,0.000199081,BA M 0-5,1.1394
+2,metol,moxa,amphib,BA,0.000236363,BA M 2-1,0.8325
+2,metol,moxa,amphib,BA,7.66E-05,BA M 2-2,0.9548
+2,metol,moxa,amphib,BA,0.001442015,BA M 2-3,1.0286
+2,metol,moxa,amphib,BA,0.000510237,BA M 2-4,1.0815
+2,metol,moxa,amphib,BA,0.001269624,BA M 2-5,0.9169
+4,metol,moxa,amphib,BA,0.000146037,BA M 4-1,0.7677
+4,metol,moxa,amphib,BA,0.000143666,BA M 4-2,0.7978
+4,metol,moxa,amphib,BA,0.000365317,BA M 4-3,0.8958
+4,metol,moxa,amphib,BA,0.000264832,BA M 4-4,1.0415
+4,metol,moxa,amphib,BA,0.000602575,BA M 4-5,0.8499
+6,metol,moxa,amphib,BA,0.000131317,BA M 6-1,0.9489
+6,metol,moxa,amphib,BA,0.000477505,BA M 6-2,1.0449
+6,metol,moxa,amphib,BA,0.001041703,BA M 6-3,1.095
+6,metol,moxa,amphib,BA,0.00061023,BA M 6-4,1.0956
+6,metol,moxa,amphib,BA,0.000169511,BA M 6-5,0.9067
+8,metol,moxa,amphib,BA,0.000487905,BA M 8-1,0.8966
+8,metol,moxa,amphib,BA,0.000102546,BA M 8-2,0.7619
+8,metol,moxa,amphib,BA,0.000567456,BA M 8-3,0.8689
+8,metol,moxa,amphib,BA,0.00025952,BA M 8-4,1.1094
+8,metol,moxa,amphib,BA,9.27E-05,BA M 8-5,0.9821
+10,metol,moxa,amphib,BA,0.000387499,BA M 10-1,1.0263
+10,metol,moxa,amphib,BA,7.09E-05,BA M 10-2,0.9157
+10,metol,moxa,amphib,BA,0.000331489,BA M 10-3,1.2425
+10,metol,moxa,amphib,BA,0.000540016,BA M 10-4,1.3226
+10,metol,moxa,amphib,BA,0.000878546,BA M 10-5,1.0177
+0,metol,metol,soil,BA,24.61731819,BA M 0-1 S1,3.7271
+0,metol,metol,soil,BA,21.3388881,BA M 0-2 S1,3.7838
+0,metol,metol,soil,BA,21.93039744,BA M 0-3 S1,3.6278
+0,metol,metol,soil,BA,22.93092162,BA M 0-4 S1,3.8578
+0,metol,metol,soil,BA,16.69841723,BA M 0-5 S1,3.0515
+2,metol,metol,soil,BA,21.78269156,BA M 2-1 S1,3.6949
+2,metol,metol,soil,BA,30.13938696,BA M 2-2 S1,4.8362
+2,metol,metol,soil,BA,22.89913875,BA M 2-3 S1,4.6374
+2,metol,metol,soil,BA,15.50951631,BA M 2-4 S1,4.2573
+2,metol,metol,soil,BA,22.61379371,BA M 2-5 S1,4.8019
+4,metol,metol,soil,BA,18.84383325,BA M 4-1 S1,3.45
+4,metol,metol,soil,BA,18.89979206,BA M 4-2 S1,4.2934
+4,metol,metol,soil,BA,16.48638399,BA M 4-3 S1,4.6198
+4,metol,metol,soil,BA,18.69187814,BA M 4-4 S1,4.2379
+4,metol,metol,soil,BA,21.78738591,BA M 4-5 S1,3.7306
+6,metol,metol,soil,BA,19.7286363,BA M 6-1 S1,3.8621
+6,metol,metol,soil,BA,19.84548436,BA M 6-2 S1,3.7769
+6,metol,metol,soil,BA,18.30042699,BA M 6-3 S1,4.0171
+6,metol,metol,soil,BA,21.61340567,BA M 6-4 S1,2.7931
+6,metol,metol,soil,BA,34.53939533,BA M 6-5 S1,3.3975
+8,metol,metol,soil,BA,21.17580719,BA M 8-1 S1,4.0929
+8,metol,metol,soil,BA,24.81521768,BA M 8-2 S1,4.0788
+8,metol,metol,soil,BA,17.06118215,BA M 8-3 S1,3.7967
+8,metol,metol,soil,BA,19.10055727,BA M 8-4 S1,3.5545
+8,metol,metol,soil,BA,20.51550224,BA M 8-5 S1,3.0085
+10,metol,metol,soil,BA,22.5379891,BA M 10-1 S1,3.5106
+10,metol,metol,soil,BA,18.45842534,BA M 10-2 S1,3.7896
+10,metol,metol,soil,BA,17.64342834,BA M 10-3 S1,3.7379
+10,metol,metol,soil,BA,25.49063619,BA M 10-4 S1,4.2433
+10,metol,metol,soil,BA,13.50246957,BA M 10-5 S1,3.6474
+0,metol,mesa,soil,BA,4.99E-07,BA M 0-1 S1,3.7271
+0,metol,mesa,soil,BA,1.55E-06,BA M 0-2 S1,3.7838
+0,metol,mesa,soil,BA,5.21E-07,BA M 0-3 S1,3.6278
+0,metol,mesa,soil,BA,9.45E-07,BA M 0-4 S1,3.8578
+0,metol,mesa,soil,BA,5.79E-06,BA M 0-5 S1,3.0515
+2,metol,mesa,soil,BA,7.48E-07,BA M 2-1 S1,3.6949
+2,metol,mesa,soil,BA,3.15E-07,BA M 2-2 S1,4.8362
+2,metol,mesa,soil,BA,3.49E-06,BA M 2-3 S1,4.6374
+2,metol,mesa,soil,BA,1.16E-06,BA M 2-4 S1,4.2573
+2,metol,mesa,soil,BA,2.11E-06,BA M 2-5 S1,4.8019
+4,metol,mesa,soil,BA,5.95E-07,BA M 4-1 S1,3.45
+4,metol,mesa,soil,BA,8.73E-07,BA M 4-2 S1,4.2934
+4,metol,mesa,soil,BA,1.62E-06,BA M 4-3 S1,4.6198
+4,metol,mesa,soil,BA,5.40E-07,BA M 4-4 S1,4.2379
+4,metol,mesa,soil,BA,0,BA M 4-5 S1,3.7306
+6,metol,mesa,soil,BA,9.27E-07,BA M 6-1 S1,3.8621
+6,metol,mesa,soil,BA,2.11E-06,BA M 6-2 S1,3.7769
+6,metol,mesa,soil,BA,3.05E-07,BA M 6-3 S1,4.0171
+6,metol,mesa,soil,BA,0,BA M 6-4 S1,2.7931
+6,metol,mesa,soil,BA,1.87E-06,BA M 6-5 S1,3.3975
+8,metol,mesa,soil,BA,0,BA M 8-1 S1,4.0929
+8,metol,mesa,soil,BA,8.14E-07,BA M 8-2 S1,4.0788
+8,metol,mesa,soil,BA,3.28E-06,BA M 8-3 S1,3.7967
+8,metol,mesa,soil,BA,9.20E-06,BA M 8-4 S1,3.5545
+8,metol,mesa,soil,BA,0,BA M 8-5 S1,3.0085
+10,metol,mesa,soil,BA,0,BA M 10-1 S1,3.5106
+10,metol,mesa,soil,BA,4.02E-07,BA M 10-2 S1,3.7896
+10,metol,mesa,soil,BA,1.13E-05,BA M 10-3 S1,3.7379
+10,metol,mesa,soil,BA,1.73E-06,BA M 10-4 S1,4.2433
+10,metol,mesa,soil,BA,8.62E-07,BA M 10-5 S1,3.6474
+0,metol,moxa,soil,BA,5.50E-05,BA M 0-1 S1,3.7271
+0,metol,moxa,soil,BA,4.36E-05,BA M 0-2 S1,3.7838
+0,metol,moxa,soil,BA,3.72E-05,BA M 0-3 S1,3.6278
+0,metol,moxa,soil,BA,2.32E-05,BA M 0-4 S1,3.8578
+0,metol,moxa,soil,BA,7.52E-05,BA M 0-5 S1,3.0515
+2,metol,moxa,soil,BA,1.03E-05,BA M 2-1 S1,3.6949
+2,metol,moxa,soil,BA,4.07E-05,BA M 2-2 S1,4.8362
+2,metol,moxa,soil,BA,3.34E-05,BA M 2-3 S1,4.6374
+2,metol,moxa,soil,BA,1.79E-05,BA M 2-4 S1,4.2573
+2,metol,moxa,soil,BA,1.68E-05,BA M 2-5 S1,4.8019
+4,metol,moxa,soil,BA,2.84E-05,BA M 4-1 S1,3.45
+4,metol,moxa,soil,BA,2.14E-05,BA M 4-2 S1,4.2934
+4,metol,moxa,soil,BA,1.16E-05,BA M 4-3 S1,4.6198
+4,metol,moxa,soil,BA,2.42E-05,BA M 4-4 S1,4.2379
+4,metol,moxa,soil,BA,1.04E-05,BA M 4-5 S1,3.7306
+6,metol,moxa,soil,BA,3.17E-05,BA M 6-1 S1,3.8621
+6,metol,moxa,soil,BA,4.25E-05,BA M 6-2 S1,3.7769
+6,metol,moxa,soil,BA,1.91E-05,BA M 6-3 S1,4.0171
+6,metol,moxa,soil,BA,1.89E-05,BA M 6-4 S1,2.7931
+6,metol,moxa,soil,BA,5.25E-05,BA M 6-5 S1,3.3975
+8,metol,moxa,soil,BA,1.28E-05,BA M 8-1 S1,4.0929
+8,metol,moxa,soil,BA,1.38E-05,BA M 8-2 S1,4.0788
+8,metol,moxa,soil,BA,1.16E-05,BA M 8-3 S1,3.7967
+8,metol,moxa,soil,BA,2.73E-05,BA M 8-4 S1,3.5545
+8,metol,moxa,soil,BA,3.12E-05,BA M 8-5 S1,3.0085
+10,metol,moxa,soil,BA,3.52E-05,BA M 10-1 S1,3.5106
+10,metol,moxa,soil,BA,3.36E-05,BA M 10-2 S1,3.7896
+10,metol,moxa,soil,BA,1.12E-05,BA M 10-3 S1,3.7379
+10,metol,moxa,soil,BA,1.86E-05,BA M 10-4 S1,4.2433
+10,metol,moxa,soil,BA,2.16E-05,BA M 10-5 S1,3.6474
+0,tdn,tdn,amphib,BA,0.705452479,BA T 0-1,0.8584
+0,tdn,tdn,amphib,BA,0.234413969,BA T 0-2,0.8488
+0,tdn,tdn,amphib,BA,0.579612536,BA T 0-3,0.9955
+0,tdn,tdn,amphib,BA,0.355740799,BA T 0-4,1.0281
+0,tdn,tdn,amphib,BA,0.656741344,BA T 0-5,1.1097
+2,tdn,tdn,amphib,BA,0.67893805,BA T 2-1,1.2155
+2,tdn,tdn,amphib,BA,1.101694818,BA T 2-2,0.8175
+2,tdn,tdn,amphib,BA,0.471731541,BA T 2-3,0.851
+2,tdn,tdn,amphib,BA,0.355762936,BA T 2-4,1.0826
+2,tdn,tdn,amphib,BA,0.356340814,BA T 2-5,0.8654
+4,tdn,tdn,amphib,BA,1.070383806,BA T 4-1,1.0271
+4,tdn,tdn,amphib,BA,0.681923819,BA T 4-2,0.8715
+4,tdn,tdn,amphib,BA,1.020881176,BA T 4-3,1.2942
+4,tdn,tdn,amphib,BA,0.509585728,BA T 4-4,1.1198
+4,tdn,tdn,amphib,BA,3.217423384,BA T 4-5,1.1049
+6,tdn,tdn,amphib,BA,0.286638101,BA T 6-1,0.7637
+6,tdn,tdn,amphib,BA,0.294702812,BA T 6-2,1.0612
+6,tdn,tdn,amphib,BA,0.386336954,BA T 6-3,0.8935
+6,tdn,tdn,amphib,BA,0.440267136,BA T 6-4,1.2336
+6,tdn,tdn,amphib,BA,0.569826956,BA T 6-5,1.2775
+8,tdn,tdn,amphib,BA,0.556191253,BA T 8-1,0.8524
+8,tdn,tdn,amphib,BA,0.432994464,BA T 8-2,0.9142
+8,tdn,tdn,amphib,BA,0.676020901,BA T 8-3,1.1256
+8,tdn,tdn,amphib,BA,0.75550304,BA T 8-4,1.0474
+8,tdn,tdn,amphib,BA,0.264939632,BA T 8-5,0.8709
+10,tdn,tdn,amphib,BA,0.761585411,BA T 10-1,1.0839
+10,tdn,tdn,amphib,BA,0.227798267,BA T 10-2,1.007
+10,tdn,tdn,amphib,BA,0.722003836,BA T 10-3,1.2054
+10,tdn,tdn,amphib,BA,0.693917992,BA T 10-4,0.9862
+10,tdn,tdn,amphib,BA,0.514549742,BA T 10-5,0.9313
+0,tdn,tdla,amphibi,BA,0.148652688,BA T 0-1,0.8584
+0,tdn,tdla,amphibi,BA,0.075980196,BA T 0-2,0.8488
+0,tdn,tdla,amphibi,BA,0.207138928,BA T 0-3,0.9955
+0,tdn,tdla,amphibi,BA,0.102656067,BA T 0-4,1.0281
+0,tdn,tdla,amphibi,BA,0.161746131,BA T 0-5,1.1097
+2,tdn,tdla,amphibi,BA,0.250117077,BA T 2-1,1.2155
+2,tdn,tdla,amphibi,BA,0.141245592,BA T 2-2,0.8175
+2,tdn,tdla,amphibi,BA,0.13995313,BA T 2-3,0.851
+2,tdn,tdla,amphibi,BA,0.081988325,BA T 2-4,1.0826
+2,tdn,tdla,amphibi,BA,0.065757171,BA T 2-5,0.8654
+4,tdn,tdla,amphibi,BA,0.239606332,BA T 4-1,1.0271
+4,tdn,tdla,amphibi,BA,0.1972196,BA T 4-2,0.8715
+4,tdn,tdla,amphibi,BA,0.306168799,BA T 4-3,1.2942
+4,tdn,tdla,amphibi,BA,0.132702311,BA T 4-4,1.1198
+4,tdn,tdla,amphibi,BA,0.216645233,BA T 4-5,1.1049
+6,tdn,tdla,amphibi,BA,0.10215247,BA T 6-1,0.7637
+6,tdn,tdla,amphibi,BA,0.09504755,BA T 6-2,1.0612
+6,tdn,tdla,amphibi,BA,0.060027974,BA T 6-3,0.8935
+6,tdn,tdla,amphibi,BA,0.089105187,BA T 6-4,1.2336
+6,tdn,tdla,amphibi,BA,0.076197237,BA T 6-5,1.2775
+8,tdn,tdla,amphibi,BA,0.148795645,BA T 8-1,0.8524
+8,tdn,tdla,amphibi,BA,0.064613481,BA T 8-2,0.9142
+8,tdn,tdla,amphibi,BA,0.113116219,BA T 8-3,1.1256
+8,tdn,tdla,amphibi,BA,0.214836906,BA T 8-4,1.0474
+8,tdn,tdla,amphibi,BA,0.066972058,BA T 8-5,0.8709
+10,tdn,tdla,amphibi,BA,0.12539732,BA T 10-1,1.0839
+10,tdn,tdla,amphibi,BA,0.083986634,BA T 10-2,1.007
+10,tdn,tdla,amphibi,BA,0.198515407,BA T 10-3,1.2054
+10,tdn,tdla,amphibi,BA,0.124024639,BA T 10-4,0.9862
+10,tdn,tdla,amphibi,BA,0.13424071,BA T 10-5,0.9313
+0,tdn,tdlb,amphib,BA,0.106950637,BA T 0-1,0.8584
+0,tdn,tdlb,amphib,BA,0.035705406,BA T 0-2,0.8488
+0,tdn,tdlb,amphib,BA,0.128540584,BA T 0-3,0.9955
+0,tdn,tdlb,amphib,BA,0.063149585,BA T 0-4,1.0281
+0,tdn,tdlb,amphib,BA,0.100533918,BA T 0-5,1.1097
+2,tdn,tdlb,amphib,BA,0.236954634,BA T 2-1,1.2155
+2,tdn,tdlb,amphib,BA,0.108795697,BA T 2-2,0.8175
+2,tdn,tdlb,amphib,BA,0.112258946,BA T 2-3,0.851
+2,tdn,tdlb,amphib,BA,0.052606163,BA T 2-4,1.0826
+2,tdn,tdlb,amphib,BA,0.035866287,BA T 2-5,0.8654
+4,tdn,tdlb,amphib,BA,0.184921802,BA T 4-1,1.0271
+4,tdn,tdlb,amphib,BA,0.133233739,BA T 4-2,0.8715
+4,tdn,tdlb,amphib,BA,0.223084297,BA T 4-3,1.2942
+4,tdn,tdlb,amphib,BA,0.104395709,BA T 4-4,1.1198
+4,tdn,tdlb,amphib,BA,0.147898828,BA T 4-5,1.1049
+6,tdn,tdlb,amphib,BA,0.085736292,BA T 6-1,0.7637
+6,tdn,tdlb,amphib,BA,0.061880232,BA T 6-2,1.0612
+6,tdn,tdlb,amphib,BA,0.022119799,BA T 6-3,0.8935
+6,tdn,tdlb,amphib,BA,0.081173358,BA T 6-4,1.2336
+6,tdn,tdlb,amphib,BA,0.061889195,BA T 6-5,1.2775
+8,tdn,tdlb,amphib,BA,0.077483346,BA T 8-1,0.8524
+8,tdn,tdlb,amphib,BA,0.024276743,BA T 8-2,0.9142
+8,tdn,tdlb,amphib,BA,0.070806487,BA T 8-3,1.1256
+8,tdn,tdlb,amphib,BA,0.177877827,BA T 8-4,1.0474
+8,tdn,tdlb,amphib,BA,0.033870654,BA T 8-5,0.8709
+10,tdn,tdlb,amphib,BA,0.101421807,BA T 10-1,1.0839
+10,tdn,tdlb,amphib,BA,0.047615173,BA T 10-2,1.007
+10,tdn,tdlb,amphib,BA,0.167934972,BA T 10-3,1.2054
+10,tdn,tdlb,amphib,BA,0.083532969,BA T 10-4,0.9862
+10,tdn,tdlb,amphib,BA,0.104291534,BA T 10-5,0.9313
+0,tdn,tdn,soil,BA,4.623967642,BA T 0-1 S1,4.6276
+0,tdn,tdn,soil,BA,4.576445003,BA T 0-2 S1,3.6573
+0,tdn,tdn,soil,BA,4.945654456,BA T 0-3 S1,5.0974
+0,tdn,tdn,soil,BA,2.883188373,BA T 0-4 S1,5.1587
+0,tdn,tdn,soil,BA,3.813555416,BA T 0-5 S1,4.9401
+2,tdn,tdn,soil,BA,4.002153511,BA T 2-1 S1,4.3541
+2,tdn,tdn,soil,BA,4.565613817,BA T 2-2 S1,4.1025
+2,tdn,tdn,soil,BA,3.940878794,BA T 2-3 S1,3.3384
+2,tdn,tdn,soil,BA,3.048173056,BA T 2-4 S1,4.9186
+2,tdn,tdn,soil,BA,2.12684801,BA T 2-5 S1,4.6002
+4,tdn,tdn,soil,BA,6.019197262,BA T 4-1 S1,4.9373
+4,tdn,tdn,soil,BA,3.720045765,BA T 4-2 S1,3.8796
+4,tdn,tdn,soil,BA,3.940413307,BA T 4-3 S1,4.2275
+4,tdn,tdn,soil,BA,5.296550596,BA T 4-4 S1,3.8029
+4,tdn,tdn,soil,BA,6.945352858,BA T 4-5 S1,3.5011
+6,tdn,tdn,soil,BA,3.602278375,BA T 6-1 S1,4.0967
+6,tdn,tdn,soil,BA,3.750249506,BA T 6-2 S1,4.663
+6,tdn,tdn,soil,BA,6.322726358,BA T 6-3 S1,4.8549
+6,tdn,tdn,soil,BA,4.897593016,BA T 6-4 S1,3.2917
+6,tdn,tdn,soil,BA,4.591640691,BA T 6-5 S1,4.0753
+8,tdn,tdn,soil,BA,5.459072604,BA T 8-1 S1,4.434
+8,tdn,tdn,soil,BA,4.507937226,BA T 8-2 S1,4.2325
+8,tdn,tdn,soil,BA,5.011321534,BA T 8-3 S1,4.2616
+8,tdn,tdn,soil,BA,3.31837221,BA T 8-4 S1,5.9419
+8,tdn,tdn,soil,BA,5.387182037,BA T 8-5 S1,4.7552
+10,tdn,tdn,soil,BA,4.821906293,BA T 10-1 S1,4.3292
+10,tdn,tdn,soil,BA,3.750142848,BA T 10-2 S1,3.6545
+10,tdn,tdn,soil,BA,3.640657566,BA T 10-3 S1,4.2775
+10,tdn,tdn,soil,BA,3.0485444,BA T 10-4 S1,2.6389
+10,tdn,tdn,soil,BA,3.77031985,BA T 10-5 S1,4.7733
+0,tdn,tdla,soil,BA,0.026368821,BA T 0-1 S1,4.6276
+0,tdn,tdla,soil,BA,0.022151675,BA T 0-2 S1,3.6573
+0,tdn,tdla,soil,BA,0.012864544,BA T 0-3 S1,5.0974
+0,tdn,tdla,soil,BA,0.020264758,BA T 0-4 S1,5.1587
+0,tdn,tdla,soil,BA,0.02202827,BA T 0-5 S1,4.9401
+2,tdn,tdla,soil,BA,0.030903201,BA T 2-1 S1,4.3541
+2,tdn,tdla,soil,BA,0.02120876,BA T 2-2 S1,4.1025
+2,tdn,tdla,soil,BA,0.02847303,BA T 2-3 S1,3.3384
+2,tdn,tdla,soil,BA,0.014166198,BA T 2-4 S1,4.9186
+2,tdn,tdla,soil,BA,0.020179693,BA T 2-5 S1,4.6002
+4,tdn,tdla,soil,BA,0.027962106,BA T 4-1 S1,4.9373
+4,tdn,tdla,soil,BA,0.023579696,BA T 4-2 S1,3.8796
+4,tdn,tdla,soil,BA,0.022956506,BA T 4-3 S1,4.2275
+4,tdn,tdla,soil,BA,0.025930024,BA T 4-4 S1,3.8029
+4,tdn,tdla,soil,BA,0.020778298,BA T 4-5 S1,3.5011
+6,tdn,tdla,soil,BA,0.024394488,BA T 6-1 S1,4.0967
+6,tdn,tdla,soil,BA,0.019495126,BA T 6-2 S1,4.663
+6,tdn,tdla,soil,BA,0.014436236,BA T 6-3 S1,4.8549
+6,tdn,tdla,soil,BA,0.013192538,BA T 6-4 S1,3.2917
+6,tdn,tdla,soil,BA,0.017199661,BA T 6-5 S1,4.0753
+8,tdn,tdla,soil,BA,0.012759058,BA T 8-1 S1,4.434
+8,tdn,tdla,soil,BA,0.02249402,BA T 8-2 S1,4.2325
+8,tdn,tdla,soil,BA,0.018225424,BA T 8-3 S1,4.2616
+8,tdn,tdla,soil,BA,0.014066677,BA T 8-4 S1,5.9419
+8,tdn,tdla,soil,BA,0.00820022,BA T 8-5 S1,4.7552
+10,tdn,tdla,soil,BA,0.020068948,BA T 10-1 S1,4.3292
+10,tdn,tdla,soil,BA,0.024129838,BA T 10-2 S1,3.6545
+10,tdn,tdla,soil,BA,0.018718821,BA T 10-3 S1,4.2775
+10,tdn,tdla,soil,BA,0.020123166,BA T 10-4 S1,2.6389
+10,tdn,tdla,soil,BA,0.013655134,BA T 10-5 S1,4.7733
+0,tdn,tdlb,soil,BA,0.027285325,BA T 0-1 S1,4.6276
+0,tdn,tdlb,soil,BA,0.026915678,BA T 0-2 S1,3.6573
+0,tdn,tdlb,soil,BA,0.013887524,BA T 0-3 S1,5.0974
+0,tdn,tdlb,soil,BA,0.029278646,BA T 0-4 S1,5.1587
+0,tdn,tdlb,soil,BA,0.028446898,BA T 0-5 S1,4.9401
+2,tdn,tdlb,soil,BA,0.046683854,BA T 2-1 S1,4.3541
+2,tdn,tdlb,soil,BA,0.028327976,BA T 2-2 S1,4.1025
+2,tdn,tdlb,soil,BA,0.039089768,BA T 2-3 S1,3.3384
+2,tdn,tdlb,soil,BA,0.017791712,BA T 2-4 S1,4.9186
+2,tdn,tdlb,soil,BA,0.023431226,BA T 2-5 S1,4.6002
+4,tdn,tdlb,soil,BA,0.035836435,BA T 4-1 S1,4.9373
+4,tdn,tdlb,soil,BA,0.027179885,BA T 4-2 S1,3.8796
+4,tdn,tdlb,soil,BA,0.029740335,BA T 4-3 S1,4.2275
+4,tdn,tdlb,soil,BA,0.02897128,BA T 4-4 S1,3.8029
+4,tdn,tdlb,soil,BA,0.023043305,BA T 4-5 S1,3.5011
+6,tdn,tdlb,soil,BA,0.034729269,BA T 6-1 S1,4.0967
+6,tdn,tdlb,soil,BA,0.02756399,BA T 6-2 S1,4.663
+6,tdn,tdlb,soil,BA,0.018302371,BA T 6-3 S1,4.8549
+6,tdn,tdlb,soil,BA,0.008540069,BA T 6-4 S1,3.2917
+6,tdn,tdlb,soil,BA,0.016207843,BA T 6-5 S1,4.0753
+8,tdn,tdlb,soil,BA,0.007367332,BA T 8-1 S1,4.434
+8,tdn,tdlb,soil,BA,0.025528471,BA T 8-2 S1,4.2325
+8,tdn,tdlb,soil,BA,0.018258126,BA T 8-3 S1,4.2616
+8,tdn,tdlb,soil,BA,0.019769079,BA T 8-4 S1,5.9419
+8,tdn,tdlb,soil,BA,0.006800223,BA T 8-5 S1,4.7552
+10,tdn,tdlb,soil,BA,0.027177933,BA T 10-1 S1,4.3292
+10,tdn,tdlb,soil,BA,0.025174949,BA T 10-2 S1,3.6545
+10,tdn,tdlb,soil,BA,0.021523508,BA T 10-3 S1,4.2775
+10,tdn,tdlb,soil,BA,0.017572549,BA T 10-4 S1,2.6389
+10,tdn,tdlb,soil,BA,0.010874743,BA T 10-5 S1,4.7733
