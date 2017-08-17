@@ -27,6 +27,10 @@ Sys.info()[4]
 ```
 
 ```{r eval=TRUE, echo=FALSE}
+# tom mac
+if(Sys.info()[4] == "Coiles-MacBook-Pro.local"){
+  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
+}
 #tom computer
 if(Sys.info()[4]=="DC2626UTPURUCKE"){
   amphibdir <- "K:\\git\\amphib_dermal_collation\\"
@@ -39,20 +43,20 @@ if(Sys.info()[4]=="DZ2626UTPURUCKE"){
 if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
-# tom mac
-if(Sys.info()[4] == "Coiles-MacBook-Pro.local"){
-  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
-}
 
-amphibdir_data <- paste(amphibdir,'data_in',sep='')
-amphibdir_src <- paste(amphibdir,'src',sep='')
-amphibdir_graphics <- paste(amphibdir,'graphics',sep='')
-amphibdir_data_out <- paste(amphibdir,'data_out',sep='')
 
+amphibdir_data <- paste(amphibdir,'data_in/',sep='')
+amphibdir_src <- paste(amphibdir,'src/',sep='')
+amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
+amphibdir_data_out <- paste(amphibdir,'data_out/',sep='')
 ```
 
-Experimental data
+Collating data from relevant studies
 ========================================================
+Van Meter et al. 2014 performed exposures for 5 pesticide (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (Lithobates sphenocephala), Fowler's toad (Anaxyrus fowleri), gray treefrog (Hyla versicolor), Northern cricket frog (Acris crepitans), Eastern narrowmouth toad (Gastrophryne carolinensis), barking treefrog (Hyla gratiosa) and green treefrog (Hyla cinerea)). Whole body tissue concentrations were measured after an 8 hour exposure period.
+
+Van Meter et al. 2015 contrasted soil only versus overspray exposures for the same 5 pesticides and two of the species (barking treefrog (Hyla gratiosa) and green treefrog (Hyla cinerea)), so for our purposes essentially adds the aerial overspray exposures to the above data set.
+
 Original file with analytical data: 
 https://github.com/puruckertom/VanMeteretal2016_ple_v_ols/blob/master/RDATA.csv
 https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data/good_data.csv
@@ -61,15 +65,26 @@ https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data/good_data.
 ##################
 #the data sets
 ##################
-# import data from Soil organic matter toad paper
-vm2014 <- read.table(paste(amphibdir,"RDATA.csv",sep=""), header = TRUE, sep = ",")
-# import data from VanMeter et al. 2014 Archives of Environmental Contamination 
-# and VanMeter et al. 2014 Environmental Pollution   
-vm2015 <- read.table(paste(amphibdir,"good_data.csv",sep=""), header = TRUE, sep = ",")  
+# import data from Van Meter 2014 and 2015 papers.
+vm2015 <- read.table(paste(amphibdir_data,"vm2014_data.csv",sep=""), header = TRUE, sep = ",")
+dim(vm2015)
+summary(vm2015)
+View(vm2015)
+unique(vm2015$Chemical)
+#drop metabolites and parents that do not include metabolites
+vm2015_chem_drop <- c("Atrazine","Deisopropyl Atrazine","Desethyl Atrazine","Fipronil","Fipronil-Sulfone","Triadimefon","Triadimenol")
+chem_vector_drop <- which(vm2015$Chemical %in% vm2015_chem_drop)
+vm2015_subset1 <- vm2015[-chem_vector_drop,]
+vm2015_subset2 <- droplevels(vm2015_subset1)
+#drop unneeded columns for merging
+colnames(vm2015_subset2)
+drop_cols <- c("good","")
 ```
 
 Reformat good_data.csv for merge with RDATA.csv
 ```{r eval=TRUE, echo=FALSE}
+
+
 #### reformat good_data.csv for merge with RDATA.csv #### 
 good_data2<-subset(good_data, select=c(-Sample, -Instrument, -good, -logKow, -BCF, -initialweight, 
             -Solat20C_mgL, -Solat20C_gL, -molmass_gmol, -Density_gcm3,-AppFactor, -SA_cm2, -VapPrs_mPa,
