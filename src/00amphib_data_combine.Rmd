@@ -27,6 +27,9 @@ Sys.info()[4]
 ```
 
 ```{r eval=TRUE, echo=FALSE}
+library(ggplot2)
+require(gridExtra)
+
 # tom mac
 if(Sys.info()[4] == "Coiles-MacBook-Pro.local"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
@@ -43,7 +46,6 @@ if(Sys.info()[4]=="DZ2626UTPURUCKE"){
 if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
-
 
 amphibdir_data <- paste(amphibdir,'data_in/',sep='')
 amphibdir_src <- paste(amphibdir,'src/',sep='')
@@ -80,9 +82,9 @@ vm2015_subset1 <- vm2015[-chem_vector_drop,]
 vm2015_subset2 <- droplevels(vm2015_subset1)
 #drop unneeded columns for merging
 View(vm2015_subset2)
-colnames(vm2015_subset2)
+all_cols <- colnames(vm2015_subset2)
 drop_cols <- c("good","Instrument","HabFac")
-vm2015_subset3 <- vm2015[,drop_cols]
+vm2015_subset3 <- vm2015_subset2[,!(names(vm2015_subset2) %in% drop_cols)]
 ```
 
 Reformat good_data.csv for merge with RDATA.csv
