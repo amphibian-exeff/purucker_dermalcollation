@@ -9,7 +9,17 @@ title: "Create database of amphibian dermal exposure data"
 
 Introduction
 ========================================================
-Data sets from Van Meter et al. (2014, 2015, 2016) and Glinski (2017a,b)
+Combining data sets from Van Meter et al. (2014, 2015, 2016) and Glinski (2017a,b)
+* https://github.com/puruckertom/VanMeteretal2014_EnvPoll/tree/master/data_in
+* https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data
+vm2015 combines the above 2 (from good_data.csv)
+* https://github.com/puruckertom/vanmeteretal2016_etc_amphibian_exposure_som/tree/master/data_in
+vm2016 is the above data set (from RDATA.csv)
+* https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in
+dag_dehy from dehydration3.csv
+* https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in
+dag_metab from exposure_experiment.csv
+
 
 Computational environment
 ========================================================
@@ -74,6 +84,21 @@ vm2015 <- read.table(vm2015_file, header = TRUE, sep = ",")
 dim(vm2015)
 summary(vm2015)
 #View(vm2015)
+
+# import data from Van Meter 2016
+vm2016_file <- paste(amphibdir_data,"vm2016_data.csv", sep="")
+file.exists(vm2016_file)
+vm2016 <- read.table(vm2016_file, header = TRUE, sep = ",")
+dim(vm2016)
+summary(vm2016)
+#View(vm2016)
+
+```
+
+```{r eval=TRUE, echo=FALSE}
+##################
+#van meter 2014/15
+##################
 unique(vm2015$Chemical)
 #drop metabolites and parents that do not include metabolites
 vm2015_chem_drop <- c("Atrazine","Deisopropyl Atrazine","Desethyl Atrazine","Fipronil","Fipronil-Sulfone","Triadimefon","Triadimenol")
@@ -81,83 +106,124 @@ chem_vector_drop <- which(vm2015$Chemical %in% vm2015_chem_drop)
 vm2015_subset1 <- vm2015[-chem_vector_drop,]
 vm2015_subset2 <- droplevels(vm2015_subset1)
 #drop unneeded columns for merging
-View(vm2015_subset2)
+#View(vm2015_subset2)
 all_cols <- colnames(vm2015_subset2)
-drop_cols <- c("good","Instrument","HabFac")
+drop_cols <- c("Sample", "Instrument", "good", "logKow", "BCF", "initialweight", 
+            "Solat20C_mgL", "Solat20C_gL", "molmass_gmol", "Density_gcm3","AppFactor", "SA_cm2", "VapPrs_mPa",
+            "Koc_gmL", "HalfLife_day", "HabFac")
 vm2015_subset3 <- vm2015_subset2[,!(names(vm2015_subset2) %in% drop_cols)]
+colnames(vm2015_subset3)
+#add columns
+soil_type <- c(rep("PLE",nrow(vm2015_subset3)))
+formulation <- (rep(0,nrow(vm2015_subset3)))
+exp_duration<- (rep(8,nrow(vm2015_subset3)))
+vm2015_subset4 <- cbind(vm2015_subset3, formulation, soil_type, exp_duration)
+# standardize column names
+colnames(vm2015_subset4)
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Species")]<-"species"
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Chemical")]<-"chemical"
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Application")]<-"application"
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="TissueConc")]<-"tissue_conc_ugg"
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="SoilConc")]<-"soil_conc_ugg"
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="bodyweight")]<-"body_weight_g"
+colnames(vm2015_subset4)
+#reorder vm2015 alphabetically
+vm2015_merge <- vm2015_subset4[,order(names(vm2015_subset4))]
+dim(vm2015_merge)
+colnames(vm2015_merge)
 ```
 
-Reformat good_data.csv for merge with RDATA.csv
+
+Reformat vm2016 for merge with vm2015
 ```{r eval=TRUE, echo=FALSE}
-
-
-#### reformat good_data.csv for merge with RDATA.csv #### 
-good_data2<-subset(good_data, select=c(-Sample, -Instrument, -good, -logKow, -BCF, -initialweight, 
-            -Solat20C_mgL, -Solat20C_gL, -molmass_gmol, -Density_gcm3,-AppFactor, -SA_cm2, -VapPrs_mPa,
-            -Koc_gmL, -HalfLife_day, -HabFac)) 
-names(good_data2)
-dim(good_data2)
-SoilType <- c(rep("PLE",nrow(good_data2)))
-unique(good_data2$Chemical)
-#[1] Atrazine             Deisopropyl Atrazine Desethyl Atrazine   
-#[4] Fipronil             Fipronil-Sulfone     Imidacloprid        
-#[7] Pendimethalin        Total Atrazine       Total Fipronil      
-#[10] Total Triadimefon    Triadimefon          Triadimenol      
-#assign values to new Parent column
-good_data2$Parent[good_data2$Chemical=="Atrazine"] <- 1
-good_data2$Parent[good_data2$Chemical=="Deisopropyl Atrazine"] <- 0
-good_data2$Parent[good_data2$Chemical=="Desethyl Atrazine"] <- 0
-good_data2$Parent[good_data2$Chemical=="Fipronil"] <- 1
-good_data2$Parent[good_data2$Chemical=="Fipronil-Sulfone"] <- 0
-good_data2$Parent[good_data2$Chemical=="Imidacloprid"] <- 1
-good_data2$Parent[good_data2$Chemical=="Pendimethalin"] <- 1
-good_data2$Parent[good_data2$Chemical=="Total Atrazine"] <- 0
-good_data2$Parent[good_data2$Chemical=="Total Fipronil"] <- 0
-good_data2$Parent[good_data2$Chemical=="Total Triadimefon"] <- 0
-good_data2$Parent[good_data2$Chemical=="Triadimefon"] <- 1
-good_data2$Parent[good_data2$Chemical=="Triadimenol"] <- 1
-#create column for Formulation
-Formulation <- (rep(0,nrow(good_data2)))
-Exp_duration<- (rep(8,nrow(good_data2)))
-good_data3<-cbind(good_data2, Formulation, SoilType, Exp_duration)
-
-```
-
-Reformat RDATA.csv for merge with good_data.csv
-```{r eval=TRUE, echo=FALSE}
-rdata2<-subset(RDATA, select=c(-Day,-Row, -Column, -Total))
-Species <- c(rep("American toad",nrow(rdata2)))
-Application <- c(rep("Indirect",nrow(rdata2)))
-Exp_duration<- (rep(8,nrow(rdata2)))
-rdata3<-cbind(rdata2, Species, Application, Exp_duration)
+##################
+#van meter 2016
+##################
+dim(vm2016)
+colnames(vm2016)
+vm2016_subset2 <- subset(vm2016, select=c(-Day,-Row, -Column, -Total))
+Species <- c(rep("American toad",nrow(vm2016_subset2)))
+Application <- c(rep("Indirect",nrow(vm2016_subset2)))
+Exp_duration<- (rep(8,nrow(vm2016_subset2)))
+vm2016_subset3 <- cbind(vm2016_subset2, Species, Application, Exp_duration)
 #assign values to application rate
-unique(rdata3$Pesticide)
-rdata3$app_rate_g_cm2[rdata3$Pesticide=="ATZ"] <- 22.9e-6
-rdata3$app_rate_g_cm2[rdata3$Pesticide=="Imid"] <- 5.7e-6
-rdata3$app_rate_g_cm2[rdata3$Pesticide=="Fip"] <- 1.1e-6
-rdata3$app_rate_g_cm2[rdata3$Pesticide=="TDN"] <- 2.7e-6
-rdata3$app_rate_g_cm2[rdata3$Pesticide=="Pendi"] <- 69.8e-6
+unique(vm2016_subset3$Pesticide)
+colnames(vm2016_subset3)
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="ATZTOT"] <- 22.9e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="Imid"] <- 5.7e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="FipTOT"] <- 1.1e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="TNDTot"] <- 2.7e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="Pendi"] <- 69.8e-6
+colnames(vm2016_subset3)
+#drop decay products that were not sprayed, keeping only parents
+rows_to_drop <- which(vm2016_subset3$Parent == 0)
+vm2016_subset4 <- vm2016_subset3[-rows_to_drop,]
+#drop ATZ,Fip, TDN since does not include metabolites in total
+chems_to_drop <- c("ATZ","Fip","TDN")
+vm2016_subset5 <- vm2016_subset4[!(vm2016_subset4$Pesticide %in% chems_to_drop),]
+#now drop parent field
+drop_cols <- c("Parent")
+vm2016_subset6 <- vm2016_subset5[,!(names(vm2016_subset5) %in% drop_cols)]
+# standardize column names
+#View(vm2016_subset4)
+colnames(vm2016_subset6)
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Pesticide")]<-"chemical"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="SoilType")]<-"soil_type"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="BodyBurden")]<-"tissue_conc_ugg"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Soil")]<-"soil_conc_ugg"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Weight")]<-"body_weight_g"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Formulation")]<-"formulation"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Species")]<-"species"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Application")]<-"application"
+colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Exp_duration")]<-"exp_duration"
+# reorder columns alphabetically to help with merge
+#reorder vm2016
+colnames(vm2016_subset6)
+vm2016_merge <- vm2016_subset6[,order(names(vm2016_subset6))]
+dim(vm2016_merge)
+colnames(vm2016_merge)
 ```
+
 
 Combine two Van Meter et al. datasets
-```{r eval=TRUE, echo=FALSE}
-# standardize column names
-names(rdata3)
-#[1] "Pesticide"      "SoilType"       "BodyBurden"     "Soil"          
-#[5] "Weight"         "Formulation"    "Parent"         "Species"       
-#[9] "Application"    "Exp_duration"   "app_rate_g_cm2"
-colnames(rdata3)[1]<-"Chemical"
-colnames(rdata3)[3]<-"TissueConc"
-colnames(rdata3)[4]<-"SoilConc"
-colnames(rdata3)[5]<-"bodyweight"
-# reorder columns alphabetically to help with merge
-rdata4<-rdata3[,order(names(rdata3))]
-dim(rdata4)
-good_data4<-good_data3[,order(names(good_data3))]
-dim(good_data4)
 
+```{r eval=TRUE, echo=FALSE}
+colnames(vm2015_merge)
+colnames(vm2016_merge)
 # combine two dataframes
-all_data1<-rbind(rdata4, good_data4)
-View(all_data1)
-write.csv(all_data1, file=paste(amphibdatadir,"combined_data.csv", sep=""))
+combined_data <- rbind(vm2015_merge, vm2016_merge)
+dim(combined_data)
+colnames(combined_data)
+#View(combined_data)
+combined_data_filename <- paste(amphibdir_data,"combined_data.csv", sep="")
+write.csv(combined_data, file=combined_data_filename)
 ```
+
+<!-- Reformat good_data.csv for merge with RDATA.csv (old, to be deleted) -->
+<!-- ```{r eval=TRUE, echo=FALSE} -->
+<!-- #### reformat good_data.csv for merge with RDATA.csv ####  -->
+<!-- SoilType <- c(rep("PLE",nrow(good_data2))) -->
+<!-- unique(good_data2$Chemical) -->
+<!-- #[1] Atrazine             Deisopropyl Atrazine Desethyl Atrazine    -->
+<!-- #[4] Fipronil             Fipronil-Sulfone     Imidacloprid         -->
+<!-- #[7] Pendimethalin        Total Atrazine       Total Fipronil       -->
+<!-- #[10] Total Triadimefon    Triadimefon          Triadimenol       -->
+<!-- #assign values to new Parent column -->
+<!-- good_data2$Parent[good_data2$Chemical=="Atrazine"] <- 1 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Deisopropyl Atrazine"] <- 0 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Desethyl Atrazine"] <- 0 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Fipronil"] <- 1 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Fipronil-Sulfone"] <- 0 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Imidacloprid"] <- 1 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Pendimethalin"] <- 1 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Total Atrazine"] <- 0 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Total Fipronil"] <- 0 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Total Triadimefon"] <- 0 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Triadimefon"] <- 1 -->
+<!-- good_data2$Parent[good_data2$Chemical=="Triadimenol"] <- 1 -->
+<!-- #create column for Formulation -->
+<!-- Formulation <- (rep(0,nrow(good_data2))) -->
+<!-- Exp_duration<- (rep(8,nrow(good_data2))) -->
+<!-- good_data3<-cbind(good_data2, Formulation, SoilType, Exp_duration) -->
+
+<!-- ``` -->
