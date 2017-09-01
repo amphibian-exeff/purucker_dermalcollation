@@ -1,739 +1,293 @@
-"","app_rate_g_cm2","Application","bodyweight","Chemical","Exp_duration","Formulation","Parent","SoilConc","SoilType","Species","TissueConc"
-"1",NA,"Indirect",13.1831,"ATZTOT",8,0,1,22.87721442,"PLE","American toad",0.337135483
-"2",NA,"Indirect",15.8694,"ATZTOT",8,0,1,39.57404439,"PLE","American toad",1.227227091
-"3",NA,"Indirect",8.3884,"ATZTOT",8,0,1,19.10798205,"PLE","American toad",0.700940082
-"4",NA,"Indirect",14.5384,"ATZTOT",8,0,1,16.62668626,"PLE","American toad",0.367019464
-"5",NA,"Indirect",16.4296,"ATZTOT",8,0,1,28.51661365,"PLE","American toad",0.35231843
-"6",NA,"Indirect",16.59,"ATZTOT",8,0,1,33.99919952,"PLE","American toad",0.818657056
-"7",NA,"Indirect",9.5568,"ATZTOT",8,0,1,29.78251321,"OLS","American toad",0.565666776
-"8",NA,"Indirect",12.3541,"ATZTOT",8,0,1,17.87349815,"OLS","American toad",2.185564918
-"9",NA,"Indirect",11.1447,"ATZTOT",8,0,1,16.59253376,"OLS","American toad",1.460641759
-"10",NA,"Indirect",11.9615,"ATZTOT",8,0,1,12.29392621,"OLS","American toad",0.521202693
-"11",NA,"Indirect",17.3882,"ATZTOT",8,0,1,21.6577354,"OLS","American toad",0.525601376
-"12",NA,"Indirect",11.7687,"ATZTOT",8,0,1,29.25664048,"OLS","American toad",6.443801458
-"13",NA,"Indirect",10.5239,"ATZTOT",8,1,1,23.57654351,"PLE","American toad",0.867924815
-"14",NA,"Indirect",14.6051,"ATZTOT",8,1,1,23.85857164,"PLE","American toad",0.560925254
-"15",NA,"Indirect",16.9753,"ATZTOT",8,1,1,21.82224207,"PLE","American toad",0.572604017
-"16",NA,"Indirect",12.6029,"ATZTOT",8,1,1,22.10602964,"PLE","American toad",0.357537561
-"17",NA,"Indirect",11.4693,"ATZTOT",8,1,1,18.47118347,"PLE","American toad",0.525853638
-"18",NA,"Indirect",11.7396,"ATZTOT",8,1,1,8.640551756,"PLE","American toad",1.29826811
-"19",NA,"Indirect",11.0822,"ATZTOT",8,1,1,14.25437079,"OLS","American toad",1.138952601
-"20",NA,"Indirect",10.069,"ATZTOT",8,1,1,19.5060604,"OLS","American toad",2.05354599
-"21",NA,"Indirect",11.0174,"ATZTOT",8,1,1,18.1116732,"OLS","American toad",0.463586698
-"22",NA,"Indirect",12.3638,"ATZTOT",8,1,1,18.50933254,"OLS","American toad",0.398005502
-"23",NA,"Indirect",10.1878,"ATZTOT",8,1,1,7.936778913,"OLS","American toad",0.428099849
-"24",NA,"Indirect",11.5272,"ATZTOT",8,1,1,16.94936678,"OLS","American toad",0.478180697
-"25",NA,"Indirect",13.1831,"ATZDEA",8,0,0,0.018474887,"PLE","American toad",0.075243228
-"26",NA,"Indirect",15.8694,"ATZDEA",8,0,0,0.036885033,"PLE","American toad",0.28456131
-"27",NA,"Indirect",8.3884,"ATZDEA",8,0,0,0.02858711,"PLE","American toad",0.031793951
-"28",NA,"Indirect",14.5384,"ATZDEA",8,0,0,-0.000644321,"PLE","American toad",0.029729792
-"29",NA,"Indirect",16.4296,"ATZDEA",8,0,0,0.026636263,"PLE","American toad",0.098744923
-"30",NA,"Indirect",16.59,"ATZDEA",8,0,0,0.002484692,"PLE","American toad",0.17487426
-"31",NA,"Indirect",9.5568,"ATZDEA",8,0,0,0.038793145,"OLS","American toad",0.046155227
-"32",NA,"Indirect",12.3541,"ATZDEA",8,0,0,0.092473121,"OLS","American toad",0.370135918
-"33",NA,"Indirect",11.1447,"ATZDEA",8,0,0,0.022522862,"OLS","American toad",0.388027409
-"34",NA,"Indirect",11.9615,"ATZDEA",8,0,0,0.006018982,"OLS","American toad",0.14018625
-"35",NA,"Indirect",17.3882,"ATZDEA",8,0,0,0.034186583,"OLS","American toad",0.175966309
-"36",NA,"Indirect",11.7687,"ATZDEA",8,0,0,0.015977463,"OLS","American toad",2.290047701
-"37",NA,"Indirect",10.5239,"STAUGDEA",8,1,0,0.001983549,"PLE","American toad",0.046360529
-"38",NA,"Indirect",14.6051,"STAUGDEA",8,1,0,-0.005622976,"PLE","American toad",0.096682972
-"39",NA,"Indirect",16.9753,"STAUGDEA",8,1,0,-0.000769958,"PLE","American toad",0.119649025
-"40",NA,"Indirect",12.6029,"STAUGDEA",8,1,0,0.003583328,"PLE","American toad",0.051098408
-"41",NA,"Indirect",11.4693,"STAUGDEA",8,1,0,0.010192612,"PLE","American toad",0.138492752
-"42",NA,"Indirect",11.7396,"STAUGDEA",8,1,0,-0.009369422,"PLE","American toad",0.090403007
-"43",NA,"Indirect",11.0822,"STAUGDEA",8,1,0,0.002097435,"OLS","American toad",0.210713066
-"44",NA,"Indirect",10.069,"STAUGDEA",8,1,0,0.009105339,"OLS","American toad",0.021394977
-"45",NA,"Indirect",11.0174,"STAUGDEA",8,1,0,0.007367168,"OLS","American toad",0.079970792
-"46",NA,"Indirect",12.3638,"STAUGDEA",8,1,0,0.016369788,"OLS","American toad",0.094944473
-"47",NA,"Indirect",10.1878,"STAUGDEA",8,1,0,-0.004208015,"OLS","American toad",0.054282492
-"48",NA,"Indirect",11.5272,"STAUGDEA",8,1,0,0.015956316,"OLS","American toad",0.118276274
-"49",NA,"Indirect",13.1831,"ATZDIA",8,0,0,0.025933992,"PLE","American toad",0.062467607
-"50",NA,"Indirect",15.8694,"ATZDIA",8,0,0,0,"PLE","American toad",0.224374895
-"51",NA,"Indirect",8.3884,"ATZDIA",8,0,0,0.017180449,"PLE","American toad",0.029488417
-"52",NA,"Indirect",14.5384,"ATZDIA",8,0,0,0,"PLE","American toad",0.019483386
-"53",NA,"Indirect",16.4296,"ATZDIA",8,0,0,0.02595133,"PLE","American toad",0.061417037
-"54",NA,"Indirect",16.59,"ATZDIA",8,0,0,0,"PLE","American toad",0.082217508
-"55",NA,"Indirect",9.5568,"ATZDIA",8,0,0,0.017522886,"OLS","American toad",0.047388157
-"56",NA,"Indirect",12.3541,"ATZDIA",8,0,0,0.081112363,"OLS","American toad",0.539793864
-"57",NA,"Indirect",11.1447,"ATZDIA",8,0,0,0.018497648,"OLS","American toad",0.344314559
-"58",NA,"Indirect",11.9615,"ATZDIA",8,0,0,0.00680966,"OLS","American toad",0.110665161
-"59",NA,"Indirect",17.3882,"ATZDIA",8,0,0,0.021651016,"OLS","American toad",0.11308568
-"60",NA,"Indirect",11.7687,"ATZDIA",8,0,0,0,"OLS","American toad",2.254189657
-"61",NA,"Indirect",10.5239,"STAUGDIA",8,1,0,0,"PLE","American toad",0.054306702
-"62",NA,"Indirect",14.6051,"STAUGDIA",8,1,0,0,"PLE","American toad",0.09994256
-"63",NA,"Indirect",16.9753,"STAUGDIA",8,1,0,0,"PLE","American toad",0.109079207
-"64",NA,"Indirect",12.6029,"STAUGDIA",8,1,0,0,"PLE","American toad",0.048166354
-"65",NA,"Indirect",11.4693,"STAUGDIA",8,1,0,0,"PLE","American toad",0.077909035
-"66",NA,"Indirect",11.7396,"STAUGDIA",8,1,0,0,"PLE","American toad",0.10733303
-"67",NA,"Indirect",11.0822,"STAUGDIA",8,1,0,0.013082795,"OLS","American toad",0.36200935
-"68",NA,"Indirect",10.069,"STAUGDIA",8,1,0,0.013709882,"OLS","American toad",0.047111933
-"69",NA,"Indirect",11.0174,"STAUGDIA",8,1,0,0.009624223,"OLS","American toad",0.116571545
-"70",NA,"Indirect",12.3638,"STAUGDIA",8,1,0,0,"OLS","American toad",0.067448012
-"71",NA,"Indirect",10.1878,"STAUGDIA",8,1,0,0,"OLS","American toad",0.061409112
-"72",NA,"Indirect",11.5272,"STAUGDIA",8,1,0,0,"OLS","American toad",0.116065672
-"73",2.29e-05,"Indirect",13.1831,"ATZ",8,0,1,22.83280554,"PLE","American toad",0.199424649
-"74",2.29e-05,"Indirect",15.8694,"ATZ",8,0,1,39.53715936,"PLE","American toad",0.718290887
-"75",2.29e-05,"Indirect",8.3884,"ATZ",8,0,1,19.06221449,"PLE","American toad",0.639657714
-"76",2.29e-05,"Indirect",14.5384,"ATZ",8,0,1,16.62733058,"PLE","American toad",0.317806287
-"77",2.29e-05,"Indirect",16.4296,"ATZ",8,0,1,28.46402606,"PLE","American toad",0.19215647
-"78",2.29e-05,"Indirect",16.59,"ATZ",8,0,1,33.99671482,"PLE","American toad",0.561565288
-"79",2.29e-05,"Indirect",9.5568,"ATZ",8,0,1,29.72619718,"OLS","American toad",0.472123392
-"80",2.29e-05,"Indirect",12.3541,"ATZ",8,0,1,17.69991266,"OLS","American toad",1.275635136
-"81",2.29e-05,"Indirect",11.1447,"ATZ",8,0,1,16.55151325,"OLS","American toad",0.72829979
-"82",2.29e-05,"Indirect",11.9615,"ATZ",8,0,1,12.28109757,"OLS","American toad",0.270351281
-"83",2.29e-05,"Indirect",17.3882,"ATZ",8,0,1,21.6018978,"OLS","American toad",0.236549387
-"84",2.29e-05,"Indirect",11.7687,"ATZ",8,0,1,29.24066302,"OLS","American toad",1.899564101
-"85",2.29e-05,"Indirect",10.5239,"ATZ",8,1,1,23.57455996,"PLE","American toad",0.767257584
-"86",2.29e-05,"Indirect",14.6051,"ATZ",8,1,1,23.86419462,"PLE","American toad",0.364299722
-"87",2.29e-05,"Indirect",16.9753,"ATZ",8,1,1,21.82301203,"PLE","American toad",0.343875786
-"88",2.29e-05,"Indirect",12.6029,"ATZ",8,1,1,22.10244631,"PLE","American toad",0.258272799
-"89",2.29e-05,"Indirect",11.4693,"ATZ",8,1,1,18.46099086,"PLE","American toad",0.30945185
-"90",2.29e-05,"Indirect",11.7396,"ATZ",8,1,1,8.649921179,"PLE","American toad",1.100532073
-"91",2.29e-05,"Indirect",11.0822,"ATZ",8,1,1,14.23919056,"OLS","American toad",0.566230184
-"92",2.29e-05,"Indirect",10.069,"ATZ",8,1,1,19.48324518,"OLS","American toad",1.985039079
-"93",2.29e-05,"Indirect",11.0174,"ATZ",8,1,1,18.09468181,"OLS","American toad",0.267044361
-"94",2.29e-05,"Indirect",12.3638,"ATZ",8,1,1,18.49296275,"OLS","American toad",0.235613016
-"95",2.29e-05,"Indirect",10.1878,"ATZ",8,1,1,7.940986928,"OLS","American toad",0.312408245
-"96",2.29e-05,"Indirect",11.5272,"ATZ",8,1,1,16.93341046,"OLS","American toad",0.24383875
-"97",5.7e-06,"Indirect",13.986,"Imid",8,0,1,0.970934893,"PLE","American toad",0.018120187
-"98",5.7e-06,"Indirect",18.1095,"Imid",8,0,1,1.646094454,"PLE","American toad",0.050150934
-"99",5.7e-06,"Indirect",8,"Imid",8,0,1,1.347997271,"PLE","American toad",0.062813074
-"100",5.7e-06,"Indirect",13.1817,"Imid",8,0,1,0.205311904,"PLE","American toad",0.015920471
-"101",5.7e-06,"Indirect",12.9241,"Imid",8,0,1,2.997491181,"PLE","American toad",0.074721574
-"102",5.7e-06,"Indirect",13.0377,"Imid",8,0,1,0.785382305,"PLE","American toad",0.019896995
-"103",5.7e-06,"Indirect",10.7167,"Imid",8,0,1,1.293386968,"OLS","American toad",0.022283481
-"104",5.7e-06,"Indirect",13.3005,"Imid",8,0,1,0.727272814,"OLS","American toad",0.06442277
-"105",5.7e-06,"Indirect",9.7913,"Imid",8,0,1,1.123159241,"OLS","American toad",0.018261231
-"106",5.7e-06,"Indirect",6.9639,"Imid",8,0,1,1.0194954,"OLS","American toad",0.025467962
-"107",5.7e-06,"Indirect",12.9804,"Imid",8,0,1,1.035391151,"OLS","American toad",0.019752402
-"108",5.7e-06,"Indirect",14.0828,"Imid",8,0,1,0.478487305,"OLS","American toad",0.061677525
-"109",NA,"Indirect",10.7426,"FipTOT",8,0,1,1.725175021,"PLE","American toad",0.0321181
-"110",NA,"Indirect",10.8321,"FipTOT",8,0,1,1.34295,"PLE","American toad",0.16419294
-"111",NA,"Indirect",23.3405,"FipTOT",8,0,1,2.117466169,"PLE","American toad",0.113813046
-"112",NA,"Indirect",11.3478,"FipTOT",8,0,1,2.339183226,"PLE","American toad",0.055741733
-"113",NA,"Indirect",11.2404,"FipTOT",8,0,1,1.530006724,"PLE","American toad",0.129413289
-"114",NA,"Indirect",7.3804,"FipTOT",8,0,1,1.636974629,"PLE","American toad",0.035164703
-"115",NA,"Indirect",8.5539,"FipTOT",8,0,1,0.717592235,"OLS","American toad",0.16426118
-"116",NA,"Indirect",12.178,"FipTOT",8,0,1,1.047219343,"OLS","American toad",0.021762222
-"117",NA,"Indirect",11.465,"FipTOT",8,0,1,1.281327696,"OLS","American toad",0.114864224
-"118",NA,"Indirect",13.1914,"FipTOT",8,0,1,1.220139993,"OLS","American toad",0.208656204
-"119",NA,"Indirect",11.7796,"FipTOT",8,0,1,1.103307511,"OLS","American toad",0.230546973
-"120",NA,"Indirect",9.0658,"FipTOT",8,0,1,1.397009124,"OLS","American toad",0.210706877
-"121",1.1e-06,"Indirect",10.7426,"Fip",8,0,1,1.678286602,"PLE","American toad",0.017765338
-"122",1.1e-06,"Indirect",10.8321,"Fip",8,0,1,1.82,"PLE","American toad",0.086421575
-"123",1.1e-06,"Indirect",23.3405,"Fip",8,0,1,2.073537763,"PLE","American toad",0.087383869
-"124",1.1e-06,"Indirect",11.3478,"Fip",8,0,1,2.293421649,"PLE","American toad",0.03655113
-"125",1.1e-06,"Indirect",11.2404,"Fip",8,0,1,1.461423506,"PLE","American toad",0.080790623
-"126",1.1e-06,"Indirect",7.3804,"Fip",8,0,1,1.59985695,"PLE","American toad",0.019580826
-"127",1.1e-06,"Indirect",8.5539,"Fip",8,0,1,0.69587111,"OLS","American toad",0.090593929
-"128",1.1e-06,"Indirect",12.178,"Fip",8,0,1,1.020571763,"OLS","American toad",0.012082677
-"129",1.1e-06,"Indirect",11.465,"Fip",8,0,1,1.248651879,"OLS","American toad",0.070675155
-"130",1.1e-06,"Indirect",13.1914,"Fip",8,0,1,1.189906079,"OLS","American toad",0.135551271
-"131",1.1e-06,"Indirect",11.7796,"Fip",8,0,1,1.071580039,"OLS","American toad",0.127362902
-"132",1.1e-06,"Indirect",9.0658,"Fip",8,0,1,1.3625109,"OLS","American toad",0.1452668
-"133",NA,"Indirect",10.7426,"FipS",8,0,0,0.046888419,"PLE","American toad",0.014352761
-"134",NA,"Indirect",10.8321,"FipS",8,0,0,0.048,"PLE","American toad",0.077771365
-"135",NA,"Indirect",23.3405,"FipS",8,0,0,0.043928407,"PLE","American toad",0.026429176
-"136",NA,"Indirect",11.3478,"FipS",8,0,0,0.045761577,"PLE","American toad",0.019190603
-"137",NA,"Indirect",11.2404,"FipS",8,0,0,0.068583218,"PLE","American toad",0.048622666
-"138",NA,"Indirect",7.3804,"FipS",8,0,0,0.037117679,"PLE","American toad",0.015583877
-"139",NA,"Indirect",8.5539,"FipS",8,0,0,0.021721125,"OLS","American toad",0.073667252
-"140",NA,"Indirect",12.178,"FipS",8,0,0,0.02664758,"OLS","American toad",0.009679546
-"141",NA,"Indirect",11.465,"FipS",8,0,0,0.032675816,"OLS","American toad",0.044189069
-"142",NA,"Indirect",13.1914,"FipS",8,0,0,0.030233914,"OLS","American toad",0.073104932
-"143",NA,"Indirect",11.7796,"FipS",8,0,0,0.031727472,"OLS","American toad",0.103184071
-"144",NA,"Indirect",9.0658,"FipS",8,0,0,0.034498224,"OLS","American toad",0.065440077
-"145",NA,"Indirect",12.4407,"TNDTOT",8,0,1,5.213751666,"PLE","American toad",0.115492748
-"146",NA,"Indirect",10.5903,"TNDTOT",8,0,1,8.969771357,"PLE","American toad",0.089322481
-"147",NA,"Indirect",13.9438,"TNDTOT",8,0,1,5.190326785,"PLE","American toad",0.426705134
-"148",NA,"Indirect",8.8434,"TNDTOT",8,0,1,4.831822198,"PLE","American toad",0.119037947
-"149",NA,"Indirect",9.5231,"TNDTOT",8,0,1,3.108359096,"PLE","American toad",0.175676804
-"150",NA,"Indirect",11.5642,"TNDTOT",8,0,1,3.280654333,"PLE","American toad",0.165848057
-"151",NA,"Indirect",13.2227,"TNDTOT",8,0,1,3.389932459,"OLS","American toad",0.388854872
-"152",NA,"Indirect",8.1326,"TNDTOT",8,0,1,6.291932781,"OLS","American toad",0.369952253
-"153",NA,"Indirect",10.8067,"TNDTOT",8,0,1,4.692698035,"OLS","American toad",0.259962468
-"154",NA,"Indirect",11.4182,"TNDTOT",8,0,1,2.191303526,"OLS","American toad",0.486458171
-"155",NA,"Indirect",12.0198,"TNDTOT",8,0,1,6.594152401,"OLS","American toad",0.189434186
-"156",NA,"Indirect",14.0841,"TNDTOT",8,0,1,3.866282728,"OLS","American toad",0.273508383
-"157",NA,"Indirect",15.0158,"TNDTOT",8,1,1,3.806583386,"PLE","American toad",0.103279426
-"158",NA,"Indirect",14.8152,"TNDTOT",8,1,1,8.660951317,"PLE","American toad",0.071629345
-"159",NA,"Indirect",13.8218,"TNDTOT",8,1,1,2.629241417,"PLE","American toad",0.105756154
-"160",NA,"Indirect",7.1089,"TNDTOT",8,1,1,7.05712632,"PLE","American toad",0.026010568
-"161",NA,"Indirect",7.9909,"TNDTOT",8,1,1,5.763070813,"PLE","American toad",0.21362006
-"162",NA,"Indirect",12.1126,"TNDTOT",8,1,1,8.179491858,"PLE","American toad",0.141794761
-"163",NA,"Indirect",11.4482,"TNDTOT",8,1,1,3.623115759,"OLS","American toad",0.10558682
-"164",NA,"Indirect",7.533,"TNDTOT",8,1,1,6.887993016,"OLS","American toad",0.218474134
-"165",NA,"Indirect",15.9483,"TNDTOT",8,1,1,5.640249186,"OLS","American toad",0.119080734
-"166",NA,"Indirect",10.4409,"TNDTOT",8,1,1,3.11171161,"OLS","American toad",0.474085035
-"167",NA,"Indirect",11.141,"TNDTOT",8,1,1,3.832105687,"OLS","American toad",0.142626446
-"168",NA,"Indirect",12.2923,"TNDTOT",8,1,1,5.388595843,"OLS","American toad",0.04358855
-"169",NA,"Indirect",12.4407,"TDLA",8,0,0,0.048986516,"PLE","American toad",0.017791352
-"170",NA,"Indirect",10.5903,"TDLA",8,0,0,0.150571495,"PLE","American toad",-0.010318143
-"171",NA,"Indirect",13.9438,"TDLA",8,0,0,0.043897558,"PLE","American toad",0.108952663
-"172",NA,"Indirect",8.8434,"TDLA",8,0,0,0.051714237,"PLE","American toad",0.008676441
-"173",NA,"Indirect",9.5231,"TDLA",8,0,0,-0.006319805,"PLE","American toad",0.021333696
-"174",NA,"Indirect",11.5642,"TDLA",8,0,0,-0.007915859,"PLE","American toad",0.018829419
-"175",NA,"Indirect",13.2227,"TDLA",8,0,0,0.017607762,"OLS","American toad",0.10902924
-"176",NA,"Indirect",8.1326,"TDLA",8,0,0,-0.001445107,"OLS","American toad",0.069287823
-"177",NA,"Indirect",10.8067,"TDLA",8,0,0,-0.009378172,"OLS","American toad",0.073094282
-"178",NA,"Indirect",11.4182,"TDLA",8,0,0,-0.015057855,"OLS","American toad",0.153304993
-"179",NA,"Indirect",12.0198,"TDLA",8,0,0,-0.041538386,"OLS","American toad",0.023561872
-"180",NA,"Indirect",14.0841,"TDLA",8,0,0,-0.021787085,"OLS","American toad",0.042424881
-"181",NA,"Indirect",15.0158,"STRIKEA",8,1,0,0.004561962,"PLE","American toad",0.024159174
-"182",NA,"Indirect",14.8152,"STRIKEA",8,1,0,-0.01117111,"PLE","American toad",0.005981046
-"183",NA,"Indirect",13.8218,"STRIKEA",8,1,0,-0.028486697,"PLE","American toad",0.011079523
-"184",NA,"Indirect",7.1089,"STRIKEA",8,1,0,0.002474536,"PLE","American toad",-0.02824179
-"185",NA,"Indirect",7.9909,"STRIKEA",8,1,0,-0.019519217,"PLE","American toad",0.035625349
-"186",NA,"Indirect",12.1126,"STRIKEA",8,1,0,-0.004788974,"PLE","American toad",0.01453954
-"187",NA,"Indirect",11.4482,"STRIKEA",8,1,0,-0.026968965,"OLS","American toad",0.013694211
-"188",NA,"Indirect",7.533,"STRIKEA",8,1,0,-0.033324841,"OLS","American toad",0.055403605
-"189",NA,"Indirect",15.9483,"STRIKEA",8,1,0,-0.063421977,"OLS","American toad",0.004702371
-"190",NA,"Indirect",10.4409,"STRIKEA",8,1,0,-0.080624218,"OLS","American toad",0.148766705
-"191",NA,"Indirect",11.141,"STRIKEA",8,1,0,-0.040727511,"OLS","American toad",0.028578242
-"192",NA,"Indirect",12.2923,"STRIKEA",8,1,0,-0.058567956,"OLS","American toad",-0.010318143
-"193",NA,"Indirect",12.4407,"TDLB",8,0,0,0.490399799,"PLE","American toad",0.043018482
-"194",NA,"Indirect",10.5903,"TDLB",8,0,0,0.988372221,"PLE","American toad",0.045634518
-"195",NA,"Indirect",13.9438,"TDLB",8,0,0,0.510491432,"PLE","American toad",0.189513197
-"196",NA,"Indirect",8.8434,"TDLB",8,0,0,0.578505204,"PLE","American toad",0.0651025
-"197",NA,"Indirect",9.5231,"TDLB",8,0,0,0.242908011,"PLE","American toad",0.076235088
-"198",NA,"Indirect",11.5642,"TDLB",8,0,0,0.182685826,"PLE","American toad",0.061930126
-"199",NA,"Indirect",13.2227,"TDLB",8,0,0,0.106862128,"OLS","American toad",0.220901795
-"200",NA,"Indirect",8.1326,"TDLB",8,0,0,0.048705034,"OLS","American toad",0.136575347
-"201",NA,"Indirect",10.8067,"TDLB",8,0,0,0.036733164,"OLS","American toad",0.14142168
-"202",NA,"Indirect",11.4182,"TDLB",8,0,0,-0.004573528,"OLS","American toad",0.261939704
-"203",NA,"Indirect",12.0198,"TDLB",8,0,0,-0.040063796,"OLS","American toad",0.062462507
-"204",NA,"Indirect",14.0841,"TDLB",8,0,0,0.00217416,"OLS","American toad",0.138604689
-"205",NA,"Indirect",15.0158,"STRIKEB",8,1,0,0.239033957,"PLE","American toad",0.045125592
-"206",NA,"Indirect",14.8152,"STRIKEB",8,1,0,0.200122524,"PLE","American toad",0.03436473
-"207",NA,"Indirect",13.8218,"STRIKEB",8,1,0,0.096795088,"PLE","American toad",0.046153362
-"208",NA,"Indirect",7.1089,"STRIKEB",8,1,0,0.281677048,"PLE","American toad",-0.03780412
-"209",NA,"Indirect",7.9909,"STRIKEB",8,1,0,0.206645129,"PLE","American toad",0.087585598
-"210",NA,"Indirect",12.1126,"STRIKEB",8,1,0,0.228234041,"PLE","American toad",0.047186582
-"211",NA,"Indirect",11.4482,"STRIKEB",8,1,0,-0.022153661,"OLS","American toad",0.034362367
-"212",NA,"Indirect",7.533,"STRIKEB",8,1,0,-0.020723194,"OLS","American toad",0.117466434
-"213",NA,"Indirect",15.9483,"STRIKEB",8,1,0,-0.037893622,"OLS","American toad",0.057735705
-"214",NA,"Indirect",10.4409,"STRIKEB",8,1,0,-0.105181925,"OLS","American toad",0.281546798
-"215",NA,"Indirect",11.141,"STRIKEB",8,1,0,-0.031076031,"OLS","American toad",0.049183559
-"216",NA,"Indirect",12.2923,"STRIKEB",8,1,0,-0.072929806,"OLS","American toad",-0.004910663
-"217",2.7e-06,"Indirect",12.4407,"TDN",8,0,1,4.674365351,"PLE","American toad",0.054682914
-"218",2.7e-06,"Indirect",10.5903,"TDN",8,0,1,7.830827641,"PLE","American toad",0.047569044
-"219",2.7e-06,"Indirect",13.9438,"TDN",8,0,1,4.635937795,"PLE","American toad",0.128239274
-"220",2.7e-06,"Indirect",8.8434,"TDN",8,0,1,4.201602757,"PLE","American toad",0.045259005
-"221",2.7e-06,"Indirect",9.5231,"TDN",8,0,1,2.87177089,"PLE","American toad",0.07810802
-"222",2.7e-06,"Indirect",11.5642,"TDN",8,0,1,3.105884367,"PLE","American toad",0.085088513
-"223",2.7e-06,"Indirect",13.2227,"TDN",8,0,1,3.265462569,"OLS","American toad",0.058923837
-"224",2.7e-06,"Indirect",8.1326,"TDN",8,0,1,6.244672854,"OLS","American toad",0.164089083
-"225",2.7e-06,"Indirect",10.8067,"TDN",8,0,1,4.665343043,"OLS","American toad",0.045446506
-"226",2.7e-06,"Indirect",11.4182,"TDN",8,0,1,2.210934909,"OLS","American toad",0.071213474
-"227",2.7e-06,"Indirect",12.0198,"TDN",8,0,1,6.675754583,"OLS","American toad",0.103409807
-"228",2.7e-06,"Indirect",14.0841,"TDN",8,0,1,3.885895652,"OLS","American toad",0.092478812
-"229",2.7e-06,"Indirect",15.0158,"TDN",8,1,1,3.562987467,"PLE","American toad",0.033994659
-"230",2.7e-06,"Indirect",14.8152,"TDN",8,1,1,8.471999903,"PLE","American toad",0.031283569
-"231",2.7e-06,"Indirect",13.8218,"TDN",8,1,1,2.560933026,"PLE","American toad",0.048523269
-"232",2.7e-06,"Indirect",7.1089,"TDN",8,1,1,6.772974737,"PLE","American toad",0.054252358
-"233",2.7e-06,"Indirect",7.9909,"TDN",8,1,1,5.575944902,"PLE","American toad",0.090409113
-"234",2.7e-06,"Indirect",12.1126,"TDN",8,1,1,7.956046792,"PLE","American toad",0.080068639
-"235",2.7e-06,"Indirect",11.4482,"TDN",8,1,1,3.672238384,"OLS","American toad",0.057530243
-"236",2.7e-06,"Indirect",7.533,"TDN",8,1,1,6.942041052,"OLS","American toad",0.045604095
-"237",2.7e-06,"Indirect",15.9483,"TDN",8,1,1,5.741564785,"OLS","American toad",0.056642657
-"238",2.7e-06,"Indirect",10.4409,"TDN",8,1,1,3.297517753,"OLS","American toad",0.043771532
-"239",2.7e-06,"Indirect",11.141,"TDN",8,1,1,3.903909229,"OLS","American toad",0.064864645
-"240",2.7e-06,"Indirect",12.2923,"TDN",8,1,1,5.520093605,"OLS","American toad",0.055105166
-"241",6.98e-05,"Indirect",7.5145,"Pendi",8,0,1,10.58560279,"PLE","American toad",5.199951046
-"242",6.98e-05,"Indirect",13.2906,"Pendi",8,0,1,12.26733887,"PLE","American toad",1.811674231
-"243",6.98e-05,"Indirect",10.0699,"Pendi",8,0,1,13.10595638,"PLE","American toad",3.993612884
-"244",6.98e-05,"Indirect",13.469,"Pendi",8,0,1,22.90681995,"PLE","American toad",1.38470843
-"245",6.98e-05,"Indirect",11.8384,"Pendi",8,0,1,20.31371332,"PLE","American toad",2.758089025
-"246",6.98e-05,"Indirect",11.6099,"Pendi",8,0,1,8.079352476,"PLE","American toad",2.539315815
-"247",6.98e-05,"Indirect",8.7943,"Pendi",8,0,1,8.780199562,"OLS","American toad",2.917259067
-"248",6.98e-05,"Indirect",12.498,"Pendi",8,0,1,11.00768858,"OLS","American toad",4.729568549
-"249",6.98e-05,"Indirect",14.8081,"Pendi",8,0,1,6.310025314,"OLS","American toad",6.874438593
-"250",6.98e-05,"Indirect",13.4299,"Pendi",8,0,1,10.01366331,"OLS","American toad",1.492402712
-"251",6.98e-05,"Indirect",13.5552,"Pendi",8,0,1,13.91754836,"OLS","American toad",1.888097365
-"252",6.98e-05,"Indirect",8.3589,"Pendi",8,0,1,17.79580859,"OLS","American toad",4.287971426
-"253",6.98e-05,"Indirect",13.5285,"Pendi",8,1,1,8.724259234,"PLE","American toad",2.879433002
-"254",6.98e-05,"Indirect",13.7458,"Pendi",8,1,1,11.64651601,"PLE","American toad",3.750781295
-"255",6.98e-05,"Indirect",11.4246,"Pendi",8,1,1,11.21634881,"PLE","American toad",2.648653905
-"256",6.98e-05,"Indirect",10.0043,"Pendi",8,1,1,5.697537118,"PLE","American toad",2.314244032
-"257",6.98e-05,"Indirect",13.4038,"Pendi",8,1,1,6.758968643,"PLE","American toad",0.896933721
-"258",6.98e-05,"Indirect",10.5726,"Pendi",8,1,1,14.91187384,"PLE","American toad",5.703493109
-"259",6.98e-05,"Indirect",17.4496,"Pendi",8,1,1,16.05643523,"OLS","American toad",0.875538299
-"260",6.98e-05,"Indirect",13.6417,"Pendi",8,1,1,24.88780061,"OLS","American toad",1.356762725
-"261",6.98e-05,"Indirect",9.9412,"Pendi",8,1,1,10.84702222,"OLS","American toad",3.719878758
-"262",6.98e-05,"Indirect",16.3062,"Pendi",8,1,1,5.135481376,"OLS","American toad",1.277680298
-"263",6.98e-05,"Indirect",11.3268,"Pendi",8,1,1,8.871930181,"OLS","American toad",1.648936582
-"264",6.98e-05,"Indirect",10.2275,"Pendi",8,1,1,14.06687759,"OLS","American toad",1.540378381
-"265",2.3e-05,"Direct",2.02028,"Atrazine",8,0,1,15.04703892,"PLE","Barking treefrog",10.08186253
-"266",2.3e-05,"Direct",1.69156,"Atrazine",8,0,1,15.04703892,"PLE","Barking treefrog",6.133864568
-"267",2.3e-05,"Direct",2.07221,"Atrazine",8,0,1,15.04703892,"PLE","Barking treefrog",7.947823598
-"268",2.3e-05,"Direct",2.36942,"Atrazine",8,0,1,15.04703892,"PLE","Barking treefrog",15.16927588
-"269",2.3e-05,"Direct",1.96104,"Atrazine",8,0,1,15.04703892,"PLE","Barking treefrog",12.02851098
-"270",NA,"Direct",2.02028,"Deisopropyl Atrazine",8,0,0,0.015060984,"PLE","Barking treefrog",1.543769182
-"271",NA,"Direct",1.69156,"Deisopropyl Atrazine",8,0,0,0.015060984,"PLE","Barking treefrog",1.821242824
-"272",NA,"Direct",2.07221,"Deisopropyl Atrazine",8,0,0,0.015060984,"PLE","Barking treefrog",1.190937601
-"273",NA,"Direct",2.36942,"Deisopropyl Atrazine",8,0,0,0.015060984,"PLE","Barking treefrog",1.897880614
-"274",NA,"Direct",1.96104,"Deisopropyl Atrazine",8,0,0,0.015060984,"PLE","Barking treefrog",1.308424429
-"275",NA,"Direct",2.02028,"Desethyl Atrazine",8,0,0,0.042809913,"PLE","Barking treefrog",0.662537491
-"276",NA,"Direct",1.69156,"Desethyl Atrazine",8,0,0,0.042809913,"PLE","Barking treefrog",0.96124623
-"277",NA,"Direct",2.07221,"Desethyl Atrazine",8,0,0,0.042809913,"PLE","Barking treefrog",0.563817506
-"278",NA,"Direct",2.36942,"Desethyl Atrazine",8,0,0,0.042809913,"PLE","Barking treefrog",0.763643102
-"279",NA,"Direct",1.96104,"Desethyl Atrazine",8,0,0,0.042809913,"PLE","Barking treefrog",0.880340098
-"280",1.11e-06,"Direct",2.73317,"Fipronil",8,0,1,3.435699888,"PLE","Barking treefrog",0.668859694
-"281",1.11e-06,"Direct",2.02542,"Fipronil",8,0,1,3.435699888,"PLE","Barking treefrog",0.595135621
-"282",1.11e-06,"Direct",2.12849,"Fipronil",8,0,1,3.435699888,"PLE","Barking treefrog",0.696635116
-"283",1.11e-06,"Direct",1.73265,"Fipronil",8,0,1,3.435699888,"PLE","Barking treefrog",0.504524369
-"284",1.11e-06,"Direct",1.52771,"Fipronil",8,0,1,3.435699888,"PLE","Barking treefrog",0.811189766
-"285",NA,"Direct",2.73317,"Fipronil-Sulfone",8,0,0,0.056783541,"PLE","Barking treefrog",1.731426071
-"286",NA,"Direct",2.02542,"Fipronil-Sulfone",8,0,0,0.056783541,"PLE","Barking treefrog",1.06297162
-"287",NA,"Direct",2.12849,"Fipronil-Sulfone",8,0,0,0.056783541,"PLE","Barking treefrog",0.966148933
-"288",NA,"Direct",1.73265,"Fipronil-Sulfone",8,0,0,0.056783541,"PLE","Barking treefrog",1.569436861
-"289",NA,"Direct",1.52771,"Fipronil-Sulfone",8,0,0,0.056783541,"PLE","Barking treefrog",1.104700433
-"290",5.58e-06,"Direct",1.73625,"Imidacloprid",8,0,1,0.47984644,"PLE","Barking treefrog",1.015287169
-"291",5.58e-06,"Direct",2.61111,"Imidacloprid",8,0,1,0.47984644,"PLE","Barking treefrog",1.636083216
-"292",5.58e-06,"Direct",1.82332,"Imidacloprid",8,0,1,0.47984644,"PLE","Barking treefrog",0.926100389
-"293",5.58e-06,"Direct",2.91551,"Imidacloprid",8,0,1,0.47984644,"PLE","Barking treefrog",0.718277624
-"294",5.58e-06,"Direct",2.49115,"Imidacloprid",8,0,1,0.47984644,"PLE","Barking treefrog",1.08903614
-"295",2e-05,"Direct",2.09766,"Pendimethalin",8,0,1,12.11934838,"PLE","Barking treefrog",2.138795205
-"296",2e-05,"Direct",2.41178,"Pendimethalin",8,0,1,12.11934838,"PLE","Barking treefrog",2.01901591
-"297",2e-05,"Direct",1.72083,"Pendimethalin",8,0,1,12.11934838,"PLE","Barking treefrog",2.28849235
-"298",2e-05,"Direct",2.70413,"Pendimethalin",8,0,1,12.11934838,"PLE","Barking treefrog",2.767161376
-"299",2e-05,"Direct",2.23741,"Pendimethalin",8,0,1,12.11934838,"PLE","Barking treefrog",1.232549848
-"300",2.3e-05,"Direct",2.02028,"Total Atrazine",8,0,0,15.10490982,"PLE","Barking treefrog",12.2881692
-"301",2.3e-05,"Direct",1.69156,"Total Atrazine",8,0,0,15.10490982,"PLE","Barking treefrog",8.916353622
-"302",2.3e-05,"Direct",2.07221,"Total Atrazine",8,0,0,15.10490982,"PLE","Barking treefrog",9.702578705
-"303",2.3e-05,"Direct",2.36942,"Total Atrazine",8,0,0,15.10490982,"PLE","Barking treefrog",17.83079959
-"304",2.3e-05,"Direct",1.96104,"Total Atrazine",8,0,0,15.10490982,"PLE","Barking treefrog",14.21727551
-"305",1.11e-06,"Direct",2.73317,"Total Fipronil",8,0,0,3.492483429,"PLE","Barking treefrog",2.400285765
-"306",1.11e-06,"Direct",2.02542,"Total Fipronil",8,0,0,3.492483429,"PLE","Barking treefrog",1.658107241
-"307",1.11e-06,"Direct",2.12849,"Total Fipronil",8,0,0,3.492483429,"PLE","Barking treefrog",1.662784049
-"308",1.11e-06,"Direct",1.73265,"Total Fipronil",8,0,0,3.492483429,"PLE","Barking treefrog",2.07396123
-"309",1.11e-06,"Direct",1.52771,"Total Fipronil",8,0,0,3.492483429,"PLE","Barking treefrog",1.915890199
-"310",2.85e-06,"Direct",1.72511,"Total Triadimefon",8,0,0,8.451291713,"PLE","Barking treefrog",0.636157453
-"311",2.85e-06,"Direct",1.94887,"Total Triadimefon",8,0,0,8.451291713,"PLE","Barking treefrog",0.972799964
-"312",2.85e-06,"Direct",1.55295,"Total Triadimefon",8,0,0,8.451291713,"PLE","Barking treefrog",0.397699131
-"313",2.85e-06,"Direct",2.37346,"Total Triadimefon",8,0,0,8.451291713,"PLE","Barking treefrog",0.642604155
-"314",2.85e-06,"Direct",1.57685,"Total Triadimefon",8,0,0,8.451291713,"PLE","Barking treefrog",0.48091159
-"315",2.85e-06,"Direct",1.72511,"Triadimefon",8,0,1,5.341506442,"PLE","Barking treefrog",0.378704732
-"316",2.85e-06,"Direct",1.94887,"Triadimefon",8,0,1,5.341506442,"PLE","Barking treefrog",0.579809895
-"317",2.85e-06,"Direct",1.55295,"Triadimefon",8,0,1,5.341506442,"PLE","Barking treefrog",0.229556748
-"318",2.85e-06,"Direct",2.37346,"Triadimefon",8,0,1,5.341506442,"PLE","Barking treefrog",0.387546979
-"319",2.85e-06,"Direct",1.57685,"Triadimefon",8,0,1,5.341506442,"PLE","Barking treefrog",0.272978645
-"320",NA,"Direct",1.72511,"Triadimenol",8,0,1,3.109785271,"PLE","Barking treefrog",0.257452721
-"321",NA,"Direct",1.94887,"Triadimenol",8,0,1,3.109785271,"PLE","Barking treefrog",0.392990069
-"322",NA,"Direct",1.55295,"Triadimenol",8,0,1,3.109785271,"PLE","Barking treefrog",0.168142383
-"323",NA,"Direct",2.37346,"Triadimenol",8,0,1,3.109785271,"PLE","Barking treefrog",0.255057176
-"324",NA,"Direct",1.57685,"Triadimenol",8,0,1,3.109785271,"PLE","Barking treefrog",0.207932946
-"325",2.3e-05,"Indirect",2.069224088,"Atrazine",8,0,1,14.37980826,"PLE","Barking treefrog",5.799757517
-"326",2.3e-05,"Indirect",1.2818,"Atrazine",8,0,1,14.37980826,"PLE","Barking treefrog",4.238755194
-"327",2.3e-05,"Indirect",1.91549,"Atrazine",8,0,1,14.37980826,"PLE","Barking treefrog",3.459714466
-"328",2.3e-05,"Indirect",1.66783,"Atrazine",8,0,1,14.37980826,"PLE","Barking treefrog",3.770774366
-"329",2.3e-05,"Indirect",2.6954,"Atrazine",8,0,1,14.37980826,"PLE","Barking treefrog",3.671620398
-"330",NA,"Indirect",2.069224088,"Deisopropyl Atrazine",8,0,0,0.01177602,"PLE","Barking treefrog",1.254828498
-"331",NA,"Indirect",1.2818,"Deisopropyl Atrazine",8,0,0,0.01177602,"PLE","Barking treefrog",1.232233143
-"332",NA,"Indirect",1.91549,"Deisopropyl Atrazine",8,0,0,0.01177602,"PLE","Barking treefrog",1.161709139
-"333",NA,"Indirect",1.66783,"Deisopropyl Atrazine",8,0,0,0.01177602,"PLE","Barking treefrog",1.112263084
-"334",NA,"Indirect",2.6954,"Deisopropyl Atrazine",8,0,0,0.01177602,"PLE","Barking treefrog",1.21120004
-"335",NA,"Indirect",2.069224088,"Desethyl Atrazine",8,0,0,0.044544085,"PLE","Barking treefrog",0.822366389
-"336",NA,"Indirect",1.2818,"Desethyl Atrazine",8,0,0,0.044544085,"PLE","Barking treefrog",0.871828196
-"337",NA,"Indirect",1.91549,"Desethyl Atrazine",8,0,0,0.044544085,"PLE","Barking treefrog",0.438120641
-"338",NA,"Indirect",1.66783,"Desethyl Atrazine",8,0,0,0.044544085,"PLE","Barking treefrog",0.757154523
-"339",NA,"Indirect",2.6954,"Desethyl Atrazine",8,0,0,0.044544085,"PLE","Barking treefrog",0.749143657
-"340",1.12e-06,"Indirect",1.62588,"Fipronil",8,0,1,2.464591226,"PLE","Barking treefrog",0.242225711
-"341",1.12e-06,"Indirect",1.22989,"Fipronil",8,0,1,2.464591226,"PLE","Barking treefrog",0.365594772
-"342",1.12e-06,"Indirect",2.00445,"Fipronil",8,0,1,2.464591226,"PLE","Barking treefrog",0.19909387
-"343",1.12e-06,"Indirect",1.99483,"Fipronil",8,0,1,2.464591226,"PLE","Barking treefrog",0.185740783
-"344",1.12e-06,"Indirect",1.56533,"Fipronil",8,0,1,2.464591226,"PLE","Barking treefrog",0.120576038
-"345",NA,"Indirect",1.62588,"Fipronil-Sulfone",8,0,0,0.031110731,"PLE","Barking treefrog",0.413924973
-"346",NA,"Indirect",1.22989,"Fipronil-Sulfone",8,0,0,0.031110731,"PLE","Barking treefrog",0.601126387
-"347",NA,"Indirect",2.00445,"Fipronil-Sulfone",8,0,0,0.031110731,"PLE","Barking treefrog",0.26504608
-"348",NA,"Indirect",1.99483,"Fipronil-Sulfone",8,0,0,0.031110731,"PLE","Barking treefrog",0.275779199
-"349",NA,"Indirect",1.56533,"Fipronil-Sulfone",8,0,0,0.031110731,"PLE","Barking treefrog",0.179207061
-"350",5.69e-06,"Indirect",1.95576,"Imidacloprid",8,0,1,2.565991685,"PLE","Barking treefrog",0.329814712
-"351",5.69e-06,"Indirect",2.26328,"Imidacloprid",8,0,1,2.565991685,"PLE","Barking treefrog",0.210770534
-"352",5.69e-06,"Indirect",1.27439,"Imidacloprid",8,0,1,2.565991685,"PLE","Barking treefrog",0.50673308
-"353",5.69e-06,"Indirect",1.89439,"Imidacloprid",8,0,1,2.565991685,"PLE","Barking treefrog",0.292676446
-"354",5.69e-06,"Indirect",1.4839,"Imidacloprid",8,0,1,2.565991685,"PLE","Barking treefrog",0.622028925
-"355",1.98e-05,"Indirect",2.44812,"Pendimethalin",8,0,1,13.61565316,"PLE","Barking treefrog",0.409017886
-"356",1.98e-05,"Indirect",2.46997,"Pendimethalin",8,0,1,13.61565316,"PLE","Barking treefrog",0.257508419
-"357",1.98e-05,"Indirect",2.01387,"Pendimethalin",8,0,1,13.61565316,"PLE","Barking treefrog",0.094968352
-"358",1.98e-05,"Indirect",2.29373,"Pendimethalin",8,0,1,13.61565316,"PLE","Barking treefrog",0.08250324
-"359",1.98e-05,"Indirect",2.2234,"Pendimethalin",8,0,1,13.61565316,"PLE","Barking treefrog",0.099338888
-"360",2.3e-05,"Indirect",2.069224088,"Total Atrazine",8,0,0,14.43612837,"PLE","Barking treefrog",7.876952404
-"361",2.3e-05,"Indirect",1.2818,"Total Atrazine",8,0,0,14.43612837,"PLE","Barking treefrog",6.342816533
-"362",2.3e-05,"Indirect",1.91549,"Total Atrazine",8,0,0,14.43612837,"PLE","Barking treefrog",5.059544246
-"363",2.3e-05,"Indirect",1.66783,"Total Atrazine",8,0,0,14.43612837,"PLE","Barking treefrog",5.640191973
-"364",2.3e-05,"Indirect",2.6954,"Total Atrazine",8,0,0,14.43612837,"PLE","Barking treefrog",5.631964095
-"365",1.12e-06,"Indirect",1.62588,"Total Fipronil",8,0,0,2.495701956,"PLE","Barking treefrog",0.656150683
-"366",1.12e-06,"Indirect",1.22989,"Total Fipronil",8,0,0,2.495701956,"PLE","Barking treefrog",0.966721159
-"367",1.12e-06,"Indirect",2.00445,"Total Fipronil",8,0,0,2.495701956,"PLE","Barking treefrog",0.464139949
-"368",1.12e-06,"Indirect",1.99483,"Total Fipronil",8,0,0,2.495701956,"PLE","Barking treefrog",0.461519982
-"369",1.12e-06,"Indirect",1.56533,"Total Fipronil",8,0,0,2.495701956,"PLE","Barking treefrog",0.2997831
-"370",2.79e-06,"Indirect",1.30797,"Total Triadimefon",8,0,0,5.94731458,"PLE","Barking treefrog",0.268608762
-"371",2.79e-06,"Indirect",1.082,"Total Triadimefon",8,0,0,5.94731458,"PLE","Barking treefrog",0.216919024
-"372",2.79e-06,"Indirect",2.56323,"Total Triadimefon",8,0,0,5.94731458,"PLE","Barking treefrog",0.143700399
-"373",2.79e-06,"Indirect",1.61382,"Total Triadimefon",8,0,0,5.94731458,"PLE","Barking treefrog",0.274522017
-"374",2.79e-06,"Indirect",2.84579,"Total Triadimefon",8,0,0,5.94731458,"PLE","Barking treefrog",0.173080623
-"375",2.79e-06,"Indirect",1.30797,"Triadimefon",8,0,1,5.762869811,"PLE","Barking treefrog",0.119824258
-"376",2.79e-06,"Indirect",1.082,"Triadimefon",8,0,1,5.762869811,"PLE","Barking treefrog",0.162768483
-"377",2.79e-06,"Indirect",2.56323,"Triadimefon",8,0,1,5.762869811,"PLE","Barking treefrog",0.103816268
-"378",2.79e-06,"Indirect",1.61382,"Triadimefon",8,0,1,5.762869811,"PLE","Barking treefrog",0.228699139
-"379",2.79e-06,"Indirect",2.84579,"Triadimefon",8,0,1,5.762869811,"PLE","Barking treefrog",0.108817503
-"380",NA,"Indirect",1.30797,"Triadimenol",8,0,1,0.184444769,"PLE","Barking treefrog",0.148784504
-"381",NA,"Indirect",1.082,"Triadimenol",8,0,1,0.184444769,"PLE","Barking treefrog",0.054150541
-"382",NA,"Indirect",2.56323,"Triadimenol",8,0,1,0.184444769,"PLE","Barking treefrog",0.039884131
-"383",NA,"Indirect",1.61382,"Triadimenol",8,0,1,0.184444769,"PLE","Barking treefrog",0.045822878
-"384",NA,"Indirect",2.84579,"Triadimenol",8,0,1,0.184444769,"PLE","Barking treefrog",0.06426312
-"385",5.62e-06,"Indirect",0.7479,"Imidacloprid",8,0,1,2.072271639,"PLE","Cricket frog",0.253213485
-"386",5.62e-06,"Indirect",0.74614,"Imidacloprid",8,0,1,2.072271639,"PLE","Cricket frog",0.434782099
-"387",5.62e-06,"Indirect",0.53965,"Imidacloprid",8,0,1,2.072271639,"PLE","Cricket frog",0.372214162
-"388",5.62e-06,"Indirect",0.71619,"Imidacloprid",8,0,1,2.072271639,"PLE","Cricket frog",0.339457748
-"389",5.62e-06,"Indirect",0.63282,"Imidacloprid",8,0,1,2.072271639,"PLE","Cricket frog",0.275966093
-"390",2.79e-06,"Indirect",0.6273,"Total Triadimefon",8,0,0,10.06719167,"PLE","Cricket frog",2.077130886
-"391",2.79e-06,"Indirect",0.50037,"Total Triadimefon",8,0,0,10.06719167,"PLE","Cricket frog",1.756096815
-"392",2.79e-06,"Indirect",0.70107,"Total Triadimefon",8,0,0,10.06719167,"PLE","Cricket frog",1.744838243
-"393",2.79e-06,"Indirect",0.69761,"Total Triadimefon",8,0,0,10.06719167,"PLE","Cricket frog",1.460137338
-"394",2.79e-06,"Indirect",0.70298,"Total Triadimefon",8,0,0,10.06719167,"PLE","Cricket frog",1.373422118
-"395",2.79e-06,"Indirect",0.6273,"Triadimefon",8,0,1,9.7819479,"PLE","Cricket frog",1.767515923
-"396",2.79e-06,"Indirect",0.50037,"Triadimefon",8,0,1,9.7819479,"PLE","Cricket frog",1.510131142
-"397",2.79e-06,"Indirect",0.70107,"Triadimefon",8,0,1,9.7819479,"PLE","Cricket frog",1.415803038
-"398",2.79e-06,"Indirect",0.69761,"Triadimefon",8,0,1,9.7819479,"PLE","Cricket frog",1.199301149
-"399",2.79e-06,"Indirect",0.70298,"Triadimefon",8,0,1,9.7819479,"PLE","Cricket frog",0.965587137
-"400",NA,"Indirect",0.6273,"Triadimenol",8,0,1,0.28524377,"PLE","Cricket frog",0.309614963
-"401",NA,"Indirect",0.50037,"Triadimenol",8,0,1,0.28524377,"PLE","Cricket frog",0.245965672
-"402",NA,"Indirect",0.70107,"Triadimenol",8,0,1,0.28524377,"PLE","Cricket frog",0.329035205
-"403",NA,"Indirect",0.69761,"Triadimenol",8,0,1,0.28524377,"PLE","Cricket frog",0.260836189
-"404",NA,"Indirect",0.70298,"Triadimenol",8,0,1,0.28524377,"PLE","Cricket frog",0.407834981
-"405",2.28e-05,"Indirect",2.811,"Atrazine",8,0,1,17.01496934,"PLE","Fowlers toad",6.057796284
-"406",2.28e-05,"Indirect",1.04725,"Atrazine",8,0,1,17.01496934,"PLE","Fowlers toad",9.048486708
-"407",2.28e-05,"Indirect",2.57336,"Atrazine",8,0,1,17.01496934,"PLE","Fowlers toad",7.680647624
-"408",2.28e-05,"Indirect",1.93404,"Atrazine",8,0,1,17.01496934,"PLE","Fowlers toad",5.339332971
-"409",2.28e-05,"Indirect",0.82668,"Atrazine",8,0,1,17.01496934,"PLE","Fowlers toad",7.187578472
-"410",NA,"Indirect",2.811,"Deisopropyl Atrazine",8,0,0,0.009512997,"PLE","Fowlers toad",2.673397637
-"411",NA,"Indirect",1.04725,"Deisopropyl Atrazine",8,0,0,0.009512997,"PLE","Fowlers toad",3.775195958
-"412",NA,"Indirect",2.57336,"Deisopropyl Atrazine",8,0,0,0.009512997,"PLE","Fowlers toad",1.764915688
-"413",NA,"Indirect",1.93404,"Deisopropyl Atrazine",8,0,0,0.009512997,"PLE","Fowlers toad",2.583907396
-"414",NA,"Indirect",0.82668,"Deisopropyl Atrazine",8,0,0,0.009512997,"PLE","Fowlers toad",0.66160154
-"415",NA,"Indirect",2.811,"Desethyl Atrazine",8,0,0,0.029689129,"PLE","Fowlers toad",1.134299091
-"416",NA,"Indirect",1.04725,"Desethyl Atrazine",8,0,0,0.029689129,"PLE","Fowlers toad",1.738052293
-"417",NA,"Indirect",2.57336,"Desethyl Atrazine",8,0,0,0.029689129,"PLE","Fowlers toad",1.010994386
-"418",NA,"Indirect",1.93404,"Desethyl Atrazine",8,0,0,0.029689129,"PLE","Fowlers toad",1.097633052
-"419",NA,"Indirect",0.82668,"Desethyl Atrazine",8,0,0,0.029689129,"PLE","Fowlers toad",0.590253697
-"420",1.14e-06,"Indirect",2.87106,"Fipronil",8,0,1,3.326864605,"PLE","Fowlers toad",0.858838525
-"421",1.14e-06,"Indirect",1.28161,"Fipronil",8,0,1,3.326864605,"PLE","Fowlers toad",0.155523111
-"422",1.14e-06,"Indirect",2.48014,"Fipronil",8,0,1,3.326864605,"PLE","Fowlers toad",0.628822032
-"423",1.14e-06,"Indirect",1.69321,"Fipronil",8,0,1,3.326864605,"PLE","Fowlers toad",0.881256085
-"424",1.14e-06,"Indirect",0.89804,"Fipronil",8,0,1,3.326864605,"PLE","Fowlers toad",0.915030916
-"425",NA,"Indirect",2.87106,"Fipronil-Sulfone",8,0,0,0.039994708,"PLE","Fowlers toad",0.29629601
-"426",NA,"Indirect",1.28161,"Fipronil-Sulfone",8,0,0,0.039994708,"PLE","Fowlers toad",0.36936646
-"427",NA,"Indirect",2.48014,"Fipronil-Sulfone",8,0,0,0.039994708,"PLE","Fowlers toad",0.630186866
-"428",NA,"Indirect",1.69321,"Fipronil-Sulfone",8,0,0,0.039994708,"PLE","Fowlers toad",0.277370152
-"429",NA,"Indirect",0.89804,"Fipronil-Sulfone",8,0,0,0.039994708,"PLE","Fowlers toad",1.154990433
-"430",1.99e-05,"Indirect",1.44625,"Pendimethalin",8,0,1,12.47076761,"PLE","Fowlers toad",1.015765216
-"431",1.99e-05,"Indirect",1.4138,"Pendimethalin",8,0,1,12.47076761,"PLE","Fowlers toad",0.793134917
-"432",1.99e-05,"Indirect",2.94055,"Pendimethalin",8,0,1,12.47076761,"PLE","Fowlers toad",0.232912294
-"433",1.99e-05,"Indirect",2.01645,"Pendimethalin",8,0,1,12.47076761,"PLE","Fowlers toad",2.450801741
-"434",1.99e-05,"Indirect",1.73866,"Pendimethalin",8,0,1,12.47076761,"PLE","Fowlers toad",0.348901972
-"435",2.28e-05,"Indirect",2.811,"Total Atrazine",8,0,0,17.05417146,"PLE","Fowlers toad",9.865493013
-"436",2.28e-05,"Indirect",1.04725,"Total Atrazine",8,0,0,17.05417146,"PLE","Fowlers toad",14.56173496
-"437",2.28e-05,"Indirect",2.57336,"Total Atrazine",8,0,0,17.05417146,"PLE","Fowlers toad",10.4565577
-"438",2.28e-05,"Indirect",1.93404,"Total Atrazine",8,0,0,17.05417146,"PLE","Fowlers toad",9.020873418
-"439",2.28e-05,"Indirect",0.82668,"Total Atrazine",8,0,0,17.05417146,"PLE","Fowlers toad",8.439433709
-"440",1.14e-06,"Indirect",2.87106,"Total Fipronil",8,0,0,3.366859313,"PLE","Fowlers toad",1.155134535
-"441",1.14e-06,"Indirect",1.28161,"Total Fipronil",8,0,0,3.366859313,"PLE","Fowlers toad",0.524889572
-"442",1.14e-06,"Indirect",2.48014,"Total Fipronil",8,0,0,3.366859313,"PLE","Fowlers toad",1.259008899
-"443",1.14e-06,"Indirect",1.69321,"Total Fipronil",8,0,0,3.366859313,"PLE","Fowlers toad",1.158626237
-"444",1.14e-06,"Indirect",0.89804,"Total Fipronil",8,0,0,3.366859313,"PLE","Fowlers toad",2.07002135
-"445",2.74e-06,"Indirect",0.95994,"Total Triadimefon",8,0,0,7.010390361,"PLE","Fowlers toad",0.17768118
-"446",2.74e-06,"Indirect",1.74647,"Total Triadimefon",8,0,0,7.010390361,"PLE","Fowlers toad",0.249114027
-"447",2.74e-06,"Indirect",1.37367,"Total Triadimefon",8,0,0,7.010390361,"PLE","Fowlers toad",0.309893558
-"448",2.74e-06,"Indirect",3.32274,"Total Triadimefon",8,0,0,7.010390361,"PLE","Fowlers toad",0.404606482
-"449",2.74e-06,"Indirect",1.09363,"Total Triadimefon",8,0,0,7.010390361,"PLE","Fowlers toad",0.318423813
-"450",2.74e-06,"Indirect",0.95994,"Triadimefon",8,0,1,6.846674748,"PLE","Fowlers toad",0.05869648
-"451",2.74e-06,"Indirect",1.74647,"Triadimefon",8,0,1,6.846674748,"PLE","Fowlers toad",0.146088486
-"452",2.74e-06,"Indirect",1.37367,"Triadimefon",8,0,1,6.846674748,"PLE","Fowlers toad",0.065135597
-"453",2.74e-06,"Indirect",3.32274,"Triadimefon",8,0,1,6.846674748,"PLE","Fowlers toad",0.103722402
-"454",2.74e-06,"Indirect",1.09363,"Triadimefon",8,0,1,6.846674748,"PLE","Fowlers toad",0.053079723
-"455",NA,"Indirect",0.95994,"Triadimenol",8,0,1,0.163715613,"PLE","Fowlers toad",0.1189847
-"456",NA,"Indirect",1.74647,"Triadimenol",8,0,1,0.163715613,"PLE","Fowlers toad",0.103025541
-"457",NA,"Indirect",1.37367,"Triadimenol",8,0,1,0.163715613,"PLE","Fowlers toad",0.244757961
-"458",NA,"Indirect",3.32274,"Triadimenol",8,0,1,0.163715613,"PLE","Fowlers toad",0.30088408
-"459",NA,"Indirect",1.09363,"Triadimenol",8,0,1,0.163715613,"PLE","Fowlers toad",0.265344089
-"460",2.31e-05,"Indirect",1.56286,"Atrazine",8,0,1,16.60809236,"PLE","Gray treefrog",6.200605185
-"461",2.31e-05,"Indirect",1.42737,"Atrazine",8,0,1,16.60809236,"PLE","Gray treefrog",5.905088467
-"462",2.31e-05,"Indirect",2.21783,"Atrazine",8,0,1,16.60809236,"PLE","Gray treefrog",8.475746479
-"463",2.31e-05,"Indirect",2.86963,"Atrazine",8,0,1,16.60809236,"PLE","Gray treefrog",6.501385729
-"464",2.31e-05,"Indirect",1.1115,"Atrazine",8,0,1,16.60809236,"PLE","Gray treefrog",5.341545111
-"465",NA,"Indirect",1.56286,"Deisopropyl Atrazine",8,0,0,0.006247771,"PLE","Gray treefrog",1.135050775
-"466",NA,"Indirect",1.42737,"Deisopropyl Atrazine",8,0,0,0.006247771,"PLE","Gray treefrog",1.273867259
-"467",NA,"Indirect",2.21783,"Deisopropyl Atrazine",8,0,0,0.006247771,"PLE","Gray treefrog",0.613795981
-"468",NA,"Indirect",2.86963,"Deisopropyl Atrazine",8,0,0,0.006247771,"PLE","Gray treefrog",0.528536529
-"469",NA,"Indirect",1.1115,"Deisopropyl Atrazine",8,0,0,0.006247771,"PLE","Gray treefrog",0.314848577
-"470",NA,"Indirect",1.56286,"Desethyl Atrazine",8,0,0,0.025176025,"PLE","Gray treefrog",1.046082575
-"471",NA,"Indirect",1.42737,"Desethyl Atrazine",8,0,0,0.025176025,"PLE","Gray treefrog",1.228630408
-"472",NA,"Indirect",2.21783,"Desethyl Atrazine",8,0,0,0.025176025,"PLE","Gray treefrog",1.341746913
-"473",NA,"Indirect",2.86963,"Desethyl Atrazine",8,0,0,0.025176025,"PLE","Gray treefrog",1.042425873
-"474",NA,"Indirect",1.1115,"Desethyl Atrazine",8,0,0,0.025176025,"PLE","Gray treefrog",1.149798791
-"475",1.05e-06,"Indirect",2.29103,"Fipronil",8,0,1,3.268503241,"PLE","Gray treefrog",0.20493869
-"476",1.05e-06,"Indirect",2.48463,"Fipronil",8,0,1,3.268503241,"PLE","Gray treefrog",0.222372614
-"477",1.05e-06,"Indirect",1.73741,"Fipronil",8,0,1,3.268503241,"PLE","Gray treefrog",0.207517779
-"478",1.05e-06,"Indirect",1.90828,"Fipronil",8,0,1,3.268503241,"PLE","Gray treefrog",0.074947958
-"479",1.05e-06,"Indirect",2.34893,"Fipronil",8,0,1,3.268503241,"PLE","Gray treefrog",0.120688821
-"480",NA,"Indirect",2.29103,"Fipronil-Sulfone",8,0,0,0.041192692,"PLE","Gray treefrog",0.690711299
-"481",NA,"Indirect",2.48463,"Fipronil-Sulfone",8,0,0,0.041192692,"PLE","Gray treefrog",0.230659273
-"482",NA,"Indirect",1.73741,"Fipronil-Sulfone",8,0,0,0.041192692,"PLE","Gray treefrog",0.419692444
-"483",NA,"Indirect",1.90828,"Fipronil-Sulfone",8,0,0,0.041192692,"PLE","Gray treefrog",0.069730375
-"484",NA,"Indirect",2.34893,"Fipronil-Sulfone",8,0,0,0.041192692,"PLE","Gray treefrog",0.05254491
-"485",5.66e-06,"Indirect",1.50164,"Imidacloprid",8,0,1,2.865856558,"PLE","Gray treefrog",0.188500223
-"486",5.66e-06,"Indirect",1.89679,"Imidacloprid",8,0,1,2.865856558,"PLE","Gray treefrog",0.176685812
-"487",5.66e-06,"Indirect",1.48929,"Imidacloprid",8,0,1,2.865856558,"PLE","Gray treefrog",0.158445082
-"488",5.66e-06,"Indirect",2.47287,"Imidacloprid",8,0,1,2.865856558,"PLE","Gray treefrog",0.133043234
-"489",5.66e-06,"Indirect",1.5308,"Imidacloprid",8,0,1,2.865856558,"PLE","Gray treefrog",0.27666374
-"490",1.99e-05,"Indirect",1.42942,"Pendimethalin",8,0,1,10.66105625,"PLE","Gray treefrog",0.077086057
-"491",1.99e-05,"Indirect",1.72685,"Pendimethalin",8,0,1,10.66105625,"PLE","Gray treefrog",0.04141364
-"492",1.99e-05,"Indirect",1.77209,"Pendimethalin",8,0,1,10.66105625,"PLE","Gray treefrog",0.062623285
-"493",1.99e-05,"Indirect",1.59006,"Pendimethalin",8,0,1,10.66105625,"PLE","Gray treefrog",0.018846949
-"494",1.99e-05,"Indirect",1.59253,"Pendimethalin",8,0,1,10.66105625,"PLE","Gray treefrog",0.060285257
-"495",2.31e-05,"Indirect",1.56286,"Total Atrazine",8,0,0,16.63951616,"PLE","Gray treefrog",8.381738534
-"496",2.31e-05,"Indirect",1.42737,"Total Atrazine",8,0,0,16.63951616,"PLE","Gray treefrog",8.407586134
-"497",2.31e-05,"Indirect",2.21783,"Total Atrazine",8,0,0,16.63951616,"PLE","Gray treefrog",10.43128937
-"498",2.31e-05,"Indirect",2.86963,"Total Atrazine",8,0,0,16.63951616,"PLE","Gray treefrog",8.072348131
-"499",2.31e-05,"Indirect",1.1115,"Total Atrazine",8,0,0,16.63951616,"PLE","Gray treefrog",6.806192479
-"500",1.05e-06,"Indirect",2.29103,"Total Fipronil",8,0,0,3.309695933,"PLE","Gray treefrog",0.895649989
-"501",1.05e-06,"Indirect",2.48463,"Total Fipronil",8,0,0,3.309695933,"PLE","Gray treefrog",0.453031887
-"502",1.05e-06,"Indirect",1.73741,"Total Fipronil",8,0,0,3.309695933,"PLE","Gray treefrog",0.627210223
-"503",1.05e-06,"Indirect",1.90828,"Total Fipronil",8,0,0,3.309695933,"PLE","Gray treefrog",0.144678333
-"504",1.05e-06,"Indirect",2.34893,"Total Fipronil",8,0,0,3.309695933,"PLE","Gray treefrog",0.173233731
-"505",2.78e-06,"Indirect",2.49658,"Total Triadimefon",8,0,0,5.80984816,"PLE","Gray treefrog",0.45289549
-"506",2.78e-06,"Indirect",2.51534,"Total Triadimefon",8,0,0,5.80984816,"PLE","Gray treefrog",0.841704915
-"507",2.78e-06,"Indirect",1.1547,"Total Triadimefon",8,0,0,5.80984816,"PLE","Gray treefrog",0.590151651
-"508",2.78e-06,"Indirect",1.20172,"Total Triadimefon",8,0,0,5.80984816,"PLE","Gray treefrog",0.691676628
-"509",2.78e-06,"Indirect",2.91091,"Total Triadimefon",8,0,0,5.80984816,"PLE","Gray treefrog",0.446716578
-"510",2.78e-06,"Indirect",2.49658,"Triadimefon",8,0,1,5.553378567,"PLE","Gray treefrog",0.106121169
-"511",2.78e-06,"Indirect",2.51534,"Triadimefon",8,0,1,5.553378567,"PLE","Gray treefrog",0.211951217
-"512",2.78e-06,"Indirect",1.1547,"Triadimefon",8,0,1,5.553378567,"PLE","Gray treefrog",0.182110494
-"513",2.78e-06,"Indirect",1.20172,"Triadimefon",8,0,1,5.553378567,"PLE","Gray treefrog",0.314403311
-"514",2.78e-06,"Indirect",2.91091,"Triadimefon",8,0,1,5.553378567,"PLE","Gray treefrog",0.268965658
-"515",NA,"Indirect",2.49658,"Triadimenol",8,0,1,0.256469593,"PLE","Gray treefrog",0.346774321
-"516",NA,"Indirect",2.51534,"Triadimenol",8,0,1,0.256469593,"PLE","Gray treefrog",0.629753698
-"517",NA,"Indirect",1.1547,"Triadimenol",8,0,1,0.256469593,"PLE","Gray treefrog",0.408041157
-"518",NA,"Indirect",1.20172,"Triadimenol",8,0,1,0.256469593,"PLE","Gray treefrog",0.377273317
-"519",NA,"Indirect",2.91091,"Triadimenol",8,0,1,0.256469593,"PLE","Gray treefrog",0.17775092
-"520",2.31e-05,"Direct",2.22041,"Atrazine",8,0,1,19.03758973,"PLE","Green treefrog",15.10344709
-"521",2.31e-05,"Direct",3.35473,"Atrazine",8,0,1,19.03758973,"PLE","Green treefrog",15.85497911
-"522",2.31e-05,"Direct",2.00039,"Atrazine",8,0,1,19.03758973,"PLE","Green treefrog",15.10344825
-"523",2.31e-05,"Direct",2.82206,"Atrazine",8,0,1,19.03758973,"PLE","Green treefrog",14.52476795
-"524",2.31e-05,"Direct",3.13181,"Atrazine",8,0,1,19.03758973,"PLE","Green treefrog",12.70858182
-"525",NA,"Direct",2.22041,"Deisopropyl Atrazine",8,0,0,0.02751004,"PLE","Green treefrog",6.027149291
-"526",NA,"Direct",3.35473,"Deisopropyl Atrazine",8,0,0,0.02751004,"PLE","Green treefrog",2.933031559
-"527",NA,"Direct",2.00039,"Deisopropyl Atrazine",8,0,0,0.02751004,"PLE","Green treefrog",3.243378219
-"528",NA,"Direct",2.82206,"Deisopropyl Atrazine",8,0,0,0.02751004,"PLE","Green treefrog",2.605512635
-"529",NA,"Direct",3.13181,"Deisopropyl Atrazine",8,0,0,0.02751004,"PLE","Green treefrog",4.069037388
-"530",NA,"Direct",2.22041,"Desethyl Atrazine",8,0,0,0.063005334,"PLE","Green treefrog",2.310701513
-"531",NA,"Direct",3.35473,"Desethyl Atrazine",8,0,0,0.063005334,"PLE","Green treefrog",1.773622382
-"532",NA,"Direct",2.00039,"Desethyl Atrazine",8,0,0,0.063005334,"PLE","Green treefrog",1.607216544
-"533",NA,"Direct",2.82206,"Desethyl Atrazine",8,0,0,0.063005334,"PLE","Green treefrog",2.316514272
-"534",NA,"Direct",3.13181,"Desethyl Atrazine",8,0,0,0.063005334,"PLE","Green treefrog",2.105636481
-"535",1.06e-06,"Direct",1.30684,"Fipronil",8,0,1,3.881601879,"PLE","Green treefrog",1.672925558
-"536",1.06e-06,"Direct",2.6593,"Fipronil",8,0,1,3.881601879,"PLE","Green treefrog",1.765323337
-"537",1.06e-06,"Direct",1.88382,"Fipronil",8,0,1,3.881601879,"PLE","Green treefrog",0.945699662
-"538",1.06e-06,"Direct",1.07051,"Fipronil",8,0,1,3.881601879,"PLE","Green treefrog",0.335185282
-"539",1.06e-06,"Direct",1.77007,"Fipronil",8,0,1,3.881601879,"PLE","Green treefrog",0.533133801
-"540",NA,"Direct",1.30684,"Fipronil-Sulfone",8,0,0,0.070149609,"PLE","Green treefrog",1.056795181
-"541",NA,"Direct",2.6593,"Fipronil-Sulfone",8,0,0,0.070149609,"PLE","Green treefrog",1.965524495
-"542",NA,"Direct",1.88382,"Fipronil-Sulfone",8,0,0,0.070149609,"PLE","Green treefrog",0.833289399
-"543",NA,"Direct",1.07051,"Fipronil-Sulfone",8,0,0,0.070149609,"PLE","Green treefrog",0.824680276
-"544",NA,"Direct",1.77007,"Fipronil-Sulfone",8,0,0,0.070149609,"PLE","Green treefrog",0.564167059
-"545",2e-05,"Direct",1.96213,"Pendimethalin",8,0,1,12.5210311,"PLE","Green treefrog",0.673117238
-"546",2e-05,"Direct",2.02547,"Pendimethalin",8,0,1,12.5210311,"PLE","Green treefrog",7.113543563
-"547",2e-05,"Direct",1.56058,"Pendimethalin",8,0,1,12.5210311,"PLE","Green treefrog",3.039240379
-"548",2e-05,"Direct",0.82568,"Pendimethalin",8,0,1,12.5210311,"PLE","Green treefrog",1.070092765
-"549",2e-05,"Direct",1.17217,"Pendimethalin",8,0,1,12.5210311,"PLE","Green treefrog",1.924313318
-"550",2.31e-05,"Direct",2.22041,"Total Atrazine",8,0,0,19.12810511,"PLE","Green treefrog",23.44129789
-"551",2.31e-05,"Direct",3.35473,"Total Atrazine",8,0,0,19.12810511,"PLE","Green treefrog",20.56163305
-"552",2.31e-05,"Direct",2.00039,"Total Atrazine",8,0,0,19.12810511,"PLE","Green treefrog",19.95404302
-"553",2.31e-05,"Direct",2.82206,"Total Atrazine",8,0,0,19.12810511,"PLE","Green treefrog",19.44679486
-"554",2.31e-05,"Direct",3.13181,"Total Atrazine",8,0,0,19.12810511,"PLE","Green treefrog",18.88325569
-"555",1.06e-06,"Direct",1.30684,"Total Fipronil",8,0,0,3.951751488,"PLE","Green treefrog",2.729720739
-"556",1.06e-06,"Direct",2.6593,"Total Fipronil",8,0,0,3.951751488,"PLE","Green treefrog",3.730847831
-"557",1.06e-06,"Direct",1.88382,"Total Fipronil",8,0,0,3.951751488,"PLE","Green treefrog",1.778989061
-"558",1.06e-06,"Direct",1.07051,"Total Fipronil",8,0,0,3.951751488,"PLE","Green treefrog",1.159865558
-"559",1.06e-06,"Direct",1.77007,"Total Fipronil",8,0,0,3.951751488,"PLE","Green treefrog",1.097300859
-"560",2.79e-06,"Direct",1.53205,"Total Triadimefon",8,0,0,8.090520249,"PLE","Green treefrog",1.511168861
-"561",2.79e-06,"Direct",1.72177,"Total Triadimefon",8,0,0,8.090520249,"PLE","Green treefrog",3.099302175
-"562",2.79e-06,"Direct",1.38441,"Total Triadimefon",8,0,0,8.090520249,"PLE","Green treefrog",1.440452008
-"563",2.79e-06,"Direct",3.21721,"Total Triadimefon",8,0,0,8.090520249,"PLE","Green treefrog",1.363591664
-"564",2.79e-06,"Direct",1.0386,"Total Triadimefon",8,0,0,8.090520249,"PLE","Green treefrog",1.152513756
-"565",2.79e-06,"Direct",1.53205,"Triadimefon",8,0,1,5.358394822,"PLE","Green treefrog",0.45437368
-"566",2.79e-06,"Direct",1.72177,"Triadimefon",8,0,1,5.358394822,"PLE","Green treefrog",1.13377768
-"567",2.79e-06,"Direct",1.38441,"Triadimefon",8,0,1,5.358394822,"PLE","Green treefrog",0.607162609
-"568",2.79e-06,"Direct",3.21721,"Triadimefon",8,0,1,5.358394822,"PLE","Green treefrog",0.538911388
-"569",2.79e-06,"Direct",1.0386,"Triadimefon",8,0,1,5.358394822,"PLE","Green treefrog",0.588346697
-"570",NA,"Direct",1.53205,"Triadimenol",8,0,1,2.732125427,"PLE","Green treefrog",1.056795181
-"571",NA,"Direct",1.72177,"Triadimenol",8,0,1,2.732125427,"PLE","Green treefrog",1.965524495
-"572",NA,"Direct",1.38441,"Triadimenol",8,0,1,2.732125427,"PLE","Green treefrog",0.833289399
-"573",NA,"Direct",3.21721,"Triadimenol",8,0,1,2.732125427,"PLE","Green treefrog",0.824680276
-"574",NA,"Direct",1.0386,"Triadimenol",8,0,1,2.732125427,"PLE","Green treefrog",0.564167059
-"575",2.3e-05,"Indirect",1.31617,"Atrazine",8,0,1,17.55227915,"PLE","Green treefrog",2.320433805
-"576",2.3e-05,"Indirect",1.8349,"Atrazine",8,0,1,17.55227915,"PLE","Green treefrog",1.97739492
-"577",2.3e-05,"Indirect",2.11135,"Atrazine",8,0,1,17.55227915,"PLE","Green treefrog",3.46548233
-"578",2.3e-05,"Indirect",1.88638,"Atrazine",8,0,1,17.55227915,"PLE","Green treefrog",2.317603452
-"579",2.3e-05,"Indirect",0.73631,"Atrazine",8,0,1,17.55227915,"PLE","Green treefrog",1.687312742
-"580",NA,"Indirect",1.31617,"Deisopropyl Atrazine",8,0,0,0.012717634,"PLE","Green treefrog",0.892211285
-"581",NA,"Indirect",1.8349,"Deisopropyl Atrazine",8,0,0,0.012717634,"PLE","Green treefrog",0.668766928
-"582",NA,"Indirect",2.11135,"Deisopropyl Atrazine",8,0,0,0.012717634,"PLE","Green treefrog",1.188007893
-"583",NA,"Indirect",1.88638,"Deisopropyl Atrazine",8,0,0,0.012717634,"PLE","Green treefrog",0.813593703
-"584",NA,"Indirect",0.73631,"Deisopropyl Atrazine",8,0,0,0.012717634,"PLE","Green treefrog",0.769493125
-"585",NA,"Indirect",1.31617,"Desethyl Atrazine",8,0,0,0.044238404,"PLE","Green treefrog",0.514712756
-"586",NA,"Indirect",1.8349,"Desethyl Atrazine",8,0,0,0.044238404,"PLE","Green treefrog",0.419671914
-"587",NA,"Indirect",2.11135,"Desethyl Atrazine",8,0,0,0.044238404,"PLE","Green treefrog",0.753446903
-"588",NA,"Indirect",1.88638,"Desethyl Atrazine",8,0,0,0.044238404,"PLE","Green treefrog",0.520505843
-"589",NA,"Indirect",0.73631,"Desethyl Atrazine",8,0,0,0.044238404,"PLE","Green treefrog",0.410463396
-"590",1.06e-06,"Indirect",1.69128,"Fipronil",8,0,1,2.768574337,"PLE","Green treefrog",0.141689942
-"591",1.06e-06,"Indirect",2.0466,"Fipronil",8,0,1,2.768574337,"PLE","Green treefrog",0.088542246
-"592",1.06e-06,"Indirect",2.34143,"Fipronil",8,0,1,2.768574337,"PLE","Green treefrog",0.05370516
-"593",1.06e-06,"Indirect",1.05281,"Fipronil",8,0,1,2.768574337,"PLE","Green treefrog",0.299107947
-"594",1.06e-06,"Indirect",1.01293,"Fipronil",8,0,1,2.768574337,"PLE","Green treefrog",0.093944185
-"595",NA,"Indirect",1.69128,"Fipronil-Sulfone",8,0,0,0.03599496,"PLE","Green treefrog",0.055721853
-"596",NA,"Indirect",2.0466,"Fipronil-Sulfone",8,0,0,0.03599496,"PLE","Green treefrog",0.022953778
-"597",NA,"Indirect",2.34143,"Fipronil-Sulfone",8,0,0,0.03599496,"PLE","Green treefrog",0.007483584
-"598",NA,"Indirect",1.05281,"Fipronil-Sulfone",8,0,0,0.03599496,"PLE","Green treefrog",0.128493111
-"599",NA,"Indirect",1.01293,"Fipronil-Sulfone",8,0,0,0.03599496,"PLE","Green treefrog",0.167229704
-"600",5.76e-06,"Indirect",1.46095,"Imidacloprid",8,0,1,2.032637766,"PLE","Green treefrog",0.128323626
-"601",5.76e-06,"Indirect",1.29982,"Imidacloprid",8,0,1,2.032637766,"PLE","Green treefrog",0.160232247
-"602",5.76e-06,"Indirect",1.41647,"Imidacloprid",8,0,1,2.032637766,"PLE","Green treefrog",0.12428756
-"603",5.76e-06,"Indirect",1.30898,"Imidacloprid",8,0,1,2.032637766,"PLE","Green treefrog",0.154999982
-"604",5.76e-06,"Indirect",1.2973,"Imidacloprid",8,0,1,2.032637766,"PLE","Green treefrog",0.103564099
-"605",1.99e-05,"Indirect",2.18431,"Pendimethalin",8,0,1,12.43513533,"PLE","Green treefrog",0.106088831
-"606",1.99e-05,"Indirect",1.10908,"Pendimethalin",8,0,1,12.43513533,"PLE","Green treefrog",0.264552068
-"607",1.99e-05,"Indirect",2.55184,"Pendimethalin",8,0,1,12.43513533,"PLE","Green treefrog",0.285295401
-"608",1.99e-05,"Indirect",2.44681,"Pendimethalin",8,0,1,12.43513533,"PLE","Green treefrog",0.087572337
-"609",1.99e-05,"Indirect",2.26759,"Pendimethalin",8,0,1,12.43513533,"PLE","Green treefrog",0.083610081
-"610",2.3e-05,"Indirect",1.31617,"Total Atrazine",8,0,0,17.60923519,"PLE","Green treefrog",3.727357846
-"611",2.3e-05,"Indirect",1.8349,"Total Atrazine",8,0,0,17.60923519,"PLE","Green treefrog",3.065833762
-"612",2.3e-05,"Indirect",2.11135,"Total Atrazine",8,0,0,17.60923519,"PLE","Green treefrog",5.406937125
-"613",2.3e-05,"Indirect",1.88638,"Total Atrazine",8,0,0,17.60923519,"PLE","Green treefrog",3.651702998
-"614",2.3e-05,"Indirect",0.73631,"Total Atrazine",8,0,0,17.60923519,"PLE","Green treefrog",2.867269263
-"615",1.06e-06,"Indirect",1.69128,"Total Fipronil",8,0,0,2.804569298,"PLE","Green treefrog",0.197411795
-"616",1.06e-06,"Indirect",2.0466,"Total Fipronil",8,0,0,2.804569298,"PLE","Green treefrog",0.111496024
-"617",1.06e-06,"Indirect",2.34143,"Total Fipronil",8,0,0,2.804569298,"PLE","Green treefrog",0.061188744
-"618",1.06e-06,"Indirect",1.05281,"Total Fipronil",8,0,0,2.804569298,"PLE","Green treefrog",0.427601059
-"619",1.06e-06,"Indirect",1.01293,"Total Fipronil",8,0,0,2.804569298,"PLE","Green treefrog",0.261173889
-"620",2.71e-06,"Indirect",1.26341,"Total Triadimefon",8,0,0,5.245912662,"PLE","Green treefrog",0.273380103
-"621",2.71e-06,"Indirect",1.56597,"Total Triadimefon",8,0,0,5.245912662,"PLE","Green treefrog",0.393093957
-"622",2.71e-06,"Indirect",1.34966,"Total Triadimefon",8,0,0,5.245912662,"PLE","Green treefrog",0.151943337
-"623",2.71e-06,"Indirect",1.4684,"Total Triadimefon",8,0,0,5.245912662,"PLE","Green treefrog",0.495725615
-"624",2.71e-06,"Indirect",2.15294,"Total Triadimefon",8,0,0,5.245912662,"PLE","Green treefrog",0.557152367
-"625",2.71e-06,"Indirect",1.26341,"Triadimefon",8,0,1,5.037247983,"PLE","Green treefrog",0.203194228
-"626",2.71e-06,"Indirect",1.56597,"Triadimefon",8,0,1,5.037247983,"PLE","Green treefrog",0.269246318
-"627",2.71e-06,"Indirect",1.34966,"Triadimefon",8,0,1,5.037247983,"PLE","Green treefrog",0.085607471
-"628",2.71e-06,"Indirect",1.4684,"Triadimefon",8,0,1,5.037247983,"PLE","Green treefrog",0.259287766
-"629",2.71e-06,"Indirect",2.15294,"Triadimefon",8,0,1,5.037247983,"PLE","Green treefrog",0.305029672
-"630",NA,"Indirect",1.26341,"Triadimenol",8,0,1,0.208664679,"PLE","Green treefrog",0.070185875
-"631",NA,"Indirect",1.56597,"Triadimenol",8,0,1,0.208664679,"PLE","Green treefrog",0.123847639
-"632",NA,"Indirect",1.34966,"Triadimenol",8,0,1,0.208664679,"PLE","Green treefrog",0.066335866
-"633",NA,"Indirect",1.4684,"Triadimenol",8,0,1,0.208664679,"PLE","Green treefrog",0.236437848
-"634",NA,"Indirect",2.15294,"Triadimenol",8,0,1,0.208664679,"PLE","Green treefrog",0.252122694
-"635",2.31e-05,"Indirect",1.74298,"Atrazine",8,0,1,21.47493747,"PLE","Leopard frog",2.796596072
-"636",2.28e-05,"Indirect",3.042,"Atrazine",8,0,1,21.47493747,"PLE","Leopard frog",4.591570791
-"637",2.28e-05,"Indirect",2.243,"Atrazine",8,0,1,21.47493747,"PLE","Leopard frog",3.393348552
-"638",2.28e-05,"Indirect",2.0197,"Atrazine",8,0,1,21.47493747,"PLE","Leopard frog",4.426065378
-"639",NA,"Indirect",1.74298,"Deisopropyl Atrazine",8,0,0,0.012518593,"PLE","Leopard frog",0.26513528
-"640",NA,"Indirect",3.042,"Deisopropyl Atrazine",8,0,0,0.012518593,"PLE","Leopard frog",0.904359089
-"641",NA,"Indirect",2.243,"Deisopropyl Atrazine",8,0,0,0.012518593,"PLE","Leopard frog",0.459607257
-"642",NA,"Indirect",2.0197,"Deisopropyl Atrazine",8,0,0,0.012518593,"PLE","Leopard frog",0.753170376
-"643",NA,"Indirect",1.74298,"Desethyl Atrazine",8,0,0,0.042876591,"PLE","Leopard frog",0.378728552
-"644",NA,"Indirect",3.042,"Desethyl Atrazine",8,0,0,0.042876591,"PLE","Leopard frog",0.602713883
-"645",NA,"Indirect",2.243,"Desethyl Atrazine",8,0,0,0.042876591,"PLE","Leopard frog",0.532191293
-"646",NA,"Indirect",2.0197,"Desethyl Atrazine",8,0,0,0.042876591,"PLE","Leopard frog",0.571811461
-"647",1.12e-06,"Indirect",3.07228,"Fipronil",8,0,1,3.050050331,"PLE","Leopard frog",0.433588943
-"648",1.12e-06,"Indirect",1.6105,"Fipronil",8,0,1,3.050050331,"PLE","Leopard frog",0.584125326
-"649",1.12e-06,"Indirect",1.29821,"Fipronil",8,0,1,3.050050331,"PLE","Leopard frog",0.368670544
-"650",1.12e-06,"Indirect",1.4102,"Fipronil",8,0,1,3.050050331,"PLE","Leopard frog",0.453939413
-"651",NA,"Indirect",3.07228,"Fipronil-Sulfone",8,0,0,0.106756713,"PLE","Leopard frog",0.040989845
-"652",NA,"Indirect",1.6105,"Fipronil-Sulfone",8,0,0,0.106756713,"PLE","Leopard frog",0.024284875
-"653",NA,"Indirect",1.29821,"Fipronil-Sulfone",8,0,0,0.106756713,"PLE","Leopard frog",0.010507566
-"654",NA,"Indirect",1.4102,"Fipronil-Sulfone",8,0,0,0.106756713,"PLE","Leopard frog",0.042931118
-"655",2e-05,"Indirect",1.2242,"Pendimethalin",8,0,1,17.57581532,"PLE","Leopard frog",0.131424428
-"656",2e-05,"Indirect",2.64224,"Pendimethalin",8,0,1,17.57581532,"PLE","Leopard frog",0.41907742
-"657",2e-05,"Indirect",2.90779,"Pendimethalin",8,0,1,17.57581532,"PLE","Leopard frog",0.092921182
-"658",2e-05,"Indirect",1.8955,"Pendimethalin",8,0,1,17.57581532,"PLE","Leopard frog",0.522692823
-"659",2.31e-05,"Indirect",1.74298,"Total Atrazine",8,0,0,21.53033266,"PLE","Leopard frog",3.440459903
-"660",2.28e-05,"Indirect",3.042,"Total Atrazine",8,0,0,21.53033266,"PLE","Leopard frog",6.098643762
-"661",2.28e-05,"Indirect",2.243,"Total Atrazine",8,0,0,21.53033266,"PLE","Leopard frog",4.385147102
-"662",2.28e-05,"Indirect",2.0197,"Total Atrazine",8,0,0,21.53033266,"PLE","Leopard frog",5.751047214
-"663",1.12e-06,"Indirect",3.07228,"Total Fipronil",8,0,0,3.156807044,"PLE","Leopard frog",0.474578788
-"664",1.12e-06,"Indirect",1.6105,"Total Fipronil",8,0,0,3.156807044,"PLE","Leopard frog",0.608410201
-"665",1.12e-06,"Indirect",1.29821,"Total Fipronil",8,0,0,3.156807044,"PLE","Leopard frog",0.37917811
-"666",1.12e-06,"Indirect",1.4102,"Total Fipronil",8,0,0,3.156807044,"PLE","Leopard frog",0.496870531
-"667",2.81e-06,"Indirect",2.11943,"Total Triadimefon",8,0,0,6.669240533,"PLE","Leopard frog",0.1766496
-"668",2.81e-06,"Indirect",3.13315,"Total Triadimefon",8,0,0,6.669240533,"PLE","Leopard frog",0.179231247
-"669",2.81e-06,"Indirect",3.32121,"Total Triadimefon",8,0,0,6.669240533,"PLE","Leopard frog",0.052193986
-"670",2.81e-06,"Indirect",1.44049,"Total Triadimefon",8,0,0,6.669240533,"PLE","Leopard frog",0.070844227
-"671",2.81e-06,"Indirect",2.11943,"Triadimefon",8,0,1,6.435630437,"PLE","Leopard frog",0.151932995
-"672",2.81e-06,"Indirect",3.13315,"Triadimefon",8,0,1,6.435630437,"PLE","Leopard frog",0.155530847
-"673",2.81e-06,"Indirect",3.32121,"Triadimefon",8,0,1,6.435630437,"PLE","Leopard frog",0.029780614
-"674",2.81e-06,"Indirect",1.44049,"Triadimefon",8,0,1,6.435630437,"PLE","Leopard frog",0.036476986
-"675",NA,"Indirect",2.11943,"Triadimenol",8,0,1,0.233610096,"PLE","Leopard frog",0.024716605
-"676",NA,"Indirect",3.13315,"Triadimenol",8,0,1,0.233610096,"PLE","Leopard frog",0.0237004
-"677",NA,"Indirect",3.32121,"Triadimenol",8,0,1,0.233610096,"PLE","Leopard frog",0.022413372
-"678",NA,"Indirect",1.44049,"Triadimenol",8,0,1,0.233610096,"PLE","Leopard frog",0.034367241
-"679",2.3e-05,"Indirect",2.93262,"Atrazine",8,0,1,52.67554477,"PLE","Mole salamander",6.823400408
-"680",2.3e-05,"Indirect",3.53977,"Atrazine",8,0,1,52.67554477,"PLE","Mole salamander",5.611314977
-"681",2.3e-05,"Indirect",1.14,"Atrazine",8,0,1,52.67554477,"PLE","Mole salamander",5.443528911
-"682",2.32e-05,"Indirect",2.9446,"Atrazine",8,0,1,81.7111506,"PLE","Mole salamander",2.748808693
-"683",2.32e-05,"Indirect",2.59184,"Atrazine",8,0,1,81.7111506,"PLE","Mole salamander",2.620759616
-"684",1.05e-06,"Indirect",2.0321,"Fipronil",8,0,1,4.53176306,"PLE","Mole salamander",0.49304269
-"685",1.05e-06,"Indirect",1.57444,"Fipronil",8,0,1,4.53176306,"PLE","Mole salamander",1.117034512
-"686",1.05e-06,"Indirect",2.34673,"Fipronil",8,0,1,4.53176306,"PLE","Mole salamander",1.105844253
-"687",1.05e-06,"Indirect",2.788,"Fipronil",8,0,1,4.53176306,"PLE","Mole salamander",0.472718534
-"688",1.05e-06,"Indirect",1.75764,"Fipronil",8,0,1,4.53176306,"PLE","Mole salamander",0.466888045
-"689",2.02e-05,"Indirect",2.58239,"Pendimethalin",8,0,1,32.37428285,"PLE","Mole salamander",4.801958486
-"690",2.02e-05,"Indirect",1.87511,"Pendimethalin",8,0,1,32.37428285,"PLE","Mole salamander",1.295372009
-"691",2.02e-05,"Indirect",2.07789,"Pendimethalin",8,0,1,32.37428285,"PLE","Mole salamander",2.957076964
-"692",2.02e-05,"Indirect",3.99315,"Pendimethalin",8,0,1,32.37428285,"PLE","Mole salamander",1.851006799
-"693",2.02e-05,"Indirect",2.0028,"Pendimethalin",8,0,1,32.37428285,"PLE","Mole salamander",3.236333259
-"694",2.3e-05,"Indirect",2.93262,"Total Atrazine",8,0,0,52.67554477,"PLE","Mole salamander",6.823400408
-"695",2.3e-05,"Indirect",3.53977,"Total Atrazine",8,0,0,52.67554477,"PLE","Mole salamander",5.611314977
-"696",2.3e-05,"Indirect",1.14,"Total Atrazine",8,0,0,52.67554477,"PLE","Mole salamander",5.443528911
-"697",2.32e-05,"Indirect",2.9446,"Total Atrazine",8,0,0,81.7111506,"PLE","Mole salamander",2.748808693
-"698",2.32e-05,"Indirect",2.59184,"Total Atrazine",8,0,0,81.7111506,"PLE","Mole salamander",2.620759616
-"699",1.05e-06,"Indirect",2.0321,"Total Fipronil",8,0,0,4.53176306,"PLE","Mole salamander",0.49304269
-"700",1.05e-06,"Indirect",1.57444,"Total Fipronil",8,0,0,4.53176306,"PLE","Mole salamander",1.117034512
-"701",1.05e-06,"Indirect",2.34673,"Total Fipronil",8,0,0,4.53176306,"PLE","Mole salamander",1.105844253
-"702",1.05e-06,"Indirect",2.788,"Total Fipronil",8,0,0,4.53176306,"PLE","Mole salamander",0.472718534
-"703",1.05e-06,"Indirect",1.75764,"Total Fipronil",8,0,0,4.53176306,"PLE","Mole salamander",0.466888045
-"704",2.87e-06,"Indirect",2.42958,"Total Triadimefon",8,0,0,6.136541259,"PLE","Mole salamander",1.119874054
-"705",2.87e-06,"Indirect",2.33583,"Total Triadimefon",8,0,0,6.136541259,"PLE","Mole salamander",0.506757885
-"706",2.87e-06,"Indirect",1.92159,"Total Triadimefon",8,0,0,6.136541259,"PLE","Mole salamander",0.23751407
-"707",2.87e-06,"Indirect",2.46557,"Total Triadimefon",8,0,0,6.136541259,"PLE","Mole salamander",0.499320716
-"708",2.87e-06,"Indirect",2.68042,"Total Triadimefon",8,0,0,6.136541259,"PLE","Mole salamander",0.322065257
-"709",2.87e-06,"Indirect",2.42958,"Triadimefon",8,0,1,5.927160309,"PLE","Mole salamander",0.39964999
-"710",2.87e-06,"Indirect",2.33583,"Triadimefon",8,0,1,5.927160309,"PLE","Mole salamander",0.18084786
-"711",2.87e-06,"Indirect",1.92159,"Triadimefon",8,0,1,5.927160309,"PLE","Mole salamander",0.055874374
-"712",2.87e-06,"Indirect",2.46557,"Triadimefon",8,0,1,5.927160309,"PLE","Mole salamander",0.176136635
-"713",2.87e-06,"Indirect",2.68042,"Triadimefon",8,0,1,5.927160309,"PLE","Mole salamander",0.08196845
-"714",NA,"Indirect",2.42958,"Triadimenol",8,0,1,0.20938095,"PLE","Mole salamander",0.720224064
-"715",NA,"Indirect",2.33583,"Triadimenol",8,0,1,0.20938095,"PLE","Mole salamander",0.325910025
-"716",NA,"Indirect",1.92159,"Triadimenol",8,0,1,0.20938095,"PLE","Mole salamander",0.181639696
-"717",NA,"Indirect",2.46557,"Triadimenol",8,0,1,0.20938095,"PLE","Mole salamander",0.323184081
-"718",NA,"Indirect",2.68042,"Triadimenol",8,0,1,0.20938095,"PLE","Mole salamander",0.240096806
-"719",5.65e-06,"Indirect",0.95183,"Imidacloprid",8,0,1,2.024466739,"PLE","Narrowmouth toad",0.294998693
-"720",5.65e-06,"Indirect",0.92942,"Imidacloprid",8,0,1,2.024466739,"PLE","Narrowmouth toad",0.395986198
-"721",5.65e-06,"Indirect",0.9349,"Imidacloprid",8,0,1,2.024466739,"PLE","Narrowmouth toad",0.214460025
-"722",5.65e-06,"Indirect",0.85968,"Imidacloprid",8,0,1,2.024466739,"PLE","Narrowmouth toad",0.319810784
-"723",5.65e-06,"Indirect",1.24292,"Imidacloprid",8,0,1,2.024466739,"PLE","Narrowmouth toad",0.49063891
-"724",2.72e-06,"Indirect",1.09861,"Total Triadimefon",8,0,0,6.241574746,"PLE","Narrowmouth toad",0.479349927
-"725",2.72e-06,"Indirect",0.8174,"Total Triadimefon",8,0,0,6.241574746,"PLE","Narrowmouth toad",0.318840389
-"726",2.72e-06,"Indirect",0.81689,"Total Triadimefon",8,0,0,6.241574746,"PLE","Narrowmouth toad",0.459769244
-"727",2.72e-06,"Indirect",0.79306,"Total Triadimefon",8,0,0,6.241574746,"PLE","Narrowmouth toad",0.447331937
-"728",2.72e-06,"Indirect",0.79105,"Total Triadimefon",8,0,0,6.241574746,"PLE","Narrowmouth toad",0.379035618
-"729",2.72e-06,"Indirect",1.09861,"Triadimefon",8,0,1,6.058110295,"PLE","Narrowmouth toad",0.39146245
-"730",2.72e-06,"Indirect",0.8174,"Triadimefon",8,0,1,6.058110295,"PLE","Narrowmouth toad",0.230338566
-"731",2.72e-06,"Indirect",0.81689,"Triadimefon",8,0,1,6.058110295,"PLE","Narrowmouth toad",0.356631557
-"732",2.72e-06,"Indirect",0.79306,"Triadimefon",8,0,1,6.058110295,"PLE","Narrowmouth toad",0.330405296
-"733",2.72e-06,"Indirect",0.79105,"Triadimefon",8,0,1,6.058110295,"PLE","Narrowmouth toad",0.281501081
-"734",NA,"Indirect",1.09861,"Triadimenol",8,0,1,0.183464451,"PLE","Narrowmouth toad",0.087887477
-"735",NA,"Indirect",0.8174,"Triadimenol",8,0,1,0.183464451,"PLE","Narrowmouth toad",0.088501824
-"736",NA,"Indirect",0.81689,"Triadimenol",8,0,1,0.183464451,"PLE","Narrowmouth toad",0.103137687
-"737",NA,"Indirect",0.79306,"Triadimenol",8,0,1,0.183464451,"PLE","Narrowmouth toad",0.116926641
-"738",NA,"Indirect",0.79105,"Triadimenol",8,0,1,0.183464451,"PLE","Narrowmouth toad",0.097534537
+"","X","app_rate_g_cm2","application","body_weight_g","chemical","exp_duration","formulation","soil_conc_ugg","soil_type","species","tissue_conc_ugg","tim_direct_avian_1hr_perez","tim_direct_avian_1hr_perez_ratios","tim_direct_avian_1hr","tim_direct_avian_1hr_ratios","tim_direct_amphib_1hr"
+"1",26,5.58e-06,"Overspray",1.73625,"Imidacloprid",8,0,0.47984644,"PLE","Barking treefrog",1.015287169,142.511403511786,140.365610699239,23.2173859637099,22.8678020097287,10.0057590090901
+"2",27,5.58e-06,"Overspray",2.61111,"Imidacloprid",8,0,0.47984644,"PLE","Barking treefrog",1.636083216,119.041591439379,72.760107967136,20.2675578974337,12.3878527077523,8.42642585602909
+"3",28,5.58e-06,"Overspray",1.82332,"Imidacloprid",8,0,0.47984644,"PLE","Barking treefrog",0.926100389,139.469128226451,150.598282738062,22.8421436803403,24.6648678174136,9.80174772164716
+"4",29,5.58e-06,"Overspray",2.91551,"Imidacloprid",8,0,0.47984644,"PLE","Barking treefrog",0.718277624,113.391242256281,157.865480515486,19.5368374450051,27.1995629436524,8.04418370723515
+"5",30,5.58e-06,"Overspray",2.49115,"Imidacloprid",8,0,0.47984644,"PLE","Barking treefrog",1.08903614,121.536374479021,111.599946057824,20.5874730521772,18.9043065661505,8.59493211074514
+"6",31,2e-05,"Overspray",2.09766,"Pendimethalin",8,0,12.11934838,"PLE","Barking treefrog",2.138795205,469.925749070509,219.715168601432,78.137985935785,36.5336455557394,33.1186114877953
+"7",32,2e-05,"Overspray",2.41178,"Pendimethalin",8,0,12.11934838,"PLE","Barking treefrog",2.01901591,441.879138907745,218.858671058092,74.5901618365011,36.9438207331913,31.2290252635291
+"8",33,2e-05,"Overspray",1.72083,"Pendimethalin",8,0,12.11934838,"PLE","Barking treefrog",2.28849235,512.807036635807,224.080730108539,83.4640119250222,36.471178033443,35.997878884147
+"9",34,2e-05,"Overspray",2.70413,"Pendimethalin",8,0,12.11934838,"PLE","Barking treefrog",2.767161376,420.136355018237,151.829365161765,71.8017154681883,25.9477875381375,29.7604155355571
+"10",35,2e-05,"Overspray",2.23741,"Pendimethalin",8,0,12.11934838,"PLE","Barking treefrog",1.232549848,456.747965515083,370.571596967235,76.4776832975124,62.0483491370423,32.2314400291878
+"11",36,2.3e-05,"Overspray",2.02028,"Total Atrazine",8,0,15.10490982,"PLE","Barking treefrog",12.2881692,549.446941790318,44.7134909071986,90.9904450765848,7.40471941715979,38.693869975623
+"12",37,2.3e-05,"Overspray",1.69156,"Total Atrazine",8,0,15.10490982,"PLE","Barking treefrog",8.916353622,594.206658341997,66.6423387331639,96.5335180550287,10.826569037913,41.6976364277003
+"13",38,2.3e-05,"Overspray",2.07221,"Total Atrazine",8,0,15.10490982,"PLE","Barking treefrog",9.702578705,543.33160720252,55.9986807344863,90.2246895832536,9.29904227798311,38.2826348919887
+"14",39,2.3e-05,"Overspray",2.36942,"Total Atrazine",8,0,15.10490982,"PLE","Barking treefrog",17.83079959,512.147569903363,28.7226362069926,86.2863379666418,4.83917378640908,36.1822969487746
+"15",40,2.3e-05,"Overspray",1.96104,"Total Atrazine",8,0,15.10490982,"PLE","Barking treefrog",14.21727551,556.705785874608,39.1569949870521,91.896686365908,6.46373394827094,39.1817329447148
+"16",41,1.11e-06,"Overspray",2.73317,"Total Fipronil",8,0,3.492483429,"PLE","Barking treefrog",2.400285765,23.2079838010987,9.66884199352769,3.9708455062421,1.65432198288361,1.64429191652663
+"17",42,1.11e-06,"Overspray",2.02542,"Total Fipronil",8,0,3.492483429,"PLE","Barking treefrog",1.658107241,26.4870899663937,15.9742924410724,4.3875639227218,2.64612795495403,1.86540323144995
+"18",43,1.11e-06,"Overspray",2.12849,"Total Fipronil",8,0,3.492483429,"PLE","Barking treefrog",1.662784049,25.9136042118367,15.5844676447439,4.31563926331639,2.59542979493448,1.82682703403845
+"19",44,1.11e-06,"Overspray",1.73265,"Total Fipronil",8,0,3.492483429,"PLE","Barking treefrog",2.07396123,28.3750033482523,13.6815495573426,4.6217055438032,2.22844355861136,1.99213293037737
+"20",45,1.11e-06,"Overspray",1.52771,"Total Fipronil",8,0,3.492483429,"PLE","Barking treefrog",1.915890199,29.9947576173636,15.6557811261937,4.81955961160045,2.51557193314942,2.10055642229508
+"21",46,2.85e-06,"Overspray",1.72511,"Total Triadimefon",8,0,8.451291713,"PLE","Barking treefrog",0.636157453,72.9949942723633,114.743596774875,11.8837873638406,18.6805755521669,5.12433591055481
+"22",47,2.85e-06,"Overspray",1.94887,"Total Triadimefon",8,0,8.451291713,"PLE","Barking treefrog",0.972799964,69.17274951324,71.1068586277621,11.4108282470103,11.7298814445786,4.86786888613745
+"23",48,2.85e-06,"Overspray",1.55295,"Total Triadimefon",8,0,8.451291713,"PLE","Barking treefrog",0.397699131,76.4590396378581,192.253474242211,12.3072047492549,30.946018710951,5.35624167717296
+"24",49,2.85e-06,"Overspray",2.37346,"Total Triadimefon",8,0,8.451291713,"PLE","Barking treefrog",0.642604155,63.4141037795127,98.6829968124197,10.6859388841811,16.6291157644025,4.4802440688581
+"25",50,2.85e-06,"Overspray",1.57685,"Total Triadimefon",8,0,8.451291713,"PLE","Barking treefrog",0.48091159,75.9457937897388,157.920489688632,12.2447709878744,25.4615842963453,5.32191225186248
+"26",86,5.69e-06,"Soil",1.95576,"Imidacloprid",8,0,2.565991685,"PLE","Barking treefrog",0.329814712,137.888017978381,418.07722021321,22.7548611302841,68.9928626661266,9.70422855278015
+"27",87,5.69e-06,"Soil",2.26328,"Imidacloprid",8,0,2.565991685,"PLE","Barking treefrog",0.210770534,129.287669417189,613.404857707431,21.6747662020362,102.835846124659,9.12557100634335
+"28",88,5.69e-06,"Soil",1.27439,"Imidacloprid",8,0,2.565991685,"PLE","Barking treefrog",0.50673308,166.555259809561,328.684402860695,26.2431876920897,51.7889767372,11.6217780078602
+"29",89,5.69e-06,"Soil",1.89439,"Imidacloprid",8,0,2.565991685,"PLE","Barking treefrog",0.292676446,139.840410023352,477.798647395602,22.9977295815017,78.5773159945427,9.83535981586376
+"30",90,5.69e-06,"Soil",1.4839,"Imidacloprid",8,0,2.565991685,"PLE","Barking treefrog",0.622028925,155.742537671612,250.378288552436,24.9462073215258,40.1045776472947,10.9004271236417
+"31",91,1.98e-05,"Soil",2.44812,"Pendimethalin",8,0,13.61565316,"PLE","Barking treefrog",0.409017886,434.584660612228,1062.50771784642,73.4774210611072,179.643540236544,30.7226889117284
+"32",92,1.98e-05,"Soil",2.46997,"Pendimethalin",8,0,13.61565316,"PLE","Barking treefrog",0.257508419,432.885047086671,1681.05201673686,73.2603291710927,284.49683103795,30.6079747382641
+"33",93,1.98e-05,"Soil",2.01387,"Pendimethalin",8,0,13.61565316,"PLE","Barking treefrog",0.094968352,473.665499390627,4987.61418320313,78.4138409783668,825.683918136926,33.3549702636242
+"34",94,1.98e-05,"Soil",2.29373,"Pendimethalin",8,0,13.61565316,"PLE","Barking treefrog",0.08250324,447.250116775646,5421.00063919484,75.0887043068259,910.130369508227,31.5768994891797
+"35",95,1.98e-05,"Soil",2.2234,"Pendimethalin",8,0,13.61565316,"PLE","Barking treefrog",0.099338888,453.434804556695,4564.52466587602,75.8714411413802,763.763745184869,31.9936198871717
+"36",96,2.3e-05,"Soil",2.069224088,"Total Atrazine",8,0,14.43612837,"PLE","Barking treefrog",7.876952404,543.677226492643,69.021265917077,90.2680237274762,11.4597650331919,38.3058821678248
+"37",97,2.3e-05,"Soil",1.2818,"Total Atrazine",8,0,14.43612837,"PLE","Barking treefrog",6.342816533,671.527067366144,105.872062335772,105.875065339901,16.6921216763974,46.8627860207058
+"38",98,2.3e-05,"Soil",1.91549,"Total Atrazine",8,0,14.43612837,"PLE","Barking treefrog",5.059544246,562.50557270583,111.177122949471,92.6186906965228,18.3057378675452,39.5713259986436
+"39",99,2.3e-05,"Soil",1.66783,"Total Atrazine",8,0,14.43612837,"PLE","Barking treefrog",5.640191973,597.920336330454,106.010635665017,96.9887354841897,17.1959989923183,41.9463848046559
+"40",100,2.3e-05,"Soil",2.6954,"Total Atrazine",8,0,14.43612837,"PLE","Barking treefrog",5.631964095,483.846293627136,85.9107560818241,82.6609337354558,14.6771059511621,34.2711011899671
+"41",101,1.12e-06,"Soil",1.62588,"Total Fipronil",8,0,2.495701956,"PLE","Barking treefrog",0.656150683,29.4450586351078,44.8754522367964,4.7631642776084,7.25925370652765,2.06463064616906
+"42",102,1.12e-06,"Soil",1.22989,"Total Fipronil",8,0,2.495701956,"PLE","Barking treefrog",0.966721159,33.302084759177,34.4484906005631,5.22712106616982,5.40706181664306,2.32207863935527
+"43",103,1.12e-06,"Soil",2.00445,"Total Fipronil",8,0,2.495701956,"PLE","Barking treefrog",0.464139949,26.8486560765494,57.8460357364098,4.44246092228211,9.57138236399064,1.8904736677864
+"44",104,1.12e-06,"Soil",1.99483,"Total Fipronil",8,0,2.495701956,"PLE","Barking treefrog",0.461519982,26.90567854524,58.2979710404825,4.44958354375718,9.64115036682677,1.89430647258833
+"45",105,1.12e-06,"Soil",1.56533,"Total Fipronil",8,0,2.495701956,"PLE","Barking treefrog",0.2997831,29.9420300107958,99.8789792046175,4.82374408913327,16.09078059815,2.09788431384987
+"46",106,2.79e-06,"Soil",1.30797,"Total Triadimefon",8,0,5.94731458,"PLE","Barking treefrog",0.268608762,80.7363302587106,300.572213868104,12.7569585927949,47.492712068696,5.63649514455784
+"47",107,2.79e-06,"Soil",1.082,"Total Triadimefon",8,0,5.94731458,"PLE","Barking treefrog",0.216919024,87.7797633469298,404.666044168306,13.5886567903275,62.6439144882357,6.10502050676552
+"48",108,2.79e-06,"Soil",2.56323,"Total Triadimefon",8,0,5.94731458,"PLE","Barking treefrog",0.143700399,60.0085739156482,417.59504032865,10.1964253571009,70.9561381043966,4.24616859352855
+"49",109,2.79e-06,"Soil",1.61382,"Total Triadimefon",8,0,5.94731458,"PLE","Barking treefrog",0.274522017,73.5909706954185,268.069466702988,11.8948360805432,43.3292608386424,5.15928845110684
+"50",110,2.79e-06,"Soil",2.84579,"Total Triadimefon",8,0,5.94731458,"PLE","Barking treefrog",0.173080623,57.3040307600382,331.082877833403,9.84746982976687,56.8952760804823,4.06328611824458
+"51",121,5.62e-06,"Soil",0.7479,"Imidacloprid",8,0,2.072271639,"PLE","Cricket frog",0.253213485,208.092171304956,821.805249846612,30.9539747037012,122.244574390267,14.3661629667625
+"52",122,5.62e-06,"Soil",0.74614,"Imidacloprid",8,0,2.072271639,"PLE","Cricket frog",0.434782099,208.308493264367,479.11009616881,30.9782694110444,71.2501031718981,14.3804196640213
+"53",123,5.62e-06,"Soil",0.53965,"Imidacloprid",8,0,2.072271639,"PLE","Cricket frog",0.372214162,240.303041656039,645.604241291709,34.5074576373006,92.7086101503591,16.4819915743144
+"54",124,5.62e-06,"Soil",0.71619,"Imidacloprid",8,0,2.072271639,"PLE","Cricket frog",0.339457748,212.106159501437,624.83817426797,31.4037789513984,92.5115986788387,14.630596121322
+"55",125,5.62e-06,"Soil",0.63282,"Imidacloprid",8,0,2.072271639,"PLE","Cricket frog",0.275966093,224.004206222738,811.709162483009,32.7250270727416,118.583506825027,15.4130984867328
+"56",126,2.79e-06,"Soil",0.6273,"Total Triadimefon",8,0,10.06719167,"PLE","Cricket frog",2.077130886,111.635423910673,53.7450117674833,16.2935207061799,7.84424362277759,7.67997325813961
+"57",127,2.79e-06,"Soil",0.50037,"Total Triadimefon",8,0,10.06719167,"PLE","Cricket frog",1.756096815,123.339215140006,70.2348606787979,17.5675103022889,10.0037253938581,8.44685777914737
+"58",128,2.79e-06,"Soil",0.70107,"Total Triadimefon",8,0,10.06719167,"PLE","Cricket frog",1.744838243,106.293781467542,60.9189888483791,15.7013020015316,8.99871496084098,7.32877285398584
+"59",129,2.79e-06,"Soil",0.69761,"Total Triadimefon",8,0,10.06719167,"PLE","Cricket frog",1.460137338,106.525952981817,72.9561187221804,15.7271916599962,10.7710358818289,7.34405394455344
+"60",130,2.79e-06,"Soil",0.70298,"Total Triadimefon",8,0,10.06719167,"PLE","Cricket frog",1.373422118,106.166323499567,77.3005779564464,15.687083159209,11.4218949539365,7.32038316784427
+"61",166,1.99e-05,"Soil",1.44625,"Pendimethalin",8,0,12.47076761,"PLE","Fowlers toad",1.015765216,550.896703684193,542.346494058517,87.9958190296197,86.6300771512338,38.5374715752039
+"62",167,1.99e-05,"Soil",1.4138,"Pendimethalin",8,0,12.47076761,"PLE","Fowlers toad",0.793134917,556.437515469316,701.567291443955,88.6632985355771,111.788419139259,38.907411525053
+"63",168,1.99e-05,"Soil",2.94055,"Pendimethalin",8,0,12.47076761,"PLE","Fowlers toad",0.232912294,402.86589389754,1729.68926190534,69.4762497174061,298.293613120337,28.5849376796909
+"64",169,1.99e-05,"Soil",2.01645,"Pendimethalin",8,0,12.47076761,"PLE","Fowlers toad",2.450801741,475.789038129619,194.136078071938,78.7762779645077,32.1430643069336,33.5053653014257
+"65",170,1.99e-05,"Soil",1.73866,"Pendimethalin",8,0,12.47076761,"PLE","Fowlers toad",0.348901972,507.928795460958,1455.79227468785,82.7621183236595,237.207367585929,35.6627889927417
+"66",171,2.28e-05,"Soil",2.811,"Total Atrazine",8,0,17.05417146,"PLE","Fowlers toad",9.865493013,470.838143334811,47.7257591399007,80.8042474166882,8.1905939531061,33.377748011502
+"67",172,2.28e-05,"Soil",1.04725,"Total Atrazine",8,0,17.05417146,"PLE","Fowlers toad",14.56173496,727.741360998651,49.9762811916096,112.260785952867,7.70930018031771,50.5808638519051
+"68",173,2.28e-05,"Soil",2.57336,"Total Atrazine",8,0,17.05417146,"PLE","Fowlers toad",10.4565577,489.540391211392,46.8165915836138,83.2162554324633,7.95828396112263,34.6422999492069
+"69",174,2.28e-05,"Soil",1.93404,"Total Atrazine",8,0,17.05417146,"PLE","Fowlers toad",9.020873418,555.249283843238,61.5516101506655,91.5191242806667,10.1452619984726,39.0683880122833
+"70",175,2.28e-05,"Soil",0.82668,"Total Atrazine",8,0,17.05417146,"PLE","Fowlers toad",8.439433709,807.743486076195,95.7106263201996,121.459499414356,14.3919015898933,55.876396341943
+"71",176,1.14e-06,"Soil",2.87106,"Total Fipronil",8,0,3.366859313,"PLE","Fowlers toad",1.155134535,23.3234416056457,20.1911040653336,4.01186933925802,3.47307540178255,1.65409960089654
+"72",177,1.14e-06,"Soil",1.28161,"Total Fipronil",8,0,3.366859313,"PLE","Fowlers toad",0.524889572,33.2865610779243,63.4163124085162,5.24797968441576,9.99825480323271,2.32290914272345
+"73",178,1.14e-06,"Soil",2.48014,"Total Fipronil",8,0,3.366859313,"PLE","Fowlers toad",1.259008899,24.8785619290385,19.7604337418098,4.21225138881581,3.34568833640612,1.75923142055876
+"74",179,1.14e-06,"Soil",1.69321,"Total Fipronil",8,0,3.366859313,"PLE","Fowlers toad",1.158626237,29.4393218793851,25.4088168723087,4.78315165688741,4.12829565233418,2.06590427680409
+"75",180,1.14e-06,"Soil",0.89804,"Total Fipronil",8,0,3.366859313,"PLE","Fowlers toad",2.07002135,38.9390973878045,18.8109641418938,5.9078218924127,2.85399080179183,2.69811197915716
+"76",181,2.74e-06,"Soil",0.95994,"Total Triadimefon",8,0,7.010390361,"PLE","Fowlers toad",0.17768118,90.8793775998041,511.474415015727,13.8877946291319,78.1613147162343,6.30548362271738
+"77",182,2.74e-06,"Soil",1.74647,"Total Triadimefon",8,0,7.010390361,"PLE","Fowlers toad",0.249114027,69.7978313167117,280.184268052925,11.3783925030889,45.6754388346383,4.90109733599406
+"78",183,2.74e-06,"Soil",1.37367,"Total Triadimefon",8,0,7.010390361,"PLE","Fowlers toad",0.309893558,77.5941254761706,250.389604666034,12.3255334146391,39.773441868834,5.42243890214471
+"79",184,2.74e-06,"Soil",3.32274,"Total Triadimefon",8,0,7.010390361,"PLE","Fowlers toad",0.404606482,52.5599680559665,129.90391996727,9.18464298135126,22.7001874412661,3.73846394052207
+"80",185,2.74e-06,"Soil",1.09363,"Total Triadimefon",8,0,7.010390361,"PLE","Fowlers toad",0.318423813,85.8011550121293,269.455836872757,13.2977057567024,41.7610279564815,5.96868581412037
+"81",221,5.66e-06,"Soil",1.50164,"Imidacloprid",8,0,2.865856558,"PLE","Gray treefrog",0.188500223,154.111598559243,817.56719491649,24.7166731577286,131.122779402381,10.7888416287485
+"82",222,5.66e-06,"Soil",1.89679,"Imidacloprid",8,0,2.865856558,"PLE","Gray treefrog",0.176685812,139.025468005193,786.851340418852,22.8668332511083,129.420879878619,9.77829030928944
+"83",223,5.66e-06,"Soil",1.48929,"Imidacloprid",8,0,2.865856558,"PLE","Gray treefrog",0.158445082,154.673885714547,976.198716691928,24.7847382941133,156.424787574746,10.8264171725978
+"84",224,5.66e-06,"Soil",2.47287,"Imidacloprid",8,0,2.865856558,"PLE","Gray treefrog",0.133043234,123.679889482075,929.621791079396,20.9339126331303,157.346691024741,8.74523109719994
+"85",225,5.66e-06,"Soil",1.5308,"Imidacloprid",8,0,2.865856558,"PLE","Gray treefrog",0.27666374,152.810014719229,552.331197139275,24.558881890649,88.7679819937698,10.7018377613304
+"86",226,1.99e-05,"Soil",1.42942,"Pendimethalin",8,0,10.66105625,"PLE","Gray treefrog",0.077086057,553.747788811209,7183.50127586898,88.3394821867585,1145.98522255145,38.7278491791848
+"87",227,1.99e-05,"Soil",1.72685,"Pendimethalin",8,0,10.66105625,"PLE","Gray treefrog",0.04141364,509.457799723598,12301.6909337986,82.9501725901202,2002.96744237213,35.7652680347794
+"88",228,1.99e-05,"Soil",1.77209,"Pendimethalin",8,0,10.66105625,"PLE","Gray treefrog",0.062623285,503.680658455574,8043.02518552921,82.2389047364317,1313.23204677672,35.3779908922374
+"89",229,1.99e-05,"Soil",1.59006,"Pendimethalin",8,0,10.66105625,"PLE","Gray treefrog",0.018846949,528.340790675846,28033.2265278505,85.2613846013746,4523.8825977284,37.0297336505524
+"90",230,1.99e-05,"Soil",1.59253,"Pendimethalin",8,0,10.66105625,"PLE","Gray treefrog",0.060285257,527.97925559816,8758.01616966085,85.2173259983857,1413.56826260831,37.0055435800591
+"91",231,2.31e-05,"Soil",1.56286,"Total Atrazine",8,0,16.63951616,"PLE","Gray treefrog",8.381738534,617.984597237256,73.7298824975797,99.5420542275127,11.8760629222358,43.2976403346361
+"92",232,2.31e-05,"Soil",1.42737,"Total Atrazine",8,0,16.63951616,"PLE","Gray treefrog",8.407586134,643.199620151839,76.5022932742563,102.593845387275,12.2025327783903,44.9826137404242
+"93",233,2.31e-05,"Soil",2.21783,"Total Atrazine",8,0,16.63951616,"PLE","Gray treefrog",10.43128937,529.592766198151,50.7696361795158,88.5906474620865,8.49278016549612,37.3653268572282
+"94",234,2.31e-05,"Soil",2.86963,"Total Atrazine",8,0,16.63951616,"PLE","Gray treefrog",8.072348131,472.7104254822,58.5592219030872,81.3066295190536,10.0722402205145,33.5243120834558
+"95",235,2.31e-05,"Soil",1.1115,"Total Atrazine",8,0,16.63951616,"PLE","Gray treefrog",6.806192479,718.208150428719,105.522750443026,111.504945997607,16.3828669761613,49.9777493764628
+"96",236,1.05e-06,"Soil",2.29103,"Total Fipronil",8,0,3.309695933,"PLE","Gray treefrog",0.895649989,23.7301318458781,26.4948720340777,3.98353883093532,4.44765129220061,1.67536308870412
+"97",237,1.05e-06,"Soil",2.48463,"Total Fipronil",8,0,3.309695933,"PLE","Gray treefrog",0.453031887,22.8961943504516,50.5399178456761,3.8773691369159,8.55871131410205,1.61911133641857
+"98",238,1.05e-06,"Soil",1.73741,"Total Fipronil",8,0,3.309695933,"PLE","Gray treefrog",0.627210223,26.8087646255434,42.742869364142,4.36789140038816,6.96399905520699,1.88227478417055
+"99",239,1.05e-06,"Soil",1.90828,"Total Fipronil",8,0,3.309695933,"PLE","Gray treefrog",0.144678333,25.7223449445951,177.789890242896,4.23355771293214,29.2618640617883,1.80938746012711
+"100",240,1.05e-06,"Soil",2.34893,"Total Fipronil",8,0,3.309695933,"PLE","Gray treefrog",0.173233731,23.4703745624138,135.483860025007,3.95056824528743,22.8048441979665,1.65785139184929
+"101",241,2.78e-06,"Soil",2.49658,"Total Triadimefon",8,0,5.80984816,"PLE","Gray treefrog",0.45289549,60.492267017974,133.567828237755,10.2494073284609,22.6308443222981,4.27813954597986
+"102",242,2.78e-06,"Soil",2.51534,"Total Triadimefon",8,0,5.80984816,"PLE","Gray treefrog",0.841704915,60.292886608706,71.6318575954924,10.2238883961284,12.1466421472999,4.26467742249029
+"103",243,2.78e-06,"Soil",1.1547,"Total Triadimefon",8,0,5.80984816,"PLE","Gray treefrog",0.590151651,84.9924440792835,144.017972219963,13.2498990075932,22.4516850628843,5.9188574113983
+"104",244,2.78e-06,"Soil",1.20172,"Total Triadimefon",8,0,5.80984816,"PLE","Gray treefrog",0.691676628,83.5095166100086,120.734911705024,13.0749580752335,18.903281600016,5.82023086627033
+"105",245,2.78e-06,"Soil",2.91091,"Total Triadimefon",8,0,5.80984816,"PLE","Gray treefrog",0.446716578,56.5317629475463,126.549507521403,9.73852575518078,21.8002336040029,4.01034080256462
+"106",281,2e-05,"Overspray",1.96213,"Pendimethalin",8,0,12.5210311,"PLE","Green treefrog",0.673117238,483.973374618799,719.003090838686,79.8953769172821,118.694593462903,34.0631025267473
+"107",282,2e-05,"Overspray",2.02547,"Pendimethalin",8,0,12.5210311,"PLE","Green treefrog",7.113543563,477.239668763058,67.0888797596386,79.0545559508183,11.1132454944127,33.6105197266531
+"108",283,2e-05,"Overspray",1.56058,"Pendimethalin",8,0,12.5210311,"PLE","Green treefrog",3.039240379,535.396191839893,176.161186702861,86.2255056251107,28.3707423147232,37.5101822935115
+"109",284,2e-05,"Overspray",0.82568,"Pendimethalin",8,0,12.5210311,"PLE","Green treefrog",1.070092765,708.925228195422,662.489506875062,106.586372576486,99.6047969509318,49.0393655880395
+"110",285,2e-05,"Overspray",1.17217,"Pendimethalin",8,0,12.5210311,"PLE","Green treefrog",1.924313318,607.420667267814,315.655803857932,94.8475527031018,49.289038232963,42.3133638809089
+"111",286,2.31e-05,"Overspray",2.22041,"Total Atrazine",8,0,19.12810511,"PLE","Green treefrog",23.44129789,529.321304681675,22.5807166124314,88.5563559204555,3.77779235330794,37.3470423370823
+"112",287,2.31e-05,"Overspray",3.35473,"Total Atrazine",8,0,19.12810511,"PLE","Green treefrog",20.56163305,441.246643545554,21.4597081113435,77.1859071346335,3.75388019749888,31.3908259181089
+"113",288,2.31e-05,"Overspray",2.00039,"Total Atrazine",8,0,19.12810511,"PLE","Green treefrog",19.95404302,554.248890835302,27.7762702165058,91.6876406728032,4.59494051310326,39.0243162414593
+"114",289,2.31e-05,"Overspray",2.82206,"Total Atrazine",8,0,19.12810511,"PLE","Green treefrog",19.44679486,476.208004462511,24.4877373310509,81.7604786493187,4.20431640473009,33.761069202757
+"115",290,2.31e-05,"Overspray",3.13181,"Total Atrazine",8,0,19.12810511,"PLE","Green treefrog",18.88325569,454.831599779751,24.0865032622852,78.973632395376,4.18220426031715,32.3128090617167
+"116",291,1.06e-06,"Overspray",1.30684,"Total Fipronil",8,0,3.951751488,"PLE","Green treefrog",2.729720739,30.6857118741559,11.2413374143896,4.84812494747345,1.77605162250022,2.14224346892021
+"117",292,1.06e-06,"Overspray",2.6593,"Total Fipronil",8,0,3.951751488,"PLE","Green treefrog",3.730847831,22.4319947965632,6.01257296268517,3.82673463865106,1.0257010770727,1.58844220736774
+"118",293,1.06e-06,"Overspray",1.88382,"Total Fipronil",8,0,3.951751488,"PLE","Green treefrog",1.778989061,26.1154740002605,14.6799519866528,4.29227707014769,2.41276192431162,1.83656742508633
+"119",294,1.06e-06,"Overspray",1.07051,"Total Fipronil",8,0,3.951751488,"PLE","Green treefrog",1.159865558,33.5074037197992,28.8890410519451,5.18110217535911,4.46698510842333,2.32991871118487
+"120",295,1.06e-06,"Overspray",1.77007,"Total Fipronil",8,0,3.951751488,"PLE","Green treefrog",1.097300859,26.842718993586,24.4624970202324,4.38222883901332,3.99364386081586,1.88536087333537
+"121",296,2.79e-06,"Overspray",1.53205,"Total Triadimefon",8,0,8.090520249,"PLE","Green treefrog",1.511168861,75.2979688755102,49.8276339718134,12.1025899426985,8.00876080432849,5.27347506053293
+"122",297,2.79e-06,"Overspray",1.72177,"Total Triadimefon",8,0,8.090520249,"PLE","Green treefrog",3.099302175,71.5193555578917,23.0759543663701,11.6411125238925,3.75604309182679,5.02054970893814
+"123",298,2.79e-06,"Overspray",1.38441,"Total Triadimefon",8,0,8.090520249,"PLE","Green treefrog",1.440452008,78.739179107418,54.6628271335076,12.517945410172,8.69028981226012,5.50331476867134
+"124",299,2.79e-06,"Overspray",3.21721,"Total Triadimefon",8,0,8.090520249,"PLE","Green treefrog",1.363591664,54.2862956859476,39.8112551720231,9.45330269198843,6.93264922451772,3.85876181530827
+"125",300,2.79e-06,"Overspray",1.0386,"Total Triadimefon",8,0,8.090520249,"PLE","Green treefrog",1.152513756,89.378882275954,77.5512498750202,13.7751684275393,11.95228113836,6.21115063272409
+"126",336,5.76e-06,"Soil",1.46095,"Imidacloprid",8,0,2.032637766,"PLE","Green treefrog",0.128323626,158.745973048668,1237.07518246615,25.3845176395624,197.816399293162,11.1071746423708
+"127",337,5.76e-06,"Soil",1.29982,"Imidacloprid",8,0,2.032637766,"PLE","Green treefrog",0.160232247,167.141544093493,1043.12051551953,26.3918222249476,164.709805417305,11.6672969238284
+"128",338,5.76e-06,"Soil",1.41647,"Imidacloprid",8,0,2.032637766,"PLE","Green treefrog",0.12428756,160.925346477382,1294.78241006085,25.6472278408236,206.353941141202,11.2527009342305
+"129",339,5.76e-06,"Soil",1.30898,"Imidacloprid",8,0,2.032637766,"PLE","Green treefrog",0.154999982,166.624726652592,1074.99836130685,26.3301780013789,169.872135865015,11.6328542395487
+"130",340,5.76e-06,"Soil",1.2973,"Imidacloprid",8,0,2.032637766,"PLE","Green treefrog",0.103564099,167.284646687247,1615.27641627286,26.4088827581371,255.00036222144,11.6768329717136
+"131",341,1.99e-05,"Soil",2.18431,"Pendimethalin",8,0,12.43513533,"PLE","Green treefrog",0.106088831,459.303659795788,4329.42521344012,76.7063693854428,723.039067000774,32.396222094249
+"132",342,1.99e-05,"Soil",1.10908,"Pendimethalin",8,0,12.43513533,"PLE","Green treefrog",0.264552068,619.311113506761,2340.98005050091,96.1281188913355,363.361812357239,43.0939503691951
+"133",343,1.99e-05,"Soil",2.55184,"Pendimethalin",8,0,12.43513533,"PLE","Green treefrog",0.285295401,428.859597297246,1503.2124450448,72.8351275309481,255.297236743568,30.3431300494269
+"134",344,1.99e-05,"Soil",2.44681,"Pendimethalin",8,0,12.43513533,"PLE","Green treefrog",0.087572337,436.882644096938,4988.82020354142,73.8616828948263,843.436242826617,30.8848127848001
+"135",345,1.99e-05,"Soil",2.26759,"Pendimethalin",8,0,12.43513533,"PLE","Green treefrog",0.083610081,451.786804004666,5403.49678652585,75.7565330477888,906.069365580316,31.889889071942
+"136",346,2.3e-05,"Soil",1.31617,"Total Atrazine",8,0,17.60923519,"PLE","Green treefrog",3.727357846,663.736458753855,178.071568702785,104.94625574473,28.1556695334076,46.3436344487951
+"137",347,2.3e-05,"Soil",1.8349,"Total Atrazine",8,0,17.60923519,"PLE","Green treefrog",3.065833762,573.269969058728,186.986644926486,93.953921347726,30.6454715556512,40.2939289141764
+"138",348,2.3e-05,"Soil",2.11135,"Total Atrazine",8,0,17.60923519,"PLE","Green treefrog",5.406937125,538.866515403012,99.6620642972637,89.6642423076145,16.5831856806758,37.9822404413304
+"139",349,2.3e-05,"Soil",1.88638,"Total Atrazine",8,0,17.60923519,"PLE","Green treefrog",3.651702998,566.317250221908,155.083053176032,93.0922060982059,25.4928196923987,39.8272711169153
+"140",350,2.3e-05,"Soil",0.73631,"Total Atrazine",8,0,17.60923519,"PLE","Green treefrog",2.867269263,857.508615685384,299.068045945632,127.340522542838,44.4117768031325,59.1817608135582
+"141",351,1.06e-06,"Soil",1.69128,"Total Fipronil",8,0,2.804569298,"PLE","Green treefrog",0.197411795,27.3871757214451,138.731202567937,4.44918130509556,22.5375657269899,1.92185109185163
+"142",352,1.06e-06,"Soil",2.0466,"Total Fipronil",8,0,2.804569298,"PLE","Green treefrog",0.111496024,25.1782041152507,225.821542436802,4.17543657053079,37.4491970272481,1.77359144622566
+"143",353,1.06e-06,"Soil",2.34143,"Total Fipronil",8,0,2.804569298,"PLE","Green treefrog",0.061188744,23.7273419889973,387.772986302796,3.99244219750728,65.2479841309912,1.67589532583339
+"144",354,1.06e-06,"Soil",1.05281,"Total Fipronil",8,0,2.804569298,"PLE","Green treefrog",0.427601059,33.7546756379642,78.9396446232006,5.20994716589126,12.1841306428833,2.34633011761507
+"145",355,1.06e-06,"Soil",1.01293,"Total Fipronil",8,0,2.804569298,"PLE","Green treefrog",0.261173889,34.3344234725582,131.461929843064,5.27737454717764,20.2063635357424,2.38478660798017
+"146",356,2.71e-06,"Soil",1.26341,"Total Triadimefon",8,0,5.245912662,"PLE","Green treefrog",0.273380103,79.6292590299129,291.276717493639,12.5350202522318,45.8519845251205,5.55535398113867
+"147",357,2.71e-06,"Soil",1.56597,"Total Triadimefon",8,0,5.245912662,"PLE","Green treefrog",0.393093957,72.4359598235612,184.271364475749,11.6701492533498,29.6879385844892,5.07525729528225
+"148",358,2.71e-06,"Soil",1.34966,"Total Triadimefon",8,0,5.245912662,"PLE","Green treefrog",0.151943337,77.3436680995123,509.029679264661,12.2623745598981,80.7036017637159,5.40303062043177
+"149",359,2.71e-06,"Soil",1.4684,"Total Triadimefon",8,0,5.245912662,"PLE","Green treefrog",0.495725615,74.5204288515122,150.325959758025,11.9228510398857,24.0513112074827,5.21459290301004
+"150",360,2.71e-06,"Soil",2.15294,"Total Triadimefon",8,0,5.245912662,"PLE","Green treefrog",0.557152367,62.9486811549751,112.982883827495,10.4963828654427,18.8393399851476,4.43869649563561
+"151",391,2e-05,"Soil",1.2242,"Pendimethalin",8,0,17.57581532,"PLE","Leopard frog",0.131424428,595.897444006371,4534.14523520978,93.4856945726706,711.326623180514,41.5467203060042
+"152",392,2e-05,"Soil",2.64224,"Pendimethalin",8,0,17.57581532,"PLE","Leopard frog",0.41907742,424.448156936001,1012.81561993009,72.3574472126518,172.658902053591,30.0519234262507
+"153",393,2e-05,"Soil",2.90779,"Pendimethalin",8,0,17.57581532,"PLE","Leopard frog",0.092921182,406.895718426294,4378.93394884165,70.0863604910413,754.25601550184,28.8644015062937
+"154",394,2e-05,"Soil",1.8955,"Pendimethalin",8,0,17.57581532,"PLE","Leopard frog",0.522692823,491.403481676261,940.138184518866,80.819838513585,154.622055167543,34.5621603836382
+"155",395,2.31e-05,"Soil",1.74298,"Total Atrazine",8,0,21.53033266,"PLE","Leopard frog",3.440459903,588.960887053781,171.186673775858,95.9912426321405,27.9007008767748,41.3542813863907
+"156",396,2.28e-05,"Soil",3.042,"Total Atrazine",8,0,21.53033266,"PLE","Leopard frog",6.098643762,454.722097892122,74.5611837053751,78.7069049233121,12.9056406628842,32.2862362476502
+"157",397,2.28e-05,"Soil",2.243,"Total Atrazine",8,0,21.53033266,"PLE","Leopard frog",4.385147102,520.120009412037,118.609478157487,87.1121441057165,19.8652729496773,36.7052615794835
+"158",398,2.28e-05,"Soil",2.0197,"Total Atrazine",8,0,21.53033266,"PLE","Leopard frog",5.751047214,544.738115061164,94.719812721253,90.2078485662047,15.6854647874579,38.3620385325679
+"159",399,1.12e-06,"Soil",3.07228,"Total Fipronil",8,0,3.156807044,"PLE","Leopard frog",0.474578788,22.2398696275865,46.8623339052113,3.85357293139829,8.11998561427125,1.57939089168526
+"160",400,1.12e-06,"Soil",1.6105,"Total Fipronil",8,0,3.156807044,"PLE","Leopard frog",0.608410201,29.5687363902051,48.6000010216874,4.77826359585483,7.85368750885692,2.07290861411219
+"161",401,1.12e-06,"Soil",1.29821,"Total Fipronil",8,0,3.156807044,"PLE","Leopard frog",0.37917811,32.5175131124501,85.7578859508797,5.13386162295203,13.5394462063014,2.26982512647981
+"162",402,1.12e-06,"Soil",1.4102,"Total Fipronil",8,0,3.156807044,"PLE","Leopard frog",0.496870531,31.3523178804501,63.0995720703149,4.99433362846534,10.0515794696332,2.19211555715283
+"163",403,2.81e-06,"Soil",2.11943,"Total Triadimefon",8,0,6.669240533,"PLE","Leopard frog",0.1766496,65.7246271647245,372.062134104603,10.9407065970656,61.9345110153976,4.6329828110697
+"164",404,2.81e-06,"Soil",3.13315,"Total Triadimefon",8,0,6.669240533,"PLE","Leopard frog",0.179231247,55.3175631987283,308.637941902666,9.6053808435853,53.5921107751111,3.92998452841395
+"165",405,2.81e-06,"Soil",3.32121,"Total Triadimefon",8,0,6.669240533,"PLE","Leopard frog",0.052193986,53.9136903196976,1032.94832319757,9.42073188828802,180.494585876005,3.83471562157234
+"166",406,2.81e-06,"Soil",1.44049,"Total Triadimefon",8,0,6.669240533,"PLE","Leopard frog",0.070844227,77.9269583294617,1099.97612549942,12.4420634498409,175.625650483008,5.45087353587149
+"167",425,2.02e-05,"Soil",2.58239,"Pendimethalin",8,0,32.37428285,"PLE","Mole salamander",4.801958486,433.046134421478,90.1811491465438,73.6407332134834,15.3355622353215,30.6466338086256
+"168",426,2.02e-05,"Soil",1.87511,"Pendimethalin",8,0,32.37428285,"PLE","Mole salamander",1.295372009,498.690387560179,384.978511265777,81.9225507446941,63.2424895516591,35.0670884127264
+"169",427,2.02e-05,"Soil",2.07789,"Pendimethalin",8,0,32.37428285,"PLE","Mole salamander",2.957076964,476.611204646372,161.176462584074,79.1686179722103,26.7725929815232,33.583416471229
+"170",428,2.02e-05,"Soil",3.99315,"Pendimethalin",8,0,32.37428285,"PLE","Mole salamander",1.851006799,357.318583307787,193.040124704473,63.6917630623537,34.4092539783014,25.5088037224606
+"171",429,2.02e-05,"Soil",2.0028,"Pendimethalin",8,0,32.37428285,"PLE","Mole salamander",3.236333259,484.410579842289,149.678831280796,80.1449308888074,24.7641155823277,34.1078659694965
+"172",430,2.3e-05,"Soil",2.93262,"Total Atrazine",8,0,52.67554477,"PLE","Mole salamander",6.823400408,466.17873183054,68.3205885564,80.3714237192842,11.7787934041001,33.0754489764065
+"173",431,2.3e-05,"Soil",3.53977,"Total Atrazine",8,0,52.67554477,"PLE","Mole salamander",5.611314977,429.056282834913,76.4626980651693,75.4899522426486,13.4531660675031,30.556382863322
+"174",432,2.3e-05,"Soil",1.14,"Total Atrazine",8,0,52.67554477,"PLE","Mole salamander",5.443528911,707.159240921436,129.908236455297,110.090165564432,20.2240435137522,49.2338155407841
+"175",433,2.32e-05,"Soil",2.9446,"Total Atrazine",8,0,81.7111506,"PLE","Mole salamander",2.748808693,469.387810837348,170.760450529959,80.9603223627684,29.452876283802,33.3058490900903
+"176",434,2.32e-05,"Soil",2.59184,"Total Atrazine",8,0,81.7111506,"PLE","Mole salamander",2.620759616,496.559389393515,189.471551057934,84.4746619704872,32.2328921182854,35.1440281645835
+"177",435,1.05e-06,"Soil",2.0321,"Total Fipronil",8,0,4.53176306,"PLE","Mole salamander",0.49304269,25.0189998783861,50.7440844085654,4.14585007838541,8.40870407871863,1.76212625771668
+"178",436,1.05e-06,"Soil",1.57444,"Total Fipronil",8,0,4.53176306,"PLE","Mole salamander",1.117034512,27.9989088560219,25.0653928372285,4.51352972706009,4.04063587881346,1.96196748325449
+"179",437,1.05e-06,"Soil",2.34673,"Total Fipronil",8,0,4.53176306,"PLE","Mole salamander",1.105844253,23.4800752922651,21.232714488109,3.95180114464379,3.57356032182933,1.65850552991845
+"180",438,1.05e-06,"Soil",2.788,"Total Fipronil",8,0,4.53176306,"PLE","Mole salamander",0.472718534,21.7620403964764,46.0359364637825,3.73144299385881,7.89358302134777,1.5424590526533
+"181",439,1.05e-06,"Soil",1.75764,"Total Fipronil",8,0,4.53176306,"PLE","Mole salamander",0.466888045,26.6722482937881,57.1277174034046,4.35108570170643,9.31933414938142,1.87312344665045
+"182",440,2.87e-06,"Soil",2.42958,"Total Triadimefon",8,0,6.136541259,"PLE","Mole salamander",1.119874054,63.204363222476,56.4388138083213,10.6775105739745,9.53456376262694,4.46751336584102
+"183",441,2.87e-06,"Soil",2.33583,"Total Triadimefon",8,0,6.136541259,"PLE","Mole salamander",0.506757885,64.3107741990145,126.906311875176,10.8183485803715,21.3481603357222,4.54214232756565
+"184",442,2.87e-06,"Soil",1.92159,"Total Triadimefon",8,0,6.136541259,"PLE","Mole salamander",0.23751407,70.0925627640055,295.109097174772,11.5449718411347,48.6075281398473,4.93120809532813
+"185",443,2.87e-06,"Soil",2.46557,"Total Triadimefon",8,0,6.136541259,"PLE","Mole salamander",0.499320716,62.7958257180111,125.762508355474,10.6253544811213,21.2796187713575,4.43994201578635
+"186",444,2.87e-06,"Soil",2.68042,"Total Triadimefon",8,0,6.136541259,"PLE","Mole salamander",0.322065257,60.5241730555037,187.925185160546,10.3338071413153,32.0860661518524,4.2864829200123
+"187",455,5.65e-06,"Soil",0.95183,"Imidacloprid",8,0,2.024466739,"PLE","Narrowmouth toad",0.294998693,188.099734136354,637.629042432247,28.7182634782746,97.3504770011799,13.0487089904637
+"188",456,5.65e-06,"Soil",0.92942,"Imidacloprid",8,0,2.024466739,"PLE","Narrowmouth toad",0.395986198,190.086543729092,480.033255424452,28.9470193599341,73.1010815683381,13.1802543304359
+"189",457,5.65e-06,"Soil",0.9349,"Imidacloprid",8,0,2.024466739,"PLE","Narrowmouth toad",0.214460025,189.59436996107,884.054592276907,28.8904065903255,134.712315688322,13.1476736682868
+"190",458,5.65e-06,"Soil",0.85968,"Imidacloprid",8,0,2.024466739,"PLE","Narrowmouth toad",0.319810784,196.738942725497,615.172947781201,29.7087439006621,92.8947533572292,13.6202552278927
+"191",459,5.65e-06,"Soil",1.24292,"Imidacloprid",8,0,2.024466739,"PLE","Narrowmouth toad",0.49063891,167.218156573561,340.817153237114,26.276582117049,53.5558464310322,11.6621996269952
+"192",460,2.72e-06,"Soil",1.09861,"Total Triadimefon",8,0,6.241574746,"PLE","Narrowmouth toad",0.479349927,85.0043838654189,177.332631293837,13.1806857836454,27.4970017543059,5.91379643290727
+"193",461,2.72e-06,"Soil",0.8174,"Total Triadimefon",8,0,6.241574746,"PLE","Narrowmouth toad",0.318840389,96.8433167698246,303.736038817292,14.5444792184648,45.6168030157082,6.69771284705806
+"194",462,2.72e-06,"Soil",0.81689,"Total Triadimefon",8,0,6.241574746,"PLE","Narrowmouth toad",0.459769244,96.8699754764791,210.692595776326,14.5475023608534,31.6408775721704,6.69947294461612
+"195",463,2.72e-06,"Soil",0.79306,"Total Triadimefon",8,0,6.241574746,"PLE","Narrowmouth toad",0.447331937,98.143007472633,219.396379634376,14.6916304328841,32.8427935000852,6.78349734552719
+"196",464,2.72e-06,"Soil",0.79105,"Total Triadimefon",8,0,6.241574746,"PLE","Narrowmouth toad",0.379035618,98.2529034866028,259.218128378117,14.7040509218586,38.7933223781058,6.79074852610864
+"197",1,2.29e-05,"Indirect",13.1831,"ATZTOT",8,0,22.87721442,"PLE","American toad",0.337135483,239.217071123794,709.557679883236,48.5109348232892,143.891513262308,17.4904384252665
+"198",2,2.29e-05,"Indirect",15.8694,"ATZTOT",8,0,39.57404439,"PLE","American toad",1.227227091,220.431026534873,179.617145148952,45.6056697321729,37.1615571939594,16.1767811265255
+"199",3,2.29e-05,"Indirect",8.3884,"ATZTOT",8,0,19.10798205,"PLE","American toad",0.700940082,291.996341236883,416.578176559295,56.3923685472181,80.4524808829781,21.1572475984863
+"200",4,2.29e-05,"Indirect",14.5384,"ATZTOT",8,0,16.62668626,"PLE","American toad",0.367019464,229.113183659658,624.253496429438,46.955606488048,127.93764662042,16.7845069644444
+"201",5,2.29e-05,"Indirect",16.4296,"ATZTOT",8,0,28.51661365,"PLE","American toad",0.35231843,217.084294303971,616.159348530166,45.0818468153191,127.957674014723,15.9422318226607
+"202",6,2.29e-05,"Indirect",16.59,"ATZTOT",8,0,33.99919952,"PLE","American toad",0.818657056,216.156176899645,264.037517682673,44.9362306599909,54.8901769436296,15.87715755285
+"203",7,2.29e-05,"Indirect",9.5568,"ATZTOT",8,0,29.78251321,"OLS","American toad",0.565666776,275.677991107942,487.350508823134,53.9959796559351,95.455455308436,20.0270287613874
+"204",8,2.29e-05,"Indirect",12.3541,"ATZTOT",8,0,17.87349815,"OLS","American toad",2.185564918,246.167778330887,112.633478101467,49.5715371745303,22.6813382509328,17.9752775380378
+"205",9,2.29e-05,"Indirect",11.1447,"ATZTOT",8,0,16.59253376,"OLS","American toad",1.460641759,257.610019268447,176.367694324182,51.3016951155426,35.1227087678674,18.7720755738179
+"206",10,2.29e-05,"Indirect",11.9615,"ATZTOT",8,0,12.29392621,"OLS","American toad",0.521202693,249.698789779575,479.081925579335,50.1075152154167,96.1382507964454,18.2213406150035
+"207",11,2.29e-05,"Indirect",17.3882,"ATZTOT",8,0,21.6577354,"OLS","American toad",0.525601376,211.722793887816,402.82009057719,44.2385308716547,84.1674563493812,15.5661383122832
+"208",12,2.29e-05,"Indirect",11.7687,"ATZTOT",8,0,29.25664048,"OLS","American toad",6.443801458,251.494586777677,39.0289161478503,50.3793893107698,7.8182715031084,18.3464223748104
+"209",13,2.29e-05,"Indirect",10.5239,"ATZTOT",8,1,23.57654351,"PLE","American toad",0.867924815,264.204357688165,304.409268086389,52.290240747224,60.2474313944164,19.2305491811541
+"210",14,2.29e-05,"Indirect",14.6051,"ATZTOT",8,1,23.85857164,"PLE","American toad",0.560925254,228.651158860174,407.632134994183,46.8840884451302,83.5834865889818,16.7521932282785
+"211",15,2.29e-05,"Indirect",16.9753,"ATZTOT",8,1,21.82224207,"PLE","American toad",0.572604017,213.978632485138,373.693907364151,44.5939839388419,77.8792719137384,15.7244307788209
+"212",16,2.29e-05,"Indirect",12.6029,"ATZTOT",8,1,22.10602964,"PLE","American toad",0.357537561,244.012694430562,682.48128601672,49.2434887082405,137.729553702025,17.8250192082553
+"213",17,2.29e-05,"Indirect",11.4693,"ATZTOT",8,1,18.47118347,"PLE","American toad",0.525853638,254.368968140763,483.72579318499,50.8135684363727,96.6306302065989,18.5465460720514
+"214",18,2.29e-05,"Indirect",11.7396,"ATZTOT",8,1,8.640551756,"PLE","American toad",1.29826811,251.76931692234,193.927059428688,50.4209399917899,38.8370781069173,18.3655544383004
+"215",19,2.29e-05,"Indirect",11.0822,"ATZTOT",8,1,14.25437079,"OLS","American toad",1.138952601,258.249713245729,226.743161233387,51.3978596500632,45.127303458402,18.8165736134221
+"216",20,2.29e-05,"Indirect",10.069,"ATZTOT",8,1,19.5060604,"OLS","American toad",2.05354599,269.403311901967,131.189324813693,53.0653502620831,25.8408384913177,19.5916418712164
+"217",21,2.29e-05,"Indirect",11.0174,"ATZTOT",8,1,18.1116732,"OLS","American toad",0.463586698,258.918460444043,558.511410187276,51.4983293772512,111.08672789669,18.8630872931751
+"218",22,2.29e-05,"Indirect",12.3638,"ATZTOT",8,1,18.50933254,"OLS","American toad",0.398005502,246.082589075985,618.289415195033,49.5585829908917,124.517331398328,17.9693390466228
+"219",23,2.29e-05,"Indirect",10.1878,"ATZTOT",8,1,7.936778913,"OLS","American toad",0.428099849,268.013361392755,626.053389224052,52.8584848143833,123.472327630705,19.4951342426304
+"220",24,2.29e-05,"Indirect",11.5272,"ATZTOT",8,1,16.94936678,"OLS","American toad",0.478180697,253.804722351979,530.771576402589,50.728433543854,106.086326491456,18.5072695875678
+"221",971,5.7e-06,"Indirect",13.986,"Imid",8,0,0.970934893,"PLE","American toad",0.018120187,58.0107440793315,3201.44290339451,11.8393788149243,653.380608871437,4.24649368617652
+"222",981,5.7e-06,"Indirect",18.1095,"Imid",8,0,1.646094454,"PLE","American toad",0.050150934,51.7633686252891,1032.1516370022,10.8633058979609,216.612234937856,3.80880586076225
+"223",991,5.7e-06,"Indirect",8,"Imid",8,0,1.347997271,"PLE","American toad",0.062813074,74.2158380326356,1181.53488289135,14.2598807713418,227.020902867161,5.37237812059333
+"224",1001,5.7e-06,"Indirect",13.1817,"Imid",8,0,0.205311904,"PLE","American toad",0.015920471,59.5459025505843,3740.2098562652,12.0752012059813,758.470098402321,4.35370989616119
+"225",1011,5.7e-06,"Indirect",12.9241,"Imid",8,0,2.997491181,"PLE","American toad",0.074721574,60.0664193096913,803.869834295666,12.1548207022293,162.66815661872,4.39003442547205
+"226",1021,5.7e-06,"Indirect",13.0377,"Imid",8,0,0.785382305,"PLE","American toad",0.019896995,59.835048347477,3007.24045754029,12.1194505905817,609.109596227055,4.37388985391214
+"227",1031,5.7e-06,"Indirect",10.7167,"Imid",8,0,1.293386968,"OLS","American toad",0.022283481,65.2382566119502,2927.65105290104,12.9370281330825,580.565852035527,4.75019834891556
+"228",1041,5.7e-06,"Indirect",13.3005,"Imid",8,0,0.727272814,"OLS","American toad",0.06442277,59.3107623655342,920.649055691555,12.0391777574989,186.87767939036,4.33729580250873
+"229",1051,5.7e-06,"Indirect",9.7913,"Imid",8,0,1.123159241,"OLS","American toad",0.018261231,67.8888860249057,3717.65112795001,13.3319912828172,730.070786729393,4.93427858619495
+"230",1061,5.7e-06,"Indirect",6.9639,"Imid",8,0,1.0194954,"OLS","American toad",0.025467962,78.8971501007854,3097.89806113208,14.9339594861348,586.382196036525,5.6954303181129
+"231",1071,5.7e-06,"Indirect",12.9804,"Imid",8,0,1.035391151,"OLS","American toad",0.019752402,59.9513874854222,3035.14415540055,12.137239750745,614.469052966066,4.38200810367529
+"232",1081,5.7e-06,"Indirect",14.0828,"Imid",8,0,0.478487305,"OLS","American toad",0.061677525,57.8345586794223,937.69259838851,11.8122170663065,191.515743640922,4.23418064279355
+"233",1091,1.1e-06,"Indirect",10.7426,"FipTOT",8,0,1.725175021,"PLE","American toad",0.0321181,12.5764440159391,391.56874210925,2.4946134386863,77.6700190449094,0.915773825001875
+"234",1101,1.1e-06,"Indirect",10.8321,"FipTOT",8,0,1.34295,"PLE","American toad",0.16419294,12.5305122722663,76.3157799127435,2.48773074496509,15.1512649993665,0.912580649311823
+"235",111,1.1e-06,"Indirect",23.3405,"FipTOT",8,0,2.117466169,"PLE","American toad",0.113813046,8.93183169763516,78.4781008113531,1.9265576433044,16.9273884762244,0.660557929615765
+"236",112,1.1e-06,"Indirect",11.3478,"FipTOT",8,0,2.339183226,"PLE","American toad",0.055741733,12.2761182116662,220.232087360222,2.4494980745125,43.9437014725126,0.894885500528941
+"237",113,1.1e-06,"Indirect",11.2404,"FipTOT",8,0,1.530006724,"PLE","American toad",0.129413289,12.3277083318118,95.2584423676285,2.45726707363151,18.9877491919049,0.898475340823456
+"238",114,1.1e-06,"Indirect",7.3804,"FipTOT",8,0,1.636974629,"PLE","American toad",0.035164703,14.840682487358,422.033494420754,2.82678047381799,80.3868718532329,1.07256506627213
+"239",115,1.1e-06,"Indirect",8.5539,"FipTOT",8,0,0.717592235,"OLS","American toad",0.16426118,13.9056953691486,84.656005570815,2.69123747284002,16.383892243073,1.00796202575084
+"240",116,1.1e-06,"Indirect",12.178,"FipTOT",8,0,1.047219343,"OLS","American toad",0.021762222,11.8997573825429,546.80801356327,2.39257682404088,109.941752457119,0.868675959226127
+"241",117,1.1e-06,"Indirect",11.465,"FipTOT",8,0,1.281327696,"OLS","American toad",0.114864224,12.2206174552839,106.391851437432,2.44113123582865,21.2523199201577,0.891022778922799
+"242",118,1.1e-06,"Indirect",13.1914,"FipTOT",8,0,1.220139993,"OLS","American toad",0.208656204,11.4875873639389,55.0550961041105,2.32973123988319,11.165406037403,0.839929473749903
+"243",119,1.1e-06,"Indirect",11.7796,"FipTOT",8,0,1.103307511,"OLS","American toad",0.230546973,12.0755950280043,52.3780246206238,2.41922475913742,10.4934136746936,0.880925794883747
+"244",120,1.1e-06,"Indirect",9.0658,"FipTOT",8,0,1.397009124,"OLS","American toad",0.210706877,13.5537978653435,64.3253701935106,2.63965061252407,12.5275959195393,0.983597244426869
+"245",145,2.7e-06,"Indirect",12.4407,"TNDTOT",8,0,5.213751666,"PLE","American toad",0.115492748,28.9348759002743,250.53413656998,5.83109939441037,50.4888791321371,2.11313233978788
+"246",146,2.7e-06,"Indirect",10.5903,"TNDTOT",8,0,8.969771357,"PLE","American toad",0.089322481,31.0644482710891,347.778609856225,6.15232567578694,68.8776846199217,2.26136145886154
+"247",147,2.7e-06,"Indirect",13.9438,"TNDTOT",8,0,5.190326785,"PLE","American toad",0.426705134,27.5154172937839,64.4834455959087,5.6137729977293,13.1560943387414,2.01405767399353
+"248",148,2.7e-06,"Indirect",8.8434,"TNDTOT",8,0,4.831822198,"PLE","American toad",0.119037947,33.6348186798052,282.555433183044,6.53295327198474,54.8812663241305,2.43966194771651
+"249",149,2.7e-06,"Indirect",9.5231,"TNDTOT",8,0,3.108359096,"PLE","American toad",0.175676804,32.554193344123,185.307295003631,6.37383152194846,36.281577173663,2.3647796617804
+"250",150,2.7e-06,"Indirect",11.5642,"TNDTOT",8,0,3.280654333,"PLE","American toad",0.165848057,29.8823130779733,180.178855384319,5.97470236864632,36.0251574647409,2.17913782745595
+"251",151,2.7e-06,"Indirect",13.2227,"TNDTOT",8,0,3.389932459,"OLS","American toad",0.388854872,28.1673509408541,72.4366671709184,5.71392006242432,14.6942226364193,2.05958909577069
+"252",152,2.7e-06,"Indirect",8.1326,"TNDTOT",8,0,6.291932781,"OLS","American toad",0.369952253,34.9009314536182,94.3390158340737,6.71780470566754,18.1585722243663,2.52725917699536
+"253",153,2.7e-06,"Indirect",10.8067,"TNDTOT",8,0,4.692698035,"OLS","American toad",0.259962468,30.7885710823887,118.434677587338,6.11102369597108,23.5073306657909,2.24218566465569
+"254",154,2.7e-06,"Indirect",11.4182,"TNDTOT",8,0,2.191303526,"OLS","American toad",0.486458171,30.0502179860834,61.7734879944762,6.00003456736244,12.3341222844059,2.19082534177626
+"255",155,2.7e-06,"Indirect",12.0198,"TNDTOT",8,0,6.594152401,"OLS","American toad",0.189434186,29.3774100430144,155.079770253371,5.89831533597626,31.1364884054046,2.1439745517105
+"256",156,2.7e-06,"Indirect",14.0841,"TNDTOT",8,0,3.866282728,"OLS","American toad",0.273508383,27.3942021009894,100.158546515151,5.5950887299805,20.4567357995038,2.00558657395885
+"257",157,2.7e-06,"Indirect",15.0158,"TNDTOT",8,1,3.806583386,"PLE","American toad",0.103279426,26.63117392913,257.855557109022,5.4770048596333,53.0309382202928,1.95222314217256
+"258",158,2.7e-06,"Indirect",14.8152,"TNDTOT",8,1,8.660951317,"PLE","American toad",0.071629345,26.789596525466,374.003092244749,5.50158927588423,76.8063602408235,1.96330828549551
+"259",159,2.7e-06,"Indirect",13.8218,"TNDTOT",8,1,2.629241417,"PLE","American toad",0.105756154,27.6222593089028,261.188198172399,5.63022505634605,53.2378007652023,2.02152290388783
+"260",160,2.7e-06,"Indirect",7.1089,"TNDTOT",8,1,7.05712632,"PLE","American toad",0.026010568,37.0342307228926,1423.81476340281,7.02560239152638,270.105689023261,2.67453048338249
+"261",161,2.7e-06,"Indirect",7.9909,"TNDTOT",8,1,5.763070813,"PLE","American toad",0.21362006,35.1725201149483,164.649893436732,6.75724089535674,31.6320522302856,2.54603035256376
+"262",162,2.7e-06,"Indirect",12.1126,"TNDTOT",8,1,8.179491858,"PLE","American toad",0.141794761,29.2779392911779,206.481107515516,5.88322858213544,41.4911562362691,2.13704383080041
+"263",163,2.7e-06,"Indirect",11.4482,"TNDTOT",8,1,3.623115759,"OLS","American toad",0.10558682,30.0154652765691,284.272840839123,5.99479419719109,56.7759706864085,2.18840652095025
+"264",164,2.7e-06,"Indirect",7.533,"TNDTOT",8,1,6.887993016,"OLS","American toad",0.218474134,36.0998431466475,165.236234082738,6.8913361597543,31.5430299852078,2.61007418008983
+"265",165,2.7e-06,"Indirect",15.9483,"TNDTOT",8,1,5.640249186,"OLS","American toad",0.119080734,25.93290324434,217.775809513737,5.36821466897879,45.080463385276,1.90332785642914
+"266",1661,2.7e-06,"Indirect",10.4409,"TNDTOT",8,1,3.11171161,"OLS","American toad",0.474085035,31.2596966095001,65.9368980282201,6.18150230794342,13.0388049644795,2.27492819655662
+"267",1671,2.7e-06,"Indirect",11.141,"TNDTOT",8,1,3.832105687,"OLS","American toad",0.142626446,30.3776817342268,212.987721325025,6.04934033413452,42.4138755735,2.21361091405806
+"268",1681,2.7e-06,"Indirect",12.2923,"TNDTOT",8,1,5.388595843,"OLS","American toad",0.04358855,29.0884090655942,667.340598978269,5.85444768125078,134.311595160903,2.12383516963226
+"269",2411,6.98e-05,"Indirect",7.5145,"Pendi",8,0,10.58560279,"PLE","American toad",5.199951046,934.260328633459,179.667139242037,178.299734873766,34.2887333546958,67.5451368360805
+"270",2421,6.98e-05,"Indirect",13.2906,"Pendi",8,0,12.26733887,"PLE","American toad",1.811674231,726.535239475574,401.02973649658,147.463683965874,81.3963578233804,53.1295028244917
+"271",2431,6.98e-05,"Indirect",10.0699,"Pendi",8,0,13.10595638,"PLE","American toad",3.993612884,821.118340099562,205.607895394491,161.740227416621,40.4997259660837,59.7137618559875
+"272",2441,6.98e-05,"Indirect",13.469,"Pendi",8,0,22.90681995,"PLE","American toad",1.38470843,722.275621040252,521.608452286415,146.810377179114,106.022592192289,52.832095866758
+"273",2451,6.98e-05,"Indirect",11.8384,"Pendi",8,0,20.31371332,"PLE","American toad",2.758089025,764.570662515639,277.210291468253,153.256482890745,55.5661842317598,55.781689769038
+"274",246,6.98e-05,"Indirect",11.6099,"Pendi",8,0,8.079352476,"PLE","American toad",2.539315815,771.170641777525,303.692292712132,154.254393823693,60.7464392229183,56.2412848268096
+"275",247,6.98e-05,"Indirect",8.7943,"Pendi",8,0,8.780199562,"OLS","American toad",2.917259067,871.659933984626,298.794146822554,169.202354407859,58.000455400713,63.2177865463077
+"276",248,6.98e-05,"Indirect",12.498,"Pendi",8,0,11.00768858,"OLS","American toad",4.729568549,746.505784878934,157.838030497892,150.514220471907,31.8240911221662,54.5228016786584
+"277",249,6.98e-05,"Indirect",14.8081,"Pendi",8,0,6.310025314,"OLS","American toad",6.874438593,692.707099481413,100.765624728508,142.248975498397,20.6924498013909,50.7653987338212
+"278",250,6.98e-05,"Indirect",13.4299,"Pendi",8,0,10.01366331,"OLS","American toad",1.492402712,723.202221500764,484.589190093058,146.952571994601,98.4671032912204,52.896797951325
+"279",251,6.98e-05,"Indirect",13.5552,"Pendi",8,0,13.91754836,"OLS","American toad",1.888097365,720.24645930099,381.466799674809,146.498828684863,77.5907171952774,52.6903916585911
+"280",252,6.98e-05,"Indirect",8.3589,"Pendi",8,0,17.79580859,"OLS","American toad",4.287971426,891.398873316413,207.883585210349,172.087674886169,40.1326542995878,64.5837472150646
+"281",253,6.98e-05,"Indirect",13.5285,"Pendi",8,1,8.724259234,"PLE","American toad",2.879433002,720.872989413228,250.352409280759,146.595046251224,50.9110808097989,52.7341466079943
+"282",254,6.98e-05,"Indirect",13.7458,"Pendi",8,1,11.64651601,"PLE","American toad",3.750781295,715.825009805744,190.846907219031,145.819233177845,38.8770289998594,52.3815619655085
+"283",255,6.98e-05,"Indirect",11.4246,"Pendi",8,1,11.21634881,"PLE","American toad",2.648653905,776.661834931753,293.228886365866,155.083063992242,58.5516528601505,56.6235326466175
+"284",256,6.98e-05,"Indirect",10.0043,"Pendi",8,1,5.697537118,"PLE","American toad",2.314244032,823.488444654903,355.834749174327,162.092624337502,70.0412843659444,59.8782942030143
+"285",257,6.98e-05,"Indirect",13.4038,"Pendi",8,1,6.758968643,"PLE","American toad",0.896933721,723.822911462036,806.997099690977,147.047797257078,163.94499818017,52.9401370035882
+"286",258,6.98e-05,"Indirect",10.5726,"Pendi",8,1,14.91187384,"PLE","American toad",5.703493109,803.666142705335,140.907708196783,159.137630406456,27.901783585105,58.5015650697368
+"287",259,6.98e-05,"Indirect",17.4496,"Pendi",8,1,16.05643523,"OLS","American toad",0.875538299,644.336082183393,735.931349798546,134.682405168557,153.828113884207,47.3757761281989
+"288",260,6.98e-05,"Indirect",13.6417,"Pendi",8,1,24.88780061,"OLS","American toad",1.356762725,718.228841590626,529.369526709709,146.188839413624,107.748272207009,52.5494756622624
+"289",261,6.98e-05,"Indirect",9.9412,"Pendi",8,1,10.84702222,"OLS","American toad",3.719878758,825.789452115058,221.993647061509,162.434510062759,43.6666140565539,60.0380092935389
+"290",262,6.98e-05,"Indirect",16.3062,"Pendi",8,1,5.135481376,"OLS","American toad",1.277680298,663.884115765929,519.601121505224,137.756454396351,107.817624339975,48.7469568814658
+"291",263,6.98e-05,"Indirect",11.3268,"Pendi",8,1,8.871930181,"OLS","American toad",1.648936582,779.612076040242,472.796882882329,155.527688939886,94.319994254264,56.8288514157402
+"292",264,6.98e-05,"Indirect",10.2275,"Pendi",8,1,14.06687759,"OLS","American toad",1.540378381,815.514153440039,529.424564444104,160.905980976637,104.458737516284,59.3246341571781
