@@ -13,6 +13,7 @@ output: pdf_document
 Comparison of proposed amphibian dermal exposure model (DUST) from Draft 8/19/15 with collected dermal exposure data. Proposed DUST model has a function for exposure by direct spray and a function for exposure from foliage which is also referred to as indirect exposure. Collected dermal exposure data is from Van Meter et al. 2014 and Van Meter et al. 2015. Van Meter et al. 2014 and 2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (american toad, barking treefrog, cricket frog, fowlers toad, gray treefrog, green treefrog, leopard frog, mole salamander, narrowmouth toad).
 
 ```{r eval=TRUE, echo=FALSE}
+
 # Import data from consolidated database
 ##################
 #the data set

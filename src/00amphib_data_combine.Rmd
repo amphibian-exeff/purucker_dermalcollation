@@ -198,6 +198,8 @@ Combine two Van Meter et al. datasets
 ```{r eval=TRUE, echo=FALSE}
 colnames(vm2015_merge)
 colnames(vm2016_merge)
+dim(vm2015_merge)
+dim(vm2016_merge)
 # combine two dataframes
 combined_data <- rbind(vm2015_merge, vm2016_merge)
 dim(combined_data)

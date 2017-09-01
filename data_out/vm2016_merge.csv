@@ -1,4 +1,4 @@
-"","app_rate_g_cm2","application","body_weight_g","chemical","exp_duration","formulation","soil_conc_ugg","SoilType","species","tissue_conc_ugg"
+"","app_rate_g_cm2","application","body_weight_g","chemical","exp_duration","formulation","soil_conc_ugg","soil_type","species","tissue_conc_ugg"
 "1",2.29e-05,"Indirect",13.1831,"ATZTOT",8,0,22.87721442,"PLE","American toad",0.337135483
 "2",2.29e-05,"Indirect",15.8694,"ATZTOT",8,0,39.57404439,"PLE","American toad",1.227227091
 "3",2.29e-05,"Indirect",8.3884,"ATZTOT",8,0,19.10798205,"PLE","American toad",0.700940082
@@ -23,18 +23,18 @@
 "22",2.29e-05,"Indirect",12.3638,"ATZTOT",8,1,18.50933254,"OLS","American toad",0.398005502
 "23",2.29e-05,"Indirect",10.1878,"ATZTOT",8,1,7.936778913,"OLS","American toad",0.428099849
 "24",2.29e-05,"Indirect",11.5272,"ATZTOT",8,1,16.94936678,"OLS","American toad",0.478180697
-"97",NA,"Indirect",13.986,"Imid",8,0,0.970934893,"PLE","American toad",0.018120187
-"98",NA,"Indirect",18.1095,"Imid",8,0,1.646094454,"PLE","American toad",0.050150934
-"99",NA,"Indirect",8,"Imid",8,0,1.347997271,"PLE","American toad",0.062813074
-"100",NA,"Indirect",13.1817,"Imid",8,0,0.205311904,"PLE","American toad",0.015920471
-"101",NA,"Indirect",12.9241,"Imid",8,0,2.997491181,"PLE","American toad",0.074721574
-"102",NA,"Indirect",13.0377,"Imid",8,0,0.785382305,"PLE","American toad",0.019896995
-"103",NA,"Indirect",10.7167,"Imid",8,0,1.293386968,"OLS","American toad",0.022283481
-"104",NA,"Indirect",13.3005,"Imid",8,0,0.727272814,"OLS","American toad",0.06442277
-"105",NA,"Indirect",9.7913,"Imid",8,0,1.123159241,"OLS","American toad",0.018261231
-"106",NA,"Indirect",6.9639,"Imid",8,0,1.0194954,"OLS","American toad",0.025467962
-"107",NA,"Indirect",12.9804,"Imid",8,0,1.035391151,"OLS","American toad",0.019752402
-"108",NA,"Indirect",14.0828,"Imid",8,0,0.478487305,"OLS","American toad",0.061677525
+"97",5.7e-06,"Indirect",13.986,"Imid",8,0,0.970934893,"PLE","American toad",0.018120187
+"98",5.7e-06,"Indirect",18.1095,"Imid",8,0,1.646094454,"PLE","American toad",0.050150934
+"99",5.7e-06,"Indirect",8,"Imid",8,0,1.347997271,"PLE","American toad",0.062813074
+"100",5.7e-06,"Indirect",13.1817,"Imid",8,0,0.205311904,"PLE","American toad",0.015920471
+"101",5.7e-06,"Indirect",12.9241,"Imid",8,0,2.997491181,"PLE","American toad",0.074721574
+"102",5.7e-06,"Indirect",13.0377,"Imid",8,0,0.785382305,"PLE","American toad",0.019896995
+"103",5.7e-06,"Indirect",10.7167,"Imid",8,0,1.293386968,"OLS","American toad",0.022283481
+"104",5.7e-06,"Indirect",13.3005,"Imid",8,0,0.727272814,"OLS","American toad",0.06442277
+"105",5.7e-06,"Indirect",9.7913,"Imid",8,0,1.123159241,"OLS","American toad",0.018261231
+"106",5.7e-06,"Indirect",6.9639,"Imid",8,0,1.0194954,"OLS","American toad",0.025467962
+"107",5.7e-06,"Indirect",12.9804,"Imid",8,0,1.035391151,"OLS","American toad",0.019752402
+"108",5.7e-06,"Indirect",14.0828,"Imid",8,0,0.478487305,"OLS","American toad",0.061677525
 "109",1.1e-06,"Indirect",10.7426,"FipTOT",8,0,1.725175021,"PLE","American toad",0.0321181
 "110",1.1e-06,"Indirect",10.8321,"FipTOT",8,0,1.34295,"PLE","American toad",0.16419294
 "111",1.1e-06,"Indirect",23.3405,"FipTOT",8,0,2.117466169,"PLE","American toad",0.113813046
