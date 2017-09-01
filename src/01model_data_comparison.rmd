@@ -21,6 +21,7 @@ Comparison of proposed amphibian dermal exposure model (DUST) from Draft 8/19/15
 combined_data_filename <- paste(amphibdir_data,"combined_data.csv", sep="")
 combined_data <- read.csv(combined_data_filename)
 dim(combined_data)
+colnames(combined_data)
 #View(combined_data)
 ```
 
@@ -51,13 +52,13 @@ plot(tissue_conc, combined_data$tim_direct_avian_1hr_perez)
 sa_bird_tim <- 10 * (body_weight ^ 0.667)
 combined_data$tim_direct_avian_1hr <- (app_rate * conv_rate * sa_bird_tim * sa_bird_frac * 
                            dermal_af * hours_one)/body_weight
-combined_data$tim_direct_avian_1hr_ratios <- combined_data$tim_direct_avian_1hr/combined_data$TissueConc
+combined_data$tim_direct_avian_1hr_ratios <- combined_data$tim_direct_avian_1hr/tissue_conc
 min(combined_data$tim_direct_avian_1hr_ratios)
 max(combined_data$tim_direct_avian_1hr_ratios)
-sum(combined_data$TissueConc > combined_data$tim_direct_avian_1hr)
-sum(combined_data$TissueConc*10 > combined_data$tim_direct_avian_1hr)
-plot(combined_data$TissueConc, combined_data$tim_direct_avian_1hr)
-df.tim_avian_1hr <- data.frame(x=combined_data$TissueConc, y=combined_data$tim_direct_avian_1hr)
+sum(tissue_conc > combined_data$tim_direct_avian_1hr)
+sum(tissue_conc*10 > combined_data$tim_direct_avian_1hr)
+plot(tissue_conc, combined_data$tim_direct_avian_1hr)
+df.tim_avian_1hr <- data.frame(x=tissue_conc, y=combined_data$tim_direct_avian_1hr)
 
 #amphib model with hutchinson body weight
 sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
@@ -67,10 +68,10 @@ combined_data$tim_direct_amphib_1hr <- (app_rate * conv_rate * sa_amphib_hutchin
 combined_data$tim_direct_amphib_1hr_ratios <- combined_data$tim_direct_amphib_1hr/  combined_data$TissueConc
 min(combined_data$tim_direct_amphib_1hr_ratios)
 max(combined_data$tim_direct_amphib_1hr_ratios)
-sum(combined_data$TissueConc > combined_data$tim_direct_amphib_1hr)
-sum(combined_data$TissueConc*10 > combined_data$tim_direct_amphib_1hr)
-plot(combined_data$TissueConc, combined_data$tim_direct_amphib_1hr)
-df.tim_amphib_1hr <- data.frame(x=combined_data$TissueConc, y=combined_data$tim_direct_amphib_1hr)
+sum(tissue_conc > combined_data$tim_direct_amphib_1hr)
+sum(tissue_conc*10 > combined_data$tim_direct_amphib_1hr)
+plot(tissue_conc, combined_data$tim_direct_amphib_1hr)
+df.tim_amphib_1hr <- data.frame(x=tissue_conc, y=combined_data$tim_direct_amphib_1hr)
 
 #create df of ratios
 model_log_ratios <- as.vector(c(log10(combined_data$tim_direct_amphib_1hr_ratios), 

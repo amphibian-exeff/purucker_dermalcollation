@@ -152,7 +152,7 @@ colnames(vm2016_subset3)
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="ATZTOT"] <- 22.9e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="Imid"] <- 5.7e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="FipTOT"] <- 1.1e-6
-vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="TNDTot"] <- 2.7e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="TNDTOT"] <- 2.7e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="Pendi"] <- 69.8e-6
 colnames(vm2016_subset3)
 #drop decay products that were not sprayed, keeping only parents
