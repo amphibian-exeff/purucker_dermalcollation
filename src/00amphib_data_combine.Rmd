@@ -39,6 +39,7 @@ Sys.info()[4]
 ```{r eval=TRUE, echo=FALSE}
 library(ggplot2)
 require(gridExtra)
+library(reshape2)
 
 # tom mac
 if(Sys.info()[4] == "Coiles-MacBook-Pro.local"){
@@ -94,6 +95,14 @@ dim(vm2016)
 summary(vm2016)
 #View(vm2016)
 
+# import data from Glinski 2016 dehydration study
+dag2016_dehy_file <- paste(amphibdir_data_in,"dag2016_data_dehydration.csv", sep="")
+file.exists(dag2016_dehy_file)
+dag2016_dehy <- read.table(dag2016_dehy_file, header = TRUE, sep = ",")
+dim(dag2016_dehy)
+summary(dag2016_dehy)
+#View(dag2016_dehy)
+
 ```
 
 ```{r eval=TRUE, echo=FALSE}
@@ -109,7 +118,7 @@ vm2015_subset2 <- droplevels(vm2015_subset1)
 #drop unneeded columns for merging
 #View(vm2015_subset2)
 all_cols <- colnames(vm2015_subset2)
-drop_cols <- c("Sample", "Instrument", "good", "logKow", "BCF", "initialweight", 
+drop_cols <- c("Instrument", "good", "logKow", "BCF", "initialweight", 
             "Solat20C_mgL", "Solat20C_gL", "molmass_gmol", "Density_gcm3","AppFactor", "SA_cm2", "VapPrs_mPa",
             "Koc_gmL", "HalfLife_day", "HabFac")
 vm2015_subset3 <- vm2015_subset2[,!(names(vm2015_subset2) %in% drop_cols)]
@@ -121,6 +130,7 @@ exp_duration<- (rep(8,nrow(vm2015_subset3)))
 vm2015_subset4 <- cbind(vm2015_subset3, formulation, soil_type, exp_duration)
 # standardize column names
 colnames(vm2015_subset4)
+colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Sample")]<-"sample_id"
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Species")]<-"species"
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Chemical")]<-"chemical"
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Application")]<-"application"
@@ -146,6 +156,8 @@ Reformat vm2016 for merge with vm2015
 ##################
 dim(vm2016)
 colnames(vm2016)
+#add sample_id
+vm2016$sample_id <- paste(vm2016$Day, vm2016$Row, vm2016$Column, sep="_")
 vm2016_subset2 <- subset(vm2016, select=c(-Day,-Row, -Column, -Total))
 Species <- c(rep("American toad",nrow(vm2016_subset2)))
 Application <- c(rep("Indirect",nrow(vm2016_subset2)))
@@ -192,7 +204,6 @@ vm2016_merge_filename <- paste(amphibdir_data_out,"vm2016_merge.csv", sep="")
 write.csv(vm2016_merge, file=vm2016_merge_filename)
 ```
 
-
 Combine two Van Meter et al. datasets
 
 ```{r eval=TRUE, echo=FALSE}
@@ -209,31 +220,51 @@ combined_data_filename <- paste(amphibdir_data_out,"combined_data.csv", sep="")
 write.csv(combined_data, file=combined_data_filename)
 ```
 
-<!-- Reformat good_data.csv for merge with RDATA.csv (old, to be deleted) -->
-<!-- ```{r eval=TRUE, echo=FALSE} -->
-<!-- #### reformat good_data.csv for merge with RDATA.csv ####  -->
-<!-- SoilType <- c(rep("PLE",nrow(good_data2))) -->
-<!-- unique(good_data2$Chemical) -->
-<!-- #[1] Atrazine             Deisopropyl Atrazine Desethyl Atrazine    -->
-<!-- #[4] Fipronil             Fipronil-Sulfone     Imidacloprid         -->
-<!-- #[7] Pendimethalin        Total Atrazine       Total Fipronil       -->
-<!-- #[10] Total Triadimefon    Triadimefon          Triadimenol       -->
-<!-- #assign values to new Parent column -->
-<!-- good_data2$Parent[good_data2$Chemical=="Atrazine"] <- 1 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Deisopropyl Atrazine"] <- 0 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Desethyl Atrazine"] <- 0 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Fipronil"] <- 1 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Fipronil-Sulfone"] <- 0 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Imidacloprid"] <- 1 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Pendimethalin"] <- 1 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Total Atrazine"] <- 0 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Total Fipronil"] <- 0 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Total Triadimefon"] <- 0 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Triadimefon"] <- 1 -->
-<!-- good_data2$Parent[good_data2$Chemical=="Triadimenol"] <- 1 -->
-<!-- #create column for Formulation -->
-<!-- Formulation <- (rep(0,nrow(good_data2))) -->
-<!-- Exp_duration<- (rep(8,nrow(good_data2))) -->
-<!-- good_data3<-cbind(good_data2, Formulation, SoilType, Exp_duration) -->
+Revise dag2016_dehy to merge with van meter data sets
+```{r eval=TRUE, echo=FALSE}
+##################
+#glinski et al 2017 dehydration
+##################
+dim(dag2016_dehy)
+colnames(dag2016_dehy)
+#View(dag2016_dehy)
+#from
+#[1] "time"    "parent"  "analyte" "matrix"  "species" "conc"    "ID"      "weight"
+#to
+# [1] "chemical"        "soil_type"       "tissue_conc_ugg" "soil_conc_ugg"   "body_weight_g"  
+# [6] "formulation"     "species"         "application"     "exp_duration"    "app_rate_g_cm2" 
+# time change to exp_duration
+colnames(dag2016_dehy)[which(colnames(dag2016_dehy)=="time")]<-"exp_duration"
+# analyte change to chemical
+colnames(dag2016_dehy)[which(colnames(dag2016_dehy)=="analyte")]<-"chemical"
+# species same
+# change ID to sample_id
+colnames(dag2016_dehy)[which(colnames(dag2016_dehy)=="ID")]<-"sample_id"
+# weight change to body_weight_g
+colnames(dag2016_dehy)[which(colnames(dag2016_dehy)=="weight")]<-"body_weight_g"
+# add soil_type (PLE, OLS), formulation (0,1), application (Overspray, Indirect) and app_rate_g_cm2 fields
+soil_type <- c(rep("PLE",nrow(dag2016_dehy)))
+application <- c(rep("Indirect",nrow(dag2016_dehy)))
+formulation <- (rep(0,nrow(dag2016_dehy)))
+app_rate_g_cm2 <- (rep(0,nrow(dag2016_dehy)))
+dag2016_dehy2 <- cbind(dag2016_dehy, formulation, soil_type, application, app_rate_g_cm2)
+# parent delete
+drop_cols <- c("parent")
+dag2016_dehy3 <- dag2016_dehy2[,!(names(dag2016_dehy2) %in% drop_cols)]
+#reshape- cast takes long-format data and casts it into wide-format data
+# matrix used to split to soil and amphibian conc columns and delete
+# conc split to soil and amphibian conc columns
+#make wide with soil and amphib concentrations
+colnames(dag2016_dehy3)
+#View(dag2016_dehy3)
+dag2016_dehy4 <- dcast(dag2016_dehy3, 
+                       sample_id + exp_duration + chemical + species +
+                         body_weight_g + formulation + soil_type + application + app_rate_g_cm2 ~ 
+                         matrix, 
+                       value.var = "conc")
+colnames(dag2016_dehy4)
+#View(dag2016_dehy4)
 
-<!-- ``` -->
+
+
+```
