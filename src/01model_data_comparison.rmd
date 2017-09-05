@@ -19,7 +19,7 @@ Comparison of proposed amphibian dermal exposure model (DUST) from Draft 8/19/15
 #the data set
 ##################
 # import data 
-combined_data_filename <- paste(amphibdir_data_out,"combined_data.csv", sep="")
+combined_data_filename <- paste(amphibdir_data_out,"combined_data1.csv", sep="")
 combined_data <- read.csv(combined_data_filename)
 dim(combined_data)
 colnames(combined_data)
@@ -31,23 +31,24 @@ colnames(combined_data)
 colnames(combined_data)
 n <- length(combined_data$tissue_conc_ugg)
 
-#bird model with perez body weight
-app_rate <- combined_data$app_rate_g_cm2
-body_weight <- combined_data$body_weight_g
-conv_rate <- 1000000.0
-dermal_af <- 1.0
-hours_one <- 1.0
-sa_bird_frac <- 0.5
-sa_bird_perez <- 65.15 * (body_weight ^ 0.559)
-tissue_conc <- combined_data$tissue_conc_ugg
-combined_data$tim_direct_avian_1hr_perez <- (app_rate * conv_rate * sa_bird_perez * sa_bird_frac * 
-                           dermal_af * hours_one)/body_weight
-combined_data$tim_direct_avian_1hr_perez_ratios <- combined_data$tim_direct_avian_1hr_perez / tissue_conc
-min(combined_data$tim_direct_avian_1hr_perez_ratios)
-max(combined_data$tim_direct_avian_1hr_perez_ratios)
-sum(tissue_conc > combined_data$tim_direct_avian_1hr_perez)
-sum(tissue_conc*10 > combined_data$tim_direct_avian_1hr_perez)
-plot(tissue_conc, combined_data$tim_direct_avian_1hr_perez)
+# #bird model with perez body weight
+# # we dont care about perez body weights because they are based on large pigeons
+# app_rate <- combined_data$app_rate_g_cm2
+# body_weight <- combined_data$body_weight_g
+# conv_rate <- 1000000.0
+# dermal_af <- 1.0
+# hours_one <- 1.0
+# sa_bird_frac <- 0.5
+# sa_bird_perez <- 65.15 * (body_weight ^ 0.559)
+# tissue_conc <- combined_data$tissue_conc_ugg
+# combined_data$tim_direct_avian_1hr_perez <- (app_rate * conv_rate * sa_bird_perez * sa_bird_frac * 
+#                            dermal_af * hours_one)/body_weight
+# combined_data$tim_direct_avian_1hr_perez_ratios <- combined_data$tim_direct_avian_1hr_perez / tissue_conc
+# min(combined_data$tim_direct_avian_1hr_perez_ratios)
+# max(combined_data$tim_direct_avian_1hr_perez_ratios)
+# sum(tissue_conc > combined_data$tim_direct_avian_1hr_perez)
+# sum(tissue_conc*10 > combined_data$tim_direct_avian_1hr_perez)
+# plot(tissue_conc, combined_data$tim_direct_avian_1hr_perez)
 
 #bird model with tim body weight
 sa_bird_tim <- 10 * (body_weight ^ 0.667)
