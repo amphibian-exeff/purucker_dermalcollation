@@ -1,0 +1,353 @@
+time,parent,analyte,matrix,conc,replicate
+2,atrazine,ATZ,amphib,3.06820272,1
+2,atrazine,ATZ,amphib,3.689639699,2
+2,atrazine,ATZ,amphib,4.701165885,3
+2,atrazine,ATZ,amphib,1.892494228,4
+4,atrazine,ATZ,amphib,7.624610214,1
+4,atrazine,ATZ,amphib,4.13430025,2
+4,atrazine,ATZ,amphib,2.050778713,3
+4,atrazine,ATZ,amphib,7.626486309,4
+12,atrazine,ATZ,amphib,2.452277711,1
+12,atrazine,ATZ,amphib,3.786892753,2
+12,atrazine,ATZ,amphib,4.514882392,3
+12,atrazine,ATZ,amphib,1.741192334,4
+24,atrazine,ATZ,amphib,2.272491609,1
+24,atrazine,ATZ,amphib,1.843394997,2
+24,atrazine,ATZ,amphib,1.12496207,3
+24,atrazine,ATZ,amphib,0.978827141,4
+48,atrazine,ATZ,amphib,0.961393825,1
+48,atrazine,ATZ,amphib,0.631015591,2
+48,atrazine,ATZ,amphib,0.93069942,3
+48,atrazine,ATZ,amphib,1.484441109,4
+0,atrazine,ATZ,soil,19.7005706,1
+0,atrazine,ATZ,soil,13.84392339,2
+0,atrazine,ATZ,soil,14.80677082,3
+0,atrazine,ATZ,soil,15.37241396,4
+2,atrazine,ATZ,soil,17.79390681,1
+2,atrazine,ATZ,soil,13.70288652,2
+2,atrazine,ATZ,soil,23.95868815,3
+2,atrazine,ATZ,soil,20.66065617,4
+4,atrazine,ATZ,soil,19.53278459,1
+4,atrazine,ATZ,soil,22.2585347,2
+4,atrazine,ATZ,soil,16.70434463,3
+4,atrazine,ATZ,soil,16.5847004,4
+12,atrazine,ATZ,soil,17.40716835,1
+12,atrazine,ATZ,soil,26.23533816,2
+12,atrazine,ATZ,soil,18.8400208,3
+12,atrazine,ATZ,soil,19.97423414,4
+24,atrazine,ATZ,soil,20.5514631,1
+24,atrazine,ATZ,soil,28.93737638,2
+24,atrazine,ATZ,soil,28.70646134,3
+24,atrazine,ATZ,soil,21.78948131,4
+48,atrazine,ATZ,soil,26.56876897,1
+48,atrazine,ATZ,soil,22.36470844,2
+48,atrazine,ATZ,soil,24.33164903,3
+48,atrazine,ATZ,soil,32.47385316,4
+2,atrazine,DIA,amphib,0.244389746,1
+2,atrazine,DIA,amphib,0.272879769,2
+2,atrazine,DIA,amphib,0.514589655,3
+2,atrazine,DIA,amphib,0.283268223,4
+4,atrazine,DIA,amphib,1.982229434,1
+4,atrazine,DIA,amphib,0.706019584,2
+4,atrazine,DIA,amphib,0.169062053,3
+4,atrazine,DIA,amphib,0.910401654,4
+12,atrazine,DIA,amphib,1.307780816,1
+12,atrazine,DIA,amphib,1.686285381,2
+12,atrazine,DIA,amphib,0.593288516,3
+12,atrazine,DIA,amphib,0.746683696,4
+24,atrazine,DIA,amphib,3.606532664,1
+24,atrazine,DIA,amphib,2.500486811,2
+24,atrazine,DIA,amphib,1.317924499,3
+24,atrazine,DIA,amphib,0.528494822,4
+48,atrazine,DIA,amphib,0.397349802,1
+48,atrazine,DIA,amphib,0.04431556,2
+48,atrazine,DIA,amphib,1.071270148,3
+48,atrazine,DIA,amphib,1.136617318,4
+0,atrazine,DIA,soil,0,1
+0,atrazine,DIA,soil,0,2
+0,atrazine,DIA,soil,0,3
+0,atrazine,DIA,soil,0,4
+2,atrazine,DIA,soil,-0.011723298,1
+2,atrazine,DIA,soil,0.003224536,2
+2,atrazine,DIA,soil,-0.009974494,3
+2,atrazine,DIA,soil,-0.012435889,4
+4,atrazine,DIA,soil,0.046538524,1
+4,atrazine,DIA,soil,0.010483432,2
+4,atrazine,DIA,soil,0,3
+4,atrazine,DIA,soil,0.025132442,4
+12,atrazine,DIA,soil,0.011765248,1
+12,atrazine,DIA,soil,0.168468591,2
+12,atrazine,DIA,soil,0.043744516,3
+12,atrazine,DIA,soil,0.084169328,4
+24,atrazine,DIA,soil,0.050701196,1
+24,atrazine,DIA,soil,0,2
+24,atrazine,DIA,soil,0.051286893,3
+24,atrazine,DIA,soil,0.069915129,4
+48,atrazine,DIA,soil,0.125882428,1
+48,atrazine,DIA,soil,0.024368532,2
+48,atrazine,DIA,soil,0.004821991,3
+48,atrazine,DIA,soil,0.099700217,4
+2,atrazine,DEA,amphib,0.00943748,1
+2,atrazine,DEA,amphib,0.012003438,2
+2,atrazine,DEA,amphib,0.021445946,3
+2,atrazine,DEA,amphib,0.012708201,4
+4,atrazine,DEA,amphib,0.076295567,1
+4,atrazine,DEA,amphib,0.041485918,2
+4,atrazine,DEA,amphib,0.007758374,3
+4,atrazine,DEA,amphib,0.051928588,4
+12,atrazine,DEA,amphib,0.055173181,1
+12,atrazine,DEA,amphib,0.070717539,2
+12,atrazine,DEA,amphib,0.03990664,3
+12,atrazine,DEA,amphib,0.050289903,4
+24,atrazine,DEA,amphib,0.046811263,1
+24,atrazine,DEA,amphib,0.048255391,2
+24,atrazine,DEA,amphib,0.029340308,3
+24,atrazine,DEA,amphib,0.021691946,4
+48,atrazine,DEA,amphib,0.008370958,1
+48,atrazine,DEA,amphib,0.002795645,2
+48,atrazine,DEA,amphib,0.020051727,3
+48,atrazine,DEA,amphib,0.046841701,4
+0,atrazine,DEA,soil,0,1
+0,atrazine,DEA,soil,0,2
+0,atrazine,DEA,soil,0,3
+0,atrazine,DEA,soil,0,4
+2,atrazine,DEA,soil,0.001317307,1
+2,atrazine,DEA,soil,0.000999847,2
+2,atrazine,DEA,soil,0.002468708,3
+2,atrazine,DEA,soil,0.001495855,4
+4,atrazine,DEA,soil,0.00503797,1
+4,atrazine,DEA,soil,0.003331162,2
+4,atrazine,DEA,soil,0.001723567,3
+4,atrazine,DEA,soil,0.001904164,4
+12,atrazine,DEA,soil,0.002454305,1
+12,atrazine,DEA,soil,0.011558467,2
+12,atrazine,DEA,soil,0.005136987,3
+12,atrazine,DEA,soil,0.002726303,4
+24,atrazine,DEA,soil,0.00588752,1
+24,atrazine,DEA,soil,0.00582862,2
+24,atrazine,DEA,soil,0.00931884,3
+24,atrazine,DEA,soil,0.008198778,4
+48,atrazine,DEA,soil,0.008965608,1
+48,atrazine,DEA,soil,0.007806889,2
+48,atrazine,DEA,soil,0.004634089,3
+48,atrazine,DEA,soil,0.013731943,4
+2,triadimefon,TDN,amphib,0.489601403,1
+2,triadimefon,TDN,amphib,0.306581872,2
+2,triadimefon,TDN,amphib,0.376458575,3
+2,triadimefon,TDN,amphib,0.374511404,4
+4,triadimefon,TDN,amphib,0.97804843,1
+4,triadimefon,TDN,amphib,0.335365342,2
+4,triadimefon,TDN,amphib,0.347101261,3
+4,triadimefon,TDN,amphib,0.533983287,4
+12,triadimefon,TDN,amphib,0.487313921,1
+12,triadimefon,TDN,amphib,1.163882256,2
+12,triadimefon,TDN,amphib,0.518446024,3
+12,triadimefon,TDN,amphib,0.850015349,4
+24,triadimefon,TDN,amphib,0.753354385,1
+24,triadimefon,TDN,amphib,0.268774096,2
+24,triadimefon,TDN,amphib,0.324932505,3
+24,triadimefon,TDN,amphib,2.114540569,4
+48,triadimefon,TDN,amphib,0.337985638,1
+48,triadimefon,TDN,amphib,0.18812362,2
+48,triadimefon,TDN,amphib,0.174854226,3
+48,triadimefon,TDN,amphib,0.29378644,4
+0,triadimefon,TDN,soil,2.627567728,1
+0,triadimefon,TDN,soil,2.341914656,2
+0,triadimefon,TDN,soil,4.266025689,3
+0,triadimefon,TDN,soil,3.190696114,4
+2,triadimefon,TDN,soil,3.915163994,1
+2,triadimefon,TDN,soil,4.450902463,2
+2,triadimefon,TDN,soil,1.688343156,3
+2,triadimefon,TDN,soil,4.577359522,4
+4,triadimefon,TDN,soil,5.783319171,1
+4,triadimefon,TDN,soil,4.935462785,2
+4,triadimefon,TDN,soil,5.065177266,3
+4,triadimefon,TDN,soil,5.316094756,4
+12,triadimefon,TDN,soil,4.923943959,1
+12,triadimefon,TDN,soil,6.277397501,2
+12,triadimefon,TDN,soil,5.355520847,3
+12,triadimefon,TDN,soil,7.160118125,4
+24,triadimefon,TDN,soil,4.987433206,1
+24,triadimefon,TDN,soil,4.742588571,2
+24,triadimefon,TDN,soil,5.137942579,3
+24,triadimefon,TDN,soil,4.412886734,4
+48,triadimefon,TDN,soil,3.55497782,1
+48,triadimefon,TDN,soil,4.545502603,2
+48,triadimefon,TDN,soil,4.412475335,3
+48,triadimefon,TDN,soil,4.208369195,4
+2,triadimefon,TDL A,amphib,0.080559356,1
+2,triadimefon,TDL A,amphib,0.06053728,2
+2,triadimefon,TDL A,amphib,0.030128407,3
+2,triadimefon,TDL A,amphib,0.049353776,4
+4,triadimefon,TDL A,amphib,0.147613164,1
+4,triadimefon,TDL A,amphib,0.040359532,2
+4,triadimefon,TDL A,amphib,0.073149364,3
+4,triadimefon,TDL A,amphib,0.064884946,4
+12,triadimefon,TDL A,amphib,0.036723652,1
+12,triadimefon,TDL A,amphib,0.056514982,2
+12,triadimefon,TDL A,amphib,0.019889379,3
+12,triadimefon,TDL A,amphib,0.03216735,4
+24,triadimefon,TDL A,amphib,0.029743557,1
+24,triadimefon,TDL A,amphib,0.021140814,2
+24,triadimefon,TDL A,amphib,0.014682658,3
+24,triadimefon,TDL A,amphib,0.030464554,4
+48,triadimefon,TDL A,amphib,0.021376313,1
+48,triadimefon,TDL A,amphib,0.010355493,2
+48,triadimefon,TDL A,amphib,0.01299036,3
+48,triadimefon,TDL A,amphib,0.017274138,4
+0,triadimefon,TDL A,soil,0,1
+0,triadimefon,TDL A,soil,0,2
+0,triadimefon,TDL A,soil,0,3
+0,triadimefon,TDL A,soil,0,4
+2,triadimefon,TDL A,soil,0.004506936,1
+2,triadimefon,TDL A,soil,0.003252988,2
+2,triadimefon,TDL A,soil,0.004757199,3
+2,triadimefon,TDL A,soil,0.004134749,4
+4,triadimefon,TDL A,soil,0.005510975,1
+4,triadimefon,TDL A,soil,0.002785258,2
+4,triadimefon,TDL A,soil,0.00303336,3
+4,triadimefon,TDL A,soil,0.004866444,4
+12,triadimefon,TDL A,soil,0.005938954,1
+12,triadimefon,TDL A,soil,0.00435567,2
+12,triadimefon,TDL A,soil,0.006983082,3
+12,triadimefon,TDL A,soil,0.004676642,4
+24,triadimefon,TDL A,soil,0.006815213,1
+24,triadimefon,TDL A,soil,0.003700975,2
+24,triadimefon,TDL A,soil,0.004949822,3
+24,triadimefon,TDL A,soil,0.008802852,4
+48,triadimefon,TDL A,soil,0.014072554,1
+48,triadimefon,TDL A,soil,0.008794405,2
+48,triadimefon,TDL A,soil,0.015805502,3
+48,triadimefon,TDL A,soil,0.013171673,4
+2,triadimefon,TDL B,amphib,0.105002487,1
+2,triadimefon,TDL B,amphib,0.081704724,2
+2,triadimefon,TDL B,amphib,0.065137384,3
+2,triadimefon,TDL B,amphib,0.082663977,4
+4,triadimefon,TDL B,amphib,0.201894814,1
+4,triadimefon,TDL B,amphib,0.07368602,2
+4,triadimefon,TDL B,amphib,0.108347245,3
+4,triadimefon,TDL B,amphib,0.136453648,4
+12,triadimefon,TDL B,amphib,0.064217836,1
+12,triadimefon,TDL B,amphib,0.148402181,2
+12,triadimefon,TDL B,amphib,0.049121626,3
+12,triadimefon,TDL B,amphib,0.044845295,4
+24,triadimefon,TDL B,amphib,0.048825628,1
+24,triadimefon,TDL B,amphib,0.042128253,2
+24,triadimefon,TDL B,amphib,0.025308202,3
+24,triadimefon,TDL B,amphib,0.051067334,4
+48,triadimefon,TDL B,amphib,0.033756743,1
+48,triadimefon,TDL B,amphib,0.026100913,2
+48,triadimefon,TDL B,amphib,0.027425357,3
+48,triadimefon,TDL B,amphib,0.030725531,4
+0,triadimefon,TDL B,soil,0,1
+0,triadimefon,TDL B,soil,0,2
+0,triadimefon,TDL B,soil,0,3
+0,triadimefon,TDL B,soil,0,4
+2,triadimefon,TDL B,soil,0.012628568,1
+2,triadimefon,TDL B,soil,0.010550136,2
+2,triadimefon,TDL B,soil,0.015678888,3
+2,triadimefon,TDL B,soil,0.013142759,4
+4,triadimefon,TDL B,soil,0.015947156,1
+4,triadimefon,TDL B,soil,0.011937089,2
+4,triadimefon,TDL B,soil,0.009870682,3
+4,triadimefon,TDL B,soil,0.015618315,4
+12,triadimefon,TDL B,soil,0.017419404,1
+12,triadimefon,TDL B,soil,0.012318035,2
+12,triadimefon,TDL B,soil,0.021212691,3
+12,triadimefon,TDL B,soil,0.015421158,4
+24,triadimefon,TDL B,soil,0.018114878,1
+24,triadimefon,TDL B,soil,0.012111372,2
+24,triadimefon,TDL B,soil,0.014276863,3
+24,triadimefon,TDL B,soil,0.026123427,4
+48,triadimefon,TDL B,soil,0.039798593,1
+48,triadimefon,TDL B,soil,0.024603969,2
+48,triadimefon,TDL B,soil,0.045398845,3
+48,triadimefon,TDL B,soil,0.04026111,4
+2,fipronil,FIP,amphib,3.719393647,1
+2,fipronil,FIP,amphib,1.880936052,2
+2,fipronil,FIP,amphib,0.570034283,3
+2,fipronil,FIP,amphib,1.297795327,4
+4,fipronil,FIP,amphib,0.88914103,1
+4,fipronil,FIP,amphib,2.023821797,2
+4,fipronil,FIP,amphib,0.949591323,3
+4,fipronil,FIP,amphib,1.339780158,4
+12,fipronil,FIP,amphib,0.608268662,1
+12,fipronil,FIP,amphib,0.870180984,2
+12,fipronil,FIP,amphib,0.489633965,3
+12,fipronil,FIP,amphib,0.29574225,4
+24,fipronil,FIP,amphib,0.329936663,1
+24,fipronil,FIP,amphib,0.278098705,2
+24,fipronil,FIP,amphib,0.255766754,3
+24,fipronil,FIP,amphib,0.206890648,4
+48,fipronil,FIP,amphib,0.083283566,1
+48,fipronil,FIP,amphib,0.389202422,2
+48,fipronil,FIP,amphib,0.224047561,3
+48,fipronil,FIP,amphib,0.151268165,4
+2,fipronil,FIP,soil,0,1
+2,fipronil,FIP,soil,0,2
+2,fipronil,FIP,soil,0,3
+2,fipronil,FIP,soil,0,4
+2,fipronil,FIP,soil,0.922936959,1
+2,fipronil,FIP,soil,0.786142128,2
+2,fipronil,FIP,soil,0.610054177,3
+2,fipronil,FIP,soil,0.942316574,4
+4,fipronil,FIP,soil,0.979801855,1
+4,fipronil,FIP,soil,0.566936486,2
+4,fipronil,FIP,soil,0.793391982,3
+4,fipronil,FIP,soil,1.132922299,4
+12,fipronil,FIP,soil,0.591377077,1
+12,fipronil,FIP,soil,0.847497739,2
+12,fipronil,FIP,soil,1.00254497,3
+12,fipronil,FIP,soil,0.828102962,4
+24,fipronil,FIP,soil,0.654154588,1
+24,fipronil,FIP,soil,0.768446185,2
+24,fipronil,FIP,soil,0.812837755,3
+24,fipronil,FIP,soil,0.573596558,4
+48,fipronil,FIP,soil,0.329859411,1
+48,fipronil,FIP,soil,0.285849162,2
+48,fipronil,FIP,soil,0.413147995,3
+48,fipronil,FIP,soil,0.393581363,4
+2,fipronil,F. sulfone,amphib,0.740847394,1
+2,fipronil,F. sulfone,amphib,0.377801366,2
+2,fipronil,F. sulfone,amphib,0.120668105,3
+2,fipronil,F. sulfone,amphib,0.14697686,4
+4,fipronil,F. sulfone,amphib,0.18968327,1
+4,fipronil,F. sulfone,amphib,1.110909232,2
+4,fipronil,F. sulfone,amphib,0.111692858,3
+4,fipronil,F. sulfone,amphib,0.174150376,4
+12,fipronil,F. sulfone,amphib,0.298904759,1
+12,fipronil,F. sulfone,amphib,1.450132923,2
+12,fipronil,F. sulfone,amphib,0.509686221,3
+12,fipronil,F. sulfone,amphib,0.192921608,4
+24,fipronil,F. sulfone,amphib,1.957822003,1
+24,fipronil,F. sulfone,amphib,1.344345249,2
+24,fipronil,F. sulfone,amphib,0.787747639,3
+24,fipronil,F. sulfone,amphib,0.921356636,4
+48,fipronil,F. sulfone,amphib,0.349277216,1
+48,fipronil,F. sulfone,amphib,0.895785043,2
+48,fipronil,F. sulfone,amphib,1.685148312,3
+48,fipronil,F. sulfone,amphib,0.69663986,4
+2,fipronil,F. sulfone,soil,0,1
+2,fipronil,F. sulfone,soil,0,2
+2,fipronil,F. sulfone,soil,0,3
+2,fipronil,F. sulfone,soil,0,4
+2,fipronil,F. sulfone,soil,0.024149276,1
+2,fipronil,F. sulfone,soil,0.033141576,2
+2,fipronil,F. sulfone,soil,0.009163762,3
+2,fipronil,F. sulfone,soil,0.015343707,4
+4,fipronil,F. sulfone,soil,0.028073427,1
+4,fipronil,F. sulfone,soil,0.014994213,2
+4,fipronil,F. sulfone,soil,0.010907956,3
+4,fipronil,F. sulfone,soil,0.033777643,4
+12,fipronil,F. sulfone,soil,0.024738982,1
+12,fipronil,F. sulfone,soil,0.012500561,2
+12,fipronil,F. sulfone,soil,0.017739606,3
+12,fipronil,F. sulfone,soil,0.018216555,4
+24,fipronil,F. sulfone,soil,0.02214069,1
+24,fipronil,F. sulfone,soil,0.007420443,2
+24,fipronil,F. sulfone,soil,0.017881386,3
+24,fipronil,F. sulfone,soil,0.029271395,4
+48,fipronil,F. sulfone,soil,0.005423041,1
+48,fipronil,F. sulfone,soil,0.012001621,2
+48,fipronil,F. sulfone,soil,0.018586164,3
+48,fipronil,F. sulfone,soil,0.014504668,4
