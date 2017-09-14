@@ -100,14 +100,32 @@ summary(dag2016_dehy0)
 #View(dag2016_dehy)
 
 # import data from Glinski 2017 metabolite study
-dag2016_metabolite_file <- paste(amphibdir_data_in,"dag2016_data_metabolite.csv", sep="")
-file.exists(dag2016_dehy_file)
-dag2016_dehy0 <- read.table(dag2016_dehy_file, header = TRUE, sep = ",")
-dim(dag2016_dehy0)
-summary(dag2016_dehy0)
-#View(dag2016_dehy)
+dag2016_metabolite_file <- paste(amphibdir_data_in,"dag2016_data_metabolites.csv", sep="")
+file.exists(dag2016_metabolite_file)
+dag2016_metabolite0 <- read.table(dag2016_metabolite_file, header = TRUE, sep = ",")
+dim(dag2016_metabolite0)
+summary(dag2016_metabolite0)
+#View(dag2016_metabolite)
+
+# import data from Van Meter 2017 herbs
+rvm2017_herbs_file <- paste(amphibdir_data_in,"vm2017_herbs.csv", sep="")
+file.exists(rvm2017_herbs_file)
+rvm2017_herbs0 <- read.table(rvm2017_herbs_file, header = TRUE, sep = ",")
+dim(rvm2017_herbs0)
+summary(rvm2017_herbs0)
+#View(rvm2017_herbs0)
+# import data from Van Meter 2017 hif
+rvm2017_hif_file <- paste(amphibdir_data_in,"vm2017_hif.csv", sep="")
+file.exists(rvm2017_hif_file)
+rvm2017_hif0 <- read.table(rvm2017_hif_file, header = TRUE, sep = ",")
+dim(rvm2017_hif0)
+summary(rvm2017_hif0)
+#View(rvm2017_hif0)
+
 
 ```
+
+
 
 ```{r eval=TRUE, echo=FALSE}
 ##################
