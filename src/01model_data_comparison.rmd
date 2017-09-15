@@ -19,7 +19,7 @@ Comparison of proposed amphibian dermal exposure model (DUST) from Draft 8/19/15
 #the data set
 ##################
 # import data 
-combined_data_filename <- paste(amphibdir_data_out,"combined_data1.csv", sep="")
+combined_data_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
 combined_data <- read.csv(combined_data_filename)
 dim(combined_data)
 colnames(combined_data)
