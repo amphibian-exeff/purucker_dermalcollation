@@ -428,14 +428,22 @@ combined_data_filename4 <- paste(amphibdir_data_out,"combined_data4.csv", sep=""
 write.csv(combined_data4, file=combined_data_filename4)
 ```
 
-final product
+final product, fix body weight, soil concs and application rates unit issues
 
 ```{r eval=TRUE, echo=FALSE}
 ##################
 #write out the entire final product
 ##################
 amphib_dermal_collated <- combined_data4
-#View(combined_data4)
+#View(amphib_dermal_collated)
+colnames(amphib_dermal_collated)
+#check to see if everything ok
+summary(amphib_dermal_collated$app_rate_g_cm2) # units issues
+summary(amphib_dermal_collated$body_weight_g) # 60 NAs
+summary(amphib_dermal_collated$exp_duration)
+summary(amphib_dermal_collated$soil_conc_ugg) # 206 NAs
+summary(amphib_dermal_collated$tissue_conc_ugg)
+
 amphib_dermal_collated_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
 write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)
 ```
