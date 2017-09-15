@@ -1,0 +1,10 @@
+chemical,species,tissue_conc_ugg,sample_id,body_weight_g,formulation,soil_type,application,app_rate_g_cm2,exp_duration,soil_conc_ugg,source
+Malathion,Ambystoma_tigrinum,1.46,sal1,48.93,NA,NA,soil,0.05,24,NA,hr2008
+Malathion,Ambystoma_tigrinum,1.61,sal2,50.92,NA,NA,soil,0.05,24,NA,hr2008
+Malathion,Ambystoma_tigrinum,0.35,sal3,44.15,NA,NA,soil,0.05,24,NA,hr2008
+Malathion,Ambystoma_tigrinum,3.73,sal4,20.89,NA,NA,soil,0.05,48,NA,hr2008
+Malathion,Ambystoma_tigrinum,0.39,sal5,47.59,NA,NA,soil,0.05,48,NA,hr2008
+Malathion,Ambystoma_tigrinum,1.42,sal6,46.26,NA,NA,soil,0.05,48,NA,hr2008
+Malathion,Ambystoma_tigrinum,1.47,sal7,39.07,NA,NA,soil,0.05,48,NA,hr2008
+Malathion,Ambystoma_tigrinum,0.05,sal8,45.8,NA,NA,soil,0.05,48,NA,hr2008
+Malathion,Ambystoma_tigrinum,0.19,sal9,49.98,NA,NA,soil,0.05,48,NA,hr2008
