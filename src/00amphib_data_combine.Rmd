@@ -99,12 +99,28 @@ dim(dag2016_dehy0)
 summary(dag2016_dehy0)
 #View(dag2016_dehy)
 
+# import data from Henson-Ramsey 2008
+hr2008_file <- paste(amphibdir_data_in,"hr2008_data.csv", sep="")
+file.exists(hr2008_file)
+hr2008 <- read.table(hr2008_file, header = TRUE, sep = ",")
+dim(hr2008)
+summary(hr2008)
+
 # import data from Glinski 2017 metabolite study
 dag2016_metabolite_file <- paste(amphibdir_data_in,"dag2016_data_metabolites.csv", sep="")
 file.exists(dag2016_metabolite_file)
 dag2016_metabolite0 <- read.table(dag2016_metabolite_file, header = TRUE, sep = ",")
 dim(dag2016_metabolite0)
 summary(dag2016_metabolite0)
+#View(dag2016_metabolite)
+
+# import data from Glinski 2017 metabolite study
+dag2016_metabolite_merge_file <- paste(amphibdir_data_in,"dag2016_data_metabolites_4merge.csv", sep="")
+file.exists(dag2016_metabolite_merge_file)
+dag2016_metabolite_merge <- read.table(dag2016_metabolite_merge_file, header = TRUE, sep = ",")
+dim(dag2016_metabolite_merge)
+colnames(dag2016_metabolite_merge)
+summary(dag2016_metabolite_merge)
 #View(dag2016_metabolite)
 
 # import data from Van Meter 2017 herbs
@@ -121,7 +137,12 @@ rvm2017_hif0 <- read.table(rvm2017_hif_file, header = TRUE, sep = ",")
 dim(rvm2017_hif0)
 summary(rvm2017_hif0)
 #View(rvm2017_hif0)
-
+rvm2017_merge_file <- paste(amphibdir_data_in,"vm2017_merge.csv", sep="")
+file.exists(rvm2017_merge_file)
+rvm2017_merge <- read.table(rvm2017_merge_file, header = TRUE, sep = ",")
+dim(rvm2017_merge)
+summary(rvm2017_merge)
+#View(rvm2017_merge)
 
 ```
 
@@ -314,7 +335,7 @@ dag2016_dehy4$app_rate_g_cm2[update_imid] <- 0.00000539 # imid g/cm2
 dim(dag2016_dehy4)
 #View(dag2016_dehy5)
 #temporarily set chloro parent to 100 pending summing daughter metabolites
-dag2016_dehy4$tissue_conc_ugg[update_chloro] <-  100.0
+dag2016_dehy4$tissue_conc_ugg[update_chloro] <-  0
 
 # reorder columns alphabetically to help with merge
 #reorder dag2016_dehy4
@@ -339,92 +360,82 @@ dim(dag2016_dehy_merge)
 combined_data1 <- rbind(combined_data0, dag2016_dehy_merge)
 dim(combined_data1)
 colnames(combined_data1)
-#View(combined_data0)
+rownames(combined_data1) <- seq(length=nrow(combined_data1))
+#View(combined_data1)
 combined_data_filename1 <- paste(amphibdir_data_out,"combined_data1.csv", sep="")
 write.csv(combined_data1, file=combined_data_filename1)
 ```
 
-Revise glinski_metabolites to merge with van meter data sets
+Merge Henson-Ramsey 2008 data with combined data set
+
+```{r eval=TRUE, echo=FALSE}
+colnames(combined_data1)
+colnames(hr2008)
+dim(combined_data1)
+dim(hr2008)
+# combine two dataframes
+combined_data2 <- rbind(combined_data1, hr2008)
+dim(combined_data2)
+colnames(combined_data2)
+rownames(combined_data2) <- seq(length=nrow(combined_data2))
+colnames(combined_data2)
+#View(combined_data2)
+combined_data_filename2 <- paste(amphibdir_data_out,"combined_data2.csv", sep="")
+write.csv(combined_data2, file=combined_data_filename2)
+```
+
+
+Revise glinski_metabolites to merge.
 
 ```{r eval=TRUE, echo=FALSE}
 
 ##################
-#glinski et al 2017 dehydration
+#glinski et al 2017 metabolites
 ##################
-dim(dag2016_dehy0)
-colnames(dag2016_dehy0)
-#View(dag2016_dehy)
-#from
-#[1] "time"    "parent"  "analyte" "matrix"  "species" "conc"    "ID"      "weight"
-#to
-# [1] "chemical"        "soil_type"       "tissue_conc_ugg" "soil_conc_ugg"   "body_weight_g"  
-# [6] "formulation"     "species"         "application"     "exp_duration"    "app_rate_g_cm2" 
-# drop metabolite products
-parent_keepers <- which(as.vector(dag2016_dehy0$parent) == as.vector(dag2016_dehy0$analyte))
-dag2016_dehy1 <- dag2016_dehy0[parent_keepers,]
-## time is length of dehydration
-#colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="time")]<-"exp_duration"
-# analyte change to chemical
-colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="analyte")]<-"chemical"
-# conc to tissue concs
-colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="conc")]<-"tissue_conc_ugg"
-# species same
-# change ID to sample_id
-colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="ID")]<-"sample_id"
-# weight change to body_weight_g
-colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="weight")]<-"body_weight_g"
-# add soil_type (PLE, OLS), formulation (0,1), application (Overspray, Indirect) and app_rate_g_cm2 fields
-exp_duration <- c(rep(8,nrow(dag2016_dehy1)))
-soil_type <- c(rep("PLE",nrow(dag2016_dehy1)))
-application <- c(rep("Indirect",nrow(dag2016_dehy1)))
-formulation <- (rep(0,nrow(dag2016_dehy1)))
-app_rate_g_cm2 <- (rep(0,nrow(dag2016_dehy1)))
-soil_conc_ugg <- (rep(0,nrow(dag2016_dehy1)))
-source <- c(rep("dag_dehydration",nrow(dag2016_dehy1)))
-dag2016_dehy2 <- cbind(dag2016_dehy1, formulation, soil_type, application, 
-                       app_rate_g_cm2, exp_duration, soil_conc_ugg, source)
-#reshape- cast takes long-format data and casts it into wide-format data
-# matrix used to split to soil and amphibian conc columns and delete
-# conc split to soil and amphibian conc columns
-#make wide with soil and amphib concentrations
-colnames(dag2016_dehy2)
-#View(dag2016_dehy3)
-#multiple soil concentration observations per id
-dag2016_dehy_mergefail <- dcast(dag2016_dehy3, 
-                       tissue_conc_ugg + sample_id + species + chemical + exp_duration ~ matrix, 
-                       value.var = c("tissue_conc_ugg"))
-#View(dag2016_mergefail)
-#drop the soil until we can do a many-to-one merge of soil concentrations
-#drop decay products that were not sprayed, keeping only parents
-rows_to_drop <- which(dag2016_dehy2$matrix == 'soil')
-dag2016_dehy3 <- dag2016_dehy2[-rows_to_drop,]
-# parent, time and matrix columns delete
-drop_cols <- c("parent","time","matrix")
-dag2016_dehy4 <- dag2016_dehy3[,!(names(dag2016_dehy3) %in% drop_cols)]
-#View(dag2016_dehy4)
-unique(dag2016_dehy4$chemical)
-update_atrazine <- which(dag2016_dehy4$chemical == 'atrazine')
-dag2016_dehy4$app_rate_g_cm2[update_atrazine] <- 0.00002395 # atrazine g/cm2
-update_chloro <- which(dag2016_dehy4$chemical == 'chloro')
-dag2016_dehy4$app_rate_g_cm2[update_chloro] <-  0.0000443 # chloro g/cm2
-update_metol <- which(dag2016_dehy4$chemical == 'metol')
-dag2016_dehy4$app_rate_g_cm2[update_metol] <-  0.00003101 # metol g/cm2
-update_tdn <- which(dag2016_dehy4$chemical == 'tdn')
-dag2016_dehy4$app_rate_g_cm2[update_tdn] <- 0.00000291 # tdn g/cm2
-update_imid <- which(dag2016_dehy4$chemical == 'imid')
-dag2016_dehy4$app_rate_g_cm2[update_imid] <- 0.00000539 # imid g/cm2
-dim(dag2016_dehy4)
-#View(dag2016_dehy5)
-#temporarily set chloro parent to 100 pending summing daughter metabolites
-dag2016_dehy4$tissue_conc_ugg[update_chloro] <-  0.0001 #100.0
+dim(dag2016_metabolite_merge)
+colnames(dag2016_metabolite_merge)
+#View(dag2016_metabolite_merge)
+# combine two dataframes
+combined_data3 <- rbind(combined_data2, dag2016_metabolite_merge)
+dim(combined_data3)
+colnames(combined_data3)
+rownames(combined_data3) <- seq(length=nrow(combined_data3))
+colnames(combined_data3)
+#View(combined_data3)
+combined_data_filename3 <- paste(amphibdir_data_out,"combined_data3.csv", sep="")
+write.csv(combined_data3, file=combined_data_filename3)
+```
 
-# reorder columns alphabetically to help with merge
-#reorder dag2016_dehy4
-colnames(dag2016_dehy4)
-dag2016_dehy_merge <- dag2016_dehy4[,order(names(dag2016_dehy4))]
-dim(dag2016_dehy_merge)
-colnames(dag2016_dehy_merge)
-#write a local copy
-dag2016_dehy_merge_filename <- paste(amphibdir_data_out,"dag2016_dehy_merge.csv", sep="")
-write.csv(dag2016_dehy_merge, dag2016_dehy_merge_filename)
+Merge Van Meter 2017 multiple pesticides study
+rvm2017_merge
+
+```{r eval=TRUE, echo=FALSE}
+
+##################
+#glinski et al 2017 metabolites
+##################
+dim(rvm2017_merge)
+colnames(rvm2017_merge)
+#View(rvm2017_merge)
+# combine two dataframes
+combined_data4 <- rbind(combined_data3, rvm2017_merge)
+dim(combined_data4)
+colnames(combined_data4)
+rownames(combined_data4) <- seq(length=nrow(combined_data4))
+colnames(combined_data4)
+#View(combined_data4)
+combined_data_filename4 <- paste(amphibdir_data_out,"combined_data4.csv", sep="")
+write.csv(combined_data4, file=combined_data_filename4)
+```
+
+final product
+
+```{r eval=TRUE, echo=FALSE}
+##################
+#write out the entire final product
+##################
+amphib_dermal_collated <- combined_data4
+#View(combined_data4)
+amphib_dermal_collated_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
+write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)
 ```
