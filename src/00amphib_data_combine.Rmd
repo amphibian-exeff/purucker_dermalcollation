@@ -412,7 +412,7 @@ rvm2017_merge
 ```{r eval=TRUE, echo=FALSE}
 
 ##################
-#glinski et al 2017 metabolites
+#van meter et al 2017 multi-pesticide study merge
 ##################
 dim(rvm2017_merge)
 colnames(rvm2017_merge)
@@ -428,7 +428,7 @@ combined_data_filename4 <- paste(amphibdir_data_out,"combined_data4.csv", sep=""
 write.csv(combined_data4, file=combined_data_filename4)
 ```
 
-final product, fix body weight, soil concs and application rates unit issues
+final product, fix soil concs
 
 ```{r eval=TRUE, echo=FALSE}
 ##################
