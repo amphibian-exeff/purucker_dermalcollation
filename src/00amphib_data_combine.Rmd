@@ -309,9 +309,9 @@ dag2016_dehy2 <- cbind(dag2016_dehy1, formulation, soil_type, application,
 colnames(dag2016_dehy2)
 #View(dag2016_dehy3)
 #multiple soil concentration observations per id
-dag2016_dehy_mergefail <- dcast(dag2016_dehy3, 
-                       tissue_conc_ugg + sample_id + species + chemical + exp_duration ~ matrix, 
-                       value.var = c("tissue_conc_ugg"))
+#dag2016_dehy_mergefail <- dcast(dag2016_dehy3, 
+#                       tissue_conc_ugg + sample_id + species + chemical + exp_duration ~ matrix, 
+#                       value.var = c("tissue_conc_ugg"))
 #View(dag2016_mergefail)
 #drop the soil until we can do a many-to-one merge of soil concentrations
 #drop decay products that were not sprayed, keeping only parents
@@ -324,7 +324,7 @@ dag2016_dehy4 <- dag2016_dehy3[,!(names(dag2016_dehy3) %in% drop_cols)]
 unique(dag2016_dehy4$chemical)
 update_atrazine <- which(dag2016_dehy4$chemical == 'atrazine')
 dag2016_dehy4$app_rate_g_cm2[update_atrazine] <- 0.00002395 # atrazine g/cm2
-update_chloro <- which(dag2016_dehy4$chemical == 'chloro')
+update_chloro <- which(dag2016_dehy4$chemical == 'chloro+d')
 dag2016_dehy4$app_rate_g_cm2[update_chloro] <-  0.0000443 # chloro g/cm2
 update_metol <- which(dag2016_dehy4$chemical == 'metol')
 dag2016_dehy4$app_rate_g_cm2[update_metol] <-  0.00003101 # metol g/cm2
@@ -334,8 +334,6 @@ update_imid <- which(dag2016_dehy4$chemical == 'imid')
 dag2016_dehy4$app_rate_g_cm2[update_imid] <- 0.00000539 # imid g/cm2
 dim(dag2016_dehy4)
 #View(dag2016_dehy5)
-#temporarily set chloro parent to 100 pending summing daughter metabolites
-dag2016_dehy4$tissue_conc_ugg[update_chloro] <-  0
 
 # reorder columns alphabetically to help with merge
 #reorder dag2016_dehy4

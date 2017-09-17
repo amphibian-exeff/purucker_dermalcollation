@@ -33,33 +33,26 @@ n <- length(combined_data$tissue_conc_ugg)
 
 # #bird model with perez body weight
 # # we dont care about perez body weights because they are based on large pigeons
+# sa_bird_perez <- 65.15 * (body_weight ^ 0.559)
+
+# equation 1 default tim values
 app_rate <- combined_data$app_rate_g_cm2
 body_weight <- combined_data$body_weight_g
 summary(body_weight)
-
 conv_rate <- 1000000.0
 dermal_af <- 1.0
 hours_one <- 1.0
-sa_bird_frac <- 0.5
-# sa_bird_perez <- 65.15 * (body_weight ^ 0.559)
+sa_tim_default_frac <- 0.5
 tissue_conc <- combined_data$tissue_conc_ugg
 summary(tissue_conc)
-# combined_data$tim_direct_avian_1hr_perez <- (app_rate * conv_rate * sa_bird_perez * sa_bird_frac * 
-#                            dermal_af * hours_one)/body_weight
-# combined_data$tim_direct_avian_1hr_perez_ratios <- combined_data$tim_direct_avian_1hr_perez / tissue_conc
-# min(combined_data$tim_direct_avian_1hr_perez_ratios)
-# max(combined_data$tim_direct_avian_1hr_perez_ratios)
-# sum(tissue_conc > combined_data$tim_direct_avian_1hr_perez)
-# sum(tissue_conc*10 > combined_data$tim_direct_avian_1hr_perez)
-# plot(tissue_conc, combined_data$tim_direct_avian_1hr_perez)
-
 #bird model with tim body weight
-sa_bird_tim <- 10 * (body_weight ^ 0.667)
-combined_data$tim_direct_avian_1hr <- (app_rate * conv_rate * sa_bird_tim * sa_bird_frac * 
-                           dermal_af * hours_one)/body_weight
-combined_data$tim_direct_avian_1hr_ratios <- combined_data$tim_direct_avian_1hr/tissue_conc
-min(combined_data$tim_direct_avian_1hr_ratios)
-max(combined_data$tim_direct_avian_1hr_ratios)
+sa_default_tim <- 10 * (body_weight ^ 0.667)
+#
+combined_data$tim_direct_default <- (app_rate * conv_rate * sa_default_tim * sa_tim_default_frac * dermal_af)/body_weight
+tim_direct_default <- combined_data$tim_direct_default
+combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tissue_conc
+print(paste(min(combined_data$tim_direct_avian_1hr_ratios), "-",   max(combined_data$tim_direct_avian_1hr_ratios)))
+hist(combined_data$tim_direct_avian_1hr_ratios)
 sum(tissue_conc > combined_data$tim_direct_avian_1hr)
 sum(tissue_conc*10 > combined_data$tim_direct_avian_1hr)
 plot(tissue_conc, combined_data$tim_direct_avian_1hr)
@@ -67,10 +60,9 @@ df.tim_avian_1hr <- data.frame(x=tissue_conc, y=combined_data$tim_direct_avian_1
 
 #amphib model with hutchinson body weight
 sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
-sa_amphib_frac <- 2.0
-combined_data$tim_direct_amphib_1hr <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_amphib_frac * 
-                           dermal_af * hours_one)/body_weight
-combined_data$tim_direct_amphib_1hr_ratios <- combined_data$tim_direct_amphib_1hr/tissue_conc
+# sa_amphib_frac <- 2.0
+combined_data$tim_direct_amphib <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
+combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
 min(combined_data$tim_direct_amphib_1hr_ratios)
 max(combined_data$tim_direct_amphib_1hr_ratios)
 sum(tissue_conc > combined_data$tim_direct_amphib_1hr)
