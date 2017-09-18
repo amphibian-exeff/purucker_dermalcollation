@@ -51,29 +51,29 @@ summary(tissue_conc)
 combined_data$tim_direct_default <- (app_rate * conv_rate * sa_default_tim * sa_tim_default_frac * dermal_af)/body_weight
 tim_direct_default <- combined_data$tim_direct_default
 combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tissue_conc
-print(paste(min(combined_data$tim_direct_avian_1hr_ratios), "-",   max(combined_data$tim_direct_avian_1hr_ratios)))
-hist(combined_data$tim_direct_avian_1hr_ratios)
-sum(tissue_conc > combined_data$tim_direct_avian_1hr)
-sum(tissue_conc*10 > combined_data$tim_direct_avian_1hr)
+print(paste(min(combined_data$tim_direct_default_ratios), "-",   max(combined_data$tim_direct_default_ratios)))
+hist(combined_data$tim_direct_default_ratios)
+sum(tissue_conc > tim_direct_default)
+sum(tissue_conc*10 > tim_direct_default)
 plot(tissue_conc, combined_data$tim_direct_avian_1hr)
-df.tim_avian_1hr <- data.frame(x=tissue_conc, y=combined_data$tim_direct_avian_1hr)
+df.tim_default <- data.frame(x=tissue_conc, y=tim_direct_default)
 
 #amphib model with hutchinson body weight
 sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
 # sa_amphib_frac <- 2.0
 combined_data$tim_direct_amphib <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
 combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
-min(combined_data$tim_direct_amphib_1hr_ratios)
-max(combined_data$tim_direct_amphib_1hr_ratios)
-sum(tissue_conc > combined_data$tim_direct_amphib_1hr)
-sum(tissue_conc*10 > combined_data$tim_direct_amphib_1hr)
-plot(tissue_conc, combined_data$tim_direct_amphib_1hr)
-df.tim_amphib_1hr <- data.frame(x=tissue_conc, y=combined_data$tim_direct_amphib_1hr)
+min(combined_data$tim_direct_amphib_ratios)
+max(combined_data$tim_direct_amphib_ratios)
+sum(tissue_conc > combined_data$tim_direct_amphib_ratios)
+sum(tissue_conc*10 > combined_data$tim_direct_amphib_ratios)
+plot(tissue_conc, combined_data$tim_direct_amphib)
+df.tim_amphib <- data.frame(x=tissue_conc, y=combined_data$tim_direct_amphib)
 
 #create df of ratios
-model_log_ratios <- as.vector(c(log10(combined_data$tim_direct_amphib_1hr_ratios), 
-                        y=log10(combined_data$tim_direct_avian_1hr_ratios)))
-model_factor <- as.vector(c(rep('amphib_1hr',n),rep('avian_1hr',n)))
+model_log_ratios <- as.vector(c(log10(combined_data$tim_direct_default_ratios), 
+                        y=log10(combined_data$tim_direct_amphib_ratios)))
+model_factor <- as.vector(c(rep('tim_direct_default',n),rep('tim_direct_amphib',n)))
 df.ratios <- data.frame(x=model_factor, y=model_log_ratios)
 ```
 ## ggplot
