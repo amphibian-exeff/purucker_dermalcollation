@@ -13,6 +13,7 @@ output: pdf_document
 Comparison of proposed amphibian dermal exposure model (DUST) from Draft 8/19/15 with collected dermal exposure data. Proposed DUST model has a function for exposure by direct spray and a function for exposure from foliage which is also referred to as indirect exposure. Collected dermal exposure data is from Van Meter et al. 2014 and Van Meter et al. 2015. Van Meter et al. 2014 and 2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (american toad, barking treefrog, cricket frog, fowlers toad, gray treefrog, green treefrog, leopard frog, mole salamander, narrowmouth toad).
 
 ```{r eval=TRUE, echo=FALSE}
+library(ggplot2)
 
 # Import data from consolidated database
 ##################
@@ -93,4 +94,20 @@ model_boxplot_filename <- paste(amphibdir_graphics,"model_boxplot.png",sep='')
 ggsave(model_boxplot_filename, device="png", width=4, height=4)
 ```
 
+surface area calculations
+```{r eval=TRUE, echo=FALSE}
+min_bw <- min(combined_data$body_weight_g, na.rm=T)
+max_bw <- max(combined_data$body_weight_g, na.rm=T)
+range_bw <- seq(min_bw, max_bw, by = 0.01)
+tim_sa_default <- 10*range_bw^0.667
+hutch_sa_default <- 1.131 * range_bw^0.579
+max(tim_sa_default/hutch_sa_default)
+sa_data <- data.frame(range_bw, tim_sa_default, hutch_sa_default)
+ggplot(sa_data, aes(range_bw)) + 
+  geom_line(aes(y = tim_sa_default, colour = "tim_sa_default")) + 
+  geom_line(aes(y = hutch_sa_default, colour = "hutch_sa_default")) +
+  theme_bw()
+sa_comparison_filename <- paste(amphibdir_graphics,"sa_comparison.png",sep='')
+ggsave(sa_comparison_filename, device="png", width=4, height=4)
+```
 
