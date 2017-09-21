@@ -105,8 +105,8 @@ max(default_sa/hutchison_sa)
 sa_data <- data.frame(range_bw, default_sa, hutchison_sa)
 ggplot(sa_data, aes(range_bw)) + 
   labs(x = "body weight (g)", y = "surface area (cm^2)",color = "Method") +
-  geom_line(aes(y = default_sa, colour = "default_sa")) + 
-  geom_line(aes(y = hutchison_sa, colour = "hutchison_sa")) +
+  geom_line(aes(y = default_sa, colour = "Default")) + 
+  geom_line(aes(y = hutchison_sa, colour = "Hutchison")) +
   theme_bw() +
   theme(legend.position =c(0.2,0.8))
   
