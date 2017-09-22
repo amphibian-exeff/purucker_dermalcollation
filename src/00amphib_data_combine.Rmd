@@ -76,6 +76,7 @@ https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data/good_data.
 #the data sets
 ##################
 # import data from Van Meter 2014 and 2015 papers.
+#this file does include metabolites into the totals for the parents
 vm2015_file <- paste(amphibdir_data_in,"vm2014_data.csv", sep="")
 file.exists(vm2015_file)
 vm2015 <- read.table(vm2015_file, header = TRUE, sep = ",")
@@ -84,6 +85,7 @@ summary(vm2015)
 #View(vm2015)
 
 # import data from Van Meter 2016
+#this file does include metabolites into the totals for the parents
 vm2016_file <- paste(amphibdir_data_in,"vm2016_data.csv", sep="")
 file.exists(vm2016_file)
 vm2016 <- read.table(vm2016_file, header = TRUE, sep = ",")
@@ -92,12 +94,14 @@ summary(vm2016)
 #View(vm2016)
 
 # import data from Glinski 2016 dehydration study
+# this file does not combine daughters with parents
+# this file also has body burdens and soil concentrations as separate rows
 dag2016_dehy_file <- paste(amphibdir_data_in,"dag2016_data_dehydration.csv", sep="")
 file.exists(dag2016_dehy_file)
 dag2016_dehy0 <- read.table(dag2016_dehy_file, header = TRUE, sep = ",")
 dim(dag2016_dehy0)
 summary(dag2016_dehy0)
-#View(dag2016_dehy)
+#View(dag2016_dehy0)
 
 # import data from Henson-Ramsey 2008
 hr2008_file <- paste(amphibdir_data_in,"hr2008_data.csv", sep="")
@@ -333,8 +337,21 @@ dag2016_dehy4$app_rate_g_cm2[update_tdn] <- 0.00000291 # tdn g/cm2
 update_imid <- which(dag2016_dehy4$chemical == 'imid')
 dag2016_dehy4$app_rate_g_cm2[update_imid] <- 0.00000539 # imid g/cm2
 dim(dag2016_dehy4)
-#View(dag2016_dehy5)
-
+# View(dag2016_dehy4)
+# add back in soil concentrations
+dag2016_soil <- dag2016_dehy2[rows_to_drop,]
+colnames(dag2016_soil)
+dag2016_soil$tissue_conc_ugg
+#View(dag2016_dehy2)
+dim(dag2016_dehy4)
+#View(dag2016_soil)
+dim(dag2016_soil)
+dag2016_dehy4$soil_conc_ugg <- dag2016_soil$tissue_conc_ugg
+View(cbind(as.vector(dag2016_dehy4$sample_id),as.vector(dag2016_dehy4$sample_id)))
+View(cbind(dag2016_dehy4$tissue_conc_ugg,dag2016_dehy4$soil_conc_ugg))
+bcf <- dag2016_dehy4$tissue_conc_ugg/dag2016_dehy4$soil_conc_ugg
+min(bcf)
+max(bcf)
 # reorder columns alphabetically to help with merge
 #reorder dag2016_dehy4
 colnames(dag2016_dehy4)
