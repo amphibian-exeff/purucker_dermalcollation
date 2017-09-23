@@ -26,6 +26,10 @@ Computational environment
 Location of this repository: 
 https://github.com/puruckertom/amphib_data_collation
 
+If you are on a mac and get xquartz compaints, install from:
+https://www.xquartz.org/
+
+
 ```{r eval=FALSE, echo=FALSE}
 #library(installr) #windows only currently
 #updateR()
@@ -42,7 +46,7 @@ require(gridExtra)
 library(reshape2)
 
 # tom mac
-if(Sys.info()[4] == "Coiles-MacBook-Pro.local"){
+if(Sys.info()[4] == "Coiles-MacBook-Pro.local" | Sys.info()[4] == "Coiles-MBP"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
 #tom computer
