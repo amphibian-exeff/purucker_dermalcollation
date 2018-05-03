@@ -1,3 +1,13 @@
-solubility - solubility in water at 20 deg C (mg/L)
-logKow - logged octanol water partition coefficient
-Molecular weight - g/mol
+fields in the collated data set include:
+exp_duration - duration of exposure experiment in hours	
+chemical - pesticide used in study
+tissue_conc_ugg	- amphibian tissue concentration in ug/g
+sample_id	- sample identifyer used in the original study
+soil_type	- type of soil used in study if available
+app_rate_g_cm2	- application rate of pesticide in g/cm^2
+soil_conc_ugg	- soil concentration of pesticide in ug/g
+body_weight_g	- body weight of exposed amphibian in grams
+formulation	- commercial formulation if available
+species	- amphibian species name
+application	- application method (soil, aerial)
+source - manuscript where data originally published
