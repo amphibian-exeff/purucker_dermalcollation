@@ -46,7 +46,8 @@ require(gridExtra)
 library(reshape2)
 
 # tom mac
-if(Sys.info()[4] == "Coiles-MacBook-Pro.local" | Sys.info()[4] == "Coiles-MBP"){
+if(Sys.info()[4] == "Coiles-MacBook-Pro.local" | Sys.info()[4] == "Coiles-MBP"
+   | Sys.info()[4] == "Toms-Air"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
 #tom computer
