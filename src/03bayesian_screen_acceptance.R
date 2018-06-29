@@ -17,12 +17,13 @@ tissue_conc <- combined_data_drops$tissue_conc_ugg
 conv_rate <- 1000000.0
 sa_tim_default_frac <- 0.5
 sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
-
-###
-#test acceptance ratios (not used, just checking)
 dermal_af = 0.5
 sd = 2
 pred = (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
+
+
+#####
+#test acceptance ratios (not used, just checking)
 #View(cbind(app_rate,tissue_conc,pred))
 plot(pred,tissue_conc)
 n_under <- sum(pred<tissue_conc)
@@ -92,7 +93,7 @@ startvalue = c(1,2)
 iterations = 100000
 # chain = run_metropolis_MCMC(startvalue, 500000)
 chain = run_metropolis_MCMC_trinomial(startvalue, iterations)
-View(chain)
+# View(chain)
 dim(chain)
 head(chain)
 colnames(chain)
