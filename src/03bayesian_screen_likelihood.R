@@ -1,3 +1,12 @@
+if(Sys.info()[4]=="DZ2626UTPURUCKE"){
+  amphibdir <- "d:\\git\\amphib_dermal_collation\\"
+}
+
+amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')
+amphibdir_data_out <- paste(amphibdir,'data_out/',sep='')
+amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
+amphibdir_src <- paste(amphibdir,'src/',sep='')
+
 # import data 
 combined_data_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
 combined_data <- read.csv(combined_data_filename)
