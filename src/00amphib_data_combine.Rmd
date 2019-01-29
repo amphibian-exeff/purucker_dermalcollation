@@ -24,7 +24,7 @@ dag_metab from exposure_experiment.csv
 Computational environment
 ========================================================
 Location of this repository: 
-https://github.com/puruckertom/amphib_data_collation
+https://github.com/puruckertom/amphib_dermal_collation
 
 If you are on a mac and get xquartz complaints (knitr), install from:
 https://www.xquartz.org/
@@ -57,6 +57,14 @@ if(Sys.info()[4]=="DZ2626UTPURUCKE"){
 # marcia mac
 if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
+}
+#Sumathy's window
+if(Sys.info()[4]=="DZ2626USSINNATH"){
+  amphibdir <- path.expand("c:/git/amphib_dermal_collation/")
+}
+#Sumathy's desktop
+if(Sys.info()[4]=="DESKTOP-7UFGA86"){
+  amphibdir <- path.expand("C:/Users/Sumathy/amphib_dermal_collation/")
 }
 
 amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')
@@ -131,6 +139,16 @@ dim(dag2016_metabolite_merge)
 colnames(dag2016_metabolite_merge)
 summary(dag2016_metabolite_merge)
 #View(dag2016_metabolite)
+
+# import data from Glinski 2018 biomarkers study
+dag2018_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
+file.exists(dag2018_biomarkers_file)
+dag2018_mbiomarker0 <- read.table(dag2018_biomarkers_file, header = TRUE, sep = ",")
+dim(dag2018_mbiomarker0)
+colnames(dag2018_mbiomarker0)
+summary(dag2018_mbiomarker0)
+#View(dag2018_mbiomarker0)
+
 
 # import data from Van Meter 2017 herbs
 rvm2017_herbs_file <- paste(amphibdir_data_in,"vm2017_herbs.csv", sep="")
