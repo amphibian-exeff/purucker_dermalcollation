@@ -9,16 +9,17 @@ title: "Create database of amphibian dermal exposure data"
 
 Introduction
 ========================================================
+
 Combining data sets from Van Meter et al. (2014, 2015, 2016) and Glinski (2017a,b)
-* https://github.com/puruckertom/VanMeteretal2014_EnvPoll/tree/master/data_in
-* https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data
-vm2015 combines the above 2 (from good_data.csv)
-* https://github.com/puruckertom/vanmeteretal2016_etc_amphibian_exposure_som/tree/master/data_in
-vm2016 is the above data set (from RDATA.csv)
-* https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in
-dag_dehy from dehydration3.csv
-* https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in
-dag_metab from exposure_experiment.csv
+
+| Manuscript | Link | Dataset name |
+| --------------- |:------------------ |:--------------- |
+| Van Meter et al 2014 | https://github.com/puruckertom/VanMeteretal2014_EnvPoll/tree/master/data_in | name |
+| Van Meter et al 2014 | https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data | Van Meter et al 2014 | 
+| Van Meter et al 2014 | vm2015 combines the above 2 (from good_data.csv) | Van Meter et al 2014 | 
+| Van Meter et al 2014 | https://github.com/puruckertom/vanmeteretal2016_etc_amphibian_exposure_som/tree/master/data_in | vm2016 is the above data set (from RDATA.csv) | 
+| Van Meter et al 2014 | https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in  | dag_dehy from dehydration3.csv | 
+| Van Meter et al 2014 | https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in | dag_metab from exposure_experiment.csv |
 
 
 Computational environment
@@ -45,6 +46,10 @@ library(ggplot2)
 require(gridExtra)
 library(reshape2)
 
+# tom epa linux
+if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
+  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
+}
 # tom mac
 if(Sys.info()[4] == "Coiles-MacBook-Pro.local" | Sys.info()[4] == "Coiles-MBP"
    | Sys.info()[4] == "Toms-Air"){
