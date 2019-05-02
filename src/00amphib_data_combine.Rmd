@@ -12,15 +12,14 @@ Introduction
 
 Combining data sets from Van Meter et al. (2014, 2015, 2016) and Glinski (2017a,b)
 
-| Manuscript | Link | Dataset name |
+| Manuscript | Link | Meta |
 | --------------- |:------------------ |:--------------- |
-| Van Meter et al 2014 | https://github.com/puruckertom/VanMeteretal2014_EnvPoll/tree/master/data_in | name |
-| Van Meter et al 2014 | https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data | Van Meter et al 2014 | 
-| Van Meter et al 2014 | vm2015 combines the above 2 (from good_data.csv) | Van Meter et al 2014 | 
-| Van Meter et al 2014 | https://github.com/puruckertom/vanmeteretal2016_etc_amphibian_exposure_som/tree/master/data_in | vm2016 is the above data set (from RDATA.csv) | 
-| Van Meter et al 2014 | https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in  | dag_dehy from dehydration3.csv | 
-| Van Meter et al 2014 | https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in | dag_metab from exposure_experiment.csv |
-
+| Van Meter et al 2014 | <a href="https://github.com/puruckertom/VanMeteretal2014_EnvPoll/tree/master/data_in">good_data.csv</a> | |
+| Van Meter et al 2015 | <a href="https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data">good_data.csv</a>| |
+| Van Meter et al 2016 | <a href="https://github.com/puruckertom/vanmeteretal2016_etc_amphibian_exposure_som/tree/master/data_in">RDATA.csv</a>| |
+| Glinski et al 2018a dehydration | <a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in">  </a>| dag_dehy from dehydration3.csv | 
+| Glinski et al 2018b metabolites | <a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> </a>| dag_metab from exposure_experiment.csv |
+| Glinski et al 2019 biomarkers | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in"> </a>| dag_metab from exposure_experiment.csv |
 
 Computational environment
 ========================================================
