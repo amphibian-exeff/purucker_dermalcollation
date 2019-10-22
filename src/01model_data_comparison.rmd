@@ -1,6 +1,5 @@
 ---
-title: "Compare data of amphibian dermal exposure with proposed models"
-output: pdf_document
+title: "Compare Data of Amphibian Dermal Exposure with Proposed Models"
 ---
 
 ```{r eval=FALSE, echo=FALSE}
@@ -8,81 +7,224 @@ output: pdf_document
 #https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 ```
 
-## Description
-========================================================
-Comparison of proposed amphibian dermal exposure model (DUST) from Draft 8/19/15 with collected dermal exposure data. Proposed DUST model has a function for exposure by direct spray and a function for exposure from foliage which is also referred to as indirect exposure. Collected dermal exposure data is from Van Meter et al. 2014 and Van Meter et al. 2015. Van Meter et al. 2014 and 2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (american toad, barking treefrog, cricket frog, fowlers toad, gray treefrog, green treefrog, leopard frog, mole salamander, narrowmouth toad).
 
-```{r eval=TRUE, echo=FALSE}
+
+**Overview**
+======================================================================
+A comparison between the proposed amphibian dermal exposure model (DUST) from Draft 8/19/15 and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted. The proposed DUST model has a function for exposure by direct spray and a function for exposure from foliage (also referred to as indirect exposure).  
+
+Collected amphibian dermal exposure data is from 8 studies. Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (Atrazine, Metolachlor, 2,4-D, Malathion, Propiconazole) on juvenile green frogs. Glinski et al. 2018a data includes exposure to 5 pesticides (Atrazine, Triadimefon, Metolachlor, Chlorothalonil, Imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). Glinski et al. 2018b data consists of exposure to 3 pesticides (Atrazine, Triadimefon, Fopronil) on Fowler's toads. Glinski et al. 2018c data includes exposure to single, double, or triple pesticide mixtures (Bifenthrin, Metolachlor, Triadimefon) on Southern leopard frogs. Henson-Ramsey 2008 data consists of exposure to Malathion for Tiger salamanders.  
+
+```{r eval=TRUE, echo=FALSE, include = FALSE}
+# Install required libraries
 library(ggplot2)
+require(gridExtra)
+library(reshape2)
 
-# Import data from consolidated database
+# Emma's laptop
+if(Sys.info()[4]=="LZ2626UECHELSVI"){
+  amphibdir <- path.expand("C:/Users/echelsvi/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/amphib_dermal_collation/amphib_dermal_collation-master/")
+}
+
+# Variable names for data
+amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')
+amphibdir_data_out <- paste(amphibdir,'data_out/',sep='')
+amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
+amphibdir_src <- paste(amphibdir,'src/',sep='')
+```
+
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
 ##################
 #the data set
 ##################
-# import data 
+# import data from consolidated database
 combined_data_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
 combined_data <- read.csv(combined_data_filename)
 dim(combined_data)
 colnames(combined_data)
-#View(combined_data)
+summary(combined_data)
 ```
 
-## tim model variants
-```{r eval=TRUE, echo=FALSE}
+***
+
+**TIM (Terrestrial Investigation Model) Variants**
+=====================================================================
+By default, TIM estimates exposures for birds. The dermal exposure dose (body burden) is computed by combining the pesticide application rate (app_rate), surface area (sa_default_tim), fraction of surface area exposed (sa_tim_default_frac), body weight of the exposed organism (body_weight) and the dermal absorption factor (dermal_af).  
+
+
+$$TIM = \frac{AR * SA * SAF * DAF}{BW}$$
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 colnames(combined_data)
 n <- length(combined_data$tissue_conc_ugg)
 
 # #bird model with perez body weight
 # # we dont care about perez body weights because they are based on large pigeons
 # sa_bird_perez <- 65.15 * (body_weight ^ 0.559)
+```
 
-# equation 1 default tim values
+***
+
+### **TIM Default Calculation**
+```{r eval = TRUE, echo = TRUE}
+# Equation 1: TIM Default Values 
 app_rate <- combined_data$app_rate_g_cm2
 body_weight <- combined_data$body_weight_g
-summary(body_weight)
 conv_rate <- 1000000.0
 dermal_af <- 1.0
 hours_one <- 1.0
-#bird model with tim body weight
-sa_default_tim <- 10 * (body_weight ^ 0.667)
+sa_default_tim <- 10 * (body_weight ^ 0.667) 
 sa_tim_default_frac <- 0.5
 tissue_conc <- combined_data$tissue_conc_ugg
+```
+Summary of body_weight
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+summary(body_weight)
+```
+Summary of app_rate
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+summary(app_rate)
+```
+Summary of tissue_conc
+```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(tissue_conc)
-# calculate equation 1
+```
+
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Calculate Equation 1a: TIM Default
 combined_data$tim_direct_default <- (app_rate * conv_rate * sa_default_tim * sa_tim_default_frac * dermal_af)/body_weight
 tim_direct_default <- combined_data$tim_direct_default
+```
+### **TIM Default Ratios**
+
+```{r eval = TRUE, echo = TRUE}
+# Calculate Equation 1b: TIM Default Ratios
 combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tissue_conc
+```
+
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Range
 print(paste(min(combined_data$tim_direct_default_ratios), "-",   max(combined_data$tim_direct_default_ratios)))
-hist(combined_data$tim_direct_default_ratios)
-sum(tissue_conc > tim_direct_default)
-sum(tissue_conc*10 > tim_direct_default)
-plot(tissue_conc, combined_data$tim_direct_avian_1hr)
-df.tim_default <- data.frame(x=tissue_conc, y=tim_direct_default)
+```
 
-#amphib model with hutchinson body weight
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+hist(combined_data$tim_direct_default_ratios, main = "Histogram of TIM Default Ratios", col = "#2b8cbe", xlab = "TIM Default Ratios")
+```
+
+Shown above, the range of the TIM Default Ratios spans from 1.0257 to 1,399,270.8928. The rightly-skewed histogram showcases the spread of the data. The larger ratios can be explained by lower tissue concentrations. For example, observations in the data set with tissue concentrations (approximately) less than 0.10 yield larger TIM ratios.
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Tissue Concentrations >= 0.10
+large_tissue <- combined_data[combined_data$tissue_conc_ugg >= 0.10, ]
+summary(large_tissue$tim_direct_default_ratios)
+
+
+# Tissue Concentrations < 0.10
+small_tissue <- combined_data[combined_data$tissue_conc_ugg < 0.10, ]
+summary(small_tissue$tim_direct_default_ratios)
+```
+
+
+***
+
+### **TIM Amphibian Calculation**
+
+To gain a better understanding of pesticide risks on amphibians, the dermal exposure dose was also computed with a modified allometric relationship between body weight and surface area that is better suited for amphibians (Hutchison et al. 1968, EPA 2009).
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Equation 2: TIM Amphibians value (Hutchinson body weight)
 sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
-# sa_amphib_frac <- 2.0
-combined_data$tim_direct_amphib <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
-combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
-min(combined_data$tim_direct_amphib_ratios)
-max(combined_data$tim_direct_amphib_ratios)
-sum(tissue_conc > combined_data$tim_direct_amphib_ratios)
-sum(tissue_conc*10 > combined_data$tim_direct_amphib_ratios)
-plot(tissue_conc, combined_data$tim_direct_amphib)
-df.tim_amphib <- data.frame(x=tissue_conc, y=combined_data$tim_direct_amphib)
+```
 
-#create df of ratios
+```{r eval = TRUE, echo = FALSE}
+# sa_amphib_frac <- 2.0
+```
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Calculate Equation 2a: TIM Amphibian
+combined_data$tim_direct_amphib <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
+```
+
+### **TIM Amphibian Ratios**
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Calculate Equation 2b: TIM Amphibian Ratios
+combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
+```
+
+Shown below, the range of the TIM Amphibian Ratios spans from 0.1064 to 113,033.7779. The histogram is skewed to the right. However, the range of TIM Amphibian Ratios is narrower than that of the TIM Default Ratios. 
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Range
+print(paste(min(combined_data$tim_direct_amphib_ratios), "-",   max(combined_data$tim_direct_amphib_ratios)))
+```
+
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+hist(combined_data$tim_direct_amphib_ratios, main = "Histogram of TIM Amphibian Ratios", col = "#a8ddb5", xlab = "TIM Amphibian Ratios")
+```
+
+
+Likewise to the spread of the TIM Default Ratios, the spread of the TIM Amphibian Ratios can best be explained by the tissue concentration values. For example, lower tissue concentrations (approximately less than 0.10) yield higher ratio values.
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Tissue Concentrations >= 0.10
+large_tissue <- combined_data[combined_data$tissue_conc_ugg >= 0.10, ]
+summary(large_tissue$tim_direct_amphib_ratios)
+
+
+# Tissue Concentrations < 0.10
+small_tissue <- combined_data[combined_data$tissue_conc_ugg < 0.10, ]
+summary(small_tissue$tim_direct_amphib_ratios)
+```
+
+
+***
+
+**Assessing Model Performance**
+=======================================================
+The TIM Default and TIM Amphibian models, described above, were compared to one another and to the post-exposure amphibian body burdens found in the collated data set in order to assess model performance.
+
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# Create df of ratios
 model_log_ratios <- as.vector(c(log10(combined_data$tim_direct_default_ratios), 
                         y=log10(combined_data$tim_direct_amphib_ratios)))
 model_factor <- as.vector(c(rep('tim_default_direct',n),rep('tim_amphib_direct',n)))
 df.ratios <- data.frame(x=model_factor, y=model_log_ratios)
-```
-## ggplot
-```{r eval=TRUE, echo=FALSE}
-plot1 <- ggplot(df.tim_amphib, aes(x=x, y=y)) + geom_point() + coord_fixed()
-plot2 <- ggplot(df.ratios, aes(x=x, y=y)) + geom_point() + coord_fixed()
-grid.arrange(plot1, plot2, ncol=2)
 
+# Create df of tissue_conc and TIM Amphibian
+df.tim_amphib <- data.frame(x=tissue_conc, y=combined_data$tim_direct_amphib)
+```
+
+***
+
+### **Comparing Models**
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+ggplot(df.ratios, aes(x=x, y=y)) + geom_point() + labs(title="TIM Amphibian vs. TIM Default",  x="Model Factor", y = "TIM Value")
+
+```
+
+***
+
+### **Plotting Modeled vs. Measured**
+
+A scatter plot was utilized to first assess TIM Amphibian performance. A model along the 1:1 line would display perfect agreement with the measured values.  
+
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+ggplot(df.tim_amphib, aes(x=x, y=y)) + geom_point() + labs(title="Modeled vs. Measured",  x="Tissue Concentrations", y = "TIM Amphibian Values")
+```
+
+***
+
+### **Plotting log10 Ratio of Modeled Burdens to Observed Burdens**
+
+Box plots were utilized to further assess model performance. Well-performing models would minimize error, and therefore would have a higher percentage of ratios near zero (log10 of unity).  
+
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
 fill <- "#4271AE"
 line <- "#1F3552"
 ggplot(df.ratios, aes(x=x,y=y)) +
@@ -94,17 +236,61 @@ model_boxplot_filename <- paste(amphibdir_graphics,"model_boxplot.png",sep='')
 ggsave(model_boxplot_filename, device="png", width=4, height=4)
 ```
 
-surface area calculations
-```{r eval=TRUE, echo=FALSE}
+***
+
+### **False Negative Rates**
+
+Summary statistics for false negative rates were also computed for both models. False negative rates are defined as an outcome where the modeled value is less than the measured value. This rate is based on a Type II Error in statistical hypothesis testing. False negative rates assess how often a model under-estimates the measurement of interest.
+
+**TIM Default**
+
+As displayed below, there are zero false negative rates for TIM Default. But,  115/798 (14.4%) of the measurements are within an order of magnitude of the modeled value. 
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# False Negative Rate: TIM Default
+sum(tissue_conc > tim_direct_default)
+
+# False Negative Rate (x10): TIM Default
+sum(tissue_conc*10 > tim_direct_default)
+```
+
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+#plot(tissue_conc, combined_data$tim_direct_avian_1hr)
+plot(tissue_conc, combined_data$tim_direct_default, xlab = "Tissue Concentration", ylab = "TIM Default Value", main = "TIM Default Value vs. Tissue Concentration")
+df.tim_default <- data.frame(x=tissue_conc, y=tim_direct_default)
+```
+
+**TIM Amphibian**
+
+There are 107/798 (13.4%) false negative screen results for TIM Amphibian, and 576/798 (72.2%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians. 
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# False Negative Rate: TIM Amphibian
+sum(tissue_conc > combined_data$tim_direct_amphib)
+
+# False Negative Rate (x10): TIM Amphibian
+sum(tissue_conc*10 > combined_data$tim_direct_amphib)
+```
+
+```{r eval = TRUE, echo = FALSE}
+plot(tissue_conc, combined_data$tim_direct_amphib, xlab = "Tissue Concentration", ylab = "TIM Amphibian Value", main = "TIM Amphibian Value vs. Tissue Concentration")
+```
+
+***
+
+### **Comparing Surface Area Calculations** 
+
+While TIM Amphibian had a higher percentage of false negative screening values than TIM Default, the difference in screening values can be attributed to the surface area calculation. Amphibian surface area, as compared to the TIM Default surface area based on birds, is extrapolated from measured body weights. The comparison between surface area calculations is depicted below.    
+
+```{r eval = TRUE, echo = FALSE}
 min_bw <- min(combined_data$body_weight_g, na.rm=T)
 max_bw <- max(combined_data$body_weight_g, na.rm=T)
 range_bw <- seq(min_bw, max_bw, by = 0.01)
 default_sa <- 10*range_bw^0.667
 hutchison_sa <- 1.131 * range_bw^0.579
-max(default_sa/hutchison_sa)
+#max(default_sa/hutchison_sa)
 sa_data <- data.frame(range_bw, default_sa, hutchison_sa)
 ggplot(sa_data, aes(range_bw)) + 
-  labs(x = "body weight (g)", y = "surface area (cm^2)",color = "Method") +
+  labs(x = "body weight (g)", y = "Surface Area (cm^2)",color = "Method") +
   geom_line(aes(y = default_sa, colour = "Default")) + 
   geom_line(aes(y = hutchison_sa, colour = "Hutchison")) +
   theme_bw() +
