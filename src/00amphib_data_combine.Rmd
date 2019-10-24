@@ -586,13 +586,21 @@ dag2016_dehy4$soil_conc_ugg <- dag2016_soil$tissue_conc_ugg
 bcf <- dag2016_dehy4$tissue_conc_ugg/dag2016_dehy4$soil_conc_ugg
 min(bcf)
 max(bcf)
+
+# rename species names, according to standardized names
+dag2016_dehy4$species <- as.character(dag2016_dehy4$species)
+dag2016_dehy4$species[dag2016_dehy4$species == "LF"] <- "Leopard frog"
+dag2016_dehy4$species[dag2016_dehy4$species == "BA"] <- "Fowlers toad"
+dag2016_dehy4$species <- as.factor(dag2016_dehy4$species)
+
 # reorder columns alphabetically to help with merge
-#reorder dag2016_dehy4
+# reorder dag2016_dehy4
 colnames(dag2016_dehy4)
 dag2016_dehy_merge <- dag2016_dehy4[,order(names(dag2016_dehy4))]
 dim(dag2016_dehy_merge)
 colnames(dag2016_dehy_merge)
-#write a local copy
+
+# write a local copy
 dag2016_dehy_merge_filename <- paste(amphibdir_data_out,"dag2016_dehy_merge.csv", sep="")
 write.csv(dag2016_dehy_merge, dag2016_dehy_merge_filename)
 
@@ -651,13 +659,20 @@ dim(combined_data2)
 
 ### Glinski et al. 2018b (Metabolites)
 
-The Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
+Apart from standardizing the species name, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
 ```{r eval=TRUE, echo=FALSE, include = FALSE}
 ##################
 #glinski et al 2017 metabolites
 ##################
 dim(dag2016_metabolite_merge)
 colnames(dag2016_metabolite_merge)
+
+# rename species names, according to standardized names
+dag2016_metabolite_merge$species <- as.character(dag2016_metabolite_merge$species)
+dag2016_metabolite_merge$species[dag2016_metabolite_merge$species == "Anaxyrus_fowleri"] <- "Fowlers toad"
+dag2016_metabolite_merge$species <- as.factor(dag2016_metabolite_merge$species)
+
+
 #View(dag2016_metabolite_merge)
 # combine two dataframes
 combined_data3 <- rbind(combined_data2, dag2016_metabolite_merge)
