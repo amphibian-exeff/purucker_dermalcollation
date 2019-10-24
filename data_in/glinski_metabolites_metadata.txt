@@ -1,0 +1,18 @@
+exposure_experiment.csv and microsome_experiment3.csv were used 
+
+exposure_experiment.csv: 
+time: length of time that amphibian was exposed to that pesticide in hours.  
+parent: is the active ingredient that the amphibian was exposed to.  
+analyte: either the main parent compound or the metabolite that was quantified.  
+matrix: the sample that was analyzed either the amphibian or soil.  
+conc: is the concentration for that specific analyte in that matrix for that specific species in microg/g
+replicate: is the individual amphibian or soil exposed to that pesticide.
+
+microsome_experiment3.csv:  
+time: is the length of time that the microsomes were exposed before being quenched in minutes.  
+parent: is the active ingredient that the amphibian was exposed to.  
+analyte: either the main parent compound or the metabolite that was quantified.  
+matrix: the sample that was analyzed microsomes.  
+conc: is the concentration for that specific analyte in that matrix for that specific species.  in micromolar (uM)
+replicate: is the individual microsome exposed to that pesticide. 
+microMexp: is the concentration in micromolar (uM) that the microsomes were exposed to for that pesticide.

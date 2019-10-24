@@ -1,0 +1,19 @@
+Data files rehydration_rates2.csv and dehydration3.csv were used in this manuscript.
+
+rehydration_rates2.csv
+spp: the common name for the amphibian that was used in that experiment
+time: is the number of hours the amphibian was dehydrated for, prior to the amphibian being exposed for 8 hours
+units:  grams per hour for the rehydration rate
+pesticide: active ingredient that the amphibian were exposed to for 8 hours
+rate: average rehydration rate in grams per hour for each amphibian
+
+
+dehydration3.csv 
+time: the number of hours the amphibian was dehydrated
+parent: the active ingredient that the amphibian was exposed to
+analyte: either the main parent compound or the metabolite that was quantified
+matrix - the sample that was analyzed either amphibian (amphib) or soil
+species: common name for the amphibian that was used in that experiment, LF for leopard frogs, BA for Fowler's Toads)
+conc: concentration for the specific analyte in that matrix for the species in microg/g
+ID: sample name that was assigned to that sample. 
+weight: final weight that was extracted for that specific amphibian or soil, units of total grams

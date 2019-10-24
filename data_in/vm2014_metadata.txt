@@ -1,0 +1,26 @@
+**** Metadata for good_data.csv. Data is from Van Meter et al. 2014 Estimating terrestrial amphibian pesticide body burden through dermal exposure. Environmental Pollution, 193:262-268. ****
+Column labels and description of the column. 
+Species - Species of amphibian exposed
+Sample - unique identifier of sample
+Chemical - Active ingredient used for dermal exposure
+Instrument - the instrument used to quantify body burden of the sample 
+Good - quality control flag
+Application - Overspray is direct spray of the amphibian in the container, Soil is application of the pesticide to the soil which represents indirect exposure to the amphibian
+app_rate_g_cm2 - The selected registered label application rate scaled to the size of a 10-gallon aquarium (g/cm2). "NA" values are for active ingredient metabolites. 
+TissueConc - Frog whole body tissue concentration (ug/g) at the end of an 8 hour exposure.
+SoilConc - The average composite soil concentration within an experimental chamber (ug/g) at the end of an 8 hour exposure.
+logKow - Log10 of the Kow value of the pesticide applied. 
+BCF - Bioconcentration factor for each species and pesticide determined after analysis = (frog whole body tissue concentration / composite soil concentration in a chamber).
+bodyweight - Body weight of organism used to calculate body burden (g).
+initialweight - Initial body weight of exposed organism (g).
+Solat20C_mgL - Water solubility of the applied pesticide at 20 degrees Celsius (mg/L).
+Solat20C_gL - Water solubility of the applied pesticide at 20 degrees Celsius (g/L).
+molmass_gmol - Molecular mass of the applied pesticide (g/mol).
+Density_gcm3 - Density of the applied pesticide (g/cm3)
+AppFactor - Frog skin permeability factor, defined as the ug of pesticide taken up per cm2 of frog dermis, divided by the ug of pesticide applied per cm2.
+SA_cm2 - Surface area of the exposed frog (cm2) calculated as 1.131 * (body weight of frog^0.579).
+VapPrs_mPa - Vapor pressure of pesticide.
+Koc_gmL - The estimated organic carbon normalized adsorption coefficient (Koc).
+HalfLife_day - The half life of the chemical applied.  
+HabFac - Describes the habitat preference of the amphibian species (Arborial, Terrestrial, Aquatic)
+
