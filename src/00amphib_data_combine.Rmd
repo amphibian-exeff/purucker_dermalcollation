@@ -12,7 +12,7 @@ title: "Creating a Database of Amphibian Dermal Exposure Data"
 **Introduction**
 ========================================================
 
-The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018) and Glinski (2018a, b, c), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
+The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018) and Glinski (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
 
 | Manuscript | Link | Meta |
 | --------------- |:------------------ |:--------------- |
@@ -23,6 +23,7 @@ The purpose of this script is to combine the data sets from Van Meter et al. (20
 | <a href="https://link.springer.com/article/10.1007%2Fs11356-018-1830-8">Glinski et al. 2018a (dehydration) | <a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in">  </a>| dag_dehy from dehydration3.csv | 
 | <a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a>| <a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> </a>| dag_metab from exposure_experiment.csv |
 | <a href= "http://www.publish.csiro.au/en/EN18163">Glinski et al. 2018c (biomarkers) | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixture3.csv</a>| dag_mbiomarker from exposure_mixture3.csv | 
+| Glinski et al. 2019 (dermal routes) | <a href="https://github.com/puruckertom/amphib_dermal_collation/tree/master/data_in">dag2019_dermal_routes.csv</a>| <a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs">dag2019_dermal_routes.csv from Water_soil.csv</a>  | 
 | <a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008 | |  |
 
   
@@ -84,7 +85,7 @@ if(Sys.info()[4]=="DESKTOP-7UFGA86"){
 
 # Emma's laptop
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
-  amphibdir <- path.expand("C:/Users/echelsvi/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/amphib_dermal_collation/amphib_dermal_collation-master/")
+  amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
 }
 
 # Variable names for data
@@ -216,7 +217,7 @@ dag2016_metabolite_merge <- read.table(dag2016_metabolite_merge_file, header = T
 **Data Set Dimensions, Column Names, and Summary:**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dag2016_metabolite_merge)
-colnames(dag2016_metabolite_merge_file)
+colnames(dag2016_metabolite_merge)
 summary(dag2016_metabolite_merge)
 ```
 
@@ -282,6 +283,25 @@ rvm2017_merge <- read.table(rvm2017_merge_file, header = TRUE, sep = ",")
 dim(rvm2017_merge)
 colnames(rvm2017_merge)
 summary(rvm2017_merge)
+```
+
+
+
+### Glinski et al. 2019 (Dermal Routes)
+
+~~~~~ Talk about Glinski et al. 2019 dermal routes....  
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Glinski 2019 dermal routes study
+dermal_routes_file <- paste(amphibdir_data_in,"dag2019_dermal_routes.csv", sep="")
+file.exists(dermal_routes_file)
+dermal_routes <- read.table(dermal_routes_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(dermal_routes)
+names(dermal_routes)
+summary(dermal_routes)
 ```
 
 
@@ -392,7 +412,7 @@ dim(vm2015_merge)
 
 
 ### Van Meter et al. 2016
-```{r eval = TRUE, echo = FALSE, include = FALSE}
+```{r eval = TRUE, echo = TRUE, include = FALSE}
 ##################
 #van meter 2016
 ##################
@@ -715,6 +735,148 @@ write.csv(combined_data4, file=combined_data_filename4)
 dim(combined_data4)
 ```
 
+### Glinski et al. 2019 (dermal routes)
+
+~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column)
+
+The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set.
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+## import dermal routes data, with amphibians weights
+weights_file <- paste(amphibdir_data_in, "Dermal_routes_weights.csv", sep = "")
+file.exists(weights_file)
+weights <- read.table(weights_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(weights)
+names(weights)
+summary(weights)
+```
+
+A one-to-many merge was employed to merge the dermal routes data set and the weights data set based on the Sample ID. Only rows where the Matrix is "Amphibian" have a body weight; all other rows are NA. 
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# merge (one-to-many) dermal routes data with weights data, based on Sample ID
+dermal_routes_subset2 <- dermal_routes[order(dermal_routes$Sample.ID), ]
+weights_2 <- weights[order(weights$Sample),]
+
+dermal_routes_subset3 <- merge(dermal_routes_subset2, weights_2, 
+                               by.x = "Sample.ID", by.y = "Sample", all.x = TRUE, all.y = TRUE)
+```
+The updated dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(dermal_routes_subset3)
+```
+The soil concentrations, where the Media and Matrix are both "Soil," was subset from the data set to be used later in the data cleaning process. These soil concentrations (currently listed in the "Concentration" column) will be used for the soil_conc_ugg column in the cleaned data set.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# subset soil to be used later for soil concentration column (will use "Concentration" column)
+soil_subset <- dermal_routes_subset2[dermal_routes_subset2$Media == "Soil", ]
+soil_subset2 <- soil_subset[soil_subset$Matrix == "Soil",]
+```
+The dimensions of this soil subset are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(soil_subset2)
+```
+
+Referring back to the main dermal routes data set: we are only interested in the pesticide exposures on amphibians while in soil. These rows were subset.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+#  want Media == soil because interested in dermal exposure in soil
+dermal_routes_subset4 <- dermal_routes_subset3[dermal_routes_subset3$Media == "Soil",]
+#sum(dermal_routes_subset3$Media == "Soil") # == 96
+#dim(dermal_routes_subset4) # == 96 x 6
+
+#  want Matrix == Amphibian because interested in amphib exposure
+dermal_routes_subset5 <- dermal_routes_subset4[dermal_routes_subset4$Matrix == "Amphibian", ]
+#sum(dermal_routes_subset4$Matrix == "Amphibian") # == 48
+#dim(dermal_routes_subset5) # == 48 x 6
+```
+The updated dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(dermal_routes_subset5)
+```
+
+The soil concentrations were appended to the main dermal routes data set.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# add in soil concentration column, previously subset
+# order by Sample.ID, then by Analyte name to match up rows for the two data sets
+dermal_routes_subset6 <- dermal_routes_subset5[order(dermal_routes_subset5[,1], 
+                                                     dermal_routes_subset5[,2]),]
+soil_subset3 <- soil_subset2[order(soil_subset2[,1], soil_subset2[,2]),]
+
+#dim(dermal_routes_subset6) # == 48 x 6
+#dim(soil_subset3) # == 48 x 5
+
+dermal_routes_subset7 <- cbind(dermal_routes_subset6, soil_subset3$Concentration)
+```
+The updated dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(dermal_routes_subset7)
+```
+
+Several new columns (application rate, application, exposure duration, formulation, soil type, source and species) were created and the necessary values were filled in for each column. Existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.
+```{r eval = TRUE, echo = TRUE, include = FALSE}
+#  create new columns
+app_rate_g_cm2 <- c(rep(NA, nrow(dermal_routes_subset7)))
+application <- c(rep("soil", nrow(dermal_routes_subset7)))
+exp_duration <- c(rep(8, nrow(dermal_routes_subset7)))
+formulation <- c(rep(0, nrow(dermal_routes_subset7)))
+soil_type <- c(rep("OLS", nrow(dermal_routes_subset7)))
+source <- c(rep("dag_dermal_routes", nrow(dermal_routes_subset7)))
+species <- c(rep("Leopard frog", nrow(dermal_routes_subset7)))
+
+
+#  alter existing column names
+colnames(dermal_routes_subset7)
+
+colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Analyte")]<-"chemical"
+colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Sample.ID")]<-"sample_id"
+colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Concentration")]<-"tissue_conc_ugg"
+colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="soil_subset3$Concentration")]<-"soil_conc_ugg"
+colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Weight_g")]<-"body_weight_g"
+
+
+# combine columns
+dermal_routes_subset8 <- cbind(dermal_routes_subset7, app_rate_g_cm2, application, exp_duration, 
+                               formulation, soil_type, source, species)
+names(dermal_routes_subset8)
+dim(dermal_routes_subset8)
+
+# drop columns
+cols_to_drop <- c("Matrix", "Media")
+dermal_routes_subset9 <- dermal_routes_subset8[, !(names(dermal_routes_subset8) %in% cols_to_drop)]
+
+```
+The updated column names and dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+names(dermal_routes_subset9)
+dim(dermal_routes_subset9)
+```
+
+The columns were ordered for ease of merging with the collated data set, a local copy was saved, and the data set was combined with the collated data set.
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# order columns in abc for merge
+dermal_routes_merge <- dermal_routes_subset9[ ,order(names(dermal_routes_subset9))]
+dim(dermal_routes_merge)
+names(dermal_routes_merge)
+
+# write a local copy
+dag2019_merge_filename <- paste(amphibdir_data_out,"dag2019_merge.csv", sep="")
+write.csv(dermal_routes_merge, file = dag2019_merge_filename)
+
+# combine two dataframes
+combined_data5 <- rbind(combined_data4, dermal_routes_merge)
+dim(combined_data5)
+colnames(combined_data5)
+rownames(combined_data5) <- seq(length=nrow(combined_data5))
+colnames(combined_data5)
+#View(combined_data5)
+combined_data_filename5 <- paste(amphibdir_data_out,"combined_data5.csv", sep="")
+write.csv(combined_data5, file=combined_data_filename5)
+```
+**The combined data set's updated dimensions are:**
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(combined_data5)
+```
 
 ***
 
@@ -725,7 +887,7 @@ The combined data set was examined to ensure validity. Minor alterations were ma
 ##################
 #write out the entire final product
 ##################
-amphib_dermal_collated <- combined_data4
+amphib_dermal_collated <- combined_data5
 #View(amphib_dermal_collated)
 colnames(amphib_dermal_collated)
 #check to see if everything ok

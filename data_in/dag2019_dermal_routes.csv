@@ -1,0 +1,193 @@
+Sample ID,Analyte,Media,Matrix,Concentration
+Bif LF W 1 F,BIF,Water,Amphibian,0.498690
+Bif LF W 2 F,BIF,Water,Amphibian,0.678046
+Bif LF W 3 F,BIF,Water,Amphibian,0.485876
+Bif LF W 4 F,BIF,Water,Amphibian,0.454753
+Bif LF W 5 F,BIF,Water,Amphibian,0.448733
+Bif LF W 6 F,BIF,Water,Amphibian,0.406398
+Bif LF W 7 F,BIF,Water,Amphibian,0.480391
+Bif LF W 8 F,BIF,Water,Amphibian,0.440856
+Bif LF S 1 F,BIF,Soil,Amphibian,0.108558
+Bif LF S 2 F,BIF,Soil,Amphibian,0.094022
+Bif LF S 3 F,BIF,Soil,Amphibian,0.114565
+Bif LF S 4 F,BIF,Soil,Amphibian,0.074500
+Bif LF S 5 F,BIF,Soil,Amphibian,0.095261
+Bif LF S 6 F,BIF,Soil,Amphibian,0.073592
+Bif LF S 7 F,BIF,Soil,Amphibian,0.082735
+Bif LF S 8 F,BIF,Soil,Amphibian,0.217679
+Bif LF W 1,BIF,Water,Water,0.303545
+Bif LF W 2,BIF,Water,Water,0.402658
+Bif LF W 3,BIF,Water,Water,0.255204
+Bif LF W 4,BIF,Water,Water,0.291741
+Bif LF W 5,BIF,Water,Water,0.458766
+Bif LF W 6,BIF,Water,Water,1.702596
+Bif LF W 7,BIF,Water,Water,0.230657
+Bif LF W 8,BIF,Water,Water,0.271464
+Bif LF S 1 S,BIF,Soil,Soil,0.338880
+Bif LF S 2 S,BIF,Soil,Soil,0.385833
+Bif LF S 3 S,BIF,Soil,Soil,0.354759
+Bif LF S 4 S,BIF,Soil,Soil,0.328681
+Bif LF S 5 S,BIF,Soil,Soil,0.286841
+Bif LF S 6 S,BIF,Soil,Soil,0.317522
+Bif LF S 7 S,BIF,Soil,Soil,0.248066
+Bif LF S 8 S,BIF,Soil,Soil,0.354871
+Bif LF W 1 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 2 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 3 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 4 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 5 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 6 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 7 F,4-OH,Water,Amphibian,0.000000
+Bif LF W 8 F,4-OH,Water,Amphibian,0.000000
+Bif LF S 1 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 2 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 3 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 4 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 5 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 6 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 7 F,4-OH,Soil,Amphibian,0.000000
+Bif LF S 8 F,4-OH,Soil,Amphibian,0.000000
+Bif LF W 1,4-OH,Water,Water,0.000000
+Bif LF W 2,4-OH,Water,Water,0.000000
+Bif LF W 3,4-OH,Water,Water,0.000000
+Bif LF W 4,4-OH,Water,Water,0.000000
+Bif LF W 5,4-OH,Water,Water,0.000000
+Bif LF W 6,4-OH,Water,Water,0.000000
+Bif LF W 7,4-OH,Water,Water,0.000000
+Bif LF W 8,4-OH,Water,Water,0.000000
+Bif LF S 1 S,4-OH,Soil,Soil,0.000000
+Bif LF S 2 S,4-OH,Soil,Soil,0.000000
+Bif LF S 3 S,4-OH,Soil,Soil,0.000000
+Bif LF S 4 S,4-OH,Soil,Soil,0.000000
+Bif LF S 5 S,4-OH,Soil,Soil,0.000000
+Bif LF S 6 S,4-OH,Soil,Soil,0.000000
+Bif LF S 7 S,4-OH,Soil,Soil,0.000000
+Bif LF S 8 S,4-OH,Soil,Soil,0.000000
+CPF LF W 1 F,CPF,Water,Amphibian,2.552117
+CPF LF W 2 F,CPF,Water,Amphibian,2.431775
+CPF LF W 3 F,CPF,Water,Amphibian,1.362499
+CPF LF W 4 F,CPF,Water,Amphibian,3.407591
+CPF LF W 5 F,CPF,Water,Amphibian,2.271116
+CPF LF W 6 F,CPF,Water,Amphibian,2.989373
+CPF LF W 7 F,CPF,Water,Amphibian,2.225277
+CPF LF W 8 F,CPF,Water,Amphibian,2.094264
+CPF LF S 1 F,CPF,Soil,Amphibian,0.930317
+CPF LF S 2 F,CPF,Soil,Amphibian,1.019965
+CPF LF S 3 F,CPF,Soil,Amphibian,0.346872
+CPF LF S 4 F,CPF,Soil,Amphibian,0.276119
+CPF LF S 5 F,CPF,Soil,Amphibian,0.538425
+CPF LF S 6 F,CPF,Soil,Amphibian,0.642246
+CPF LF S 7 F,CPF,Soil,Amphibian,0.881697
+CPF LF S 8 F,CPF,Soil,Amphibian,1.005704
+CPF LF W 1,CPF,Water,Water,0.821394
+CPF LF W 2,CPF,Water,Water,0.101853
+CPF LF W 3,CPF,Water,Water,0.196625
+CPF LF W 4 ,CPF,Water,Water,0.120165
+CPF LF W 5 ,CPF,Water,Water,0.186378
+CPF LF W 6,CPF,Water,Water,0.050508
+CPF LF W 7,CPF,Water,Water,0.027191
+CPF LF W 8,CPF,Water,Water,0.176252
+CPF LF S 1 S,CPF,Soil,Soil,0.279786
+CPF LF S 2 S,CPF,Soil,Soil,0.219906
+CPF LF S 3 S,CPF,Soil,Soil,0.280370
+CPF LF S 4 S,CPF,Soil,Soil,0.281528
+CPF LF S 5 S,CPF,Soil,Soil,0.140710
+CPF LF S 6 S,CPF,Soil,Soil,0.246053
+CPF LF S 7 S,CPF,Soil,Soil,0.224683
+CPF LF S 8 S,CPF,Soil,Soil,0.309254
+CPF LF W 1 F,CPO,Water,Amphibian,0.517003
+CPF LF W 2 F,CPO,Water,Amphibian,1.138863
+CPF LF W 3 F,CPO,Water,Amphibian,0.443913
+CPF LF W 4 F,CPO,Water,Amphibian,0.929431
+CPF LF W 5 F,CPO,Water,Amphibian,0.496910
+CPF LF W 6 F,CPO,Water,Amphibian,0.094086
+CPF LF W 7 F,CPO,Water,Amphibian,0.454692
+CPF LF W 8 F,CPO,Water,Amphibian,0.163654
+CPF LF S 1 F,CPO,Soil,Amphibian,0.587436
+CPF LF S 2 F,CPO,Soil,Amphibian,0.369563
+CPF LF S 3 F,CPO,Soil,Amphibian,0.056939
+CPF LF S 4 F,CPO,Soil,Amphibian,0.110725
+CPF LF S 5 F,CPO,Soil,Amphibian,0.261438
+CPF LF S 6 F,CPO,Soil,Amphibian,0.204444
+CPF LF S 7 F,CPO,Soil,Amphibian,0.263018
+CPF LF S 8 F,CPO,Soil,Amphibian,0.450673
+CPF LF W 1,CPO,Water,Water,0.000595
+CPF LF W 2,CPO,Water,Water,0.000628
+CPF LF W 3,CPO,Water,Water,0.000678
+CPF LF W 4 ,CPO,Water,Water,0.000796
+CPF LF W 5 ,CPO,Water,Water,0.000904
+CPF LF W 6,CPO,Water,Water,0.000378
+CPF LF W 7,CPO,Water,Water,0.000534
+CPF LF W 8,CPO,Water,Water,0.000750
+CPF LF S 1 S,CPO,Soil,Soil,0.000000
+CPF LF S 2 S,CPO,Soil,Soil,0.000000
+CPF LF S 3 S,CPO,Soil,Soil,0.000000
+CPF LF S 4 S,CPO,Soil,Soil,0.000000
+CPF LF S 5 S,CPO,Soil,Soil,0.000000
+CPF LF S 6 S,CPO,Soil,Soil,0.000000
+CPF LF S 7 S,CPO,Soil,Soil,0.000000
+CPF LF S 8 S,CPO,Soil,Soil,0.000000
+TFS LF W 1 F,TFS,Water,Amphibian,1.088973
+TFS LF W 2 F,TFS,Water,Amphibian,0.920253
+TFS LF W 3 F,TFS,Water,Amphibian,0.825126
+TFS LF W 4 F,TFS,Water,Amphibian,0.558139
+TFS LF W 5 F,TFS,Water,Amphibian,1.204228
+TFS LF W 6 F,TFS,Water,Amphibian,1.144802
+TFS LF W 7 F,TFS,Water,Amphibian,1.208225
+TFS LF W 8 F,TFS,Water,Amphibian,0.804023
+TFS LF S 1 F,TFS,Soil,Amphibian,0.089418
+TFS LF S 2 F,TFS,Soil,Amphibian,0.065756
+TFS LF S 3 F,TFS,Soil,Amphibian,0.111039
+TFS LF S 4 F,TFS,Soil,Amphibian,0.083720
+TFS LF S 5 F,TFS,Soil,Amphibian,0.129535
+TFS LF S 6 F,TFS,Soil,Amphibian,0.163043
+TFS LF S 7 F,TFS,Soil,Amphibian,0.194161
+TFS LF S 8 F,TFS,Soil,Amphibian,0.099954
+TFS W 1,TFS,Water,Water,0.473862
+TFS W 2,TFS,Water,Water,0.558377
+TFS W 3,TFS,Water,Water,0.515768
+TFS W 4,TFS,Water,Water,0.607907
+TFS W 5,TFS,Water,Water,0.508831
+TFS W 6,TFS,Water,Water,0.636739
+TFS W 7,TFS,Water,Water,0.483731
+TFS W 8,TFS,Water,Water,0.719117
+TFS LF S 1 S,TFS,Soil,Soil,0.343198
+TFS LF S 2 S,TFS,Soil,Soil,0.367461
+TFS LF S 3 S,TFS,Soil,Soil,0.251442
+TFS LF S 4 S,TFS,Soil,Soil,0.312696
+TFS LF S 5 S,TFS,Soil,Soil,0.143468
+TFS LF S 6 S,TFS,Soil,Soil,0.112500
+TFS LF S 7 S,TFS,Soil,Soil,0.266023
+TFS LF S 8 S,TFS,Soil,Soil,0.279262
+TFS LF W 1 F,TFSa,Water,Amphibian,0.086026
+TFS LF W 2 F,TFSa,Water,Amphibian,0.013512
+TFS LF W 3 F,TFSa,Water,Amphibian,0.024058
+TFS LF W 4 F,TFSa,Water,Amphibian,0.062523
+TFS LF W 5 F,TFSa,Water,Amphibian,0.117612
+TFS LF W 6 F,TFSa,Water,Amphibian,0.087122
+TFS LF W 7 F,TFSa,Water,Amphibian,0.027353
+TFS LF W 8 F,TFSa,Water,Amphibian,0.076472
+TFS LF S 1 F,TFSa,Soil,Amphibian,0.014689
+TFS LF S 2 F,TFSa,Soil,Amphibian,0.013626
+TFS LF S 3 F,TFSa,Soil,Amphibian,0.060937
+TFS LF S 4 F,TFSa,Soil,Amphibian,0.034151
+TFS LF S 5 F,TFSa,Soil,Amphibian,0.033646
+TFS LF S 6 F,TFSa,Soil,Amphibian,0.038102
+TFS LF S 7 F,TFSa,Soil,Amphibian,0.034946
+TFS LF S 8 F,TFSa,Soil,Amphibian,0.021155
+TFS W 1,TFSa,Water,Water,0.059920
+TFS W 2,TFSa,Water,Water,0.024103
+TFS W 3,TFSa,Water,Water,0.015738
+TFS W 4,TFSa,Water,Water,0.015797
+TFS W 5,TFSa,Water,Water,0.052864
+TFS W 6,TFSa,Water,Water,0.047104
+TFS W 7,TFSa,Water,Water,0.026797
+TFS W 8,TFSa,Water,Water,0.018854
+TFS LF S 1 S,TFSa,Soil,Soil,0.440779
+TFS LF S 2 S,TFSa,Soil,Soil,0.366355
+TFS LF S 3 S,TFSa,Soil,Soil,0.324877
+TFS LF S 4 S,TFSa,Soil,Soil,0.472948
+TFS LF S 5 S,TFSa,Soil,Soil,0.205205
+TFS LF S 6 S,TFSa,Soil,Soil,0.132417
+TFS LF S 7 S,TFSa,Soil,Soil,0.218434
+TFS LF S 8 S,TFSa,Soil,Soil,0.295067

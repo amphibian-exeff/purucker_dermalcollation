@@ -660,3 +660,188 @@
 "659",1.1e-06,"soil",0.5969,"fipronil",48,0,"fipronil_48hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.389202422
 "660",1.1e-06,"soil",0.9009,"fipronil",48,0,"fipronil_48hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.224047561
 "661",1.1e-06,"soil",0.5355,"fipronil",48,0,"fipronil_48hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.151268165
+"662",2.36e-05,"soil",0.9971,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",24.80672939
+"663",2.36e-05,"soil",1.2746,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",13.29249991
+"664",2.36e-05,"soil",1.3043,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",3.846909215
+"665",2.36e-05,"soil",1.4277,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",21.59188167
+"666",2.36e-05,"soil",1.6348,"ATZT",8,0,"ATZD_ATZT",NA,NA,"rvm2017","Rana_clamitans",4.398786764
+"667",2.36e-05,"soil",1.6593,"ATZT",8,0,"ATZPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",6.616713054
+"668",2.36e-05,"soil",1.686,"ATZT",8,0,"ATZD_ATZT",NA,NA,"rvm2017","Rana_clamitans",34.87420323
+"669",2.36e-05,"soil",1.6929,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",32.23101361
+"670",2.36e-05,"soil",1.7134,"ATZT",8,0,"ATZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",71.52121587
+"671",2.36e-05,"soil",1.7623,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",7.680368996
+"672",2.36e-05,"soil",1.766,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",4.105411726
+"673",2.36e-05,"soil",1.7687,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",23.76512465
+"674",2.36e-05,"soil",1.7856,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",17.55825611
+"675",2.36e-05,"soil",1.8136,"ATZT",8,0,"ATZME_ATZT",NA,NA,"rvm2017","Rana_clamitans",20.35015638
+"676",2.36e-05,"soil",1.8167,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",19.04559785
+"677",2.36e-05,"soil",1.8523,"ATZT",8,0,"ATZME_ATZT",NA,NA,"rvm2017","Rana_clamitans",20.57274567
+"678",2.36e-05,"soil",1.8649,"ATZT",8,0,"ATZME_ATZT",NA,NA,"rvm2017","Rana_clamitans",1.22063448
+"679",2.36e-05,"soil",1.8822,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",4.144203168
+"680",2.36e-05,"soil",1.9827,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",7.289789952
+"681",2.36e-05,"soil",2.0136,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",17.23251263
+"682",2.36e-05,"soil",2.0137,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",27.68256624
+"683",2.36e-05,"soil",2.0332,"ATZT",8,0,"ATZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",19.38292403
+"684",2.36e-05,"soil",2.0948,"ATZT",8,0,"ATZD_ATZT",NA,NA,"rvm2017","Rana_clamitans",5.783764403
+"685",2.36e-05,"soil",2.0979,"ATZT",8,0,"ATZME_ATZT",NA,NA,"rvm2017","Rana_clamitans",23.94075151
+"686",2.36e-05,"soil",2.1559,"ATZT",8,0,"ATZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",6.776429551
+"687",2.36e-05,"soil",2.1582,"ATZT",8,0,"ATZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",42.67128214
+"688",2.36e-05,"soil",2.2087,"ATZT",8,0,"ATZD_ATZT",NA,NA,"rvm2017","Rana_clamitans",30.38948929
+"689",2.36e-05,"soil",2.2353,"ATZT",8,0,"ATZPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",3.641157326
+"690",2.36e-05,"soil",2.2402,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",3.945905477
+"691",2.36e-05,"soil",2.2464,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",18.0828639
+"692",2.36e-05,"soil",2.4907,"ATZT",8,0,"ATZME_ATZT",NA,NA,"rvm2017","Rana_clamitans",40.42981243
+"693",2.36e-05,"soil",2.5341,"ATZT",8,0,"ATZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",25.08110461
+"694",2.36e-05,"soil",2.6348,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",12.22164293
+"695",2.36e-05,"soil",2.7419,"ATZT",8,0,"ATZME_ATZT",NA,NA,"rvm2017","Rana_clamitans",10.6958582
+"696",2.36e-05,"soil",2.7643,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",72.62672175
+"697",2.36e-05,"soil",2.8407,"ATZT",8,0,"ATZD_ATZT",NA,NA,"rvm2017","Rana_clamitans",25.49430275
+"698",2.36e-05,"soil",2.8777,"ATZT",8,0,"ATZPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",20.27148844
+"699",2.36e-05,"soil",3.0233,"ATZT",8,0,"ATZPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",6.459787124
+"700",2.36e-05,"soil",3.4314,"ATZT",8,0,"ATZPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",5.347041009
+"701",2.36e-05,"soil",3.5113,"ATZT",8,0,"ATZPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",13.26923261
+"702",2.36e-05,"soil",3.5987,"ATZT",8,0,"ATZD_ATZT",NA,NA,"rvm2017","Rana_clamitans",0.079700165
+"703",2.36e-05,"soil",3.6843,"ATZT",8,0,"ATZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",25.87712484
+"704",1.43e-05,"soil",0.9634,"DT",8,0,"MED_DT",NA,NA,"rvm2017","Rana_clamitans",0.050444413
+"705",1.43e-05,"soil",0.9971,"DT",8,0,"ATZMED_DT",NA,NA,"rvm2017","Rana_clamitans",0.104347435
+"706",1.43e-05,"soil",1.5863,"DT",8,0,"MED_DT",NA,NA,"rvm2017","Rana_clamitans",0.02218048
+"707",1.43e-05,"soil",1.6197,"DT",8,0,"MED_DT",NA,NA,"rvm2017","Rana_clamitans",0.080271609
+"708",1.43e-05,"soil",1.6348,"DT",8,0,"ATZD_DT",NA,NA,"rvm2017","Rana_clamitans",0.043914438
+"709",1.43e-05,"soil",1.6688,"DT",8,0,"D_DT",NA,NA,"rvm2017","Rana_clamitans",0.160589466
+"710",1.43e-05,"soil",1.686,"DT",8,0,"ATZD_DT",NA,NA,"rvm2017","Rana_clamitans",0.111429034
+"711",1.43e-05,"soil",1.6929,"DT",8,0,"ATZMED_DT",NA,NA,"rvm2017","Rana_clamitans",0.165951211
+"712",1.43e-05,"soil",1.7687,"DT",8,0,"ATZMED_DT",NA,NA,"rvm2017","Rana_clamitans",0.156953688
+"713",1.43e-05,"soil",1.7835,"DT",8,0,"D_DT",NA,NA,"rvm2017","Rana_clamitans",0.055846327
+"714",1.43e-05,"soil",1.8205,"DT",8,0,"MED_DT",NA,NA,"rvm2017","Rana_clamitans",0.036982547
+"715",1.43e-05,"soil",1.9682,"DT",8,0,"D_DT",NA,NA,"rvm2017","Rana_clamitans",0.009126477
+"716",1.43e-05,"soil",2.0136,"DT",8,0,"ATZMED_DT",NA,NA,"rvm2017","Rana_clamitans",0.262662032
+"717",1.43e-05,"soil",2.0942,"DT",8,0,"D_DT",NA,NA,"rvm2017","Rana_clamitans",0.0364
+"718",1.43e-05,"soil",2.0948,"DT",8,0,"ATZD_DT",NA,NA,"rvm2017","Rana_clamitans",0.156297393
+"719",1.43e-05,"soil",2.2087,"DT",8,0,"ATZD_DT",NA,NA,"rvm2017","Rana_clamitans",0.135238827
+"720",1.43e-05,"soil",2.2402,"DT",8,0,"ATZMED_DT",NA,NA,"rvm2017","Rana_clamitans",0.38456094
+"721",1.43e-05,"soil",2.2634,"DT",8,0,"MED_DT",NA,NA,"rvm2017","Rana_clamitans",0.086351225
+"722",1.43e-05,"soil",2.2984,"DT",8,0,"MED_DT",NA,NA,"rvm2017","Rana_clamitans",0.078111813
+"723",1.43e-05,"soil",2.541,"DT",8,0,"D_DT",NA,NA,"rvm2017","Rana_clamitans",0.039291826
+"724",1.43e-05,"soil",2.6828,"DT",8,0,"D_DT",NA,NA,"rvm2017","Rana_clamitans",0.141821902
+"725",1.43e-05,"soil",2.7643,"DT",8,0,"ATZMED_DT",NA,NA,"rvm2017","Rana_clamitans",0.076429258
+"726",1.43e-05,"soil",2.8407,"DT",8,0,"ATZD_DT",NA,NA,"rvm2017","Rana_clamitans",0.275763099
+"727",2.59e-05,"soil",1.2746,"MAT",8,0,"ATZMA_MAT",NA,NA,"rvm2017","Rana_clamitans",1.104790883
+"728",2.59e-05,"soil",1.3043,"MAT",8,0,"ATZMAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",1.067061599
+"729",2.59e-05,"soil",1.4277,"MAT",8,0,"ATZMAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",0.465758248
+"730",2.59e-05,"soil",1.7623,"MAT",8,0,"ATZMAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",3.417440919
+"731",2.59e-05,"soil",1.766,"MAT",8,0,"ATZMA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.300451872
+"732",2.59e-05,"soil",1.7856,"MAT",8,0,"ATZMAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",2.513366509
+"733",2.59e-05,"soil",1.7896,"MAT",8,0,"MAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",0.432463641
+"734",2.59e-05,"soil",1.8155,"MAT",8,0,"MA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.284731883
+"735",2.59e-05,"soil",1.8167,"MAT",8,0,"ATZMA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.890422935
+"736",2.59e-05,"soil",1.822,"MAT",8,0,"MAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",0.252248141
+"737",2.59e-05,"soil",1.8822,"MAT",8,0,"ATZMAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",13.42028218
+"738",2.59e-05,"soil",1.9827,"MAT",8,0,"ATZMA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.188357852
+"739",2.59e-05,"soil",2.0002,"MAT",8,0,"MA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.401201109
+"740",2.59e-05,"soil",2.0137,"MAT",8,0,"ATZMA_MAT",NA,NA,"rvm2017","Rana_clamitans",6.064364174
+"741",2.59e-05,"soil",2.0876,"MAT",8,0,"MAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",0.279045154
+"742",2.59e-05,"soil",2.0931,"MAT",8,0,"MA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.653088188
+"743",2.59e-05,"soil",2.1656,"MAT",8,0,"MAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",1.410094829
+"744",2.59e-05,"soil",2.2464,"MAT",8,0,"ATZMA_MAT",NA,NA,"rvm2017","Rana_clamitans",2.008416532
+"745",2.59e-05,"soil",2.2664,"MAT",8,0,"MA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.14012427
+"746",2.59e-05,"soil",2.3087,"MAT",8,0,"MAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",0.699286298
+"747",2.59e-05,"soil",2.4281,"MAT",8,0,"MA_MAT",NA,NA,"rvm2017","Rana_clamitans",0.255474657
+"748",2.59e-05,"soil",2.6348,"MAT",8,0,"ATZMAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",0.146541193
+"749",2.59e-05,"soil",2.897,"MAT",8,0,"MA_MAT",NA,NA,"rvm2017","Rana_clamitans",2.335542663
+"750",2.59e-05,"soil",4.0141,"MAT",8,0,"MAPZ_MAT",NA,NA,"rvm2017","Rana_clamitans",1.896347283
+"751",3.09e-05,"soil",0.9634,"MET",8,0,"MED_MET",NA,NA,"rvm2017","Rana_clamitans",0.662223621
+"752",3.09e-05,"soil",0.9971,"MET",8,0,"ATZMED_MET",NA,NA,"rvm2017","Rana_clamitans",7.203617706
+"753",3.09e-05,"soil",1.1019,"MET",8,0,"ME_MET",NA,NA,"rvm2017","Rana_clamitans",4.795233731
+"754",3.09e-05,"soil",1.2846,"MET",8,0,"ME_MET",NA,NA,"rvm2017","Rana_clamitans",8.053698309
+"755",3.09e-05,"soil",1.2984,"MET",8,0,"ME_MET",NA,NA,"rvm2017","Rana_clamitans",1.930289923
+"756",3.09e-05,"soil",1.5863,"MET",8,0,"MED_MET",NA,NA,"rvm2017","Rana_clamitans",1.337994897
+"757",3.09e-05,"soil",1.6197,"MET",8,0,"MED_MET",NA,NA,"rvm2017","Rana_clamitans",0.724555439
+"758",3.09e-05,"soil",1.6929,"MET",8,0,"ATZMED_MET",NA,NA,"rvm2017","Rana_clamitans",10.44074438
+"759",3.09e-05,"soil",1.7687,"MET",8,0,"ATZMED_MET",NA,NA,"rvm2017","Rana_clamitans",9.950841611
+"760",3.09e-05,"soil",1.8136,"MET",8,0,"ATZME_MET",NA,NA,"rvm2017","Rana_clamitans",12.43368085
+"761",3.09e-05,"soil",1.8205,"MET",8,0,"MED_MET",NA,NA,"rvm2017","Rana_clamitans",1.761326684
+"762",3.09e-05,"soil",1.8523,"MET",8,0,"ATZME_MET",NA,NA,"rvm2017","Rana_clamitans",6.907670877
+"763",3.09e-05,"soil",1.8649,"MET",8,0,"ATZME_MET",NA,NA,"rvm2017","Rana_clamitans",0.149639783
+"764",3.09e-05,"soil",2.0136,"MET",8,0,"ATZMED_MET",NA,NA,"rvm2017","Rana_clamitans",11.13214931
+"765",3.09e-05,"soil",2.0979,"MET",8,0,"ATZME_MET",NA,NA,"rvm2017","Rana_clamitans",18.90724611
+"766",3.09e-05,"soil",2.2402,"MET",8,0,"ATZMED_MET",NA,NA,"rvm2017","Rana_clamitans",16.86405718
+"767",3.09e-05,"soil",2.2634,"MET",8,0,"MED_MET",NA,NA,"rvm2017","Rana_clamitans",0.508831642
+"768",3.09e-05,"soil",2.2984,"MET",8,0,"MED_MET",NA,NA,"rvm2017","Rana_clamitans",5.026680818
+"769",3.09e-05,"soil",2.4907,"MET",8,0,"ATZME_MET",NA,NA,"rvm2017","Rana_clamitans",20.39940997
+"770",3.09e-05,"soil",2.4927,"MET",8,0,"ME_MET",NA,NA,"rvm2017","Rana_clamitans",8.198402807
+"771",3.09e-05,"soil",2.6159,"MET",8,0,"ME_MET",NA,NA,"rvm2017","Rana_clamitans",2.17788472
+"772",3.09e-05,"soil",2.7419,"MET",8,0,"ATZME_MET",NA,NA,"rvm2017","Rana_clamitans",1.776787088
+"773",3.09e-05,"soil",2.7643,"MET",8,0,"ATZMED_MET",NA,NA,"rvm2017","Rana_clamitans",0.931411968
+"774",3.09e-05,"soil",2.9835,"MET",8,0,"ME_MET",NA,NA,"rvm2017","Rana_clamitans",0.81982627
+"775",2.6e-06,"soil",1.1879,"PROPT",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.285562211
+"776",2.6e-06,"soil",1.3043,"PROPT",8,0,"ATZMAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.826026215
+"777",2.6e-06,"soil",1.4277,"PROPT",8,0,"ATZMAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.729029923
+"778",2.6e-06,"soil",1.6593,"PROPT",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.759930247
+"779",2.6e-06,"soil",1.7623,"PROPT",8,0,"ATZMAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",2.330295203
+"780",2.6e-06,"soil",1.7856,"PROPT",8,0,"ATZMAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",1.269632524
+"781",2.6e-06,"soil",1.7896,"PROPT",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.328610724
+"782",2.6e-06,"soil",1.822,"PROPT",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.251331918
+"783",2.6e-06,"soil",1.8822,"PROPT",8,0,"ATZMAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",1.951847538
+"784",2.6e-06,"soil",1.9545,"PROPT",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.247443503
+"785",2.6e-06,"soil",1.998,"PROPT",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.375235724
+"786",2.6e-06,"soil",2.0876,"PROPT",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.277662174
+"787",2.6e-06,"soil",2.1656,"PROPT",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.618946465
+"788",2.6e-06,"soil",2.2353,"PROPT",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.205578453
+"789",2.6e-06,"soil",2.3087,"PROPT",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.305997543
+"790",2.6e-06,"soil",2.3395,"PROPT",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.139716725
+"791",2.6e-06,"soil",2.6348,"PROPT",8,0,"ATZMAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.423424017
+"792",2.6e-06,"soil",2.8777,"PROPT",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",1.438248563
+"793",2.6e-06,"soil",2.8816,"PROPT",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.380895431
+"794",2.6e-06,"soil",3.0233,"PROPT",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.314333427
+"795",2.6e-06,"soil",3.4314,"PROPT",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.177311228
+"796",2.6e-06,"soil",3.5113,"PROPT",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",1.481646981
+"797",2.6e-06,"soil",3.9973,"PROPT",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.000537811
+"798",2.6e-06,"soil",4.0141,"PROPT",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.723961607
+"799",NA,"soil",1.313,"4-OH",8,0,"Bif LF S 1 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"800",NA,"soil",1.313,"BIF",8,0,"Bif LF S 1 F",0.33888,"OLS","dag_dermal_routes","Leopard frog",0.108558
+"801",NA,"soil",2.2547,"4-OH",8,0,"Bif LF S 2 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"802",NA,"soil",2.2547,"BIF",8,0,"Bif LF S 2 F",0.385833,"OLS","dag_dermal_routes","Leopard frog",0.094022
+"803",NA,"soil",1.3741,"4-OH",8,0,"Bif LF S 3 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"804",NA,"soil",1.3741,"BIF",8,0,"Bif LF S 3 F",0.354759,"OLS","dag_dermal_routes","Leopard frog",0.114565
+"805",NA,"soil",2.37,"4-OH",8,0,"Bif LF S 4 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"806",NA,"soil",2.37,"BIF",8,0,"Bif LF S 4 F",0.328681,"OLS","dag_dermal_routes","Leopard frog",0.0745
+"807",NA,"soil",1.915,"4-OH",8,0,"Bif LF S 5 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"808",NA,"soil",1.915,"BIF",8,0,"Bif LF S 5 F",0.286841,"OLS","dag_dermal_routes","Leopard frog",0.095261
+"809",NA,"soil",2.2342,"4-OH",8,0,"Bif LF S 6 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"810",NA,"soil",2.2342,"BIF",8,0,"Bif LF S 6 F",0.317522,"OLS","dag_dermal_routes","Leopard frog",0.073592
+"811",NA,"soil",2.0466,"4-OH",8,0,"Bif LF S 7 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"812",NA,"soil",2.0466,"BIF",8,0,"Bif LF S 7 F",0.248066,"OLS","dag_dermal_routes","Leopard frog",0.082735
+"813",NA,"soil",1.4359,"4-OH",8,0,"Bif LF S 8 F",0,"OLS","dag_dermal_routes","Leopard frog",0
+"814",NA,"soil",1.4359,"BIF",8,0,"Bif LF S 8 F",0.354871,"OLS","dag_dermal_routes","Leopard frog",0.217679
+"815",NA,"soil",1.92467,"CPF",8,0,"CPF LF S 1 F",0.279786,"OLS","dag_dermal_routes","Leopard frog",0.930317
+"816",NA,"soil",1.92467,"CPO",8,0,"CPF LF S 1 F",0,"OLS","dag_dermal_routes","Leopard frog",0.587436
+"817",NA,"soil",2.35063,"CPF",8,0,"CPF LF S 2 F",0.219906,"OLS","dag_dermal_routes","Leopard frog",1.019965
+"818",NA,"soil",2.35063,"CPO",8,0,"CPF LF S 2 F",0,"OLS","dag_dermal_routes","Leopard frog",0.369563
+"819",NA,"soil",1.74634,"CPF",8,0,"CPF LF S 3 F",0.28037,"OLS","dag_dermal_routes","Leopard frog",0.346872
+"820",NA,"soil",1.74634,"CPO",8,0,"CPF LF S 3 F",0,"OLS","dag_dermal_routes","Leopard frog",0.056939
+"821",NA,"soil",1.21391,"CPF",8,0,"CPF LF S 4 F",0.281528,"OLS","dag_dermal_routes","Leopard frog",0.276119
+"822",NA,"soil",1.21391,"CPO",8,0,"CPF LF S 4 F",0,"OLS","dag_dermal_routes","Leopard frog",0.110725
+"823",NA,"soil",1.61425,"CPF",8,0,"CPF LF S 5 F",0.14071,"OLS","dag_dermal_routes","Leopard frog",0.538425
+"824",NA,"soil",1.61425,"CPO",8,0,"CPF LF S 5 F",0,"OLS","dag_dermal_routes","Leopard frog",0.261438
+"825",NA,"soil",1.10899,"CPF",8,0,"CPF LF S 6 F",0.246053,"OLS","dag_dermal_routes","Leopard frog",0.642246
+"826",NA,"soil",1.10899,"CPO",8,0,"CPF LF S 6 F",0,"OLS","dag_dermal_routes","Leopard frog",0.204444
+"827",NA,"soil",2.06684,"CPF",8,0,"CPF LF S 7 F",0.224683,"OLS","dag_dermal_routes","Leopard frog",0.881697
+"828",NA,"soil",2.06684,"CPO",8,0,"CPF LF S 7 F",0,"OLS","dag_dermal_routes","Leopard frog",0.263018
+"829",NA,"soil",2.81971,"CPF",8,0,"CPF LF S 8 F",0.309254,"OLS","dag_dermal_routes","Leopard frog",1.005704
+"830",NA,"soil",2.81971,"CPO",8,0,"CPF LF S 8 F",0,"OLS","dag_dermal_routes","Leopard frog",0.450673
+"831",NA,"soil",2.43309,"TFS",8,0,"TFS LF S 1 F",0.343198,"OLS","dag_dermal_routes","Leopard frog",0.089418
+"832",NA,"soil",2.43309,"TFSa",8,0,"TFS LF S 1 F",0.440779,"OLS","dag_dermal_routes","Leopard frog",0.014689
+"833",NA,"soil",1.82782,"TFS",8,0,"TFS LF S 2 F",0.367461,"OLS","dag_dermal_routes","Leopard frog",0.065756
+"834",NA,"soil",1.82782,"TFSa",8,0,"TFS LF S 2 F",0.366355,"OLS","dag_dermal_routes","Leopard frog",0.013626
+"835",NA,"soil",1.15759,"TFS",8,0,"TFS LF S 3 F",0.251442,"OLS","dag_dermal_routes","Leopard frog",0.111039
+"836",NA,"soil",1.15759,"TFSa",8,0,"TFS LF S 3 F",0.324877,"OLS","dag_dermal_routes","Leopard frog",0.060937
+"837",NA,"soil",1.61034,"TFS",8,0,"TFS LF S 4 F",0.312696,"OLS","dag_dermal_routes","Leopard frog",0.08372
+"838",NA,"soil",1.61034,"TFSa",8,0,"TFS LF S 4 F",0.472948,"OLS","dag_dermal_routes","Leopard frog",0.034151
+"839",NA,"soil",2.02866,"TFS",8,0,"TFS LF S 5 F",0.143468,"OLS","dag_dermal_routes","Leopard frog",0.129535
+"840",NA,"soil",2.02866,"TFSa",8,0,"TFS LF S 5 F",0.205205,"OLS","dag_dermal_routes","Leopard frog",0.033646
+"841",NA,"soil",1.56956,"TFS",8,0,"TFS LF S 6 F",0.1125,"OLS","dag_dermal_routes","Leopard frog",0.163043
+"842",NA,"soil",1.56956,"TFSa",8,0,"TFS LF S 6 F",0.132417,"OLS","dag_dermal_routes","Leopard frog",0.038102
+"843",NA,"soil",2.13002,"TFS",8,0,"TFS LF S 7 F",0.266023,"OLS","dag_dermal_routes","Leopard frog",0.194161
+"844",NA,"soil",2.13002,"TFSa",8,0,"TFS LF S 7 F",0.218434,"OLS","dag_dermal_routes","Leopard frog",0.034946
+"845",NA,"soil",1.80722,"TFS",8,0,"TFS LF S 8 F",0.279262,"OLS","dag_dermal_routes","Leopard frog",0.099954
+"846",NA,"soil",1.80722,"TFSa",8,0,"TFS LF S 8 F",0.295067,"OLS","dag_dermal_routes","Leopard frog",0.021155

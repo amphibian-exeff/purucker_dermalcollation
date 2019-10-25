@@ -291,306 +291,306 @@
 "290",6.98e-05,"Indirect",16.3062,"Pendi",8,1,"1_6_C",5.135481376,"OLS","rvm2016","American toad",1.277680298
 "291",6.98e-05,"Indirect",11.3268,"Pendi",8,1,"1_6_G",8.871930181,"OLS","rvm2016","American toad",1.648936582
 "292",6.98e-05,"Indirect",10.2275,"Pendi",8,1,"1_7_I",14.06687759,"OLS","rvm2016","American toad",1.540378381
-"293",2.395e-05,"Indirect",1.8401,"atrazine",8,0,"LFA0-1",10.28385855,"PLE","dag_dehydration","LF",2.579782807
-"294",2.395e-05,"Indirect",2.8486,"atrazine",8,0,"LFA0-2",10.04358875,"PLE","dag_dehydration","LF",1.691182353
-"295",2.395e-05,"Indirect",2.307,"atrazine",8,0,"LFA0-3",10.18871524,"PLE","dag_dehydration","LF",12.52319717
-"296",2.395e-05,"Indirect",2.2679,"atrazine",8,0,"LFA0-4",9.401012307,"PLE","dag_dehydration","LF",2.970273811
-"297",2.395e-05,"Indirect",2.1439,"atrazine",8,0,"LFA0-5",9.516150521,"PLE","dag_dehydration","LF",8.050942336
-"298",2.395e-05,"Indirect",1.8628,"atrazine",8,0,"LFA0-6",9.708402094,"PLE","dag_dehydration","LF",7.478230678
-"299",2.395e-05,"Indirect",3.039,"atrazine",8,0,"LFA2-1",9.403882995,"PLE","dag_dehydration","LF",2.186808836
-"300",2.395e-05,"Indirect",2.0345,"atrazine",8,0,"LFA2-2",12.1209408,"PLE","dag_dehydration","LF",5.338854395
-"301",2.395e-05,"Indirect",2.196,"atrazine",8,0,"LFA2-3",9.820321561,"PLE","dag_dehydration","LF",1.693429589
-"302",2.395e-05,"Indirect",2.6681,"atrazine",8,0,"LFA2-4",13.65865567,"PLE","dag_dehydration","LF",8.968187875
-"303",2.395e-05,"Indirect",2.3648,"atrazine",8,0,"LFA2-5",13.82500689,"PLE","dag_dehydration","LF",1.454206808
-"304",2.395e-05,"Indirect",1.9188,"atrazine",8,0,"LFA2-6",6.981617026,"PLE","dag_dehydration","LF",1.718054357
-"305",2.395e-05,"Indirect",2.3476,"atrazine",8,0,"LFA4-1",8.71398867,"PLE","dag_dehydration","LF",1.715569485
-"306",2.395e-05,"Indirect",2.6426,"atrazine",8,0,"LFA4-2",10.31826446,"PLE","dag_dehydration","LF",6.984378843
-"307",2.395e-05,"Indirect",2.4232,"atrazine",8,0,"LFA4-3",9.424200962,"PLE","dag_dehydration","LF",6.344470461
-"308",2.395e-05,"Indirect",2.445,"atrazine",8,0,"LFA4-4",8.210686345,"PLE","dag_dehydration","LF",5.22674822
-"309",2.395e-05,"Indirect",2.948,"atrazine",8,0,"LFA4-5",12.47499464,"PLE","dag_dehydration","LF",6.179038725
-"310",2.395e-05,"Indirect",1.6108,"atrazine",8,0,"LFA4-6",17.10511501,"PLE","dag_dehydration","LF",6.938256641
-"311",2.395e-05,"Indirect",2.1958,"atrazine",8,0,"LFA6-1",15.28179321,"PLE","dag_dehydration","LF",10.56528408
-"312",2.395e-05,"Indirect",1.2869,"atrazine",8,0,"LFA6-2",15.71271657,"PLE","dag_dehydration","LF",3.335388968
-"313",2.395e-05,"Indirect",2.1608,"atrazine",8,0,"LFA6-3",9.706286223,"PLE","dag_dehydration","LF",2.457491841
-"314",2.395e-05,"Indirect",1.6483,"atrazine",8,0,"LFA6-4",16.37966534,"PLE","dag_dehydration","LF",3.983431248
-"315",2.395e-05,"Indirect",1.8843,"atrazine",8,0,"LFA6-5",10.61265033,"PLE","dag_dehydration","LF",2.391884077
-"316",2.395e-05,"Indirect",2.469,"atrazine",8,0,"LFA6-6",12.59011285,"PLE","dag_dehydration","LF",11.18965486
-"317",2.395e-05,"Indirect",3.1323,"atrazine",8,0,"LFA8-1",12.46770392,"PLE","dag_dehydration","LF",2.162953353
-"318",2.395e-05,"Indirect",2.2558,"atrazine",8,0,"LFA8-2",10.90836606,"PLE","dag_dehydration","LF",1.650446686
-"319",2.395e-05,"Indirect",1.446,"atrazine",8,0,"LFA8-3",13.47173605,"PLE","dag_dehydration","LF",6.76940713
-"320",2.395e-05,"Indirect",2.0923,"atrazine",8,0,"LFA8-4",10.84867262,"PLE","dag_dehydration","LF",6.916300496
-"321",2.395e-05,"Indirect",2.1607,"atrazine",8,0,"LFA8-5",9.786848989,"PLE","dag_dehydration","LF",5.647878305
-"322",2.395e-05,"Indirect",1.8342,"atrazine",8,0,"LFA8-6",12.68276321,"PLE","dag_dehydration","LF",5.714846427
-"323",2.395e-05,"Indirect",2.4663,"atrazine",8,0,"LFA10-1",7.717010983,"PLE","dag_dehydration","LF",3.480676652
-"324",2.395e-05,"Indirect",2.0268,"atrazine",8,0,"LFA10-2",9.412734091,"PLE","dag_dehydration","LF",1.886771004
-"325",2.395e-05,"Indirect",2.2651,"atrazine",8,0,"LFA10-3",12.23989264,"PLE","dag_dehydration","LF",10.2979071
-"326",2.395e-05,"Indirect",2.3059,"atrazine",8,0,"LFA10-4",11.84987009,"PLE","dag_dehydration","LF",8.724901716
-"327",2.395e-05,"Indirect",2.2861,"atrazine",8,0,"LFA10-5",8.395562665,"PLE","dag_dehydration","LF",1.892744068
-"328",2.395e-05,"Indirect",2.2728,"atrazine",8,0,"LFA10-6",7.01665685,"PLE","dag_dehydration","LF",3.632494432
-"329",4.43e-05,"Indirect",2.9374,"chloro+d",8,0,"LFCl0-1",97.54771792,"PLE","dag_dehydration","LF",0.049534914
-"330",4.43e-05,"Indirect",3.6896,"chloro+d",8,0,"LFCl0-2",105.2068112,"PLE","dag_dehydration","LF",0.09431606
-"331",4.43e-05,"Indirect",2.5049,"chloro+d",8,0,"LFCl0-3",104.0471325,"PLE","dag_dehydration","LF",0.065894674
-"332",4.43e-05,"Indirect",3.0961,"chloro+d",8,0,"LFCl0-4",87.83391191,"PLE","dag_dehydration","LF",0.066735354
-"333",4.43e-05,"Indirect",3.3543,"chloro+d",8,0,"LFCl0-5",85.2705886,"PLE","dag_dehydration","LF",0.05459792
-"334",4.43e-05,"Indirect",2.9449,"chloro+d",8,0,"LFCl0-6",110.2800296,"PLE","dag_dehydration","LF",0.110663384
-"335",4.43e-05,"Indirect",2.982,"chloro+d",8,0,"LFCl2-1",124.7136025,"PLE","dag_dehydration","LF",0.034119313
-"336",4.43e-05,"Indirect",1.1766,"chloro+d",8,0,"LFCl2-2",93.83616294,"PLE","dag_dehydration","LF",0.137711222
-"337",4.43e-05,"Indirect",2.5677,"chloro+d",8,0,"LFCl2-3",131.9151605,"PLE","dag_dehydration","LF",0.038844494
-"338",4.43e-05,"Indirect",3.9146,"chloro+d",8,0,"LFCl2-4",238.150189,"PLE","dag_dehydration","LF",0.034159045
-"339",4.43e-05,"Indirect",2.4102,"chloro+d",8,0,"LFCl2-5",126.1421937,"PLE","dag_dehydration","LF",0.189112734
-"340",4.43e-05,"Indirect",2.5335,"chloro+d",8,0,"LFCl2-6",93.01431818,"PLE","dag_dehydration","LF",0.073108651
-"341",4.43e-05,"Indirect",2.1336,"chloro+d",8,0,"LFCl4-1",54.02956223,"PLE","dag_dehydration","LF",0.046410221
-"342",4.43e-05,"Indirect",1.3477,"chloro+d",8,0,"LFCl4-2",83.94471454,"PLE","dag_dehydration","LF",0.054321653
-"343",4.43e-05,"Indirect",1.9212,"chloro+d",8,0,"LFCl4-3",95.16597984,"PLE","dag_dehydration","LF",0.047421024
-"344",4.43e-05,"Indirect",2.2279,"chloro+d",8,0,"LFCl4-4",108.8411455,"PLE","dag_dehydration","LF",0.077330002
-"345",4.43e-05,"Indirect",1.2642,"chloro+d",8,0,"LFCl4-5",107.8351603,"PLE","dag_dehydration","LF",0.061659489
-"346",4.43e-05,"Indirect",2.5177,"chloro+d",8,0,"LFCl4-6",112.551148,"PLE","dag_dehydration","LF",0.075510303
-"347",4.43e-05,"Indirect",2.6744,"chloro+d",8,0,"LFCl6-1",103.9346865,"PLE","dag_dehydration","LF",0.027463652
-"348",4.43e-05,"Indirect",1.9014,"chloro+d",8,0,"LFCl6-2",133.1324122,"PLE","dag_dehydration","LF",0.051562219
-"349",4.43e-05,"Indirect",1.8824,"chloro+d",8,0,"LFCl6-3",177.201436,"PLE","dag_dehydration","LF",0.177693722
-"350",4.43e-05,"Indirect",2.5356,"chloro+d",8,0,"LFCl6-4",80.2864709,"PLE","dag_dehydration","LF",0.029626977
-"351",4.43e-05,"Indirect",1.9125,"chloro+d",8,0,"LFCl6-5",107.9943699,"PLE","dag_dehydration","LF",0.040356887
-"352",4.43e-05,"Indirect",1.6813,"chloro+d",8,0,"LFCl6-6",75.82071048,"PLE","dag_dehydration","LF",0.048697065
-"353",4.43e-05,"Indirect",3.1849,"chloro+d",8,0,"LFCl8-1",98.34669015,"PLE","dag_dehydration","LF",0.100520033
-"354",4.43e-05,"Indirect",2.1473,"chloro+d",8,0,"LFCl8-2",55.30487111,"PLE","dag_dehydration","LF",0.066249062
-"355",4.43e-05,"Indirect",1.5919,"chloro+d",8,0,"LFCl8-3",68.31816412,"PLE","dag_dehydration","LF",0.135997717
-"356",4.43e-05,"Indirect",1.8071,"chloro+d",8,0,"LFCl8-4",77.37304664,"PLE","dag_dehydration","LF",0.086171947
-"357",4.43e-05,"Indirect",1.8675,"chloro+d",8,0,"LFCl8-5",86.4407278,"PLE","dag_dehydration","LF",0.039905604
-"358",4.43e-05,"Indirect",2.3422,"chloro+d",8,0,"LFCl8-6",134.219346,"PLE","dag_dehydration","LF",0.07148401
-"359",4.43e-05,"Indirect",2.8692,"chloro+d",8,0,"LFCl10-1",102.4324273,"PLE","dag_dehydration","LF",0.026595904
-"360",4.43e-05,"Indirect",2.2261,"chloro+d",8,0,"LFCl10-2",56.13699941,"PLE","dag_dehydration","LF",0.033621317
-"361",4.43e-05,"Indirect",3.3763,"chloro+d",8,0,"LFCl10-3",149.7004603,"PLE","dag_dehydration","LF",0.027361678
-"362",4.43e-05,"Indirect",2.3394,"chloro+d",8,0,"LFCl10-4",69.83049,"PLE","dag_dehydration","LF",0.034005049
-"363",4.43e-05,"Indirect",2.4226,"chloro+d",8,0,"LFCl10-5",51.56836737,"PLE","dag_dehydration","LF",0.074157011
-"364",4.43e-05,"Indirect",2.5262,"chloro+d",8,0,"LFCl10-6",114.5675617,"PLE","dag_dehydration","LF",0.032016276
-"365",3.101e-05,"Indirect",1.6635,"metol",8,0,"LFM0-1",40.64853462,"PLE","dag_dehydration","LF",4.267677087
-"366",3.101e-05,"Indirect",2.0778,"metol",8,0,"LFM0-2",48.47519919,"PLE","dag_dehydration","LF",5.721956829
-"367",3.101e-05,"Indirect",2.593,"metol",8,0,"LFM0-3",41.79217276,"PLE","dag_dehydration","LF",1.748897837
-"368",3.101e-05,"Indirect",2.8358,"metol",8,0,"LFM0-4",24.38427683,"PLE","dag_dehydration","LF",0.806456941
-"369",3.101e-05,"Indirect",1.8572,"metol",8,0,"LFM0-5",77.00037621,"PLE","dag_dehydration","LF",10.63925511
-"370",3.101e-05,"Indirect",1.121,"metol",8,0,"LFM0-6",48.49721515,"PLE","dag_dehydration","LF",3.688639048
-"371",3.101e-05,"Indirect",2.2456,"metol",8,0,"LFM2-1",21.427727,"PLE","dag_dehydration","LF",1.640306185
-"372",3.101e-05,"Indirect",2.4944,"metol",8,0,"LFM2-2",25.33585131,"PLE","dag_dehydration","LF",5.639864337
-"373",3.101e-05,"Indirect",2.5987,"metol",8,0,"LFM2-3",22.98479209,"PLE","dag_dehydration","LF",0.985224834
-"374",3.101e-05,"Indirect",2.0734,"metol",8,0,"LFM2-4",28.23363196,"PLE","dag_dehydration","LF",1.159396793
-"375",3.101e-05,"Indirect",1.9886,"metol",8,0,"LFM2-5",27.78584836,"PLE","dag_dehydration","LF",2.57235133
-"376",3.101e-05,"Indirect",2.7615,"metol",8,0,"LFM2-6",25.00006343,"PLE","dag_dehydration","LF",3.19002649
-"377",3.101e-05,"Indirect",1.8156,"metol",8,0,"LFM4-1",19.25500126,"PLE","dag_dehydration","LF",2.3898984
-"378",3.101e-05,"Indirect",3.0818,"metol",8,0,"LFM4-2",25.00425435,"PLE","dag_dehydration","LF",1.780858408
-"379",3.101e-05,"Indirect",2.8691,"metol",8,0,"LFM4-3",16.93924625,"PLE","dag_dehydration","LF",1.08822026
-"380",3.101e-05,"Indirect",2.2879,"metol",8,0,"LFM4-4",19.02585998,"PLE","dag_dehydration","LF",1.829340286
-"381",3.101e-05,"Indirect",2.746,"metol",8,0,"LFM4-5",30.3513881,"PLE","dag_dehydration","LF",2.345929412
-"382",3.101e-05,"Indirect",2.2357,"metol",8,0,"LFM4-6",23.64525737,"PLE","dag_dehydration","LF",5.291092536
-"383",3.101e-05,"Indirect",2.9968,"metol",8,0,"LFM6-1",16.91928433,"PLE","dag_dehydration","LF",2.100173605
-"384",3.101e-05,"Indirect",2.5795,"metol",8,0,"LFM6-2",22.04401189,"PLE","dag_dehydration","LF",1.114810193
-"385",3.101e-05,"Indirect",2.5535,"metol",8,0,"LFM6-3",23.36243329,"PLE","dag_dehydration","LF",1.378698045
-"386",3.101e-05,"Indirect",1.8,"metol",8,0,"LFM6-4",23.06676914,"PLE","dag_dehydration","LF",2.253704813
-"387",3.101e-05,"Indirect",2.2348,"metol",8,0,"LFM6-5",24.42190264,"PLE","dag_dehydration","LF",5.376753972
-"388",3.101e-05,"Indirect",1.7367,"metol",8,0,"LFM6-6",21.24319583,"PLE","dag_dehydration","LF",1.702141197
-"389",3.101e-05,"Indirect",2.8781,"metol",8,0,"LFM8-1",18.25491609,"PLE","dag_dehydration","LF",1.181846159
-"390",3.101e-05,"Indirect",3.0126,"metol",8,0,"LFM8-2",20.24836634,"PLE","dag_dehydration","LF",0.746445245
-"391",3.101e-05,"Indirect",2.2216,"metol",8,0,"LFM8-3",21.33112732,"PLE","dag_dehydration","LF",6.060241405
-"392",3.101e-05,"Indirect",2.076,"metol",8,0,"LFM8-4",24.93070926,"PLE","dag_dehydration","LF",3.979074337
-"393",3.101e-05,"Indirect",1.7311,"metol",8,0,"LFM8-5",21.60699195,"PLE","dag_dehydration","LF",0.90171309
-"394",3.101e-05,"Indirect",2.016,"metol",8,0,"LFM8-6",30.64444223,"PLE","dag_dehydration","LF",3.452448894
-"395",3.101e-05,"Indirect",2.0918,"metol",8,0,"LFM10-1",12.49664326,"PLE","dag_dehydration","LF",1.574839899
-"396",3.101e-05,"Indirect",1.8813,"metol",8,0,"LFM10-2",29.0739971,"PLE","dag_dehydration","LF",1.123669198
-"397",3.101e-05,"Indirect",2.2104,"metol",8,0,"LFM10-3",26.60999165,"PLE","dag_dehydration","LF",2.558654328
-"398",3.101e-05,"Indirect",3.201,"metol",8,0,"LFM10-4",18.22540327,"PLE","dag_dehydration","LF",1.949552248
-"399",3.101e-05,"Indirect",2.6894,"metol",8,0,"LFM10-5",25.62284834,"PLE","dag_dehydration","LF",2.179127319
-"400",3.101e-05,"Indirect",2.3257,"metol",8,0,"LFM10-6",18.37523411,"PLE","dag_dehydration","LF",1.130277738
-"401",2.91e-06,"Indirect",2.2852,"tdn",8,0,"LFT0-1",4.130434828,"PLE","dag_dehydration","LF",0.930939899
-"402",2.91e-06,"Indirect",2.0488,"tdn",8,0,"LFT0-2",2.985716329,"PLE","dag_dehydration","LF",1.471139657
-"403",2.91e-06,"Indirect",1.764,"tdn",8,0,"LFT0-3",1.642733275,"PLE","dag_dehydration","LF",0.829340824
-"404",2.91e-06,"Indirect",1.52467,"tdn",8,0,"LFT0-4",2.414613283,"PLE","dag_dehydration","LF",0.833541754
-"405",2.91e-06,"Indirect",1.1919,"tdn",8,0,"LFT0-5",5.771808013,"PLE","dag_dehydration","LF",0.62294824
-"406",2.91e-06,"Indirect",2.5988,"tdn",8,0,"LFT0-6",1.937626035,"PLE","dag_dehydration","LF",0.78432732
-"407",2.91e-06,"Indirect",1.2971,"tdn",8,0,"LFT2-1",2.271520449,"PLE","dag_dehydration","LF",1.110827258
-"408",2.91e-06,"Indirect",1.7873,"tdn",8,0,"LFT2-2",4.918286446,"PLE","dag_dehydration","LF",0.723150994
-"409",2.91e-06,"Indirect",2.1663,"tdn",8,0,"LFT2-3",5.681194498,"PLE","dag_dehydration","LF",0.72766123
-"410",2.91e-06,"Indirect",2.631,"tdn",8,0,"LFT2-4",3.706855988,"PLE","dag_dehydration","LF",0.680213893
-"411",2.91e-06,"Indirect",1.7103,"tdn",8,0,"LFT2-5",7.040172007,"PLE","dag_dehydration","LF",1.064277918
-"412",2.91e-06,"Indirect",1.8285,"tdn",8,0,"LFT2-6",5.554855056,"PLE","dag_dehydration","LF",0.368484816
-"413",2.91e-06,"Indirect",1.5065,"tdn",8,0,"LFT4-1",2.032910322,"PLE","dag_dehydration","LF",0.635182857
-"414",2.91e-06,"Indirect",1.5337,"tdn",8,0,"LFT4-2",4.664332334,"PLE","dag_dehydration","LF",0.572624649
-"415",2.91e-06,"Indirect",1.842,"tdn",8,0,"LFT4-3",2.734473466,"PLE","dag_dehydration","LF",0.504992098
-"416",2.91e-06,"Indirect",1.5188,"tdn",8,0,"LFT4-4",2.622252408,"PLE","dag_dehydration","LF",0.46549435
-"417",2.91e-06,"Indirect",2.1926,"tdn",8,0,"LFT4-5",4.132548212,"PLE","dag_dehydration","LF",0.509286041
-"418",2.91e-06,"Indirect",1.6119,"tdn",8,0,"LFT4-6",3.806634854,"PLE","dag_dehydration","LF",0.284854462
-"419",2.91e-06,"Indirect",1.5704,"tdn",8,0,"LFT6-1",4.202597231,"PLE","dag_dehydration","LF",0.62355419
-"420",2.91e-06,"Indirect",1.6677,"tdn",8,0,"LFT6-2",4.502512043,"PLE","dag_dehydration","LF",0.938534356
-"421",2.91e-06,"Indirect",2.5715,"tdn",8,0,"LFT6-3",2.790064544,"PLE","dag_dehydration","LF",0.959499205
-"422",2.91e-06,"Indirect",2.3475,"tdn",8,0,"LFT6-4",3.966455208,"PLE","dag_dehydration","LF",0.910419362
-"423",2.91e-06,"Indirect",1.4964,"tdn",8,0,"LFT6-5",2.731170077,"PLE","dag_dehydration","LF",0.867963913
-"424",2.91e-06,"Indirect",2.0291,"tdn",8,0,"LFT6-6",3.617116849,"PLE","dag_dehydration","LF",0.734727511
-"425",2.91e-06,"Indirect",2.7226,"tdn",8,0,"LFT8-1",3.153568431,"PLE","dag_dehydration","LF",0.613327957
-"426",2.91e-06,"Indirect",2.5539,"tdn",8,0,"LFT8-2",4.090939835,"PLE","dag_dehydration","LF",0.411175415
-"427",2.91e-06,"Indirect",1.7762,"tdn",8,0,"LFT8-3",4.910453014,"PLE","dag_dehydration","LF",0.200725621
-"428",2.91e-06,"Indirect",1.649,"tdn",8,0,"LFT8-4",3.7801442,"PLE","dag_dehydration","LF",0.284065308
-"429",2.91e-06,"Indirect",1.0845,"tdn",8,0,"LFT8-5",4.037190801,"PLE","dag_dehydration","LF",1.106344271
-"430",2.91e-06,"Indirect",1.7104,"tdn",8,0,"LFT8-6",2.929395097,"PLE","dag_dehydration","LF",0.710860385
-"431",2.91e-06,"Indirect",0.9303,"tdn",8,0,"LFT10-1",3.532352552,"PLE","dag_dehydration","LF",0.41777656
-"432",2.91e-06,"Indirect",1.3548,"tdn",8,0,"LFT10-2",2.533600442,"PLE","dag_dehydration","LF",0.60216825
-"433",2.91e-06,"Indirect",1.9138,"tdn",8,0,"LFT10-3",2.598936796,"PLE","dag_dehydration","LF",0.560831784
-"434",2.91e-06,"Indirect",2.1421,"tdn",8,0,"LFT10-4",2.560020486,"PLE","dag_dehydration","LF",0.687153909
-"435",2.91e-06,"Indirect",1.5553,"tdn",8,0,"LFT10-5",3.946266825,"PLE","dag_dehydration","LF",0.654064226
-"436",2.91e-06,"Indirect",1.4596,"tdn",8,0,"LFT10-6",2.772104224,"PLE","dag_dehydration","LF",0.489223561
-"437",5.39e-06,"Indirect",1.2582,"imid",8,0,"LFI0-1",0.796630992,"PLE","dag_dehydration","LF",0.73148169
-"438",5.39e-06,"Indirect",1.8819,"imid",8,0,"LFI0-2",0.73091969,"PLE","dag_dehydration","LF",1.058790605
-"439",5.39e-06,"Indirect",1.0559,"imid",8,0,"LFI0-3",1.951106685,"PLE","dag_dehydration","LF",0.729321829
-"440",5.39e-06,"Indirect",1.8364,"imid",8,0,"LFI0-4",1.440136114,"PLE","dag_dehydration","LF",0.813666458
-"441",5.39e-06,"Indirect",1.0553,"imid",8,0,"LFI0-5",1.070180372,"PLE","dag_dehydration","LF",0.607467098
-"442",5.39e-06,"Indirect",1.2669,"imid",8,0,"LFI0-6",0.872011851,"PLE","dag_dehydration","LF",0.588522987
-"443",5.39e-06,"Indirect",1.3821,"imid",8,0,"LFI2-1",2.471016152,"PLE","dag_dehydration","LF",0.378511527
-"444",5.39e-06,"Indirect",2.0607,"imid",8,0,"LFI2-2",1.977314477,"PLE","dag_dehydration","LF",0.515549221
-"445",5.39e-06,"Indirect",2.613,"imid",8,0,"LFI2-3",1.728533516,"PLE","dag_dehydration","LF",0.247500973
-"446",5.39e-06,"Indirect",1.1331,"imid",8,0,"LFI2-4",0.687118856,"PLE","dag_dehydration","LF",0.706206114
-"447",5.39e-06,"Indirect",1.7318,"imid",8,0,"LFI2-5",0.578877665,"PLE","dag_dehydration","LF",0.245622417
-"448",5.39e-06,"Indirect",1.3617,"imid",8,0,"LFI2-6",1.906194111,"PLE","dag_dehydration","LF",0.393655166
-"449",5.39e-06,"Indirect",1.4804,"imid",8,0,"LFI4-1",0.208026343,"PLE","dag_dehydration","LF",0.326749679
-"450",5.39e-06,"Indirect",2.2314,"imid",8,0,"LFI4-2",1.64100778,"PLE","dag_dehydration","LF",0.356860152
-"451",5.39e-06,"Indirect",1.9358,"imid",8,0,"LFI4-3",0.555449529,"PLE","dag_dehydration","LF",1.073747665
-"452",5.39e-06,"Indirect",1.5865,"imid",8,0,"LFI4-4",0.608288865,"PLE","dag_dehydration","LF",1.269010141
-"453",5.39e-06,"Indirect",1.262,"imid",8,0,"LFI4-5",1.606632646,"PLE","dag_dehydration","LF",0.377722198
-"454",5.39e-06,"Indirect",1.6033,"imid",8,0,"LFI4-6",0.201720786,"PLE","dag_dehydration","LF",0.55755347
-"455",5.39e-06,"Indirect",2.912,"imid",8,0,"LFI6-1",0.879358614,"PLE","dag_dehydration","LF",0.10171172
-"456",5.39e-06,"Indirect",1.7892,"imid",8,0,"LFI6-2",0.655219548,"PLE","dag_dehydration","LF",0.65112938
-"457",5.39e-06,"Indirect",3.7094,"imid",8,0,"LFI6-3",0.207025856,"PLE","dag_dehydration","LF",0.476857989
-"458",5.39e-06,"Indirect",3.1881,"imid",8,0,"LFI6-4",0.871009475,"PLE","dag_dehydration","LF",0.325613627
-"459",5.39e-06,"Indirect",1.6021,"imid",8,0,"LFI6-5",0.839527548,"PLE","dag_dehydration","LF",0.246360764
-"460",5.39e-06,"Indirect",1.8193,"imid",8,0,"LFI6-6",0.631287079,"PLE","dag_dehydration","LF",1.581594004
-"461",5.39e-06,"Indirect",2.0296,"imid",8,0,"LFI8-1",1.958668613,"PLE","dag_dehydration","LF",0.692484167
-"462",5.39e-06,"Indirect",1.7363,"imid",8,0,"LFI8-2",0.934646981,"PLE","dag_dehydration","LF",0.424924938
-"463",5.39e-06,"Indirect",2.1186,"imid",8,0,"LFI8-3",0.846438989,"PLE","dag_dehydration","LF",0.5739569
-"464",5.39e-06,"Indirect",1.6878,"imid",8,0,"LFI8-4",0.321096879,"PLE","dag_dehydration","LF",0.204579215
-"465",5.39e-06,"Indirect",1.0083,"imid",8,0,"LFI8-5",0.689399455,"PLE","dag_dehydration","LF",0.484179759
-"466",5.39e-06,"Indirect",1.8333,"imid",8,0,"LFI8-6",0.566227325,"PLE","dag_dehydration","LF",0.405938147
-"467",5.39e-06,"Indirect",1.5084,"imid",8,0,"LFI10-1",0.945309838,"PLE","dag_dehydration","LF",0.405218407
-"468",5.39e-06,"Indirect",1.5497,"imid",8,0,"LFI10-2",1.292096809,"PLE","dag_dehydration","LF",0.601787596
-"469",5.39e-06,"Indirect",1.8833,"imid",8,0,"LFI10-3",0.660569341,"PLE","dag_dehydration","LF",0.501054316
-"470",5.39e-06,"Indirect",1.4135,"imid",8,0,"LFI10-4",0.60830659,"PLE","dag_dehydration","LF",0.630482061
-"471",5.39e-06,"Indirect",2.1209,"imid",8,0,"LFI10-5",0.209484252,"PLE","dag_dehydration","LF",0.338901353
-"472",5.39e-06,"Indirect",2.1168,"imid",8,0,"LFI10-6",1.037851792,"PLE","dag_dehydration","LF",0.2421998
-"473",2.395e-05,"Indirect",0.9129,"atrazine",8,0,"BAA0-1",9.879328906,"PLE","dag_dehydration","BA",5.570048564
-"474",2.395e-05,"Indirect",0.7719,"atrazine",8,0,"BAA0-2",12.45547599,"PLE","dag_dehydration","BA",17.59483119
-"475",2.395e-05,"Indirect",1.07,"atrazine",8,0,"BAA0-3",15.57844561,"PLE","dag_dehydration","BA",3.074205015
-"476",2.395e-05,"Indirect",1.5079,"atrazine",8,0,"BAA0-4",15.1520148,"PLE","dag_dehydration","BA",15.89886245
-"477",2.395e-05,"Indirect",0.9096,"atrazine",8,0,"BAA0-5",14.6984202,"PLE","dag_dehydration","BA",9.78279894
-"478",2.395e-05,"Indirect",1.1548,"atrazine",8,0,"BAA2-1",12.38453564,"PLE","dag_dehydration","BA",10.23753505
-"479",2.395e-05,"Indirect",0.9611,"atrazine",8,0,"BAA2-2",14.63994466,"PLE","dag_dehydration","BA",23.52791046
-"480",2.395e-05,"Indirect",1.0618,"atrazine",8,0,"BAA2-3",13.03487815,"PLE","dag_dehydration","BA",9.934344481
-"481",2.395e-05,"Indirect",0.9384,"atrazine",8,0,"BAA2-4",14.11139006,"PLE","dag_dehydration","BA",16.28574707
-"482",2.395e-05,"Indirect",1.1748,"atrazine",8,0,"BAA2-5",15.33431537,"PLE","dag_dehydration","BA",13.26608122
-"483",2.395e-05,"Indirect",1.1869,"atrazine",8,0,"BAA4-1",15.56081571,"PLE","dag_dehydration","BA",11.91207694
-"484",2.395e-05,"Indirect",0.9488,"atrazine",8,0,"BAA4-2",11.04392922,"PLE","dag_dehydration","BA",8.377167028
-"485",2.395e-05,"Indirect",1.1718,"atrazine",8,0,"BAA4-3",15.21711265,"PLE","dag_dehydration","BA",6.954592123
-"486",2.395e-05,"Indirect",1.2243,"atrazine",8,0,"BAA4-4",15.6599606,"PLE","dag_dehydration","BA",16.17456476
-"487",2.395e-05,"Indirect",1.1315,"atrazine",8,0,"BAA4-5",17.6440279,"PLE","dag_dehydration","BA",11.13571587
-"488",2.395e-05,"Indirect",1.1552,"atrazine",8,0,"BAA6-1",13.38816703,"PLE","dag_dehydration","BA",2.757883195
-"489",2.395e-05,"Indirect",1.2815,"atrazine",8,0,"BAA6-2",11.681079,"PLE","dag_dehydration","BA",12.22026175
-"490",2.395e-05,"Indirect",1.0089,"atrazine",8,0,"BAA6-3",15.18962201,"PLE","dag_dehydration","BA",11.20688617
-"491",2.395e-05,"Indirect",1.2956,"atrazine",8,0,"BAA6-4",9.038038715,"PLE","dag_dehydration","BA",6.405223668
-"492",2.395e-05,"Indirect",1.0139,"atrazine",8,0,"BAA6-5",10.67586793,"PLE","dag_dehydration","BA",3.694084956
-"493",2.395e-05,"Indirect",1.0626,"atrazine",8,0,"BAA8-1",15.04668736,"PLE","dag_dehydration","BA",2.159341322
-"494",2.395e-05,"Indirect",1.132,"atrazine",8,0,"BAA8-2",14.11458967,"PLE","dag_dehydration","BA",4.104816901
-"495",2.395e-05,"Indirect",0.9895,"atrazine",8,0,"BAA8-3",9.505611335,"PLE","dag_dehydration","BA",3.707013001
-"496",2.395e-05,"Indirect",1.1003,"atrazine",8,0,"BAA8-4",11.64743641,"PLE","dag_dehydration","BA",20.84894976
-"497",2.395e-05,"Indirect",0.9161,"atrazine",8,0,"BAA8-5",10.16095762,"PLE","dag_dehydration","BA",2.737473998
-"498",2.395e-05,"Indirect",1.2022,"atrazine",8,0,"BAA10-1",20.47418687,"PLE","dag_dehydration","BA",11.79072742
-"499",2.395e-05,"Indirect",1.13031,"atrazine",8,0,"BAA10-2",9.68353939,"PLE","dag_dehydration","BA",2.638235074
-"500",2.395e-05,"Indirect",1.0534,"atrazine",8,0,"BAA10-3",14.40605967,"PLE","dag_dehydration","BA",2.416921895
-"501",2.395e-05,"Indirect",1.0954,"atrazine",8,0,"BAA10-4",18.9224483,"PLE","dag_dehydration","BA",3.137873235
-"502",2.395e-05,"Indirect",1.1421,"atrazine",8,0,"BAA10-5",11.49634553,"PLE","dag_dehydration","BA",1.920017022
-"503",4.43e-05,"Indirect",0.9583,"chloro+d",8,0,"BACl0-1",57.75651281,"PLE","dag_dehydration","BA",0.073700244
-"504",4.43e-05,"Indirect",0.8457,"chloro+d",8,0,"BACl0-2",102.3188471,"PLE","dag_dehydration","BA",0.109722213
-"505",4.43e-05,"Indirect",0.8989,"chloro+d",8,0,"BACl0-3",65.01196356,"PLE","dag_dehydration","BA",0.078574387
-"506",4.43e-05,"Indirect",0.8843,"chloro+d",8,0,"BACl0-4",57.35048527,"PLE","dag_dehydration","BA",0.079830754
-"507",4.43e-05,"Indirect",0.7097,"chloro+d",8,0,"BACl0-5",46.51376561,"PLE","dag_dehydration","BA",0.099619209
-"508",4.43e-05,"Indirect",1.0144,"chloro+d",8,0,"BACl2-1",33.60251806,"PLE","dag_dehydration","BA",0.072874896
-"509",4.43e-05,"Indirect",0.821,"chloro+d",8,0,"BACl2-2",59.29310488,"PLE","dag_dehydration","BA",0.086024643
-"510",4.43e-05,"Indirect",0.7943,"chloro+d",8,0,"BACl2-3",64.92323527,"PLE","dag_dehydration","BA",0.092374798
-"511",4.43e-05,"Indirect",1.0888,"chloro+d",8,0,"BACl2-4",31.45650376,"PLE","dag_dehydration","BA",0.064846902
-"512",4.43e-05,"Indirect",0.8102,"chloro+d",8,0,"BACl2-5",61.33280569,"PLE","dag_dehydration","BA",0.087298087
-"513",4.43e-05,"Indirect",0.8993,"chloro+d",8,0,"BACl4-1",60.42139433,"PLE","dag_dehydration","BA",0.085652238
-"514",4.43e-05,"Indirect",0.8614,"chloro+d",8,0,"BACl4-2",47.39084331,"PLE","dag_dehydration","BA",0.081921027
-"515",4.43e-05,"Indirect",0.6821,"chloro+d",8,0,"BACl4-3",53.53514586,"PLE","dag_dehydration","BA",0.103593147
-"516",4.43e-05,"Indirect",0.7524,"chloro+d",8,0,"BACl4-4",55.85180318,"PLE","dag_dehydration","BA",0.093831051
-"517",4.43e-05,"Indirect",1.098,"chloro+d",8,0,"BACl4-5",67.77044045,"PLE","dag_dehydration","BA",0.066360019
-"518",4.43e-05,"Indirect",0.9994,"chloro+d",8,0,"BACl6-1",33.86589381,"PLE","dag_dehydration","BA",0.07063984
-"519",4.43e-05,"Indirect",0.9878,"chloro+d",8,0,"BACl6-2",24.53526169,"PLE","dag_dehydration","BA",0.07145105
-"520",4.43e-05,"Indirect",0.9357,"chloro+d",8,0,"BACl6-3",71.16072307,"PLE","dag_dehydration","BA",0.089348773
-"521",4.43e-05,"Indirect",0.8934,"chloro+d",8,0,"BACl6-4",48.43648594,"PLE","dag_dehydration","BA",0.079091411
-"522",4.43e-05,"Indirect",1.0993,"chloro+d",8,0,"BACl6-5",33.49242945,"PLE","dag_dehydration","BA",0.143725039
-"523",4.43e-05,"Indirect",1.0066,"chloro+d",8,0,"BACl8-1",52.62528479,"PLE","dag_dehydration","BA",0.070210759
-"524",4.43e-05,"Indirect",0.9629,"chloro+d",8,0,"BACl8-2",37.1844573,"PLE","dag_dehydration","BA",0.073540839
-"525",4.43e-05,"Indirect",1.4069,"chloro+d",8,0,"BACl8-3",73.57869825,"PLE","dag_dehydration","BA",0.050197187
-"526",4.43e-05,"Indirect",1.1711,"chloro+d",8,0,"BACl8-4",74.75923468,"PLE","dag_dehydration","BA",0.088529318
-"527",4.43e-05,"Indirect",0.9393,"chloro+d",8,0,"BACl8-5",83.98589503,"PLE","dag_dehydration","BA",0.075353305
-"528",4.43e-05,"Indirect",1.3103,"chloro+d",8,0,"BACl10-1",38.25020684,"PLE","dag_dehydration","BA",0.053909403
-"529",4.43e-05,"Indirect",1.0264,"chloro+d",8,0,"BACl10-2",56.72626138,"PLE","dag_dehydration","BA",0.06896551
-"530",4.43e-05,"Indirect",1.1206,"chloro+d",8,0,"BACl10-3",68.01386873,"PLE","dag_dehydration","BA",0.063794163
-"531",4.43e-05,"Indirect",1.0174,"chloro+d",8,0,"BACl10-4",102.5827354,"PLE","dag_dehydration","BA",0.07005052
-"532",4.43e-05,"Indirect",1.2458,"chloro+d",8,0,"BACl10-5",79.54975475,"PLE","dag_dehydration","BA",0.057094309
-"533",3.101e-05,"Indirect",0.7276,"metol",8,0,"BAM0-1",24.61731819,"PLE","dag_dehydration","BA",2.931282055
-"534",3.101e-05,"Indirect",0.8474,"metol",8,0,"BAM0-2",21.3388881,"PLE","dag_dehydration","BA",0.347103824
-"535",3.101e-05,"Indirect",0.8754,"metol",8,0,"BAM0-3",21.93039744,"PLE","dag_dehydration","BA",0.747111843
-"536",3.101e-05,"Indirect",0.8769,"metol",8,0,"BAM0-4",22.93092162,"PLE","dag_dehydration","BA",1.458126997
-"537",3.101e-05,"Indirect",1.1394,"metol",8,0,"BAM0-5",16.69841723,"PLE","dag_dehydration","BA",0.842005182
-"538",3.101e-05,"Indirect",0.8325,"metol",8,0,"BAM2-1",21.78269156,"PLE","dag_dehydration","BA",2.479837754
-"539",3.101e-05,"Indirect",0.9548,"metol",8,0,"BAM2-2",30.13938696,"PLE","dag_dehydration","BA",0.390457959
-"540",3.101e-05,"Indirect",1.0286,"metol",8,0,"BAM2-3",22.89913875,"PLE","dag_dehydration","BA",4.602085515
-"541",3.101e-05,"Indirect",1.0815,"metol",8,0,"BAM2-4",15.50951631,"PLE","dag_dehydration","BA",16.00337772
-"542",3.101e-05,"Indirect",0.9169,"metol",8,0,"BAM2-5",22.61379371,"PLE","dag_dehydration","BA",1.76131318
-"543",3.101e-05,"Indirect",0.7677,"metol",8,0,"BAM4-1",18.84383325,"PLE","dag_dehydration","BA",0.649917011
-"544",3.101e-05,"Indirect",0.7978,"metol",8,0,"BAM4-2",18.89979206,"PLE","dag_dehydration","BA",7.808781543
-"545",3.101e-05,"Indirect",0.8958,"metol",8,0,"BAM4-3",16.48638399,"PLE","dag_dehydration","BA",3.96665148
-"546",3.101e-05,"Indirect",1.0415,"metol",8,0,"BAM4-4",18.69187814,"PLE","dag_dehydration","BA",1.54276093
-"547",3.101e-05,"Indirect",0.8499,"metol",8,0,"BAM4-5",21.78738591,"PLE","dag_dehydration","BA",3.211494858
-"548",3.101e-05,"Indirect",0.9489,"metol",8,0,"BAM6-1",19.7286363,"PLE","dag_dehydration","BA",2.189307645
-"549",3.101e-05,"Indirect",1.0449,"metol",8,0,"BAM6-2",19.84548436,"PLE","dag_dehydration","BA",3.779128738
-"550",3.101e-05,"Indirect",1.095,"metol",8,0,"BAM6-3",18.30042699,"PLE","dag_dehydration","BA",1.181637111
-"551",3.101e-05,"Indirect",1.0956,"metol",8,0,"BAM6-4",21.61340567,"PLE","dag_dehydration","BA",2.372274856
-"552",3.101e-05,"Indirect",0.9067,"metol",8,0,"BAM6-5",34.53939533,"PLE","dag_dehydration","BA",1.347353954
-"553",3.101e-05,"Indirect",0.8966,"metol",8,0,"BAM8-1",21.17580719,"PLE","dag_dehydration","BA",3.302635326
-"554",3.101e-05,"Indirect",0.7619,"metol",8,0,"BAM8-2",24.81521768,"PLE","dag_dehydration","BA",2.478218461
-"555",3.101e-05,"Indirect",0.8689,"metol",8,0,"BAM8-3",17.06118215,"PLE","dag_dehydration","BA",0.477943521
-"556",3.101e-05,"Indirect",1.1094,"metol",8,0,"BAM8-4",19.10055727,"PLE","dag_dehydration","BA",2.62816273
-"557",3.101e-05,"Indirect",0.9821,"metol",8,0,"BAM8-5",20.51550224,"PLE","dag_dehydration","BA",1.469074059
-"558",3.101e-05,"Indirect",1.0263,"metol",8,0,"BAM10-1",22.5379891,"PLE","dag_dehydration","BA",3.784805012
-"559",3.101e-05,"Indirect",0.9157,"metol",8,0,"BAM10-2",18.45842534,"PLE","dag_dehydration","BA",0.178266663
-"560",3.101e-05,"Indirect",1.2425,"metol",8,0,"BAM10-3",17.64342834,"PLE","dag_dehydration","BA",0.83816974
-"561",3.101e-05,"Indirect",1.3226,"metol",8,0,"BAM10-4",25.49063619,"PLE","dag_dehydration","BA",2.909853436
-"562",3.101e-05,"Indirect",1.0177,"metol",8,0,"BAM10-5",13.50246957,"PLE","dag_dehydration","BA",3.06875616
-"563",2.91e-06,"Indirect",0.8584,"tdn",8,0,"BAT0-1",4.623967642,"PLE","dag_dehydration","BA",0.705452479
-"564",2.91e-06,"Indirect",0.8488,"tdn",8,0,"BAT0-2",4.576445003,"PLE","dag_dehydration","BA",0.234413969
-"565",2.91e-06,"Indirect",0.9955,"tdn",8,0,"BAT0-3",4.945654456,"PLE","dag_dehydration","BA",0.579612536
-"566",2.91e-06,"Indirect",1.0281,"tdn",8,0,"BAT0-4",2.883188373,"PLE","dag_dehydration","BA",0.355740799
-"567",2.91e-06,"Indirect",1.1097,"tdn",8,0,"BAT0-5",3.813555416,"PLE","dag_dehydration","BA",0.656741344
-"568",2.91e-06,"Indirect",1.2155,"tdn",8,0,"BAT2-1",4.002153511,"PLE","dag_dehydration","BA",0.67893805
-"569",2.91e-06,"Indirect",0.8175,"tdn",8,0,"BAT2-2",4.565613817,"PLE","dag_dehydration","BA",1.101694818
-"570",2.91e-06,"Indirect",0.851,"tdn",8,0,"BAT2-3",3.940878794,"PLE","dag_dehydration","BA",0.471731541
-"571",2.91e-06,"Indirect",1.0826,"tdn",8,0,"BAT2-4",3.048173056,"PLE","dag_dehydration","BA",0.355762936
-"572",2.91e-06,"Indirect",0.8654,"tdn",8,0,"BAT2-5",2.12684801,"PLE","dag_dehydration","BA",0.356340814
-"573",2.91e-06,"Indirect",1.0271,"tdn",8,0,"BAT4-1",6.019197262,"PLE","dag_dehydration","BA",1.070383806
-"574",2.91e-06,"Indirect",0.8715,"tdn",8,0,"BAT4-2",3.720045765,"PLE","dag_dehydration","BA",0.681923819
-"575",2.91e-06,"Indirect",1.2942,"tdn",8,0,"BAT4-3",3.940413307,"PLE","dag_dehydration","BA",1.020881176
-"576",2.91e-06,"Indirect",1.1198,"tdn",8,0,"BAT4-4",5.296550596,"PLE","dag_dehydration","BA",0.509585728
-"577",2.91e-06,"Indirect",1.1049,"tdn",8,0,"BAT4-5",6.945352858,"PLE","dag_dehydration","BA",3.217423384
-"578",2.91e-06,"Indirect",0.7637,"tdn",8,0,"BAT6-1",3.602278375,"PLE","dag_dehydration","BA",0.286638101
-"579",2.91e-06,"Indirect",1.0612,"tdn",8,0,"BAT6-2",3.750249506,"PLE","dag_dehydration","BA",0.294702812
-"580",2.91e-06,"Indirect",0.8935,"tdn",8,0,"BAT6-3",6.322726358,"PLE","dag_dehydration","BA",0.386336954
-"581",2.91e-06,"Indirect",1.2336,"tdn",8,0,"BAT6-4",4.897593016,"PLE","dag_dehydration","BA",0.440267136
-"582",2.91e-06,"Indirect",1.2775,"tdn",8,0,"BAT6-5",4.591640691,"PLE","dag_dehydration","BA",0.569826956
-"583",2.91e-06,"Indirect",0.8524,"tdn",8,0,"BAT8-1",5.459072604,"PLE","dag_dehydration","BA",0.556191253
-"584",2.91e-06,"Indirect",0.9142,"tdn",8,0,"BAT8-2",4.507937226,"PLE","dag_dehydration","BA",0.432994464
-"585",2.91e-06,"Indirect",1.1256,"tdn",8,0,"BAT8-3",5.011321534,"PLE","dag_dehydration","BA",0.676020901
-"586",2.91e-06,"Indirect",1.0474,"tdn",8,0,"BAT8-4",3.31837221,"PLE","dag_dehydration","BA",0.75550304
-"587",2.91e-06,"Indirect",0.8709,"tdn",8,0,"BAT8-5",5.387182037,"PLE","dag_dehydration","BA",0.264939632
-"588",2.91e-06,"Indirect",1.0839,"tdn",8,0,"BAT10-1",4.821906293,"PLE","dag_dehydration","BA",0.761585411
-"589",2.91e-06,"Indirect",1.007,"tdn",8,0,"BAT10-2",3.750142848,"PLE","dag_dehydration","BA",0.227798267
-"590",2.91e-06,"Indirect",1.2054,"tdn",8,0,"BAT10-3",3.640657566,"PLE","dag_dehydration","BA",0.722003836
-"591",2.91e-06,"Indirect",0.9862,"tdn",8,0,"BAT10-4",3.0485444,"PLE","dag_dehydration","BA",0.693917992
-"592",2.91e-06,"Indirect",0.9313,"tdn",8,0,"BAT10-5",3.77031985,"PLE","dag_dehydration","BA",0.514549742
+"293",2.395e-05,"Indirect",1.8401,"atrazine",8,0,"LFA0-1",10.28385855,"PLE","dag_dehydration","Leopard frog",2.579782807
+"294",2.395e-05,"Indirect",2.8486,"atrazine",8,0,"LFA0-2",10.04358875,"PLE","dag_dehydration","Leopard frog",1.691182353
+"295",2.395e-05,"Indirect",2.307,"atrazine",8,0,"LFA0-3",10.18871524,"PLE","dag_dehydration","Leopard frog",12.52319717
+"296",2.395e-05,"Indirect",2.2679,"atrazine",8,0,"LFA0-4",9.401012307,"PLE","dag_dehydration","Leopard frog",2.970273811
+"297",2.395e-05,"Indirect",2.1439,"atrazine",8,0,"LFA0-5",9.516150521,"PLE","dag_dehydration","Leopard frog",8.050942336
+"298",2.395e-05,"Indirect",1.8628,"atrazine",8,0,"LFA0-6",9.708402094,"PLE","dag_dehydration","Leopard frog",7.478230678
+"299",2.395e-05,"Indirect",3.039,"atrazine",8,0,"LFA2-1",9.403882995,"PLE","dag_dehydration","Leopard frog",2.186808836
+"300",2.395e-05,"Indirect",2.0345,"atrazine",8,0,"LFA2-2",12.1209408,"PLE","dag_dehydration","Leopard frog",5.338854395
+"301",2.395e-05,"Indirect",2.196,"atrazine",8,0,"LFA2-3",9.820321561,"PLE","dag_dehydration","Leopard frog",1.693429589
+"302",2.395e-05,"Indirect",2.6681,"atrazine",8,0,"LFA2-4",13.65865567,"PLE","dag_dehydration","Leopard frog",8.968187875
+"303",2.395e-05,"Indirect",2.3648,"atrazine",8,0,"LFA2-5",13.82500689,"PLE","dag_dehydration","Leopard frog",1.454206808
+"304",2.395e-05,"Indirect",1.9188,"atrazine",8,0,"LFA2-6",6.981617026,"PLE","dag_dehydration","Leopard frog",1.718054357
+"305",2.395e-05,"Indirect",2.3476,"atrazine",8,0,"LFA4-1",8.71398867,"PLE","dag_dehydration","Leopard frog",1.715569485
+"306",2.395e-05,"Indirect",2.6426,"atrazine",8,0,"LFA4-2",10.31826446,"PLE","dag_dehydration","Leopard frog",6.984378843
+"307",2.395e-05,"Indirect",2.4232,"atrazine",8,0,"LFA4-3",9.424200962,"PLE","dag_dehydration","Leopard frog",6.344470461
+"308",2.395e-05,"Indirect",2.445,"atrazine",8,0,"LFA4-4",8.210686345,"PLE","dag_dehydration","Leopard frog",5.22674822
+"309",2.395e-05,"Indirect",2.948,"atrazine",8,0,"LFA4-5",12.47499464,"PLE","dag_dehydration","Leopard frog",6.179038725
+"310",2.395e-05,"Indirect",1.6108,"atrazine",8,0,"LFA4-6",17.10511501,"PLE","dag_dehydration","Leopard frog",6.938256641
+"311",2.395e-05,"Indirect",2.1958,"atrazine",8,0,"LFA6-1",15.28179321,"PLE","dag_dehydration","Leopard frog",10.56528408
+"312",2.395e-05,"Indirect",1.2869,"atrazine",8,0,"LFA6-2",15.71271657,"PLE","dag_dehydration","Leopard frog",3.335388968
+"313",2.395e-05,"Indirect",2.1608,"atrazine",8,0,"LFA6-3",9.706286223,"PLE","dag_dehydration","Leopard frog",2.457491841
+"314",2.395e-05,"Indirect",1.6483,"atrazine",8,0,"LFA6-4",16.37966534,"PLE","dag_dehydration","Leopard frog",3.983431248
+"315",2.395e-05,"Indirect",1.8843,"atrazine",8,0,"LFA6-5",10.61265033,"PLE","dag_dehydration","Leopard frog",2.391884077
+"316",2.395e-05,"Indirect",2.469,"atrazine",8,0,"LFA6-6",12.59011285,"PLE","dag_dehydration","Leopard frog",11.18965486
+"317",2.395e-05,"Indirect",3.1323,"atrazine",8,0,"LFA8-1",12.46770392,"PLE","dag_dehydration","Leopard frog",2.162953353
+"318",2.395e-05,"Indirect",2.2558,"atrazine",8,0,"LFA8-2",10.90836606,"PLE","dag_dehydration","Leopard frog",1.650446686
+"319",2.395e-05,"Indirect",1.446,"atrazine",8,0,"LFA8-3",13.47173605,"PLE","dag_dehydration","Leopard frog",6.76940713
+"320",2.395e-05,"Indirect",2.0923,"atrazine",8,0,"LFA8-4",10.84867262,"PLE","dag_dehydration","Leopard frog",6.916300496
+"321",2.395e-05,"Indirect",2.1607,"atrazine",8,0,"LFA8-5",9.786848989,"PLE","dag_dehydration","Leopard frog",5.647878305
+"322",2.395e-05,"Indirect",1.8342,"atrazine",8,0,"LFA8-6",12.68276321,"PLE","dag_dehydration","Leopard frog",5.714846427
+"323",2.395e-05,"Indirect",2.4663,"atrazine",8,0,"LFA10-1",7.717010983,"PLE","dag_dehydration","Leopard frog",3.480676652
+"324",2.395e-05,"Indirect",2.0268,"atrazine",8,0,"LFA10-2",9.412734091,"PLE","dag_dehydration","Leopard frog",1.886771004
+"325",2.395e-05,"Indirect",2.2651,"atrazine",8,0,"LFA10-3",12.23989264,"PLE","dag_dehydration","Leopard frog",10.2979071
+"326",2.395e-05,"Indirect",2.3059,"atrazine",8,0,"LFA10-4",11.84987009,"PLE","dag_dehydration","Leopard frog",8.724901716
+"327",2.395e-05,"Indirect",2.2861,"atrazine",8,0,"LFA10-5",8.395562665,"PLE","dag_dehydration","Leopard frog",1.892744068
+"328",2.395e-05,"Indirect",2.2728,"atrazine",8,0,"LFA10-6",7.01665685,"PLE","dag_dehydration","Leopard frog",3.632494432
+"329",4.43e-05,"Indirect",2.9374,"chloro+d",8,0,"LFCl0-1",97.54771792,"PLE","dag_dehydration","Leopard frog",0.049534914
+"330",4.43e-05,"Indirect",3.6896,"chloro+d",8,0,"LFCl0-2",105.2068112,"PLE","dag_dehydration","Leopard frog",0.09431606
+"331",4.43e-05,"Indirect",2.5049,"chloro+d",8,0,"LFCl0-3",104.0471325,"PLE","dag_dehydration","Leopard frog",0.065894674
+"332",4.43e-05,"Indirect",3.0961,"chloro+d",8,0,"LFCl0-4",87.83391191,"PLE","dag_dehydration","Leopard frog",0.066735354
+"333",4.43e-05,"Indirect",3.3543,"chloro+d",8,0,"LFCl0-5",85.2705886,"PLE","dag_dehydration","Leopard frog",0.05459792
+"334",4.43e-05,"Indirect",2.9449,"chloro+d",8,0,"LFCl0-6",110.2800296,"PLE","dag_dehydration","Leopard frog",0.110663384
+"335",4.43e-05,"Indirect",2.982,"chloro+d",8,0,"LFCl2-1",124.7136025,"PLE","dag_dehydration","Leopard frog",0.034119313
+"336",4.43e-05,"Indirect",1.1766,"chloro+d",8,0,"LFCl2-2",93.83616294,"PLE","dag_dehydration","Leopard frog",0.137711222
+"337",4.43e-05,"Indirect",2.5677,"chloro+d",8,0,"LFCl2-3",131.9151605,"PLE","dag_dehydration","Leopard frog",0.038844494
+"338",4.43e-05,"Indirect",3.9146,"chloro+d",8,0,"LFCl2-4",238.150189,"PLE","dag_dehydration","Leopard frog",0.034159045
+"339",4.43e-05,"Indirect",2.4102,"chloro+d",8,0,"LFCl2-5",126.1421937,"PLE","dag_dehydration","Leopard frog",0.189112734
+"340",4.43e-05,"Indirect",2.5335,"chloro+d",8,0,"LFCl2-6",93.01431818,"PLE","dag_dehydration","Leopard frog",0.073108651
+"341",4.43e-05,"Indirect",2.1336,"chloro+d",8,0,"LFCl4-1",54.02956223,"PLE","dag_dehydration","Leopard frog",0.046410221
+"342",4.43e-05,"Indirect",1.3477,"chloro+d",8,0,"LFCl4-2",83.94471454,"PLE","dag_dehydration","Leopard frog",0.054321653
+"343",4.43e-05,"Indirect",1.9212,"chloro+d",8,0,"LFCl4-3",95.16597984,"PLE","dag_dehydration","Leopard frog",0.047421024
+"344",4.43e-05,"Indirect",2.2279,"chloro+d",8,0,"LFCl4-4",108.8411455,"PLE","dag_dehydration","Leopard frog",0.077330002
+"345",4.43e-05,"Indirect",1.2642,"chloro+d",8,0,"LFCl4-5",107.8351603,"PLE","dag_dehydration","Leopard frog",0.061659489
+"346",4.43e-05,"Indirect",2.5177,"chloro+d",8,0,"LFCl4-6",112.551148,"PLE","dag_dehydration","Leopard frog",0.075510303
+"347",4.43e-05,"Indirect",2.6744,"chloro+d",8,0,"LFCl6-1",103.9346865,"PLE","dag_dehydration","Leopard frog",0.027463652
+"348",4.43e-05,"Indirect",1.9014,"chloro+d",8,0,"LFCl6-2",133.1324122,"PLE","dag_dehydration","Leopard frog",0.051562219
+"349",4.43e-05,"Indirect",1.8824,"chloro+d",8,0,"LFCl6-3",177.201436,"PLE","dag_dehydration","Leopard frog",0.177693722
+"350",4.43e-05,"Indirect",2.5356,"chloro+d",8,0,"LFCl6-4",80.2864709,"PLE","dag_dehydration","Leopard frog",0.029626977
+"351",4.43e-05,"Indirect",1.9125,"chloro+d",8,0,"LFCl6-5",107.9943699,"PLE","dag_dehydration","Leopard frog",0.040356887
+"352",4.43e-05,"Indirect",1.6813,"chloro+d",8,0,"LFCl6-6",75.82071048,"PLE","dag_dehydration","Leopard frog",0.048697065
+"353",4.43e-05,"Indirect",3.1849,"chloro+d",8,0,"LFCl8-1",98.34669015,"PLE","dag_dehydration","Leopard frog",0.100520033
+"354",4.43e-05,"Indirect",2.1473,"chloro+d",8,0,"LFCl8-2",55.30487111,"PLE","dag_dehydration","Leopard frog",0.066249062
+"355",4.43e-05,"Indirect",1.5919,"chloro+d",8,0,"LFCl8-3",68.31816412,"PLE","dag_dehydration","Leopard frog",0.135997717
+"356",4.43e-05,"Indirect",1.8071,"chloro+d",8,0,"LFCl8-4",77.37304664,"PLE","dag_dehydration","Leopard frog",0.086171947
+"357",4.43e-05,"Indirect",1.8675,"chloro+d",8,0,"LFCl8-5",86.4407278,"PLE","dag_dehydration","Leopard frog",0.039905604
+"358",4.43e-05,"Indirect",2.3422,"chloro+d",8,0,"LFCl8-6",134.219346,"PLE","dag_dehydration","Leopard frog",0.07148401
+"359",4.43e-05,"Indirect",2.8692,"chloro+d",8,0,"LFCl10-1",102.4324273,"PLE","dag_dehydration","Leopard frog",0.026595904
+"360",4.43e-05,"Indirect",2.2261,"chloro+d",8,0,"LFCl10-2",56.13699941,"PLE","dag_dehydration","Leopard frog",0.033621317
+"361",4.43e-05,"Indirect",3.3763,"chloro+d",8,0,"LFCl10-3",149.7004603,"PLE","dag_dehydration","Leopard frog",0.027361678
+"362",4.43e-05,"Indirect",2.3394,"chloro+d",8,0,"LFCl10-4",69.83049,"PLE","dag_dehydration","Leopard frog",0.034005049
+"363",4.43e-05,"Indirect",2.4226,"chloro+d",8,0,"LFCl10-5",51.56836737,"PLE","dag_dehydration","Leopard frog",0.074157011
+"364",4.43e-05,"Indirect",2.5262,"chloro+d",8,0,"LFCl10-6",114.5675617,"PLE","dag_dehydration","Leopard frog",0.032016276
+"365",3.101e-05,"Indirect",1.6635,"metol",8,0,"LFM0-1",40.64853462,"PLE","dag_dehydration","Leopard frog",4.267677087
+"366",3.101e-05,"Indirect",2.0778,"metol",8,0,"LFM0-2",48.47519919,"PLE","dag_dehydration","Leopard frog",5.721956829
+"367",3.101e-05,"Indirect",2.593,"metol",8,0,"LFM0-3",41.79217276,"PLE","dag_dehydration","Leopard frog",1.748897837
+"368",3.101e-05,"Indirect",2.8358,"metol",8,0,"LFM0-4",24.38427683,"PLE","dag_dehydration","Leopard frog",0.806456941
+"369",3.101e-05,"Indirect",1.8572,"metol",8,0,"LFM0-5",77.00037621,"PLE","dag_dehydration","Leopard frog",10.63925511
+"370",3.101e-05,"Indirect",1.121,"metol",8,0,"LFM0-6",48.49721515,"PLE","dag_dehydration","Leopard frog",3.688639048
+"371",3.101e-05,"Indirect",2.2456,"metol",8,0,"LFM2-1",21.427727,"PLE","dag_dehydration","Leopard frog",1.640306185
+"372",3.101e-05,"Indirect",2.4944,"metol",8,0,"LFM2-2",25.33585131,"PLE","dag_dehydration","Leopard frog",5.639864337
+"373",3.101e-05,"Indirect",2.5987,"metol",8,0,"LFM2-3",22.98479209,"PLE","dag_dehydration","Leopard frog",0.985224834
+"374",3.101e-05,"Indirect",2.0734,"metol",8,0,"LFM2-4",28.23363196,"PLE","dag_dehydration","Leopard frog",1.159396793
+"375",3.101e-05,"Indirect",1.9886,"metol",8,0,"LFM2-5",27.78584836,"PLE","dag_dehydration","Leopard frog",2.57235133
+"376",3.101e-05,"Indirect",2.7615,"metol",8,0,"LFM2-6",25.00006343,"PLE","dag_dehydration","Leopard frog",3.19002649
+"377",3.101e-05,"Indirect",1.8156,"metol",8,0,"LFM4-1",19.25500126,"PLE","dag_dehydration","Leopard frog",2.3898984
+"378",3.101e-05,"Indirect",3.0818,"metol",8,0,"LFM4-2",25.00425435,"PLE","dag_dehydration","Leopard frog",1.780858408
+"379",3.101e-05,"Indirect",2.8691,"metol",8,0,"LFM4-3",16.93924625,"PLE","dag_dehydration","Leopard frog",1.08822026
+"380",3.101e-05,"Indirect",2.2879,"metol",8,0,"LFM4-4",19.02585998,"PLE","dag_dehydration","Leopard frog",1.829340286
+"381",3.101e-05,"Indirect",2.746,"metol",8,0,"LFM4-5",30.3513881,"PLE","dag_dehydration","Leopard frog",2.345929412
+"382",3.101e-05,"Indirect",2.2357,"metol",8,0,"LFM4-6",23.64525737,"PLE","dag_dehydration","Leopard frog",5.291092536
+"383",3.101e-05,"Indirect",2.9968,"metol",8,0,"LFM6-1",16.91928433,"PLE","dag_dehydration","Leopard frog",2.100173605
+"384",3.101e-05,"Indirect",2.5795,"metol",8,0,"LFM6-2",22.04401189,"PLE","dag_dehydration","Leopard frog",1.114810193
+"385",3.101e-05,"Indirect",2.5535,"metol",8,0,"LFM6-3",23.36243329,"PLE","dag_dehydration","Leopard frog",1.378698045
+"386",3.101e-05,"Indirect",1.8,"metol",8,0,"LFM6-4",23.06676914,"PLE","dag_dehydration","Leopard frog",2.253704813
+"387",3.101e-05,"Indirect",2.2348,"metol",8,0,"LFM6-5",24.42190264,"PLE","dag_dehydration","Leopard frog",5.376753972
+"388",3.101e-05,"Indirect",1.7367,"metol",8,0,"LFM6-6",21.24319583,"PLE","dag_dehydration","Leopard frog",1.702141197
+"389",3.101e-05,"Indirect",2.8781,"metol",8,0,"LFM8-1",18.25491609,"PLE","dag_dehydration","Leopard frog",1.181846159
+"390",3.101e-05,"Indirect",3.0126,"metol",8,0,"LFM8-2",20.24836634,"PLE","dag_dehydration","Leopard frog",0.746445245
+"391",3.101e-05,"Indirect",2.2216,"metol",8,0,"LFM8-3",21.33112732,"PLE","dag_dehydration","Leopard frog",6.060241405
+"392",3.101e-05,"Indirect",2.076,"metol",8,0,"LFM8-4",24.93070926,"PLE","dag_dehydration","Leopard frog",3.979074337
+"393",3.101e-05,"Indirect",1.7311,"metol",8,0,"LFM8-5",21.60699195,"PLE","dag_dehydration","Leopard frog",0.90171309
+"394",3.101e-05,"Indirect",2.016,"metol",8,0,"LFM8-6",30.64444223,"PLE","dag_dehydration","Leopard frog",3.452448894
+"395",3.101e-05,"Indirect",2.0918,"metol",8,0,"LFM10-1",12.49664326,"PLE","dag_dehydration","Leopard frog",1.574839899
+"396",3.101e-05,"Indirect",1.8813,"metol",8,0,"LFM10-2",29.0739971,"PLE","dag_dehydration","Leopard frog",1.123669198
+"397",3.101e-05,"Indirect",2.2104,"metol",8,0,"LFM10-3",26.60999165,"PLE","dag_dehydration","Leopard frog",2.558654328
+"398",3.101e-05,"Indirect",3.201,"metol",8,0,"LFM10-4",18.22540327,"PLE","dag_dehydration","Leopard frog",1.949552248
+"399",3.101e-05,"Indirect",2.6894,"metol",8,0,"LFM10-5",25.62284834,"PLE","dag_dehydration","Leopard frog",2.179127319
+"400",3.101e-05,"Indirect",2.3257,"metol",8,0,"LFM10-6",18.37523411,"PLE","dag_dehydration","Leopard frog",1.130277738
+"401",2.91e-06,"Indirect",2.2852,"tdn",8,0,"LFT0-1",4.130434828,"PLE","dag_dehydration","Leopard frog",0.930939899
+"402",2.91e-06,"Indirect",2.0488,"tdn",8,0,"LFT0-2",2.985716329,"PLE","dag_dehydration","Leopard frog",1.471139657
+"403",2.91e-06,"Indirect",1.764,"tdn",8,0,"LFT0-3",1.642733275,"PLE","dag_dehydration","Leopard frog",0.829340824
+"404",2.91e-06,"Indirect",1.52467,"tdn",8,0,"LFT0-4",2.414613283,"PLE","dag_dehydration","Leopard frog",0.833541754
+"405",2.91e-06,"Indirect",1.1919,"tdn",8,0,"LFT0-5",5.771808013,"PLE","dag_dehydration","Leopard frog",0.62294824
+"406",2.91e-06,"Indirect",2.5988,"tdn",8,0,"LFT0-6",1.937626035,"PLE","dag_dehydration","Leopard frog",0.78432732
+"407",2.91e-06,"Indirect",1.2971,"tdn",8,0,"LFT2-1",2.271520449,"PLE","dag_dehydration","Leopard frog",1.110827258
+"408",2.91e-06,"Indirect",1.7873,"tdn",8,0,"LFT2-2",4.918286446,"PLE","dag_dehydration","Leopard frog",0.723150994
+"409",2.91e-06,"Indirect",2.1663,"tdn",8,0,"LFT2-3",5.681194498,"PLE","dag_dehydration","Leopard frog",0.72766123
+"410",2.91e-06,"Indirect",2.631,"tdn",8,0,"LFT2-4",3.706855988,"PLE","dag_dehydration","Leopard frog",0.680213893
+"411",2.91e-06,"Indirect",1.7103,"tdn",8,0,"LFT2-5",7.040172007,"PLE","dag_dehydration","Leopard frog",1.064277918
+"412",2.91e-06,"Indirect",1.8285,"tdn",8,0,"LFT2-6",5.554855056,"PLE","dag_dehydration","Leopard frog",0.368484816
+"413",2.91e-06,"Indirect",1.5065,"tdn",8,0,"LFT4-1",2.032910322,"PLE","dag_dehydration","Leopard frog",0.635182857
+"414",2.91e-06,"Indirect",1.5337,"tdn",8,0,"LFT4-2",4.664332334,"PLE","dag_dehydration","Leopard frog",0.572624649
+"415",2.91e-06,"Indirect",1.842,"tdn",8,0,"LFT4-3",2.734473466,"PLE","dag_dehydration","Leopard frog",0.504992098
+"416",2.91e-06,"Indirect",1.5188,"tdn",8,0,"LFT4-4",2.622252408,"PLE","dag_dehydration","Leopard frog",0.46549435
+"417",2.91e-06,"Indirect",2.1926,"tdn",8,0,"LFT4-5",4.132548212,"PLE","dag_dehydration","Leopard frog",0.509286041
+"418",2.91e-06,"Indirect",1.6119,"tdn",8,0,"LFT4-6",3.806634854,"PLE","dag_dehydration","Leopard frog",0.284854462
+"419",2.91e-06,"Indirect",1.5704,"tdn",8,0,"LFT6-1",4.202597231,"PLE","dag_dehydration","Leopard frog",0.62355419
+"420",2.91e-06,"Indirect",1.6677,"tdn",8,0,"LFT6-2",4.502512043,"PLE","dag_dehydration","Leopard frog",0.938534356
+"421",2.91e-06,"Indirect",2.5715,"tdn",8,0,"LFT6-3",2.790064544,"PLE","dag_dehydration","Leopard frog",0.959499205
+"422",2.91e-06,"Indirect",2.3475,"tdn",8,0,"LFT6-4",3.966455208,"PLE","dag_dehydration","Leopard frog",0.910419362
+"423",2.91e-06,"Indirect",1.4964,"tdn",8,0,"LFT6-5",2.731170077,"PLE","dag_dehydration","Leopard frog",0.867963913
+"424",2.91e-06,"Indirect",2.0291,"tdn",8,0,"LFT6-6",3.617116849,"PLE","dag_dehydration","Leopard frog",0.734727511
+"425",2.91e-06,"Indirect",2.7226,"tdn",8,0,"LFT8-1",3.153568431,"PLE","dag_dehydration","Leopard frog",0.613327957
+"426",2.91e-06,"Indirect",2.5539,"tdn",8,0,"LFT8-2",4.090939835,"PLE","dag_dehydration","Leopard frog",0.411175415
+"427",2.91e-06,"Indirect",1.7762,"tdn",8,0,"LFT8-3",4.910453014,"PLE","dag_dehydration","Leopard frog",0.200725621
+"428",2.91e-06,"Indirect",1.649,"tdn",8,0,"LFT8-4",3.7801442,"PLE","dag_dehydration","Leopard frog",0.284065308
+"429",2.91e-06,"Indirect",1.0845,"tdn",8,0,"LFT8-5",4.037190801,"PLE","dag_dehydration","Leopard frog",1.106344271
+"430",2.91e-06,"Indirect",1.7104,"tdn",8,0,"LFT8-6",2.929395097,"PLE","dag_dehydration","Leopard frog",0.710860385
+"431",2.91e-06,"Indirect",0.9303,"tdn",8,0,"LFT10-1",3.532352552,"PLE","dag_dehydration","Leopard frog",0.41777656
+"432",2.91e-06,"Indirect",1.3548,"tdn",8,0,"LFT10-2",2.533600442,"PLE","dag_dehydration","Leopard frog",0.60216825
+"433",2.91e-06,"Indirect",1.9138,"tdn",8,0,"LFT10-3",2.598936796,"PLE","dag_dehydration","Leopard frog",0.560831784
+"434",2.91e-06,"Indirect",2.1421,"tdn",8,0,"LFT10-4",2.560020486,"PLE","dag_dehydration","Leopard frog",0.687153909
+"435",2.91e-06,"Indirect",1.5553,"tdn",8,0,"LFT10-5",3.946266825,"PLE","dag_dehydration","Leopard frog",0.654064226
+"436",2.91e-06,"Indirect",1.4596,"tdn",8,0,"LFT10-6",2.772104224,"PLE","dag_dehydration","Leopard frog",0.489223561
+"437",5.39e-06,"Indirect",1.2582,"imid",8,0,"LFI0-1",0.796630992,"PLE","dag_dehydration","Leopard frog",0.73148169
+"438",5.39e-06,"Indirect",1.8819,"imid",8,0,"LFI0-2",0.73091969,"PLE","dag_dehydration","Leopard frog",1.058790605
+"439",5.39e-06,"Indirect",1.0559,"imid",8,0,"LFI0-3",1.951106685,"PLE","dag_dehydration","Leopard frog",0.729321829
+"440",5.39e-06,"Indirect",1.8364,"imid",8,0,"LFI0-4",1.440136114,"PLE","dag_dehydration","Leopard frog",0.813666458
+"441",5.39e-06,"Indirect",1.0553,"imid",8,0,"LFI0-5",1.070180372,"PLE","dag_dehydration","Leopard frog",0.607467098
+"442",5.39e-06,"Indirect",1.2669,"imid",8,0,"LFI0-6",0.872011851,"PLE","dag_dehydration","Leopard frog",0.588522987
+"443",5.39e-06,"Indirect",1.3821,"imid",8,0,"LFI2-1",2.471016152,"PLE","dag_dehydration","Leopard frog",0.378511527
+"444",5.39e-06,"Indirect",2.0607,"imid",8,0,"LFI2-2",1.977314477,"PLE","dag_dehydration","Leopard frog",0.515549221
+"445",5.39e-06,"Indirect",2.613,"imid",8,0,"LFI2-3",1.728533516,"PLE","dag_dehydration","Leopard frog",0.247500973
+"446",5.39e-06,"Indirect",1.1331,"imid",8,0,"LFI2-4",0.687118856,"PLE","dag_dehydration","Leopard frog",0.706206114
+"447",5.39e-06,"Indirect",1.7318,"imid",8,0,"LFI2-5",0.578877665,"PLE","dag_dehydration","Leopard frog",0.245622417
+"448",5.39e-06,"Indirect",1.3617,"imid",8,0,"LFI2-6",1.906194111,"PLE","dag_dehydration","Leopard frog",0.393655166
+"449",5.39e-06,"Indirect",1.4804,"imid",8,0,"LFI4-1",0.208026343,"PLE","dag_dehydration","Leopard frog",0.326749679
+"450",5.39e-06,"Indirect",2.2314,"imid",8,0,"LFI4-2",1.64100778,"PLE","dag_dehydration","Leopard frog",0.356860152
+"451",5.39e-06,"Indirect",1.9358,"imid",8,0,"LFI4-3",0.555449529,"PLE","dag_dehydration","Leopard frog",1.073747665
+"452",5.39e-06,"Indirect",1.5865,"imid",8,0,"LFI4-4",0.608288865,"PLE","dag_dehydration","Leopard frog",1.269010141
+"453",5.39e-06,"Indirect",1.262,"imid",8,0,"LFI4-5",1.606632646,"PLE","dag_dehydration","Leopard frog",0.377722198
+"454",5.39e-06,"Indirect",1.6033,"imid",8,0,"LFI4-6",0.201720786,"PLE","dag_dehydration","Leopard frog",0.55755347
+"455",5.39e-06,"Indirect",2.912,"imid",8,0,"LFI6-1",0.879358614,"PLE","dag_dehydration","Leopard frog",0.10171172
+"456",5.39e-06,"Indirect",1.7892,"imid",8,0,"LFI6-2",0.655219548,"PLE","dag_dehydration","Leopard frog",0.65112938
+"457",5.39e-06,"Indirect",3.7094,"imid",8,0,"LFI6-3",0.207025856,"PLE","dag_dehydration","Leopard frog",0.476857989
+"458",5.39e-06,"Indirect",3.1881,"imid",8,0,"LFI6-4",0.871009475,"PLE","dag_dehydration","Leopard frog",0.325613627
+"459",5.39e-06,"Indirect",1.6021,"imid",8,0,"LFI6-5",0.839527548,"PLE","dag_dehydration","Leopard frog",0.246360764
+"460",5.39e-06,"Indirect",1.8193,"imid",8,0,"LFI6-6",0.631287079,"PLE","dag_dehydration","Leopard frog",1.581594004
+"461",5.39e-06,"Indirect",2.0296,"imid",8,0,"LFI8-1",1.958668613,"PLE","dag_dehydration","Leopard frog",0.692484167
+"462",5.39e-06,"Indirect",1.7363,"imid",8,0,"LFI8-2",0.934646981,"PLE","dag_dehydration","Leopard frog",0.424924938
+"463",5.39e-06,"Indirect",2.1186,"imid",8,0,"LFI8-3",0.846438989,"PLE","dag_dehydration","Leopard frog",0.5739569
+"464",5.39e-06,"Indirect",1.6878,"imid",8,0,"LFI8-4",0.321096879,"PLE","dag_dehydration","Leopard frog",0.204579215
+"465",5.39e-06,"Indirect",1.0083,"imid",8,0,"LFI8-5",0.689399455,"PLE","dag_dehydration","Leopard frog",0.484179759
+"466",5.39e-06,"Indirect",1.8333,"imid",8,0,"LFI8-6",0.566227325,"PLE","dag_dehydration","Leopard frog",0.405938147
+"467",5.39e-06,"Indirect",1.5084,"imid",8,0,"LFI10-1",0.945309838,"PLE","dag_dehydration","Leopard frog",0.405218407
+"468",5.39e-06,"Indirect",1.5497,"imid",8,0,"LFI10-2",1.292096809,"PLE","dag_dehydration","Leopard frog",0.601787596
+"469",5.39e-06,"Indirect",1.8833,"imid",8,0,"LFI10-3",0.660569341,"PLE","dag_dehydration","Leopard frog",0.501054316
+"470",5.39e-06,"Indirect",1.4135,"imid",8,0,"LFI10-4",0.60830659,"PLE","dag_dehydration","Leopard frog",0.630482061
+"471",5.39e-06,"Indirect",2.1209,"imid",8,0,"LFI10-5",0.209484252,"PLE","dag_dehydration","Leopard frog",0.338901353
+"472",5.39e-06,"Indirect",2.1168,"imid",8,0,"LFI10-6",1.037851792,"PLE","dag_dehydration","Leopard frog",0.2421998
+"473",2.395e-05,"Indirect",0.9129,"atrazine",8,0,"BAA0-1",9.879328906,"PLE","dag_dehydration","Fowlers toad",5.570048564
+"474",2.395e-05,"Indirect",0.7719,"atrazine",8,0,"BAA0-2",12.45547599,"PLE","dag_dehydration","Fowlers toad",17.59483119
+"475",2.395e-05,"Indirect",1.07,"atrazine",8,0,"BAA0-3",15.57844561,"PLE","dag_dehydration","Fowlers toad",3.074205015
+"476",2.395e-05,"Indirect",1.5079,"atrazine",8,0,"BAA0-4",15.1520148,"PLE","dag_dehydration","Fowlers toad",15.89886245
+"477",2.395e-05,"Indirect",0.9096,"atrazine",8,0,"BAA0-5",14.6984202,"PLE","dag_dehydration","Fowlers toad",9.78279894
+"478",2.395e-05,"Indirect",1.1548,"atrazine",8,0,"BAA2-1",12.38453564,"PLE","dag_dehydration","Fowlers toad",10.23753505
+"479",2.395e-05,"Indirect",0.9611,"atrazine",8,0,"BAA2-2",14.63994466,"PLE","dag_dehydration","Fowlers toad",23.52791046
+"480",2.395e-05,"Indirect",1.0618,"atrazine",8,0,"BAA2-3",13.03487815,"PLE","dag_dehydration","Fowlers toad",9.934344481
+"481",2.395e-05,"Indirect",0.9384,"atrazine",8,0,"BAA2-4",14.11139006,"PLE","dag_dehydration","Fowlers toad",16.28574707
+"482",2.395e-05,"Indirect",1.1748,"atrazine",8,0,"BAA2-5",15.33431537,"PLE","dag_dehydration","Fowlers toad",13.26608122
+"483",2.395e-05,"Indirect",1.1869,"atrazine",8,0,"BAA4-1",15.56081571,"PLE","dag_dehydration","Fowlers toad",11.91207694
+"484",2.395e-05,"Indirect",0.9488,"atrazine",8,0,"BAA4-2",11.04392922,"PLE","dag_dehydration","Fowlers toad",8.377167028
+"485",2.395e-05,"Indirect",1.1718,"atrazine",8,0,"BAA4-3",15.21711265,"PLE","dag_dehydration","Fowlers toad",6.954592123
+"486",2.395e-05,"Indirect",1.2243,"atrazine",8,0,"BAA4-4",15.6599606,"PLE","dag_dehydration","Fowlers toad",16.17456476
+"487",2.395e-05,"Indirect",1.1315,"atrazine",8,0,"BAA4-5",17.6440279,"PLE","dag_dehydration","Fowlers toad",11.13571587
+"488",2.395e-05,"Indirect",1.1552,"atrazine",8,0,"BAA6-1",13.38816703,"PLE","dag_dehydration","Fowlers toad",2.757883195
+"489",2.395e-05,"Indirect",1.2815,"atrazine",8,0,"BAA6-2",11.681079,"PLE","dag_dehydration","Fowlers toad",12.22026175
+"490",2.395e-05,"Indirect",1.0089,"atrazine",8,0,"BAA6-3",15.18962201,"PLE","dag_dehydration","Fowlers toad",11.20688617
+"491",2.395e-05,"Indirect",1.2956,"atrazine",8,0,"BAA6-4",9.038038715,"PLE","dag_dehydration","Fowlers toad",6.405223668
+"492",2.395e-05,"Indirect",1.0139,"atrazine",8,0,"BAA6-5",10.67586793,"PLE","dag_dehydration","Fowlers toad",3.694084956
+"493",2.395e-05,"Indirect",1.0626,"atrazine",8,0,"BAA8-1",15.04668736,"PLE","dag_dehydration","Fowlers toad",2.159341322
+"494",2.395e-05,"Indirect",1.132,"atrazine",8,0,"BAA8-2",14.11458967,"PLE","dag_dehydration","Fowlers toad",4.104816901
+"495",2.395e-05,"Indirect",0.9895,"atrazine",8,0,"BAA8-3",9.505611335,"PLE","dag_dehydration","Fowlers toad",3.707013001
+"496",2.395e-05,"Indirect",1.1003,"atrazine",8,0,"BAA8-4",11.64743641,"PLE","dag_dehydration","Fowlers toad",20.84894976
+"497",2.395e-05,"Indirect",0.9161,"atrazine",8,0,"BAA8-5",10.16095762,"PLE","dag_dehydration","Fowlers toad",2.737473998
+"498",2.395e-05,"Indirect",1.2022,"atrazine",8,0,"BAA10-1",20.47418687,"PLE","dag_dehydration","Fowlers toad",11.79072742
+"499",2.395e-05,"Indirect",1.13031,"atrazine",8,0,"BAA10-2",9.68353939,"PLE","dag_dehydration","Fowlers toad",2.638235074
+"500",2.395e-05,"Indirect",1.0534,"atrazine",8,0,"BAA10-3",14.40605967,"PLE","dag_dehydration","Fowlers toad",2.416921895
+"501",2.395e-05,"Indirect",1.0954,"atrazine",8,0,"BAA10-4",18.9224483,"PLE","dag_dehydration","Fowlers toad",3.137873235
+"502",2.395e-05,"Indirect",1.1421,"atrazine",8,0,"BAA10-5",11.49634553,"PLE","dag_dehydration","Fowlers toad",1.920017022
+"503",4.43e-05,"Indirect",0.9583,"chloro+d",8,0,"BACl0-1",57.75651281,"PLE","dag_dehydration","Fowlers toad",0.073700244
+"504",4.43e-05,"Indirect",0.8457,"chloro+d",8,0,"BACl0-2",102.3188471,"PLE","dag_dehydration","Fowlers toad",0.109722213
+"505",4.43e-05,"Indirect",0.8989,"chloro+d",8,0,"BACl0-3",65.01196356,"PLE","dag_dehydration","Fowlers toad",0.078574387
+"506",4.43e-05,"Indirect",0.8843,"chloro+d",8,0,"BACl0-4",57.35048527,"PLE","dag_dehydration","Fowlers toad",0.079830754
+"507",4.43e-05,"Indirect",0.7097,"chloro+d",8,0,"BACl0-5",46.51376561,"PLE","dag_dehydration","Fowlers toad",0.099619209
+"508",4.43e-05,"Indirect",1.0144,"chloro+d",8,0,"BACl2-1",33.60251806,"PLE","dag_dehydration","Fowlers toad",0.072874896
+"509",4.43e-05,"Indirect",0.821,"chloro+d",8,0,"BACl2-2",59.29310488,"PLE","dag_dehydration","Fowlers toad",0.086024643
+"510",4.43e-05,"Indirect",0.7943,"chloro+d",8,0,"BACl2-3",64.92323527,"PLE","dag_dehydration","Fowlers toad",0.092374798
+"511",4.43e-05,"Indirect",1.0888,"chloro+d",8,0,"BACl2-4",31.45650376,"PLE","dag_dehydration","Fowlers toad",0.064846902
+"512",4.43e-05,"Indirect",0.8102,"chloro+d",8,0,"BACl2-5",61.33280569,"PLE","dag_dehydration","Fowlers toad",0.087298087
+"513",4.43e-05,"Indirect",0.8993,"chloro+d",8,0,"BACl4-1",60.42139433,"PLE","dag_dehydration","Fowlers toad",0.085652238
+"514",4.43e-05,"Indirect",0.8614,"chloro+d",8,0,"BACl4-2",47.39084331,"PLE","dag_dehydration","Fowlers toad",0.081921027
+"515",4.43e-05,"Indirect",0.6821,"chloro+d",8,0,"BACl4-3",53.53514586,"PLE","dag_dehydration","Fowlers toad",0.103593147
+"516",4.43e-05,"Indirect",0.7524,"chloro+d",8,0,"BACl4-4",55.85180318,"PLE","dag_dehydration","Fowlers toad",0.093831051
+"517",4.43e-05,"Indirect",1.098,"chloro+d",8,0,"BACl4-5",67.77044045,"PLE","dag_dehydration","Fowlers toad",0.066360019
+"518",4.43e-05,"Indirect",0.9994,"chloro+d",8,0,"BACl6-1",33.86589381,"PLE","dag_dehydration","Fowlers toad",0.07063984
+"519",4.43e-05,"Indirect",0.9878,"chloro+d",8,0,"BACl6-2",24.53526169,"PLE","dag_dehydration","Fowlers toad",0.07145105
+"520",4.43e-05,"Indirect",0.9357,"chloro+d",8,0,"BACl6-3",71.16072307,"PLE","dag_dehydration","Fowlers toad",0.089348773
+"521",4.43e-05,"Indirect",0.8934,"chloro+d",8,0,"BACl6-4",48.43648594,"PLE","dag_dehydration","Fowlers toad",0.079091411
+"522",4.43e-05,"Indirect",1.0993,"chloro+d",8,0,"BACl6-5",33.49242945,"PLE","dag_dehydration","Fowlers toad",0.143725039
+"523",4.43e-05,"Indirect",1.0066,"chloro+d",8,0,"BACl8-1",52.62528479,"PLE","dag_dehydration","Fowlers toad",0.070210759
+"524",4.43e-05,"Indirect",0.9629,"chloro+d",8,0,"BACl8-2",37.1844573,"PLE","dag_dehydration","Fowlers toad",0.073540839
+"525",4.43e-05,"Indirect",1.4069,"chloro+d",8,0,"BACl8-3",73.57869825,"PLE","dag_dehydration","Fowlers toad",0.050197187
+"526",4.43e-05,"Indirect",1.1711,"chloro+d",8,0,"BACl8-4",74.75923468,"PLE","dag_dehydration","Fowlers toad",0.088529318
+"527",4.43e-05,"Indirect",0.9393,"chloro+d",8,0,"BACl8-5",83.98589503,"PLE","dag_dehydration","Fowlers toad",0.075353305
+"528",4.43e-05,"Indirect",1.3103,"chloro+d",8,0,"BACl10-1",38.25020684,"PLE","dag_dehydration","Fowlers toad",0.053909403
+"529",4.43e-05,"Indirect",1.0264,"chloro+d",8,0,"BACl10-2",56.72626138,"PLE","dag_dehydration","Fowlers toad",0.06896551
+"530",4.43e-05,"Indirect",1.1206,"chloro+d",8,0,"BACl10-3",68.01386873,"PLE","dag_dehydration","Fowlers toad",0.063794163
+"531",4.43e-05,"Indirect",1.0174,"chloro+d",8,0,"BACl10-4",102.5827354,"PLE","dag_dehydration","Fowlers toad",0.07005052
+"532",4.43e-05,"Indirect",1.2458,"chloro+d",8,0,"BACl10-5",79.54975475,"PLE","dag_dehydration","Fowlers toad",0.057094309
+"533",3.101e-05,"Indirect",0.7276,"metol",8,0,"BAM0-1",24.61731819,"PLE","dag_dehydration","Fowlers toad",2.931282055
+"534",3.101e-05,"Indirect",0.8474,"metol",8,0,"BAM0-2",21.3388881,"PLE","dag_dehydration","Fowlers toad",0.347103824
+"535",3.101e-05,"Indirect",0.8754,"metol",8,0,"BAM0-3",21.93039744,"PLE","dag_dehydration","Fowlers toad",0.747111843
+"536",3.101e-05,"Indirect",0.8769,"metol",8,0,"BAM0-4",22.93092162,"PLE","dag_dehydration","Fowlers toad",1.458126997
+"537",3.101e-05,"Indirect",1.1394,"metol",8,0,"BAM0-5",16.69841723,"PLE","dag_dehydration","Fowlers toad",0.842005182
+"538",3.101e-05,"Indirect",0.8325,"metol",8,0,"BAM2-1",21.78269156,"PLE","dag_dehydration","Fowlers toad",2.479837754
+"539",3.101e-05,"Indirect",0.9548,"metol",8,0,"BAM2-2",30.13938696,"PLE","dag_dehydration","Fowlers toad",0.390457959
+"540",3.101e-05,"Indirect",1.0286,"metol",8,0,"BAM2-3",22.89913875,"PLE","dag_dehydration","Fowlers toad",4.602085515
+"541",3.101e-05,"Indirect",1.0815,"metol",8,0,"BAM2-4",15.50951631,"PLE","dag_dehydration","Fowlers toad",16.00337772
+"542",3.101e-05,"Indirect",0.9169,"metol",8,0,"BAM2-5",22.61379371,"PLE","dag_dehydration","Fowlers toad",1.76131318
+"543",3.101e-05,"Indirect",0.7677,"metol",8,0,"BAM4-1",18.84383325,"PLE","dag_dehydration","Fowlers toad",0.649917011
+"544",3.101e-05,"Indirect",0.7978,"metol",8,0,"BAM4-2",18.89979206,"PLE","dag_dehydration","Fowlers toad",7.808781543
+"545",3.101e-05,"Indirect",0.8958,"metol",8,0,"BAM4-3",16.48638399,"PLE","dag_dehydration","Fowlers toad",3.96665148
+"546",3.101e-05,"Indirect",1.0415,"metol",8,0,"BAM4-4",18.69187814,"PLE","dag_dehydration","Fowlers toad",1.54276093
+"547",3.101e-05,"Indirect",0.8499,"metol",8,0,"BAM4-5",21.78738591,"PLE","dag_dehydration","Fowlers toad",3.211494858
+"548",3.101e-05,"Indirect",0.9489,"metol",8,0,"BAM6-1",19.7286363,"PLE","dag_dehydration","Fowlers toad",2.189307645
+"549",3.101e-05,"Indirect",1.0449,"metol",8,0,"BAM6-2",19.84548436,"PLE","dag_dehydration","Fowlers toad",3.779128738
+"550",3.101e-05,"Indirect",1.095,"metol",8,0,"BAM6-3",18.30042699,"PLE","dag_dehydration","Fowlers toad",1.181637111
+"551",3.101e-05,"Indirect",1.0956,"metol",8,0,"BAM6-4",21.61340567,"PLE","dag_dehydration","Fowlers toad",2.372274856
+"552",3.101e-05,"Indirect",0.9067,"metol",8,0,"BAM6-5",34.53939533,"PLE","dag_dehydration","Fowlers toad",1.347353954
+"553",3.101e-05,"Indirect",0.8966,"metol",8,0,"BAM8-1",21.17580719,"PLE","dag_dehydration","Fowlers toad",3.302635326
+"554",3.101e-05,"Indirect",0.7619,"metol",8,0,"BAM8-2",24.81521768,"PLE","dag_dehydration","Fowlers toad",2.478218461
+"555",3.101e-05,"Indirect",0.8689,"metol",8,0,"BAM8-3",17.06118215,"PLE","dag_dehydration","Fowlers toad",0.477943521
+"556",3.101e-05,"Indirect",1.1094,"metol",8,0,"BAM8-4",19.10055727,"PLE","dag_dehydration","Fowlers toad",2.62816273
+"557",3.101e-05,"Indirect",0.9821,"metol",8,0,"BAM8-5",20.51550224,"PLE","dag_dehydration","Fowlers toad",1.469074059
+"558",3.101e-05,"Indirect",1.0263,"metol",8,0,"BAM10-1",22.5379891,"PLE","dag_dehydration","Fowlers toad",3.784805012
+"559",3.101e-05,"Indirect",0.9157,"metol",8,0,"BAM10-2",18.45842534,"PLE","dag_dehydration","Fowlers toad",0.178266663
+"560",3.101e-05,"Indirect",1.2425,"metol",8,0,"BAM10-3",17.64342834,"PLE","dag_dehydration","Fowlers toad",0.83816974
+"561",3.101e-05,"Indirect",1.3226,"metol",8,0,"BAM10-4",25.49063619,"PLE","dag_dehydration","Fowlers toad",2.909853436
+"562",3.101e-05,"Indirect",1.0177,"metol",8,0,"BAM10-5",13.50246957,"PLE","dag_dehydration","Fowlers toad",3.06875616
+"563",2.91e-06,"Indirect",0.8584,"tdn",8,0,"BAT0-1",4.623967642,"PLE","dag_dehydration","Fowlers toad",0.705452479
+"564",2.91e-06,"Indirect",0.8488,"tdn",8,0,"BAT0-2",4.576445003,"PLE","dag_dehydration","Fowlers toad",0.234413969
+"565",2.91e-06,"Indirect",0.9955,"tdn",8,0,"BAT0-3",4.945654456,"PLE","dag_dehydration","Fowlers toad",0.579612536
+"566",2.91e-06,"Indirect",1.0281,"tdn",8,0,"BAT0-4",2.883188373,"PLE","dag_dehydration","Fowlers toad",0.355740799
+"567",2.91e-06,"Indirect",1.1097,"tdn",8,0,"BAT0-5",3.813555416,"PLE","dag_dehydration","Fowlers toad",0.656741344
+"568",2.91e-06,"Indirect",1.2155,"tdn",8,0,"BAT2-1",4.002153511,"PLE","dag_dehydration","Fowlers toad",0.67893805
+"569",2.91e-06,"Indirect",0.8175,"tdn",8,0,"BAT2-2",4.565613817,"PLE","dag_dehydration","Fowlers toad",1.101694818
+"570",2.91e-06,"Indirect",0.851,"tdn",8,0,"BAT2-3",3.940878794,"PLE","dag_dehydration","Fowlers toad",0.471731541
+"571",2.91e-06,"Indirect",1.0826,"tdn",8,0,"BAT2-4",3.048173056,"PLE","dag_dehydration","Fowlers toad",0.355762936
+"572",2.91e-06,"Indirect",0.8654,"tdn",8,0,"BAT2-5",2.12684801,"PLE","dag_dehydration","Fowlers toad",0.356340814
+"573",2.91e-06,"Indirect",1.0271,"tdn",8,0,"BAT4-1",6.019197262,"PLE","dag_dehydration","Fowlers toad",1.070383806
+"574",2.91e-06,"Indirect",0.8715,"tdn",8,0,"BAT4-2",3.720045765,"PLE","dag_dehydration","Fowlers toad",0.681923819
+"575",2.91e-06,"Indirect",1.2942,"tdn",8,0,"BAT4-3",3.940413307,"PLE","dag_dehydration","Fowlers toad",1.020881176
+"576",2.91e-06,"Indirect",1.1198,"tdn",8,0,"BAT4-4",5.296550596,"PLE","dag_dehydration","Fowlers toad",0.509585728
+"577",2.91e-06,"Indirect",1.1049,"tdn",8,0,"BAT4-5",6.945352858,"PLE","dag_dehydration","Fowlers toad",3.217423384
+"578",2.91e-06,"Indirect",0.7637,"tdn",8,0,"BAT6-1",3.602278375,"PLE","dag_dehydration","Fowlers toad",0.286638101
+"579",2.91e-06,"Indirect",1.0612,"tdn",8,0,"BAT6-2",3.750249506,"PLE","dag_dehydration","Fowlers toad",0.294702812
+"580",2.91e-06,"Indirect",0.8935,"tdn",8,0,"BAT6-3",6.322726358,"PLE","dag_dehydration","Fowlers toad",0.386336954
+"581",2.91e-06,"Indirect",1.2336,"tdn",8,0,"BAT6-4",4.897593016,"PLE","dag_dehydration","Fowlers toad",0.440267136
+"582",2.91e-06,"Indirect",1.2775,"tdn",8,0,"BAT6-5",4.591640691,"PLE","dag_dehydration","Fowlers toad",0.569826956
+"583",2.91e-06,"Indirect",0.8524,"tdn",8,0,"BAT8-1",5.459072604,"PLE","dag_dehydration","Fowlers toad",0.556191253
+"584",2.91e-06,"Indirect",0.9142,"tdn",8,0,"BAT8-2",4.507937226,"PLE","dag_dehydration","Fowlers toad",0.432994464
+"585",2.91e-06,"Indirect",1.1256,"tdn",8,0,"BAT8-3",5.011321534,"PLE","dag_dehydration","Fowlers toad",0.676020901
+"586",2.91e-06,"Indirect",1.0474,"tdn",8,0,"BAT8-4",3.31837221,"PLE","dag_dehydration","Fowlers toad",0.75550304
+"587",2.91e-06,"Indirect",0.8709,"tdn",8,0,"BAT8-5",5.387182037,"PLE","dag_dehydration","Fowlers toad",0.264939632
+"588",2.91e-06,"Indirect",1.0839,"tdn",8,0,"BAT10-1",4.821906293,"PLE","dag_dehydration","Fowlers toad",0.761585411
+"589",2.91e-06,"Indirect",1.007,"tdn",8,0,"BAT10-2",3.750142848,"PLE","dag_dehydration","Fowlers toad",0.227798267
+"590",2.91e-06,"Indirect",1.2054,"tdn",8,0,"BAT10-3",3.640657566,"PLE","dag_dehydration","Fowlers toad",0.722003836
+"591",2.91e-06,"Indirect",0.9862,"tdn",8,0,"BAT10-4",3.0485444,"PLE","dag_dehydration","Fowlers toad",0.693917992
+"592",2.91e-06,"Indirect",0.9313,"tdn",8,0,"BAT10-5",3.77031985,"PLE","dag_dehydration","Fowlers toad",0.514549742
 "593",0.05,"soil",48.93,"Malathion",24,NA,"sal1",NA,NA,"hr2008","Ambystoma_tigrinum",1.46
 "594",0.05,"soil",50.92,"Malathion",24,NA,"sal2",NA,NA,"hr2008","Ambystoma_tigrinum",1.61
 "595",0.05,"soil",44.15,"Malathion",24,NA,"sal3",NA,NA,"hr2008","Ambystoma_tigrinum",0.35
@@ -600,66 +600,66 @@
 "599",0.05,"soil",39.07,"Malathion",48,NA,"sal7",NA,NA,"hr2008","Ambystoma_tigrinum",1.47
 "600",0.05,"soil",45.8,"Malathion",48,NA,"sal8",NA,NA,"hr2008","Ambystoma_tigrinum",0.05
 "601",0.05,"soil",49.98,"Malathion",48,NA,"sal9",NA,NA,"hr2008","Ambystoma_tigrinum",0.19
-"602",2.29e-05,"soil",0.8722,"atrazine",2,0,"atrazine_2hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",3.06820272
-"603",2.29e-05,"soil",0.89,"atrazine",2,0,"atrazine_2hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",3.689639699
-"604",2.29e-05,"soil",0.5668,"atrazine",2,0,"atrazine_2hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",4.701165885
-"605",2.29e-05,"soil",0.7135,"atrazine",2,0,"atrazine_2hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.892494228
-"606",2.29e-05,"soil",0.77,"atrazine",4,0,"atrazine_4hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",7.624610214
-"607",2.29e-05,"soil",0.7153,"atrazine",4,0,"atrazine_4hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",4.13430025
-"608",2.29e-05,"soil",0.9739,"atrazine",4,0,"atrazine_4hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",2.050778713
-"609",2.29e-05,"soil",0.5403,"atrazine",4,0,"atrazine_4hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",7.626486309
-"610",2.29e-05,"soil",0.4111,"atrazine",12,0,"atrazine_12hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",2.452277711
-"611",2.29e-05,"soil",0.8564,"atrazine",12,0,"atrazine_12hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",3.786892753
-"612",2.29e-05,"soil",1.06,"atrazine",12,0,"atrazine_12hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",4.514882392
-"613",2.29e-05,"soil",0.614,"atrazine",12,0,"atrazine_12hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.741192334
-"614",2.29e-05,"soil",0.5343,"atrazine",24,0,"atrazine_24hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",2.272491609
-"615",2.29e-05,"soil",0.687,"atrazine",24,0,"atrazine_24hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.843394997
-"616",2.29e-05,"soil",0.6553,"atrazine",24,0,"atrazine_24hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.12496207
-"617",2.29e-05,"soil",0.5026,"atrazine",24,0,"atrazine_24hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.978827141
-"618",2.29e-05,"soil",0.6456,"atrazine",48,0,"atrazine_48hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.961393825
-"619",2.29e-05,"soil",0.6671,"atrazine",48,0,"atrazine_48hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.631015591
-"620",2.29e-05,"soil",0.6276,"atrazine",48,0,"atrazine_48hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.93069942
-"621",2.29e-05,"soil",0.5903,"atrazine",48,0,"atrazine_48hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.484441109
-"622",2.29e-05,"soil",1.1024,"triadimefon",2,0,"triadimefon_2hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.489601403
-"623",2.7e-06,"soil",0.9285,"triadimefon",2,0,"triadimefon_2hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.306581872
-"624",2.7e-06,"soil",0.663,"triadimefon",2,0,"triadimefon_2hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.376458575
-"625",2.7e-06,"soil",0.6024,"triadimefon",2,0,"triadimefon_2hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.374511404
-"626",2.7e-06,"soil",1.0199,"triadimefon",4,0,"triadimefon_4hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.97804843
-"627",2.7e-06,"soil",0.9525,"triadimefon",4,0,"triadimefon_4hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.335365342
-"628",2.7e-06,"soil",0.6506,"triadimefon",4,0,"triadimefon_4hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.347101261
-"629",2.7e-06,"soil",0.5932,"triadimefon",4,0,"triadimefon_4hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.533983287
-"630",2.7e-06,"soil",0.5875,"triadimefon",12,0,"triadimefon_12hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.487313921
-"631",2.7e-06,"soil",0.1879,"triadimefon",12,0,"triadimefon_12hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.163882256
-"632",2.7e-06,"soil",0.8768,"triadimefon",12,0,"triadimefon_12hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.518446024
-"633",2.7e-06,"soil",0.8139,"triadimefon",12,0,"triadimefon_12hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.850015349
-"634",2.7e-06,"soil",0.7494,"triadimefon",24,0,"triadimefon_24hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.753354385
-"635",2.7e-06,"soil",0.7533,"triadimefon",24,0,"triadimefon_24hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.268774096
-"636",2.7e-06,"soil",0.7957,"triadimefon",24,0,"triadimefon_24hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.324932505
-"637",2.7e-06,"soil",0.9826,"triadimefon",24,0,"triadimefon_24hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",2.114540569
-"638",2.7e-06,"soil",0.7765,"triadimefon",48,0,"triadimefon_48hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.337985638
-"639",2.7e-06,"soil",1.0258,"triadimefon",48,0,"triadimefon_48hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.18812362
-"640",2.7e-06,"soil",0.8476,"triadimefon",48,0,"triadimefon_48hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.174854226
-"641",2.7e-06,"soil",0.6693,"triadimefon",48,0,"triadimefon_48hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.29378644
-"642",1.1e-06,"soil",0.4614,"fipronil",2,0,"fipronil_2hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",3.719393647
-"643",1.1e-06,"soil",0.2284,"fipronil",2,0,"fipronil_2hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.880936052
-"644",1.1e-06,"soil",0.7639,"fipronil",2,0,"fipronil_2hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.570034283
-"645",1.1e-06,"soil",0.3696,"fipronil",2,0,"fipronil_2hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.297795327
-"646",1.1e-06,"soil",0.9285,"fipronil",4,0,"fipronil_4hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.88914103
-"647",1.1e-06,"soil",0.7862,"fipronil",4,0,"fipronil_4hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",2.023821797
-"648",1.1e-06,"soil",0.6985,"fipronil",4,0,"fipronil_4hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.949591323
-"649",1.1e-06,"soil",0.2882,"fipronil",4,0,"fipronil_4hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",1.339780158
-"650",1.1e-06,"soil",1.1638,"fipronil",12,0,"fipronil_12hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.608268662
-"651",1.1e-06,"soil",0.8824,"fipronil",12,0,"fipronil_12hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.870180984
-"652",1.1e-06,"soil",1.4191,"fipronil",12,0,"fipronil_12hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.489633965
-"653",1.1e-06,"soil",1.4909,"fipronil",12,0,"fipronil_12hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.29574225
-"654",1.1e-06,"soil",0.5347,"fipronil",24,0,"fipronil_24hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.329936663
-"655",1.1e-06,"soil",0.764,"fipronil",24,0,"fipronil_24hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.278098705
-"656",1.1e-06,"soil",0.3892,"fipronil",24,0,"fipronil_24hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.255766754
-"657",1.1e-06,"soil",0.638,"fipronil",24,0,"fipronil_24hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.206890648
-"658",1.1e-06,"soil",0.7873,"fipronil",48,0,"fipronil_48hr_1",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.083283566
-"659",1.1e-06,"soil",0.5969,"fipronil",48,0,"fipronil_48hr_2",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.389202422
-"660",1.1e-06,"soil",0.9009,"fipronil",48,0,"fipronil_48hr_3",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.224047561
-"661",1.1e-06,"soil",0.5355,"fipronil",48,0,"fipronil_48hr_4",NA,NA,"dag_metabolites","Anaxyrus_fowleri",0.151268165
+"602",2.29e-05,"soil",0.8722,"atrazine",2,0,"atrazine_2hr_1",NA,NA,"dag_metabolites","Fowlers toad",3.06820272
+"603",2.29e-05,"soil",0.89,"atrazine",2,0,"atrazine_2hr_2",NA,NA,"dag_metabolites","Fowlers toad",3.689639699
+"604",2.29e-05,"soil",0.5668,"atrazine",2,0,"atrazine_2hr_3",NA,NA,"dag_metabolites","Fowlers toad",4.701165885
+"605",2.29e-05,"soil",0.7135,"atrazine",2,0,"atrazine_2hr_4",NA,NA,"dag_metabolites","Fowlers toad",1.892494228
+"606",2.29e-05,"soil",0.77,"atrazine",4,0,"atrazine_4hr_1",NA,NA,"dag_metabolites","Fowlers toad",7.624610214
+"607",2.29e-05,"soil",0.7153,"atrazine",4,0,"atrazine_4hr_2",NA,NA,"dag_metabolites","Fowlers toad",4.13430025
+"608",2.29e-05,"soil",0.9739,"atrazine",4,0,"atrazine_4hr_3",NA,NA,"dag_metabolites","Fowlers toad",2.050778713
+"609",2.29e-05,"soil",0.5403,"atrazine",4,0,"atrazine_4hr_4",NA,NA,"dag_metabolites","Fowlers toad",7.626486309
+"610",2.29e-05,"soil",0.4111,"atrazine",12,0,"atrazine_12hr_1",NA,NA,"dag_metabolites","Fowlers toad",2.452277711
+"611",2.29e-05,"soil",0.8564,"atrazine",12,0,"atrazine_12hr_2",NA,NA,"dag_metabolites","Fowlers toad",3.786892753
+"612",2.29e-05,"soil",1.06,"atrazine",12,0,"atrazine_12hr_3",NA,NA,"dag_metabolites","Fowlers toad",4.514882392
+"613",2.29e-05,"soil",0.614,"atrazine",12,0,"atrazine_12hr_4",NA,NA,"dag_metabolites","Fowlers toad",1.741192334
+"614",2.29e-05,"soil",0.5343,"atrazine",24,0,"atrazine_24hr_1",NA,NA,"dag_metabolites","Fowlers toad",2.272491609
+"615",2.29e-05,"soil",0.687,"atrazine",24,0,"atrazine_24hr_2",NA,NA,"dag_metabolites","Fowlers toad",1.843394997
+"616",2.29e-05,"soil",0.6553,"atrazine",24,0,"atrazine_24hr_3",NA,NA,"dag_metabolites","Fowlers toad",1.12496207
+"617",2.29e-05,"soil",0.5026,"atrazine",24,0,"atrazine_24hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.978827141
+"618",2.29e-05,"soil",0.6456,"atrazine",48,0,"atrazine_48hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.961393825
+"619",2.29e-05,"soil",0.6671,"atrazine",48,0,"atrazine_48hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.631015591
+"620",2.29e-05,"soil",0.6276,"atrazine",48,0,"atrazine_48hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.93069942
+"621",2.29e-05,"soil",0.5903,"atrazine",48,0,"atrazine_48hr_4",NA,NA,"dag_metabolites","Fowlers toad",1.484441109
+"622",2.29e-05,"soil",1.1024,"triadimefon",2,0,"triadimefon_2hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.489601403
+"623",2.7e-06,"soil",0.9285,"triadimefon",2,0,"triadimefon_2hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.306581872
+"624",2.7e-06,"soil",0.663,"triadimefon",2,0,"triadimefon_2hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.376458575
+"625",2.7e-06,"soil",0.6024,"triadimefon",2,0,"triadimefon_2hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.374511404
+"626",2.7e-06,"soil",1.0199,"triadimefon",4,0,"triadimefon_4hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.97804843
+"627",2.7e-06,"soil",0.9525,"triadimefon",4,0,"triadimefon_4hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.335365342
+"628",2.7e-06,"soil",0.6506,"triadimefon",4,0,"triadimefon_4hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.347101261
+"629",2.7e-06,"soil",0.5932,"triadimefon",4,0,"triadimefon_4hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.533983287
+"630",2.7e-06,"soil",0.5875,"triadimefon",12,0,"triadimefon_12hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.487313921
+"631",2.7e-06,"soil",0.1879,"triadimefon",12,0,"triadimefon_12hr_2",NA,NA,"dag_metabolites","Fowlers toad",1.163882256
+"632",2.7e-06,"soil",0.8768,"triadimefon",12,0,"triadimefon_12hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.518446024
+"633",2.7e-06,"soil",0.8139,"triadimefon",12,0,"triadimefon_12hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.850015349
+"634",2.7e-06,"soil",0.7494,"triadimefon",24,0,"triadimefon_24hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.753354385
+"635",2.7e-06,"soil",0.7533,"triadimefon",24,0,"triadimefon_24hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.268774096
+"636",2.7e-06,"soil",0.7957,"triadimefon",24,0,"triadimefon_24hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.324932505
+"637",2.7e-06,"soil",0.9826,"triadimefon",24,0,"triadimefon_24hr_4",NA,NA,"dag_metabolites","Fowlers toad",2.114540569
+"638",2.7e-06,"soil",0.7765,"triadimefon",48,0,"triadimefon_48hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.337985638
+"639",2.7e-06,"soil",1.0258,"triadimefon",48,0,"triadimefon_48hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.18812362
+"640",2.7e-06,"soil",0.8476,"triadimefon",48,0,"triadimefon_48hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.174854226
+"641",2.7e-06,"soil",0.6693,"triadimefon",48,0,"triadimefon_48hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.29378644
+"642",1.1e-06,"soil",0.4614,"fipronil",2,0,"fipronil_2hr_1",NA,NA,"dag_metabolites","Fowlers toad",3.719393647
+"643",1.1e-06,"soil",0.2284,"fipronil",2,0,"fipronil_2hr_2",NA,NA,"dag_metabolites","Fowlers toad",1.880936052
+"644",1.1e-06,"soil",0.7639,"fipronil",2,0,"fipronil_2hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.570034283
+"645",1.1e-06,"soil",0.3696,"fipronil",2,0,"fipronil_2hr_4",NA,NA,"dag_metabolites","Fowlers toad",1.297795327
+"646",1.1e-06,"soil",0.9285,"fipronil",4,0,"fipronil_4hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.88914103
+"647",1.1e-06,"soil",0.7862,"fipronil",4,0,"fipronil_4hr_2",NA,NA,"dag_metabolites","Fowlers toad",2.023821797
+"648",1.1e-06,"soil",0.6985,"fipronil",4,0,"fipronil_4hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.949591323
+"649",1.1e-06,"soil",0.2882,"fipronil",4,0,"fipronil_4hr_4",NA,NA,"dag_metabolites","Fowlers toad",1.339780158
+"650",1.1e-06,"soil",1.1638,"fipronil",12,0,"fipronil_12hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.608268662
+"651",1.1e-06,"soil",0.8824,"fipronil",12,0,"fipronil_12hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.870180984
+"652",1.1e-06,"soil",1.4191,"fipronil",12,0,"fipronil_12hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.489633965
+"653",1.1e-06,"soil",1.4909,"fipronil",12,0,"fipronil_12hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.29574225
+"654",1.1e-06,"soil",0.5347,"fipronil",24,0,"fipronil_24hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.329936663
+"655",1.1e-06,"soil",0.764,"fipronil",24,0,"fipronil_24hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.278098705
+"656",1.1e-06,"soil",0.3892,"fipronil",24,0,"fipronil_24hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.255766754
+"657",1.1e-06,"soil",0.638,"fipronil",24,0,"fipronil_24hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.206890648
+"658",1.1e-06,"soil",0.7873,"fipronil",48,0,"fipronil_48hr_1",NA,NA,"dag_metabolites","Fowlers toad",0.083283566
+"659",1.1e-06,"soil",0.5969,"fipronil",48,0,"fipronil_48hr_2",NA,NA,"dag_metabolites","Fowlers toad",0.389202422
+"660",1.1e-06,"soil",0.9009,"fipronil",48,0,"fipronil_48hr_3",NA,NA,"dag_metabolites","Fowlers toad",0.224047561
+"661",1.1e-06,"soil",0.5355,"fipronil",48,0,"fipronil_48hr_4",NA,NA,"dag_metabolites","Fowlers toad",0.151268165
 "662",2.36e-05,"soil",0.9971,"ATZT",8,0,"ATZMED_ATZT",NA,NA,"rvm2017","Rana_clamitans",24.80672939
 "663",2.36e-05,"soil",1.2746,"ATZT",8,0,"ATZMA_ATZT",NA,NA,"rvm2017","Rana_clamitans",13.29249991
 "664",2.36e-05,"soil",1.3043,"ATZT",8,0,"ATZMAPZ_ATZT",NA,NA,"rvm2017","Rana_clamitans",3.846909215
