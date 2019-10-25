@@ -412,43 +412,53 @@ dim(vm2015_merge)
 
 
 ### Van Meter et al. 2016
-```{r eval = TRUE, echo = TRUE, include = FALSE}
+
+From the initial 11 columns, 4 columns were dropped and consolidated into 1, and 4 columns were added.
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
-#van meter 2016
+# van meter 2016
 ##################
-#Reformat vm2016 for merge with vm2015
+# Reformat vm2016 for merge with vm2015
 dim(vm2016)
 colnames(vm2016)
-#add sample_id
+```
+
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# add sample_id
 vm2016$sample_id <- paste(vm2016$Day, vm2016$Row, vm2016$Column, sep="_")
 vm2016_subset2 <- subset(vm2016, select=c(-Day,-Row, -Column, -Total))
-#add additional columns
+# add additional columns
 species <- c(rep("American toad",nrow(vm2016_subset2)))
 application <- c(rep("Indirect",nrow(vm2016_subset2)))
 exp_duration<- (rep(8,nrow(vm2016_subset2)))
 source <- c(rep("rvm2016",nrow(vm2016_subset2)))
 vm2016_subset3 <- cbind(vm2016_subset2, species, application, exp_duration, source)
 ```
-From the initial 11 columns, 4 columns were dropped and consolidated into 1, and 4 columns were added.
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-#assign values to application rate
-unique(vm2016_subset3$Pesticide)
-colnames(vm2016_subset3)
+Application rates for several pesticides were computed.  
+
+There were 108 observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set.        
+
+There were 60 observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# assign values to application rate
+#unique(vm2016_subset3$Pesticide)
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="ATZTOT"] <- 22.9e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="Imid"] <- 5.7e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="FipTOT"] <- 1.1e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="TNDTOT"] <- 2.7e-6
 vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide=="Pendi"] <- 69.8e-6
-colnames(vm2016_subset3)
-#drop decay products that were not sprayed, keeping only parents
+# drop decay products that were not sprayed, keeping only parents
 rows_to_drop <- which(vm2016_subset3$Parent == 0)
 vm2016_subset4 <- vm2016_subset3[-rows_to_drop,]
-#drop ATZ,Fip, TDN since does not include metabolites in total
+# drop ATZ, Fip, TDN since do not include metabolites in total
 chems_to_drop <- c("ATZ","Fip","TDN")
 vm2016_subset5 <- vm2016_subset4[!(vm2016_subset4$Pesticide %in% chems_to_drop),]
-#now drop parent field
+# now drop parent field
 drop_cols <- c("Parent")
 vm2016_subset6 <- vm2016_subset5[,!(names(vm2016_subset5) %in% drop_cols)]
+```
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 # standardize column names
 #View(vm2016_subset4)
 colnames(vm2016_subset6)
@@ -469,18 +479,18 @@ colnames(vm2016_merge)
 vm2016_merge_filename <- paste(amphibdir_data_out,"vm2016_merge.csv", sep="")
 write.csv(vm2016_merge, file=vm2016_merge_filename)
 ```
-There were `r length(rows_to_drop)` observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set.        
+Several column names were standardized and all columns were ordered for ease of merging with the combined data set.  
 
-There were `r length(which(vm2016_subset4$Pesticide %in% chems_to_drop))` observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total.  From the initial `r nrow(vm2016)` rows, the updated dimensions are:
+The updated dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(vm2016_merge)
-```
+``` 
 
 
 The Van Meter et al. 2014/2015 and Van Meter et al. 2016 data sets were combined.  
 
-```{r eval=TRUE, echo=FALSE, include = FALSE}
-colnames(vm2015_merge)
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+colnames(vm2015_merge) 
 colnames(vm2016_merge)
 dim(vm2015_merge)
 dim(vm2016_merge)
@@ -504,7 +514,7 @@ dim(combined_data0)
 ##################
 #glinski et al 2017 dehydration
 ##################
-#Revise dag2016_dehy to merge with van meter data sets
+# Revise dag2016_dehy to merge with van meter data sets
 dim(dag2016_dehy0)
 colnames(dag2016_dehy0)
 #from
@@ -513,13 +523,13 @@ colnames(dag2016_dehy0)
 #to
 # [1] "chemical"        "soil_type"       "tissue_conc_ugg" "soil_conc_ugg"   "body_weight_g"  
 # [6] "formulation"     "species"         "application"     "exp_duration"    "app_rate_g_cm2"
-
+```
+The metabolite products were dropped from the data set; 600 rows from the initial 1494 rows were retained.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 # drop metabolite products
 parent_keepers <- which(as.vector(dag2016_dehy0$parent) == as.vector(dag2016_dehy0$analyte))
 dag2016_dehy1 <- dag2016_dehy0[parent_keepers,]
-#View(dag2016_dehy0)
 ```
-The metabolite products were dropped from the data set; `r length(parent_keepers)` rows from the initial `r nrow(dag2016_dehy0)` rows were retained.
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -545,14 +555,13 @@ source <- c(rep("dag_dehydration",nrow(dag2016_dehy1)))
 dag2016_dehy2 <- cbind(dag2016_dehy1, formulation, soil_type, application, 
                        app_rate_g_cm2, exp_duration, soil_conc_ugg, source)
 ```
-Several column names were altered for standarization across the data sets, and 7 columns were added (exposure duration, soil type, application, application rate, formulation, soil concentration, research study source).  The updated dimensions are:
+Several column names were altered for standarization across the data set, and 7 columns were added (exposure duration, soil type, application, application rate, formulation, soil concentration, research study source).  The updated dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dag2016_dehy2)
 ```
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
-
 #reshape- cast takes long-format data and casts it into wide-format data
 # matrix used to split to soil and amphibian conc columns and delete
 # conc split to soil and amphibian conc columns
@@ -565,24 +574,27 @@ colnames(dag2016_dehy2)
 #                       tissue_conc_ugg + sample_id + species + chemical + exp_duration ~ matrix, 
 #                       value.var = c("tissue_conc_ugg"))
 #View(dag2016_mergefail)
+```
 
-#drop the soil until we can do a many-to-one merge of soil concentrations
-#drop decay products that were not sprayed, keeping only parents
+Multiple soil concentration observations were given the same ID. Until a many-to-one merge of soil concentrations could be executed, 300 rows were temporarily dropped.  There were also 3 columns dropped.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# drop the soil until we can do a many-to-one merge of soil concentrations
+# drop decay products that were not sprayed, keeping only parents
 rows_to_drop <- which(dag2016_dehy2$matrix == 'soil')
 dag2016_dehy3 <- dag2016_dehy2[-rows_to_drop,]
 # parent, time and matrix columns delete
 drop_cols <- c("parent","time","matrix")
 dag2016_dehy4 <- dag2016_dehy3[,!(names(dag2016_dehy3) %in% drop_cols)]
 ```
-
-Multiple soil concentration observations were given the same ID. Until a many-to-one merge of soil concentrations could be executed, `r length(rows_to_drop)` rows were temporarily dropped.  There were also `r length(drop_cols)` columns dropped.  The updated dimensions are:
+The updated dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dag2016_dehy4)
 ```
 
-
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-unique(dag2016_dehy4$chemical)
+The application rate values (app_rate_g_cm2) were updated for the pesticides, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# fill in application rates
+#unique(dag2016_dehy4$chemical)
 update_atrazine <- which(dag2016_dehy4$chemical == 'atrazine')
 dag2016_dehy4$app_rate_g_cm2[update_atrazine] <- 0.00002395 # atrazine g/cm2
 update_chloro <- which(dag2016_dehy4$chemical == 'chloro+d')
@@ -593,26 +605,31 @@ update_tdn <- which(dag2016_dehy4$chemical == 'tdn')
 dag2016_dehy4$app_rate_g_cm2[update_tdn] <- 0.00000291 # tdn g/cm2
 update_imid <- which(dag2016_dehy4$chemical == 'imid')
 dag2016_dehy4$app_rate_g_cm2[update_imid] <- 0.00000539 # imid g/cm2
-dim(dag2016_dehy4)
 
-# add back in soil concentrations
+# add back in soil concentrations (in already-made soil_conc_ugg column)
 dag2016_soil <- dag2016_dehy2[rows_to_drop,]
-colnames(dag2016_soil)
-dag2016_soil$tissue_conc_ugg
-
 dag2016_dehy4$soil_conc_ugg <- dag2016_soil$tissue_conc_ugg
-#View(cbind(as.vector(dag2016_dehy4$sample_id),as.vector(dag2016_dehy4$sample_id)))
-#View(cbind(dag2016_dehy4$tissue_conc_ugg,dag2016_dehy4$soil_conc_ugg))
-bcf <- dag2016_dehy4$tissue_conc_ugg/dag2016_dehy4$soil_conc_ugg
-min(bcf)
-max(bcf)
 
 # rename species names, according to standardized names
 dag2016_dehy4$species <- as.character(dag2016_dehy4$species)
 dag2016_dehy4$species[dag2016_dehy4$species == "LF"] <- "Leopard frog"
 dag2016_dehy4$species[dag2016_dehy4$species == "BA"] <- "Fowlers toad"
 dag2016_dehy4$species <- as.factor(dag2016_dehy4$species)
+```
 
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# check soil concentrations
+colnames(dag2016_soil)
+dag2016_soil$tissue_conc_ugg
+
+#View(cbind(as.vector(dag2016_dehy4$sample_id),as.vector(dag2016_dehy4$sample_id)))
+#View(cbind(dag2016_dehy4$tissue_conc_ugg,dag2016_dehy4$soil_conc_ugg))
+bcf <- dag2016_dehy4$tissue_conc_ugg/dag2016_dehy4$soil_conc_ugg
+min(bcf)
+max(bcf)
+```
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 # reorder columns alphabetically to help with merge
 # reorder dag2016_dehy4
 colnames(dag2016_dehy4)
@@ -625,7 +642,7 @@ dag2016_dehy_merge_filename <- paste(amphibdir_data_out,"dag2016_dehy_merge.csv"
 write.csv(dag2016_dehy_merge, dag2016_dehy_merge_filename)
 
 ```
-The application rate values (app_rate_g_cm2) were updated for the pesticides, and the temporarily dropped soil concentrations were updated to the current data set.  The dimensions are still:
+The dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dag2016_dehy_merge)
 ```
@@ -737,9 +754,9 @@ dim(combined_data4)
 
 ### Glinski et al. 2019 (dermal routes)
 
-~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column)
+~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column) ~~~~~~  
 
-The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set.
+The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ## import dermal routes data, with amphibians weights

@@ -832,8 +832,36 @@ Once each data set was cleaned, a local copy was saved and the data set was merg
 <div id="van-meter-et-al.-2016-1" class="section level3">
 <h3>Van Meter et al. 2016</h3>
 <p>From the initial 11 columns, 4 columns were dropped and consolidated into 1, and 4 columns were added.</p>
+<pre class="r"><code># add sample_id
+vm2016$sample_id &lt;- paste(vm2016$Day, vm2016$Row, vm2016$Column, sep=&quot;_&quot;)
+vm2016_subset2 &lt;- subset(vm2016, select=c(-Day,-Row, -Column, -Total))
+# add additional columns
+species &lt;- c(rep(&quot;American toad&quot;,nrow(vm2016_subset2)))
+application &lt;- c(rep(&quot;Indirect&quot;,nrow(vm2016_subset2)))
+exp_duration&lt;- (rep(8,nrow(vm2016_subset2)))
+source &lt;- c(rep(&quot;rvm2016&quot;,nrow(vm2016_subset2)))
+vm2016_subset3 &lt;- cbind(vm2016_subset2, species, application, exp_duration, source)</code></pre>
+<p>Application rates for several pesticides were computed.</p>
 <p>There were 108 observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set.</p>
-<p>There were 60 observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total. From the initial 264 rows, the updated dimensions are:</p>
+<p>There were 60 observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total.</p>
+<pre class="r"><code># assign values to application rate
+#unique(vm2016_subset3$Pesticide)
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide==&quot;ATZTOT&quot;] &lt;- 22.9e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide==&quot;Imid&quot;] &lt;- 5.7e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide==&quot;FipTOT&quot;] &lt;- 1.1e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide==&quot;TNDTOT&quot;] &lt;- 2.7e-6
+vm2016_subset3$app_rate_g_cm2[vm2016_subset3$Pesticide==&quot;Pendi&quot;] &lt;- 69.8e-6
+# drop decay products that were not sprayed, keeping only parents
+rows_to_drop &lt;- which(vm2016_subset3$Parent == 0)
+vm2016_subset4 &lt;- vm2016_subset3[-rows_to_drop,]
+# drop ATZ, Fip, TDN since do not include metabolites in total
+chems_to_drop &lt;- c(&quot;ATZ&quot;,&quot;Fip&quot;,&quot;TDN&quot;)
+vm2016_subset5 &lt;- vm2016_subset4[!(vm2016_subset4$Pesticide %in% chems_to_drop),]
+# now drop parent field
+drop_cols &lt;- c(&quot;Parent&quot;)
+vm2016_subset6 &lt;- vm2016_subset5[,!(names(vm2016_subset5) %in% drop_cols)]</code></pre>
+<p>Several column names were standardized and all columns were ordered for ease of merging with the combined data set.</p>
+<p>The updated dimensions are:</p>
 <pre><code>## [1] 96 12</code></pre>
 <p>The Van Meter et al. 2014/2015 and Van Meter et al. 2016 data sets were combined.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
@@ -842,11 +870,45 @@ Once each data set was cleaned, a local copy was saved and the data set was merg
 <div id="glinski-et-al.-2018a-dehydration-1" class="section level3">
 <h3>Glinski et al. 2018a (Dehydration)</h3>
 <p>The metabolite products were dropped from the data set; 600 rows from the initial 1494 rows were retained.</p>
-<p>Several column names were altered for standarization across the data sets, and 7 columns were added (exposure duration, soil type, application, application rate, formulation, soil concentration, research study source). The updated dimensions are:</p>
+<pre class="r"><code># drop metabolite products
+parent_keepers &lt;- which(as.vector(dag2016_dehy0$parent) == as.vector(dag2016_dehy0$analyte))
+dag2016_dehy1 &lt;- dag2016_dehy0[parent_keepers,]</code></pre>
+<p>Several column names were altered for standarization across the data set, and 7 columns were added (exposure duration, soil type, application, application rate, formulation, soil concentration, research study source). The updated dimensions are:</p>
 <pre><code>## [1] 600  15</code></pre>
-<p>Multiple soil concentration observations were given the same ID. Until a many-to-one merge of soil concentrations could be executed, 300 rows were temporarily dropped. There were also 3 columns dropped. The updated dimensions are:</p>
+<p>Multiple soil concentration observations were given the same ID. Until a many-to-one merge of soil concentrations could be executed, 300 rows were temporarily dropped. There were also 3 columns dropped.</p>
+<pre class="r"><code># drop the soil until we can do a many-to-one merge of soil concentrations
+# drop decay products that were not sprayed, keeping only parents
+rows_to_drop &lt;- which(dag2016_dehy2$matrix == &#39;soil&#39;)
+dag2016_dehy3 &lt;- dag2016_dehy2[-rows_to_drop,]
+# parent, time and matrix columns delete
+drop_cols &lt;- c(&quot;parent&quot;,&quot;time&quot;,&quot;matrix&quot;)
+dag2016_dehy4 &lt;- dag2016_dehy3[,!(names(dag2016_dehy3) %in% drop_cols)]</code></pre>
+<p>The updated dimensions are:</p>
 <pre><code>## [1] 300  12</code></pre>
-<p>The application rate values (app_rate_g_cm2) were updated for the pesticides, and the temporarily dropped soil concentrations were updated to the current data set. The dimensions are still:</p>
+<p>The application rate values (app_rate_g_cm2) were updated for the pesticides, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.</p>
+<pre class="r"><code># fill in application rates
+#unique(dag2016_dehy4$chemical)
+update_atrazine &lt;- which(dag2016_dehy4$chemical == &#39;atrazine&#39;)
+dag2016_dehy4$app_rate_g_cm2[update_atrazine] &lt;- 0.00002395 # atrazine g/cm2
+update_chloro &lt;- which(dag2016_dehy4$chemical == &#39;chloro+d&#39;)
+dag2016_dehy4$app_rate_g_cm2[update_chloro] &lt;-  0.0000443 # chloro g/cm2
+update_metol &lt;- which(dag2016_dehy4$chemical == &#39;metol&#39;)
+dag2016_dehy4$app_rate_g_cm2[update_metol] &lt;-  0.00003101 # metol g/cm2
+update_tdn &lt;- which(dag2016_dehy4$chemical == &#39;tdn&#39;)
+dag2016_dehy4$app_rate_g_cm2[update_tdn] &lt;- 0.00000291 # tdn g/cm2
+update_imid &lt;- which(dag2016_dehy4$chemical == &#39;imid&#39;)
+dag2016_dehy4$app_rate_g_cm2[update_imid] &lt;- 0.00000539 # imid g/cm2
+
+# add back in soil concentrations (in already-made soil_conc_ugg column)
+dag2016_soil &lt;- dag2016_dehy2[rows_to_drop,]
+dag2016_dehy4$soil_conc_ugg &lt;- dag2016_soil$tissue_conc_ugg
+
+# rename species names, according to standardized names
+dag2016_dehy4$species &lt;- as.character(dag2016_dehy4$species)
+dag2016_dehy4$species[dag2016_dehy4$species == &quot;LF&quot;] &lt;- &quot;Leopard frog&quot;
+dag2016_dehy4$species[dag2016_dehy4$species == &quot;BA&quot;] &lt;- &quot;Fowlers toad&quot;
+dag2016_dehy4$species &lt;- as.factor(dag2016_dehy4$species)</code></pre>
+<p>The dimensions are:</p>
 <pre><code>## [1] 300  12</code></pre>
 <p>The Glinkski et al. 2018a (Dehydration) was combined with the previously merged data sets.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
@@ -872,8 +934,8 @@ Once each data set was cleaned, a local copy was saved and the data set was merg
 </div>
 <div id="glinski-et-al.-2019-dermal-routes-1" class="section level3">
 <h3>Glinski et al. 2019 (dermal routes)</h3>
-<p>~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column)</p>
-<p>The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set.</p>
+<p>~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column) ~~~~~~</p>
+<p>The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 48  2</code></pre>
 <pre><code>## [1] &quot;Weight_g&quot; &quot;Sample&quot;</code></pre>
