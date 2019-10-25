@@ -1,0 +1,11 @@
+# -------------------------------------------------------
+Metadata for Dermal_routes_weights.csv
+Glinski, D., Purucker, S. T., 2019. 
+# -------------------------------------------------------
+
+This data coincides with the data from dag2019_dermal_routes.csv.
+
+Column labels and description of the column for the csv file.
+
+Sample		- Unique identifier for each amphibian measured.
+Weight_g	- Body weight (grams) of amphibian. This is the total weight of the amphibian minus the weight of its liver. The liver was used for metabolomics.

@@ -1,0 +1,17 @@
+# -------------------------------------------------------
+Metadata for dag2019_dermal_routes.csv
+Glinski, D., Purucker, S. T., 2019. 
+# -------------------------------------------------------
+
+Column labels and description of the column for the csv file.
+
+Sample ID	- Unique identifier for each measurement taken
+Analyte		- Active ingredient measured in the water/soil/amphibian after an 8-hour exposure period. Parents include BIF, CPF, TFS. Metabolites include 4-OH, CPO, TFSa. 
+			(BIF = Bifenthrin, 4-OH = 4-Hydroxy Bifenthrin, CPF = Chlorpyrifos, CPO = Chlorpyrifos Oxen, TFS = Trifloxystrobin, TFSa = Trifloxystrobin Acid)		
+Media		- Type of element the Matrix was in when exposed to the Analyte. Type of soil is OLS.
+			(Soil, Water)
+Matrix		- Type of element that was measured for exposure to the Analyte. Type of soil is OLS. Species of amphibian is Leopard frog. 
+			(Amphibian, Soil, Water)
+Concentration	- Concentration of Analyte in the Matrix after 8-hour exposure period (ug/g)	
+
+ 
