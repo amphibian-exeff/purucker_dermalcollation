@@ -12,7 +12,7 @@ title: "Creating a Database of Amphibian Dermal Exposure Data"
 **Introduction**
 ========================================================
 
-The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018) and Glinski (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
+The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
 
 | Manuscript | Link | Meta |
 | --------------- |:------------------ |:--------------- |
@@ -55,6 +55,7 @@ Sys.info()[4]
 library(ggplot2)
 require(gridExtra)
 library(reshape2)
+library(kableExtra)
 
 # Update according to the System you are using...
 # tom epa linux
@@ -102,9 +103,9 @@ amphibdir_src <- paste(amphibdir,'src/',sep='')
 ========================================================
 ### Van Meter et al. 2014 and Van Meter et al. 2015
 
-Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil.
+Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 10-gallon aquarium.
 
-Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil.  These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)).
+Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil.  These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Pesticides were applied at the maxium legally allowable application rates scaled down to the size of a 10-gallon aquarium, with the exception of pedimethalin which was applied at 30% of the permitted application rate. This was due to pedimethalin's insolubility in the limited solvent and the water volumes used in this study.
 
 For our purposes, the Van Meter et al. 2015 essentially adds the aerial overspray exposures to the Van Meter et al. 2014 data set. 
 
@@ -130,7 +131,7 @@ summary(vm2015)
 
 ### Van Meter et al. 2016
 
-Van Meter et al. 2016 considered bioconcentration of 5 current-use pesticides (imidacloprid, atrazine, triadimefon, fipronil, and pedimethalin) in American toads (*Bufo americanus*) across soil types. Toads were exposed to one of two soil types with significantly different organic matter content (14.1% = high organic matter, 3.1% = low organic matter). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil.  
+Van Meter et al. 2016 considered bioconcentration of 5 current-use pesticides (imidacloprid, atrazine, triadimefon, fipronil, and pedimethalin) in American toads (*Bufo americanus*) across soil types. Toads were exposed to one of two soil types with significantly different organic matter content (14.1% = high organic matter, 3.1% = low organic matter). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 0.94 L Pyrex glass bowl.  
 
 *Note: this file does include metabolites into the total for the parents*
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -150,7 +151,7 @@ summary(vm2016)
 
 ### Glinski et al. 2018a (Dehydration)
 
-Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (*Lithobates sphenocephala*) and Fowler's toads (*Anaxyrus fowleri*)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period.
+Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (*Lithobates sphenocephala*) and Fowler's toads (*Anaxyrus fowleri*)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six bowls at 1350 cm^2^ (each bowl 15 cm x 15 cm).
 
 *Note: this file does not combine daughters with parents*  
 *Note: this file has body burdens and soil concentrations as separate rows*
@@ -172,7 +173,7 @@ summary(dag2016_dehy0)
 
 ### Henson-Ramsey 2008  
 
-Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (*Ambystoma tigrinum*). Tiger salamanders were exposed to contaminated soils with 50 ug/cm^2^ or 100 ug/cm^2^ malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm^2^ malathion. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm^2^ contaminated soil for 1 day, exposed to 50 ug/cm^2^ for 2 days, exposed to 50 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day.
+Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (*Ambystoma tigrinum*). Tiger salamanders were exposed to contaminated soils with 50 ug/cm^2^ or 100 ug/cm^2^ malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm^2^ malathion. For each exposure, the malathion application rate was sprayed onto the approximately 1200g of soil in the 1060cm^2^ polyethylene cages. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm^2^ contaminated soil for 1 day, exposed to 50 ug/cm^2^ for 2 days, exposed to 50 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day. 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Henson-Ramsey 2008
@@ -190,7 +191,7 @@ summary(hr2008)
 
 ### Glinski et al. 2018b (Metabolites)
 
-Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites.
+Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 10-gallon aquarium.
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2017 metabolite study
@@ -224,7 +225,8 @@ summary(dag2016_metabolite_merge)
 
 ### Glinski et al. 2018c (Biomarkers)
 
-Glinski et al. 2018c exposed Southern leopard frogs (*Lithobates sphenocephala*) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil.
+Glinski et al. 2018c exposed Southern leopard frogs (*Lithobates sphenocephala*) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. 
+
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2018 biomarkers study
 dag2018_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
@@ -240,7 +242,7 @@ summary(dag2018_mbiomarker0)
 
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
-Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (*Lithobates clamitans*) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects.  
+Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (*Lithobates clamitans*) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the size of a 0.94 L Pyrex glass bowl.
 
 Two data sets were generated from this study, one containing data for exposure to herbicides (single and mixed) and the other containing data for exposure to mixed pesticide treatments (herbicides, insecticide, fungicide).
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -304,8 +306,32 @@ names(dermal_routes)
 summary(dermal_routes)
 ```
 
-
 ***
+**Application Rates**
+=============================================================
+The table below concisely displays the pesticide applications rates (ug/cm^2^) used in each relevant study. This information can also be found in the respective manuscripts.
+
+```{r eval = TRUE, include = FALSE}
+app_rates_file <- paste0(amphibdir_data_in, "app_rates.txt")
+file.exists(app_rates_file)
+app_rates <- read.table(app_rates_file, header = TRUE)
+```
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+kable(app_rates[, 2:3]) %>%
+  kable_styling("striped", full_width = F) %>%
+  pack_rows("Van Meter et al. 2014/2015", 1, 5) %>%
+  pack_rows("Van Meter et al. 2016", 6, 10) %>%
+  pack_rows("Van Meter et al. 2018", 11, 24) %>%
+  pack_rows("Henson-Ramsey et al. 2008", 25, 25) %>%
+  pack_rows("Glinski et al. 2018a", 26, 30) %>%
+  pack_rows("Glinski et al. 2018b", 31, 33) %>%
+  pack_rows("Glinski et al. 2018c", 34, 39) %>%
+  pack_rows("Glinski et al. 2019", 40, 45)
+```
+
+
+***  
 
 **Cleaning and Merging the Data Sets**
 =============================================================
@@ -591,7 +617,7 @@ The updated dimensions are:
 dim(dag2016_dehy4)
 ```
 
-The application rate values (app_rate_g_cm2) were updated for the pesticides, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.
+The application rate values (app_rate_g_cm2) were included, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # fill in application rates
 #unique(dag2016_dehy4$chemical)
@@ -725,6 +751,16 @@ write.csv(combined_data3, file=combined_data_filename3)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data3)
 ```
+
+### Glinski et al. 2018c (Biomarkers)
+~~~ I think this data set still needs to be cleaned and merged to the collated data set ...? ~~~~~~
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+#View(dag2018_mbiomarker0)
+
+
+```
+
 
 
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
@@ -921,23 +957,19 @@ amphib_dermal_collated$application <- as.factor(amphib_dermal_collated$applicati
 amphib_dermal_collated_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
 write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)
 ```
-**Column Names**
+#### **Column Names**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 colnames(amphib_dermal_collated)
 ```
 
-**Dimensions**
+#### **Dimensions**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(amphib_dermal_collated)
 ```
 
-**Variable Summaries**  
+#### **Variable Summaries**  
 *Note: there are 206 NAs for soil_conc_ugg and for soil_type*
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(amphib_dermal_collated)
 ```
 
-**Data Set Head, for view**
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-head(amphib_dermal_collated, n = 4)
-```

@@ -1,0 +1,46 @@
+study	pesticide	app_rate
+vm_15	atrazine	22.9
+vm_15	fipronil	1.1
+vm_15	imidacloprid	5.7
+vm_15	pendimethalin	19.8
+vm_15	triadimefon	2.7
+vm_16	atrazine	22.9
+vm_16	fipronil	1.1
+vm_16	imidacloprid	5.7
+vm_16	pendimethalin	69.8
+vm_16	triadimefon	2.7
+vm_18	atrazine	23.6
+vm_18	"2,4-D"	14.3
+vm_18	metolachlor	30.9
+vm_18	"atrazine, 2,4-D"	37.9
+vm_18	"atrazine, metolachlor"	54.5
+vm_18	"2,4-D, metolachlor"	45.2
+vm_18	"atrazine, 2,4-D, metolachlor"	68.8
+vm_18	atrazine	23.6
+vm_18	malathion	25.9
+vm_18	propiconazole	2.6
+vm_18	"atrazine, malathion"	49.5
+vm_18	"atrazine, propiconazole"	26.2
+vm_18	"malathion, propiconazole"	28.5
+vm_18	"atrazine, malathion, propiconazole"	52.1
+hr_08	malathion	50000
+dag_dehy	atrazine	23.95
+dag_dehy	chlorothalonil	44.3
+dag_dehy	imidacloprid	5.39
+dag_dehy	metolachlor	31.01
+dag_dehy	triadimefon	2.91
+dag_met	atrazine	22.9
+dag_met	fipronil	1.1
+dag_met	triadimefon	2.7
+dag_bio	"bifenthrin (max)"	3.45
+dag_bio	"metolachlor (max)"	30.62
+dag_bio	"triadimefon (max)"	2.87
+dag_bio	"bifenthrin (1/10 max)"	0.345
+dag_bio	"metolachlor (1/10 max)"	3.062
+dag_bio	"triadimefon (1/10 max)"	0.287
+dag_derm	bifenthrin	NA
+dag_derm	chlorpyrifos	NA
+dag_derm	trifloxystrobin	NA
+dag_derm	"4-hydroxy bifenthrin"	NA
+dag_derm	"chlorpyrifos oxen"	NA
+dag_derm	"trifloxystrobin acid"	NA
