@@ -56,6 +56,8 @@ library(ggplot2)
 require(gridExtra)
 library(reshape2)
 library(kableExtra)
+library(dplyr)
+library(tidyr)
 
 # Update according to the System you are using...
 # tom epa linux
@@ -335,7 +337,7 @@ kable(app_rates[, 2:3]) %>%
 
 **Cleaning and Merging the Data Sets**
 =============================================================
-Each of the data sets were cleaned for merging. This consisted of dropping unneeded columns and standardizing column names of retained columns.  Four columns were added to all data sets (soil type, formulation, exposure duration, and research study source).  
+Each data set was cleaned for merging. This consisted of dropping unneeded columns and standardizing column names of retained columns.  Four columns were added to all data sets (soil type, formulation, exposure duration, and research study source).  
 Once each data set was cleaned, a local copy was saved and the data set was merged with the previously cleaned data sets.
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
@@ -752,15 +754,138 @@ write.csv(combined_data3, file=combined_data_filename3)
 dim(combined_data3)
 ```
 
+
+
 ### Glinski et al. 2018c (Biomarkers)
-~~~ I think this data set still needs to be cleaned and merged to the collated data set ...? ~~~~~~
+~~~ Emma - still need to alter "pesticide" and "group" columns to be the standardized "chemical" column (talk to Tom) ~~~~~
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
-#View(dag2018_mbiomarker0)
+## import data
+dag_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
+file.exists(dag_biomarkers_file)
+dag_biomarker <- read.table(dag_biomarkers_file, header = TRUE, sep = ",")
 
-
+## look at data
+dim(dag_biomarker)
+names(dag_biomarker)
+summary(dag_biomarker)
 ```
 
+Four columns were dropped from the original biomarkers data set and the names of two columns were standardized.   
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+## clean the data
+# drop cols
+drop_cols <- c("met", "tdt", "bif", "rate")
+dag_biomarker_subset <- dag_biomarker[, !(names(dag_biomarker) %in% drop_cols)]
+
+# alter existing column names
+colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)=="conc")]<-"tissue_conc_ugg"
+colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)=="frog.weight")]<-"body_weight_g"
+```
+The updated column names and dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+names(dag_biomarker_subset)
+dim(dag_biomarker_subset)   
+```
+
+The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the data set with the following dimensions, column names, and summary:
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+## import data (contains soil concentrations and application rates)
+dag_biomarkers_file2 <- paste(amphibdir_data_in,"dag2018_data_biomarkers_2.csv", sep="")
+file.exists(dag_biomarkers_file2)
+dag_biomarker2 <- read.table(dag_biomarkers_file2, header = TRUE, sep = ",")
+```
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+## look at data
+dim(dag_biomarker2)
+names(dag_biomarker2)
+summary(dag_biomarker2)
+```
+
+A one-to-one merge was employed for each unique sample ID based on the measured pesticide between the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined with the original data set.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# bif extraction
+dag_biomarker_subset_bif <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "bif", ]
+dag_biomarker2_subset_bif <- dag_biomarker2[dag_biomarker2$BIF != 0, ]
+
+dag_biomarker_bif_merge <- merge(x = dag_biomarker_subset_bif, y = dag_biomarker2_subset_bif,
+                                by.x = "sample_id", by.y = "SAMPLE", all.x = TRUE)
+
+# met extraction
+dag_biomarker_subset_met <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "met", ]
+dag_biomarker2_subset_met <- dag_biomarker2[dag_biomarker2$Met != 0, ]
+
+dag_biomarker_met_merge <- merge(x = dag_biomarker_subset_met, y = dag_biomarker2_subset_met,
+                                 by.x = "sample_id", by.y = "SAMPLE", all.x = TRUE)
+
+# tdt extraction
+dag_biomarker_subset_tdt <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "tdt", ]
+dag_biomarker2_subset_tdt <- dag_biomarker2[dag_biomarker2$TDN != 0, ]
+
+dag_biomarker_tdt_merge <- merge(x = dag_biomarker_subset_tdt, y = dag_biomarker2_subset_tdt,
+                                 by.x = "sample_id", by.y = "SAMPLE", all.x = TRUE)
+
+
+# combine bif, met, and tdt
+app_bind_bmt <- c(dag_biomarker_bif_merge[,"app.rate.bif"], 
+                  dag_biomarker_met_merge[,"app.rate.met"], dag_biomarker_tdt_merge[,"app.rate.tdn"])
+
+soil_bind_bmt <- c(dag_biomarker_bif_merge[,"BIF.soil"], 
+                   dag_biomarker_met_merge[,"Met.soil"], dag_biomarker_tdt_merge[,"TDN.soil"]) 
+
+
+# join app and soil vectors to data set
+dag_biomarker_subset2 <- dag_biomarker_subset[order(dag_biomarker_subset[, 4]),]
+rownames(dag_biomarker_subset2) <- seq(length=nrow(dag_biomarker_subset2))
+
+dag_biomarker_subset3 <- cbind(dag_biomarker_subset2, app_bind_bmt, soil_bind_bmt)
+
+# alter column names for standarization
+colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)=="app_bind_bmt")]<-"app_rate_g_cm2"
+colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)=="soil_bind_bmt")]<-"soil_conc_ugg"
+```
+The updated column names and dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+# look at data
+names(dag_biomarker_subset3)
+dim(dag_biomarker_subset3)
+```
+
+New columns were created for standarization with the collated data set, the columns were ordered alphabetically, and a local copy was stored. 
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+# create new columns
+application <- c(rep("soil", nrow(dag_biomarker_subset3)))
+exp_duration <- c(rep(8, nrow(dag_biomarker_subset3)))
+formulation <- c(rep(0, nrow(dag_biomarker_subset3)))
+soil_type <- c(rep(NA, nrow(dag_biomarker_subset3)))
+source <- c(rep("dag_biomarker", nrow(dag_biomarker_subset3)))
+species <- c(rep("Leopard frog", nrow(dag_biomarker_subset3)))
+
+# combine columns   
+dag_biomarker_subset4 <- cbind(dag_biomarker_subset3, application, exp_duration, 
+                               formulation, soil_type, source, species)
+
+# order columns in abc for merge
+dag_biomarker_merge <- dag_biomarker_subset4[ ,order(names(dag_biomarker_subset4))]
+
+# write a local copy
+dag_biomarker_merge_filename <- paste(amphibdir_data_out,"dag_biomarker_merge.csv", sep="")
+write.csv(dag_biomarker_merge, file = dag_biomarker_merge_filename)
+```
+The updated column names and dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+names(dag_biomarker_merge)
+dim(dag_biomarker_merge)
+```
+
+The Glinski et al. 2018c (Biomarkers) was combined with the previously merged data sets.    
+
+**The combined data set's updated dimensions are:**
+
+~~~ Emma - still need to merge this data set after determine what to do about chemical column. Will need to also update variable names for VM2018 and Dermal Routes merges.
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+#pending
+```
 
 
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
@@ -790,7 +915,7 @@ dim(combined_data4)
 
 ### Glinski et al. 2019 (dermal routes)
 
-~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column) ~~~~~~  
+~~~ Emma - still need to update the application rate column ~~~~~~  
 
 The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:
 

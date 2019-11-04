@@ -1239,7 +1239,7 @@ NA
 </div>
 <div id="cleaning-and-merging-the-data-sets" class="section level1">
 <h1><strong>Cleaning and Merging the Data Sets</strong></h1>
-<p>Each of the data sets were cleaned for merging. This consisted of dropping unneeded columns and standardizing column names of retained columns. Four columns were added to all data sets (soil type, formulation, exposure duration, and research study source).<br />
+<p>Each data set was cleaned for merging. This consisted of dropping unneeded columns and standardizing column names of retained columns. Four columns were added to all data sets (soil type, formulation, exposure duration, and research study source).<br />
 Once each data set was cleaned, a local copy was saved and the data set was merged with the previously cleaned data sets.</p>
 <p><strong>The column names of the cleaned data sets are as follows:</strong></p>
 <pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
@@ -1356,7 +1356,131 @@ dag2016_dehy4$species &lt;- as.factor(dag2016_dehy4$species)</code></pre>
 </div>
 <div id="glinski-et-al.-2018c-biomarkers-1" class="section level3">
 <h3>Glinski et al. 2018c (Biomarkers)</h3>
-<p>~~~ I think this data set still needs to be cleaned and merged to the collated data set …? ~~~~~~</p>
+<p>~~~ Emma - still need to alter “pesticide” and “group” columns to be the standardized “chemical” column (talk to Tom) ~~~~~</p>
+<p>Four columns were dropped from the original biomarkers data set and the names of two columns were standardized.</p>
+<pre class="r"><code>## clean the data
+# drop cols
+drop_cols &lt;- c(&quot;met&quot;, &quot;tdt&quot;, &quot;bif&quot;, &quot;rate&quot;)
+dag_biomarker_subset &lt;- dag_biomarker[, !(names(dag_biomarker) %in% drop_cols)]
+
+# alter existing column names
+colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;conc&quot;)]&lt;-&quot;tissue_conc_ugg&quot;
+colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.weight&quot;)]&lt;-&quot;body_weight_g&quot;</code></pre>
+<p>The updated column names and dimensions are:</p>
+<pre><code>## [1] &quot;group&quot;           &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;      
+## [5] &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>## [1] 192   5</code></pre>
+<p>The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the data set with the following dimensions, column names, and summary:</p>
+<pre><code>## [1] 136  15</code></pre>
+<pre><code>##  [1] &quot;frog.weight&quot;  &quot;SAMPLE&quot;       &quot;Met&quot;          &quot;TDN&quot;         
+##  [5] &quot;TDL&quot;          &quot;BIF&quot;          &quot;soil.weight&quot;  &quot;Met.soil&quot;    
+##  [9] &quot;TDN.soil&quot;     &quot;TDL.soil&quot;     &quot;BIF.soil&quot;     &quot;Rate&quot;        
+## [13] &quot;app.rate.met&quot; &quot;app.rate.tdn&quot; &quot;app.rate.bif&quot;</code></pre>
+<pre><code>##   frog.weight         SAMPLE         Met               TDN         
+##  Min.   :1.012   BIF 10 1:  1   Min.   : 0.0000   Min.   :0.00000  
+##  1st Qu.:2.749   BIF 10 2:  1   1st Qu.: 0.0000   1st Qu.:0.00000  
+##  Median :3.164   BIF 10 3:  1   Median : 0.0000   Median :0.00000  
+##  Mean   :3.302   BIF 10 4:  1   Mean   : 0.9123   Mean   :0.06927  
+##  3rd Qu.:3.762   BIF 10 5:  1   3rd Qu.: 0.4298   3rd Qu.:0.07447  
+##  Max.   :6.784   BIF 10 6:  1   Max.   :19.8798   Max.   :0.55921  
+##                  (Other) :130                                      
+##       TDL               BIF          soil.weight        Met.soil    
+##  Min.   :0.00000   Min.   :0.0000   Min.   : 4.476   Min.   :0.000  
+##  1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.: 6.731   1st Qu.:0.000  
+##  Median :0.00000   Median :0.0000   Median : 7.772   Median :0.000  
+##  Mean   :0.02259   Mean   :0.1276   Mean   : 8.043   Mean   :1.605  
+##  3rd Qu.:0.01770   3rd Qu.:0.1299   3rd Qu.: 9.050   3rd Qu.:2.265  
+##  Max.   :0.30815   Max.   :1.0271   Max.   :13.571   Max.   :6.758  
+##                                                                     
+##     TDN.soil         TDL.soil           BIF.soil        Rate   
+##  Min.   :0.0000   Min.   :0.000000   Min.   :0.0000   0   :24  
+##  1st Qu.:0.0000   1st Qu.:0.000000   1st Qu.:0.0000   High:56  
+##  Median :0.0000   Median :0.000000   Median :0.0000   Low :56  
+##  Mean   :0.7168   Mean   :0.010160   Mean   :0.7417            
+##  3rd Qu.:0.5312   3rd Qu.:0.007463   3rd Qu.:1.1472            
+##  Max.   :3.6300   Max.   :0.061563   Max.   :5.2658            
+##                                                                
+##   app.rate.met     app.rate.tdn     app.rate.bif   
+##  Min.   : 0.000   Min.   :0.0000   Min.   :0.0000  
+##  1st Qu.: 0.000   1st Qu.:0.0000   1st Qu.:0.0000  
+##  Median : 0.000   Median :0.0000   Median :0.0000  
+##  Mean   :14.263   Mean   :1.3389   Mean   :1.6070  
+##  3rd Qu.: 5.511   3rd Qu.:0.5173   3rd Qu.:0.6209  
+##  Max.   :55.106   Max.   :5.1730   Max.   :6.2090  
+## </code></pre>
+<p>A one-to-one merge was employed for each unique sample ID based on the measured pesticide between the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined with the original data set.</p>
+<pre class="r"><code># bif extraction
+dag_biomarker_subset_bif &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;bif&quot;, ]
+dag_biomarker2_subset_bif &lt;- dag_biomarker2[dag_biomarker2$BIF != 0, ]
+
+dag_biomarker_bif_merge &lt;- merge(x = dag_biomarker_subset_bif, y = dag_biomarker2_subset_bif,
+                                by.x = &quot;sample_id&quot;, by.y = &quot;SAMPLE&quot;, all.x = TRUE)
+
+# met extraction
+dag_biomarker_subset_met &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;met&quot;, ]
+dag_biomarker2_subset_met &lt;- dag_biomarker2[dag_biomarker2$Met != 0, ]
+
+dag_biomarker_met_merge &lt;- merge(x = dag_biomarker_subset_met, y = dag_biomarker2_subset_met,
+                                 by.x = &quot;sample_id&quot;, by.y = &quot;SAMPLE&quot;, all.x = TRUE)
+
+# tdt extraction
+dag_biomarker_subset_tdt &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;tdt&quot;, ]
+dag_biomarker2_subset_tdt &lt;- dag_biomarker2[dag_biomarker2$TDN != 0, ]
+
+dag_biomarker_tdt_merge &lt;- merge(x = dag_biomarker_subset_tdt, y = dag_biomarker2_subset_tdt,
+                                 by.x = &quot;sample_id&quot;, by.y = &quot;SAMPLE&quot;, all.x = TRUE)
+
+
+# combine bif, met, and tdt
+app_bind_bmt &lt;- c(dag_biomarker_bif_merge[,&quot;app.rate.bif&quot;], 
+                  dag_biomarker_met_merge[,&quot;app.rate.met&quot;], dag_biomarker_tdt_merge[,&quot;app.rate.tdn&quot;])
+
+soil_bind_bmt &lt;- c(dag_biomarker_bif_merge[,&quot;BIF.soil&quot;], 
+                   dag_biomarker_met_merge[,&quot;Met.soil&quot;], dag_biomarker_tdt_merge[,&quot;TDN.soil&quot;]) 
+
+
+# join app and soil vectors to data set
+dag_biomarker_subset2 &lt;- dag_biomarker_subset[order(dag_biomarker_subset[, 4]),]
+rownames(dag_biomarker_subset2) &lt;- seq(length=nrow(dag_biomarker_subset2))
+
+dag_biomarker_subset3 &lt;- cbind(dag_biomarker_subset2, app_bind_bmt, soil_bind_bmt)
+
+# alter column names for standarization
+colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)==&quot;app_bind_bmt&quot;)]&lt;-&quot;app_rate_g_cm2&quot;
+colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)==&quot;soil_bind_bmt&quot;)]&lt;-&quot;soil_conc_ugg&quot;</code></pre>
+<p>The updated column names and dimensions are:</p>
+<pre><code>## [1] &quot;group&quot;           &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;      
+## [5] &quot;tissue_conc_ugg&quot; &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;</code></pre>
+<pre><code>## [1] 192   7</code></pre>
+<p>New columns were created for standarization with the collated data set, the columns were ordered alphabetically, and a local copy was stored.</p>
+<pre class="r"><code># create new columns
+application &lt;- c(rep(&quot;soil&quot;, nrow(dag_biomarker_subset3)))
+exp_duration &lt;- c(rep(8, nrow(dag_biomarker_subset3)))
+formulation &lt;- c(rep(0, nrow(dag_biomarker_subset3)))
+soil_type &lt;- c(rep(NA, nrow(dag_biomarker_subset3)))
+source &lt;- c(rep(&quot;dag_biomarker&quot;, nrow(dag_biomarker_subset3)))
+species &lt;- c(rep(&quot;Leopard frog&quot;, nrow(dag_biomarker_subset3)))
+
+# combine columns   
+dag_biomarker_subset4 &lt;- cbind(dag_biomarker_subset3, application, exp_duration, 
+                               formulation, soil_type, source, species)
+
+# order columns in abc for merge
+dag_biomarker_merge &lt;- dag_biomarker_subset4[ ,order(names(dag_biomarker_subset4))]
+
+# write a local copy
+dag_biomarker_merge_filename &lt;- paste(amphibdir_data_out,&quot;dag_biomarker_merge.csv&quot;, sep=&quot;&quot;)
+write.csv(dag_biomarker_merge, file = dag_biomarker_merge_filename)</code></pre>
+<p>The updated column names and dimensions are:</p>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [4] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;group&quot;          
+##  [7] &quot;pesticide&quot;       &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
+## [10] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;        
+## [13] &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>## [1] 192  13</code></pre>
+<p>The Glinski et al. 2018c (Biomarkers) was combined with the previously merged data sets.</p>
+<p><strong>The combined data set’s updated dimensions are:</strong></p>
+<p>~~~ Emma - still need to merge this data set after determine what to do about chemical column. Will need to also update variable names for VM2018 and Dermal Routes merges.</p>
 </div>
 <div id="van-meter-et-al.-2018-multiple-pesticides-study-1" class="section level3">
 <h3>Van Meter et al. 2018 (Multiple Pesticides Study)</h3>
@@ -1366,7 +1490,7 @@ dag2016_dehy4$species &lt;- as.factor(dag2016_dehy4$species)</code></pre>
 </div>
 <div id="glinski-et-al.-2019-dermal-routes-1" class="section level3">
 <h3>Glinski et al. 2019 (dermal routes)</h3>
-<p>~~~ Note: still need to update the application rate column and drop any unneeded pesticides (chemicals column) ~~~~~~</p>
+<p>~~~ Emma - still need to update the application rate column ~~~~~~</p>
 <p>The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 48  2</code></pre>
