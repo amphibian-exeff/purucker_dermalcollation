@@ -1356,21 +1356,20 @@ dag2016_dehy4$species &lt;- as.factor(dag2016_dehy4$species)</code></pre>
 </div>
 <div id="glinski-et-al.-2018c-biomarkers-1" class="section level3">
 <h3>Glinski et al. 2018c (Biomarkers)</h3>
-<p>~~~ Emma - still need to alter “pesticide” and “group” columns to be the standardized “chemical” column (talk to Tom) ~~~~~</p>
-<p>Four columns were dropped from the original biomarkers data set and the names of two columns were standardized.</p>
+<p>Five columns were dropped from the original biomarkers data set and the names of two columns were standardized.</p>
 <pre class="r"><code>## clean the data
 # drop cols
-drop_cols &lt;- c(&quot;met&quot;, &quot;tdt&quot;, &quot;bif&quot;, &quot;rate&quot;)
+drop_cols &lt;- c(&quot;met&quot;, &quot;tdt&quot;, &quot;bif&quot;, &quot;rate&quot;, &quot;group&quot;)
 dag_biomarker_subset &lt;- dag_biomarker[, !(names(dag_biomarker) %in% drop_cols)]
 
 # alter existing column names
 colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;conc&quot;)]&lt;-&quot;tissue_conc_ugg&quot;
 colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.weight&quot;)]&lt;-&quot;body_weight_g&quot;</code></pre>
 <p>The updated column names and dimensions are:</p>
-<pre><code>## [1] &quot;group&quot;           &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;      
-## [5] &quot;tissue_conc_ugg&quot;</code></pre>
-<pre><code>## [1] 192   5</code></pre>
-<p>The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the data set with the following dimensions, column names, and summary:</p>
+<pre><code>## [1] &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;       &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>## [1] 192   4</code></pre>
+<p>The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the following data set:</p>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 136  15</code></pre>
 <pre><code>##  [1] &quot;frog.weight&quot;  &quot;SAMPLE&quot;       &quot;Met&quot;          &quot;TDN&quot;         
 ##  [5] &quot;TDL&quot;          &quot;BIF&quot;          &quot;soil.weight&quot;  &quot;Met.soil&quot;    
@@ -1408,7 +1407,7 @@ colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.
 ##  3rd Qu.: 5.511   3rd Qu.:0.5173   3rd Qu.:0.6209  
 ##  Max.   :55.106   Max.   :5.1730   Max.   :6.2090  
 ## </code></pre>
-<p>A one-to-one merge was employed for each unique sample ID based on the measured pesticide between the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined with the original data set.</p>
+<p>A one-to-one merge was conducted based on the unique sample id for each measured pesticide (either bifenthrin, metolachlor, or triadimefon) to join the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined to the original data set.</p>
 <pre class="r"><code># bif extraction
 dag_biomarker_subset_bif &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;bif&quot;, ]
 dag_biomarker2_subset_bif &lt;- dag_biomarker2[dag_biomarker2$BIF != 0, ]
@@ -1440,7 +1439,7 @@ soil_bind_bmt &lt;- c(dag_biomarker_bif_merge[,&quot;BIF.soil&quot;],
 
 
 # join app and soil vectors to data set
-dag_biomarker_subset2 &lt;- dag_biomarker_subset[order(dag_biomarker_subset[, 4]),]
+dag_biomarker_subset2 &lt;- dag_biomarker_subset[order(dag_biomarker_subset[, 3]),]
 rownames(dag_biomarker_subset2) &lt;- seq(length=nrow(dag_biomarker_subset2))
 
 dag_biomarker_subset3 &lt;- cbind(dag_biomarker_subset2, app_bind_bmt, soil_bind_bmt)
@@ -1449,9 +1448,9 @@ dag_biomarker_subset3 &lt;- cbind(dag_biomarker_subset2, app_bind_bmt, soil_bind
 colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)==&quot;app_bind_bmt&quot;)]&lt;-&quot;app_rate_g_cm2&quot;
 colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)==&quot;soil_bind_bmt&quot;)]&lt;-&quot;soil_conc_ugg&quot;</code></pre>
 <p>The updated column names and dimensions are:</p>
-<pre><code>## [1] &quot;group&quot;           &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;      
-## [5] &quot;tissue_conc_ugg&quot; &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;</code></pre>
-<pre><code>## [1] 192   7</code></pre>
+<pre><code>## [1] &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;       &quot;tissue_conc_ugg&quot;
+## [5] &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;</code></pre>
+<pre><code>## [1] 192   6</code></pre>
 <p>New columns were created for standarization with the collated data set, the columns were ordered alphabetically, and a local copy was stored.</p>
 <pre class="r"><code># create new columns
 application &lt;- c(rep(&quot;soil&quot;, nrow(dag_biomarker_subset3)))
@@ -1465,28 +1464,38 @@ species &lt;- c(rep(&quot;Leopard frog&quot;, nrow(dag_biomarker_subset3)))
 dag_biomarker_subset4 &lt;- cbind(dag_biomarker_subset3, application, exp_duration, 
                                formulation, soil_type, source, species)
 
+# standardize pesticide column
+dag_biomarker_subset4$pesticide &lt;- as.character(dag_biomarker_subset4$pesticide)
+dag_biomarker_subset4$pesticide[dag_biomarker_subset4$pesticide == &quot;bif&quot;] &lt;- &quot;Bifenthrin&quot;
+dag_biomarker_subset4$pesticide[dag_biomarker_subset4$pesticide == &quot;met&quot;] &lt;- &quot;Metolachlor&quot;
+dag_biomarker_subset4$pesticide[dag_biomarker_subset4$pesticide == &quot;tdt&quot;] &lt;- &quot;Triadimefon&quot;
+
+colnames(dag_biomarker_subset4)[which(colnames(dag_biomarker_subset4)==&quot;pesticide&quot;)]&lt;-&quot;chemical&quot;
+
+# unite function for sample id and chemical
+dag_biomarker_subset5 &lt;- unite(data = dag_biomarker_subset4, col = &quot;sample_id&quot;, &quot;sample_id&quot;, &quot;chemical&quot;, sep = &quot; &quot;, remove = FALSE)
+
 # order columns in abc for merge
-dag_biomarker_merge &lt;- dag_biomarker_subset4[ ,order(names(dag_biomarker_subset4))]
+dag_biomarker_merge &lt;- dag_biomarker_subset5[ ,order(names(dag_biomarker_subset5))]
 
 # write a local copy
 dag_biomarker_merge_filename &lt;- paste(amphibdir_data_out,&quot;dag_biomarker_merge.csv&quot;, sep=&quot;&quot;)
 write.csv(dag_biomarker_merge, file = dag_biomarker_merge_filename)</code></pre>
 <p>The updated column names and dimensions are:</p>
 <pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
-##  [4] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;group&quot;          
-##  [7] &quot;pesticide&quot;       &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
-## [10] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;        
-## [13] &quot;tissue_conc_ugg&quot;</code></pre>
-<pre><code>## [1] 192  13</code></pre>
+##  [4] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
+## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>## [1] 192  12</code></pre>
 <p>The Glinski et al. 2018c (Biomarkers) was combined with the previously merged data sets.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
-<p>~~~ Emma - still need to merge this data set after determine what to do about chemical column. Will need to also update variable names for VM2018 and Dermal Routes merges.</p>
+<pre><code>## [1] 853  12</code></pre>
 </div>
 <div id="van-meter-et-al.-2018-multiple-pesticides-study-1" class="section level3">
 <h3>Van Meter et al. 2018 (Multiple Pesticides Study)</h3>
 <p>The Van Meter et al. 2018 (Multiple Pesticides Study) data set did not require any additional data cleaning. It was combined with the previously merged data sets.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
-<pre><code>## [1] 798  12</code></pre>
+<pre><code>## [1] 990  12</code></pre>
 </div>
 <div id="glinski-et-al.-2019-dermal-routes-1" class="section level3">
 <h3>Glinski et al. 2019 (dermal routes)</h3>
@@ -1552,7 +1561,7 @@ dermal_routes_subset7 &lt;- cbind(dermal_routes_subset6, soil_subset3$Concentrat
 <pre><code>## [1] 48 12</code></pre>
 <p>The columns were ordered for ease of merging with the collated data set, a local copy was saved, and the data set was combined with the collated data set.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
-<pre><code>## [1] 846  12</code></pre>
+<pre><code>## [1] 1038   12</code></pre>
 <hr />
 </div>
 </div>
@@ -1568,43 +1577,34 @@ dermal_routes_subset7 &lt;- cbind(dermal_routes_subset6, soil_subset3$Concentrat
 </div>
 <div id="dimensions" class="section level4">
 <h4><strong>Dimensions</strong></h4>
-<pre><code>## [1] 846  12</code></pre>
+<pre><code>## [1] 1038   12</code></pre>
 </div>
 <div id="variable-summaries" class="section level4">
 <h4><strong>Variable Summaries</strong></h4>
-<p><em>Note: there are 206 NAs for soil_conc_ugg and for soil_type</em></p>
-<pre><code>##  app_rate_g_cm2       application  body_weight_g    
-##  Min.   :0.00000   indirect :396   Min.   : 0.1879  
-##  1st Qu.:0.00000   overspray: 45   1st Qu.: 1.1713  
-##  Median :0.00002   soil     :405   Median : 1.8472  
-##  Mean   :0.00058                   Mean   : 3.3550  
-##  3rd Qu.:0.00003                   3rd Qu.: 2.5352  
-##  Max.   :0.05000                   Max.   :50.9200  
-##  NA&#39;s   :48                                         
-##               chemical    exp_duration    formulation     
-##  atrazine         : 86   Min.   : 2.00   Min.   :0.00000  
-##  chloro+d         : 66   1st Qu.: 8.00   1st Qu.:0.00000  
-##  metol            : 66   Median : 8.00   Median :0.00000  
-##  tdn              : 66   Mean   : 9.05   Mean   :0.04301  
-##  Total Triadimefon: 49   3rd Qu.: 8.00   3rd Qu.:0.00000  
-##  ATZT             : 42   Max.   :48.00   Max.   :1.00000  
-##  (Other)          :471                   NA&#39;s   :9        
-##         sample_id   soil_conc_ugg     soil_type                source   
-##  ATZ_ATZT    :  6   Min.   :  0.000   PLE :544   rvm2015          :196  
-##  ATZD_ATZT   :  6   1st Qu.:  2.866   OLS : 96   rvm2016          : 96  
-##  ATZMA_ATZT  :  6   Median :  8.546   NA&#39;s:206   dag_dehydration  :300  
-##  ATZMA_MAT   :  6   Mean   : 17.412              hr2008           :  9  
-##  ATZMAPZ_ATZT:  6   3rd Qu.: 18.266              dag_metabolites  : 60  
-##  ATZMAPZ_MAT :  6   Max.   :238.150              rvm2017          :137  
-##  (Other)     :810   NA&#39;s   :206                  dag_dermal_routes: 48  
-##              species    tissue_conc_ugg  
-##  Leopard frog    :244   Min.   : 0.0000  
-##  Fowlers toad    :200   1st Qu.: 0.2092  
-##  Rana_clamitans  :137   Median : 0.6521  
-##  American toad   : 96   Mean   : 2.8345  
-##  Barking treefrog: 50   3rd Qu.: 2.4128  
-##  Green treefrog  : 45   Max.   :72.6267  
-##  (Other)         : 74</code></pre>
+<pre><code>##  app_rate_g_cm2        application  body_weight_g               chemical  
+##  Min.   : 0.00000   indirect :396   Min.   : 0.1879   triadimefon   :174  
+##  1st Qu.: 0.00000   overspray: 45   1st Qu.: 1.3082   metolachlor   :154  
+##  Median : 0.00002   soil     :597   Median : 2.1046   atrazine      :152  
+##  Mean   : 2.36449                   Mean   : 3.3446   bifenthrin    : 72  
+##  3rd Qu.: 0.00004                   3rd Qu.: 3.0214   chlorothalonil: 66  
+##  Max.   :55.10600                   Max.   :50.9200   imidacloprid  : 66  
+##  NA&#39;s   :48                                           (Other)       :354  
+##   exp_duration     formulation             sample_id    soil_conc_ugg    
+##  Min.   : 2.000   Min.   :0.00000   ATZ_ATZT    :   6   Min.   :  0.000  
+##  1st Qu.: 8.000   1st Qu.:0.00000   ATZD_ATZT   :   6   1st Qu.:  2.021  
+##  Median : 8.000   Median :0.00000   ATZMA_ATZT  :   6   Median :  4.975  
+##  Mean   : 8.855   Mean   :0.03499   ATZMA_MAT   :   6   Mean   : 13.894  
+##  3rd Qu.: 8.000   3rd Qu.:0.00000   ATZMAPZ_ATZT:   6   3rd Qu.: 15.105  
+##  Max.   :48.000   Max.   :1.00000   ATZMAPZ_MAT :   6   Max.   :238.150  
+##                   NA&#39;s   :9         (Other)     :1002   NA&#39;s   :206      
+##  soil_type              source                species    tissue_conc_ugg  
+##  PLE :544   dag_dehydration:300   Leopard frog    :436   Min.   : 0.0000  
+##  OLS : 96   rvm2015        :196   Fowlers toad    :200   1st Qu.: 0.1553  
+##  NA&#39;s:398   dag_biomarker  :192   Rana_clamitans  :137   Median : 0.5078  
+##             rvm2017        :137   American toad   : 96   Mean   : 2.4585  
+##             rvm2016        : 96   Barking treefrog: 50   3rd Qu.: 2.0324  
+##             dag_metabolites: 60   Green treefrog  : 45   Max.   :72.6267  
+##             (Other)        : 57   (Other)         : 74</code></pre>
 </div>
 </div>
 

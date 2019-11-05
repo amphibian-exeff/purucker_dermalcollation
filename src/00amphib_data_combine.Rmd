@@ -1,6 +1,6 @@
 ---
 title: "Creating a Database of Amphibian Dermal Exposure Data"
----
+---  
 
 ```{r eval=FALSE, echo=FALSE}
 #ctrl-shift k to knit r markdown
@@ -757,8 +757,6 @@ dim(combined_data3)
 
 
 ### Glinski et al. 2018c (Biomarkers)
-~~~ Emma - still need to alter "pesticide" and "group" columns to be the standardized "chemical" column (talk to Tom) ~~~~~
-
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ## import data
 dag_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
@@ -771,11 +769,11 @@ names(dag_biomarker)
 summary(dag_biomarker)
 ```
 
-Four columns were dropped from the original biomarkers data set and the names of two columns were standardized.   
+Five columns were dropped from the original biomarkers data set and the names of two columns were standardized.   
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 ## clean the data
 # drop cols
-drop_cols <- c("met", "tdt", "bif", "rate")
+drop_cols <- c("met", "tdt", "bif", "rate", "group")
 dag_biomarker_subset <- dag_biomarker[, !(names(dag_biomarker) %in% drop_cols)]
 
 # alter existing column names
@@ -788,7 +786,9 @@ names(dag_biomarker_subset)
 dim(dag_biomarker_subset)   
 ```
 
-The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the data set with the following dimensions, column names, and summary:
+The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the following data set:  
+
+**Data Set Dimensions, Column Names, and Summary:**
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ## import data (contains soil concentrations and application rates)
 dag_biomarkers_file2 <- paste(amphibdir_data_in,"dag2018_data_biomarkers_2.csv", sep="")
@@ -802,7 +802,7 @@ names(dag_biomarker2)
 summary(dag_biomarker2)
 ```
 
-A one-to-one merge was employed for each unique sample ID based on the measured pesticide between the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined with the original data set.
+A one-to-one merge was conducted based on the unique sample id for each measured pesticide (either bifenthrin, metolachlor, or triadimefon) to join the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined to the original data set.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # bif extraction
 dag_biomarker_subset_bif <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "bif", ]
@@ -835,7 +835,7 @@ soil_bind_bmt <- c(dag_biomarker_bif_merge[,"BIF.soil"],
 
 
 # join app and soil vectors to data set
-dag_biomarker_subset2 <- dag_biomarker_subset[order(dag_biomarker_subset[, 4]),]
+dag_biomarker_subset2 <- dag_biomarker_subset[order(dag_biomarker_subset[, 3]),]
 rownames(dag_biomarker_subset2) <- seq(length=nrow(dag_biomarker_subset2))
 
 dag_biomarker_subset3 <- cbind(dag_biomarker_subset2, app_bind_bmt, soil_bind_bmt)
@@ -865,8 +865,19 @@ species <- c(rep("Leopard frog", nrow(dag_biomarker_subset3)))
 dag_biomarker_subset4 <- cbind(dag_biomarker_subset3, application, exp_duration, 
                                formulation, soil_type, source, species)
 
+# standardize pesticide column
+dag_biomarker_subset4$pesticide <- as.character(dag_biomarker_subset4$pesticide)
+dag_biomarker_subset4$pesticide[dag_biomarker_subset4$pesticide == "bif"] <- "Bifenthrin"
+dag_biomarker_subset4$pesticide[dag_biomarker_subset4$pesticide == "met"] <- "Metolachlor"
+dag_biomarker_subset4$pesticide[dag_biomarker_subset4$pesticide == "tdt"] <- "Triadimefon"
+
+colnames(dag_biomarker_subset4)[which(colnames(dag_biomarker_subset4)=="pesticide")]<-"chemical"
+
+# unite function for sample id and chemical
+dag_biomarker_subset5 <- unite(data = dag_biomarker_subset4, col = "sample_id", "sample_id", "chemical", sep = " ", remove = FALSE)
+
 # order columns in abc for merge
-dag_biomarker_merge <- dag_biomarker_subset4[ ,order(names(dag_biomarker_subset4))]
+dag_biomarker_merge <- dag_biomarker_subset5[ ,order(names(dag_biomarker_subset5))]
 
 # write a local copy
 dag_biomarker_merge_filename <- paste(amphibdir_data_out,"dag_biomarker_merge.csv", sep="")
@@ -881,10 +892,19 @@ dim(dag_biomarker_merge)
 The Glinski et al. 2018c (Biomarkers) was combined with the previously merged data sets.    
 
 **The combined data set's updated dimensions are:**
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# combine data frames
+combined_data4 <- rbind(combined_data3, dag_biomarker_merge)
+dim(combined_data4)
+colnames(combined_data4)
+rownames(combined_data4) <- seq(length=nrow(combined_data4))
+colnames(combined_data4)
 
-~~~ Emma - still need to merge this data set after determine what to do about chemical column. Will need to also update variable names for VM2018 and Dermal Routes merges.
+combined_data_filename4 <- paste(amphibdir_data_out,"combined_data4.csv", sep="")
+write.csv(combined_data4, file=combined_data_filename4)
+```
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-#pending
+dim(combined_data4)
 ```
 
 
@@ -899,18 +919,18 @@ dim(rvm2017_merge)
 colnames(rvm2017_merge)
 #View(rvm2017_merge)
 # combine two dataframes
-combined_data4 <- rbind(combined_data3, rvm2017_merge)
-dim(combined_data4)
-colnames(combined_data4)
-rownames(combined_data4) <- seq(length=nrow(combined_data4))
-colnames(combined_data4)
+combined_data5 <- rbind(combined_data4, rvm2017_merge)
+dim(combined_data5)
+colnames(combined_data5)
+rownames(combined_data5) <- seq(length=nrow(combined_data5))
+colnames(combined_data5)
 #View(combined_data4)
-combined_data_filename4 <- paste(amphibdir_data_out,"combined_data4.csv", sep="")
-write.csv(combined_data4, file=combined_data_filename4)
+combined_data_filename5 <- paste(amphibdir_data_out,"combined_data5.csv", sep="")
+write.csv(combined_data5, file=combined_data_filename5)
 ```
 **The combined data set's updated dimensions are:**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-dim(combined_data4)
+dim(combined_data5)
 ```
 
 ### Glinski et al. 2019 (dermal routes)
@@ -1042,18 +1062,18 @@ dag2019_merge_filename <- paste(amphibdir_data_out,"dag2019_merge.csv", sep="")
 write.csv(dermal_routes_merge, file = dag2019_merge_filename)
 
 # combine two dataframes
-combined_data5 <- rbind(combined_data4, dermal_routes_merge)
-dim(combined_data5)
-colnames(combined_data5)
-rownames(combined_data5) <- seq(length=nrow(combined_data5))
-colnames(combined_data5)
+combined_data6 <- rbind(combined_data5, dermal_routes_merge)
+dim(combined_data6)
+colnames(combined_data6)
+rownames(combined_data6) <- seq(length=nrow(combined_data6))
+colnames(combined_data6)
 #View(combined_data5)
-combined_data_filename5 <- paste(amphibdir_data_out,"combined_data5.csv", sep="")
-write.csv(combined_data5, file=combined_data_filename5)
+combined_data_filename6 <- paste(amphibdir_data_out,"combined_data6.csv", sep="")
+write.csv(combined_data6, file=combined_data_filename6)
 ```
 **The combined data set's updated dimensions are:**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-dim(combined_data5)
+dim(combined_data6)
 ```
 
 ***
@@ -1065,20 +1085,47 @@ The combined data set was examined to ensure validity. Minor alterations were ma
 ##################
 #write out the entire final product
 ##################
-amphib_dermal_collated <- combined_data5
+amphib_dermal_collated <- combined_data6
 #View(amphib_dermal_collated)
 colnames(amphib_dermal_collated)
-#check to see if everything ok
+# check to see if everything ok
 summary(amphib_dermal_collated$app_rate_g_cm2) # units issues
 summary(amphib_dermal_collated$body_weight_g) # 60 NAs
 summary(amphib_dermal_collated$exp_duration)
 summary(amphib_dermal_collated$soil_conc_ugg) # 206 NAs
 summary(amphib_dermal_collated$tissue_conc_ugg)
 
-#change application to correct categories
+# standardize application levels
 amphib_dermal_collated$application <- tolower(amphib_dermal_collated$application)
 amphib_dermal_collated$application <- as.factor(amphib_dermal_collated$application)
 
+# standardize chemical levels
+amphib_dermal_collated$chemical <- as.character(amphib_dermal_collated$chemical)
+
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "fip"] <- "fipronil"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "BIF"] <- "bifenthrin"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "MET"] <- "metolachlor"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "MAT"] <- "malathion"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "ATZT"] <- "atrazine"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "PROPT"] <- "propiconazole"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "metol"] <- "metolachlor"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "tdn"] <- "triadimefon"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "imid"] <- "imidacloprid"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "chloro+d"] <- "chlorothalonil"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "CPF"] <- "chlorpyrifos"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "CPO"] <- "chlorpyrifos oxen"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "TFS"] <- "trifloxystrobin"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "TFSa"] <- "trifloxystrobin acid"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "FipTOT"] <- "fipronil"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "ATZTOT"] <- "atrazine"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "TNDTOT"] <- "triadimefon"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "Pendi"] <- "pendimethalin"
+
+
+amphib_dermal_collated$chemical <- tolower(amphib_dermal_collated$chemical)
+amphib_dermal_collated$chemical <- as.factor(amphib_dermal_collated$chemical)
+
+# write out file
 amphib_dermal_collated_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
 write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)
 ```
@@ -1093,7 +1140,6 @@ dim(amphib_dermal_collated)
 ```
 
 #### **Variable Summaries**  
-*Note: there are 206 NAs for soil_conc_ugg and for soil_type*
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(amphib_dermal_collated)
 ```
