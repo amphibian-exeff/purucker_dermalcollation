@@ -64,28 +64,6 @@ library(tidyr)
 if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
-# tom mac
-if(Sys.info()[4] == "Coiles-MacBook-Pro.local" | Sys.info()[4] == "Coiles-MBP"
-   | Sys.info()[4] == "Toms-Air"){
-  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
-}
-# tom computer
-if(Sys.info()[4]=="DZ2626UTPURUCKE"){
-  amphibdir <- "K:\\git\\amphib_dermal_collation\\"
-}
-# marcia mac
-if(Sys.info()[4] == "Marcias-MacBook-Pro.local"){
-  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
-}
-# Sumathy's window
-if(Sys.info()[4]=="DZ2626USSINNATH"){
-  amphibdir <- path.expand("c:/git/amphib_dermal_collation/")
-}
-# Sumathy's desktop
-if(Sys.info()[4]=="DESKTOP-7UFGA86"){
-  amphibdir <- path.expand("C:/Users/Sumathy/amphib_dermal_collation/")
-}
-
 # Emma's laptop
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
   amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
