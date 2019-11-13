@@ -1,0 +1,14 @@
+pesticide	density
+atrazine	1.19
+bifenthrin	1.3
+chlorpyrifos	1.4
+chlorothalonil	1.8
+fipronil	1.5515
+imidacloprid	1.6
+malathion	1.23
+metolachlor	1.1
+pendimethalin	1.17
+propiconazole	1.3
+triadimefon	1.22
+trifloxystrobin	1.36
+2,4-D		1.5

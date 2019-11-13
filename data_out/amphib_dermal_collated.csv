@@ -9,21 +9,21 @@
 "8",2e-05,"overspray",1.72083,"pendimethalin",8,0,"HGOP3",12.11934838,"PLE","rvm2015","Barking treefrog",2.28849235
 "9",2e-05,"overspray",2.70413,"pendimethalin",8,0,"HGOP4",12.11934838,"PLE","rvm2015","Barking treefrog",2.767161376
 "10",2e-05,"overspray",2.23741,"pendimethalin",8,0,"HGOP5",12.11934838,"PLE","rvm2015","Barking treefrog",1.232549848
-"11",2.3e-05,"overspray",2.02028,"total atrazine",8,0,"HGOA1",15.10490982,"PLE","rvm2015","Barking treefrog",12.2881692
-"12",2.3e-05,"overspray",1.69156,"total atrazine",8,0,"HGOA2",15.10490982,"PLE","rvm2015","Barking treefrog",8.916353622
-"13",2.3e-05,"overspray",2.07221,"total atrazine",8,0,"HGOA3",15.10490982,"PLE","rvm2015","Barking treefrog",9.702578705
-"14",2.3e-05,"overspray",2.36942,"total atrazine",8,0,"HGOA4",15.10490982,"PLE","rvm2015","Barking treefrog",17.83079959
-"15",2.3e-05,"overspray",1.96104,"total atrazine",8,0,"HGOA5",15.10490982,"PLE","rvm2015","Barking treefrog",14.21727551
-"16",1.11e-06,"overspray",2.73317,"total fipronil",8,0,"HGOF1",3.492483429,"PLE","rvm2015","Barking treefrog",2.400285765
-"17",1.11e-06,"overspray",2.02542,"total fipronil",8,0,"HGOF2",3.492483429,"PLE","rvm2015","Barking treefrog",1.658107241
-"18",1.11e-06,"overspray",2.12849,"total fipronil",8,0,"HGOF3",3.492483429,"PLE","rvm2015","Barking treefrog",1.662784049
-"19",1.11e-06,"overspray",1.73265,"total fipronil",8,0,"HGOF4",3.492483429,"PLE","rvm2015","Barking treefrog",2.07396123
-"20",1.11e-06,"overspray",1.52771,"total fipronil",8,0,"HGOF5",3.492483429,"PLE","rvm2015","Barking treefrog",1.915890199
-"21",2.85e-06,"overspray",1.72511,"total triadimefon",8,0,"HGOT1",8.451291713,"PLE","rvm2015","Barking treefrog",0.636157453
-"22",2.85e-06,"overspray",1.94887,"total triadimefon",8,0,"HGOT2",8.451291713,"PLE","rvm2015","Barking treefrog",0.972799964
-"23",2.85e-06,"overspray",1.55295,"total triadimefon",8,0,"HGOT3",8.451291713,"PLE","rvm2015","Barking treefrog",0.397699131
-"24",2.85e-06,"overspray",2.37346,"total triadimefon",8,0,"HGOT4",8.451291713,"PLE","rvm2015","Barking treefrog",0.642604155
-"25",2.85e-06,"overspray",1.57685,"total triadimefon",8,0,"HGOT5",8.451291713,"PLE","rvm2015","Barking treefrog",0.48091159
+"11",2.3e-05,"overspray",2.02028,"atrazine",8,0,"HGOA1",15.10490982,"PLE","rvm2015","Barking treefrog",12.2881692
+"12",2.3e-05,"overspray",1.69156,"atrazine",8,0,"HGOA2",15.10490982,"PLE","rvm2015","Barking treefrog",8.916353622
+"13",2.3e-05,"overspray",2.07221,"atrazine",8,0,"HGOA3",15.10490982,"PLE","rvm2015","Barking treefrog",9.702578705
+"14",2.3e-05,"overspray",2.36942,"atrazine",8,0,"HGOA4",15.10490982,"PLE","rvm2015","Barking treefrog",17.83079959
+"15",2.3e-05,"overspray",1.96104,"atrazine",8,0,"HGOA5",15.10490982,"PLE","rvm2015","Barking treefrog",14.21727551
+"16",1.11e-06,"overspray",2.73317,"fipronil",8,0,"HGOF1",3.492483429,"PLE","rvm2015","Barking treefrog",2.400285765
+"17",1.11e-06,"overspray",2.02542,"fipronil",8,0,"HGOF2",3.492483429,"PLE","rvm2015","Barking treefrog",1.658107241
+"18",1.11e-06,"overspray",2.12849,"fipronil",8,0,"HGOF3",3.492483429,"PLE","rvm2015","Barking treefrog",1.662784049
+"19",1.11e-06,"overspray",1.73265,"fipronil",8,0,"HGOF4",3.492483429,"PLE","rvm2015","Barking treefrog",2.07396123
+"20",1.11e-06,"overspray",1.52771,"fipronil",8,0,"HGOF5",3.492483429,"PLE","rvm2015","Barking treefrog",1.915890199
+"21",2.85e-06,"overspray",1.72511,"triadimefon",8,0,"HGOT1",8.451291713,"PLE","rvm2015","Barking treefrog",0.636157453
+"22",2.85e-06,"overspray",1.94887,"triadimefon",8,0,"HGOT2",8.451291713,"PLE","rvm2015","Barking treefrog",0.972799964
+"23",2.85e-06,"overspray",1.55295,"triadimefon",8,0,"HGOT3",8.451291713,"PLE","rvm2015","Barking treefrog",0.397699131
+"24",2.85e-06,"overspray",2.37346,"triadimefon",8,0,"HGOT4",8.451291713,"PLE","rvm2015","Barking treefrog",0.642604155
+"25",2.85e-06,"overspray",1.57685,"triadimefon",8,0,"HGOT5",8.451291713,"PLE","rvm2015","Barking treefrog",0.48091159
 "26",5.69e-06,"soil",1.95576,"imidacloprid",8,0,"HGI1",2.565991685,"PLE","rvm2015","Barking treefrog",0.329814712
 "27",5.69e-06,"soil",2.26328,"imidacloprid",8,0,"HGI2",2.565991685,"PLE","rvm2015","Barking treefrog",0.210770534
 "28",5.69e-06,"soil",1.27439,"imidacloprid",8,0,"HGI3",2.565991685,"PLE","rvm2015","Barking treefrog",0.50673308
@@ -34,51 +34,51 @@
 "33",1.98e-05,"soil",2.01387,"pendimethalin",8,0,"HGP3",13.61565316,"PLE","rvm2015","Barking treefrog",0.094968352
 "34",1.98e-05,"soil",2.29373,"pendimethalin",8,0,"HGP4",13.61565316,"PLE","rvm2015","Barking treefrog",0.08250324
 "35",1.98e-05,"soil",2.2234,"pendimethalin",8,0,"HGP5",13.61565316,"PLE","rvm2015","Barking treefrog",0.099338888
-"36",2.3e-05,"soil",2.069224088,"total atrazine",8,0,"HGA1",14.43612837,"PLE","rvm2015","Barking treefrog",7.876952404
-"37",2.3e-05,"soil",1.2818,"total atrazine",8,0,"HGA2",14.43612837,"PLE","rvm2015","Barking treefrog",6.342816533
-"38",2.3e-05,"soil",1.91549,"total atrazine",8,0,"HGA3",14.43612837,"PLE","rvm2015","Barking treefrog",5.059544246
-"39",2.3e-05,"soil",1.66783,"total atrazine",8,0,"HGA4",14.43612837,"PLE","rvm2015","Barking treefrog",5.640191973
-"40",2.3e-05,"soil",2.6954,"total atrazine",8,0,"HGA5",14.43612837,"PLE","rvm2015","Barking treefrog",5.631964095
-"41",1.12e-06,"soil",1.62588,"total fipronil",8,0,"HGF1",2.495701956,"PLE","rvm2015","Barking treefrog",0.656150683
-"42",1.12e-06,"soil",1.22989,"total fipronil",8,0,"HGF2",2.495701956,"PLE","rvm2015","Barking treefrog",0.966721159
-"43",1.12e-06,"soil",2.00445,"total fipronil",8,0,"HGF3",2.495701956,"PLE","rvm2015","Barking treefrog",0.464139949
-"44",1.12e-06,"soil",1.99483,"total fipronil",8,0,"HGF4",2.495701956,"PLE","rvm2015","Barking treefrog",0.461519982
-"45",1.12e-06,"soil",1.56533,"total fipronil",8,0,"HGF5",2.495701956,"PLE","rvm2015","Barking treefrog",0.2997831
-"46",2.79e-06,"soil",1.30797,"total triadimefon",8,0,"HGT1",5.94731458,"PLE","rvm2015","Barking treefrog",0.268608762
-"47",2.79e-06,"soil",1.082,"total triadimefon",8,0,"HGT2",5.94731458,"PLE","rvm2015","Barking treefrog",0.216919024
-"48",2.79e-06,"soil",2.56323,"total triadimefon",8,0,"HGT3",5.94731458,"PLE","rvm2015","Barking treefrog",0.143700399
-"49",2.79e-06,"soil",1.61382,"total triadimefon",8,0,"HGT4",5.94731458,"PLE","rvm2015","Barking treefrog",0.274522017
-"50",2.79e-06,"soil",2.84579,"total triadimefon",8,0,"HGT5",5.94731458,"PLE","rvm2015","Barking treefrog",0.173080623
+"36",2.3e-05,"soil",2.069224088,"atrazine",8,0,"HGA1",14.43612837,"PLE","rvm2015","Barking treefrog",7.876952404
+"37",2.3e-05,"soil",1.2818,"atrazine",8,0,"HGA2",14.43612837,"PLE","rvm2015","Barking treefrog",6.342816533
+"38",2.3e-05,"soil",1.91549,"atrazine",8,0,"HGA3",14.43612837,"PLE","rvm2015","Barking treefrog",5.059544246
+"39",2.3e-05,"soil",1.66783,"atrazine",8,0,"HGA4",14.43612837,"PLE","rvm2015","Barking treefrog",5.640191973
+"40",2.3e-05,"soil",2.6954,"atrazine",8,0,"HGA5",14.43612837,"PLE","rvm2015","Barking treefrog",5.631964095
+"41",1.12e-06,"soil",1.62588,"fipronil",8,0,"HGF1",2.495701956,"PLE","rvm2015","Barking treefrog",0.656150683
+"42",1.12e-06,"soil",1.22989,"fipronil",8,0,"HGF2",2.495701956,"PLE","rvm2015","Barking treefrog",0.966721159
+"43",1.12e-06,"soil",2.00445,"fipronil",8,0,"HGF3",2.495701956,"PLE","rvm2015","Barking treefrog",0.464139949
+"44",1.12e-06,"soil",1.99483,"fipronil",8,0,"HGF4",2.495701956,"PLE","rvm2015","Barking treefrog",0.461519982
+"45",1.12e-06,"soil",1.56533,"fipronil",8,0,"HGF5",2.495701956,"PLE","rvm2015","Barking treefrog",0.2997831
+"46",2.79e-06,"soil",1.30797,"triadimefon",8,0,"HGT1",5.94731458,"PLE","rvm2015","Barking treefrog",0.268608762
+"47",2.79e-06,"soil",1.082,"triadimefon",8,0,"HGT2",5.94731458,"PLE","rvm2015","Barking treefrog",0.216919024
+"48",2.79e-06,"soil",2.56323,"triadimefon",8,0,"HGT3",5.94731458,"PLE","rvm2015","Barking treefrog",0.143700399
+"49",2.79e-06,"soil",1.61382,"triadimefon",8,0,"HGT4",5.94731458,"PLE","rvm2015","Barking treefrog",0.274522017
+"50",2.79e-06,"soil",2.84579,"triadimefon",8,0,"HGT5",5.94731458,"PLE","rvm2015","Barking treefrog",0.173080623
 "51",5.62e-06,"soil",0.7479,"imidacloprid",8,0,"CFI1",2.072271639,"PLE","rvm2015","Cricket frog",0.253213485
 "52",5.62e-06,"soil",0.74614,"imidacloprid",8,0,"CFI2",2.072271639,"PLE","rvm2015","Cricket frog",0.434782099
 "53",5.62e-06,"soil",0.53965,"imidacloprid",8,0,"CFI3",2.072271639,"PLE","rvm2015","Cricket frog",0.372214162
 "54",5.62e-06,"soil",0.71619,"imidacloprid",8,0,"CFI4",2.072271639,"PLE","rvm2015","Cricket frog",0.339457748
 "55",5.62e-06,"soil",0.63282,"imidacloprid",8,0,"CFI5",2.072271639,"PLE","rvm2015","Cricket frog",0.275966093
-"56",2.79e-06,"soil",0.6273,"total triadimefon",8,0,"CFT1",10.06719167,"PLE","rvm2015","Cricket frog",2.077130886
-"57",2.79e-06,"soil",0.50037,"total triadimefon",8,0,"CFT2",10.06719167,"PLE","rvm2015","Cricket frog",1.756096815
-"58",2.79e-06,"soil",0.70107,"total triadimefon",8,0,"CFT3",10.06719167,"PLE","rvm2015","Cricket frog",1.744838243
-"59",2.79e-06,"soil",0.69761,"total triadimefon",8,0,"CFT4",10.06719167,"PLE","rvm2015","Cricket frog",1.460137338
-"60",2.79e-06,"soil",0.70298,"total triadimefon",8,0,"CFT5",10.06719167,"PLE","rvm2015","Cricket frog",1.373422118
+"56",2.79e-06,"soil",0.6273,"triadimefon",8,0,"CFT1",10.06719167,"PLE","rvm2015","Cricket frog",2.077130886
+"57",2.79e-06,"soil",0.50037,"triadimefon",8,0,"CFT2",10.06719167,"PLE","rvm2015","Cricket frog",1.756096815
+"58",2.79e-06,"soil",0.70107,"triadimefon",8,0,"CFT3",10.06719167,"PLE","rvm2015","Cricket frog",1.744838243
+"59",2.79e-06,"soil",0.69761,"triadimefon",8,0,"CFT4",10.06719167,"PLE","rvm2015","Cricket frog",1.460137338
+"60",2.79e-06,"soil",0.70298,"triadimefon",8,0,"CFT5",10.06719167,"PLE","rvm2015","Cricket frog",1.373422118
 "61",1.99e-05,"soil",1.44625,"pendimethalin",8,0,"FTP1",12.47076761,"PLE","rvm2015","Fowlers toad",1.015765216
 "62",1.99e-05,"soil",1.4138,"pendimethalin",8,0,"FTP2",12.47076761,"PLE","rvm2015","Fowlers toad",0.793134917
 "63",1.99e-05,"soil",2.94055,"pendimethalin",8,0,"FTP3",12.47076761,"PLE","rvm2015","Fowlers toad",0.232912294
 "64",1.99e-05,"soil",2.01645,"pendimethalin",8,0,"FTP4",12.47076761,"PLE","rvm2015","Fowlers toad",2.450801741
 "65",1.99e-05,"soil",1.73866,"pendimethalin",8,0,"FTP5",12.47076761,"PLE","rvm2015","Fowlers toad",0.348901972
-"66",2.28e-05,"soil",2.811,"total atrazine",8,0,"FTA1",17.05417146,"PLE","rvm2015","Fowlers toad",9.865493013
-"67",2.28e-05,"soil",1.04725,"total atrazine",8,0,"FTA2",17.05417146,"PLE","rvm2015","Fowlers toad",14.56173496
-"68",2.28e-05,"soil",2.57336,"total atrazine",8,0,"FTA3",17.05417146,"PLE","rvm2015","Fowlers toad",10.4565577
-"69",2.28e-05,"soil",1.93404,"total atrazine",8,0,"FTA4",17.05417146,"PLE","rvm2015","Fowlers toad",9.020873418
-"70",2.28e-05,"soil",0.82668,"total atrazine",8,0,"FTA5",17.05417146,"PLE","rvm2015","Fowlers toad",8.439433709
-"71",1.14e-06,"soil",2.87106,"total fipronil",8,0,"FTF1",3.366859313,"PLE","rvm2015","Fowlers toad",1.155134535
-"72",1.14e-06,"soil",1.28161,"total fipronil",8,0,"FTF2",3.366859313,"PLE","rvm2015","Fowlers toad",0.524889572
-"73",1.14e-06,"soil",2.48014,"total fipronil",8,0,"FTF3",3.366859313,"PLE","rvm2015","Fowlers toad",1.259008899
-"74",1.14e-06,"soil",1.69321,"total fipronil",8,0,"FTF4",3.366859313,"PLE","rvm2015","Fowlers toad",1.158626237
-"75",1.14e-06,"soil",0.89804,"total fipronil",8,0,"FTF5",3.366859313,"PLE","rvm2015","Fowlers toad",2.07002135
-"76",2.74e-06,"soil",0.95994,"total triadimefon",8,0,"FTT1",7.010390361,"PLE","rvm2015","Fowlers toad",0.17768118
-"77",2.74e-06,"soil",1.74647,"total triadimefon",8,0,"FTT2",7.010390361,"PLE","rvm2015","Fowlers toad",0.249114027
-"78",2.74e-06,"soil",1.37367,"total triadimefon",8,0,"FTT3",7.010390361,"PLE","rvm2015","Fowlers toad",0.309893558
-"79",2.74e-06,"soil",3.32274,"total triadimefon",8,0,"FTT4",7.010390361,"PLE","rvm2015","Fowlers toad",0.404606482
-"80",2.74e-06,"soil",1.09363,"total triadimefon",8,0,"FTT5",7.010390361,"PLE","rvm2015","Fowlers toad",0.318423813
+"66",2.28e-05,"soil",2.811,"atrazine",8,0,"FTA1",17.05417146,"PLE","rvm2015","Fowlers toad",9.865493013
+"67",2.28e-05,"soil",1.04725,"atrazine",8,0,"FTA2",17.05417146,"PLE","rvm2015","Fowlers toad",14.56173496
+"68",2.28e-05,"soil",2.57336,"atrazine",8,0,"FTA3",17.05417146,"PLE","rvm2015","Fowlers toad",10.4565577
+"69",2.28e-05,"soil",1.93404,"atrazine",8,0,"FTA4",17.05417146,"PLE","rvm2015","Fowlers toad",9.020873418
+"70",2.28e-05,"soil",0.82668,"atrazine",8,0,"FTA5",17.05417146,"PLE","rvm2015","Fowlers toad",8.439433709
+"71",1.14e-06,"soil",2.87106,"fipronil",8,0,"FTF1",3.366859313,"PLE","rvm2015","Fowlers toad",1.155134535
+"72",1.14e-06,"soil",1.28161,"fipronil",8,0,"FTF2",3.366859313,"PLE","rvm2015","Fowlers toad",0.524889572
+"73",1.14e-06,"soil",2.48014,"fipronil",8,0,"FTF3",3.366859313,"PLE","rvm2015","Fowlers toad",1.259008899
+"74",1.14e-06,"soil",1.69321,"fipronil",8,0,"FTF4",3.366859313,"PLE","rvm2015","Fowlers toad",1.158626237
+"75",1.14e-06,"soil",0.89804,"fipronil",8,0,"FTF5",3.366859313,"PLE","rvm2015","Fowlers toad",2.07002135
+"76",2.74e-06,"soil",0.95994,"triadimefon",8,0,"FTT1",7.010390361,"PLE","rvm2015","Fowlers toad",0.17768118
+"77",2.74e-06,"soil",1.74647,"triadimefon",8,0,"FTT2",7.010390361,"PLE","rvm2015","Fowlers toad",0.249114027
+"78",2.74e-06,"soil",1.37367,"triadimefon",8,0,"FTT3",7.010390361,"PLE","rvm2015","Fowlers toad",0.309893558
+"79",2.74e-06,"soil",3.32274,"triadimefon",8,0,"FTT4",7.010390361,"PLE","rvm2015","Fowlers toad",0.404606482
+"80",2.74e-06,"soil",1.09363,"triadimefon",8,0,"FTT5",7.010390361,"PLE","rvm2015","Fowlers toad",0.318423813
 "81",5.66e-06,"soil",1.50164,"imidacloprid",8,0,"HVI1",2.865856558,"PLE","rvm2015","Gray treefrog",0.188500223
 "82",5.66e-06,"soil",1.89679,"imidacloprid",8,0,"HVI2",2.865856558,"PLE","rvm2015","Gray treefrog",0.176685812
 "83",5.66e-06,"soil",1.48929,"imidacloprid",8,0,"HVI3",2.865856558,"PLE","rvm2015","Gray treefrog",0.158445082
@@ -89,41 +89,41 @@
 "88",1.99e-05,"soil",1.77209,"pendimethalin",8,0,"HVP3",10.66105625,"PLE","rvm2015","Gray treefrog",0.062623285
 "89",1.99e-05,"soil",1.59006,"pendimethalin",8,0,"HVP4",10.66105625,"PLE","rvm2015","Gray treefrog",0.018846949
 "90",1.99e-05,"soil",1.59253,"pendimethalin",8,0,"HVP5",10.66105625,"PLE","rvm2015","Gray treefrog",0.060285257
-"91",2.31e-05,"soil",1.56286,"total atrazine",8,0,"HVA1",16.63951616,"PLE","rvm2015","Gray treefrog",8.381738534
-"92",2.31e-05,"soil",1.42737,"total atrazine",8,0,"HVA2",16.63951616,"PLE","rvm2015","Gray treefrog",8.407586134
-"93",2.31e-05,"soil",2.21783,"total atrazine",8,0,"HVA3",16.63951616,"PLE","rvm2015","Gray treefrog",10.43128937
-"94",2.31e-05,"soil",2.86963,"total atrazine",8,0,"HVA4",16.63951616,"PLE","rvm2015","Gray treefrog",8.072348131
-"95",2.31e-05,"soil",1.1115,"total atrazine",8,0,"HVA5",16.63951616,"PLE","rvm2015","Gray treefrog",6.806192479
-"96",1.05e-06,"soil",2.29103,"total fipronil",8,0,"HVF1",3.309695933,"PLE","rvm2015","Gray treefrog",0.895649989
-"97",1.05e-06,"soil",2.48463,"total fipronil",8,0,"HVF2",3.309695933,"PLE","rvm2015","Gray treefrog",0.453031887
-"98",1.05e-06,"soil",1.73741,"total fipronil",8,0,"HVF3",3.309695933,"PLE","rvm2015","Gray treefrog",0.627210223
-"99",1.05e-06,"soil",1.90828,"total fipronil",8,0,"HVF4",3.309695933,"PLE","rvm2015","Gray treefrog",0.144678333
-"100",1.05e-06,"soil",2.34893,"total fipronil",8,0,"HVF5",3.309695933,"PLE","rvm2015","Gray treefrog",0.173233731
-"101",2.78e-06,"soil",2.49658,"total triadimefon",8,0,"HVT1",5.80984816,"PLE","rvm2015","Gray treefrog",0.45289549
-"102",2.78e-06,"soil",2.51534,"total triadimefon",8,0,"HVT2",5.80984816,"PLE","rvm2015","Gray treefrog",0.841704915
-"103",2.78e-06,"soil",1.1547,"total triadimefon",8,0,"HVT3",5.80984816,"PLE","rvm2015","Gray treefrog",0.590151651
-"104",2.78e-06,"soil",1.20172,"total triadimefon",8,0,"HVT4",5.80984816,"PLE","rvm2015","Gray treefrog",0.691676628
-"105",2.78e-06,"soil",2.91091,"total triadimefon",8,0,"HVT5",5.80984816,"PLE","rvm2015","Gray treefrog",0.446716578
+"91",2.31e-05,"soil",1.56286,"atrazine",8,0,"HVA1",16.63951616,"PLE","rvm2015","Gray treefrog",8.381738534
+"92",2.31e-05,"soil",1.42737,"atrazine",8,0,"HVA2",16.63951616,"PLE","rvm2015","Gray treefrog",8.407586134
+"93",2.31e-05,"soil",2.21783,"atrazine",8,0,"HVA3",16.63951616,"PLE","rvm2015","Gray treefrog",10.43128937
+"94",2.31e-05,"soil",2.86963,"atrazine",8,0,"HVA4",16.63951616,"PLE","rvm2015","Gray treefrog",8.072348131
+"95",2.31e-05,"soil",1.1115,"atrazine",8,0,"HVA5",16.63951616,"PLE","rvm2015","Gray treefrog",6.806192479
+"96",1.05e-06,"soil",2.29103,"fipronil",8,0,"HVF1",3.309695933,"PLE","rvm2015","Gray treefrog",0.895649989
+"97",1.05e-06,"soil",2.48463,"fipronil",8,0,"HVF2",3.309695933,"PLE","rvm2015","Gray treefrog",0.453031887
+"98",1.05e-06,"soil",1.73741,"fipronil",8,0,"HVF3",3.309695933,"PLE","rvm2015","Gray treefrog",0.627210223
+"99",1.05e-06,"soil",1.90828,"fipronil",8,0,"HVF4",3.309695933,"PLE","rvm2015","Gray treefrog",0.144678333
+"100",1.05e-06,"soil",2.34893,"fipronil",8,0,"HVF5",3.309695933,"PLE","rvm2015","Gray treefrog",0.173233731
+"101",2.78e-06,"soil",2.49658,"triadimefon",8,0,"HVT1",5.80984816,"PLE","rvm2015","Gray treefrog",0.45289549
+"102",2.78e-06,"soil",2.51534,"triadimefon",8,0,"HVT2",5.80984816,"PLE","rvm2015","Gray treefrog",0.841704915
+"103",2.78e-06,"soil",1.1547,"triadimefon",8,0,"HVT3",5.80984816,"PLE","rvm2015","Gray treefrog",0.590151651
+"104",2.78e-06,"soil",1.20172,"triadimefon",8,0,"HVT4",5.80984816,"PLE","rvm2015","Gray treefrog",0.691676628
+"105",2.78e-06,"soil",2.91091,"triadimefon",8,0,"HVT5",5.80984816,"PLE","rvm2015","Gray treefrog",0.446716578
 "106",2e-05,"overspray",1.96213,"pendimethalin",8,0,"HCOP1",12.5210311,"PLE","rvm2015","Green treefrog",0.673117238
 "107",2e-05,"overspray",2.02547,"pendimethalin",8,0,"HCOP2",12.5210311,"PLE","rvm2015","Green treefrog",7.113543563
 "108",2e-05,"overspray",1.56058,"pendimethalin",8,0,"HCOP3",12.5210311,"PLE","rvm2015","Green treefrog",3.039240379
 "109",2e-05,"overspray",0.82568,"pendimethalin",8,0,"HCOP4",12.5210311,"PLE","rvm2015","Green treefrog",1.070092765
 "110",2e-05,"overspray",1.17217,"pendimethalin",8,0,"HCOP5",12.5210311,"PLE","rvm2015","Green treefrog",1.924313318
-"111",2.31e-05,"overspray",2.22041,"total atrazine",8,0,"HCOA1",19.12810511,"PLE","rvm2015","Green treefrog",23.44129789
-"112",2.31e-05,"overspray",3.35473,"total atrazine",8,0,"HCOA2",19.12810511,"PLE","rvm2015","Green treefrog",20.56163305
-"113",2.31e-05,"overspray",2.00039,"total atrazine",8,0,"HCOA3",19.12810511,"PLE","rvm2015","Green treefrog",19.95404302
-"114",2.31e-05,"overspray",2.82206,"total atrazine",8,0,"HCOA4",19.12810511,"PLE","rvm2015","Green treefrog",19.44679486
-"115",2.31e-05,"overspray",3.13181,"total atrazine",8,0,"HCOA5",19.12810511,"PLE","rvm2015","Green treefrog",18.88325569
-"116",1.06e-06,"overspray",1.30684,"total fipronil",8,0,"HCOF1",3.951751488,"PLE","rvm2015","Green treefrog",2.729720739
-"117",1.06e-06,"overspray",2.6593,"total fipronil",8,0,"HCOF2",3.951751488,"PLE","rvm2015","Green treefrog",3.730847831
-"118",1.06e-06,"overspray",1.88382,"total fipronil",8,0,"HCOF3",3.951751488,"PLE","rvm2015","Green treefrog",1.778989061
-"119",1.06e-06,"overspray",1.07051,"total fipronil",8,0,"HCOF4",3.951751488,"PLE","rvm2015","Green treefrog",1.159865558
-"120",1.06e-06,"overspray",1.77007,"total fipronil",8,0,"HCOF5",3.951751488,"PLE","rvm2015","Green treefrog",1.097300859
-"121",2.79e-06,"overspray",1.53205,"total triadimefon",8,0,"HCOT1",8.090520249,"PLE","rvm2015","Green treefrog",1.511168861
-"122",2.79e-06,"overspray",1.72177,"total triadimefon",8,0,"HCOT2",8.090520249,"PLE","rvm2015","Green treefrog",3.099302175
-"123",2.79e-06,"overspray",1.38441,"total triadimefon",8,0,"HCOT3",8.090520249,"PLE","rvm2015","Green treefrog",1.440452008
-"124",2.79e-06,"overspray",3.21721,"total triadimefon",8,0,"HCOT4",8.090520249,"PLE","rvm2015","Green treefrog",1.363591664
-"125",2.79e-06,"overspray",1.0386,"total triadimefon",8,0,"HCOT5",8.090520249,"PLE","rvm2015","Green treefrog",1.152513756
+"111",2.31e-05,"overspray",2.22041,"atrazine",8,0,"HCOA1",19.12810511,"PLE","rvm2015","Green treefrog",23.44129789
+"112",2.31e-05,"overspray",3.35473,"atrazine",8,0,"HCOA2",19.12810511,"PLE","rvm2015","Green treefrog",20.56163305
+"113",2.31e-05,"overspray",2.00039,"atrazine",8,0,"HCOA3",19.12810511,"PLE","rvm2015","Green treefrog",19.95404302
+"114",2.31e-05,"overspray",2.82206,"atrazine",8,0,"HCOA4",19.12810511,"PLE","rvm2015","Green treefrog",19.44679486
+"115",2.31e-05,"overspray",3.13181,"atrazine",8,0,"HCOA5",19.12810511,"PLE","rvm2015","Green treefrog",18.88325569
+"116",1.06e-06,"overspray",1.30684,"fipronil",8,0,"HCOF1",3.951751488,"PLE","rvm2015","Green treefrog",2.729720739
+"117",1.06e-06,"overspray",2.6593,"fipronil",8,0,"HCOF2",3.951751488,"PLE","rvm2015","Green treefrog",3.730847831
+"118",1.06e-06,"overspray",1.88382,"fipronil",8,0,"HCOF3",3.951751488,"PLE","rvm2015","Green treefrog",1.778989061
+"119",1.06e-06,"overspray",1.07051,"fipronil",8,0,"HCOF4",3.951751488,"PLE","rvm2015","Green treefrog",1.159865558
+"120",1.06e-06,"overspray",1.77007,"fipronil",8,0,"HCOF5",3.951751488,"PLE","rvm2015","Green treefrog",1.097300859
+"121",2.79e-06,"overspray",1.53205,"triadimefon",8,0,"HCOT1",8.090520249,"PLE","rvm2015","Green treefrog",1.511168861
+"122",2.79e-06,"overspray",1.72177,"triadimefon",8,0,"HCOT2",8.090520249,"PLE","rvm2015","Green treefrog",3.099302175
+"123",2.79e-06,"overspray",1.38441,"triadimefon",8,0,"HCOT3",8.090520249,"PLE","rvm2015","Green treefrog",1.440452008
+"124",2.79e-06,"overspray",3.21721,"triadimefon",8,0,"HCOT4",8.090520249,"PLE","rvm2015","Green treefrog",1.363591664
+"125",2.79e-06,"overspray",1.0386,"triadimefon",8,0,"HCOT5",8.090520249,"PLE","rvm2015","Green treefrog",1.152513756
 "126",5.76e-06,"soil",1.46095,"imidacloprid",8,0,"HCI1",2.032637766,"PLE","rvm2015","Green treefrog",0.128323626
 "127",5.76e-06,"soil",1.29982,"imidacloprid",8,0,"HCI2",2.032637766,"PLE","rvm2015","Green treefrog",0.160232247
 "128",5.76e-06,"soil",1.41647,"imidacloprid",8,0,"HCI3",2.032637766,"PLE","rvm2015","Green treefrog",0.12428756
@@ -134,67 +134,67 @@
 "133",1.99e-05,"soil",2.55184,"pendimethalin",8,0,"HCP3",12.43513533,"PLE","rvm2015","Green treefrog",0.285295401
 "134",1.99e-05,"soil",2.44681,"pendimethalin",8,0,"HCP4",12.43513533,"PLE","rvm2015","Green treefrog",0.087572337
 "135",1.99e-05,"soil",2.26759,"pendimethalin",8,0,"HCP5",12.43513533,"PLE","rvm2015","Green treefrog",0.083610081
-"136",2.3e-05,"soil",1.31617,"total atrazine",8,0,"HCA1",17.60923519,"PLE","rvm2015","Green treefrog",3.727357846
-"137",2.3e-05,"soil",1.8349,"total atrazine",8,0,"HCA2",17.60923519,"PLE","rvm2015","Green treefrog",3.065833762
-"138",2.3e-05,"soil",2.11135,"total atrazine",8,0,"HCA3",17.60923519,"PLE","rvm2015","Green treefrog",5.406937125
-"139",2.3e-05,"soil",1.88638,"total atrazine",8,0,"HCA4",17.60923519,"PLE","rvm2015","Green treefrog",3.651702998
-"140",2.3e-05,"soil",0.73631,"total atrazine",8,0,"HCA5",17.60923519,"PLE","rvm2015","Green treefrog",2.867269263
-"141",1.06e-06,"soil",1.69128,"total fipronil",8,0,"HCF1",2.804569298,"PLE","rvm2015","Green treefrog",0.197411795
-"142",1.06e-06,"soil",2.0466,"total fipronil",8,0,"HCF2",2.804569298,"PLE","rvm2015","Green treefrog",0.111496024
-"143",1.06e-06,"soil",2.34143,"total fipronil",8,0,"HCF3",2.804569298,"PLE","rvm2015","Green treefrog",0.061188744
-"144",1.06e-06,"soil",1.05281,"total fipronil",8,0,"HCF4",2.804569298,"PLE","rvm2015","Green treefrog",0.427601059
-"145",1.06e-06,"soil",1.01293,"total fipronil",8,0,"HCF5",2.804569298,"PLE","rvm2015","Green treefrog",0.261173889
-"146",2.71e-06,"soil",1.26341,"total triadimefon",8,0,"HCT1",5.245912662,"PLE","rvm2015","Green treefrog",0.273380103
-"147",2.71e-06,"soil",1.56597,"total triadimefon",8,0,"HCT2",5.245912662,"PLE","rvm2015","Green treefrog",0.393093957
-"148",2.71e-06,"soil",1.34966,"total triadimefon",8,0,"HCT3",5.245912662,"PLE","rvm2015","Green treefrog",0.151943337
-"149",2.71e-06,"soil",1.4684,"total triadimefon",8,0,"HCT4",5.245912662,"PLE","rvm2015","Green treefrog",0.495725615
-"150",2.71e-06,"soil",2.15294,"total triadimefon",8,0,"HCT5",5.245912662,"PLE","rvm2015","Green treefrog",0.557152367
+"136",2.3e-05,"soil",1.31617,"atrazine",8,0,"HCA1",17.60923519,"PLE","rvm2015","Green treefrog",3.727357846
+"137",2.3e-05,"soil",1.8349,"atrazine",8,0,"HCA2",17.60923519,"PLE","rvm2015","Green treefrog",3.065833762
+"138",2.3e-05,"soil",2.11135,"atrazine",8,0,"HCA3",17.60923519,"PLE","rvm2015","Green treefrog",5.406937125
+"139",2.3e-05,"soil",1.88638,"atrazine",8,0,"HCA4",17.60923519,"PLE","rvm2015","Green treefrog",3.651702998
+"140",2.3e-05,"soil",0.73631,"atrazine",8,0,"HCA5",17.60923519,"PLE","rvm2015","Green treefrog",2.867269263
+"141",1.06e-06,"soil",1.69128,"fipronil",8,0,"HCF1",2.804569298,"PLE","rvm2015","Green treefrog",0.197411795
+"142",1.06e-06,"soil",2.0466,"fipronil",8,0,"HCF2",2.804569298,"PLE","rvm2015","Green treefrog",0.111496024
+"143",1.06e-06,"soil",2.34143,"fipronil",8,0,"HCF3",2.804569298,"PLE","rvm2015","Green treefrog",0.061188744
+"144",1.06e-06,"soil",1.05281,"fipronil",8,0,"HCF4",2.804569298,"PLE","rvm2015","Green treefrog",0.427601059
+"145",1.06e-06,"soil",1.01293,"fipronil",8,0,"HCF5",2.804569298,"PLE","rvm2015","Green treefrog",0.261173889
+"146",2.71e-06,"soil",1.26341,"triadimefon",8,0,"HCT1",5.245912662,"PLE","rvm2015","Green treefrog",0.273380103
+"147",2.71e-06,"soil",1.56597,"triadimefon",8,0,"HCT2",5.245912662,"PLE","rvm2015","Green treefrog",0.393093957
+"148",2.71e-06,"soil",1.34966,"triadimefon",8,0,"HCT3",5.245912662,"PLE","rvm2015","Green treefrog",0.151943337
+"149",2.71e-06,"soil",1.4684,"triadimefon",8,0,"HCT4",5.245912662,"PLE","rvm2015","Green treefrog",0.495725615
+"150",2.71e-06,"soil",2.15294,"triadimefon",8,0,"HCT5",5.245912662,"PLE","rvm2015","Green treefrog",0.557152367
 "151",2e-05,"soil",1.2242,"pendimethalin",8,0,"LFP1",17.57581532,"PLE","rvm2015","Leopard frog",0.131424428
 "152",2e-05,"soil",2.64224,"pendimethalin",8,0,"LFP2",17.57581532,"PLE","rvm2015","Leopard frog",0.41907742
 "153",2e-05,"soil",2.90779,"pendimethalin",8,0,"LFP3",17.57581532,"PLE","rvm2015","Leopard frog",0.092921182
 "154",2e-05,"soil",1.8955,"pendimethalin",8,0,"LFP4",17.57581532,"PLE","rvm2015","Leopard frog",0.522692823
-"155",2.31e-05,"soil",1.74298,"total atrazine",8,0,"LFA1",21.53033266,"PLE","rvm2015","Leopard frog",3.440459903
-"156",2.28e-05,"soil",3.042,"total atrazine",8,0,"LFA2",21.53033266,"PLE","rvm2015","Leopard frog",6.098643762
-"157",2.28e-05,"soil",2.243,"total atrazine",8,0,"LFA3",21.53033266,"PLE","rvm2015","Leopard frog",4.385147102
-"158",2.28e-05,"soil",2.0197,"total atrazine",8,0,"LFA4",21.53033266,"PLE","rvm2015","Leopard frog",5.751047214
-"159",1.12e-06,"soil",3.07228,"total fipronil",8,0,"LFF1",3.156807044,"PLE","rvm2015","Leopard frog",0.474578788
-"160",1.12e-06,"soil",1.6105,"total fipronil",8,0,"LFF2",3.156807044,"PLE","rvm2015","Leopard frog",0.608410201
-"161",1.12e-06,"soil",1.29821,"total fipronil",8,0,"LFF3",3.156807044,"PLE","rvm2015","Leopard frog",0.37917811
-"162",1.12e-06,"soil",1.4102,"total fipronil",8,0,"LFF4",3.156807044,"PLE","rvm2015","Leopard frog",0.496870531
-"163",2.81e-06,"soil",2.11943,"total triadimefon",8,0,"LFT1",6.669240533,"PLE","rvm2015","Leopard frog",0.1766496
-"164",2.81e-06,"soil",3.13315,"total triadimefon",8,0,"LFT2",6.669240533,"PLE","rvm2015","Leopard frog",0.179231247
-"165",2.81e-06,"soil",3.32121,"total triadimefon",8,0,"LFT3",6.669240533,"PLE","rvm2015","Leopard frog",0.052193986
-"166",2.81e-06,"soil",1.44049,"total triadimefon",8,0,"LFT4",6.669240533,"PLE","rvm2015","Leopard frog",0.070844227
+"155",2.31e-05,"soil",1.74298,"atrazine",8,0,"LFA1",21.53033266,"PLE","rvm2015","Leopard frog",3.440459903
+"156",2.28e-05,"soil",3.042,"atrazine",8,0,"LFA2",21.53033266,"PLE","rvm2015","Leopard frog",6.098643762
+"157",2.28e-05,"soil",2.243,"atrazine",8,0,"LFA3",21.53033266,"PLE","rvm2015","Leopard frog",4.385147102
+"158",2.28e-05,"soil",2.0197,"atrazine",8,0,"LFA4",21.53033266,"PLE","rvm2015","Leopard frog",5.751047214
+"159",1.12e-06,"soil",3.07228,"fipronil",8,0,"LFF1",3.156807044,"PLE","rvm2015","Leopard frog",0.474578788
+"160",1.12e-06,"soil",1.6105,"fipronil",8,0,"LFF2",3.156807044,"PLE","rvm2015","Leopard frog",0.608410201
+"161",1.12e-06,"soil",1.29821,"fipronil",8,0,"LFF3",3.156807044,"PLE","rvm2015","Leopard frog",0.37917811
+"162",1.12e-06,"soil",1.4102,"fipronil",8,0,"LFF4",3.156807044,"PLE","rvm2015","Leopard frog",0.496870531
+"163",2.81e-06,"soil",2.11943,"triadimefon",8,0,"LFT1",6.669240533,"PLE","rvm2015","Leopard frog",0.1766496
+"164",2.81e-06,"soil",3.13315,"triadimefon",8,0,"LFT2",6.669240533,"PLE","rvm2015","Leopard frog",0.179231247
+"165",2.81e-06,"soil",3.32121,"triadimefon",8,0,"LFT3",6.669240533,"PLE","rvm2015","Leopard frog",0.052193986
+"166",2.81e-06,"soil",1.44049,"triadimefon",8,0,"LFT4",6.669240533,"PLE","rvm2015","Leopard frog",0.070844227
 "167",2.02e-05,"soil",2.58239,"pendimethalin",8,0,"SP1",32.37428285,"PLE","rvm2015","Mole salamander",4.801958486
 "168",2.02e-05,"soil",1.87511,"pendimethalin",8,0,"SP2",32.37428285,"PLE","rvm2015","Mole salamander",1.295372009
 "169",2.02e-05,"soil",2.07789,"pendimethalin",8,0,"SP3",32.37428285,"PLE","rvm2015","Mole salamander",2.957076964
 "170",2.02e-05,"soil",3.99315,"pendimethalin",8,0,"SP4",32.37428285,"PLE","rvm2015","Mole salamander",1.851006799
 "171",2.02e-05,"soil",2.0028,"pendimethalin",8,0,"SP5",32.37428285,"PLE","rvm2015","Mole salamander",3.236333259
-"172",2.3e-05,"soil",2.93262,"total atrazine",8,0,"SA1",52.67554477,"PLE","rvm2015","Mole salamander",6.823400408
-"173",2.3e-05,"soil",3.53977,"total atrazine",8,0,"SA2",52.67554477,"PLE","rvm2015","Mole salamander",5.611314977
-"174",2.3e-05,"soil",1.14,"total atrazine",8,0,"SA3",52.67554477,"PLE","rvm2015","Mole salamander",5.443528911
-"175",2.32e-05,"soil",2.9446,"total atrazine",8,0,"SA4",81.7111506,"PLE","rvm2015","Mole salamander",2.748808693
-"176",2.32e-05,"soil",2.59184,"total atrazine",8,0,"SA5",81.7111506,"PLE","rvm2015","Mole salamander",2.620759616
-"177",1.05e-06,"soil",2.0321,"total fipronil",8,0,"SF1",4.53176306,"PLE","rvm2015","Mole salamander",0.49304269
-"178",1.05e-06,"soil",1.57444,"total fipronil",8,0,"SF2",4.53176306,"PLE","rvm2015","Mole salamander",1.117034512
-"179",1.05e-06,"soil",2.34673,"total fipronil",8,0,"SF3",4.53176306,"PLE","rvm2015","Mole salamander",1.105844253
-"180",1.05e-06,"soil",2.788,"total fipronil",8,0,"SF4",4.53176306,"PLE","rvm2015","Mole salamander",0.472718534
-"181",1.05e-06,"soil",1.75764,"total fipronil",8,0,"SF5",4.53176306,"PLE","rvm2015","Mole salamander",0.466888045
-"182",2.87e-06,"soil",2.42958,"total triadimefon",8,0,"ST1",6.136541259,"PLE","rvm2015","Mole salamander",1.119874054
-"183",2.87e-06,"soil",2.33583,"total triadimefon",8,0,"ST2",6.136541259,"PLE","rvm2015","Mole salamander",0.506757885
-"184",2.87e-06,"soil",1.92159,"total triadimefon",8,0,"ST3",6.136541259,"PLE","rvm2015","Mole salamander",0.23751407
-"185",2.87e-06,"soil",2.46557,"total triadimefon",8,0,"ST4",6.136541259,"PLE","rvm2015","Mole salamander",0.499320716
-"186",2.87e-06,"soil",2.68042,"total triadimefon",8,0,"ST5",6.136541259,"PLE","rvm2015","Mole salamander",0.322065257
+"172",2.3e-05,"soil",2.93262,"atrazine",8,0,"SA1",52.67554477,"PLE","rvm2015","Mole salamander",6.823400408
+"173",2.3e-05,"soil",3.53977,"atrazine",8,0,"SA2",52.67554477,"PLE","rvm2015","Mole salamander",5.611314977
+"174",2.3e-05,"soil",1.14,"atrazine",8,0,"SA3",52.67554477,"PLE","rvm2015","Mole salamander",5.443528911
+"175",2.32e-05,"soil",2.9446,"atrazine",8,0,"SA4",81.7111506,"PLE","rvm2015","Mole salamander",2.748808693
+"176",2.32e-05,"soil",2.59184,"atrazine",8,0,"SA5",81.7111506,"PLE","rvm2015","Mole salamander",2.620759616
+"177",1.05e-06,"soil",2.0321,"fipronil",8,0,"SF1",4.53176306,"PLE","rvm2015","Mole salamander",0.49304269
+"178",1.05e-06,"soil",1.57444,"fipronil",8,0,"SF2",4.53176306,"PLE","rvm2015","Mole salamander",1.117034512
+"179",1.05e-06,"soil",2.34673,"fipronil",8,0,"SF3",4.53176306,"PLE","rvm2015","Mole salamander",1.105844253
+"180",1.05e-06,"soil",2.788,"fipronil",8,0,"SF4",4.53176306,"PLE","rvm2015","Mole salamander",0.472718534
+"181",1.05e-06,"soil",1.75764,"fipronil",8,0,"SF5",4.53176306,"PLE","rvm2015","Mole salamander",0.466888045
+"182",2.87e-06,"soil",2.42958,"triadimefon",8,0,"ST1",6.136541259,"PLE","rvm2015","Mole salamander",1.119874054
+"183",2.87e-06,"soil",2.33583,"triadimefon",8,0,"ST2",6.136541259,"PLE","rvm2015","Mole salamander",0.506757885
+"184",2.87e-06,"soil",1.92159,"triadimefon",8,0,"ST3",6.136541259,"PLE","rvm2015","Mole salamander",0.23751407
+"185",2.87e-06,"soil",2.46557,"triadimefon",8,0,"ST4",6.136541259,"PLE","rvm2015","Mole salamander",0.499320716
+"186",2.87e-06,"soil",2.68042,"triadimefon",8,0,"ST5",6.136541259,"PLE","rvm2015","Mole salamander",0.322065257
 "187",5.65e-06,"soil",0.95183,"imidacloprid",8,0,"NTI1",2.024466739,"PLE","rvm2015","Narrowmouth toad",0.294998693
 "188",5.65e-06,"soil",0.92942,"imidacloprid",8,0,"NTI2",2.024466739,"PLE","rvm2015","Narrowmouth toad",0.395986198
 "189",5.65e-06,"soil",0.9349,"imidacloprid",8,0,"NTI3",2.024466739,"PLE","rvm2015","Narrowmouth toad",0.214460025
 "190",5.65e-06,"soil",0.85968,"imidacloprid",8,0,"NTI4",2.024466739,"PLE","rvm2015","Narrowmouth toad",0.319810784
 "191",5.65e-06,"soil",1.24292,"imidacloprid",8,0,"NTI5",2.024466739,"PLE","rvm2015","Narrowmouth toad",0.49063891
-"192",2.72e-06,"soil",1.09861,"total triadimefon",8,0,"NTT1",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.479349927
-"193",2.72e-06,"soil",0.8174,"total triadimefon",8,0,"NTT2",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.318840389
-"194",2.72e-06,"soil",0.81689,"total triadimefon",8,0,"NTT3",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.459769244
-"195",2.72e-06,"soil",0.79306,"total triadimefon",8,0,"NTT4",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.447331937
-"196",2.72e-06,"soil",0.79105,"total triadimefon",8,0,"NTT5",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.379035618
+"192",2.72e-06,"soil",1.09861,"triadimefon",8,0,"NTT1",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.479349927
+"193",2.72e-06,"soil",0.8174,"triadimefon",8,0,"NTT2",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.318840389
+"194",2.72e-06,"soil",0.81689,"triadimefon",8,0,"NTT3",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.459769244
+"195",2.72e-06,"soil",0.79306,"triadimefon",8,0,"NTT4",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.447331937
+"196",2.72e-06,"soil",0.79105,"triadimefon",8,0,"NTT5",6.241574746,"PLE","rvm2015","Narrowmouth toad",0.379035618
 "197",2.29e-05,"indirect",13.1831,"atrazine",8,0,"2_1_A",22.87721442,"PLE","rvm2016","American toad",0.337135483
 "198",2.29e-05,"indirect",15.8694,"atrazine",8,0,"2_1_H",39.57404439,"PLE","rvm2016","American toad",1.227227091
 "199",2.29e-05,"indirect",8.3884,"atrazine",8,0,"2_3_C",19.10798205,"PLE","rvm2016","American toad",0.700940082
@@ -989,51 +989,27 @@
 "988",2.6e-06,"soil",3.5113,"propiconazole",8,0,"ATZPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",1.481646981
 "989",2.6e-06,"soil",3.9973,"propiconazole",8,0,"PZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.000537811
 "990",2.6e-06,"soil",4.0141,"propiconazole",8,0,"MAPZ_PROPT",NA,NA,"rvm2017","Rana_clamitans",0.723961607
-"991",NA,"soil",1.313,"4-oh",8,0,"Bif LF S 1 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"992",NA,"soil",1.313,"bifenthrin",8,0,"Bif LF S 1 F",0.33888,"OLS","dag_dermal_routes","Leopard frog",0.108558
-"993",NA,"soil",2.2547,"4-oh",8,0,"Bif LF S 2 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"994",NA,"soil",2.2547,"bifenthrin",8,0,"Bif LF S 2 F",0.385833,"OLS","dag_dermal_routes","Leopard frog",0.094022
-"995",NA,"soil",1.3741,"4-oh",8,0,"Bif LF S 3 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"996",NA,"soil",1.3741,"bifenthrin",8,0,"Bif LF S 3 F",0.354759,"OLS","dag_dermal_routes","Leopard frog",0.114565
-"997",NA,"soil",2.37,"4-oh",8,0,"Bif LF S 4 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"998",NA,"soil",2.37,"bifenthrin",8,0,"Bif LF S 4 F",0.328681,"OLS","dag_dermal_routes","Leopard frog",0.0745
-"999",NA,"soil",1.915,"4-oh",8,0,"Bif LF S 5 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"1000",NA,"soil",1.915,"bifenthrin",8,0,"Bif LF S 5 F",0.286841,"OLS","dag_dermal_routes","Leopard frog",0.095261
-"1001",NA,"soil",2.2342,"4-oh",8,0,"Bif LF S 6 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"1002",NA,"soil",2.2342,"bifenthrin",8,0,"Bif LF S 6 F",0.317522,"OLS","dag_dermal_routes","Leopard frog",0.073592
-"1003",NA,"soil",2.0466,"4-oh",8,0,"Bif LF S 7 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"1004",NA,"soil",2.0466,"bifenthrin",8,0,"Bif LF S 7 F",0.248066,"OLS","dag_dermal_routes","Leopard frog",0.082735
-"1005",NA,"soil",1.4359,"4-oh",8,0,"Bif LF S 8 F",0,"OLS","dag_dermal_routes","Leopard frog",0
-"1006",NA,"soil",1.4359,"bifenthrin",8,0,"Bif LF S 8 F",0.354871,"OLS","dag_dermal_routes","Leopard frog",0.217679
-"1007",NA,"soil",1.92467,"chlorpyrifos",8,0,"CPF LF S 1 F",0.279786,"OLS","dag_dermal_routes","Leopard frog",0.930317
-"1008",NA,"soil",1.92467,"chlorpyrifos oxen",8,0,"CPF LF S 1 F",0,"OLS","dag_dermal_routes","Leopard frog",0.587436
-"1009",NA,"soil",2.35063,"chlorpyrifos",8,0,"CPF LF S 2 F",0.219906,"OLS","dag_dermal_routes","Leopard frog",1.019965
-"1010",NA,"soil",2.35063,"chlorpyrifos oxen",8,0,"CPF LF S 2 F",0,"OLS","dag_dermal_routes","Leopard frog",0.369563
-"1011",NA,"soil",1.74634,"chlorpyrifos",8,0,"CPF LF S 3 F",0.28037,"OLS","dag_dermal_routes","Leopard frog",0.346872
-"1012",NA,"soil",1.74634,"chlorpyrifos oxen",8,0,"CPF LF S 3 F",0,"OLS","dag_dermal_routes","Leopard frog",0.056939
-"1013",NA,"soil",1.21391,"chlorpyrifos",8,0,"CPF LF S 4 F",0.281528,"OLS","dag_dermal_routes","Leopard frog",0.276119
-"1014",NA,"soil",1.21391,"chlorpyrifos oxen",8,0,"CPF LF S 4 F",0,"OLS","dag_dermal_routes","Leopard frog",0.110725
-"1015",NA,"soil",1.61425,"chlorpyrifos",8,0,"CPF LF S 5 F",0.14071,"OLS","dag_dermal_routes","Leopard frog",0.538425
-"1016",NA,"soil",1.61425,"chlorpyrifos oxen",8,0,"CPF LF S 5 F",0,"OLS","dag_dermal_routes","Leopard frog",0.261438
-"1017",NA,"soil",1.10899,"chlorpyrifos",8,0,"CPF LF S 6 F",0.246053,"OLS","dag_dermal_routes","Leopard frog",0.642246
-"1018",NA,"soil",1.10899,"chlorpyrifos oxen",8,0,"CPF LF S 6 F",0,"OLS","dag_dermal_routes","Leopard frog",0.204444
-"1019",NA,"soil",2.06684,"chlorpyrifos",8,0,"CPF LF S 7 F",0.224683,"OLS","dag_dermal_routes","Leopard frog",0.881697
-"1020",NA,"soil",2.06684,"chlorpyrifos oxen",8,0,"CPF LF S 7 F",0,"OLS","dag_dermal_routes","Leopard frog",0.263018
-"1021",NA,"soil",2.81971,"chlorpyrifos",8,0,"CPF LF S 8 F",0.309254,"OLS","dag_dermal_routes","Leopard frog",1.005704
-"1022",NA,"soil",2.81971,"chlorpyrifos oxen",8,0,"CPF LF S 8 F",0,"OLS","dag_dermal_routes","Leopard frog",0.450673
-"1023",NA,"soil",2.43309,"trifloxystrobin",8,0,"TFS LF S 1 F",0.343198,"OLS","dag_dermal_routes","Leopard frog",0.089418
-"1024",NA,"soil",2.43309,"trifloxystrobin acid",8,0,"TFS LF S 1 F",0.440779,"OLS","dag_dermal_routes","Leopard frog",0.014689
-"1025",NA,"soil",1.82782,"trifloxystrobin",8,0,"TFS LF S 2 F",0.367461,"OLS","dag_dermal_routes","Leopard frog",0.065756
-"1026",NA,"soil",1.82782,"trifloxystrobin acid",8,0,"TFS LF S 2 F",0.366355,"OLS","dag_dermal_routes","Leopard frog",0.013626
-"1027",NA,"soil",1.15759,"trifloxystrobin",8,0,"TFS LF S 3 F",0.251442,"OLS","dag_dermal_routes","Leopard frog",0.111039
-"1028",NA,"soil",1.15759,"trifloxystrobin acid",8,0,"TFS LF S 3 F",0.324877,"OLS","dag_dermal_routes","Leopard frog",0.060937
-"1029",NA,"soil",1.61034,"trifloxystrobin",8,0,"TFS LF S 4 F",0.312696,"OLS","dag_dermal_routes","Leopard frog",0.08372
-"1030",NA,"soil",1.61034,"trifloxystrobin acid",8,0,"TFS LF S 4 F",0.472948,"OLS","dag_dermal_routes","Leopard frog",0.034151
-"1031",NA,"soil",2.02866,"trifloxystrobin",8,0,"TFS LF S 5 F",0.143468,"OLS","dag_dermal_routes","Leopard frog",0.129535
-"1032",NA,"soil",2.02866,"trifloxystrobin acid",8,0,"TFS LF S 5 F",0.205205,"OLS","dag_dermal_routes","Leopard frog",0.033646
-"1033",NA,"soil",1.56956,"trifloxystrobin",8,0,"TFS LF S 6 F",0.1125,"OLS","dag_dermal_routes","Leopard frog",0.163043
-"1034",NA,"soil",1.56956,"trifloxystrobin acid",8,0,"TFS LF S 6 F",0.132417,"OLS","dag_dermal_routes","Leopard frog",0.038102
-"1035",NA,"soil",2.13002,"trifloxystrobin",8,0,"TFS LF S 7 F",0.266023,"OLS","dag_dermal_routes","Leopard frog",0.194161
-"1036",NA,"soil",2.13002,"trifloxystrobin acid",8,0,"TFS LF S 7 F",0.218434,"OLS","dag_dermal_routes","Leopard frog",0.034946
-"1037",NA,"soil",1.80722,"trifloxystrobin",8,0,"TFS LF S 8 F",0.279262,"OLS","dag_dermal_routes","Leopard frog",0.099954
-"1038",NA,"soil",1.80722,"trifloxystrobin acid",8,0,"TFS LF S 8 F",0.295067,"OLS","dag_dermal_routes","Leopard frog",0.021155
+"991",NA,"soil",1.313,"bifenthrin",8,0,"Bif LF S 1 F",0.33888,"OLS","dag_dermal_routes","Leopard frog",0.108558
+"992",NA,"soil",2.2547,"bifenthrin",8,0,"Bif LF S 2 F",0.385833,"OLS","dag_dermal_routes","Leopard frog",0.094022
+"993",NA,"soil",1.3741,"bifenthrin",8,0,"Bif LF S 3 F",0.354759,"OLS","dag_dermal_routes","Leopard frog",0.114565
+"994",NA,"soil",2.37,"bifenthrin",8,0,"Bif LF S 4 F",0.328681,"OLS","dag_dermal_routes","Leopard frog",0.0745
+"995",NA,"soil",1.915,"bifenthrin",8,0,"Bif LF S 5 F",0.286841,"OLS","dag_dermal_routes","Leopard frog",0.095261
+"996",NA,"soil",2.2342,"bifenthrin",8,0,"Bif LF S 6 F",0.317522,"OLS","dag_dermal_routes","Leopard frog",0.073592
+"997",NA,"soil",2.0466,"bifenthrin",8,0,"Bif LF S 7 F",0.248066,"OLS","dag_dermal_routes","Leopard frog",0.082735
+"998",NA,"soil",1.4359,"bifenthrin",8,0,"Bif LF S 8 F",0.354871,"OLS","dag_dermal_routes","Leopard frog",0.217679
+"999",NA,"soil",1.92467,"chlorpyrifos",8,0,"CPF LF S 1 F",0.279786,"OLS","dag_dermal_routes","Leopard frog",0.930317
+"1000",NA,"soil",2.35063,"chlorpyrifos",8,0,"CPF LF S 2 F",0.219906,"OLS","dag_dermal_routes","Leopard frog",1.019965
+"1001",NA,"soil",1.74634,"chlorpyrifos",8,0,"CPF LF S 3 F",0.28037,"OLS","dag_dermal_routes","Leopard frog",0.346872
+"1002",NA,"soil",1.21391,"chlorpyrifos",8,0,"CPF LF S 4 F",0.281528,"OLS","dag_dermal_routes","Leopard frog",0.276119
+"1003",NA,"soil",1.61425,"chlorpyrifos",8,0,"CPF LF S 5 F",0.14071,"OLS","dag_dermal_routes","Leopard frog",0.538425
+"1004",NA,"soil",1.10899,"chlorpyrifos",8,0,"CPF LF S 6 F",0.246053,"OLS","dag_dermal_routes","Leopard frog",0.642246
+"1005",NA,"soil",2.06684,"chlorpyrifos",8,0,"CPF LF S 7 F",0.224683,"OLS","dag_dermal_routes","Leopard frog",0.881697
+"1006",NA,"soil",2.81971,"chlorpyrifos",8,0,"CPF LF S 8 F",0.309254,"OLS","dag_dermal_routes","Leopard frog",1.005704
+"1007",NA,"soil",2.43309,"trifloxystrobin",8,0,"TFS LF S 1 F",0.343198,"OLS","dag_dermal_routes","Leopard frog",0.089418
+"1008",NA,"soil",1.82782,"trifloxystrobin",8,0,"TFS LF S 2 F",0.367461,"OLS","dag_dermal_routes","Leopard frog",0.065756
+"1009",NA,"soil",1.15759,"trifloxystrobin",8,0,"TFS LF S 3 F",0.251442,"OLS","dag_dermal_routes","Leopard frog",0.111039
+"1010",NA,"soil",1.61034,"trifloxystrobin",8,0,"TFS LF S 4 F",0.312696,"OLS","dag_dermal_routes","Leopard frog",0.08372
+"1011",NA,"soil",2.02866,"trifloxystrobin",8,0,"TFS LF S 5 F",0.143468,"OLS","dag_dermal_routes","Leopard frog",0.129535
+"1012",NA,"soil",1.56956,"trifloxystrobin",8,0,"TFS LF S 6 F",0.1125,"OLS","dag_dermal_routes","Leopard frog",0.163043
+"1013",NA,"soil",2.13002,"trifloxystrobin",8,0,"TFS LF S 7 F",0.266023,"OLS","dag_dermal_routes","Leopard frog",0.194161
+"1014",NA,"soil",1.80722,"trifloxystrobin",8,0,"TFS LF S 8 F",0.279262,"OLS","dag_dermal_routes","Leopard frog",0.099954

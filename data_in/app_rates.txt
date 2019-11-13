@@ -32,15 +32,12 @@ dag_dehy	triadimefon	2.91
 dag_met	atrazine	22.9
 dag_met	fipronil	1.1
 dag_met	triadimefon	2.7
-dag_bio	"bifenthrin (max)"	3.45
-dag_bio	"metolachlor (max)"	30.62
-dag_bio	"triadimefon (max)"	2.87
-dag_bio	"bifenthrin (1/10 max)"	0.345
-dag_bio	"metolachlor (1/10 max)"	3.062
-dag_bio	"triadimefon (1/10 max)"	0.287
+dag_bio	"bifenthrin (max)"	68967.14
+dag_bio	"metolachlor (max)"	58356.81
+dag_bio	"triadimefon (max)"	64723.01
+dag_bio	"bifenthrin (1/10 max)"	6896.714
+dag_bio	"metolachlor (1/10 max)"	5835.681
+dag_bio	"triadimefon (1/10 max)"	6472.301
 dag_derm	bifenthrin	NA
 dag_derm	chlorpyrifos	NA
 dag_derm	trifloxystrobin	NA
-dag_derm	"4-hydroxy bifenthrin"	NA
-dag_derm	"chlorpyrifos oxen"	NA
-dag_derm	"trifloxystrobin acid"	NA

@@ -425,8 +425,8 @@ summary {
 </tr>
 <tr class="odd">
 <td><a href="http://www.publish.csiro.au/en/EN18163">Glinski et al. 2018c (biomarkers)</td>
-<td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixture3.csv</a></td>
-<td align="left">dag_mbiomarker from exposure_mixture3.csv</td>
+<td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv, biomarker.csv </a></td>
+<td align="left">dag_mbiomarker from exposure_mixtures3.csv, dag_biomarker2.csv from biomarker.csv</td>
 </tr>
 <tr class="even">
 <td>Glinski et al. 2019 (dermal routes)</td>
@@ -452,10 +452,10 @@ summary {
 <h1><strong>Data from Relevant Studies</strong></h1>
 <div id="van-meter-et-al.-2014-and-van-meter-et-al.-2015" class="section level3">
 <h3>Van Meter et al. 2014 and Van Meter et al. 2015</h3>
-<p>Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (<em>Lithobates sphenocephala</em>), Fowler’s toad (<em>Anaxyrus fowleri</em>), gray treefrog (<em>Hyla versicolor</em>), Northern cricket frog (<em>Acris crepitans</em>), Eastern narrowmouth toad (<em>Gastrophryne carolinensis</em>), barking treefrog (<em>Hyla gratiosa</em>) and green treefrog (<em>Hyla cinerea</em>)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 10-gallon aquarium.</p>
+<p>Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (<em>Lithobates sphenocephala</em>), Fowler’s toad (<em>Anaxyrus fowleri</em>), gray treefrog (<em>Hyla versicolor</em>), Northern cricket frog (<em>Acris crepitans</em>), Eastern narrowmouth toad (<em>Gastrophryne carolinensis</em>), barking treefrog (<em>Hyla gratiosa</em>) and green treefrog (<em>Hyla cinerea</em>)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium.</p>
 <p>Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil. These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (<em>Hyla gratiosa</em>) and green treefrog (<em>Hyla cinerea</em>)). Pesticides were applied at the maxium legally allowable application rates scaled down to the size of a 10-gallon aquarium, with the exception of pedimethalin which was applied at 30% of the permitted application rate. This was due to pedimethalin’s insolubility in the limited solvent and the water volumes used in this study.</p>
 <p>For our purposes, the Van Meter et al. 2015 essentially adds the aerial overspray exposures to the Van Meter et al. 2014 data set.</p>
-<p><em>Note: this file does include metabolites into the totals for the parents</em></p>
+<p><em>Note: this file does include metabolites into the total for the parents</em></p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 474  23</code></pre>
 <pre><code>##  [1] &quot;Species&quot;        &quot;Sample&quot;         &quot;Chemical&quot;       &quot;Instrument&quot;    
@@ -515,7 +515,7 @@ summary {
 </div>
 <div id="van-meter-et-al.-2016" class="section level3">
 <h3>Van Meter et al. 2016</h3>
-<p>Van Meter et al. 2016 considered bioconcentration of 5 current-use pesticides (imidacloprid, atrazine, triadimefon, fipronil, and pedimethalin) in American toads (<em>Bufo americanus</em>) across soil types. Toads were exposed to one of two soil types with significantly different organic matter content (14.1% = high organic matter, 3.1% = low organic matter). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 0.94 L Pyrex glass bowl.</p>
+<p>Van Meter et al. 2016 considered bioconcentration of 5 current-use pesticides (imidacloprid, atrazine, triadimefon, fipronil, and pedimethalin) in American toads (<em>Bufo americanus</em>) across soil types. Toads were exposed to one of two soil types with significantly different organic matter content (14.1% = high organic matter, 3.1% = low organic matter). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
 <p><em>Note: this file does include metabolites into the total for the parents</em></p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 264  11</code></pre>
@@ -549,7 +549,7 @@ summary {
 </div>
 <div id="glinski-et-al.-2018a-dehydration" class="section level3">
 <h3>Glinski et al. 2018a (Dehydration)</h3>
-<p>Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (<em>Lithobates sphenocephala</em>) and Fowler’s toads (<em>Anaxyrus fowleri</em>)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six bowls at 1350 cm<sup>2</sup> (each bowl 15 cm x 15 cm).</p>
+<p>Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (<em>Lithobates sphenocephala</em>) and Fowler’s toads (<em>Anaxyrus fowleri</em>)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
 <p><em>Note: this file does not combine daughters with parents</em><br />
 <em>Note: this file has body burdens and soil concentrations as separate rows</em></p>
 <p><strong>Data Set Dimensions, column Names, and Summary:</strong></p>
@@ -609,7 +609,7 @@ summary {
 </div>
 <div id="glinski-et-al.-2018b-metabolites" class="section level3">
 <h3>Glinski et al. 2018b (Metabolites)</h3>
-<p>Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians. This data set (1) contains <em>in vitro</em> and <em>in vivo</em> metabolic rate constants derived from toad (<em>Anaxyrus terrestris</em>) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 10-gallon aquarium.</p>
+<p>Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians. This data set (1) contains <em>in vitro</em> and <em>in vivo</em> metabolic rate constants derived from toad (<em>Anaxyrus terrestris</em>) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium.</p>
 <div id="metabolites-data-set-1" class="section level4">
 <h4>Metabolites data set (1)</h4>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
@@ -669,7 +669,7 @@ summary {
 </div>
 <div id="glinski-et-al.-2018c-biomarkers" class="section level3">
 <h3>Glinski et al. 2018c (Biomarkers)</h3>
-<p>Glinski et al. 2018c exposed Southern leopard frogs (<em>Lithobates sphenocephala</em>) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil.</p>
+<p>Glinski et al. 2018c exposed Southern leopard frogs (<em>Lithobates sphenocephala</em>) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 192   9</code></pre>
 <pre><code>## [1] &quot;group&quot;       &quot;met&quot;         &quot;tdt&quot;         &quot;bif&quot;         &quot;frog.weight&quot;
@@ -701,7 +701,7 @@ summary {
 </div>
 <div id="van-meter-et-al.-2018-multiple-pesticides-study" class="section level3">
 <h3>Van Meter et al. 2018 (Multiple Pesticides Study)</h3>
-<p>Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (<em>Lithobates clamitans</em>) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the size of a 0.94 L Pyrex glass bowl.</p>
+<p>Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (<em>Lithobates clamitans</em>) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
 <p>Two data sets were generated from this study, one containing data for exposure to herbicides (single and mixed) and the other containing data for exposure to mixed pesticide treatments (herbicides, insecticide, fungicide).</p>
 <div id="herbicide-data-set" class="section level4">
 <h4><strong>Herbicide Data Set</strong></h4>
@@ -764,7 +764,7 @@ summary {
 ##  3rd Qu.:2.203  
 ##  Max.   :2.929  
 ## </code></pre>
-<p>The herbicide and mixed pesticide data sets were cleaned and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set included the chemicals atrazine, propiconazole, 2,4-D, malathion, and metolachlor. Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets.</p>
+<p>The herbicide and mixed pesticide data sets were cleaned and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set include atrazine, propiconazole, 2,4-D, malathion, and metolachlor. Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets.</p>
 </div>
 <div id="merged-data-set" class="section level4">
 <h4><strong>Merged Data Set</strong></h4>
@@ -820,7 +820,7 @@ summary {
 </div>
 <div id="application-rates" class="section level1">
 <h1><strong>Application Rates</strong></h1>
-<p>The table below concisely displays the pesticide applications rates (ug/cm<sup>2</sup>) used in each relevant study. This information can also be found in the respective manuscripts.</p>
+<p>The table below concisely displays the pesticide applications rates (ug/cm<sup>2</sup>) used in each relevant study.</p>
 <table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1137,7 +1137,7 @@ triadimefon
 bifenthrin (max)
 </td>
 <td style="text-align:right;">
-3.450
+68967.140
 </td>
 </tr>
 <tr>
@@ -1145,7 +1145,7 @@ bifenthrin (max)
 metolachlor (max)
 </td>
 <td style="text-align:right;">
-30.620
+58356.810
 </td>
 </tr>
 <tr>
@@ -1153,7 +1153,7 @@ metolachlor (max)
 triadimefon (max)
 </td>
 <td style="text-align:right;">
-2.870
+64723.010
 </td>
 </tr>
 <tr>
@@ -1161,7 +1161,7 @@ triadimefon (max)
 bifenthrin (1/10 max)
 </td>
 <td style="text-align:right;">
-0.345
+6896.714
 </td>
 </tr>
 <tr>
@@ -1169,7 +1169,7 @@ bifenthrin (1/10 max)
 metolachlor (1/10 max)
 </td>
 <td style="text-align:right;">
-3.062
+5835.681
 </td>
 </tr>
 <tr>
@@ -1177,10 +1177,10 @@ metolachlor (1/10 max)
 triadimefon (1/10 max)
 </td>
 <td style="text-align:right;">
-0.287
+6472.301
 </td>
 </tr>
-<tr grouplength="6">
+<tr grouplength="3">
 <td colspan="2" style="border-bottom: 1px solid;">
 <strong>Glinski et al. 2019</strong>
 </td>
@@ -1209,28 +1209,127 @@ trifloxystrobin
 NA
 </td>
 </tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="densities" class="section level1">
+<h1><strong>Densities</strong></h1>
+<p>The table below concisely displays the density (g/cm<sup>3</sup>) of each pesticide used. Pesticide densities were used to compute the application rate.</p>
+<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-4-hydroxy bifenthrin
+<th style="text-align:left;">
+pesticide
+</th>
+<th style="text-align:right;">
+density
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+atrazine
 </td>
 <td style="text-align:right;">
-NA
+1.1900
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-chlorpyrifos oxen
+<td style="text-align:left;">
+bifenthrin
 </td>
 <td style="text-align:right;">
-NA
+1.3000
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
-trifloxystrobin acid
+<td style="text-align:left;">
+chlorpyrifos
 </td>
 <td style="text-align:right;">
-NA
+1.4000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+chlorothalonil
+</td>
+<td style="text-align:right;">
+1.8000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+fipronil
+</td>
+<td style="text-align:right;">
+1.5515
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+imidacloprid
+</td>
+<td style="text-align:right;">
+1.6000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+malathion
+</td>
+<td style="text-align:right;">
+1.2300
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+metolachlor
+</td>
+<td style="text-align:right;">
+1.1000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pendimethalin
+</td>
+<td style="text-align:right;">
+1.1700
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+propiconazole
+</td>
+<td style="text-align:right;">
+1.3000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+triadimefon
+</td>
+<td style="text-align:right;">
+1.2200
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+trifloxystrobin
+</td>
+<td style="text-align:right;">
+1.3600
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+2,4-D
+</td>
+<td style="text-align:right;">
+1.5000
 </td>
 </tr>
 </tbody>
@@ -1269,7 +1368,7 @@ application &lt;- c(rep(&quot;Indirect&quot;,nrow(vm2016_subset2)))
 exp_duration&lt;- (rep(8,nrow(vm2016_subset2)))
 source &lt;- c(rep(&quot;rvm2016&quot;,nrow(vm2016_subset2)))
 vm2016_subset3 &lt;- cbind(vm2016_subset2, species, application, exp_duration, source)</code></pre>
-<p>Application rates for several pesticides were computed.</p>
+<p>Application rates for several pesticides were inserted.</p>
 <p>There were 108 observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set.</p>
 <p>There were 60 observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total.</p>
 <pre class="r"><code># assign values to application rate
@@ -1313,7 +1412,7 @@ drop_cols &lt;- c(&quot;parent&quot;,&quot;time&quot;,&quot;matrix&quot;)
 dag2016_dehy4 &lt;- dag2016_dehy3[,!(names(dag2016_dehy3) %in% drop_cols)]</code></pre>
 <p>The updated dimensions are:</p>
 <pre><code>## [1] 300  12</code></pre>
-<p>The application rate values (app_rate_g_cm2) were included, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.</p>
+<p>The application rate values were inserted, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.</p>
 <pre class="r"><code># fill in application rates
 #unique(dag2016_dehy4$chemical)
 update_atrazine &lt;- which(dag2016_dehy4$chemical == &#39;atrazine&#39;)
@@ -1350,7 +1449,7 @@ dag2016_dehy4$species &lt;- as.factor(dag2016_dehy4$species)</code></pre>
 </div>
 <div id="glinski-et-al.-2018b-metabolites-1" class="section level3">
 <h3>Glinski et al. 2018b (Metabolites)</h3>
-<p>Apart from standardizing the species name, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.</p>
+<p>Apart from standardizing the species name and inserting the application rates, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
 <pre><code>## [1] 661  12</code></pre>
 </div>
@@ -1407,6 +1506,13 @@ colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.
 ##  3rd Qu.: 5.511   3rd Qu.:0.5173   3rd Qu.:0.6209  
 ##  Max.   :55.106   Max.   :5.1730   Max.   :6.2090  
 ## </code></pre>
+<p>Due to a computational error in the original study, the application rates were updated.</p>
+<pre class="r"><code>#dag_biomarker2_update &lt;- replace.value(dag_biomarker2, &quot;app.rate.met&quot;, from = 55.106, to= as.integer(58356.810), verbose = FALSE)
+#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.met&quot;, from = 5.5106, to= as.integer(5835.681), verbose = FALSE)
+#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.tdn&quot;, from = 5.173, to= as.integer(64723.010), verbose = FALSE)
+#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.tdn&quot;, from = .5173, to= as.integer(6472.301), verbose = FALSE)
+#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.bif&quot;, from = 6.209, to= as.integer(68967.140), verbose = FALSE)
+#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.bif&quot;, from = .6209, to= as.integer(6896.714), verbose = FALSE)</code></pre>
 <p>A one-to-one merge was conducted based on the unique sample id for each measured pesticide (either bifenthrin, metolachlor, or triadimefon) to join the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined to the original data set.</p>
 <pre class="r"><code># bif extraction
 dag_biomarker_subset_bif &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;bif&quot;, ]
@@ -1451,7 +1557,7 @@ colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)==&quot;soi
 <pre><code>## [1] &quot;body_weight_g&quot;   &quot;sample_id&quot;       &quot;pesticide&quot;       &quot;tissue_conc_ugg&quot;
 ## [5] &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;</code></pre>
 <pre><code>## [1] 192   6</code></pre>
-<p>New columns were created for standarization with the collated data set, the columns were ordered alphabetically, and a local copy was stored.</p>
+<p>New columns were created for standarization, the columns were ordered alphabetically, and a local copy was stored.</p>
 <pre class="r"><code># create new columns
 application &lt;- c(rep(&quot;soil&quot;, nrow(dag_biomarker_subset3)))
 exp_duration &lt;- c(rep(8, nrow(dag_biomarker_subset3)))
@@ -1499,7 +1605,7 @@ write.csv(dag_biomarker_merge, file = dag_biomarker_merge_filename)</code></pre>
 </div>
 <div id="glinski-et-al.-2019-dermal-routes-1" class="section level3">
 <h3>Glinski et al. 2019 (dermal routes)</h3>
-<p>~~~ Emma - still need to update the application rate column ~~~~~~</p>
+<p>~~~ Emma: still need to add in app rates</p>
 <p>The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 48  2</code></pre>
@@ -1552,22 +1658,22 @@ soil_subset3 &lt;- soil_subset2[order(soil_subset2[,1], soil_subset2[,2]),]
 dermal_routes_subset7 &lt;- cbind(dermal_routes_subset6, soil_subset3$Concentration)</code></pre>
 <p>The updated dimensions are:</p>
 <pre><code>## [1] 48  7</code></pre>
-<p>Several new columns (application rate, application, exposure duration, formulation, soil type, source and species) were created and the necessary values were filled in for each column. Existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.</p>
+<p>The metabolites were dropped from the data set. Additionally, several new columns (application rate, application, exposure duration, formulation, soil type, source and species) were created and the necessary values were filled in for each column. Existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.</p>
 <p>The updated column names and dimensions are:</p>
 <pre><code>##  [1] &quot;sample_id&quot;       &quot;chemical&quot;        &quot;tissue_conc_ugg&quot;
 ##  [4] &quot;body_weight_g&quot;   &quot;soil_conc_ugg&quot;   &quot;app_rate_g_cm2&quot; 
 ##  [7] &quot;application&quot;     &quot;exp_duration&quot;    &quot;formulation&quot;    
 ## [10] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;</code></pre>
-<pre><code>## [1] 48 12</code></pre>
+<pre><code>## [1] 24 12</code></pre>
 <p>The columns were ordered for ease of merging with the collated data set, a local copy was saved, and the data set was combined with the collated data set.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
-<pre><code>## [1] 1038   12</code></pre>
+<pre><code>## [1] 1014   12</code></pre>
 <hr />
 </div>
 </div>
 <div id="final-product" class="section level1">
 <h1><strong>Final Product</strong></h1>
-<p>The combined data set was examined to ensure validity. Minor alterations were made with factor levels.</p>
+<p>The combined data set was examined to ensure validity. Minor alterations were made to standardize names of the application types and chemicals.</p>
 <div id="column-names" class="section level4">
 <h4><strong>Column Names</strong></h4>
 <pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
@@ -1577,34 +1683,42 @@ dermal_routes_subset7 &lt;- cbind(dermal_routes_subset6, soil_subset3$Concentrat
 </div>
 <div id="dimensions" class="section level4">
 <h4><strong>Dimensions</strong></h4>
-<pre><code>## [1] 1038   12</code></pre>
+<pre><code>## [1] 1014   12</code></pre>
 </div>
 <div id="variable-summaries" class="section level4">
 <h4><strong>Variable Summaries</strong></h4>
 <pre><code>##  app_rate_g_cm2        application  body_weight_g               chemical  
-##  Min.   : 0.00000   indirect :396   Min.   : 0.1879   triadimefon   :174  
-##  1st Qu.: 0.00000   overspray: 45   1st Qu.: 1.3082   metolachlor   :154  
-##  Median : 0.00002   soil     :597   Median : 2.1046   atrazine      :152  
-##  Mean   : 2.36449                   Mean   : 3.3446   bifenthrin    : 72  
-##  3rd Qu.: 0.00004                   3rd Qu.: 3.0214   chlorothalonil: 66  
-##  Max.   :55.10600                   Max.   :50.9200   imidacloprid  : 66  
-##  NA&#39;s   :48                                           (Other)       :354  
-##   exp_duration     formulation             sample_id    soil_conc_ugg    
-##  Min.   : 2.000   Min.   :0.00000   ATZ_ATZT    :   6   Min.   :  0.000  
-##  1st Qu.: 8.000   1st Qu.:0.00000   ATZD_ATZT   :   6   1st Qu.:  2.021  
-##  Median : 8.000   Median :0.00000   ATZMA_ATZT  :   6   Median :  4.975  
-##  Mean   : 8.855   Mean   :0.03499   ATZMA_MAT   :   6   Mean   : 13.894  
-##  3rd Qu.: 8.000   3rd Qu.:0.00000   ATZMAPZ_ATZT:   6   3rd Qu.: 15.105  
-##  Max.   :48.000   Max.   :1.00000   ATZMAPZ_MAT :   6   Max.   :238.150  
-##                   NA&#39;s   :9         (Other)     :1002   NA&#39;s   :206      
-##  soil_type              source                species    tissue_conc_ugg  
-##  PLE :544   dag_dehydration:300   Leopard frog    :436   Min.   : 0.0000  
-##  OLS : 96   rvm2015        :196   Fowlers toad    :200   1st Qu.: 0.1553  
-##  NA&#39;s:398   dag_biomarker  :192   Rana_clamitans  :137   Median : 0.5078  
-##             rvm2017        :137   American toad   : 96   Mean   : 2.4585  
-##             rvm2016        : 96   Barking treefrog: 50   3rd Qu.: 2.0324  
-##             dag_metabolites: 60   Green treefrog  : 45   Max.   :72.6267  
-##             (Other)        : 57   (Other)         : 74</code></pre>
+##  Min.   : 0.00000   indirect :396   Min.   : 0.1879   triadimefon   :223  
+##  1st Qu.: 0.00000   overspray: 45   1st Qu.: 1.3043   atrazine      :191  
+##  Median : 0.00002   soil     :573   Median : 2.1247   metolachlor   :154  
+##  Mean   : 2.36449                   Mean   : 3.3800   bifenthrin    : 72  
+##  3rd Qu.: 0.00004                   3rd Qu.: 3.0412   fipronil      : 71  
+##  Max.   :55.10600                   Max.   :50.9200   chlorothalonil: 66  
+##  NA&#39;s   :24                                           (Other)       :237  
+##   exp_duration     formulation             sample_id   soil_conc_ugg     
+##  Min.   : 2.000   Min.   :0.00000   ATZ_ATZT    :  6   Min.   :  0.1125  
+##  1st Qu.: 8.000   1st Qu.:0.00000   ATZD_ATZT   :  6   1st Qu.:  2.0709  
+##  Median : 8.000   Median :0.00000   ATZMA_ATZT  :  6   Median :  5.2459  
+##  Mean   : 8.876   Mean   :0.03582   ATZMA_MAT   :  6   Mean   : 14.3042  
+##  3rd Qu.: 8.000   3rd Qu.:0.00000   ATZMAPZ_ATZT:  6   3rd Qu.: 15.3781  
+##  Max.   :48.000   Max.   :1.00000   ATZMAPZ_MAT :  6   Max.   :238.1502  
+##                   NA&#39;s   :9         (Other)     :978   NA&#39;s   :206       
+##  soil_type              source                species   
+##  PLE :544   dag_dehydration:300   Leopard frog    :412  
+##  OLS : 72   rvm2015        :196   Fowlers toad    :200  
+##  NA&#39;s:398   dag_biomarker  :192   Rana_clamitans  :137  
+##             rvm2017        :137   American toad   : 96  
+##             rvm2016        : 96   Barking treefrog: 50  
+##             dag_metabolites: 60   Green treefrog  : 45  
+##             (Other)        : 33   (Other)         : 74  
+##  tissue_conc_ugg   
+##  Min.   : 0.00054  
+##  1st Qu.: 0.16908  
+##  Median : 0.52573  
+##  Mean   : 2.51415  
+##  3rd Qu.: 2.06812  
+##  Max.   :72.62672  
+## </code></pre>
 </div>
 </div>
 

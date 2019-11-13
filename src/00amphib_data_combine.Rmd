@@ -22,12 +22,12 @@ The purpose of this script is to combine the data sets from Van Meter et al. (20
 | <a href="https://www.sciencedirect.com/science/article/pii/S004896971733601X?via%3Dihub">Van Meter et al. 2018 | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2017_merge.csv">vm2017_merge.csv</a>| |
 | <a href="https://link.springer.com/article/10.1007%2Fs11356-018-1830-8">Glinski et al. 2018a (dehydration) | <a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in">  </a>| dag_dehy from dehydration3.csv | 
 | <a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a>| <a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> </a>| dag_metab from exposure_experiment.csv |
-| <a href= "http://www.publish.csiro.au/en/EN18163">Glinski et al. 2018c (biomarkers) | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixture3.csv</a>| dag_mbiomarker from exposure_mixture3.csv | 
+| <a href= "http://www.publish.csiro.au/en/EN18163">Glinski et al. 2018c (biomarkers) | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv, biomarker.csv </a>| dag_mbiomarker from exposure_mixtures3.csv, dag_biomarker2.csv from biomarker.csv | 
 | Glinski et al. 2019 (dermal routes) | <a href="https://github.com/puruckertom/amphib_dermal_collation/tree/master/data_in">dag2019_dermal_routes.csv</a>| <a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs">dag2019_dermal_routes.csv from Water_soil.csv</a>  | 
 | <a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008 | |  |
 
   
-
+   
 ***
 
 
@@ -58,6 +58,8 @@ library(reshape2)
 library(kableExtra)
 library(dplyr)
 library(tidyr)
+library(stringr)
+library(anchors)
 
 # Update according to the System you are using...
 # tom epa linux
@@ -105,14 +107,14 @@ amphibdir_src <- paste(amphibdir,'src/',sep='')
 ========================================================
 ### Van Meter et al. 2014 and Van Meter et al. 2015
 
-Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 10-gallon aquarium.
+Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium.
 
 Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil.  These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Pesticides were applied at the maxium legally allowable application rates scaled down to the size of a 10-gallon aquarium, with the exception of pedimethalin which was applied at 30% of the permitted application rate. This was due to pedimethalin's insolubility in the limited solvent and the water volumes used in this study.
 
 For our purposes, the Van Meter et al. 2015 essentially adds the aerial overspray exposures to the Van Meter et al. 2014 data set. 
 
 
-*Note: this file does include metabolites into the totals for the parents*
+*Note: this file does include metabolites into the total for the parents*
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
 #the data sets
@@ -133,7 +135,7 @@ summary(vm2015)
 
 ### Van Meter et al. 2016
 
-Van Meter et al. 2016 considered bioconcentration of 5 current-use pesticides (imidacloprid, atrazine, triadimefon, fipronil, and pedimethalin) in American toads (*Bufo americanus*) across soil types. Toads were exposed to one of two soil types with significantly different organic matter content (14.1% = high organic matter, 3.1% = low organic matter). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 0.94 L Pyrex glass bowl.  
+Van Meter et al. 2016 considered bioconcentration of 5 current-use pesticides (imidacloprid, atrazine, triadimefon, fipronil, and pedimethalin) in American toads (*Bufo americanus*) across soil types. Toads were exposed to one of two soil types with significantly different organic matter content (14.1% = high organic matter, 3.1% = low organic matter). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.  
 
 *Note: this file does include metabolites into the total for the parents*
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -153,7 +155,7 @@ summary(vm2016)
 
 ### Glinski et al. 2018a (Dehydration)
 
-Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (*Lithobates sphenocephala*) and Fowler's toads (*Anaxyrus fowleri*)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six bowls at 1350 cm^2^ (each bowl 15 cm x 15 cm).
+Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (*Lithobates sphenocephala*) and Fowler's toads (*Anaxyrus fowleri*)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.
 
 *Note: this file does not combine daughters with parents*  
 *Note: this file has body burdens and soil concentrations as separate rows*
@@ -193,7 +195,7 @@ summary(hr2008)
 
 ### Glinski et al. 2018b (Metabolites)
 
-Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the size of a 10-gallon aquarium.
+Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium.
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2017 metabolite study
@@ -227,7 +229,7 @@ summary(dag2016_metabolite_merge)
 
 ### Glinski et al. 2018c (Biomarkers)
 
-Glinski et al. 2018c exposed Southern leopard frogs (*Lithobates sphenocephala*) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. 
+Glinski et al. 2018c exposed Southern leopard frogs (*Lithobates sphenocephala*) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter. 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2018 biomarkers study
@@ -244,7 +246,7 @@ summary(dag2018_mbiomarker0)
 
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
-Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (*Lithobates clamitans*) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the size of a 0.94 L Pyrex glass bowl.
+Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (*Lithobates clamitans*) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.
 
 Two data sets were generated from this study, one containing data for exposure to herbicides (single and mixed) and the other containing data for exposure to mixed pesticide treatments (herbicides, insecticide, fungicide).
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -275,7 +277,7 @@ summary(rvm2017_hif0)
 ```
 
 
-The herbicide and mixed pesticide data sets were cleaned and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set included the chemicals atrazine, propiconazole, 2,4-D, malathion, and metolachlor.  Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets. 
+The herbicide and mixed pesticide data sets were cleaned and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set include atrazine, propiconazole, 2,4-D, malathion, and metolachlor.  Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets. 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 rvm2017_merge_file <- paste(amphibdir_data_in,"vm2017_merge.csv", sep="")
 file.exists(rvm2017_merge_file)
@@ -311,7 +313,7 @@ summary(dermal_routes)
 ***
 **Application Rates**
 =============================================================
-The table below concisely displays the pesticide applications rates (ug/cm^2^) used in each relevant study. This information can also be found in the respective manuscripts.
+The table below concisely displays the pesticide applications rates (ug/cm^2^) used in each relevant study.
 
 ```{r eval = TRUE, include = FALSE}
 app_rates_file <- paste0(amphibdir_data_in, "app_rates.txt")
@@ -329,9 +331,24 @@ kable(app_rates[, 2:3]) %>%
   pack_rows("Glinski et al. 2018a", 26, 30) %>%
   pack_rows("Glinski et al. 2018b", 31, 33) %>%
   pack_rows("Glinski et al. 2018c", 34, 39) %>%
-  pack_rows("Glinski et al. 2019", 40, 45)
+  pack_rows("Glinski et al. 2019", 40, 42)  
 ```
 
+***
+**Densities**
+=============================================================
+The table below concisely displays the density (g/cm^3^) of each pesticide used. Pesticide densities were used to compute the application rate.
+
+```{r eval = TRUE, include = FALSE}
+density_file <- paste0(amphibdir_data_in, "pesticide_density.txt")
+file.exists(density_file)
+density <- read.table(density_file, header = TRUE)
+```
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+kable(density[, 1:2]) %>%
+  kable_styling("striped", full_width = F) 
+```
 
 ***  
 
@@ -341,23 +358,22 @@ Each data set was cleaned for merging. This consisted of dropping unneeded colum
 Once each data set was cleaned, a local copy was saved and the data set was merged with the previously cleaned data sets.
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
-#van meter 2014/15
+# van meter 2014/15
 ##################
 unique(vm2015$Chemical)
-#drop metabolites and parents that do not include metabolites
+# drop metabolites and parents that do not include metabolites
 vm2015_chem_drop <- c("Atrazine","Deisopropyl Atrazine","Desethyl Atrazine","Fipronil","Fipronil-Sulfone","Triadimefon","Triadimenol")
 chem_vector_drop <- which(vm2015$Chemical %in% vm2015_chem_drop)
 vm2015_subset1 <- vm2015[-chem_vector_drop,]
 vm2015_subset2 <- droplevels(vm2015_subset1)
-#drop unneeded columns for merging
-#View(vm2015_subset2)
+# drop unneeded columns for merging
 all_cols <- colnames(vm2015_subset2)
 drop_cols <- c("Instrument", "good", "logKow", "BCF", "initialweight", 
             "Solat20C_mgL", "Solat20C_gL", "molmass_gmol", "Density_gcm3","AppFactor", "SA_cm2", "VapPrs_mPa",
             "Koc_gmL", "HalfLife_day", "HabFac")
 vm2015_subset3 <- vm2015_subset2[,!(names(vm2015_subset2) %in% drop_cols)]
 colnames(vm2015_subset3)
-#add columns
+# add columns
 soil_type <- c(rep("PLE",nrow(vm2015_subset3)))
 formulation <- (rep(0,nrow(vm2015_subset3)))
 exp_duration<- (rep(8,nrow(vm2015_subset3)))
@@ -373,10 +389,10 @@ colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="TissueConc")]<-"tissue
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="SoilConc")]<-"soil_conc_ugg"
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="bodyweight")]<-"body_weight_g"
 colnames(vm2015_subset4)
-#reorder vm2015 alphabetically
+# reorder vm2015 alphabetically
 vm2015_merge <- vm2015_subset4[,order(names(vm2015_subset4))]
 
-#write a local copy
+# write a local copy
 vm2015_merge_filename <- paste(amphibdir_data_out,"vm2015_merge.csv", sep="")
 write.csv(vm2015_merge, file=vm2015_merge_filename)
 ```
@@ -391,9 +407,9 @@ The process of cleaning and merging each data set is briefly described below.
 
 ### Van Meter et al. 2014/2015
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
-#note: this code is a repeat of the above lines, used for displaying in R Markdown
+# note: this code is a repeat of the above lines, used for displaying in R Markdown
 unique(vm2015$Chemical)
-#drop metabolites and parents that do not include metabolites
+# drop metabolites and parents that do not include metabolites
 vm2015_chem_drop <- c("Atrazine","Deisopropyl Atrazine","Desethyl Atrazine","Fipronil","Fipronil-Sulfone","Triadimefon","Triadimenol")
 chem_vector_drop <- which(vm2015$Chemical %in% vm2015_chem_drop)
 vm2015_subset1 <- vm2015[-chem_vector_drop,]
@@ -408,13 +424,13 @@ dim(vm2015_subset2)
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
-#drop unneeded columns for merging
+# drop unneeded columns for merging
 all_cols <- colnames(vm2015_subset2)
 drop_cols <- c("Instrument", "good", "logKow", "BCF", "initialweight", 
             "Solat20C_mgL", "Solat20C_gL", "molmass_gmol", "Density_gcm3","AppFactor", "SA_cm2",                        "VapPrs_mPa", "Koc_gmL", "HalfLife_day", "HabFac")
 vm2015_subset3 <- vm2015_subset2[,!(names(vm2015_subset2) %in% drop_cols)]
 colnames(vm2015_subset3)
-#add columns
+# add columns
 soil_type <- c(rep("PLE",nrow(vm2015_subset3)))
 formulation <- (rep(0,nrow(vm2015_subset3)))
 exp_duration<- (rep(8,nrow(vm2015_subset3)))
@@ -462,7 +478,7 @@ exp_duration<- (rep(8,nrow(vm2016_subset2)))
 source <- c(rep("rvm2016",nrow(vm2016_subset2)))
 vm2016_subset3 <- cbind(vm2016_subset2, species, application, exp_duration, source)
 ```
-Application rates for several pesticides were computed.  
+Application rates for several pesticides were inserted.  
 
 There were 108 observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set.        
 
@@ -540,7 +556,7 @@ dim(combined_data0)
 
 ```{r eval=TRUE, echo=FALSE, include = FALSE}
 ##################
-#glinski et al 2017 dehydration
+# glinski et al 2018a dehydration
 ##################
 # Revise dag2016_dehy to merge with van meter data sets
 dim(dag2016_dehy0)
@@ -619,7 +635,7 @@ The updated dimensions are:
 dim(dag2016_dehy4)
 ```
 
-The application rate values (app_rate_g_cm2) were included, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.
+The application rate values were inserted, the temporarily dropped soil concentrations were updated to the current data set, and the species names were standardized.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # fill in application rates
 #unique(dag2016_dehy4$chemical)
@@ -659,7 +675,6 @@ max(bcf)
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # reorder columns alphabetically to help with merge
-# reorder dag2016_dehy4
 colnames(dag2016_dehy4)
 dag2016_dehy_merge <- dag2016_dehy4[,order(names(dag2016_dehy4))]
 dim(dag2016_dehy_merge)
@@ -678,7 +693,6 @@ dim(dag2016_dehy_merge)
 
 The Glinkski et al. 2018a (Dehydration) was combined with the previously merged data sets.
 ```{r eval=TRUE, echo=FALSE, include = FALSE}
-#View(dag2016_dehy_merge)
 colnames(combined_data0)
 colnames(dag2016_dehy_merge)
 dim(combined_data0)
@@ -688,7 +702,7 @@ combined_data1 <- rbind(combined_data0, dag2016_dehy_merge)
 dim(combined_data1)
 colnames(combined_data1)
 rownames(combined_data1) <- seq(length=nrow(combined_data1))
-#View(combined_data1)
+
 combined_data_filename1 <- paste(amphibdir_data_out,"combined_data1.csv", sep="")
 write.csv(combined_data1, file=combined_data_filename1)
 ```
@@ -712,7 +726,7 @@ dim(combined_data2)
 colnames(combined_data2)
 rownames(combined_data2) <- seq(length=nrow(combined_data2))
 colnames(combined_data2)
-#View(combined_data2)
+
 combined_data_filename2 <- paste(amphibdir_data_out,"combined_data2.csv", sep="")
 write.csv(combined_data2, file=combined_data_filename2)
 ```
@@ -724,10 +738,10 @@ dim(combined_data2)
 
 ### Glinski et al. 2018b (Metabolites)
 
-Apart from standardizing the species name, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
+Apart from standardizing the species name and inserting the application rates, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
 ```{r eval=TRUE, echo=FALSE, include = FALSE}
 ##################
-#glinski et al 2017 metabolites
+# glinski et al 2018b metabolites
 ##################
 dim(dag2016_metabolite_merge)
 colnames(dag2016_metabolite_merge)
@@ -737,15 +751,20 @@ dag2016_metabolite_merge$species <- as.character(dag2016_metabolite_merge$specie
 dag2016_metabolite_merge$species[dag2016_metabolite_merge$species == "Anaxyrus_fowleri"] <- "Fowlers toad"
 dag2016_metabolite_merge$species <- as.factor(dag2016_metabolite_merge$species)
 
+# assign values to application rate
+unique(dag2016_metabolite_merge$chemical)
+#dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="atrazine"] <- 
+#dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="triadimefon"] <- 
+#dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="fipronil"] <- 
 
-#View(dag2016_metabolite_merge)
+
 # combine two dataframes
 combined_data3 <- rbind(combined_data2, dag2016_metabolite_merge)
 dim(combined_data3)
 colnames(combined_data3)
 rownames(combined_data3) <- seq(length=nrow(combined_data3))
 colnames(combined_data3)
-#View(combined_data3)
+
 combined_data_filename3 <- paste(amphibdir_data_out,"combined_data3.csv", sep="")
 write.csv(combined_data3, file=combined_data_filename3)
 ```
@@ -758,12 +777,15 @@ dim(combined_data3)
 
 ### Glinski et al. 2018c (Biomarkers)
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
-## import data
+##################
+# glinski et al 2018c biomarkers
+##################
+# import data
 dag_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
 file.exists(dag_biomarkers_file)
 dag_biomarker <- read.table(dag_biomarkers_file, header = TRUE, sep = ",")
 
-## look at data
+# look at data
 dim(dag_biomarker)
 names(dag_biomarker)
 summary(dag_biomarker)
@@ -771,7 +793,7 @@ summary(dag_biomarker)
 
 Five columns were dropped from the original biomarkers data set and the names of two columns were standardized.   
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-## clean the data
+# clean the data
 # drop cols
 drop_cols <- c("met", "tdt", "bif", "rate", "group")
 dag_biomarker_subset <- dag_biomarker[, !(names(dag_biomarker) %in% drop_cols)]
@@ -786,7 +808,7 @@ names(dag_biomarker_subset)
 dim(dag_biomarker_subset)   
 ```
 
-The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the following data set:  
+The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the following data set:
 
 **Data Set Dimensions, Column Names, and Summary:**
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -801,8 +823,18 @@ dim(dag_biomarker2)
 names(dag_biomarker2)
 summary(dag_biomarker2)
 ```
+Due to a computational error in the original study, the application rates were updated.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
+#dag_biomarker2_update <- replace.value(dag_biomarker2, "app.rate.met", from = 55.106, to= as.integer(58356.810), verbose = FALSE)
+#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.met", from = 5.5106, to= as.integer(5835.681), verbose = FALSE)
+#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = 5.173, to= as.integer(64723.010), verbose = FALSE)
+#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = .5173, to= as.integer(6472.301), verbose = FALSE)
+#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = 6.209, to= as.integer(68967.140), verbose = FALSE)
+#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = .6209, to= as.integer(6896.714), verbose = FALSE)
 
-A one-to-one merge was conducted based on the unique sample id for each measured pesticide (either bifenthrin, metolachlor, or triadimefon) to join the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined to the original data set.
+```
+
+A one-to-one merge was conducted based on the unique sample id for each measured pesticide (either bifenthrin, metolachlor, or triadimefon) to join the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined to the original data set. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # bif extraction
 dag_biomarker_subset_bif <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "bif", ]
@@ -851,7 +883,7 @@ names(dag_biomarker_subset3)
 dim(dag_biomarker_subset3)
 ```
 
-New columns were created for standarization with the collated data set, the columns were ordered alphabetically, and a local copy was stored. 
+New columns were created for standarization, the columns were ordered alphabetically, and a local copy was stored. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create new columns
 application <- c(rep("soil", nrow(dag_biomarker_subset3)))
@@ -911,20 +943,20 @@ dim(combined_data4)
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
 The Van Meter et al. 2018 (Multiple Pesticides Study) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
-```{r eval=TRUE, echo=FALSE, include = FALSE}
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
-#van meter et al 2017 multi-pesticide study merge
+# van meter et al 2017 multi-pesticide study merge
 ##################
 dim(rvm2017_merge)
 colnames(rvm2017_merge)
-#View(rvm2017_merge)
+
 # combine two dataframes
 combined_data5 <- rbind(combined_data4, rvm2017_merge)
 dim(combined_data5)
 colnames(combined_data5)
 rownames(combined_data5) <- seq(length=nrow(combined_data5))
 colnames(combined_data5)
-#View(combined_data4)
+
 combined_data_filename5 <- paste(amphibdir_data_out,"combined_data5.csv", sep="")
 write.csv(combined_data5, file=combined_data_filename5)
 ```
@@ -935,12 +967,12 @@ dim(combined_data5)
 
 ### Glinski et al. 2019 (dermal routes)
 
-~~~ Emma - still need to update the application rate column ~~~~~~  
+~~~ Emma: still need to add in app rates
 
 The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
-## import dermal routes data, with amphibians weights
+#import dermal routes data, with amphibians weights
 weights_file <- paste(amphibdir_data_in, "Dermal_routes_weights.csv", sep = "")
 file.exists(weights_file)
 weights <- read.table(weights_file, header = TRUE, sep = ",")
@@ -978,12 +1010,12 @@ dim(soil_subset2)
 
 Referring back to the main dermal routes data set: we are only interested in the pesticide exposures on amphibians while in soil. These rows were subset.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-#  want Media == soil because interested in dermal exposure in soil
+# want Media == soil because interested in dermal exposure in soil
 dermal_routes_subset4 <- dermal_routes_subset3[dermal_routes_subset3$Media == "Soil",]
 #sum(dermal_routes_subset3$Media == "Soil") # == 96
 #dim(dermal_routes_subset4) # == 96 x 6
 
-#  want Matrix == Amphibian because interested in amphib exposure
+# want Matrix == Amphibian because interested in amphib exposure
 dermal_routes_subset5 <- dermal_routes_subset4[dermal_routes_subset4$Matrix == "Amphibian", ]
 #sum(dermal_routes_subset4$Matrix == "Amphibian") # == 48
 #dim(dermal_routes_subset5) # == 48 x 6
@@ -1011,49 +1043,59 @@ The updated dimensions are:
 dim(dermal_routes_subset7)
 ```
 
-Several new columns (application rate, application, exposure duration, formulation, soil type, source and species) were created and the necessary values were filled in for each column. Existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.
+The metabolites were dropped from the data set.  Additionally, several new columns (application rate, application, exposure duration, formulation, soil type, source and species) were created and the necessary values were filled in for each column. Existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.
 ```{r eval = TRUE, echo = TRUE, include = FALSE}
-#  create new columns
-app_rate_g_cm2 <- c(rep(NA, nrow(dermal_routes_subset7)))
-application <- c(rep("soil", nrow(dermal_routes_subset7)))
-exp_duration <- c(rep(8, nrow(dermal_routes_subset7)))
-formulation <- c(rep(0, nrow(dermal_routes_subset7)))
-soil_type <- c(rep("OLS", nrow(dermal_routes_subset7)))
-source <- c(rep("dag_dermal_routes", nrow(dermal_routes_subset7)))
-species <- c(rep("Leopard frog", nrow(dermal_routes_subset7)))
+# drop metabolites
+rows_to_drop <- c("4-OH", "CPO", "TFSa")
+dermal_routes_subset8 <- dermal_routes_subset7[!(dermal_routes_subset7$Analyte %in% rows_to_drop),]
+
+# create new columns
+app_rate_g_cm2 <- c(rep(NA, nrow(dermal_routes_subset8)))
+application <- c(rep("soil", nrow(dermal_routes_subset8)))
+exp_duration <- c(rep(8, nrow(dermal_routes_subset8)))
+formulation <- c(rep(0, nrow(dermal_routes_subset8)))
+soil_type <- c(rep("OLS", nrow(dermal_routes_subset8)))
+source <- c(rep("dag_dermal_routes", nrow(dermal_routes_subset8)))
+species <- c(rep("Leopard frog", nrow(dermal_routes_subset8)))
+
+# insert application rates
+#unique(dermal_routes_subset8$Analyte)
+#dermal_routes_subset8$Analyte[dermal_routes_subset8$Analyte =="BIF"] <- 
+#dermal_routes_subset8$Analyte[dermal_routes_subset8$Analyte =="CPF"] <- 
+#dermal_routes_subset8$Analyte[dermal_routes_subset8$Analyte =="TFS"] <- 
 
 
-#  alter existing column names
-colnames(dermal_routes_subset7)
+# alter existing column names
+colnames(dermal_routes_subset8)
 
-colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Analyte")]<-"chemical"
-colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Sample.ID")]<-"sample_id"
-colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Concentration")]<-"tissue_conc_ugg"
-colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="soil_subset3$Concentration")]<-"soil_conc_ugg"
-colnames(dermal_routes_subset7)[which(colnames(dermal_routes_subset7)=="Weight_g")]<-"body_weight_g"
+colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)=="Analyte")]<-"chemical"
+colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)=="Sample.ID")]<-"sample_id"
+colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)=="Concentration")]<-"tissue_conc_ugg"
+colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)=="soil_subset3$Concentration")]<-"soil_conc_ugg"
+colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)=="Weight_g")]<-"body_weight_g"
 
 
 # combine columns
-dermal_routes_subset8 <- cbind(dermal_routes_subset7, app_rate_g_cm2, application, exp_duration, 
+dermal_routes_subset9 <- cbind(dermal_routes_subset8, app_rate_g_cm2, application, exp_duration, 
                                formulation, soil_type, source, species)
-names(dermal_routes_subset8)
-dim(dermal_routes_subset8)
+names(dermal_routes_subset9)
+dim(dermal_routes_subset9)
 
 # drop columns
 cols_to_drop <- c("Matrix", "Media")
-dermal_routes_subset9 <- dermal_routes_subset8[, !(names(dermal_routes_subset8) %in% cols_to_drop)]
+dermal_routes_subset10 <- dermal_routes_subset9[, !(names(dermal_routes_subset9) %in% cols_to_drop)]
 
 ```
 The updated column names and dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-names(dermal_routes_subset9)
-dim(dermal_routes_subset9)
+names(dermal_routes_subset10)
+dim(dermal_routes_subset10)
 ```
 
 The columns were ordered for ease of merging with the collated data set, a local copy was saved, and the data set was combined with the collated data set.
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # order columns in abc for merge
-dermal_routes_merge <- dermal_routes_subset9[ ,order(names(dermal_routes_subset9))]
+dermal_routes_merge <- dermal_routes_subset10[ ,order(names(dermal_routes_subset10))]
 dim(dermal_routes_merge)
 names(dermal_routes_merge)
 
@@ -1067,7 +1109,7 @@ dim(combined_data6)
 colnames(combined_data6)
 rownames(combined_data6) <- seq(length=nrow(combined_data6))
 colnames(combined_data6)
-#View(combined_data5)
+
 combined_data_filename6 <- paste(amphibdir_data_out,"combined_data6.csv", sep="")
 write.csv(combined_data6, file=combined_data_filename6)
 ```
@@ -1080,14 +1122,15 @@ dim(combined_data6)
 
 **Final Product**
 =============================================================
-The combined data set was examined to ensure validity. Minor alterations were made with factor levels.
-```{r eval=TRUE, echo=FALSE, include = FALSE}
+The combined data set was examined to ensure validity. Minor alterations were made to standardize names of the application types and chemicals.
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
-#write out the entire final product
+# write out the entire final product
 ##################
 amphib_dermal_collated <- combined_data6
-#View(amphib_dermal_collated)
+
 colnames(amphib_dermal_collated)
+
 # check to see if everything ok
 summary(amphib_dermal_collated$app_rate_g_cm2) # units issues
 summary(amphib_dermal_collated$body_weight_g) # 60 NAs
@@ -1113,13 +1156,14 @@ amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "tdn"] <- "tr
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "imid"] <- "imidacloprid"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "chloro+d"] <- "chlorothalonil"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "CPF"] <- "chlorpyrifos"
-amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "CPO"] <- "chlorpyrifos oxen"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "TFS"] <- "trifloxystrobin"
-amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "TFSa"] <- "trifloxystrobin acid"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "FipTOT"] <- "fipronil"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "ATZTOT"] <- "atrazine"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "TNDTOT"] <- "triadimefon"
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "Pendi"] <- "pendimethalin"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "Total Atrazine"] <- "atrazine"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "Total Fipronil"] <- "fipronil"
+amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "Total Triadimefon"] <- "triadimefon"
 
 
 amphib_dermal_collated$chemical <- tolower(amphib_dermal_collated$chemical)
