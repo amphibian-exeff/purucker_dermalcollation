@@ -16,7 +16,7 @@ bowl_1_sa <- pi*(7.5^2)
 bowl_8_sa <- 8*bowl_1_sa
 
 # Application Rate variables
-applied <- 75
+applied <- 75 #should this actually be 75*8 (multiplied by the number of bowls)
 conversion <- 1
 density_bif <- 1.3 #g/cm3
 density_meto <- 1.1 #g/cm3

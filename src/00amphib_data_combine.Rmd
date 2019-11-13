@@ -291,16 +291,16 @@ summary(dermal_routes)
 ***
 **Application Rates**
 =============================================================
-The table below concisely displays the pesticide applications rates (ug/cm^2^) used in each relevant study.
+The table below concisely displays the pesticide applications rates (ug/cm^2^) used in each relevant study, as well as the variables used to compute the application rates.
 
 ```{r eval = TRUE, include = FALSE}
 app_rates_file <- paste0(amphibdir_data_in, "app_rates.txt")
 file.exists(app_rates_file)
-app_rates <- read.table(app_rates_file, header = TRUE)
+app_rates <- read.table(app_rates_file, header = TRUE, sep = ",")
 ```
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-kable(app_rates[, 2:3]) %>%
+kable(app_rates[, 2:8]) %>%
   kable_styling("striped", full_width = F) %>%
   pack_rows("Van Meter et al. 2014/2015", 1, 5) %>%
   pack_rows("Van Meter et al. 2016", 6, 10) %>%
@@ -310,22 +310,6 @@ kable(app_rates[, 2:3]) %>%
   pack_rows("Glinski et al. 2018b", 31, 33) %>%
   pack_rows("Glinski et al. 2018c", 34, 39) %>%
   pack_rows("Glinski et al. 2019", 40, 42)  
-```
-
-***
-**Densities**
-=============================================================
-The table below concisely displays the density (g/cm^3^) of each pesticide used. Pesticide densities were used to compute the application rate.
-
-```{r eval = TRUE, include = FALSE}
-density_file <- paste0(amphibdir_data_in, "pesticide_density.txt")
-file.exists(density_file)
-density <- read.table(density_file, header = TRUE)
-```
-
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-kable(density[, 1:2]) %>%
-  kable_styling("striped", full_width = F) 
 ```
 
 ***  
