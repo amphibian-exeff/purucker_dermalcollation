@@ -21,6 +21,10 @@ library(ggplot2)
 require(gridExtra)
 library(reshape2)
 
+# tom epa linux
+if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
+  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
+}
 # Emma's laptop
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
   amphibdir <- path.expand("C:/Users/echelsvi/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/amphib_dermal_collation/amphib_dermal_collation-master/")
