@@ -13,7 +13,8 @@ title: "Compare Data of Amphibian Dermal Exposure with Proposed Models"
 ======================================================================
 A comparison between the proposed amphibian dermal exposure model (DUST) from Draft 8/19/15 and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted. The proposed DUST model has a function for exposure by direct spray and a function for exposure from foliage (also referred to as indirect exposure).  
 
-Collected amphibian dermal exposure data is from 8 studies. Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (Atrazine, Metolachlor, 2,4-D, Malathion, Propiconazole) on juvenile green frogs. Glinski et al. 2018a data includes exposure to 5 pesticides (Atrazine, Triadimefon, Metolachlor, Chlorothalonil, Imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). Glinski et al. 2018b data consists of exposure to 3 pesticides (Atrazine, Triadimefon, Fopronil) on Fowler's toads. Glinski et al. 2018c data includes exposure to single, double, or triple pesticide mixtures (Bifenthrin, Metolachlor, Triadimefon) on Southern leopard frogs. Henson-Ramsey 2008 data consists of exposure to Malathion for Tiger salamanders.  
+Collected amphibian dermal exposure data is from 9 studies. Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (Atrazine, Metolachlor, 2,4-D, Malathion, Propiconazole) on juvenile green frogs. Glinski et al. 2018a data includes exposure to 5 pesticides (Atrazine, Triadimefon, Metolachlor, Chlorothalonil, Imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). Glinski et al. 2018b data consists of exposure to 3 pesticides (Atrazine, Triadimefon, Fopronil) on Fowler's toads. Glinski et al. 2018c data includes exposure to single, double, or triple pesticide mixtures (Bifenthrin, Metolachlor, Triadimefon) on Southern leopard frogs.  Glinski et al 2019 data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. Henson-Ramsey 2008 data consists of exposure to Malathion for Tiger salamanders.  
+
 
 ```{r eval=TRUE, echo=FALSE, include = FALSE}
 # Install required libraries
@@ -27,7 +28,7 @@ if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
 }
 # Emma's laptop
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
-  amphibdir <- path.expand("C:/Users/echelsvi/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/amphib_dermal_collation/amphib_dermal_collation-master/")
+  amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
 }
 
 # Variable names for data

@@ -1,11 +1,13 @@
 ---
 title: "Creating a Database of Amphibian Dermal Exposure Data"
+author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM"
 ---  
 
 ```{r eval=FALSE, echo=FALSE}
 #ctrl-shift k to knit r markdown
 #https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 ```
+<br><br>
 
 ***
 
@@ -27,10 +29,9 @@ The purpose of this script is to combine the data sets from Van Meter et al. (20
 | <a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008 | | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/hr2008_data.csv"> hr2008_data.csv </a>||
 
   
-   
+<br><br>
+
 ***
-
-
 **Computational environment**
 ========================================================
 This repository can be found at: 
@@ -78,6 +79,7 @@ amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
 amphibdir_src <- paste(amphibdir,'src/',sep='')
 
 ```
+<br><br>
 
 ***
 
@@ -109,7 +111,7 @@ dim(vm2015)
 colnames(vm2015)
 summary(vm2015)
 ```
-
+<br>
 
 ### Van Meter et al. 2016
 
@@ -129,7 +131,7 @@ dim(vm2016)
 colnames(vm2016)
 summary(vm2016)
 ```
-
+<br>
 
 ### Glinski et al. 2018a (Dehydration)
 
@@ -151,7 +153,7 @@ dim(dag2016_dehy0)
 colnames(dag2016_dehy0)
 summary(dag2016_dehy0)
 ```
-
+<br>
 
 ### Henson-Ramsey 2008  
 
@@ -169,7 +171,7 @@ dim(hr2008)
 colnames(hr2008)
 summary(hr2008)
 ```
-
+<br>
 
 ### Glinski et al. 2018b (Metabolites)
 
@@ -181,7 +183,7 @@ dag2016_metabolite_file <- paste(amphibdir_data_in,"dag2016_data_metabolites.csv
 file.exists(dag2016_metabolite_file)
 dag2016_metabolite0 <- read.table(dag2016_metabolite_file, header = TRUE, sep = ",")
 ```
-#### Metabolites data set (1)
+#### **Metabolites Data Set (1)**
 **Data Set Dimensions, Column Names, and Summary:**
 ```{r eval = TRUE, echo = FALSE}
 dim(dag2016_metabolite0)
@@ -196,14 +198,14 @@ dag2016_metabolite_merge_file <- paste(amphibdir_data_in,"dag2016_data_metabolit
 file.exists(dag2016_metabolite_merge_file)
 dag2016_metabolite_merge <- read.table(dag2016_metabolite_merge_file, header = TRUE, sep = ",")
 ```
-#### Metabolites data set (merged)
+#### **Metabolites Data Set (merged)**
 **Data Set Dimensions, Column Names, and Summary:**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dag2016_metabolite_merge)
 colnames(dag2016_metabolite_merge)
 summary(dag2016_metabolite_merge)
 ```
-
+<br>
 
 ### Glinski et al. 2018c (Biomarkers)
 
@@ -221,6 +223,7 @@ dim(dag2018_mbiomarker0)
 colnames(dag2018_mbiomarker0)
 summary(dag2018_mbiomarker0)
 ```
+<br>
 
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
@@ -268,8 +271,7 @@ dim(rvm2017_merge)
 colnames(rvm2017_merge)
 summary(rvm2017_merge)
 ```
-
-
+<br>
 
 ### Glinski et al. 2019 (Dermal Routes)
 
@@ -287,6 +289,7 @@ dim(dermal_routes)
 names(dermal_routes)
 summary(dermal_routes)
 ```
+<br><br>
 
 ***
 **Application Rates**
@@ -311,23 +314,46 @@ kable(app_rates[, 2:8]) %>%
   pack_rows("Glinski et al. 2018c", 34, 39) %>%
   pack_rows("Glinski et al. 2019", 40, 42)  
 ```
-
+<br><br>
+ 
 ***  
 
 **Cleaning and Merging the Data Sets**
 =============================================================
 Each data set was cleaned for merging. This consisted of dropping unneeded columns and standardizing column names of retained columns.  Four columns were added to all data sets (soil type, formulation, exposure duration, and research study source).  
 Once each data set was cleaned, a local copy was saved and the data set was merged with the previously cleaned data sets.
+
+The process of cleaning and merging each data set is briefly described below.
+
+<br>
+
+*** 
+
+### Van Meter et al. 2014/2015
+
+
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
 # van meter 2014/15
 ##################
 unique(vm2015$Chemical)
+```
+Metabolites and parents that do not include metabolites were dropped from the data set. This includes atrazine, deisopropyl atrazine, desethyl atrazine, fipronil, fipronil-sulfone, triadimefon, triadimenol.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 # drop metabolites and parents that do not include metabolites
 vm2015_chem_drop <- c("Atrazine","Deisopropyl Atrazine","Desethyl Atrazine","Fipronil","Fipronil-Sulfone","Triadimefon","Triadimenol")
 chem_vector_drop <- which(vm2015$Chemical %in% vm2015_chem_drop)
 vm2015_subset1 <- vm2015[-chem_vector_drop,]
 vm2015_subset2 <- droplevels(vm2015_subset1)
+```
+
+There were 278 observations with these chemicals.  After dropping the 278 observations from the initial 474, the updated dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(vm2015_subset2)
+```
+
+There were 15 unneeded columns dropped and 4 added for standarization.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 # drop unneeded columns for merging
 all_cols <- colnames(vm2015_subset2)
 drop_cols <- c("Instrument", "good", "logKow", "BCF", "initialweight", 
@@ -358,68 +384,14 @@ vm2015_merge <- vm2015_subset4[,order(names(vm2015_subset4))]
 vm2015_merge_filename <- paste(amphibdir_data_out,"vm2015_merge.csv", sep="")
 write.csv(vm2015_merge, file=vm2015_merge_filename)
 ```
-**The column names of the cleaned data sets are as follows:**
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-colnames(vm2015_merge)
-```
-
-The process of cleaning and merging each data set is briefly described below.
-
-*** 
-
-### Van Meter et al. 2014/2015
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# note: this code is a repeat of the above lines, used for displaying in R Markdown
-unique(vm2015$Chemical)
-# drop metabolites and parents that do not include metabolites
-vm2015_chem_drop <- c("Atrazine","Deisopropyl Atrazine","Desethyl Atrazine","Fipronil","Fipronil-Sulfone","Triadimefon","Triadimenol")
-chem_vector_drop <- which(vm2015$Chemical %in% vm2015_chem_drop)
-vm2015_subset1 <- vm2015[-chem_vector_drop,]
-vm2015_subset2 <- droplevels(vm2015_subset1)
-```
-Metabolites and parents that do not include metabolites were dropped from the data set. This includes atrazine, deisopropyl atrazine, desethyl atrazine, fipronil, fipronil-sulfone, triadimefon, triadimenol.    
-
-There were `r length(chem_vector_drop)` observations with these chemicals.  After dropping the `r length(chem_vector_drop)` observations from the initial `r nrow(vm2015)`, the updated dimensions are:
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-dim(vm2015_subset2)
-```
-
-
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# drop unneeded columns for merging
-all_cols <- colnames(vm2015_subset2)
-drop_cols <- c("Instrument", "good", "logKow", "BCF", "initialweight", 
-            "Solat20C_mgL", "Solat20C_gL", "molmass_gmol", "Density_gcm3","AppFactor", "SA_cm2",                        "VapPrs_mPa", "Koc_gmL", "HalfLife_day", "HabFac")
-vm2015_subset3 <- vm2015_subset2[,!(names(vm2015_subset2) %in% drop_cols)]
-colnames(vm2015_subset3)
-# add columns
-soil_type <- c(rep("PLE",nrow(vm2015_subset3)))
-formulation <- (rep(0,nrow(vm2015_subset3)))
-exp_duration<- (rep(8,nrow(vm2015_subset3)))
-source <- c(rep("rvm2015",nrow(vm2015_subset3)))
-vm2015_subset4 <- cbind(vm2015_subset3, formulation, soil_type, exp_duration, source)
-# standardize column names
-colnames(vm2015_subset4)
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Sample")]<-"sample_id"
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Species")]<-"species"
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Chemical")]<-"chemical"
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="Application")]<-"application"
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="TissueConc")]<-"tissue_conc_ugg"
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="SoilConc")]<-"soil_conc_ugg"
-colnames(vm2015_subset4)[which(colnames(vm2015_subset4)=="bodyweight")]<-"body_weight_g"
-colnames(vm2015_subset4)
-```
-There were `r length(drop_cols)` unneeded columns dropped and 4 added for standarization.  
-
-**The combined data set's updated dimensions are:**
+**The data set's dimensions are:**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(vm2015_merge)
 ```
-
+<br>
 
 ### Van Meter et al. 2016
 
-From the initial 11 columns, 4 columns were dropped and consolidated into 1, and 4 columns were added.
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
 # van meter 2016
@@ -429,6 +401,7 @@ dim(vm2016)
 colnames(vm2016)
 ```
 
+From the initial 11 columns, 4 columns were dropped and consolidated into 1, and 4 columns were added.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # add sample_id
 vm2016$sample_id <- paste(vm2016$Day, vm2016$Row, vm2016$Column, sep="_")
@@ -440,11 +413,7 @@ exp_duration<- (rep(8,nrow(vm2016_subset2)))
 source <- c(rep("rvm2016",nrow(vm2016_subset2)))
 vm2016_subset3 <- cbind(vm2016_subset2, species, application, exp_duration, source)
 ```
-Application rates for several pesticides were inserted.  
-
-There were 108 observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set.        
-
-There were 60 observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total.
+Application rates for several pesticides were inserted. There were 108 observations with decay products that were not sprayed; these observations were dropped so as to only include the parents in the cleaned data set. There were 60 observations with atrazine, fipronil, or triadimefon that were dropped because they do not include metabolites in total.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # assign values to application rate
 #unique(vm2016_subset3$Pesticide)
@@ -464,9 +433,9 @@ drop_cols <- c("Parent")
 vm2016_subset6 <- vm2016_subset5[,!(names(vm2016_subset5) %in% drop_cols)]
 ```
 
-```{r eval = TRUE, echo = FALSE, include = FALSE}
+Several column names were standardized and all columns were ordered for ease of merging with the combined data set.  
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 # standardize column names
-#View(vm2016_subset4)
 colnames(vm2016_subset6)
 colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Pesticide")]<-"chemical"
 colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="SoilType")]<-"soil_type"
@@ -476,16 +445,13 @@ colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Weight")]<-"body_weigh
 colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Formulation")]<-"formulation"
 
 # reorder columns alphabetically to help with merge
-#reorder vm2016
 colnames(vm2016_subset6)
 vm2016_merge <- vm2016_subset6[,order(names(vm2016_subset6))]
-dim(vm2016_merge)
 colnames(vm2016_merge)
-#write a local copy
+# write a local copy
 vm2016_merge_filename <- paste(amphibdir_data_out,"vm2016_merge.csv", sep="")
 write.csv(vm2016_merge, file=vm2016_merge_filename)
 ```
-Several column names were standardized and all columns were ordered for ease of merging with the combined data set.  
 
 The updated dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
@@ -512,7 +478,7 @@ write.csv(combined_data0, file=combined_data_filename0)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data0)
 ```
-
+<br>
 
 ### Glinski et al. 2018a (Dehydration)
 
@@ -530,6 +496,7 @@ colnames(dag2016_dehy0)
 # [1] "chemical"        "soil_type"       "tissue_conc_ugg" "soil_conc_ugg"   "body_weight_g"  
 # [6] "formulation"     "species"         "application"     "exp_duration"    "app_rate_g_cm2"
 ```
+
 The metabolite products were dropped from the data set; 600 rows from the initial 1494 rows were retained.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # drop metabolite products
@@ -537,20 +504,18 @@ parent_keepers <- which(as.vector(dag2016_dehy0$parent) == as.vector(dag2016_deh
 dag2016_dehy1 <- dag2016_dehy0[parent_keepers,]
 ```
 
-
-```{r eval = TRUE, echo = FALSE, include = FALSE}
+Several column names were altered for standarization across the data set, and 7 columns were added for standarization.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 ## time is length of dehydration
 #colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="time")]<-"exp_duration"
-# analyte change to chemical
+
+# standardize column names
 colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="analyte")]<-"chemical"
-# conc to tissue concs
 colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="conc")]<-"tissue_conc_ugg"
-# species same
-# change ID to sample_id
 colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="ID")]<-"sample_id"
-# weight change to body_weight_g
 colnames(dag2016_dehy1)[which(colnames(dag2016_dehy1)=="weight")]<-"body_weight_g"
-# add soil_type (PLE, OLS), formulation (0,1), application (Overspray, Indirect) and app_rate_g_cm2 fields
+
+# add additional columns
 exp_duration <- c(rep(8,nrow(dag2016_dehy1)))
 soil_type <- c(rep("PLE",nrow(dag2016_dehy1)))
 application <- c(rep("Indirect",nrow(dag2016_dehy1)))
@@ -561,7 +526,8 @@ source <- c(rep("dag_dehydration",nrow(dag2016_dehy1)))
 dag2016_dehy2 <- cbind(dag2016_dehy1, formulation, soil_type, application, 
                        app_rate_g_cm2, exp_duration, soil_conc_ugg, source)
 ```
-Several column names were altered for standarization across the data set, and 7 columns were added (exposure duration, soil type, application, application rate, formulation, soil concentration, research study source).  The updated dimensions are:
+
+The updated dimensions are:
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dag2016_dehy2)
 ```
@@ -654,7 +620,7 @@ dim(dag2016_dehy_merge)
 
 
 The Glinkski et al. 2018a (Dehydration) was combined with the previously merged data sets.
-```{r eval=TRUE, echo=FALSE, include = FALSE}
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 colnames(combined_data0)
 colnames(dag2016_dehy_merge)
 dim(combined_data0)
@@ -672,12 +638,12 @@ write.csv(combined_data1, file=combined_data_filename1)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data1)
 ```
-
+<br>
 
 ### Henson-Ramsey 2008
 
 The Henson-Ramsey 2008 data set did not require any additional data cleaning. It was combined with the previously merged data sets.
-```{r eval=TRUE, echo=FALSE, include = FALSE}
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 colnames(combined_data1)
 colnames(hr2008)
 dim(combined_data1)
@@ -696,18 +662,19 @@ write.csv(combined_data2, file=combined_data_filename2)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data2)
 ```
-
+<br>
 
 ### Glinski et al. 2018b (Metabolites)
 
-Apart from standardizing the species name and inserting the application rates, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
-```{r eval=TRUE, echo=FALSE, include = FALSE}
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
 # glinski et al 2018b metabolites
 ##################
 dim(dag2016_metabolite_merge)
 colnames(dag2016_metabolite_merge)
-
+```
+Apart from standardizing the species name and inserting the application rates, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 # rename species names, according to standardized names
 dag2016_metabolite_merge$species <- as.character(dag2016_metabolite_merge$species)
 dag2016_metabolite_merge$species[dag2016_metabolite_merge$species == "Anaxyrus_fowleri"] <- "Fowlers toad"
@@ -718,8 +685,8 @@ unique(dag2016_metabolite_merge$chemical)
 #dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="atrazine"] <- 
 #dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="triadimefon"] <- 
 #dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="fipronil"] <- 
-
-
+```
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 # combine two dataframes
 combined_data3 <- rbind(combined_data2, dag2016_metabolite_merge)
 dim(combined_data3)
@@ -734,8 +701,7 @@ write.csv(combined_data3, file=combined_data_filename3)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data3)
 ```
-
-
+<br>
 
 ### Glinski et al. 2018c (Biomarkers)
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -755,12 +721,11 @@ summary(dag_biomarker)
 
 Five columns were dropped from the original biomarkers data set and the names of two columns were standardized.   
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-# clean the data
-# drop cols
+# drop columns
 drop_cols <- c("met", "tdt", "bif", "rate", "group")
 dag_biomarker_subset <- dag_biomarker[, !(names(dag_biomarker) %in% drop_cols)]
 
-# alter existing column names
+# standardize column names
 colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)=="conc")]<-"tissue_conc_ugg"
 colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)=="frog.weight")]<-"body_weight_g"
 ```
@@ -834,7 +799,7 @@ rownames(dag_biomarker_subset2) <- seq(length=nrow(dag_biomarker_subset2))
 
 dag_biomarker_subset3 <- cbind(dag_biomarker_subset2, app_bind_bmt, soil_bind_bmt)
 
-# alter column names for standarization
+# standardize column names
 colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)=="app_bind_bmt")]<-"app_rate_g_cm2"
 colnames(dag_biomarker_subset3)[which(colnames(dag_biomarker_subset3)=="soil_bind_bmt")]<-"soil_conc_ugg"
 ```
@@ -872,7 +837,8 @@ dag_biomarker_subset5 <- unite(data = dag_biomarker_subset4, col = "sample_id", 
 
 # order columns in abc for merge
 dag_biomarker_merge <- dag_biomarker_subset5[ ,order(names(dag_biomarker_subset5))]
-
+```
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 # write a local copy
 dag_biomarker_merge_filename <- paste(amphibdir_data_out,"dag_biomarker_merge.csv", sep="")
 write.csv(dag_biomarker_merge, file = dag_biomarker_merge_filename)
@@ -884,8 +850,6 @@ dim(dag_biomarker_merge)
 ```
 
 The Glinski et al. 2018c (Biomarkers) was combined with the previously merged data sets.    
-
-**The combined data set's updated dimensions are:**
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # combine data frames
 combined_data4 <- rbind(combined_data3, dag_biomarker_merge)
@@ -897,10 +861,11 @@ colnames(combined_data4)
 combined_data_filename4 <- paste(amphibdir_data_out,"combined_data4.csv", sep="")
 write.csv(combined_data4, file=combined_data_filename4)
 ```
+**The combined data set's updated dimensions are:**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data4)
 ```
-
+<br>
 
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
@@ -926,13 +891,13 @@ write.csv(combined_data5, file=combined_data_filename5)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data5)
 ```
+<br>
 
 ### Glinski et al. 2019 (Dermal Routes)
 
 ~~~ Emma: still need to add in app rates
 
 The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:
-
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 #import dermal routes data, with amphibians weights
 weights_file <- paste(amphibdir_data_in, "Dermal_routes_weights.csv", sep = "")
@@ -1005,8 +970,8 @@ The updated dimensions are:
 dim(dermal_routes_subset7)
 ```
 
-The metabolites were dropped from the data set.  Additionally, several new columns (application rate, application, exposure duration, formulation, soil type, source and species) were created and the necessary values were filled in for each column. Existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.
-```{r eval = TRUE, echo = TRUE, include = FALSE}
+The metabolites were dropped from the data set.  Additionally, several new columns were created for standarization, existing columns were standardized according to the naming conventions of the collated data set, and unneeded columns were dropped.  Columns were ordered alphabetically for ease of merging.
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 # drop metabolites
 rows_to_drop <- c("4-OH", "CPO", "TFSa")
 dermal_routes_subset8 <- dermal_routes_subset7[!(dermal_routes_subset7$Analyte %in% rows_to_drop),]
@@ -1041,26 +1006,23 @@ colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)=="Weight_g
 dermal_routes_subset9 <- cbind(dermal_routes_subset8, app_rate_g_cm2, application, exp_duration, 
                                formulation, soil_type, source, species)
 names(dermal_routes_subset9)
-dim(dermal_routes_subset9)
 
 # drop columns
 cols_to_drop <- c("Matrix", "Media")
 dermal_routes_subset10 <- dermal_routes_subset9[, !(names(dermal_routes_subset9) %in% cols_to_drop)]
 
-```
-The updated column names and dimensions are:
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-names(dermal_routes_subset10)
-dim(dermal_routes_subset10)
-```
-
-The columns were ordered for ease of merging with the collated data set, a local copy was saved, and the data set was combined with the collated data set.
-```{r eval = TRUE, echo = FALSE, include = FALSE}
 # order columns in abc for merge
 dermal_routes_merge <- dermal_routes_subset10[ ,order(names(dermal_routes_subset10))]
+```
+
+The updated column names and dimensions are:
+```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(dermal_routes_merge)
 names(dermal_routes_merge)
+```
 
+A local copy was saved, and the data set was combined with the collated data set.
+```{r eval = TRUE, echo = FALSE, include = FALSE}
 # write a local copy
 dag2019_merge_filename <- paste(amphibdir_data_out,"dag2019_merge.csv", sep="")
 write.csv(dermal_routes_merge, file = dag2019_merge_filename)
@@ -1079,16 +1041,14 @@ write.csv(combined_data6, file=combined_data_filename6)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 dim(combined_data6)
 ```
+<br><br>
 
 ***
 
 **Final Product**
 =============================================================
 The combined data set was examined to ensure validity. Minor alterations were made to standardize names of the application types and chemicals.
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-##################
-# write out the entire final product
-##################
+```{r eval = TRUE, echo = TRUE, include = TRUE}
 amphib_dermal_collated <- combined_data6
 
 colnames(amphib_dermal_collated)
@@ -1149,4 +1109,11 @@ dim(amphib_dermal_collated)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(amphib_dermal_collated)
 ```
+<br>
 
+***
+
+Session Information:
+```{r eval = TRUE, echo = FALSE}
+sessionInfo()
+```
