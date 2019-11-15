@@ -83,18 +83,55 @@ sa_default_tim <- 10 * (body_weight ^ 0.667)
 sa_tim_default_frac <- 0.5
 tissue_conc <- combined_data$tissue_conc_ugg
 ```
-Summary of body_weight
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-summary(body_weight)
-```
+
 Summary of app_rate
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(app_rate)
 ```
+
+Summary of app_rate, by study
+```{r eval = TRUE, echo = FALSE}
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "rvm2015"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "rvm2016"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "dag_dehydration"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "hr2008"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "dag_metabolites"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "dag_biomarker"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "rvm2017"])
+# summary(combined_data$app_rate_g_cm2[combined_data$source == "dag_dermal_routes"])
+```
+Summary of body_weight
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+summary(body_weight)
+```
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+summary(combined_data$body_weight_g[combined_data$source == "rvm2015"])
+summary(combined_data$body_weight_g[combined_data$source == "rvm2016"])
+summary(combined_data$body_weight_g[combined_data$source == "dag_dehydration"])
+summary(combined_data$body_weight_g[combined_data$source == "hr2008"])
+summary(combined_data$body_weight_g[combined_data$source == "dag_metabolites"])
+summary(combined_data$body_weight_g[combined_data$source == "dag_biomarker"])
+summary(combined_data$body_weight_g[combined_data$source == "rvm2017"])
+summary(combined_data$body_weight_g[combined_data$source == "dag_dermal_routes"])
+```
+
 Summary of tissue_conc
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(tissue_conc)
 ```
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+summary(combined_data$tissue_conc_ugg[combined_data$source == "rvm2015"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "rvm2016"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "dag_dehydration"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "hr2008"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "dag_metabolites"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "dag_biomarker"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "rvm2017"])
+summary(combined_data$tissue_conc_ugg[combined_data$source == "dag_dermal_routes"])
+```
+
 
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
@@ -120,6 +157,47 @@ hist(combined_data$tim_direct_default_ratios, main = "Histogram of TIM Default R
 ```
 
 Shown above, the range of the TIM Default Ratios spans from 1.0257 to 1,399,270.8928. The rightly-skewed histogram showcases the spread of the data. The larger ratios can be explained by lower tissue concentrations. For example, observations in the data set with tissue concentrations (approximately) less than 0.10 yield larger TIM ratios.
+
+
+~ Look more at the histograms of the TIM Ratios
+```{r eval = TRUE, echo = FALSE}
+# RVM 2015 histograms
+
+# RVM 2015 
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2015"])
+
+# RVM 2015 and tissue conc<.10
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2015" & combined_data$tissue_conc_ugg < 0.10])
+
+# RVM 2015 and tissue conc>.10
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2015" & combined_data$tissue_conc_ugg > 0.10])
+
+
+
+# RVM 2016 histograms
+
+# RVM 2016 
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2016"])
+
+# RVM 2016 and tissue conc<.10
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2016" & combined_data$tissue_conc_ugg < 0.10])
+
+# RVM 2016 and tissue conc>.10
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2016" & combined_data$tissue_conc_ugg > 0.10])
+
+
+
+# RVM 2017 histograms
+
+# RVM 2017 
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2017"])
+
+# RVM 2017 and tissue conc<.10
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2017" & combined_data$tissue_conc_ugg < 0.10])
+
+# RVM 2017 and tissue conc>.10
+hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2017" & combined_data$tissue_conc_ugg > 0.10])
+```
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Tissue Concentrations >= 0.10

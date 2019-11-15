@@ -441,7 +441,7 @@ summary {
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv)</td>
 </tr>
 <tr class="even">
-<td>Glinski et al. 2019 (dermal routes)</td>
+<td>Glinski et al. 2020 (dermal routes)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs"> Water_soil.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2019_dermal_routes.csv"> dag2019_dermal_routes.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/Dermal_routes_weights.csv">Dermal_routes_weights.csv</a> (weights)</td>
@@ -609,14 +609,14 @@ summary {
 ##                                       3rd Qu.:1.470   sal5   :1  
 ##                                       Max.   :3.730   sal6   :1  
 ##                                                       (Other):3  
-##  body_weight_g   formulation    soil_type      application app_rate_g_cm2
-##  Min.   :20.89   Mode:logical   Mode:logical   soil:9      Min.   :0.05  
-##  1st Qu.:44.15   NA&#39;s:9         NA&#39;s:9                     1st Qu.:0.05  
-##  Median :46.26                                             Median :0.05  
-##  Mean   :43.73                                             Mean   :0.05  
-##  3rd Qu.:48.93                                             3rd Qu.:0.05  
-##  Max.   :50.92                                             Max.   :0.05  
-##                                                                          
+##  body_weight_g   formulation    soil_type      application app_rate_g_cm2 
+##  Min.   :20.89   Mode:logical   Mode:logical   soil:9      Min.   :5e-05  
+##  1st Qu.:44.15   NA&#39;s:9         NA&#39;s:9                     1st Qu.:5e-05  
+##  Median :46.26                                             Median :5e-05  
+##  Mean   :43.73                                             Mean   :5e-05  
+##  3rd Qu.:48.93                                             3rd Qu.:5e-05  
+##  Max.   :50.92                                             Max.   :5e-05  
+##                                                                           
 ##   exp_duration soil_conc_ugg     source 
 ##  Min.   :24    Mode:logical   hr2008:9  
 ##  1st Qu.:24    NA&#39;s:9                   
@@ -823,9 +823,9 @@ summary {
 <p><br></p>
 </div>
 </div>
-<div id="glinski-et-al.-2019-dermal-routes" class="section level3">
-<h3>Glinski et al. 2019 (Dermal Routes)</h3>
-<p>~~~~~ Talk about Glinski et al. 2019 dermal routes….</p>
+<div id="glinski-et-al.-2020-dermal-routes" class="section level3">
+<h3>Glinski et al. 2020 (Dermal Routes)</h3>
+<p>~~~~~ Talk about Glinski et al. 2020 dermal routes….</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 192   5</code></pre>
 <pre><code>## [1] &quot;Sample.ID&quot;     &quot;Analyte&quot;       &quot;Media&quot;         &quot;Matrix&quot;       
@@ -2244,8 +2244,8 @@ dag_biomarker_merge &lt;- dag_biomarker_subset5[ ,order(names(dag_biomarker_subs
 <pre><code>## [1] 990  12</code></pre>
 <p><br></p>
 </div>
-<div id="glinski-et-al.-2019-dermal-routes-1" class="section level3">
-<h3>Glinski et al. 2019 (Dermal Routes)</h3>
+<div id="glinski-et-al.-2020-dermal-routes-1" class="section level3">
+<h3>Glinski et al. 2020 (Dermal Routes)</h3>
 <p>~~~ Emma: still need to add in app rates</p>
 <p>The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
@@ -2374,7 +2374,7 @@ colnames(amphib_dermal_collated)</code></pre>
 <pre class="r"><code># check to see if everything ok
 summary(amphib_dermal_collated$app_rate_g_cm2) # units issues</code></pre>
 <pre><code>##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NA&#39;s 
-##  0.00000  0.00000  0.00002  2.36449  0.00004 55.10600       24</code></pre>
+##  0.00000  0.00000  0.00002  2.36403  0.00004 55.10600       24</code></pre>
 <pre class="r"><code>summary(amphib_dermal_collated$body_weight_g) # 60 NAs</code></pre>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##  0.1879  1.3043  2.1247  3.3800  3.0412 50.9200</code></pre>
@@ -2438,7 +2438,7 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ##  Min.   : 0.00000   indirect :396   Min.   : 0.1879   triadimefon   :223  
 ##  1st Qu.: 0.00000   overspray: 45   1st Qu.: 1.3043   atrazine      :191  
 ##  Median : 0.00002   soil     :573   Median : 2.1247   metolachlor   :154  
-##  Mean   : 2.36449                   Mean   : 3.3800   bifenthrin    : 72  
+##  Mean   : 2.36403                   Mean   : 3.3800   bifenthrin    : 72  
 ##  3rd Qu.: 0.00004                   3rd Qu.: 3.0412   fipronil      : 71  
 ##  Max.   :55.10600                   Max.   :50.9200   chlorothalonil: 66  
 ##  NA&#39;s   :24                                           (Other)       :237  
