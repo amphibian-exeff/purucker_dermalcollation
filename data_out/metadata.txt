@@ -5,10 +5,10 @@ Metadata for amphib_dermal_collated.csv
 Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM.
 # ---------------------------------------------------
 
-This is the final collated data set containing all amphibian dermal exposure studies.
+amphib_dermal_collated.csv is the final collated data set containing all amphibian dermal exposure studies.
+
 
 Column labels and description of the column for the csv file.
-
 
 app_rate_g_cm2	- application rate of pesticide in g/cm^2
 application 	- application method
@@ -16,13 +16,13 @@ application 	- application method
 body_weight_g	- body weight of exposed amphibian in grams
 chemical	- pesticide used in the study
 exp_duration	- duration of exposure experiment in hours
-formulation	- commercial formulation or active ingredient (dissolved in Methanol)
-			(commercial formulation = 1, active ingredient = 0)
+formulation	- commercial formulation or active ingredient dissolved in Methanol
+			(commercial formulation = 1, active ingredient dissolve in Methanol = 0)
 sample_id	- sample identifyer used in the original study
 soil_conc_ugg	- soil concentration of pesticide in ug/g
 soil_type	- type of soil used in the study if available
-			(PLE, OLS, NA)
-source		- manuscript were data originated from 
+			(PLE = Plott series soil, OLS = Orangeburg loamy-sand soil, NA)
+source		- manuscript where data originated from 
 species		- amphibian species name
 			(Barking treefrog, Cricket frog, Fowlers toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad, American toad, Ambystoma_tigrinum, Rana_clamitans)
 tissue_conc_ugg	- amphibian tissue concentration in ug/g

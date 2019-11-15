@@ -381,7 +381,7 @@ summary {
 <hr />
 <div id="introduction" class="section level1">
 <h1><strong>Introduction</strong></h1>
-<p>The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.</p>
+<p>The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski et al. (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.</p>
 <table>
 <colgroup>
 <col width="21%"></col>
@@ -651,7 +651,7 @@ summary {
 ##  3rd Qu.: 0.97824   3rd Qu.:3.25  
 ##  Max.   :32.47385   Max.   :4.00  
 ## </code></pre>
-<p>The <em>in vitro</em> derived constants were assessed for their precitability by exposing Fowler’s toads (<em>Anaxyrus fowleri</em>) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler’s toad experiment along with the tissue concentrations from data set 1; this data set is used in subsequent steps.</p>
+<p>The <em>in vitro</em> derived constants were assessed for their precitability by exposing Fowler’s toads (<em>Anaxyrus fowleri</em>) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler’s toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.</p>
 </div>
 <div id="metabolites-data-set-merged" class="section level4">
 <h4><strong>Metabolites Data Set (merged)</strong></h4>
@@ -2367,7 +2367,7 @@ dermal_routes_merge &lt;- dermal_routes_subset10[ ,order(names(dermal_routes_sub
 </div>
 <div id="final-product" class="section level1">
 <h1><strong>Final Product</strong></h1>
-<p>The combined data set was examined to ensure validity. Minor alterations were made to standardize names of the application types and chemicals.</p>
+<p>Minor alterations were made to the final collated data set to standardize names of the application types and chemicals.</p>
 <pre class="r"><code>amphib_dermal_collated &lt;- combined_data6
 
 colnames(amphib_dermal_collated)</code></pre>
@@ -2472,7 +2472,7 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ## </code></pre>
 <p><br></p>
 <hr />
-<p>Session Information:</p>
+<p>Session Information</p>
 <pre><code>## R version 3.6.1 (2019-07-05)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
 ## Running under: Windows 10 x64 (build 16299)

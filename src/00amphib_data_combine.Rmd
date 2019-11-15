@@ -14,7 +14,7 @@ author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ
 **Introduction**
 ========================================================
 
-The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
+The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski et al. (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
 
 | Manuscript | Data Set (Original Source Link) | Data Set (Repo Link) | Additional Data Sets |
 | --------------------- |:-------------------------- |:------------------------ |:--------------------------|
@@ -191,7 +191,7 @@ colnames(dag2016_metabolite0)
 summary(dag2016_metabolite0)
 ```
 
-The *in vitro* derived constants were assessed for their precitability by exposing Fowler's toads (*Anaxyrus fowleri*) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler's toad experiment along with the tissue concentrations from data set 1; this data set is used in subsequent steps.
+The *in vitro* derived constants were assessed for their precitability by exposing Fowler's toads (*Anaxyrus fowleri*) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler's toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2017 metabolite study
 dag2016_metabolite_merge_file <- paste(amphibdir_data_in,"dag2016_data_metabolites_4merge.csv", sep="")
@@ -1047,7 +1047,7 @@ dim(combined_data6)
 
 **Final Product**
 =============================================================
-The combined data set was examined to ensure validity. Minor alterations were made to standardize names of the application types and chemicals.
+Minor alterations were made to the final collated data set to standardize names of the application types and chemicals.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 amphib_dermal_collated <- combined_data6
 
@@ -1113,7 +1113,7 @@ summary(amphib_dermal_collated)
 
 ***
 
-Session Information:
+Session Information
 ```{r eval = TRUE, echo = FALSE}
 sessionInfo()
 ```

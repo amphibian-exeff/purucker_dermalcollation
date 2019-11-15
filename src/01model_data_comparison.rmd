@@ -64,8 +64,8 @@ $$TIM = \frac{AR * SA * SAF * DAF}{BW}$$
 colnames(combined_data)
 n <- length(combined_data$tissue_conc_ugg)
 
-# #bird model with perez body weight
-# # we dont care about perez body weights because they are based on large pigeons
+# bird model with perez body weight
+#   we dont care about perez body weights because they are based on large pigeons
 # sa_bird_perez <- 65.15 * (body_weight ^ 0.559)
 ```
 
@@ -305,3 +305,9 @@ sa_comparison_filename <- paste(amphibdir_graphics,"sa_comparison.png",sep='')
 ggsave(sa_comparison_filename, device="png", width=4, height=4)
 ```
 
+
+
+Session Information
+```{r eval = TRUE, echo = FALSE}
+sessionInfo()
+```
