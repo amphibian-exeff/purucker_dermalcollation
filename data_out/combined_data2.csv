@@ -591,12 +591,12 @@
 "590",2.91e-06,"Indirect",1.2054,"tdn",8,0,"BAT10-3",3.640657566,"PLE","dag_dehydration","Fowlers toad",0.722003836
 "591",2.91e-06,"Indirect",0.9862,"tdn",8,0,"BAT10-4",3.0485444,"PLE","dag_dehydration","Fowlers toad",0.693917992
 "592",2.91e-06,"Indirect",0.9313,"tdn",8,0,"BAT10-5",3.77031985,"PLE","dag_dehydration","Fowlers toad",0.514549742
-"593",0.05,"soil",48.93,"Malathion",24,NA,"sal1",NA,NA,"hr2008","Ambystoma_tigrinum",1.46
-"594",0.05,"soil",50.92,"Malathion",24,NA,"sal2",NA,NA,"hr2008","Ambystoma_tigrinum",1.61
-"595",0.05,"soil",44.15,"Malathion",24,NA,"sal3",NA,NA,"hr2008","Ambystoma_tigrinum",0.35
-"596",0.05,"soil",20.89,"Malathion",48,NA,"sal4",NA,NA,"hr2008","Ambystoma_tigrinum",3.73
-"597",0.05,"soil",47.59,"Malathion",48,NA,"sal5",NA,NA,"hr2008","Ambystoma_tigrinum",0.39
-"598",0.05,"soil",46.26,"Malathion",48,NA,"sal6",NA,NA,"hr2008","Ambystoma_tigrinum",1.42
-"599",0.05,"soil",39.07,"Malathion",48,NA,"sal7",NA,NA,"hr2008","Ambystoma_tigrinum",1.47
-"600",0.05,"soil",45.8,"Malathion",48,NA,"sal8",NA,NA,"hr2008","Ambystoma_tigrinum",0.05
-"601",0.05,"soil",49.98,"Malathion",48,NA,"sal9",NA,NA,"hr2008","Ambystoma_tigrinum",0.19
+"593",5e-05,"soil",48.93,"Malathion",24,NA,"sal1",NA,NA,"hr2008","Ambystoma_tigrinum",1.46
+"594",5e-05,"soil",50.92,"Malathion",24,NA,"sal2",NA,NA,"hr2008","Ambystoma_tigrinum",1.61
+"595",5e-05,"soil",44.15,"Malathion",24,NA,"sal3",NA,NA,"hr2008","Ambystoma_tigrinum",0.35
+"596",5e-05,"soil",20.89,"Malathion",48,NA,"sal4",NA,NA,"hr2008","Ambystoma_tigrinum",3.73
+"597",5e-05,"soil",47.59,"Malathion",48,NA,"sal5",NA,NA,"hr2008","Ambystoma_tigrinum",0.39
+"598",5e-05,"soil",46.26,"Malathion",48,NA,"sal6",NA,NA,"hr2008","Ambystoma_tigrinum",1.42
+"599",5e-05,"soil",39.07,"Malathion",48,NA,"sal7",NA,NA,"hr2008","Ambystoma_tigrinum",1.47
+"600",5e-05,"soil",45.8,"Malathion",48,NA,"sal8",NA,NA,"hr2008","Ambystoma_tigrinum",0.05
+"601",5e-05,"soil",49.98,"Malathion",48,NA,"sal9",NA,NA,"hr2008","Ambystoma_tigrinum",0.19

@@ -26,12 +26,12 @@ The purpose of this script is to combine the data sets from Van Meter et al. (20
 | <a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a>| <a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> exposure_experiment.csv </a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_metabolites_4merge.csv"> dag2016_data_metabolites_4merge.csv </a>  ||
 | <a href= "http://www.publish.csiro.au/en/EN18163">Glinski et al. 2018c (biomarkers) | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv</a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2018_data_biomarkers.csv"> dag2018_data_biomarkers.csv </a> | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv) |
 | Glinski et al. 2019  (dermal routes) | <a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs"> Water_soil.csv </a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2019_dermal_routes.csv"> dag2019_dermal_routes.csv </a> | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/Dermal_routes_weights.csv">Dermal_routes_weights.csv</a> (weights) |
-| <a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008 | | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/hr2008_data.csv"> hr2008_data.csv </a>||
+| <a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008 |<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/pdf/HensonRamseyetal2008_data.pdf"> HensonRamseyetal2008_data.pdf </a> | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/hr2008_data.csv"> hr2008_data.csv </a>||
 
   
 <br><br>
 
-***
+***     
 **Computational environment**
 ========================================================
 This repository can be found at: 
@@ -303,16 +303,16 @@ app_rates <- read.table(app_rates_file, header = TRUE, sep = ",")
 ```
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-kable(app_rates[, 2:8]) %>%
+kable(app_rates[, 2:10]) %>%
   kable_styling("striped", full_width = F) %>%
   pack_rows("Van Meter et al. 2014/2015", 1, 5) %>%
   pack_rows("Van Meter et al. 2016", 6, 10) %>%
-  pack_rows("Van Meter et al. 2018", 11, 24) %>%
-  pack_rows("Henson-Ramsey et al. 2008", 25, 25) %>%
-  pack_rows("Glinski et al. 2018a", 26, 30) %>%
-  pack_rows("Glinski et al. 2018b", 31, 33) %>%
-  pack_rows("Glinski et al. 2018c", 34, 39) %>%
-  pack_rows("Glinski et al. 2019", 40, 42)  
+  pack_rows("Van Meter et al. 2018", 11, 15) %>%
+  pack_rows("Henson-Ramsey et al. 2008", 16, 16) %>%
+  pack_rows("Glinski et al. 2018a", 17, 21) %>%
+  pack_rows("Glinski et al. 2018b", 22, 24) %>%
+  pack_rows("Glinski et al. 2018c", 25, 30) %>%
+  pack_rows("Glinski et al. 2020", 31, 33)  
 ```
 <br><br>
  

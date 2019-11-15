@@ -591,15 +591,15 @@
 "590",2.91e-06,"indirect",1.2054,"triadimefon",8,0,"BAT10-3",3.640657566,"PLE","dag_dehydration","Fowlers toad",0.722003836
 "591",2.91e-06,"indirect",0.9862,"triadimefon",8,0,"BAT10-4",3.0485444,"PLE","dag_dehydration","Fowlers toad",0.693917992
 "592",2.91e-06,"indirect",0.9313,"triadimefon",8,0,"BAT10-5",3.77031985,"PLE","dag_dehydration","Fowlers toad",0.514549742
-"593",0.05,"soil",48.93,"malathion",24,NA,"sal1",NA,NA,"hr2008","Ambystoma_tigrinum",1.46
-"594",0.05,"soil",50.92,"malathion",24,NA,"sal2",NA,NA,"hr2008","Ambystoma_tigrinum",1.61
-"595",0.05,"soil",44.15,"malathion",24,NA,"sal3",NA,NA,"hr2008","Ambystoma_tigrinum",0.35
-"596",0.05,"soil",20.89,"malathion",48,NA,"sal4",NA,NA,"hr2008","Ambystoma_tigrinum",3.73
-"597",0.05,"soil",47.59,"malathion",48,NA,"sal5",NA,NA,"hr2008","Ambystoma_tigrinum",0.39
-"598",0.05,"soil",46.26,"malathion",48,NA,"sal6",NA,NA,"hr2008","Ambystoma_tigrinum",1.42
-"599",0.05,"soil",39.07,"malathion",48,NA,"sal7",NA,NA,"hr2008","Ambystoma_tigrinum",1.47
-"600",0.05,"soil",45.8,"malathion",48,NA,"sal8",NA,NA,"hr2008","Ambystoma_tigrinum",0.05
-"601",0.05,"soil",49.98,"malathion",48,NA,"sal9",NA,NA,"hr2008","Ambystoma_tigrinum",0.19
+"593",5e-05,"soil",48.93,"malathion",24,NA,"sal1",NA,NA,"hr2008","Ambystoma_tigrinum",1.46
+"594",5e-05,"soil",50.92,"malathion",24,NA,"sal2",NA,NA,"hr2008","Ambystoma_tigrinum",1.61
+"595",5e-05,"soil",44.15,"malathion",24,NA,"sal3",NA,NA,"hr2008","Ambystoma_tigrinum",0.35
+"596",5e-05,"soil",20.89,"malathion",48,NA,"sal4",NA,NA,"hr2008","Ambystoma_tigrinum",3.73
+"597",5e-05,"soil",47.59,"malathion",48,NA,"sal5",NA,NA,"hr2008","Ambystoma_tigrinum",0.39
+"598",5e-05,"soil",46.26,"malathion",48,NA,"sal6",NA,NA,"hr2008","Ambystoma_tigrinum",1.42
+"599",5e-05,"soil",39.07,"malathion",48,NA,"sal7",NA,NA,"hr2008","Ambystoma_tigrinum",1.47
+"600",5e-05,"soil",45.8,"malathion",48,NA,"sal8",NA,NA,"hr2008","Ambystoma_tigrinum",0.05
+"601",5e-05,"soil",49.98,"malathion",48,NA,"sal9",NA,NA,"hr2008","Ambystoma_tigrinum",0.19
 "602",2.29e-05,"soil",0.8722,"atrazine",2,0,"atrazine_2hr_1",NA,NA,"dag_metabolites","Fowlers toad",3.06820272
 "603",2.29e-05,"soil",0.89,"atrazine",2,0,"atrazine_2hr_2",NA,NA,"dag_metabolites","Fowlers toad",3.689639699
 "604",2.29e-05,"soil",0.5668,"atrazine",2,0,"atrazine_2hr_3",NA,NA,"dag_metabolites","Fowlers toad",4.701165885
