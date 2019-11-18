@@ -2149,31 +2149,31 @@ colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.
 ##  3rd Qu.: 5.511   3rd Qu.:0.5173   3rd Qu.:0.6209  
 ##  Max.   :55.106   Max.   :5.1730   Max.   :6.2090  
 ## </code></pre>
-<p>Due to a computational error in the original study, the application rates were updated.</p>
-<pre class="r"><code>#dag_biomarker2_update &lt;- replace.value(dag_biomarker2, &quot;app.rate.met&quot;, from = 55.106, to= as.integer(58356.810), verbose = FALSE)
-#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.met&quot;, from = 5.5106, to= as.integer(5835.681), verbose = FALSE)
-#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.tdn&quot;, from = 5.173, to= as.integer(64723.010), verbose = FALSE)
-#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.tdn&quot;, from = .5173, to= as.integer(6472.301), verbose = FALSE)
-#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.bif&quot;, from = 6.209, to= as.integer(68967.140), verbose = FALSE)
-#dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.bif&quot;, from = .6209, to= as.integer(6896.714), verbose = FALSE)</code></pre>
+<p>The application rates were converted from ug/cm<sup>2</sup> to g/cm<sup>2</sup>.</p>
+<pre class="r"><code>dag_biomarker2_update &lt;- replace.value(dag_biomarker2, &quot;app.rate.met&quot;, from = 55.106, to= 5.5106e-5, verbose = TRUE)
+dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.met&quot;, from = 5.5106, to= 5.5106e-6, verbose = FALSE)
+dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.tdn&quot;, from = 5.173, to= 5.173e-6, verbose = FALSE)
+dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.tdn&quot;, from = .5173, to= 5.173e-7, verbose = FALSE)
+dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.bif&quot;, from = 6.209, to= 6.209e-6, verbose = FALSE)
+dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.bif&quot;, from = .6209, to= 6.209e-7, verbose = FALSE)</code></pre>
 <p>A one-to-one merge was conducted based on the unique sample id for each measured pesticide (either bifenthrin, metolachlor, or triadimefon) to join the original biomarkers data set and the data set containing the application rates and soil concentrations. Vectors containing the application rates and soil concentrations were joined to the original data set.</p>
 <pre class="r"><code># bif extraction
 dag_biomarker_subset_bif &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;bif&quot;, ]
-dag_biomarker2_subset_bif &lt;- dag_biomarker2[dag_biomarker2$BIF != 0, ]
+dag_biomarker2_subset_bif &lt;- dag_biomarker2_update[dag_biomarker2_update$BIF != 0, ]
 
 dag_biomarker_bif_merge &lt;- merge(x = dag_biomarker_subset_bif, y = dag_biomarker2_subset_bif,
                                 by.x = &quot;sample_id&quot;, by.y = &quot;SAMPLE&quot;, all.x = TRUE)
 
 # met extraction
 dag_biomarker_subset_met &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;met&quot;, ]
-dag_biomarker2_subset_met &lt;- dag_biomarker2[dag_biomarker2$Met != 0, ]
+dag_biomarker2_subset_met &lt;- dag_biomarker2_update[dag_biomarker2_update$Met != 0, ]
 
 dag_biomarker_met_merge &lt;- merge(x = dag_biomarker_subset_met, y = dag_biomarker2_subset_met,
                                  by.x = &quot;sample_id&quot;, by.y = &quot;SAMPLE&quot;, all.x = TRUE)
 
 # tdt extraction
 dag_biomarker_subset_tdt &lt;- dag_biomarker_subset[dag_biomarker_subset$pesticide == &quot;tdt&quot;, ]
-dag_biomarker2_subset_tdt &lt;- dag_biomarker2[dag_biomarker2$TDN != 0, ]
+dag_biomarker2_subset_tdt &lt;- dag_biomarker2_update[dag_biomarker2_update$TDN != 0, ]
 
 dag_biomarker_tdt_merge &lt;- merge(x = dag_biomarker_subset_tdt, y = dag_biomarker2_subset_tdt,
                                  by.x = &quot;sample_id&quot;, by.y = &quot;SAMPLE&quot;, all.x = TRUE)
@@ -2373,8 +2373,8 @@ colnames(amphib_dermal_collated)</code></pre>
 ## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 <pre class="r"><code># check to see if everything ok
 summary(amphib_dermal_collated$app_rate_g_cm2) # units issues</code></pre>
-<pre><code>##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NA&#39;s 
-##  0.00000  0.00000  0.00002  2.36403  0.00004 55.10600       24</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+## 1.0e-06 3.0e-06 1.4e-05 1.8e-05 2.4e-05 7.0e-05      24</code></pre>
 <pre class="r"><code>summary(amphib_dermal_collated$body_weight_g) # 60 NAs</code></pre>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##  0.1879  1.3043  2.1247  3.3800  3.0412 50.9200</code></pre>
@@ -2434,14 +2434,14 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 </div>
 <div id="variable-summaries" class="section level4">
 <h4><strong>Variable Summaries</strong></h4>
-<pre><code>##  app_rate_g_cm2        application  body_weight_g               chemical  
-##  Min.   : 0.00000   indirect :396   Min.   : 0.1879   triadimefon   :223  
-##  1st Qu.: 0.00000   overspray: 45   1st Qu.: 1.3043   atrazine      :191  
-##  Median : 0.00002   soil     :573   Median : 2.1247   metolachlor   :154  
-##  Mean   : 2.36403                   Mean   : 3.3800   bifenthrin    : 72  
-##  3rd Qu.: 0.00004                   3rd Qu.: 3.0412   fipronil      : 71  
-##  Max.   :55.10600                   Max.   :50.9200   chlorothalonil: 66  
-##  NA&#39;s   :24                                           (Other)       :237  
+<pre><code>##  app_rate_g_cm2       application  body_weight_g               chemical  
+##  Min.   :1.0e-06   indirect :396   Min.   : 0.1879   triadimefon   :223  
+##  1st Qu.:3.0e-06   overspray: 45   1st Qu.: 1.3043   atrazine      :191  
+##  Median :1.4e-05   soil     :573   Median : 2.1247   metolachlor   :154  
+##  Mean   :1.8e-05                   Mean   : 3.3800   bifenthrin    : 72  
+##  3rd Qu.:2.4e-05                   3rd Qu.: 3.0412   fipronil      : 71  
+##  Max.   :7.0e-05                   Max.   :50.9200   chlorothalonil: 66  
+##  NA&#39;s   :24                                          (Other)       :237  
 ##   exp_duration     formulation             sample_id   soil_conc_ugg     
 ##  Min.   : 2.000   Min.   :0.00000   ATZ_ATZT    :  6   Min.   :  0.1125  
 ##  1st Qu.: 8.000   1st Qu.:0.00000   ATZD_ATZT   :  6   1st Qu.:  2.0709  

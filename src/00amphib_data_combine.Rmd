@@ -754,14 +754,14 @@ dim(dag_biomarker2)
 names(dag_biomarker2)
 summary(dag_biomarker2)
 ```
-Due to a computational error in the original study, the application rates were updated.
+The application rates were converted from ug/cm^2^ to g/cm^2^.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-#dag_biomarker2_update <- replace.value(dag_biomarker2, "app.rate.met", from = 55.106, to= as.integer(58356.810), verbose = FALSE)
-#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.met", from = 5.5106, to= as.integer(5835.681), verbose = FALSE)
-#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = 5.173, to= as.integer(64723.010), verbose = FALSE)
-#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = .5173, to= as.integer(6472.301), verbose = FALSE)
-#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = 6.209, to= as.integer(68967.140), verbose = FALSE)
-#dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = .6209, to= as.integer(6896.714), verbose = FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2, "app.rate.met", from = 55.106, to= 5.5106e-5, verbose = TRUE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.met", from = 5.5106, to= 5.5106e-6, verbose = FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = 5.173, to= 5.173e-6, verbose = FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = .5173, to= 5.173e-7, verbose = FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = 6.209, to= 6.209e-6, verbose = FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = .6209, to= 6.209e-7, verbose = FALSE)
 
 ```
 
@@ -769,21 +769,21 @@ A one-to-one merge was conducted based on the unique sample id for each measured
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # bif extraction
 dag_biomarker_subset_bif <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "bif", ]
-dag_biomarker2_subset_bif <- dag_biomarker2[dag_biomarker2$BIF != 0, ]
+dag_biomarker2_subset_bif <- dag_biomarker2_update[dag_biomarker2_update$BIF != 0, ]
 
 dag_biomarker_bif_merge <- merge(x = dag_biomarker_subset_bif, y = dag_biomarker2_subset_bif,
                                 by.x = "sample_id", by.y = "SAMPLE", all.x = TRUE)
 
 # met extraction
 dag_biomarker_subset_met <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "met", ]
-dag_biomarker2_subset_met <- dag_biomarker2[dag_biomarker2$Met != 0, ]
+dag_biomarker2_subset_met <- dag_biomarker2_update[dag_biomarker2_update$Met != 0, ]
 
 dag_biomarker_met_merge <- merge(x = dag_biomarker_subset_met, y = dag_biomarker2_subset_met,
                                  by.x = "sample_id", by.y = "SAMPLE", all.x = TRUE)
 
 # tdt extraction
 dag_biomarker_subset_tdt <- dag_biomarker_subset[dag_biomarker_subset$pesticide == "tdt", ]
-dag_biomarker2_subset_tdt <- dag_biomarker2[dag_biomarker2$TDN != 0, ]
+dag_biomarker2_subset_tdt <- dag_biomarker2_update[dag_biomarker2_update$TDN != 0, ]
 
 dag_biomarker_tdt_merge <- merge(x = dag_biomarker_subset_tdt, y = dag_biomarker2_subset_tdt,
                                  by.x = "sample_id", by.y = "SAMPLE", all.x = TRUE)
