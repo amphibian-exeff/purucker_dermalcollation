@@ -758,14 +758,14 @@ dim(dag_biomarker2)
 names(dag_biomarker2)
 summary(dag_biomarker2)
 ```
-The application rates were converted from ug/cm^2^ to g/cm^2^.
+The application rates were converted from mg to g/cm^2^.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-dag_biomarker2_update <- replace.value(dag_biomarker2, "app.rate.met", from = 55.106, to= 5.5106e-5, verbose = TRUE)
-dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.met", from = 5.5106, to= 5.5106e-6, verbose = FALSE)
-dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = 5.173, to= 5.173e-6, verbose = FALSE)
-dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from = .5173, to= 5.173e-7, verbose = FALSE)
-dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = 6.209, to= 6.209e-6, verbose = FALSE)
-dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from = .6209, to= 6.209e-7, verbose = FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2, "app.rate.met", from=55.106, to=3.062e-5, verbose=TRUE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.met", from=5.5106, to=3.062e-6, verbose=FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from=5.173, to=2.87e-6, verbose=FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.tdn", from=.5173, to=2.87e-7, verbose=FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from=6.209, to=3.45e-6, verbose=FALSE)
+dag_biomarker2_update <- replace.value(dag_biomarker2_update, "app.rate.bif", from=.6209, to=3.45e-7, verbose=FALSE)
 
 ```
 
