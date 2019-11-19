@@ -7,15 +7,16 @@ author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ
 #ctrl-shift k to knit r markdown
 #https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
 ```
+
 <br><br>
 
 ***
 
 **Overview**
 ======================================================================
-A comparison between the proposed amphibian dermal exposure model (DUST) from Draft 8/19/15 and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted. The proposed DUST model has a function for exposure by direct spray and a function for exposure from foliage (indirect exposure).  
+A comparison between the Terrestrial Investigation Model (TIM) and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted.
 
-Collected amphibian dermal exposure data is from 9 studies. Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (Imidacloprid, Pendimethalin, Atrazine, Fipronil, and Triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (Atrazine, Metolachlor, 2,4-D, Malathion, Propiconazole) on juvenile green frogs. Glinski et al. 2018a data includes exposure to 5 pesticides (Atrazine, Triadimefon, Metolachlor, Chlorothalonil, Imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). Glinski et al. 2018b data consists of exposure to 3 pesticides (Atrazine, Triadimefon, Fopronil) on Fowler's toads. Glinski et al. 2018c data includes exposure to single, double, or triple pesticide mixtures (Bifenthrin, Metolachlor, Triadimefon) on Southern leopard frogs.  Glinski et al. 2020 data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. Henson-Ramsey 2008 data consists of exposure to malathion for Tiger salamanders.
+Collected amphibian dermal exposure data is from 9 studies. Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, and triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (atrazine, metolachlor, 2,4-D, malathion, propiconazole) on juvenile green frogs. Glinski et al. 2018a (Dehydration) data includes exposure to 5 pesticides (atrazine, triadimefon, metolachlor, chlorothalonil, imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). Glinski et al. 2018b (Metabolites) data consists of exposure to 3 pesticides (atrazine, triadimefon, fipronil) on Fowler's toads. Glinski et al. 2018c (Biomarkers) data includes exposure to single, double, or triple pesticide mixtures (bifenthrin, metolachlor, triadimefon) on Southern leopard frogs.  Glinski et al. 2020 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. Henson-Ramsey 2008 data consists of exposure to malathion for Tiger salamanders.
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -23,6 +24,7 @@ Collected amphibian dermal exposure data is from 9 studies. Van Meter et al. 201
 library(ggplot2)
 require(gridExtra)
 library(reshape2)
+
 
 # tom epa linux
 if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
@@ -63,72 +65,6 @@ summary(combined_data)
 ```{r eval = TRUE, echo = TRUE}
 combined_data <- combined_data[!(combined_data$source == "dag_dermal_routes"),]
 ```
-
-
-~~ DELETE or PUT IN APPENDIX AT BOTTOM (unless decide it is useful elsewhere in the Rmd)  
-
-Summary of app_rate       
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-summary(combined_data$app_rate_g_cm2)
-```
-
-Summary of body_weight
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-summary(combined_data$body_weight_g)
-```
-
-Summary of tissue_conc
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-summary(combined_data$tissue_conc_ugg)
-```
-
-~~ DELETE or PUT IN APPENDIX AT BOTTOM (unless decide it is useful elsewhere in the Rmd)
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-# App Rates
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$app_rate_g_cm2[combined_data$source == "rvm2015"], xlab = "Application Rate", main = "Van Meter 2014/15", col = "#feb24c")
-hist(combined_data$app_rate_g_cm2[combined_data$source == "rvm2016"], xlab = "Application Rate", main = "Van Meter 2016", col = "#feb24c")
-hist(combined_data$app_rate_g_cm2[combined_data$source == "rvm2017"], xlab = "Application Rate", main = "Van Meter 2017", col = "#feb24c")
-hist(combined_data$app_rate_g_cm2[combined_data$source == "hr2008"], xlab = "Application Rate", main = "Henson-Ramsey 2008", col = "#feb24c")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$app_rate_g_cm2[combined_data$source == "dag_dehydration"], xlab = "Application Rate", main = "Glinski (Dehydration)", col = "#feb24c")
-hist(combined_data$app_rate_g_cm2[combined_data$source == "dag_metabolites"], xlab = "Application Rate", main = "Glinski (Metabolites)", col = "#feb24c")
-hist(combined_data$app_rate_g_cm2[combined_data$source == "dag_biomarker"], xlab = "Application Rate", main = "Glinski (Biomarkers)", col = "#feb24c")
-#hist(combined_data$app_rate_g_cm2[combined_data$source == "dag_dermal_routes"], xlab = "Application Rate", main = "Glinski (Dermal Routes)", col = "#feb24c")
-
-
-# Body Weight
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$body_weight_g[combined_data$source == "rvm2015"], xlab = "Body Weight", main = "Van Meter 2014/15", col = "#969696")
-hist(combined_data$body_weight_g[combined_data$source == "rvm2016"], xlab = "Body Weight", main = "Van Meter 2016", col = "#969696")
-hist(combined_data$body_weight_g[combined_data$source == "rvm2017"], xlab = "Body Weight", main = "Van Meter 2017", col = "#969696")
-hist(combined_data$body_weight_g[combined_data$source == "hr2008"], xlab = "Body Weight", main = "Henson-Ramsey 2008", col = "#969696")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$body_weight_g[combined_data$source == "dag_dehydration"], xlab = "Body Weight", main = "Glinski (Dehydration)", col = "#969696")
-hist(combined_data$body_weight_g[combined_data$source == "dag_metabolites"], xlab = "Body Weight", main = "Glinski (Metabolites)", col = "#969696")
-hist(combined_data$body_weight_g[combined_data$source == "dag_biomarker"], xlab = "Body Weight", main = "Glinski (Biomarkers)", col = "#969696")
-#hist(combined_data$body_weight_g[combined_data$source == "dag_dermal_routes"], xlab = "Body Weight", main = "Glinski (Dermal Routes)", col = "#969696")
-
-# Tissue Concentration
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tissue_conc_ugg[combined_data$source == "rvm2015"], xlab = "Tissue Concentration", main = "Van Meter 2014/15", col = "#fcc5c0")
-hist(combined_data$tissue_conc_ugg[combined_data$source == "rvm2016"], xlab = "Tissue Concentration", main = "Van Meter 2016", col = "#fcc5c0")
-hist(combined_data$tissue_conc_ugg[combined_data$source == "rvm2017"], xlab = "Tissue Concentration", main = "Van Meter 2017", col = "#fcc5c0")
-hist(combined_data$tissue_conc_ugg[combined_data$source == "hr2008"], xlab = "Tissue Concentration", main = "Henson-Ramsey 2008", col = "#fcc5c0")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tissue_conc_ugg[combined_data$source == "dag_dehydration"], xlab = "Tissue Concentration", main = "Glinski (Dehydration)", col = "#fcc5c0")
-hist(combined_data$tissue_conc_ugg[combined_data$source == "dag_metabolites"], xlab = "Tissue Concentration", main = "Glinski (Metabolites)", col = "#fcc5c0")
-hist(combined_data$tissue_conc_ugg[combined_data$source == "dag_biomarker"], xlab = "Tissue Concentration", main = "Glinski (Biomarkers)", col = "#fcc5c0")
-#hist(combined_data$tissue_conc_ugg[combined_data$source == "dag_dermal_routes"], xlab = "Tissue Concentration", main = "Glinski (Dermal Routes)", col = "#fcc5c0")
-```
-
-
 <br><br>
 
 ***
@@ -152,7 +88,6 @@ n <- length(combined_data$tissue_conc_ugg)
 ***
 
 ### **TIM Default Calculation**
-*Direct Exposure*
 ```{r eval = TRUE, echo = TRUE}
 # Equation 1: TIM Default Values 
 app_rate <- combined_data$app_rate_g_cm2
@@ -172,103 +107,69 @@ tim_direct_default <- combined_data$tim_direct_default
 ```
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-hist(tim_direct_default, main = "TIM Default (Direct)", col = "#7a0177")
+hist(tim_direct_default, main = "TIM Default", xlab = "Dermal Exposure Dose", col = "#636363")
 ```
 
 
 ~~~~ MAYBE DELETE THIS OR PUT IN APPENDIX AT BOTTOM UNLESS USEFUL HERE/ELSEWHERE
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tim_direct_default[combined_data$source == "rvm2015"], main = "TIM Default (Direct)", xlab = "Van Meter 2014/15", col = "#7a0177")
-hist(combined_data$tim_direct_default[combined_data$source == "rvm2016"], main = "TIM Default (Direct)", xlab = "Van Meter 2016", col = "#7a0177")
-hist(combined_data$tim_direct_default[combined_data$source == "rvm2017"], main = "TIM Default (Direct)", xlab = "Van Meter 2017", col = "#7a0177")
-hist(combined_data$tim_direct_default[combined_data$source == "hr2008"], main = "TIM Default (Direct)", xlab = "Henson-Ramsey 2008", col = "#7a0177")
+hist(combined_data$tim_direct_default[combined_data$source == "rvm2015"], xlab = "Dermal Exposure Dose", main = "Van Meter 2014/15", col = "#636363")
+hist(combined_data$tim_direct_default[combined_data$source == "rvm2016"], xlab = "Dermal Exposure Dose", main = "Van Meter 2016", col = "#636363")
+hist(combined_data$tim_direct_default[combined_data$source == "rvm2017"], xlab = "Dermal Exposure Dose", main = "Van Meter 2017", col = "#636363")
+hist(combined_data$tim_direct_default[combined_data$source == "hr2008"], xlab = "Dermal Exposure Dose", main = "Henson-Ramsey 2008", col = "#636363")
 
 
 layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tim_direct_default[combined_data$source == "dag_dehydration"], main = "TIM Default (Direct)", xlab = "Glinski (Dehydration)", col = "#7a0177")
-hist(combined_data$tim_direct_default[combined_data$source == "dag_metabolites"], main = "TIM Default (Direct)", xlab = "Glinski (Metabolites)", col = "#7a0177")
-hist(combined_data$tim_direct_default[combined_data$source == "dag_biomarker"], main = "TIM Default (Direct)", xlab = "Glinski (Biomarkers)", col = "#7a0177")
-#hist(combined_data$tim_direct_default[combined_data$source == "dag_dermal_routes"], main = "TIM Default (Direct)", xlab = "Glinski (Dermal Routes)", col = "#7a0177")
+hist(combined_data$tim_direct_default[combined_data$source == "dag_dehydration"], xlab = "Dermal Exposure Dose", main = "Glinski (Dehydration)", col = "#636363")
+hist(combined_data$tim_direct_default[combined_data$source == "dag_metabolites"], xlab = "Dermal Exposure Dose", main = "Glinski (Metabolites)", col = "#636363")
+hist(combined_data$tim_direct_default[combined_data$source == "dag_biomarker"], xlab = "Dermal Exposure Dose", main = "Glinski (Biomarkers)", col = "#636363")
+#hist(combined_data$tim_direct_default[combined_data$source == "dag_dermal_routes"], xlab = "Dermal Exposure Dose", main = "Glinski (Dermal Routes)", col = "#636363")
 ```
 
 
 ### **TIM Default Ratios**
-~~ blurb about how we can assess the ratios...1:1 would be perfect agreement
+~~ blurb about how we can assess the ratios and talk about below scatterplots...1:1 would be perfect agreement
 ```{r eval = TRUE, echo = TRUE}
 # Calculate Equation 1b: TIM Default Ratios
 combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tissue_conc
 ```
 
-~~ talk about this range in values, and talk about the histogram (is the histogram helpful?  scatterplot better?)
+~~ talk about this range in values (or possibly exclude if it isn't helpful?)
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Range
 print(paste(min(combined_data$tim_direct_default_ratios), "-",   max(combined_data$tim_direct_default_ratios)))
 ```
 
+
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-hist(combined_data$tim_direct_default_ratios, main = "Histogram of TIM Default Ratios", col = "#2b8cbe", xlab = "TIM Default Ratios")
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$source)) + 
+  geom_point() + 
+  labs(title = "Modeled vs. Measured, by Study", x = "Measured Tissue Concentrations", y = "TIM Default") +
+  geom_abline(intercept = 0, slope = 1) + 
+  theme(legend.position = "bottom", legend.title = element_blank())
 ```
 
-
-~~~~ MAYBE DELETE THIS OR PUT IN APPENDIX AT BOTTOM UNLESS USEFUL HERE/ELSEWHERE (think scatterplots are probably better?)
-```{r eval = TRUE, echo = FALSE}
-# TIM Default Ratios
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2015"], main = "TIM Default Ratios", xlab = "Van Meter 2014/15", col = "#2b8cbe")
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2016"], main = "TIM Default Ratios", xlab = "Van Meter 2016", col = "#2b8cbe")
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "rvm2017"], main = "TIM Default Ratios", xlab = "Van Meter 2017", col = "#2b8cbe")
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "hr2008"], main = "TIM Default Ratios", xlab = "Henson-Ramsey 2008", col = "#2b8cbe")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "dag_dehydration"], main = "TIM Default Ratios", xlab = "Glinski (Dehydration)", col = "#2b8cbe")
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "dag_metabolites"], main = "TIM Default Ratios", xlab = "Glinski (Metabolites)", col = "#2b8cbe")
-hist(combined_data$tim_direct_default_ratios[combined_data$source == "dag_biomarker"], main = "TIM Default Ratios", xlab = "Glinski (Biomarkers)", col = "#2b8cbe")
-#hist(combined_data$tim_direct_default_ratios[combined_data$source == "dag_dermal_routes"], main = "TIM Default Ratios", xlab = "Glinski (Dermal Routes)", col = "#2b8cbe")
-```
-
-
-~~ Skewed-Right because of Biomarkers data set, or because of another cause? (DELETE MAYBE)
-```{r eval = TRUE, echo = TRUE, include = TRUE}
-# Tissue Concentrations >= 0.10
-large_tissue <- combined_data[combined_data$tissue_conc_ugg >= 0.10, ]
-# Tissue Concentrations < 0.10
-small_tissue <- combined_data[combined_data$tissue_conc_ugg < 0.10, ]
-
-# Compare histograms
-layout(matrix(c(1,2), nrow = 1, ncol = 2, byrow= TRUE)) #set the plotting area into a 1row*2col array
-hist(combined_data$tim_direct_default_ratios[combined_data$tissue_conc_ugg >=0.10], main = "TIM Default Ratios of Obs. with \n Tissue Conc>=.10", xlab = "")
-hist(combined_data$tim_direct_default_ratios[combined_data$tissue_conc_ugg <0.10], main = "TIM Default Ratios of Obs. with \n Tissue Conc <0.10", xlab="")
-
-```
-
-~~ Maybe look into biomarkers data, might be bc of the max application rates?
-
-#### **Scatterplots**
-~~ maybe exclude all the above histograms and just include these scatterplots?
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-# Scatterplots comparing Measured vs. Modeled (Tissue Conc vs. TIM Default)
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "rvm2015"], y = combined_data$tim_direct_default[combined_data$source == "rvm2015"], main = "Van Meter 2014/15", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "rvm2016"], y = combined_data$tim_direct_default[combined_data$source == "rvm2016"], main = "Van Meter 2016", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "rvm2017"], y = combined_data$tim_direct_default[combined_data$source == "rvm2017"], main = "Van Meter 2017", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "hr2008"], y = combined_data$tim_direct_default[combined_data$source == "hr2008"], main = "Henson-Ramsey 2008", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_dehydration"], y = combined_data$tim_direct_default[combined_data$source == "dag_dehydration"], main = "Glinski (Dehydration)", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_metabolites"], y = combined_data$tim_direct_default[combined_data$source == "dag_metabolites"], main = "Glinski (Metabolites)", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_biomarker"], y = combined_data$tim_direct_default[combined_data$source == "dag_biomarker"], main = "Glinski (Biomarkers)", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-#plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_dermal_routes"], y = combined_data$tim_direct_default[combined_data$source == "dag_dermal_routes"], main = "Glinski (Dermal Routes)", xlab= "Measured Tissue Concentrations", ylab = "TIM Default", pch = 20, col = "#fc8d59")
-
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$chemical)) + 
+  geom_point() + 
+  labs(title = "Modeled vs. Measured, by Chemical", x = "Measured Tissue Concentrations", y = "TIM Default") +
+  geom_abline(intercept = 0, slope = 1) +
+  theme(legend.position = "bottom", legend.title = element_blank())
 ```
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$application)) + 
+  geom_point() + 
+  labs(title = "Modeled vs. Measured, by Application Type", x = "Measured Tissue Concentrations", y = "TIM Default") +
+  geom_abline(intercept = 0, slope = 1) +
+  theme(legend.position = "bottom", legend.title = element_blank())
+```
+
 
 ***
 
 ### **TIM Amphibian Calculation**
-*Direct Exposure*  
-
 To gain a better understanding of pesticide risks on amphibians, the dermal exposure dose was also computed with a modified allometric relationship between body weight and surface area that is better suited for amphibians (Hutchison et al. 1968, EPA 2009).
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Equation 2: TIM Amphibians value (Hutchinson body weight)
@@ -282,16 +183,41 @@ sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Calculate Equation 2a: TIM Amphibian
 combined_data$tim_direct_amphib <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
+
+tim_direct_amphib <- combined_data$tim_direct_amphib
 ```
 
-### **TIM Amphibian Ratios**
 
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+hist(tim_direct_amphib, main = "TIM Amphibian", xlab = "Dermal Exposure Dose", col = "#636363")
+```
+
+
+~~~~ MAYBE DELETE THIS OR PUT IN APPENDIX AT BOTTOM UNLESS USEFUL HERE/ELSEWHERE
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
+hist(combined_data$tim_direct_amphib[combined_data$source == "rvm2015"], xlab = "Dermal Exposure Dose", main = "Van Meter 2014/15", col = "#636363")
+hist(combined_data$tim_direct_amphib[combined_data$source == "rvm2016"], xlab = "Dermal Exposure Dose", main = "Van Meter 2016", col = "#636363")
+hist(combined_data$tim_direct_amphib[combined_data$source == "rvm2017"], xlab = "Dermal Exposure Dose", main = "Van Meter 2017", col = "#636363")
+hist(combined_data$tim_direct_amphib[combined_data$source == "hr2008"], xlab = "Dermal Exposure Dose", main = "Henson-Ramsey 2008", col = "#636363")
+
+
+layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
+hist(combined_data$tim_direct_amphib[combined_data$source == "dag_dehydration"], xlab = "Dermal Exposure Dose", main = "Glinski (Dehydration)", col = "#636363")
+hist(combined_data$tim_direct_amphib[combined_data$source == "dag_metabolites"], xlab = "Dermal Exposure Dose", main = "Glinski (Metabolites)", col = "#636363")
+hist(combined_data$tim_direct_amphib[combined_data$source == "dag_biomarker"], xlab = "Dermal Exposure Dose", main = "Glinski (Biomarkers)", col = "#636363")
+#hist(combined_data$tim_direct_amphib[combined_data$source == "dag_dermal_routes"], xlab = "Dermal Exposure Dose", main = "Glinski (Dermal Routes)", col = "#636363")
+```
+
+
+### **TIM Amphibian Ratios**
+~~~ talk about briefly ... A model along the 1:1 line would display perfect agreement with the measured values.  
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Calculate Equation 2b: TIM Amphibian Ratios
 combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
 ```
 
-Shown below, the range of the TIM Amphibian Ratios spans from 0.1064 to 113,033.7779. The histogram is skewed to the right. However, the range of TIM Amphibian Ratios is narrower than that of the TIM Default Ratios. 
+~~ need to include this range?
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Range
 print(paste(min(combined_data$tim_direct_amphib_ratios), "-",   max(combined_data$tim_direct_amphib_ratios)))
@@ -299,67 +225,35 @@ print(paste(min(combined_data$tim_direct_amphib_ratios), "-",   max(combined_dat
 
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-hist(combined_data$tim_direct_amphib_ratios, main = "Histogram of TIM Amphibian Ratios", col = "#31a354", xlab = "TIM Amphibian Ratios")
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$source)) + 
+  geom_point() + 
+  labs(title = "Modeled vs. Measured, by Study", x = "Measured Tissue Concentrations", y = "TIM Amphibian") +
+  geom_abline(intercept = 0, slope = 1) +
+  theme(legend.position = "bottom", legend.title = element_blank())
 ```
 
-
-Likewise to the spread of the TIM Default Ratios, the spread of the TIM Amphibian Ratios can best be explained by the tissue concentration values. For example, lower tissue concentrations (approximately less than 0.10) yield higher ratio values.
-
-
-### **Compare TIM Amphibian Ratios of all Data Sets**
-
-#### **Histograms**
-```{r eval = TRUE, echo = FALSE}
-# TIM Default Ratios
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "rvm2015"], main = "TIM Amphibian Ratios", xlab = "Van Meter 2014/15", col = "#31a354")
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "rvm2016"], main = "TIM Amphibian Ratios", xlab = "Van Meter 2016", col = "#31a354")
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "rvm2017"], main = "TIM Amphibian Ratios", xlab = "Van Meter 2017", col = "#31a354")
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "hr2008"], main = "TIM Amphibian Ratios", xlab = "Henson-Ramsey 2008", col = "#31a354")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "dag_dehydration"], main = "TIM Amphibian Ratios", xlab = "Glinski (Dehydration)", col = "#31a354")
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "dag_metabolites"], main = "TIM Amphibian Ratios", xlab = "Glinski (Metabolites)", col = "#31a354")
-hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "dag_biomarker"], main = "TIM Amphibian Ratios", xlab = "Glinski (Biomarkers)", col = "#31a354")
-#hist(combined_data$tim_direct_amphib_ratios[combined_data$source == "dag_dermal_routes"], main = "TIM Amphibian Ratios", xlab = "Glinski (Dermal Routes)", col = "#31a354")
-```
-
-
-#### **Scatterplots**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-# Scatterplots comparing Measured vs. Modeled (Tissue Conc vs. TIM Amphibian)
-layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "rvm2015"], y = combined_data$tim_direct_amphib[combined_data$source == "rvm2015"], main = "Van Meter 2014/15", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "rvm2016"], y = combined_data$tim_direct_amphib[combined_data$source == "rvm2016"], main = "Van Meter 2016", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "rvm2017"], y = combined_data$tim_direct_amphib[combined_data$source == "rvm2017"], main = "Van Meter 2017", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "hr2008"], y = combined_data$tim_direct_amphib[combined_data$source == "hr2008"], main = "Henson-Ramsey 2008", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-
-
-layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_dehydration"], y = combined_data$tim_direct_amphib[combined_data$source == "dag_dehydration"], main = "Glinski (Dehydration)", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_metabolites"], y = combined_data$tim_direct_amphib[combined_data$source == "dag_metabolites"], main = "Glinski (Metabolites)", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_biomarker"], y = combined_data$tim_direct_amphib[combined_data$source == "dag_biomarker"], main = "Glinski (Biomarkers)", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-#plot(x = combined_data$tissue_conc_ugg[combined_data$source == "dag_dermal_routes"], y = combined_data$tim_direct_amphib[combined_data$source == "dag_dermal_routes"], main = "Glinski (Dermal Routes)", xlab= "Measured Tissue Concentrations", ylab = "TIM Amphibian", pch = 20, col = "#31a354")
-
-```
-```{r eval = TRUE, echo = TRUE, include = TRUE}
-# Tissue Concentrations >= 0.10
-large_tissue <- combined_data[combined_data$tissue_conc_ugg >= 0.10, ]
-summary(large_tissue$tim_direct_amphib_ratios)
-
-
-# Tissue Concentrations < 0.10
-small_tissue <- combined_data[combined_data$tissue_conc_ugg < 0.10, ]
-summary(small_tissue$tim_direct_amphib_ratios)
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$chemical)) + 
+  geom_point() + 
+  labs(title = "Modeled vs. Measured, by Chemical", x = "Measured Tissue Concentrations", y = "TIM Amphibian") +
+  geom_abline(intercept = 0, slope = 1) +
+  theme(legend.position = "bottom", legend.title = element_blank())
 ```
 
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$application)) + 
+  geom_point() + 
+  labs(title = "Modeled vs. Measured, by Application Type", x = "Measured Tissue Concentrations", y = "TIM Amphibian") +
+  geom_abline(intercept = 0, slope = 1) +
+  theme(legend.position = "bottom", legend.title = element_blank())
+```
+<br><br>
 
 ***
 
 **Assessing Model Performance**
 =======================================================
-The TIM Default and TIM Amphibian models, described above, were compared to one another and to the post-exposure amphibian body burdens found in the collated data set in order to assess model performance.
+The TIM Default and TIM Amphibian models, described and shown above, were compared to one another and to the post-exposure amphibian body burdens found in the collated data set in order to assess model performance.
 
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
@@ -370,26 +264,40 @@ model_factor <- as.vector(c(rep('tim_default_direct',n),rep('tim_amphib_direct',
 df.ratios <- data.frame(x=model_factor, y=model_log_ratios)
 
 # Create df of tissue_conc and TIM Amphibian
-df.tim_amphib <- data.frame(x=tissue_conc, y=combined_data$tim_direct_amphib)
+df.tim_amphib <- data.frame(x=tissue_conc, y=tim_direct_amphib)
+
+# Create df of tissue_conc and TIM Default
+df.tim_default <- data.frame(x=tissue_conc, y=tim_direct_default)
 ```
 
 ***
 
 ### **Comparing Models**
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-ggplot(df.ratios, aes(x=x, y=y)) + geom_point() + labs(title="TIM Amphibian vs. TIM Default",  x="Model Factor", y = "TIM Value")
-
+ggplot(df.ratios, aes(x=x, y=y)) + 
+  geom_point() + 
+  labs(title="TIM Amphibian vs. TIM Default",  x="Model Factor", y = "TIM Value")
 ```
 
 ***
 
 ### **Plotting Modeled vs. Measured**
 
-A scatter plot was utilized to first assess TIM Amphibian performance. A model along the 1:1 line would display perfect agreement with the measured values.  
+Scatter plots were utilized to assess the models. A model along the 1:1 line would display perfect agreement with the measured values.  
 
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-ggplot(df.tim_amphib, aes(x=x, y=y)) + geom_point() + labs(title="Modeled vs. Measured",  x="Tissue Concentrations", y = "TIM Amphibian Values")
+plot_default <- ggplot(df.tim_default, aes(x=x, y=y)) + 
+  geom_point() + 
+  labs(title="Modeled vs. Measured",  x="Measured Tissue Concentrations", y = "TIM Default") + 
+  geom_abline(intercept = 0, slope = 1)
+
+plot_amphib <- ggplot(df.tim_amphib, aes(x=x, y=y)) +
+  geom_point() + 
+  labs(title="Modeled vs. Measured",  x="Measured Tissue Concentrations", y = "TIM Amphibian ") +
+  geom_abline(intercept = 0, slope = 1)
+
+grid.arrange(plot_default, plot_amphib, ncol = 2)
 ```
 
 ***
@@ -400,10 +308,10 @@ Box plots were utilized to further assess model performance. Well-performing mod
 
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-fill <- "#4271AE"
-line <- "#1F3552"
+fill <- "#969696"
+line <- "#252525"
 ggplot(df.ratios, aes(x=x,y=y)) +
-    geom_boxplot(fill = fill, colour = line) + # 
+    geom_boxplot(fill = fill, colour = line) + 
     scale_x_discrete(name = "Model") +
     scale_y_continuous(name = "log10 of Model-Observation Ratio") +
     theme_bw()
@@ -417,7 +325,9 @@ ggsave(model_boxplot_filename, device="png", width=4, height=4)
 
 Summary statistics for false negative rates were also computed for both models. False negative rates are defined as an outcome where the modeled value is less than the measured value. This rate is based on a Type II Error in statistical hypothesis testing. False negative rates assess how often a model under-estimates the measurement of interest.
 
-**TIM Default**
+#### **TIM Default**
+
+~~ update summary (below) after all data updated/included
 
 As displayed below, there are zero false negative rates for TIM Default. But,  115/798 (14.4%) of the measurements are within an order of magnitude of the modeled value. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
@@ -428,14 +338,8 @@ sum(tissue_conc > tim_direct_default)
 sum(tissue_conc*10 > tim_direct_default)
 ```
 
-
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-#plot(tissue_conc, combined_data$tim_direct_avian_1hr)
-plot(tissue_conc, combined_data$tim_direct_default, xlab = "Tissue Concentration", ylab = "TIM Default Value", main = "TIM Default Value vs. Tissue Concentration")
-df.tim_default <- data.frame(x=tissue_conc, y=tim_direct_default)
-```
-
-**TIM Amphibian**
+#### **TIM Amphibian**
+~~ update summary (below) after all data updated/included  
 
 There are 107/798 (13.4%) false negative screen results for TIM Amphibian, and 576/798 (72.2%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
@@ -444,10 +348,6 @@ sum(tissue_conc > combined_data$tim_direct_amphib)
 
 # False Negative Rate (x10): TIM Amphibian
 sum(tissue_conc*10 > combined_data$tim_direct_amphib)
-```
-
-```{r eval = TRUE, echo = FALSE}
-plot(tissue_conc, combined_data$tim_direct_amphib, xlab = "Tissue Concentration", ylab = "TIM Amphibian Value", main = "TIM Amphibian Value vs. Tissue Concentration")
 ```
 
 ***
@@ -475,8 +375,9 @@ sa_comparison_filename <- paste(amphibdir_graphics,"sa_comparison.png",sep='')
 ggsave(sa_comparison_filename, device="png", width=4, height=4)
 
 ```
+<br><br>
 
-
+***
 
 Session Information
 ```{r eval = TRUE, echo = FALSE}

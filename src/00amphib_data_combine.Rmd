@@ -448,6 +448,10 @@ colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Soil")]<-"soil_conc_ug
 colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Weight")]<-"body_weight_g"
 colnames(vm2016_subset6)[which(colnames(vm2016_subset6)=="Formulation")]<-"formulation"
 
+# alter chemical name
+vm2016_subset6$chemical <- as.character(vm2016_subset6$chemical)
+vm2016_subset6$chemical[vm2016_subset6$chemical=="Imid"] <- "imidacloprid"
+
 # reorder columns alphabetically to help with merge
 colnames(vm2016_subset6)
 vm2016_merge <- vm2016_subset6[,order(names(vm2016_subset6))]
