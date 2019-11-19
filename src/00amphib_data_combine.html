@@ -381,7 +381,7 @@ summary {
 <hr />
 <div id="introduction" class="section level1">
 <h1><strong>Introduction</strong></h1>
-<p>The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski et al. (2018a, b, c, 2019), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.</p>
+<p>The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski et al. (2018a, b, 2019, 2020), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.</p>
 <table>
 <colgroup>
 <col width="21%"></col>
@@ -435,7 +435,7 @@ summary {
 <td align="left"></td>
 </tr>
 <tr class="odd">
-<td><a href="http://www.publish.csiro.au/en/EN18163">Glinski et al. 2018c (biomarkers)</td>
+<td><a href="http://www.publish.csiro.au/en/EN18163">Glinski et al. 2019 (biomarkers)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv</a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2018_data_biomarkers.csv"> dag2018_data_biomarkers.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv)</td>
@@ -688,9 +688,9 @@ summary {
 <p><br></p>
 </div>
 </div>
-<div id="glinski-et-al.-2018c-biomarkers" class="section level3">
-<h3>Glinski et al. 2018c (Biomarkers)</h3>
-<p>Glinski et al. 2018c exposed Southern leopard frogs (<em>Lithobates sphenocephala</em>) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
+<div id="glinski-et-al.-2019-biomarkers" class="section level3">
+<h3>Glinski et al. 2019 (Biomarkers)</h3>
+<p>Glinski et al. 2019 exposed Southern leopard frogs (<em>Lithobates sphenocephala</em>) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 192   9</code></pre>
 <pre><code>## [1] &quot;group&quot;       &quot;met&quot;         &quot;tdt&quot;         &quot;bif&quot;         &quot;frog.weight&quot;
@@ -1606,7 +1606,7 @@ triadimefon
 </tr>
 <tr grouplength="6">
 <td colspan="9" style="border-bottom: 1px solid;">
-<strong>Glinski et al. 2018c</strong>
+<strong>Glinski et al. 2019</strong>
 </td>
 </tr>
 <tr>
@@ -2102,8 +2102,8 @@ unique(dag2016_metabolite_merge$chemical)</code></pre>
 <pre><code>## [1] 661  12</code></pre>
 <p><br></p>
 </div>
-<div id="glinski-et-al.-2018c-biomarkers-1" class="section level3">
-<h3>Glinski et al. 2018c (Biomarkers)</h3>
+<div id="glinski-et-al.-2019-biomarkers-1" class="section level3">
+<h3>Glinski et al. 2019 (Biomarkers)</h3>
 <p>Five columns were dropped from the original biomarkers data set and the names of two columns were standardized.</p>
 <pre class="r"><code># drop columns
 drop_cols &lt;- c(&quot;met&quot;, &quot;tdt&quot;, &quot;bif&quot;, &quot;rate&quot;, &quot;group&quot;)
@@ -2237,7 +2237,7 @@ dag_biomarker_merge &lt;- dag_biomarker_subset5[ ,order(names(dag_biomarker_subs
 ##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
 ## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 <pre><code>## [1] 192  12</code></pre>
-<p>The Glinski et al. 2018c (Biomarkers) was combined with the previously merged data sets.</p>
+<p>The Glinski et al. 2019 (Biomarkers) was combined with the previously merged data sets.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
 <pre><code>## [1] 853  12</code></pre>
 <p><br></p>
