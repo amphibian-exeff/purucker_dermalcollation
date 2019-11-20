@@ -14,9 +14,17 @@ author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ
 
 **Overview**
 ======================================================================
-A comparison between the Terrestrial Investigation Model (TIM) and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted.
+A comparison between the Terrestrial Investigation Model (TIM) and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted.  TIM is a probabilistic model simulating multimedia pesticide exposure from food, dermal contact, drinking water, or inhalation exposure routes.
 
-Collected amphibian dermal exposure data is from 9 studies. Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, and triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (atrazine, metolachlor, 2,4-D, malathion, propiconazole) on juvenile green frogs. Glinski et al. 2018a (Dehydration) data includes exposure to 5 pesticides (atrazine, triadimefon, metolachlor, chlorothalonil, imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). Glinski et al. 2018b (Metabolites) data consists of exposure to 3 pesticides (atrazine, triadimefon, fipronil) on Fowler's toads. Glinski et al. 2018c (Biomarkers) data includes exposure to single, double, or triple pesticide mixtures (bifenthrin, metolachlor, triadimefon) on Southern leopard frogs.  Glinski et al. 2020 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. Henson-Ramsey 2008 data consists of exposure to malathion for Tiger salamanders.
+Collected amphibian dermal exposure data is from 9 studies:  
+
+* Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, and triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). 
+* Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (atrazine, metolachlor, 2,4-D, malathion, propiconazole) on juvenile green frogs. 
+* Glinski et al. 2018a (Dehydration) data includes exposure to 5 pesticides (atrazine, triadimefon, metolachlor, chlorothalonil, imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). 
+* Glinski et al. 2018b (Metabolites) data consists of exposure to 3 pesticides (atrazine, triadimefon, fipronil) on Fowler's toads. 
+* Glinski et al. 2019 (Biomarkers) data includes exposure to single, double, or triple pesticide mixtures (bifenthrin, metolachlor, triadimefon) on Southern leopard frogs.  
+* Glinski et al. 2020 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. 
+* Henson-Ramsey 2008 data consists of exposure to malathion for Tiger salamanders.
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -120,23 +128,6 @@ ggplot(combined_data, aes(x=tim_direct_default)) +
 ```
 
 
-<!-- ~~~~ MAYBE DELETE THIS OR PUT IN APPENDIX AT BOTTOM UNLESS USEFUL HERE/ELSEWHERE -->
-<!-- ```{r eval = TRUE, echo = FALSE, include = TRUE} -->
-<!-- layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "rvm2015"], xlab = "Dermal Exposure Dose", main = "Van Meter 2014/15", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "rvm2016"], xlab = "Dermal Exposure Dose", main = "Van Meter 2016", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "rvm2017"], xlab = "Dermal Exposure Dose", main = "Van Meter 2017", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "hr2008"], xlab = "Dermal Exposure Dose", main = "Henson-Ramsey 2008", col = "#636363") -->
-
-
-<!-- layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "dag_dehydration"], xlab = "Dermal Exposure Dose", main = "Glinski (Dehydration)", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "dag_metabolites"], xlab = "Dermal Exposure Dose", main = "Glinski (Metabolites)", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_default[combined_data$source == "dag_biomarker"], xlab = "Dermal Exposure Dose", main = "Glinski (Biomarkers)", col = "#636363") -->
-<!-- #hist(combined_data$tim_direct_default[combined_data$source == "dag_dermal_routes"], xlab = "Dermal Exposure Dose", main = "Glinski (Dermal Routes)", col = "#636363") -->
-<!-- ``` -->
-
-
 ### **TIM Default Ratios**
 Here we compute and visualize the ratio of the TIM Default value to the measured tissue concentrations. A 1:1 ratio signifies perfect agreement between the modeled and measured values.  
 
@@ -145,7 +136,7 @@ Here we compute and visualize the ratio of the TIM Default value to the measured
 combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tissue_conc
 ```
 
-~~~ briefly talk about each scatterplot 
+Scatterplots were created to visualize the model's performance, grouped by specific variables (study, chemical, application type), respectively.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by study
 ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$source)) + 
@@ -205,23 +196,6 @@ ggplot(combined_data, aes(x=tim_direct_amphib)) +
 ```
 
 
-<!-- ~~~~ MAYBE DELETE THIS OR PUT IN APPENDIX AT BOTTOM UNLESS USEFUL HERE/ELSEWHERE -->
-<!-- ```{r eval = TRUE, echo = FALSE, include = TRUE} -->
-<!-- layout(matrix(c(1,2,3,4), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "rvm2015"], xlab = "Dermal Exposure Dose", main = "Van Meter 2014/15", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "rvm2016"], xlab = "Dermal Exposure Dose", main = "Van Meter 2016", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "rvm2017"], xlab = "Dermal Exposure Dose", main = "Van Meter 2017", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "hr2008"], xlab = "Dermal Exposure Dose", main = "Henson-Ramsey 2008", col = "#636363") -->
-
-
-<!-- layout(matrix(c(1,2,3,3), nrow = 2, ncol = 2, byrow= TRUE)) #set the plotting area into a 2row*2col array -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "dag_dehydration"], xlab = "Dermal Exposure Dose", main = "Glinski (Dehydration)", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "dag_metabolites"], xlab = "Dermal Exposure Dose", main = "Glinski (Metabolites)", col = "#636363") -->
-<!-- hist(combined_data$tim_direct_amphib[combined_data$source == "dag_biomarker"], xlab = "Dermal Exposure Dose", main = "Glinski (Biomarkers)", col = "#636363") -->
-<!-- #hist(combined_data$tim_direct_amphib[combined_data$source == "dag_dermal_routes"], xlab = "Dermal Exposure Dose", main = "Glinski (Dermal Routes)", col = "#636363") -->
-<!-- ``` -->
-
-
 ### **TIM Amphibian Ratios**
 Here we compute and visualize the ratio of the TIM Amphibian values to the measured tissue concentrations. A 1:1 ratio signifies perfect agreement between the modeled and measured values.   
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
@@ -229,7 +203,7 @@ Here we compute and visualize the ratio of the TIM Amphibian values to the measu
 combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
 ```
 
-~~~ briefly talk about each of the scatterplots
+Scatterplots were created to visualize the model's performance, grouped by specific variables (study, chemical, application type), respectively.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by study
 ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$source)) + 
@@ -293,7 +267,7 @@ ggplot(df.ratios, aes(x=x, y=y)) +
 
 ### **Plotting Modeled vs. Measured**
 
-Again, we show scatterplots comparing the modeled vs. measured values, this time comparing models side-by-side. A model along the 1:1 line would display perfect agreement with the measured values.  
+Again, scatterplots comparing the modeled vs. measured values are shown, this time setting models side-by-side. A model along the 1:1 line would display perfect agreement with the measured values.  
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # scatterplot of TIM default values
