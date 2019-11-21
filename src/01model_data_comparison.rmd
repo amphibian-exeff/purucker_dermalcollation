@@ -24,7 +24,7 @@ Collected amphibian dermal exposure data is from 9 studies:
 * Glinski et al. 2018b (Metabolites) data consists of exposure to 3 pesticides (atrazine, triadimefon, fipronil) on Fowler's toads. 
 * Glinski et al. 2019 (Biomarkers) data includes exposure to single, double, or triple pesticide mixtures (bifenthrin, metolachlor, triadimefon) on Southern leopard frogs.  
 * Glinski et al. 2020 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. 
-* Henson-Ramsey 2008 data consists of exposure to malathion for Tiger salamanders.
+* Henson-Ramsey et al. 2008 data consists of exposure to malathion for Tiger salamanders.
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -68,11 +68,6 @@ colnames(combined_data)
 summary(combined_data)
 ```
 
-
-~~ DELETE THIS ONCE GET APP RATES FOR DERMAL ROUTES DATA!!
-```{r eval = TRUE, echo = TRUE}
-combined_data <- combined_data[!(combined_data$source == "dag_dermal_routes"),]
-```
 <br><br>
 
 ***
@@ -116,7 +111,7 @@ tim_direct_default <- combined_data$tim_direct_default
 ```
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-# compute number of bins
+# compute number of histogram bins
 bw <- 2*IQR(tim_direct_default) / length(tim_direct_default)^(1/3)
 
 # create frequency histogram
@@ -136,7 +131,7 @@ Here we compute and visualize the ratio of the TIM Default value to the measured
 combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tissue_conc
 ```
 
-Scatterplots were created to visualize the model's performance, grouped by specific variables (study, chemical, application type), respectively.
+Scatterplots were created to visualize the model's performance, grouped by variables (study, chemical, application type), respectively. The trend line displays the 1:1 ratio.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by study
 ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$source)) + 
@@ -174,7 +169,6 @@ To gain a better understanding of pesticide risks on amphibians, the dermal expo
 sa_amphib_hutchinson <- 1.131 * (body_weight ^ 0.579)
 ```
 
-~~ is it okay that the sa_tim_default_frac is same as TIM Default? 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # Calculate Equation 2a: TIM Amphibian
 combined_data$tim_direct_amphib <- (app_rate * conv_rate * sa_amphib_hutchinson * sa_tim_default_frac * dermal_af)/body_weight
@@ -203,7 +197,7 @@ Here we compute and visualize the ratio of the TIM Amphibian values to the measu
 combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue_conc
 ```
 
-Scatterplots were created to visualize the model's performance, grouped by specific variables (study, chemical, application type), respectively.
+Scatterplots were created to visualize the model's performance, grouped by variables (study, chemical, application type), respectively. The trend line displays the 1:1 ratio.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by study
 ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$source)) + 
@@ -309,11 +303,9 @@ ggsave(model_boxplot_filename, device="png", width=4, height=4)
 
 Summary statistics for false negative rates were also computed for both models. False negative rates are defined as an outcome where the modeled value is less than the measured value. This rate is based on a Type II Error in statistical hypothesis testing. False negative rates assess how often a model under-estimates the measurement of interest.
 
+
 #### **TIM Default**
-
-~~ update summary (below) after all data updated/included
-
-As displayed below, there are zero false negative rates for TIM Default. But,  115/798 (14.4%) of the measurements are within an order of magnitude of the modeled value. 
+As displayed below, there are zero false negative rates for TIM Default. But,  134/1014 (13.2%) of the measurements are within an order of magnitude of the modeled value. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # False Negative Rate: TIM Default
 sum(tissue_conc > tim_direct_default)
@@ -323,9 +315,7 @@ sum(tissue_conc*10 > tim_direct_default)
 ```
 
 #### **TIM Amphibian**
-~~ update summary (below) after all data updated/included  
-
-There are 107/798 (13.4%) false negative screen results for TIM Amphibian, and 576/798 (72.2%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians. 
+There are 127/1014 (12.5%) false negative screen results for TIM Amphibian, and 786/1014 (77.5%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # False Negative Rate: TIM Amphibian
 sum(tissue_conc > combined_data$tim_direct_amphib)

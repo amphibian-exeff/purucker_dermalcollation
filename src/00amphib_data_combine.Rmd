@@ -91,7 +91,7 @@ amphibdir_src <- paste(amphibdir,'src/',sep='')
 ========================================================
 ### Van Meter et al. 2014 and Van Meter et al. 2015
 
-Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium.
+Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
 
 Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil.  These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Pesticides were applied at the maxium legally allowable application rates scaled down to the size of a 10-gallon aquarium, with the exception of pedimethalin which was applied at 30% of the permitted application rate. This was due to pedimethalin's insolubility in the limited solvent and the water volumes used in this study.
 
@@ -179,7 +179,7 @@ summary(hr2008)
 
 ### Glinski et al. 2018b (Metabolites)
 
-Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium.
+Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2017 metabolite study
@@ -279,7 +279,7 @@ summary(rvm2017_merge)
 
 ### Glinski et al. 2020 (Dermal Routes)
 
-~~~~~ Talk about Glinski et al. 2020 dermal routes....  
+Glinski et al. 2020 assessed dermal uptake in amphibians from exposure to three pesticides (bifenthrin, chlorpyrifos, trifloxystrobin). Pesiticide body burdens and hepatic metabolome for Leopard frogs were measured for two routes of uptake: uptake from contaminated soils versus uptake from contaminated surface water. Pesticides were applied at 1 ppm, scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.  
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Glinski 2019 dermal routes study
@@ -681,18 +681,13 @@ dim(combined_data2)
 dim(dag2016_metabolite_merge)
 colnames(dag2016_metabolite_merge)
 ```
-Apart from standardizing the species name and inserting the application rates, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
+Apart from standardizing the species name, the Glinski et al. 2018b (Metabolites) data set did not require any additional data cleaning. It was combined with the previously merged data sets.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # rename species names, according to standardized names
 dag2016_metabolite_merge$species <- as.character(dag2016_metabolite_merge$species)
 dag2016_metabolite_merge$species[dag2016_metabolite_merge$species == "Anaxyrus_fowleri"] <- "Fowlers toad"
 dag2016_metabolite_merge$species <- as.factor(dag2016_metabolite_merge$species)
 
-# assign values to application rate
-unique(dag2016_metabolite_merge$chemical)
-#dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="atrazine"] <- 
-#dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="triadimefon"] <- 
-#dag2016_metabolite_merge$chemical[dag2016_metabolite_merge$chemical =="fipronil"] <- 
 ```
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # combine two dataframes
@@ -903,8 +898,6 @@ dim(combined_data5)
 
 ### Glinski et al. 2020 (Dermal Routes)
 
-~~~ Emma: still need to add in app rates
-
 The dermal routes data set did not include the body weights for the measured amphibians. These weights were included in a separate data set:
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 #import dermal routes data, with amphibians weights
@@ -993,13 +986,6 @@ soil_type <- c(rep("OLS", nrow(dermal_routes_subset8)))
 source <- c(rep("dag_dermal_routes", nrow(dermal_routes_subset8)))
 species <- c(rep("Leopard frog", nrow(dermal_routes_subset8)))
 
-# insert application rates
-#unique(dermal_routes_subset8$Analyte)
-#dermal_routes_subset8$Analyte[dermal_routes_subset8$Analyte =="BIF"] <- 
-#dermal_routes_subset8$Analyte[dermal_routes_subset8$Analyte =="CPF"] <- 
-#dermal_routes_subset8$Analyte[dermal_routes_subset8$Analyte =="TFS"] <- 
-
-
 # alter existing column names
 colnames(dermal_routes_subset8)
 
@@ -1018,6 +1004,16 @@ names(dermal_routes_subset9)
 # drop columns
 cols_to_drop <- c("Matrix", "Media")
 dermal_routes_subset10 <- dermal_routes_subset9[, !(names(dermal_routes_subset9) %in% cols_to_drop)]
+
+# insert application rates
+dermal_routes_subset10$chemical <- as.character(dermal_routes_subset10$chemical)
+unique(dermal_routes_subset10$chemical)
+dermal_routes_subset10$app_rate_g_cm2[dermal_routes_subset10$chemical =="BIF"] <- 2.8889e-7 #bifenthrin g/cm2
+dermal_routes_subset10$app_rate_g_cm2[dermal_routes_subset10$chemical =="CPF"] <- 3.1111e-7 #chlorpyrifos g/cm2
+dermal_routes_subset10$app_rate_g_cm2[dermal_routes_subset10$chemical =="TFS"] <- 3.0222e-7 #trifloxystrobin g/cm2
+
+summary(dermal_routes_subset10$app_rate_g_cm2)
+
 
 # order columns in abc for merge
 dermal_routes_merge <- dermal_routes_subset10[ ,order(names(dermal_routes_subset10))]
@@ -1062,8 +1058,8 @@ amphib_dermal_collated <- combined_data6
 colnames(amphib_dermal_collated)
 
 # check to see if everything ok
-summary(amphib_dermal_collated$app_rate_g_cm2) # units issues
-summary(amphib_dermal_collated$body_weight_g) # 60 NAs
+summary(amphib_dermal_collated$app_rate_g_cm2) 
+summary(amphib_dermal_collated$body_weight_g) 
 summary(amphib_dermal_collated$exp_duration)
 summary(amphib_dermal_collated$soil_conc_ugg) # 206 NAs
 summary(amphib_dermal_collated$tissue_conc_ugg)
