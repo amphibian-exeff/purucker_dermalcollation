@@ -262,7 +262,7 @@ summary(rvm2017_hif0)
 ```
 
 
-The herbicide and mixed pesticide data sets were cleaned and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set include atrazine, propiconazole, 2,4-D, malathion, and metolachlor.  Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets. 
+The herbicide and mixed pesticide data sets were cleaned prior and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set include atrazine, propiconazole, 2,4-D, malathion, and metolachlor.  Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets. 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 rvm2017_merge_file <- paste(amphibdir_data_in,"vm2017_merge.csv", sep="")
 file.exists(rvm2017_merge_file)
@@ -432,7 +432,7 @@ vm2016_subset4 <- vm2016_subset3[-rows_to_drop,]
 # drop ATZ, Fip, TDN since do not include metabolites in total
 chems_to_drop <- c("ATZ","Fip","TDN")
 vm2016_subset5 <- vm2016_subset4[!(vm2016_subset4$Pesticide %in% chems_to_drop),]
-# now drop parent field
+# drop parent field
 drop_cols <- c("Parent")
 vm2016_subset6 <- vm2016_subset5[,!(names(vm2016_subset5) %in% drop_cols)]
 ```
@@ -456,6 +456,7 @@ vm2016_subset6$chemical[vm2016_subset6$chemical=="Imid"] <- "imidacloprid"
 colnames(vm2016_subset6)
 vm2016_merge <- vm2016_subset6[,order(names(vm2016_subset6))]
 colnames(vm2016_merge)
+
 # write a local copy
 vm2016_merge_filename <- paste(amphibdir_data_out,"vm2016_merge.csv", sep="")
 write.csv(vm2016_merge, file=vm2016_merge_filename)

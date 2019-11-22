@@ -611,10 +611,10 @@ sum(tissue_conc*10 &gt; tim_direct_default)</code></pre>
 <h4><strong>TIM Amphibian</strong></h4>
 <p>There are 127/1014 (12.5%) false negative screen results for TIM Amphibian, and 786/1014 (77.5%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians.</p>
 <pre class="r"><code># False Negative Rate: TIM Amphibian
-sum(tissue_conc &gt; combined_data$tim_direct_amphib)</code></pre>
+sum(tissue_conc &gt; tim_direct_amphib)</code></pre>
 <pre><code>## [1] 127</code></pre>
 <pre class="r"><code># False Negative Rate (x10): TIM Amphibian
-sum(tissue_conc*10 &gt; combined_data$tim_direct_amphib)</code></pre>
+sum(tissue_conc*10 &gt; tim_direct_amphib)</code></pre>
 <pre><code>## [1] 786</code></pre>
 <hr />
 </div>
