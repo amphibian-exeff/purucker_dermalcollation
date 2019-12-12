@@ -325,7 +325,7 @@ sum(tissue_conc*10 > tim_direct_amphib)
 ```
 
 #### **By Study**
-False Negative Rates were also computed indiviually by study source. The table below displays the false negative rates and the measurements within an order of magnittude of the modeled value (displayed as %).
+False Negative Rates were also computed indiviually by study source. The table below displays the false negative rates and the measurements within an order of magnitude of the modeled value (displayed as %).
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # compute FNR by study
 
@@ -464,6 +464,7 @@ kable(fnr) %>%
   add_header_above(c(" ", " " = 1, "TIM Default" = 2, "TIM Amphibian" = 2))
   
 ```
+
 
 ***
 
