@@ -324,6 +324,147 @@ sum(tissue_conc > tim_direct_amphib)
 sum(tissue_conc*10 > tim_direct_amphib)
 ```
 
+#### **By Study**
+False Negative Rates were also computed indiviually by study source. The table below displays the false negative rates and the measurements within an order of magnittude of the modeled value (displayed as %).
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# compute FNR by study
+
+# subset rvm2015
+sub_rvm2015 <- combined_data[combined_data$source == "rvm2015",]
+# computations
+fnr_default_rvm2015 <- sum(sub_rvm2015$tissue_conc_ugg > sub_rvm2015$tim_direct_default)
+fnr10_default_rvm2015 <- sum(sub_rvm2015$tissue_conc_ugg*10 > sub_rvm2015$tim_direct_default)
+fnr_amphib_rvm2015 <- sum(sub_rvm2015$tissue_conc_ugg > sub_rvm2015$tim_direct_amphib)
+fnr10_amphib_rvm2015 <- sum(sub_rvm2015$tissue_conc_ugg*10 > sub_rvm2015$tim_direct_amphib)
+# vector
+vec_rvm2015 <- c(fnr_default_rvm2015, fnr10_default_rvm2015, fnr_amphib_rvm2015, fnr10_amphib_rvm2015)
+# compute rates
+rate_rvm2015 <- vec_rvm2015/nrow(sub_rvm2015)
+
+
+# subset rvm2016
+sub_rvm2016 <- combined_data[combined_data$source == "rvm2016",]
+# computations
+fnr_default_rvm2016 <- sum(sub_rvm2016$tissue_conc_ugg > sub_rvm2016$tim_direct_default)
+fnr10_default_rvm2016 <- sum(sub_rvm2016$tissue_conc_ugg*10 > sub_rvm2016$tim_direct_default)
+fnr_amphib_rvm2016 <- sum(sub_rvm2016$tissue_conc_ugg > sub_rvm2016$tim_direct_amphib)
+fnr10_amphib_rvm2016 <- sum(sub_rvm2016$tissue_conc_ugg*10 > sub_rvm2016$tim_direct_amphib)
+# vector
+vec_rvm2016 <- c(fnr_default_rvm2016, fnr10_default_rvm2016, fnr_amphib_rvm2016, fnr10_amphib_rvm2016)
+# compute rates
+rate_rvm2016 <- vec_rvm2016/nrow(sub_rvm2016)
+
+
+# subset rvm2017
+sub_rvm2017 <- combined_data[combined_data$source == "rvm2017",]
+# computations
+fnr_default_rvm2017 <- sum(sub_rvm2017$tissue_conc_ugg > sub_rvm2017$tim_direct_default)
+fnr10_default_rvm2017 <- sum(sub_rvm2017$tissue_conc_ugg*10 > sub_rvm2017$tim_direct_default)
+fnr_amphib_rvm2017 <- sum(sub_rvm2017$tissue_conc_ugg > sub_rvm2017$tim_direct_amphib)
+fnr10_amphib_rvm2017 <- sum(sub_rvm2017$tissue_conc_ugg*10 > sub_rvm2017$tim_direct_amphib)
+# vector 
+vec_rvm2017 <- c(fnr_default_rvm2017, fnr10_default_rvm2017, fnr_amphib_rvm2017, fnr10_amphib_rvm2017)
+# compute rates
+rate_rvm2017 <- vec_rvm2017/nrow(sub_rvm2017)
+
+
+
+# subset hr2008
+sub_hr2008 <- combined_data[combined_data$source == "hr2008",]
+# computations
+fnr_default_hr2008 <- sum(sub_hr2008$tissue_conc_ugg > sub_hr2008$tim_direct_default)
+fnr10_default_hr2008 <- sum(sub_hr2008$tissue_conc_ugg*10 > sub_hr2008$tim_direct_default)
+fnr_amphib_hr2008 <- sum(sub_hr2008$tissue_conc_ugg > sub_hr2008$tim_direct_amphib)
+fnr10_amphib_hr2008 <- sum(sub_hr2008$tissue_conc_ugg*10 > sub_hr2008$tim_direct_amphib)
+#vector
+vec_hr2008 <- c(fnr_default_hr2008, fnr10_default_hr2008, fnr_amphib_hr2008, fnr10_amphib_hr2008)
+# compute rates
+rate_hr2008 <- vec_hr2008/nrow(sub_hr2008)
+
+
+
+# subset dag_metabolites
+sub_metabolites <- combined_data[combined_data$source == "dag_metabolites",]
+# computations
+fnr_default_metabolites <- sum(sub_metabolites$tissue_conc_ugg > sub_metabolites$tim_direct_default)
+fnr10_default_metabolites <- sum(sub_metabolites$tissue_conc_ugg*10 > sub_metabolites$tim_direct_default)
+fnr_amphib_metabolites <- sum(sub_metabolites$tissue_conc_ugg > sub_metabolites$tim_direct_amphib)
+fnr10_amphib_metabolites <- sum(sub_metabolites$tissue_conc_ugg*10 > sub_metabolites$tim_direct_amphib)
+# vector
+vec_metabolites <- c(fnr_default_metabolites, fnr10_default_metabolites, fnr_amphib_metabolites, fnr10_amphib_metabolites)
+# compute rates
+rate_metabolites <- vec_metabolites/nrow(sub_metabolites)
+
+
+
+
+# subset dag_dermal_routes
+sub_dermal <- combined_data[combined_data$source == "dag_dermal_routes",]
+# computations
+fnr_default_dermal <- sum(sub_dermal$tissue_conc_ugg > sub_dermal$tim_direct_default)
+fnr10_default_dermal <- sum(sub_dermal$tissue_conc_ugg*10 > sub_dermal$tim_direct_default)
+fnr_amphib_dermal <- sum(sub_dermal$tissue_conc_ugg > sub_dermal$tim_direct_amphib)
+fnr10_amphib_dermal <- sum(sub_dermal$tissue_conc_ugg*10 > sub_dermal$tim_direct_amphib)
+# vector
+vec_dermal <- c(fnr_default_dermal, fnr10_default_dermal, fnr_amphib_dermal, fnr10_amphib_dermal)
+# compute rates
+rate_dermal <- vec_dermal/nrow(sub_dermal)
+
+
+
+# subset dag_dehydration
+sub_dehy <- combined_data[combined_data$source == "dag_dehydration",]
+# computations
+fnr_default_dehy <- sum(sub_dehy$tissue_conc_ugg > sub_dehy$tim_direct_default)
+fnr10_default_dehy <- sum(sub_dehy$tissue_conc_ugg*10 > sub_dehy$tim_direct_default)
+fnr_amphib_dehy <- sum(sub_dehy$tissue_conc_ugg > sub_dehy$tim_direct_amphib)
+fnr10_amphib_dehy <- sum(sub_dehy$tissue_conc_ugg*10 > sub_dehy$tim_direct_amphib)
+# vector
+vec_dehy <- c(fnr_default_dehy, fnr10_default_dehy, fnr_amphib_dehy, fnr10_amphib_dehy)
+# compute rates
+rate_dehy <- vec_dehy/nrow(sub_dehy)
+
+
+# subset dag_biomarker
+sub_bio <- combined_data[combined_data$source == "dag_biomarker",]
+# computations
+fnr_default_bio <- sum(sub_bio$tissue_conc_ugg > sub_bio$tim_direct_default)
+fnr10_default_bio <- sum(sub_bio$tissue_conc_ugg*10 > sub_bio$tim_direct_default)
+fnr_amphib_bio <- sum(sub_bio$tissue_conc_ugg > sub_bio$tim_direct_amphib)
+fnr10_amphib_bio <- sum(sub_bio$tissue_conc_ugg*10 > sub_bio$tim_direct_amphib)
+# vector
+vec_bio <- c(fnr_default_bio, fnr10_default_bio, fnr_amphib_bio, fnr10_amphib_bio)
+# compute rates
+rate_bio <- vec_bio/nrow(sub_bio)
+
+
+
+# create matrix of fnr 
+sample_size <- c(nrow(sub_rvm2015), nrow(sub_rvm2016), nrow(sub_rvm2017),
+                 nrow(sub_hr2008), nrow(sub_metabolites), nrow(sub_dehy),
+                 nrow(sub_bio), nrow(sub_dermal))
+fnr <- rbind(rate_rvm2015, rate_rvm2016, rate_rvm2017, rate_hr2008, rate_metabolites,
+             rate_dehy, rate_bio, rate_dermal)
+fnr <- round(fnr*100, 2)
+fnr <- cbind(sample_size, fnr)
+fnr <- as.data.frame(fnr)
+names(fnr) <- c("sample_size", "fnr", "fnr_10", "fnr", "fnr_10")
+rownames(fnr) <- c("Van Meter 2014/15", "Van Meter 2016", "Van Meter 2018", "Henson-Ramsey 2008", 
+                   "Glinski 2018b (Metabolites)", "Glinski 2018a (Dehydration)", "Glinski 2019 (Biomarkers)",
+                   "Glinski 2020 (Dermal)")
+```
+
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+library(knitr)
+library(kableExtra)
+
+# create table
+kable(fnr) %>%
+  kable_styling(c("striped"), full_width = T) %>%
+  add_header_above(c(" ", " " = 1, "TIM Default" = 2, "TIM Amphibian" = 2))
+  
+```
+
 ***
 
 ### **Comparing Surface Area Calculations** 
