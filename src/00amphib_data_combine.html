@@ -597,9 +597,10 @@ summary {
 <p>Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (<em>Ambystoma tigrinum</em>). Tiger salamanders were exposed to contaminated soils with 50 ug/cm<sup>2</sup> or 100 ug/cm<sup>2</sup> malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm<sup>2</sup> malathion. For each exposure, the malathion application rate was sprayed onto the approximately 1200g of soil in the 1060cm<sup>2</sup> polyethylene cages. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm<sup>2</sup> contaminated soil for 1 day, exposed to 50 ug/cm<sup>2</sup> for 2 days, exposed to 50 ug/cm<sup>2</sup> contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm<sup>2</sup> contaminated soil for 2 days and fed a contaminated worm on the first exposure day.</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1]  9 12</code></pre>
-<pre><code>##  [1] &quot;chemical&quot;        &quot;species&quot;         &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
-##  [5] &quot;body_weight_g&quot;   &quot;formulation&quot;     &quot;soil_type&quot;       &quot;application&quot;    
-##  [9] &quot;app_rate_g_cm2&quot;  &quot;exp_duration&quot;    &quot;soil_conc_ugg&quot;   &quot;source&quot;</code></pre>
+<pre><code>##  [1] &quot;chemical&quot;        &quot;species&quot;         &quot;tissue_conc_ugg&quot;
+##  [4] &quot;sample_id&quot;       &quot;body_weight_g&quot;   &quot;formulation&quot;    
+##  [7] &quot;soil_type&quot;       &quot;application&quot;     &quot;app_rate_g_cm2&quot; 
+## [10] &quot;exp_duration&quot;    &quot;soil_conc_ugg&quot;   &quot;source&quot;</code></pre>
 <pre><code>##       chemical               species  tissue_conc_ugg   sample_id
 ##  Malathion:9   Ambystoma_tigrinum:9   Min.   :0.050   sal1   :1  
 ##                                       1st Qu.:0.350   sal2   :1  
@@ -656,9 +657,10 @@ summary {
 <h4><strong>Metabolites Data Set (merged)</strong></h4>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 60 12</code></pre>
-<pre><code>##  [1] &quot;exp_duration&quot;    &quot;chemical&quot;        &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
-##  [5] &quot;soil_type&quot;       &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;  
-##  [9] &quot;formulation&quot;     &quot;species&quot;         &quot;application&quot;     &quot;source&quot;</code></pre>
+<pre><code>##  [1] &quot;exp_duration&quot;    &quot;chemical&quot;        &quot;tissue_conc_ugg&quot;
+##  [4] &quot;sample_id&quot;       &quot;soil_type&quot;       &quot;app_rate_g_cm2&quot; 
+##  [7] &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;   &quot;formulation&quot;    
+## [10] &quot;species&quot;         &quot;application&quot;     &quot;source&quot;</code></pre>
 <pre><code>##   exp_duration        chemical  tissue_conc_ugg             sample_id 
 ##  Min.   : 2    atrazine   :20   Min.   :0.08328   atrazine_12hr_1: 1  
 ##  1st Qu.: 4    fipronil   :20   1st Qu.:0.33733   atrazine_12hr_2: 1  
@@ -701,14 +703,22 @@ summary {
 ##  met      :16   3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
 ##  mettdt   :32   Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
 ##  tdt      :16                                                        
-##   frog.weight       sample_id   pesticide         rate         conc          
-##  Min.   :1.012   TMB 10 1:  3   bif:64    1/10th Max:96   Min.   : 0.001061  
-##  1st Qu.:2.745   TMB 10 2:  3   met:64    Maximum   :96   1st Qu.: 0.069055  
-##  Median :3.142   TMB 10 3:  3   tdt:64                    Median : 0.212920  
-##  Mean   :3.299   TMB 10 4:  3                             Mean   : 0.801643  
-##  3rd Qu.:3.789   TMB 10 5:  3                             3rd Qu.: 0.521471  
-##  Max.   :6.739   TMB 10 6:  3                             Max.   :19.879783  
-##                  (Other) :174</code></pre>
+##   frog.weight       sample_id   pesticide         rate   
+##  Min.   :1.012   TMB 10 1:  3   bif:64    1/10th Max:96  
+##  1st Qu.:2.745   TMB 10 2:  3   met:64    Maximum   :96  
+##  Median :3.142   TMB 10 3:  3   tdt:64                   
+##  Mean   :3.299   TMB 10 4:  3                            
+##  3rd Qu.:3.789   TMB 10 5:  3                            
+##  Max.   :6.739   TMB 10 6:  3                            
+##                  (Other) :174                            
+##       conc          
+##  Min.   : 0.001061  
+##  1st Qu.: 0.069055  
+##  Median : 0.212920  
+##  Mean   : 0.801643  
+##  3rd Qu.: 0.521471  
+##  Max.   :19.879783  
+## </code></pre>
 <p><br></p>
 </div>
 <div id="van-meter-et-al.-2018-multiple-pesticides-study" class="section level3">
@@ -719,8 +729,8 @@ summary {
 <h4><strong>Herbicide Data Set</strong></h4>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 378  10</code></pre>
-<pre><code>##  [1] &quot;Group&quot;     &quot;ATZ&quot;       &quot;D&quot;         &quot;ME&quot;        &quot;AppRate&quot;   &quot;Weight&quot;   
-##  [7] &quot;SA&quot;        &quot;Media&quot;     &quot;Pesticide&quot; &quot;Conc&quot;</code></pre>
+<pre><code>##  [1] &quot;Group&quot;     &quot;ATZ&quot;       &quot;D&quot;         &quot;ME&quot;        &quot;AppRate&quot;  
+##  [6] &quot;Weight&quot;    &quot;SA&quot;        &quot;Media&quot;     &quot;Pesticide&quot; &quot;Conc&quot;</code></pre>
 <pre><code>##     Group         ATZ                D                 ME         
 ##  ATZ   :54   Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
 ##  ATZD  :54   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
@@ -729,22 +739,22 @@ summary {
 ##  D     :54   3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
 ##  ME    :54   Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
 ##  MED   :54                                                        
-##     AppRate          Weight             SA           Media       Pesticide  
-##  Min.   :14.30   Min.   :0.9634   Min.   :1.107   Amphib:126   ATZBCF : 42  
-##  1st Qu.:23.60   1st Qu.:1.6929   1st Qu.:1.534   BCF   :126   ATZS   : 42  
-##  Median :37.90   Median :2.0637   Median :1.720   Soil  :126   ATZT   : 42  
-##  Mean   :39.31   Mean   :2.0892   Mean   :1.715                DBCF   : 42  
-##  3rd Qu.:54.50   3rd Qu.:2.4927   3rd Qu.:1.919                DS     : 42  
-##  Max.   :68.80   Max.   :3.6843   Max.   :2.406                DT     : 42  
-##                                                                (Other):126  
-##       Conc         
-##  Min.   : 0.00000  
-##  1st Qu.: 0.00000  
-##  Median : 0.06358  
-##  Mean   : 5.64721  
-##  3rd Qu.: 1.46036  
-##  Max.   :76.03573  
-## </code></pre>
+##     AppRate          Weight             SA           Media    
+##  Min.   :14.30   Min.   :0.9634   Min.   :1.107   Amphib:126  
+##  1st Qu.:23.60   1st Qu.:1.6929   1st Qu.:1.534   BCF   :126  
+##  Median :37.90   Median :2.0637   Median :1.720   Soil  :126  
+##  Mean   :39.31   Mean   :2.0892   Mean   :1.715               
+##  3rd Qu.:54.50   3rd Qu.:2.4927   3rd Qu.:1.919               
+##  Max.   :68.80   Max.   :3.6843   Max.   :2.406               
+##                                                               
+##    Pesticide        Conc         
+##  ATZBCF : 42   Min.   : 0.00000  
+##  ATZS   : 42   1st Qu.: 0.00000  
+##  ATZT   : 42   Median : 0.06358  
+##  DBCF   : 42   Mean   : 5.64721  
+##  DS     : 42   3rd Qu.: 1.46036  
+##  DT     : 42   Max.   :76.03573  
+##  (Other):126</code></pre>
 </div>
 <div id="mixed-pesticide-data-set" class="section level4">
 <h4><strong>Mixed Pesticide Data Set</strong></h4>
@@ -760,23 +770,32 @@ summary {
 ##  MA     :18   3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
 ##  MAPZ   :36   Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
 ##  PZ     :18                                                        
-##    Pesticide     Media         Conc              Weight            SA       
-##  ATZBCF :24   Amphib:72   Min.   : 0.00024   Min.   :1.188   Min.   :1.447  
-##  ATZS   :24   BCF   :72   1st Qu.: 0.32682   1st Qu.:1.786   1st Qu.:1.833  
-##  ATZT   :24   Soil  :72   Median : 1.61181   Median :2.014   Median :1.965  
-##  MABCF  :24               Mean   : 5.46049   Mean   :2.203   Mean   :2.047  
-##  MAS    :24               3rd Qu.: 9.99874   3rd Qu.:2.455   3rd Qu.:2.203  
-##  MAT    :24               Max.   :71.52122   Max.   :4.014   Max.   :2.929  
-##  (Other):72</code></pre>
+##    Pesticide     Media         Conc              Weight     
+##  ATZBCF :24   Amphib:72   Min.   : 0.00024   Min.   :1.188  
+##  ATZS   :24   BCF   :72   1st Qu.: 0.32682   1st Qu.:1.786  
+##  ATZT   :24   Soil  :72   Median : 1.61181   Median :2.014  
+##  MABCF  :24               Mean   : 5.46049   Mean   :2.203  
+##  MAS    :24               3rd Qu.: 9.99874   3rd Qu.:2.455  
+##  MAT    :24               Max.   :71.52122   Max.   :4.014  
+##  (Other):72                                                 
+##        SA       
+##  Min.   :1.447  
+##  1st Qu.:1.833  
+##  Median :1.965  
+##  Mean   :2.047  
+##  3rd Qu.:2.203  
+##  Max.   :2.929  
+## </code></pre>
 <p>The herbicide and mixed pesticide data sets were cleaned prior and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set include atrazine, propiconazole, 2,4-D, malathion, and metolachlor. Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets.</p>
 </div>
 <div id="merged-data-set" class="section level4">
 <h4><strong>Merged Data Set</strong></h4>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 137  12</code></pre>
-<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;body_weight_g&quot;   &quot;chemical&quot;        &quot;tissue_conc_ugg&quot;
-##  [5] &quot;sample_id&quot;       &quot;source&quot;          &quot;application&quot;     &quot;exp_duration&quot;   
-##  [9] &quot;formulation&quot;     &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;       &quot;species&quot;</code></pre>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;body_weight_g&quot;   &quot;chemical&quot;       
+##  [4] &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;       &quot;source&quot;         
+##  [7] &quot;application&quot;     &quot;exp_duration&quot;    &quot;formulation&quot;    
+## [10] &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;       &quot;species&quot;</code></pre>
 <pre><code>##  app_rate_g_cm2      body_weight_g     chemical  tissue_conc_ugg   
 ##  Min.   :2.600e-06   Min.   :0.9634   ATZT :42   Min.   : 0.00054  
 ##  1st Qu.:1.430e-05   1st Qu.:1.7623   DT   :23   1st Qu.: 0.27576  
@@ -1907,9 +1926,10 @@ colnames(vm2015_subset4)[which(colnames(vm2015_subset4)==&quot;TissueConc&quot;)
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)==&quot;SoilConc&quot;)]&lt;-&quot;soil_conc_ugg&quot;
 colnames(vm2015_subset4)[which(colnames(vm2015_subset4)==&quot;bodyweight&quot;)]&lt;-&quot;body_weight_g&quot;
 colnames(vm2015_subset4)</code></pre>
-<pre><code>##  [1] &quot;species&quot;         &quot;sample_id&quot;       &quot;chemical&quot;        &quot;application&quot;    
-##  [5] &quot;app_rate_g_cm2&quot;  &quot;tissue_conc_ugg&quot; &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;  
-##  [9] &quot;formulation&quot;     &quot;soil_type&quot;       &quot;exp_duration&quot;    &quot;source&quot;</code></pre>
+<pre><code>##  [1] &quot;species&quot;         &quot;sample_id&quot;       &quot;chemical&quot;       
+##  [4] &quot;application&quot;     &quot;app_rate_g_cm2&quot;  &quot;tissue_conc_ugg&quot;
+##  [7] &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;   &quot;formulation&quot;    
+## [10] &quot;soil_type&quot;       &quot;exp_duration&quot;    &quot;source&quot;</code></pre>
 <pre class="r"><code># reorder vm2015 alphabetically
 vm2015_merge &lt;- vm2015_subset4[,order(names(vm2015_subset4))]
 
@@ -1968,14 +1988,16 @@ vm2016_subset6$chemical[vm2016_subset6$chemical==&quot;Imid&quot;] &lt;- &quot;i
 
 # reorder columns alphabetically to help with merge
 colnames(vm2016_subset6)</code></pre>
-<pre><code>##  [1] &quot;chemical&quot;        &quot;soil_type&quot;       &quot;tissue_conc_ugg&quot; &quot;soil_conc_ugg&quot;  
-##  [5] &quot;body_weight_g&quot;   &quot;formulation&quot;     &quot;sample_id&quot;       &quot;species&quot;        
-##  [9] &quot;application&quot;     &quot;exp_duration&quot;    &quot;source&quot;          &quot;app_rate_g_cm2&quot;</code></pre>
+<pre><code>##  [1] &quot;chemical&quot;        &quot;soil_type&quot;       &quot;tissue_conc_ugg&quot;
+##  [4] &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;   &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;species&quot;         &quot;application&quot;    
+## [10] &quot;exp_duration&quot;    &quot;source&quot;          &quot;app_rate_g_cm2&quot;</code></pre>
 <pre class="r"><code>vm2016_merge &lt;- vm2016_subset6[,order(names(vm2016_subset6))]
 colnames(vm2016_merge)</code></pre>
-<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       
-##  [5] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
-##  [9] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [4] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
+## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 <pre class="r"><code># write a local copy
 vm2016_merge_filename &lt;- paste(amphibdir_data_out,&quot;vm2016_merge.csv&quot;, sep=&quot;&quot;)
 write.csv(vm2016_merge, file=vm2016_merge_filename)</code></pre>
@@ -2088,9 +2110,10 @@ colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.
 <p>The application rates and soil concentrations were not included in the original biomarkers data set. Both are included in the following data set:</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 136  15</code></pre>
-<pre><code>##  [1] &quot;frog.weight&quot;  &quot;SAMPLE&quot;       &quot;Met&quot;          &quot;TDN&quot;          &quot;TDL&quot;         
-##  [6] &quot;BIF&quot;          &quot;soil.weight&quot;  &quot;Met.soil&quot;     &quot;TDN.soil&quot;     &quot;TDL.soil&quot;    
-## [11] &quot;BIF.soil&quot;     &quot;Rate&quot;         &quot;app.rate.met&quot; &quot;app.rate.tdn&quot; &quot;app.rate.bif&quot;</code></pre>
+<pre><code>##  [1] &quot;frog.weight&quot;  &quot;SAMPLE&quot;       &quot;Met&quot;          &quot;TDN&quot;         
+##  [5] &quot;TDL&quot;          &quot;BIF&quot;          &quot;soil.weight&quot;  &quot;Met.soil&quot;    
+##  [9] &quot;TDN.soil&quot;     &quot;TDL.soil&quot;     &quot;BIF.soil&quot;     &quot;Rate&quot;        
+## [13] &quot;app.rate.met&quot; &quot;app.rate.tdn&quot; &quot;app.rate.bif&quot;</code></pre>
 <pre><code>##   frog.weight         SAMPLE         Met               TDN         
 ##  Min.   :1.012   BIF 10 1:  1   Min.   : 0.0000   Min.   :0.00000  
 ##  1st Qu.:2.749   BIF 10 2:  1   1st Qu.: 0.0000   1st Qu.:0.00000  
@@ -2201,9 +2224,10 @@ dag_biomarker_subset5 &lt;- unite(data = dag_biomarker_subset4, col = &quot;samp
 # order columns in abc for merge
 dag_biomarker_merge &lt;- dag_biomarker_subset5[ ,order(names(dag_biomarker_subset5))]</code></pre>
 <p>The updated column names and dimensions are:</p>
-<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       
-##  [5] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
-##  [9] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [4] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
+## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 <pre><code>## [1] 192  12</code></pre>
 <p>The Glinski et al. 2019 (Biomarkers) was combined with the previously merged data sets.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
@@ -2302,9 +2326,10 @@ colnames(dermal_routes_subset8)[which(colnames(dermal_routes_subset8)==&quot;Wei
 dermal_routes_subset9 &lt;- cbind(dermal_routes_subset8, app_rate_g_cm2, application, exp_duration, 
                                formulation, soil_type, source, species)
 names(dermal_routes_subset9)</code></pre>
-<pre><code>##  [1] &quot;sample_id&quot;       &quot;chemical&quot;        &quot;Media&quot;           &quot;Matrix&quot;         
-##  [5] &quot;tissue_conc_ugg&quot; &quot;body_weight_g&quot;   &quot;soil_conc_ugg&quot;   &quot;app_rate_g_cm2&quot; 
-##  [9] &quot;application&quot;     &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;soil_type&quot;      
+<pre><code>##  [1] &quot;sample_id&quot;       &quot;chemical&quot;        &quot;Media&quot;          
+##  [4] &quot;Matrix&quot;          &quot;tissue_conc_ugg&quot; &quot;body_weight_g&quot;  
+##  [7] &quot;soil_conc_ugg&quot;   &quot;app_rate_g_cm2&quot;  &quot;application&quot;    
+## [10] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;soil_type&quot;      
 ## [13] &quot;source&quot;          &quot;species&quot;</code></pre>
 <pre class="r"><code># drop columns
 cols_to_drop &lt;- c(&quot;Matrix&quot;, &quot;Media&quot;)
@@ -2325,9 +2350,10 @@ summary(dermal_routes_subset10$app_rate_g_cm2)</code></pre>
 dermal_routes_merge &lt;- dermal_routes_subset10[ ,order(names(dermal_routes_subset10))]</code></pre>
 <p>The updated column names and dimensions are:</p>
 <pre><code>## [1] 24 12</code></pre>
-<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       
-##  [5] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
-##  [9] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [4] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
+## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 <p>A local copy was saved, and the data set was combined with the collated data set.</p>
 <p><strong>The combined data set’s updated dimensions are:</strong></p>
 <pre><code>## [1] 1014   12</code></pre>
@@ -2341,9 +2367,10 @@ dermal_routes_merge &lt;- dermal_routes_subset10[ ,order(names(dermal_routes_sub
 <pre class="r"><code>amphib_dermal_collated &lt;- combined_data6
 
 colnames(amphib_dermal_collated)</code></pre>
-<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       
-##  [5] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
-##  [9] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [4] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
+## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 <pre class="r"><code># check to see if everything ok
 summary(amphib_dermal_collated$app_rate_g_cm2) </code></pre>
 <pre><code>##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
@@ -2396,9 +2423,10 @@ amphib_dermal_collated_filename &lt;- paste(amphibdir_data_out,&quot;amphib_derm
 write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></pre>
 <div id="column-names" class="section level4">
 <h4><strong>Column Names</strong></h4>
-<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       
-##  [5] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
-##  [9] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [4] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;    
+##  [7] &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;      
+## [10] &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
 </div>
 <div id="dimensions" class="section level4">
 <h4><strong>Dimensions</strong></h4>
@@ -2422,14 +2450,22 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ##  3rd Qu.: 8.000   3rd Qu.:0.00000   ATZMAPZ_ATZT:  6   3rd Qu.: 15.3781  
 ##  Max.   :48.000   Max.   :1.00000   ATZMAPZ_MAT :  6   Max.   :238.1502  
 ##                   NA&#39;s   :9         (Other)     :978   NA&#39;s   :206       
-##  soil_type              source                species    tissue_conc_ugg   
-##  PLE :544   dag_dehydration:300   Leopard frog    :412   Min.   : 0.00054  
-##  OLS : 72   rvm2015        :196   Fowlers toad    :200   1st Qu.: 0.16908  
-##  NA&#39;s:398   dag_biomarker  :192   Rana_clamitans  :137   Median : 0.52573  
-##             rvm2017        :137   American toad   : 96   Mean   : 2.51415  
-##             rvm2016        : 96   Barking treefrog: 50   3rd Qu.: 2.06812  
-##             dag_metabolites: 60   Green treefrog  : 45   Max.   :72.62672  
-##             (Other)        : 33   (Other)         : 74</code></pre>
+##  soil_type              source                species   
+##  PLE :544   dag_dehydration:300   Leopard frog    :412  
+##  OLS : 72   rvm2015        :196   Fowlers toad    :200  
+##  NA&#39;s:398   dag_biomarker  :192   Rana_clamitans  :137  
+##             rvm2017        :137   American toad   : 96  
+##             rvm2016        : 96   Barking treefrog: 50  
+##             dag_metabolites: 60   Green treefrog  : 45  
+##             (Other)        : 33   (Other)         : 74  
+##  tissue_conc_ugg   
+##  Min.   : 0.00054  
+##  1st Qu.: 0.16908  
+##  Median : 0.52573  
+##  Mean   : 2.51415  
+##  3rd Qu.: 2.06812  
+##  Max.   :72.62672  
+## </code></pre>
 <p><br></p>
 <hr />
 <p>Session Information</p>
@@ -2451,21 +2487,25 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ## 
 ## other attached packages:
 ##  [1] anchors_3.0-8    MASS_7.3-51.4    rgenoud_5.8-3.0  stringr_1.4.0   
-##  [5] tidyr_1.0.0      dplyr_0.8.3      knitr_1.26       kableExtra_1.1.0
+##  [5] tidyr_1.0.0      dplyr_0.8.3      knitr_1.25       kableExtra_1.1.0
 ##  [9] reshape2_1.4.3   gridExtra_2.3    ggplot2_3.2.1   
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.3        highr_0.8         pillar_1.4.2      compiler_3.6.1   
-##  [5] plyr_1.8.4        tools_3.6.1       zeallot_0.1.0     digest_0.6.22    
-##  [9] lifecycle_0.1.0   viridisLite_0.3.0 evaluate_0.14     tibble_2.1.3     
-## [13] gtable_0.3.0      pkgconfig_2.0.3   rlang_0.4.1       rstudioapi_0.10  
-## [17] yaml_2.2.0        xfun_0.10         xml2_1.2.2        httr_1.4.1       
-## [21] withr_2.1.2       vctrs_0.2.0       hms_0.5.2         webshot_0.5.1    
-## [25] grid_3.6.1        tidyselect_0.2.5  glue_1.3.1        R6_2.4.1         
-## [29] rmarkdown_1.16    purrr_0.3.3       readr_1.3.1       magrittr_1.5     
-## [33] ellipsis_0.3.0    backports_1.1.5   scales_1.0.0      htmltools_0.4.0  
-## [37] rvest_0.3.4       assertthat_0.2.1  colorspace_1.4-1  stringi_1.4.3    
-## [41] lazyeval_0.2.2    munsell_0.5.0     crayon_1.3.4</code></pre>
+##  [1] Rcpp_1.0.2        highr_0.8         pillar_1.4.2     
+##  [4] compiler_3.6.1    plyr_1.8.4        tools_3.6.1      
+##  [7] zeallot_0.1.0     digest_0.6.21     lifecycle_0.1.0  
+## [10] viridisLite_0.3.0 evaluate_0.14     tibble_2.1.3     
+## [13] gtable_0.3.0      pkgconfig_2.0.3   rlang_0.4.0      
+## [16] rstudioapi_0.10   yaml_2.2.0        xfun_0.10        
+## [19] xml2_1.2.2        httr_1.4.1        withr_2.1.2      
+## [22] vctrs_0.2.0       hms_0.5.1         webshot_0.5.1    
+## [25] grid_3.6.1        tidyselect_0.2.5  glue_1.3.1       
+## [28] R6_2.4.0          rmarkdown_1.16    purrr_0.3.3      
+## [31] readr_1.3.1       magrittr_1.5      ellipsis_0.3.0   
+## [34] backports_1.1.5   scales_1.0.0      htmltools_0.4.0  
+## [37] rvest_0.3.5       assertthat_0.2.1  colorspace_1.4-1 
+## [40] stringi_1.4.3     lazyeval_0.2.2    munsell_0.5.0    
+## [43] crayon_1.3.4</code></pre>
 </div>
 </div>
 

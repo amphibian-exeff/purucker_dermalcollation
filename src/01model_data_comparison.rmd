@@ -38,6 +38,10 @@ library(reshape2)
 if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
   amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
+# tom epa laptop
+if(Sys.info()[4] == "LZ2626UTPURUCKE"){
+  amphibdir <- path.expand("C:/git/amphib_dermal_collation/")
+}
 # Emma's EPA
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
   amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
