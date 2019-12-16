@@ -332,8 +332,10 @@ sum(tissue_conc*10 > tim_direct_amphib)
 False Negative Rates were also computed indiviually by study source. The table below displays the false negative rates and the measurements within an order of magnitude of the modeled value (displayed as %).
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # compute FNR by study
+unique(combined_data$source)
 
 # subset rvm2015
+#View(combined_data)
 sub_rvm2015 <- combined_data[combined_data$source == "rvm2015",]
 # computations
 fnr_default_rvm2015 <- sum(sub_rvm2015$tissue_conc_ugg > sub_rvm2015$tim_direct_default)
@@ -344,6 +346,36 @@ fnr10_amphib_rvm2015 <- sum(sub_rvm2015$tissue_conc_ugg*10 > sub_rvm2015$tim_dir
 vec_rvm2015 <- c(fnr_default_rvm2015, fnr10_default_rvm2015, fnr_amphib_rvm2015, fnr10_amphib_rvm2015)
 # compute rates
 rate_rvm2015 <- vec_rvm2015/nrow(sub_rvm2015)
+
+# subset rvm2015 soil/indirect
+sub_rvm2015_soil0 <- combined_data[combined_data$source == "rvm2015",]
+#View(sub_rvm2015_soil0)
+sub_rvm2015_soil <- sub_rvm2015_soil0[sub_rvm2015_soil0$application == "soil",]
+#View(sub_rvm2015_soil)
+# computations
+fnr_default_rvm2015_soil <- sum(sub_rvm2015_soil$tissue_conc_ugg > sub_rvm2015_soil$tim_direct_default)
+fnr10_default_rvm2015_soil <- sum(sub_rvm2015_soil$tissue_conc_ugg*10 > sub_rvm2015_soil$tim_direct_default)
+fnr_amphib_rvm2015_soil <- sum(sub_rvm2015_soil$tissue_conc_ugg > sub_rvm2015_soil$tim_direct_amphib)
+fnr10_amphib_rvm2015_soil <- sum(sub_rvm2015_soil$tissue_conc_ugg*10 > sub_rvm2015_soil$tim_direct_amphib)
+# vector
+vec_rvm2015_soil <- c(fnr_default_rvm2015_soil, fnr10_default_rvm2015_soil, fnr_amphib_rvm2015_soil, fnr10_amphib_rvm2015_soil)
+# compute rates
+rate_rvm2015_soil <- vec_rvm2015_soil/nrow(sub_rvm2015_soil)
+
+# subset rvm2015 overspray/direct
+sub_rvm2015_overspray0 <- combined_data[combined_data$source == "rvm2015",]
+#View(sub_rvm2015_overspray0)
+sub_rvm2015_overspray <- sub_rvm2015_overspray0[sub_rvm2015_overspray0$application == "overspray",]
+#View(sub_rvm2015_overspray)
+# computations
+fnr_default_rvm2015_overspray <- sum(sub_rvm2015_overspray$tissue_conc_ugg > sub_rvm2015_overspray$tim_direct_default)
+fnr10_default_rvm2015_overspray <- sum(sub_rvm2015_overspray$tissue_conc_ugg*10 > sub_rvm2015_overspray$tim_direct_default)
+fnr_amphib_rvm2015_overspray <- sum(sub_rvm2015_overspray$tissue_conc_ugg > sub_rvm2015_overspray$tim_direct_amphib)
+fnr10_amphib_rvm2015_overspray <- sum(sub_rvm2015_overspray$tissue_conc_ugg*10 > sub_rvm2015_overspray$tim_direct_amphib)
+# vector
+vec_rvm2015_overspray <- c(fnr_default_rvm2015_overspray, fnr10_default_rvm2015_overspray, fnr_amphib_rvm2015_overspray, fnr10_amphib_rvm2015_overspray)
+# compute rates
+rate_rvm2015_overspray <- vec_rvm2015_overspray/nrow(sub_rvm2015_overspray)
 
 
 # subset rvm2016
@@ -444,16 +476,19 @@ rate_bio <- vec_bio/nrow(sub_bio)
 
 
 # create matrix of fnr 
-sample_size <- c(nrow(sub_rvm2015), nrow(sub_rvm2016), nrow(sub_rvm2017),
+sample_size <- c(nrow(sub_rvm2015), nrow(sub_rvm2015_soil), nrow(sub_rvm2015_overspray),
+                 nrow(sub_rvm2016), nrow(sub_rvm2017),
                  nrow(sub_hr2008), nrow(sub_metabolites), nrow(sub_dehy),
                  nrow(sub_bio), nrow(sub_dermal))
-fnr <- rbind(rate_rvm2015, rate_rvm2016, rate_rvm2017, rate_hr2008, rate_metabolites,
-             rate_dehy, rate_bio, rate_dermal)
+fnr <- rbind(rate_rvm2015, rate_rvm2015_soil, rate_rvm2015_overspray, 
+             rate_rvm2016,rate_rvm2017, 
+             rate_hr2008, rate_metabolites, rate_dehy, 
+             rate_bio, rate_dermal)
 fnr <- round(fnr*100, 2)
 fnr <- cbind(sample_size, fnr)
 fnr <- as.data.frame(fnr)
 names(fnr) <- c("sample_size", "fnr", "fnr_10", "fnr", "fnr_10")
-rownames(fnr) <- c("Van Meter 2014/15", "Van Meter 2016", "Van Meter 2018", "Henson-Ramsey 2008", 
+rownames(fnr) <- c("Van Meter 2014/15 total", "Van Meter 2014/15 soil", "Van Meter 2014/15 overspray", "Van Meter 2016", "Van Meter 2018", "Henson-Ramsey 2008", 
                    "Glinski 2018b (Metabolites)", "Glinski 2018a (Dehydration)", "Glinski 2019 (Biomarkers)",
                    "Glinski 2020 (Dermal)")
 ```
