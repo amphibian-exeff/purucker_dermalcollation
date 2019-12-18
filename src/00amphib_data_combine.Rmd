@@ -308,7 +308,7 @@ app_rates <- read.table(app_rates_file, header = TRUE, sep = ",")
 ```
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
-kable(app_rates[, 2:10]) %>%
+kable(app_rates[, 2:9]) %>%
   kable_styling("striped", full_width = F) %>%
   pack_rows("Van Meter et al. 2014/2015", 1, 5) %>%
   pack_rows("Van Meter et al. 2016", 6, 10) %>%
