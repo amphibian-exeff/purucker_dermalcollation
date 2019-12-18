@@ -1,6 +1,10 @@
 ---
-title: "Creating a Database of Amphibian Dermal Exposure Data"
-author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM"
+title: "Creating a Database of Amphibian Dermal Exposure Data and Assessing Model Performance"
+author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
+  S, Henderson WM
+output:
+  html_document:
+    df_print: paged
 ---  
 
 ```{r eval=FALSE, echo=FALSE}
@@ -1114,30 +1118,14 @@ dim(amphib_dermal_collated)
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 summary(amphib_dermal_collated)
 ```
-<br>
+<br><br><br>
 
 ***
 
-# **Comparing Models**
 
-***
-
-**Overview**
+**Compare Amphibian Dermal Exposure Data with Proposed Models**
 ======================================================================
-A comparison between the Terrestrial Investigation Model (TIM) and the collected amphibian dermal exposure data (introduced in 00_amphib_data_combine.Rmd) will be conducted.  TIM is a probabilistic model simulating multimedia pesticide exposure from food, dermal contact, drinking water, or inhalation exposure routes.
-
-Collected amphibian dermal exposure data is from 9 studies:  
-
-* Van Meter et al. 2014/2015 data includes exposure with 5 active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, and triadimefon) and 9 amphibian species in the terrestrial metamorph stage (American toad, Barking treefrog, Cricket frog, Fowler's toad, Gray treefrog, Green treefrog, Leopard frog, Mole salamander, Narrowmouth toad). 
-* Van Meter et al. 2016 data includes exposure to the same 5 pesticides on American toads. Van Meter et al. 2018 data consisted of exposure to a single pesticide or pesticide mixtures (atrazine, metolachlor, 2,4-D, malathion, propiconazole) on juvenile green frogs. 
-* Glinski et al. 2018a (Dehydration) data includes exposure to 5 pesticides (atrazine, triadimefon, metolachlor, chlorothalonil, imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). 
-* Glinski et al. 2018b (Metabolites) data consists of exposure to 3 pesticides (atrazine, triadimefon, fipronil) on Fowler's toads. 
-* Glinski et al. 2019 (Biomarkers) data includes exposure to single, double, or triple pesticide mixtures (bifenthrin, metolachlor, triadimefon) on Southern leopard frogs.  
-* Glinski et al. 2020 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. 
-* Henson-Ramsey et al. 2008 data consists of exposure to malathion for Tiger salamanders.
-
-
-<br><br>
+A comparison between the Terrestrial Investigation Model (TIM) and the collected amphibian dermal exposure data will be conducted.  TIM is a probabilistic model simulating multimedia pesticide exposure from food, dermal contact, drinking water, or inhalation exposure routes.
 
 ***
 ```{r eval = TRUE, echo = FALSE}
@@ -1604,7 +1592,7 @@ sa_comparison_filename <- paste(amphibdir_graphics,"sa_comparison.png",sep='')
 ggsave(sa_comparison_filename, device="png", width=4, height=4)
 
 ```
-<br><br>
+<br><br><br>
 
 ***
 
