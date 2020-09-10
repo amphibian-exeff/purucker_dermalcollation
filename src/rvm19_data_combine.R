@@ -3,6 +3,7 @@ r19al <- read_csv("data_in/rvm2019_alachlor.csv", skip = 1)
 r19at <- read_csv("data_in/rvm2019_atrazine.csv")
 runal <- read_csv("data_in/rvmunpub_alachlor.csv")
 runat <- read_csv("data_in/rvmunpub_atrazine.csv")
+lab <- read_csv("data_out/amphib_dermal_collated.csv")
 #lab<-lab[,c(2:13)]
 
 #no need to convert ppm to ug/g
@@ -14,7 +15,7 @@ runat <- read_csv("data_in/rvmunpub_atrazine.csv")
 # body weight is NA (for now)
 # app rate for atrazine: 23.6 ug/cm2, for alachlor: 34.8 ug/cm2 - 1000000 conversion factor
 
-## rvm19
+##rvm 19
 r19al<-na.omit(r19al)
 r19at<-na.omit(r19at)
 r19al<-r19al[,c(1,6)]
