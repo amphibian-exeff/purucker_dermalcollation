@@ -1,4 +1,3 @@
-library('dplyr')
 
 r19al <- read_csv("data_in/rvm2019_alachlor.csv", skip = 1)
 r19at <- read_csv("data_in/rvm2019_atrazine.csv")
