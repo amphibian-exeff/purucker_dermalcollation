@@ -1,4 +1,5 @@
 
+
 r19al <- read.csv("data_in/rvm2019_alachlor.csv", skip = 1)
 r19at <- read.csv("data_in/rvm2019_atrazine.csv")
 runal <- read.csv("data_in/rvmunpub_alachlor.csv")
@@ -6,6 +7,7 @@ runat <- read.csv("data_in/rvmunpub_atrazine.csv")
 lab   <- read.csv("data_out/amphib_dermal_collated.csv")
 bw    <- read.csv("data_in/bw_RVM.csv")
 lab<-lab[,c(2:13)]
+
 
 #no need to convert ppm to ug/g
 #need to get appliation rates from van meter 2019
@@ -19,6 +21,7 @@ lab<-lab[,c(2:13)]
 
 #soil is Unicorn Sassafras Loam for both rvm
 #body weights match to ID
+
 
 
 ## rvm19
@@ -38,8 +41,8 @@ names(r19)
 
 colnames(r19)[1]<-'sample_id'
 colnames(r19)[2]<-'tissue_conc_ugg'
+colnames(r19)[3]<-'body_weight_g'
 r19$application<-'soil'
-r19$body_weight_g<-NA
 r19$exp_duration<-8
 r19$formulation<-0
 r19$species<-'Southern Leopard Frog'
@@ -69,8 +72,8 @@ names(run)
 colnames(run)[1]<-'sample_id'
 colnames(run)[2]<-'tissue_conc_ugg'
 colnames(run)[3]<-'soil_conc_ugg'
+colnames(run)[4]<-'body_weight_g'
 run$application<-'soil'
-run$body_weight_g<-NA
 run$exp_duration<-8
 run$formulation<-0
 run$species<-'Southern Leopard Frog'
