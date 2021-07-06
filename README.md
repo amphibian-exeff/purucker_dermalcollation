@@ -13,6 +13,8 @@ Van Meter, R.J., Glinski, D.A., Purucker, S.T. and Henderson, W.M., 2018. Influe
 Van Meter, R.J., Glinski, D.A., Henderson, W.M. and Purucker, S.T., 2016. Soil organic matter content effects on dermal pesticide bioconcentration in American toads (Bufo americanus). Environmental toxicology and chemistry, 35(11), pp.2734-2741.<br>
 Van Meter, R.J., Glinski, D.A., Henderson, W.M., Garrison, A.W., Cyterski, M. and Purucker, S.T., 2015. Pesticide uptake across the amphibian dermis through soil and overspray exposures. Archives of environmental contamination and toxicology, 69(4), pp.545-556.<br>
 Van Meter, R.J., Glinski, D.A., Hong, T., Cyterski, M., Henderson, W.M. and Purucker, S.T., 2014. Estimating terrestrial amphibian pesticide body burden through dermal exposure. Environmental pollution, 193, pp.262-268.<br>
+Van Meter, R.J., Adelizzi, R., Glinski, D. & Henderson, W. Matthew. (2019). Agrochemical mixtures and amphibians: The combined effects of pesticides and fertilizer on stress, acetylcholinesterase activity and bioaccumulation in a terrestrial environment: Pesticide and fertilizer effects in juvenile frogs. Environmental Toxicology and Chemistry. 38. 10.1002/etc.4375. <br>
+Van Meter, R.J. Unpublished Data. <br>
 
 
 **Bayesian inference on dermal_af using Metropolis-Hastings MCMC:**
