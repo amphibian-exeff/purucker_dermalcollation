@@ -9,10 +9,19 @@ library(ggplot2)
 require(gridExtra)
 library(reshape2)
 
-# Emma's laptop
-if(Sys.info()[4]=="LZ2626UECHELSVI"){
-  amphibdir <- path.expand("C:/Users/echelsvi/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/amphib_dermal_collation/amphib_dermal_collation-master/")
+# tom epa linux
+if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
+  amphibdir <- path.expand("~/git/amphib_dermal_collation/")
 }
+# tom epa laptop
+if(Sys.info()[4] == "LZ2626UTPURUCKE"){
+  amphibdir <- path.expand("C:/git/amphib_dermal_collation/")
+}
+# Emma's EPA
+if(Sys.info()[4]=="LZ2626UECHELSVI"){
+  amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
+}
+
 
 # Variable names for data
 amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')
@@ -228,14 +237,14 @@ combined_data$chemical[combined_data$chemical=="TNDTOT "] <-"Total Triadimefon"
 chemicals2 <- c("Total Atrazine","Imidacloprid","Total Fipronil","Pendimethalin","Total Triadimefon")
 
 # create dataframe with total active ingredients for use in comparison
-combined_data2 <- subset(combined_data, chemical %in% c("Total Atrazine","Imidacloprid","Total Fipronil","Pendimethalin","Total Triadimefon"))
-View(combined_data2)
-combined_data2$chemical <- factor(combined_data2$chemical)
+#combined_data2 <- subset(combined_data, chemical %in% c("Total Atrazine","Imidacloprid","Total Fipronil","Pendimethalin","Total Triadimefon"))
+#View(combined_data2)
+#combined_data2$chemical <- factor(combined_data2$chemical)
 ```
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
-dim(combined_data2)
-summary(combined_data2$chemical)
+#dim(combined_data2)
+#summary(combined_data2$chemical)
 ```
 
 

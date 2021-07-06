@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -48,6 +47,15 @@ if (!!window.navigator.userAgent.match("MSIE 8")) {
 !function(a){"use strict";a.matchMedia=a.matchMedia||function(a){var b,c=a.documentElement,d=c.firstElementChild||c.firstChild,e=a.createElement("body"),f=a.createElement("div");return f.id="mq-test-1",f.style.cssText="position:absolute;top:-100em",e.style.background="none",e.appendChild(f),function(a){return f.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',c.insertBefore(e,d),b=42===f.offsetWidth,c.removeChild(e),{matches:b,media:a}}}(a.document)}(this),function(a){"use strict";function b(){u(!0)}var c={};a.respond=c,c.update=function(){};var d=[],e=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}(),f=function(a,b){var c=e();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))};if(c.ajax=f,c.queue=d,c.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/},c.mediaQueriesSupported=a.matchMedia&&null!==a.matchMedia("only all")&&a.matchMedia("only all").matches,!c.mediaQueriesSupported){var g,h,i,j=a.document,k=j.documentElement,l=[],m=[],n=[],o={},p=30,q=j.getElementsByTagName("head")[0]||k,r=j.getElementsByTagName("base")[0],s=q.getElementsByTagName("link"),t=function(){var a,b=j.createElement("div"),c=j.body,d=k.style.fontSize,e=c&&c.style.fontSize,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",c||(c=f=j.createElement("body"),c.style.background="none"),k.style.fontSize="100%",c.style.fontSize="100%",c.appendChild(b),f&&k.insertBefore(c,k.firstChild),a=b.offsetWidth,f?k.removeChild(c):c.removeChild(b),k.style.fontSize=d,e&&(c.style.fontSize=e),a=i=parseFloat(a)},u=function(b){var c="clientWidth",d=k[c],e="CSS1Compat"===j.compatMode&&d||j.body[c]||d,f={},o=s[s.length-1],r=(new Date).getTime();if(b&&g&&p>r-g)return a.clearTimeout(h),h=a.setTimeout(u,p),void 0;g=r;for(var v in l)if(l.hasOwnProperty(v)){var w=l[v],x=w.minw,y=w.maxw,z=null===x,A=null===y,B="em";x&&(x=parseFloat(x)*(x.indexOf(B)>-1?i||t():1)),y&&(y=parseFloat(y)*(y.indexOf(B)>-1?i||t():1)),w.hasquery&&(z&&A||!(z||e>=x)||!(A||y>=e))||(f[w.media]||(f[w.media]=[]),f[w.media].push(m[w.rules]))}for(var C in n)n.hasOwnProperty(C)&&n[C]&&n[C].parentNode===q&&q.removeChild(n[C]);n.length=0;for(var D in f)if(f.hasOwnProperty(D)){var E=j.createElement("style"),F=f[D].join("\n");E.type="text/css",E.media=D,q.insertBefore(E,o.nextSibling),E.styleSheet?E.styleSheet.cssText=F:E.appendChild(j.createTextNode(F)),n.push(E)}},v=function(a,b,d){var e=a.replace(c.regex.keyframes,"").match(c.regex.media),f=e&&e.length||0;b=b.substring(0,b.lastIndexOf("/"));var g=function(a){return a.replace(c.regex.urls,"$1"+b+"$2$3")},h=!f&&d;b.length&&(b+="/"),h&&(f=1);for(var i=0;f>i;i++){var j,k,n,o;h?(j=d,m.push(g(a))):(j=e[i].match(c.regex.findStyles)&&RegExp.$1,m.push(RegExp.$2&&g(RegExp.$2))),n=j.split(","),o=n.length;for(var p=0;o>p;p++)k=n[p],l.push({media:k.split("(")[0].match(c.regex.only)&&RegExp.$2||"all",rules:m.length-1,hasquery:k.indexOf("(")>-1,minw:k.match(c.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:k.match(c.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},w=function(){if(d.length){var b=d.shift();f(b.href,function(c){v(c,b.href,b.media),o[b.href]=!0,a.setTimeout(function(){w()},0)})}},x=function(){for(var b=0;b<s.length;b++){var c=s[b],e=c.href,f=c.media,g=c.rel&&"stylesheet"===c.rel.toLowerCase();e&&g&&!o[e]&&(c.styleSheet&&c.styleSheet.rawCssText?(v(c.styleSheet.rawCssText,e,f),o[e]=!0):(!/^([a-zA-Z:]*\/\/)/.test(e)&&!r||e.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&("//"===e.substring(0,2)&&(e=a.location.protocol+e),d.push({href:e,media:f})))}w()};x(),c.update=x,c.getEmValue=t,a.addEventListener?a.addEventListener("resize",b,!1):a.attachEvent&&a.attachEvent("onresize",b)}}(this);
 };
 </script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script>
 
 /**
@@ -218,13 +226,232 @@ color: #d14;
     }
 });
 </script>
+<style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -237,32 +464,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -272,10 +474,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -292,6 +490,9 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
@@ -304,7 +505,6 @@ summary {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -340,6 +540,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -367,7 +568,7 @@ summary {
 
 
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -480,22 +681,22 @@ summary {
 ## [13] &quot;initialweight&quot;  &quot;Solat20C_mgL&quot;   &quot;Solat20C_gL&quot;    &quot;molmass_gmol&quot;  
 ## [17] &quot;Density_gcm3&quot;   &quot;AppFactor&quot;      &quot;SA_cm2&quot;         &quot;VapPrs_mPa&quot;    
 ## [21] &quot;Koc_gmL&quot;        &quot;HalfLife_day&quot;   &quot;HabFac&quot;</code></pre>
-<pre><code>##              Species        Sample                 Chemical   Instrument
-##  Barking treefrog:120   FTA1   :  4   Total Triadimefon: 49   GCMS: 25  
-##  Green treefrog  :115   FTA2   :  4   Triadimefon      : 49   LCMS:449  
-##  Gray treefrog   : 60   FTA3   :  4   Triadimenol      : 49             
-##  Fowlers toad    : 55   FTA4   :  4   Atrazine         : 39             
-##  Leopard frog    : 44   FTA5   :  4   Fipronil         : 39             
-##  Mole salamander : 40   HCA1   :  4   Pendimethalin    : 39             
-##  (Other)         : 40   (Other):450   (Other)          :210             
-##       good      Application  app_rate_g_cm2    TissueConc       
-##  Min.   :1   Overspray:115   Min.   :0e+00   Min.   : 0.007484  
-##  1st Qu.:1   Soil     :359   1st Qu.:0e+00   1st Qu.: 0.246753  
-##  Median :1                   Median :0e+00   Median : 0.575811  
-##  Mean   :1                   Mean   :1e-05   Mean   : 1.908242  
-##  3rd Qu.:1                   3rd Qu.:2e-05   3rd Qu.: 1.743142  
-##  Max.   :1                   Max.   :2e-05   Max.   :23.441298  
-##                              NA&#39;s   :151                        
+<pre><code>##    Species             Sample            Chemical          Instrument       
+##  Length:474         Length:474         Length:474         Length:474        
+##  Class :character   Class :character   Class :character   Class :character  
+##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+##                                                                             
+##                                                                             
+##                                                                             
+##                                                                             
+##       good   Application        app_rate_g_cm2    TissueConc       
+##  Min.   :1   Length:474         Min.   :0e+00   Min.   : 0.007484  
+##  1st Qu.:1   Class :character   1st Qu.:0e+00   1st Qu.: 0.246753  
+##  Median :1   Mode  :character   Median :0e+00   Median : 0.575811  
+##  Mean   :1                      Mean   :1e-05   Mean   : 1.908242  
+##  3rd Qu.:1                      3rd Qu.:2e-05   3rd Qu.: 1.743142  
+##  Max.   :1                      Max.   :2e-05   Max.   :23.441298  
+##                                 NA&#39;s   :151                        
 ##     SoilConc            logKow           BCF             bodyweight    
 ##  Min.   : 0.00625   Min.   :0.570   Min.   :  0.0018   Min.   :0.5004  
 ##  1st Qu.: 0.20866   1st Qu.:2.500   1st Qu.:  0.0755   1st Qu.:1.3162  
@@ -520,13 +721,13 @@ summary {
 ##  3rd Qu.:1.480   3rd Qu.: 348598   3rd Qu.: 2.0882   3rd Qu.:0.04000  
 ##  Max.   :1.543   Max.   :4490329   Max.   :23.3326   Max.   :4.00000  
 ##                  NA&#39;s   :151                                          
-##     Koc_gmL        HalfLife_day            HabFac   
-##  Min.   :   122   Min.   : 26.00   Aquatic    : 59  
-##  1st Qu.:   122   1st Qu.: 26.00   Arboreal   :300  
-##  Median :   520   Median : 80.00   Terrestrial:115  
-##  Mean   : 20406   Mean   : 70.85                    
-##  3rd Qu.:   825   3rd Qu.: 84.00                    
-##  Max.   :243000   Max.   :125.00                    
+##     Koc_gmL        HalfLife_day       HabFac         
+##  Min.   :   122   Min.   : 26.00   Length:474        
+##  1st Qu.:   122   1st Qu.: 26.00   Class :character  
+##  Median :   520   Median : 80.00   Mode  :character  
+##  Mean   : 20406   Mean   : 70.85                     
+##  3rd Qu.:   825   3rd Qu.: 84.00                     
+##  Max.   :243000   Max.   :125.00                     
 ## </code></pre>
 <p><br></p>
 </div>
@@ -539,30 +740,27 @@ summary {
 <pre><code>##  [1] &quot;Day&quot;         &quot;Row&quot;         &quot;Column&quot;      &quot;Pesticide&quot;   &quot;SoilType&quot;   
 ##  [6] &quot;BodyBurden&quot;  &quot;Soil&quot;        &quot;Weight&quot;      &quot;Total&quot;       &quot;Formulation&quot;
 ## [11] &quot;Parent&quot;</code></pre>
-<pre><code>##       Day             Row            Column     Pesticide   SoilType 
-##  Min.   :0.000   Min.   :1.000   I      :37   ATZ    : 24   OLS:132  
-##  1st Qu.:2.000   1st Qu.:2.000   B      :35   ATZTOT : 24   PLE:132  
-##  Median :2.000   Median :4.000   A      :34   Pendi  : 24            
-##  Mean   :2.326   Mean   :4.023   C      :30   TDN    : 24            
-##  3rd Qu.:3.000   3rd Qu.:6.000   G      :30   TNDTOT : 24            
-##  Max.   :3.000   Max.   :7.000   D      :29   ATZDEA : 12            
-##                                  (Other):69   (Other):132            
-##    BodyBurden           Soil              Weight           Total       
-##  Min.   :-0.0378   Min.   :-0.10518   Min.   : 6.964   Min.   :0.0000  
-##  1st Qu.: 0.0486   1st Qu.: 0.02086   1st Qu.:10.524   1st Qu.:0.0000  
-##  Median : 0.1099   Median : 1.49572   Median :11.740   Median :0.0000  
-##  Mean   : 0.4955   Mean   : 6.02720   Mean   :12.044   Mean   :0.3636  
-##  3rd Qu.: 0.3650   3rd Qu.: 8.64289   3rd Qu.:13.440   3rd Qu.:1.0000  
-##  Max.   : 6.8744   Max.   :39.57404   Max.   :23.340   Max.   :1.0000  
-##                                                                        
-##   Formulation         Parent      
-##  Min.   :0.0000   Min.   :0.0000  
-##  1st Qu.:0.0000   1st Qu.:0.0000  
-##  Median :0.0000   Median :1.0000  
-##  Mean   :0.4091   Mean   :0.5909  
-##  3rd Qu.:1.0000   3rd Qu.:1.0000  
-##  Max.   :1.0000   Max.   :1.0000  
-## </code></pre>
+<pre><code>##       Day             Row           Column           Pesticide        
+##  Min.   :0.000   Min.   :1.000   Length:264         Length:264        
+##  1st Qu.:2.000   1st Qu.:2.000   Class :character   Class :character  
+##  Median :2.000   Median :4.000   Mode  :character   Mode  :character  
+##  Mean   :2.326   Mean   :4.023                                        
+##  3rd Qu.:3.000   3rd Qu.:6.000                                        
+##  Max.   :3.000   Max.   :7.000                                        
+##    SoilType           BodyBurden           Soil              Weight      
+##  Length:264         Min.   :-0.0378   Min.   :-0.10518   Min.   : 6.964  
+##  Class :character   1st Qu.: 0.0486   1st Qu.: 0.02086   1st Qu.:10.524  
+##  Mode  :character   Median : 0.1099   Median : 1.49572   Median :11.740  
+##                     Mean   : 0.4955   Mean   : 6.02720   Mean   :12.044  
+##                     3rd Qu.: 0.3650   3rd Qu.: 8.64289   3rd Qu.:13.440  
+##                     Max.   : 6.8744   Max.   :39.57404   Max.   :23.340  
+##      Total         Formulation         Parent      
+##  Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+##  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+##  Median :0.0000   Median :0.0000   Median :1.0000  
+##  Mean   :0.3636   Mean   :0.4091   Mean   :0.5909  
+##  3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.0000  
+##  Max.   :1.0000   Max.   :1.0000   Max.   :1.0000</code></pre>
 <p><br></p>
 </div>
 <div id="glinski-et-al.-2018a-dehydration" class="section level3">
@@ -574,22 +772,20 @@ summary {
 <pre><code>## [1] 1494    8</code></pre>
 <pre><code>## [1] &quot;time&quot;    &quot;parent&quot;  &quot;analyte&quot; &quot;matrix&quot;  &quot;species&quot; &quot;conc&quot;    &quot;ID&quot;     
 ## [8] &quot;weight&quot;</code></pre>
-<pre><code>##       time         parent        analyte       matrix    species 
-##  Min.   : 0   atrazine:396   atrazine:132   amphib:732   BA:630  
-##  1st Qu.: 2   chloro  :168   dea     :132   soil  :762   LF:864  
-##  Median : 5   chloro+d: 66   dia     :132                        
-##  Mean   : 5   imid    : 72   mesa    :132                        
-##  3rd Qu.: 8   metol   :396   metol   :132                        
-##  Max.   :10   tdn     :396   moxa    :132                        
-##                              (Other) :702                        
-##       conc                 ID           weight      
-##  Min.   :  0.00000   BAA0-1 :   6   Min.   :0.6821  
-##  1st Qu.:  0.02215   BAA0-2 :   6   1st Qu.:1.6108  
-##  Median :  0.08482   BAA0-3 :   6   Median :3.0890  
-##  Mean   :  6.17646   BAA0-4 :   6   Mean   :3.0810  
-##  3rd Qu.:  2.60007   BAA0-5 :   6   3rd Qu.:4.3124  
-##  Max.   :238.15019   BAA10-1:   6   Max.   :7.2481  
-##                      (Other):1458</code></pre>
+<pre><code>##       time       parent            analyte             matrix         
+##  Min.   : 0   Length:1494        Length:1494        Length:1494       
+##  1st Qu.: 2   Class :character   Class :character   Class :character  
+##  Median : 5   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   : 5                                                           
+##  3rd Qu.: 8                                                           
+##  Max.   :10                                                           
+##    species               conc                ID                weight      
+##  Length:1494        Min.   :  0.00000   Length:1494        Min.   :0.6821  
+##  Class :character   1st Qu.:  0.02215   Class :character   1st Qu.:1.6108  
+##  Mode  :character   Median :  0.08482   Mode  :character   Median :3.0890  
+##                     Mean   :  6.17646                      Mean   :3.0810  
+##                     3rd Qu.:  2.60007                      3rd Qu.:4.3124  
+##                     Max.   :238.15019                      Max.   :7.2481</code></pre>
 <p><br></p>
 </div>
 <div id="henson-ramsey-2008" class="section level3">
@@ -600,30 +796,27 @@ summary {
 <pre><code>##  [1] &quot;chemical&quot;        &quot;species&quot;         &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
 ##  [5] &quot;body_weight_g&quot;   &quot;formulation&quot;     &quot;soil_type&quot;       &quot;application&quot;    
 ##  [9] &quot;app_rate_g_cm2&quot;  &quot;exp_duration&quot;    &quot;soil_conc_ugg&quot;   &quot;source&quot;</code></pre>
-<pre><code>##       chemical               species  tissue_conc_ugg   sample_id
-##  Malathion:9   Ambystoma_tigrinum:9   Min.   :0.050   sal1   :1  
-##                                       1st Qu.:0.350   sal2   :1  
-##                                       Median :1.420   sal3   :1  
-##                                       Mean   :1.186   sal4   :1  
-##                                       3rd Qu.:1.470   sal5   :1  
-##                                       Max.   :3.730   sal6   :1  
-##                                                       (Other):3  
-##  body_weight_g   formulation    soil_type      application app_rate_g_cm2 
-##  Min.   :20.89   Mode:logical   Mode:logical   soil:9      Min.   :5e-05  
-##  1st Qu.:44.15   NA&#39;s:9         NA&#39;s:9                     1st Qu.:5e-05  
-##  Median :46.26                                             Median :5e-05  
-##  Mean   :43.73                                             Mean   :5e-05  
-##  3rd Qu.:48.93                                             3rd Qu.:5e-05  
-##  Max.   :50.92                                             Max.   :5e-05  
-##                                                                           
-##   exp_duration soil_conc_ugg     source 
-##  Min.   :24    Mode:logical   hr2008:9  
-##  1st Qu.:24    NA&#39;s:9                   
-##  Median :48                             
-##  Mean   :40                             
-##  3rd Qu.:48                             
-##  Max.   :48                             
-## </code></pre>
+<pre><code>##    chemical           species          tissue_conc_ugg  sample_id        
+##  Length:9           Length:9           Min.   :0.050   Length:9          
+##  Class :character   Class :character   1st Qu.:0.350   Class :character  
+##  Mode  :character   Mode  :character   Median :1.420   Mode  :character  
+##                                        Mean   :1.186                     
+##                                        3rd Qu.:1.470                     
+##                                        Max.   :3.730                     
+##  body_weight_g   formulation    soil_type      application       
+##  Min.   :20.89   Mode:logical   Mode:logical   Length:9          
+##  1st Qu.:44.15   NA&#39;s:9         NA&#39;s:9         Class :character  
+##  Median :46.26                                 Mode  :character  
+##  Mean   :43.73                                                   
+##  3rd Qu.:48.93                                                   
+##  Max.   :50.92                                                   
+##  app_rate_g_cm2   exp_duration soil_conc_ugg     source         
+##  Min.   :5e-05   Min.   :24    Mode:logical   Length:9          
+##  1st Qu.:5e-05   1st Qu.:24    NA&#39;s:9         Class :character  
+##  Median :5e-05   Median :48                   Mode  :character  
+##  Mean   :5e-05   Mean   :40                                     
+##  3rd Qu.:5e-05   3rd Qu.:48                                     
+##  Max.   :5e-05   Max.   :48</code></pre>
 <p><br></p>
 </div>
 <div id="glinski-et-al.-2018b-metabolites" class="section level3">
@@ -634,22 +827,20 @@ summary {
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 352   6</code></pre>
 <pre><code>## [1] &quot;time&quot;      &quot;parent&quot;    &quot;analyte&quot;   &quot;matrix&quot;    &quot;conc&quot;      &quot;replicate&quot;</code></pre>
-<pre><code>##       time               parent          analyte      matrix   
-##  Min.   : 0.00   atrazine   :132   ATZ       :44   amphib:160  
-##  1st Qu.: 2.00   fipronil   : 88   DEA       :44   soil  :192  
-##  Median :12.00   triadimefon:132   DIA       :44               
-##  Mean   :16.41                     F. sulfone:44               
-##  3rd Qu.:24.00                     FIP       :44               
-##  Max.   :48.00                     TDL A     :44               
-##                                    (Other)   :88               
+<pre><code>##       time          parent            analyte             matrix         
+##  Min.   : 0.00   Length:352         Length:352         Length:352        
+##  1st Qu.: 2.00   Class :character   Class :character   Class :character  
+##  Median :12.00   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :16.41                                                           
+##  3rd Qu.:24.00                                                           
+##  Max.   :48.00                                                           
 ##       conc            replicate   
 ##  Min.   :-0.01244   Min.   :1.00  
 ##  1st Qu.: 0.01292   1st Qu.:1.75  
 ##  Median : 0.08373   Median :2.50  
 ##  Mean   : 2.12963   Mean   :2.50  
 ##  3rd Qu.: 0.97824   3rd Qu.:3.25  
-##  Max.   :32.47385   Max.   :4.00  
-## </code></pre>
+##  Max.   :32.47385   Max.   :4.00</code></pre>
 <p>The <em>in vitro</em> derived constants were assessed for their precitability by exposing Fowler’s toads (<em>Anaxyrus fowleri</em>) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler’s toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.</p>
 </div>
 <div id="metabolites-data-set-merged" class="section level4">
@@ -659,14 +850,13 @@ summary {
 <pre><code>##  [1] &quot;exp_duration&quot;    &quot;chemical&quot;        &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
 ##  [5] &quot;soil_type&quot;       &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;  
 ##  [9] &quot;formulation&quot;     &quot;species&quot;         &quot;application&quot;     &quot;source&quot;</code></pre>
-<pre><code>##   exp_duration        chemical  tissue_conc_ugg             sample_id 
-##  Min.   : 2    atrazine   :20   Min.   :0.08328   atrazine_12hr_1: 1  
-##  1st Qu.: 4    fipronil   :20   1st Qu.:0.33733   atrazine_12hr_2: 1  
-##  Median :12    triadimefon:20   Median :0.86010   atrazine_12hr_3: 1  
-##  Mean   :18                     Mean   :1.42634   atrazine_12hr_4: 1  
-##  3rd Qu.:24                     3rd Qu.:1.88383   atrazine_24hr_1: 1  
-##  Max.   :48                     Max.   :7.62649   atrazine_24hr_2: 1  
-##                                                   (Other)        :54  
+<pre><code>##   exp_duration   chemical         tissue_conc_ugg    sample_id        
+##  Min.   : 2    Length:60          Min.   :0.08328   Length:60         
+##  1st Qu.: 4    Class :character   1st Qu.:0.33733   Class :character  
+##  Median :12    Mode  :character   Median :0.86010   Mode  :character  
+##  Mean   :18                       Mean   :1.42634                     
+##  3rd Qu.:24                       3rd Qu.:1.88383                     
+##  Max.   :48                       Max.   :7.62649                     
 ##  soil_type      app_rate_g_cm2      soil_conc_ugg  body_weight_g   
 ##  Mode:logical   Min.   :1.100e-06   Mode:logical   Min.   :0.1879  
 ##  NA&#39;s:60        1st Qu.:1.100e-06   NA&#39;s:60        1st Qu.:0.5925  
@@ -674,15 +864,13 @@ summary {
 ##                 Mean   :9.237e-06                  Mean   :0.7350  
 ##                 3rd Qu.:2.290e-05                  3rd Qu.:0.8782  
 ##                 Max.   :2.290e-05                  Max.   :1.4909  
-##                                                                    
-##   formulation             species   application             source  
-##  Min.   :0    Anaxyrus_fowleri:60   soil:60     dag_metabolites:60  
-##  1st Qu.:0                                                          
-##  Median :0                                                          
-##  Mean   :0                                                          
-##  3rd Qu.:0                                                          
-##  Max.   :0                                                          
-## </code></pre>
+##   formulation   species          application           source         
+##  Min.   :0    Length:60          Length:60          Length:60         
+##  1st Qu.:0    Class :character   Class :character   Class :character  
+##  Median :0    Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :0                                                            
+##  3rd Qu.:0                                                            
+##  Max.   :0</code></pre>
 <p><br></p>
 </div>
 </div>
@@ -693,22 +881,27 @@ summary {
 <pre><code>## [1] 192   9</code></pre>
 <pre><code>## [1] &quot;group&quot;       &quot;met&quot;         &quot;tdt&quot;         &quot;bif&quot;         &quot;frog.weight&quot;
 ## [6] &quot;sample_id&quot;   &quot;pesticide&quot;   &quot;rate&quot;        &quot;conc&quot;</code></pre>
-<pre><code>##        group         met               tdt               bif         
-##  bif      :16   Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
-##  bifmet   :32   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
-##  bifmettdt:48   Median : 1.0000   Median : 1.0000   Median : 1.0000  
-##  biftdt   :32   Mean   : 0.3333   Mean   : 0.3333   Mean   : 0.3333  
-##  met      :16   3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
-##  mettdt   :32   Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
-##  tdt      :16                                                        
-##   frog.weight       sample_id   pesticide         rate         conc          
-##  Min.   :1.012   TMB 10 1:  3   bif:64    1/10th Max:96   Min.   : 0.001061  
-##  1st Qu.:2.745   TMB 10 2:  3   met:64    Maximum   :96   1st Qu.: 0.069055  
-##  Median :3.142   TMB 10 3:  3   tdt:64                    Median : 0.212920  
-##  Mean   :3.299   TMB 10 4:  3                             Mean   : 0.801643  
-##  3rd Qu.:3.789   TMB 10 5:  3                             3rd Qu.: 0.521471  
-##  Max.   :6.739   TMB 10 6:  3                             Max.   :19.879783  
-##                  (Other) :174</code></pre>
+<pre><code>##     group                met               tdt               bif         
+##  Length:192         Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
+##  Class :character   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
+##  Mode  :character   Median : 1.0000   Median : 1.0000   Median : 1.0000  
+##                     Mean   : 0.3333   Mean   : 0.3333   Mean   : 0.3333  
+##                     3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
+##                     Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
+##   frog.weight     sample_id          pesticide             rate          
+##  Min.   :1.012   Length:192         Length:192         Length:192        
+##  1st Qu.:2.745   Class :character   Class :character   Class :character  
+##  Median :3.142   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :3.299                                                           
+##  3rd Qu.:3.789                                                           
+##  Max.   :6.739                                                           
+##       conc          
+##  Min.   : 0.001061  
+##  1st Qu.: 0.069055  
+##  Median : 0.212920  
+##  Mean   : 0.801643  
+##  3rd Qu.: 0.521471  
+##  Max.   :19.879783</code></pre>
 <p><br></p>
 </div>
 <div id="van-meter-et-al.-2018-multiple-pesticides-study" class="section level3">
@@ -721,30 +914,27 @@ summary {
 <pre><code>## [1] 378  10</code></pre>
 <pre><code>##  [1] &quot;Group&quot;     &quot;ATZ&quot;       &quot;D&quot;         &quot;ME&quot;        &quot;AppRate&quot;   &quot;Weight&quot;   
 ##  [7] &quot;SA&quot;        &quot;Media&quot;     &quot;Pesticide&quot; &quot;Conc&quot;</code></pre>
-<pre><code>##     Group         ATZ                D                 ME         
-##  ATZ   :54   Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
-##  ATZD  :54   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
-##  ATZME :54   Median : 1.0000   Median : 1.0000   Median : 1.0000  
-##  ATZMED:54   Mean   : 0.1429   Mean   : 0.1429   Mean   : 0.1429  
-##  D     :54   3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
-##  ME    :54   Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
-##  MED   :54                                                        
-##     AppRate          Weight             SA           Media       Pesticide  
-##  Min.   :14.30   Min.   :0.9634   Min.   :1.107   Amphib:126   ATZBCF : 42  
-##  1st Qu.:23.60   1st Qu.:1.6929   1st Qu.:1.534   BCF   :126   ATZS   : 42  
-##  Median :37.90   Median :2.0637   Median :1.720   Soil  :126   ATZT   : 42  
-##  Mean   :39.31   Mean   :2.0892   Mean   :1.715                DBCF   : 42  
-##  3rd Qu.:54.50   3rd Qu.:2.4927   3rd Qu.:1.919                DS     : 42  
-##  Max.   :68.80   Max.   :3.6843   Max.   :2.406                DT     : 42  
-##                                                                (Other):126  
-##       Conc         
-##  Min.   : 0.00000  
-##  1st Qu.: 0.00000  
-##  Median : 0.06358  
-##  Mean   : 5.64721  
-##  3rd Qu.: 1.46036  
-##  Max.   :76.03573  
-## </code></pre>
+<pre><code>##     Group                ATZ                D                 ME         
+##  Length:378         Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
+##  Class :character   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
+##  Mode  :character   Median : 1.0000   Median : 1.0000   Median : 1.0000  
+##                     Mean   : 0.1429   Mean   : 0.1429   Mean   : 0.1429  
+##                     3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
+##                     Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
+##     AppRate          Weight             SA           Media          
+##  Min.   :14.30   Min.   :0.9634   Min.   :1.107   Length:378        
+##  1st Qu.:23.60   1st Qu.:1.6929   1st Qu.:1.534   Class :character  
+##  Median :37.90   Median :2.0637   Median :1.720   Mode  :character  
+##  Mean   :39.31   Mean   :2.0892   Mean   :1.715                     
+##  3rd Qu.:54.50   3rd Qu.:2.4927   3rd Qu.:1.919                     
+##  Max.   :68.80   Max.   :3.6843   Max.   :2.406                     
+##   Pesticide              Conc         
+##  Length:378         Min.   : 0.00000  
+##  Class :character   1st Qu.: 0.00000  
+##  Mode  :character   Median : 0.06358  
+##                     Mean   : 5.64721  
+##                     3rd Qu.: 1.46036  
+##                     Max.   :76.03573</code></pre>
 </div>
 <div id="mixed-pesticide-data-set" class="section level4">
 <h4><strong>Mixed Pesticide Data Set</strong></h4>
@@ -752,22 +942,27 @@ summary {
 <pre><code>## [1] 216   9</code></pre>
 <pre><code>## [1] &quot;Group&quot;     &quot;ATZ&quot;       &quot;MA&quot;        &quot;PROP&quot;      &quot;Pesticide&quot; &quot;Media&quot;    
 ## [7] &quot;Conc&quot;      &quot;Weight&quot;    &quot;SA&quot;</code></pre>
-<pre><code>##      Group         ATZ                MA               PROP        
-##  ATZ    :18   Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
-##  ATZMA  :36   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
-##  ATZMAPZ:54   Median : 1.0000   Median : 1.0000   Median : 1.0000  
-##  ATZPZ  :36   Mean   : 0.3333   Mean   : 0.3333   Mean   : 0.3333  
-##  MA     :18   3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
-##  MAPZ   :36   Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
-##  PZ     :18                                                        
-##    Pesticide     Media         Conc              Weight            SA       
-##  ATZBCF :24   Amphib:72   Min.   : 0.00024   Min.   :1.188   Min.   :1.447  
-##  ATZS   :24   BCF   :72   1st Qu.: 0.32682   1st Qu.:1.786   1st Qu.:1.833  
-##  ATZT   :24   Soil  :72   Median : 1.61181   Median :2.014   Median :1.965  
-##  MABCF  :24               Mean   : 5.46049   Mean   :2.203   Mean   :2.047  
-##  MAS    :24               3rd Qu.: 9.99874   3rd Qu.:2.455   3rd Qu.:2.203  
-##  MAT    :24               Max.   :71.52122   Max.   :4.014   Max.   :2.929  
-##  (Other):72</code></pre>
+<pre><code>##     Group                ATZ                MA               PROP        
+##  Length:216         Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
+##  Class :character   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
+##  Mode  :character   Median : 1.0000   Median : 1.0000   Median : 1.0000  
+##                     Mean   : 0.3333   Mean   : 0.3333   Mean   : 0.3333  
+##                     3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
+##                     Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
+##   Pesticide            Media                Conc              Weight     
+##  Length:216         Length:216         Min.   : 0.00024   Min.   :1.188  
+##  Class :character   Class :character   1st Qu.: 0.32682   1st Qu.:1.786  
+##  Mode  :character   Mode  :character   Median : 1.61181   Median :2.014  
+##                                        Mean   : 5.46049   Mean   :2.203  
+##                                        3rd Qu.: 9.99874   3rd Qu.:2.455  
+##                                        Max.   :71.52122   Max.   :4.014  
+##        SA       
+##  Min.   :1.447  
+##  1st Qu.:1.833  
+##  Median :1.965  
+##  Mean   :2.047  
+##  3rd Qu.:2.203  
+##  Max.   :2.929</code></pre>
 <p>The herbicide and mixed pesticide data sets were cleaned prior and joined into a merged data set (referred to as Van Meter et al. 2018 Multiple Pesticides Study in subsequent steps). The single and mixed-pesticide treatments that were retained in the merged data set include atrazine, propiconazole, 2,4-D, malathion, and metolachlor. Original columns from the herbicide and mixed pesticide data sets were altered for standardization. These standardized columns will be used in future data cleaning steps in order to merge all data sets.</p>
 </div>
 <div id="merged-data-set" class="section level4">
@@ -777,30 +972,27 @@ summary {
 <pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;body_weight_g&quot;   &quot;chemical&quot;        &quot;tissue_conc_ugg&quot;
 ##  [5] &quot;sample_id&quot;       &quot;source&quot;          &quot;application&quot;     &quot;exp_duration&quot;   
 ##  [9] &quot;formulation&quot;     &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;       &quot;species&quot;</code></pre>
-<pre><code>##  app_rate_g_cm2      body_weight_g     chemical  tissue_conc_ugg   
-##  Min.   :2.600e-06   Min.   :0.9634   ATZT :42   Min.   : 0.00054  
-##  1st Qu.:1.430e-05   1st Qu.:1.7623   DT   :23   1st Qu.: 0.27576  
-##  Median :2.360e-05   Median :2.0136   MAT  :24   Median : 1.41009  
-##  Mean   :2.004e-05   Mean   :2.1086   MET  :24   Mean   : 7.36154  
-##  3rd Qu.:2.590e-05   3rd Qu.:2.3395   PROPT:24   3rd Qu.: 9.95084  
-##  Max.   :3.090e-05   Max.   :4.0141              Max.   :72.62672  
-##                                                                    
-##         sample_id       source    application  exp_duration  formulation
-##  ATZ_ATZT    :  6   rvm2017:137   soil:137    Min.   :8     Min.   :0   
-##  ATZD_ATZT   :  6                             1st Qu.:8     1st Qu.:0   
-##  ATZMA_ATZT  :  6                             Median :8     Median :0   
-##  ATZMA_MAT   :  6                             Mean   :8     Mean   :0   
-##  ATZMAPZ_ATZT:  6                             3rd Qu.:8     3rd Qu.:0   
-##  ATZMAPZ_MAT :  6                             Max.   :8     Max.   :0   
-##  (Other)     :101                                                       
-##  soil_conc_ugg  soil_type                species   
-##  Mode:logical   Mode:logical   Rana_clamitans:137  
-##  NA&#39;s:137       NA&#39;s:137                           
-##                                                    
-##                                                    
-##                                                    
-##                                                    
-## </code></pre>
+<pre><code>##  app_rate_g_cm2      body_weight_g      chemical         tissue_conc_ugg   
+##  Min.   :2.600e-06   Min.   :0.9634   Length:137         Min.   : 0.00054  
+##  1st Qu.:1.430e-05   1st Qu.:1.7623   Class :character   1st Qu.: 0.27576  
+##  Median :2.360e-05   Median :2.0136   Mode  :character   Median : 1.41009  
+##  Mean   :2.004e-05   Mean   :2.1086                      Mean   : 7.36154  
+##  3rd Qu.:2.590e-05   3rd Qu.:2.3395                      3rd Qu.: 9.95084  
+##  Max.   :3.090e-05   Max.   :4.0141                      Max.   :72.62672  
+##   sample_id            source          application         exp_duration
+##  Length:137         Length:137         Length:137         Min.   :8    
+##  Class :character   Class :character   Class :character   1st Qu.:8    
+##  Mode  :character   Mode  :character   Mode  :character   Median :8    
+##                                                           Mean   :8    
+##                                                           3rd Qu.:8    
+##                                                           Max.   :8    
+##   formulation soil_conc_ugg  soil_type        species         
+##  Min.   :0    Mode:logical   Mode:logical   Length:137        
+##  1st Qu.:0    NA&#39;s:137       NA&#39;s:137       Class :character  
+##  Median :0                                  Mode  :character  
+##  Mean   :0                                                    
+##  3rd Qu.:0                                                    
+##  Max.   :0</code></pre>
 <p><br></p>
 </div>
 </div>
@@ -811,14 +1003,20 @@ summary {
 <pre><code>## [1] 192   5</code></pre>
 <pre><code>## [1] &quot;Sample.ID&quot;     &quot;Analyte&quot;       &quot;Media&quot;         &quot;Matrix&quot;       
 ## [5] &quot;Concentration&quot;</code></pre>
-<pre><code>##         Sample.ID   Analyte     Media          Matrix   Concentration    
-##  Bif LF S 1 F:  2   4-OH:32   Soil :96   Amphibian:96   Min.   :0.00000  
-##  Bif LF S 1 S:  2   BIF :32   Water:96   Soil     :48   1st Qu.:0.01036  
-##  Bif LF S 2 F:  2   CPF :32              Water    :48   Median :0.15326  
-##  Bif LF S 2 S:  2   CPO :32                             Mean   :0.33962  
-##  Bif LF S 3 F:  2   TFS :32                             3rd Qu.:0.44162  
-##  Bif LF S 3 S:  2   TFSa:32                             Max.   :3.40759  
-##  (Other)     :180</code></pre>
+<pre><code>##   Sample.ID           Analyte             Media              Matrix         
+##  Length:192         Length:192         Length:192         Length:192        
+##  Class :character   Class :character   Class :character   Class :character  
+##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+##                                                                             
+##                                                                             
+##                                                                             
+##  Concentration    
+##  Min.   :0.00000  
+##  1st Qu.:0.01036  
+##  Median :0.15326  
+##  Mean   :0.33962  
+##  3rd Qu.:0.44162  
+##  Max.   :3.40759</code></pre>
 <p><br><br></p>
 <hr />
 </div>
@@ -862,7 +1060,7 @@ pesticide_mg
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 atrazine
 </td>
 <td style="text-align:right;">
@@ -888,7 +1086,7 @@ atrazine
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 fipronil
 </td>
 <td style="text-align:right;">
@@ -914,7 +1112,7 @@ fipronil
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 imidacloprid
 </td>
 <td style="text-align:right;">
@@ -940,7 +1138,7 @@ imidacloprid
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pendimethalin
 </td>
 <td style="text-align:right;">
@@ -966,7 +1164,7 @@ pendimethalin
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 triadimefon
 </td>
 <td style="text-align:right;">
@@ -997,7 +1195,7 @@ triadimefon
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 atrazine
 </td>
 <td style="text-align:right;">
@@ -1023,7 +1221,7 @@ atrazine
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 fipronil
 </td>
 <td style="text-align:right;">
@@ -1049,7 +1247,7 @@ fipronil
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 imidacloprid
 </td>
 <td style="text-align:right;">
@@ -1075,7 +1273,7 @@ imidacloprid
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 pendimethalin
 </td>
 <td style="text-align:right;">
@@ -1101,7 +1299,7 @@ pendimethalin
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 triadimefon
 </td>
 <td style="text-align:right;">
@@ -1132,7 +1330,7 @@ triadimefon
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 atrazine
 </td>
 <td style="text-align:right;">
@@ -1158,7 +1356,7 @@ atrazine
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 2,4-D
 </td>
 <td style="text-align:right;">
@@ -1184,7 +1382,7 @@ atrazine
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 metolachlor
 </td>
 <td style="text-align:right;">
@@ -1210,7 +1408,7 @@ metolachlor
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 malathion
 </td>
 <td style="text-align:right;">
@@ -1236,7 +1434,7 @@ malathion
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 propiconazole
 </td>
 <td style="text-align:right;">
@@ -1267,7 +1465,7 @@ propiconazole
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 malathion
 </td>
 <td style="text-align:right;">
@@ -1298,7 +1496,7 @@ NA
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 atrazine
 </td>
 <td style="text-align:right;">
@@ -1324,7 +1522,7 @@ atrazine
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 chlorothalonil
 </td>
 <td style="text-align:right;">
@@ -1350,7 +1548,7 @@ chlorothalonil
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 imidacloprid
 </td>
 <td style="text-align:right;">
@@ -1376,7 +1574,7 @@ imidacloprid
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 metolachlor
 </td>
 <td style="text-align:right;">
@@ -1402,7 +1600,7 @@ metolachlor
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 triadimefon
 </td>
 <td style="text-align:right;">
@@ -1433,7 +1631,7 @@ triadimefon
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 atrazine
 </td>
 <td style="text-align:right;">
@@ -1459,7 +1657,7 @@ atrazine
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 fipronil
 </td>
 <td style="text-align:right;">
@@ -1485,7 +1683,7 @@ fipronil
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 triadimefon
 </td>
 <td style="text-align:right;">
@@ -1516,7 +1714,7 @@ triadimefon
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 bifenthrin (max)
 </td>
 <td style="text-align:right;">
@@ -1542,7 +1740,7 @@ bifenthrin (max)
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 metolachlor (max)
 </td>
 <td style="text-align:right;">
@@ -1568,7 +1766,7 @@ metolachlor (max)
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 triadimefon (max)
 </td>
 <td style="text-align:right;">
@@ -1594,7 +1792,7 @@ triadimefon (max)
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 bifenthrin (1/10 max)
 </td>
 <td style="text-align:right;">
@@ -1620,7 +1818,7 @@ bifenthrin (1/10 max)
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 metolachlor (1/10 max)
 </td>
 <td style="text-align:right;">
@@ -1646,7 +1844,7 @@ metolachlor (1/10 max)
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 triadimefon (1/10 max)
 </td>
 <td style="text-align:right;">
@@ -1677,7 +1875,7 @@ triadimefon (1/10 max)
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 bifenthrin
 </td>
 <td style="text-align:right;">
@@ -1703,7 +1901,7 @@ bifenthrin
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 chlorpyrifos
 </td>
 <td style="text-align:right;">
@@ -1729,7 +1927,7 @@ chlorpyrifos
 </td>
 </tr>
 <tr>
-<td style="text-align:left; padding-left: 2em;" indentlevel="1">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 trifloxystrobin
 </td>
 <td style="text-align:right;">
@@ -1989,14 +2187,13 @@ colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.
 <pre><code>##  [1] &quot;frog.weight&quot;  &quot;SAMPLE&quot;       &quot;Met&quot;          &quot;TDN&quot;          &quot;TDL&quot;         
 ##  [6] &quot;BIF&quot;          &quot;soil.weight&quot;  &quot;Met.soil&quot;     &quot;TDN.soil&quot;     &quot;TDL.soil&quot;    
 ## [11] &quot;BIF.soil&quot;     &quot;Rate&quot;         &quot;app.rate.met&quot; &quot;app.rate.tdn&quot; &quot;app.rate.bif&quot;</code></pre>
-<pre><code>##   frog.weight         SAMPLE         Met               TDN         
-##  Min.   :1.012   BIF 10 1:  1   Min.   : 0.0000   Min.   :0.00000  
-##  1st Qu.:2.749   BIF 10 2:  1   1st Qu.: 0.0000   1st Qu.:0.00000  
-##  Median :3.164   BIF 10 3:  1   Median : 0.0000   Median :0.00000  
-##  Mean   :3.302   BIF 10 4:  1   Mean   : 0.9123   Mean   :0.06927  
-##  3rd Qu.:3.762   BIF 10 5:  1   3rd Qu.: 0.4298   3rd Qu.:0.07447  
-##  Max.   :6.784   BIF 10 6:  1   Max.   :19.8798   Max.   :0.55921  
-##                  (Other) :130                                      
+<pre><code>##   frog.weight       SAMPLE               Met               TDN         
+##  Min.   :1.012   Length:136         Min.   : 0.0000   Min.   :0.00000  
+##  1st Qu.:2.749   Class :character   1st Qu.: 0.0000   1st Qu.:0.00000  
+##  Median :3.164   Mode  :character   Median : 0.0000   Median :0.00000  
+##  Mean   :3.302                      Mean   : 0.9123   Mean   :0.06927  
+##  3rd Qu.:3.762                      3rd Qu.: 0.4298   3rd Qu.:0.07447  
+##  Max.   :6.784                      Max.   :19.8798   Max.   :0.55921  
 ##       TDL               BIF          soil.weight        Met.soil    
 ##  Min.   :0.00000   Min.   :0.0000   Min.   : 4.476   Min.   :0.000  
 ##  1st Qu.:0.00000   1st Qu.:0.0000   1st Qu.: 6.731   1st Qu.:0.000  
@@ -2004,23 +2201,20 @@ colnames(dag_biomarker_subset)[which(colnames(dag_biomarker_subset)==&quot;frog.
 ##  Mean   :0.02259   Mean   :0.1276   Mean   : 8.043   Mean   :1.605  
 ##  3rd Qu.:0.01770   3rd Qu.:0.1299   3rd Qu.: 9.050   3rd Qu.:2.265  
 ##  Max.   :0.30815   Max.   :1.0271   Max.   :13.571   Max.   :6.758  
-##                                                                     
-##     TDN.soil         TDL.soil           BIF.soil        Rate   
-##  Min.   :0.0000   Min.   :0.000000   Min.   :0.0000   0   :24  
-##  1st Qu.:0.0000   1st Qu.:0.000000   1st Qu.:0.0000   High:56  
-##  Median :0.0000   Median :0.000000   Median :0.0000   Low :56  
-##  Mean   :0.7168   Mean   :0.010160   Mean   :0.7417            
-##  3rd Qu.:0.5312   3rd Qu.:0.007463   3rd Qu.:1.1472            
-##  Max.   :3.6300   Max.   :0.061563   Max.   :5.2658            
-##                                                                
+##     TDN.soil         TDL.soil           BIF.soil          Rate          
+##  Min.   :0.0000   Min.   :0.000000   Min.   :0.0000   Length:136        
+##  1st Qu.:0.0000   1st Qu.:0.000000   1st Qu.:0.0000   Class :character  
+##  Median :0.0000   Median :0.000000   Median :0.0000   Mode  :character  
+##  Mean   :0.7168   Mean   :0.010160   Mean   :0.7417                     
+##  3rd Qu.:0.5312   3rd Qu.:0.007463   3rd Qu.:1.1472                     
+##  Max.   :3.6300   Max.   :0.061563   Max.   :5.2658                     
 ##   app.rate.met     app.rate.tdn     app.rate.bif   
 ##  Min.   : 0.000   Min.   :0.0000   Min.   :0.0000  
 ##  1st Qu.: 0.000   1st Qu.:0.0000   1st Qu.:0.0000  
 ##  Median : 0.000   Median :0.0000   Median :0.0000  
 ##  Mean   :14.263   Mean   :1.3389   Mean   :1.6070  
 ##  3rd Qu.: 5.511   3rd Qu.:0.5173   3rd Qu.:0.6209  
-##  Max.   :55.106   Max.   :5.1730   Max.   :6.2090  
-## </code></pre>
+##  Max.   :55.106   Max.   :5.1730   Max.   :6.2090</code></pre>
 <p>The application rates were converted from mg to g/cm<sup>2</sup>.</p>
 <pre class="r"><code>dag_biomarker2_update &lt;- replace.value(dag_biomarker2, &quot;app.rate.met&quot;, from=55.106, to=3.062e-5, verbose=TRUE)
 dag_biomarker2_update &lt;- replace.value(dag_biomarker2_update, &quot;app.rate.met&quot;, from=5.5106, to=3.062e-6, verbose=FALSE)
@@ -2121,14 +2315,13 @@ dag_biomarker_merge &lt;- dag_biomarker_subset5[ ,order(names(dag_biomarker_subs
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
 <pre><code>## [1] 48  2</code></pre>
 <pre><code>## [1] &quot;Weight_g&quot; &quot;Sample&quot;</code></pre>
-<pre><code>##     Weight_g               Sample  
-##  Min.   :0.9555   Bif LF S 1 F: 1  
-##  1st Qu.:1.4204   Bif LF S 2 F: 1  
-##  Median :1.7817   Bif LF S 3 F: 1  
-##  Mean   :1.7784   Bif LF S 4 F: 1  
-##  3rd Qu.:2.1319   Bif LF S 5 F: 1  
-##  Max.   :2.8197   Bif LF S 6 F: 1  
-##                   (Other)     :42</code></pre>
+<pre><code>##     Weight_g         Sample         
+##  Min.   :0.9555   Length:48         
+##  1st Qu.:1.4204   Class :character  
+##  Median :1.7817   Mode  :character  
+##  Mean   :1.7784                     
+##  3rd Qu.:2.1319                     
+##  Max.   :2.8197</code></pre>
 <p>A one-to-many merge was employed to merge the dermal routes data set and the weights data set based on the Sample ID. Only rows where the Matrix is “Amphibian” have a body weight; all other rows are NA.</p>
 <pre class="r"><code># merge (one-to-many) dermal routes data with weights data, based on Sample ID
 dermal_routes_subset2 &lt;- dermal_routes[order(dermal_routes$Sample.ID), ]
@@ -2312,28 +2505,28 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ##  3rd Qu.:2.395e-05                   3rd Qu.: 3.0412   bifenthrin  : 72  
 ##  Max.   :6.980e-05                   Max.   :50.9200   fipronil    : 71  
 ##                                                        (Other)     :225  
-##   exp_duration     formulation             sample_id   soil_conc_ugg     
-##  Min.   : 2.000   Min.   :0.00000   ATZ_ATZT    :  6   Min.   :  0.1125  
-##  1st Qu.: 8.000   1st Qu.:0.00000   ATZD_ATZT   :  6   1st Qu.:  2.0709  
-##  Median : 8.000   Median :0.00000   ATZMA_ATZT  :  6   Median :  5.2459  
-##  Mean   : 8.876   Mean   :0.03582   ATZMA_MAT   :  6   Mean   : 14.3042  
-##  3rd Qu.: 8.000   3rd Qu.:0.00000   ATZMAPZ_ATZT:  6   3rd Qu.: 15.3781  
-##  Max.   :48.000   Max.   :1.00000   ATZMAPZ_MAT :  6   Max.   :238.1502  
-##                   NA&#39;s   :9         (Other)     :978   NA&#39;s   :206       
-##  soil_type              source                species    tissue_conc_ugg   
-##  PLE :544   dag_dehydration:300   Leopard frog    :412   Min.   : 0.00054  
-##  OLS : 72   rvm2015        :196   Fowlers toad    :200   1st Qu.: 0.16908  
-##  NA&#39;s:398   dag_biomarker  :192   Rana_clamitans  :137   Median : 0.52573  
-##             rvm2017        :137   American toad   : 96   Mean   : 2.51415  
-##             rvm2016        : 96   Barking treefrog: 50   3rd Qu.: 2.06812  
-##             dag_metabolites: 60   Green treefrog  : 45   Max.   :72.62672  
-##             (Other)        : 33   (Other)         : 74</code></pre>
+##   exp_duration     formulation       sample_id         soil_conc_ugg     
+##  Min.   : 2.000   Min.   :0.00000   Length:1014        Min.   :  0.1125  
+##  1st Qu.: 8.000   1st Qu.:0.00000   Class :character   1st Qu.:  2.0709  
+##  Median : 8.000   Median :0.00000   Mode  :character   Median :  5.2459  
+##  Mean   : 8.876   Mean   :0.03582                      Mean   : 14.3042  
+##  3rd Qu.: 8.000   3rd Qu.:0.00000                      3rd Qu.: 15.3781  
+##  Max.   :48.000   Max.   :1.00000                      Max.   :238.1502  
+##                   NA&#39;s   :9                            NA&#39;s   :206       
+##   soil_type            source            species          tissue_conc_ugg   
+##  Length:1014        Length:1014        Length:1014        Min.   : 0.00054  
+##  Class :character   Class :character   Class :character   1st Qu.: 0.16908  
+##  Mode  :character   Mode  :character   Mode  :character   Median : 0.52573  
+##                                                           Mean   : 2.51415  
+##                                                           3rd Qu.: 2.06812  
+##                                                           Max.   :72.62672  
+## </code></pre>
 <p><br></p>
 <hr />
 <p>Session Information</p>
-<pre><code>## R version 3.6.1 (2019-07-05)
+<pre><code>## R version 4.0.2 (2020-06-22)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 16299)
+## Running under: Windows 10 x64 (build 18363)
 ## 
 ## Matrix products: default
 ## 
@@ -2348,22 +2541,23 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] anchors_3.0-8    MASS_7.3-51.4    rgenoud_5.8-3.0  stringr_1.4.0   
-##  [5] tidyr_1.0.0      dplyr_0.8.3      knitr_1.26       kableExtra_1.1.0
-##  [9] reshape2_1.4.3   gridExtra_2.3    ggplot2_3.2.1   
+##  [1] anchors_3.0-8    MASS_7.3-51.6    rgenoud_5.8-3.0  stringr_1.4.0   
+##  [5] tidyr_1.1.2      dplyr_1.0.6      knitr_1.31       kableExtra_1.3.4
+##  [9] reshape2_1.4.4   gridExtra_2.3    ggplot2_3.3.3   
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.3        highr_0.8         pillar_1.4.2      compiler_3.6.1   
-##  [5] plyr_1.8.4        tools_3.6.1       zeallot_0.1.0     digest_0.6.22    
-##  [9] lifecycle_0.1.0   viridisLite_0.3.0 evaluate_0.14     tibble_2.1.3     
-## [13] gtable_0.3.0      pkgconfig_2.0.3   rlang_0.4.1       rstudioapi_0.10  
-## [17] yaml_2.2.0        xfun_0.10         xml2_1.2.2        httr_1.4.1       
-## [21] withr_2.1.2       vctrs_0.2.0       hms_0.5.2         webshot_0.5.1    
-## [25] grid_3.6.1        tidyselect_0.2.5  glue_1.3.1        R6_2.4.1         
-## [29] rmarkdown_1.16    purrr_0.3.3       readr_1.3.1       magrittr_1.5     
-## [33] ellipsis_0.3.0    backports_1.1.5   scales_1.0.0      htmltools_0.4.0  
-## [37] rvest_0.3.4       assertthat_0.2.1  colorspace_1.4-1  stringi_1.4.3    
-## [41] lazyeval_0.2.2    munsell_0.5.0     crayon_1.3.4</code></pre>
+##  [1] tidyselect_1.1.1  xfun_0.20         bslib_0.2.4       purrr_0.3.4      
+##  [5] colorspace_2.0-1  vctrs_0.3.8       generics_0.1.0    htmltools_0.5.1.1
+##  [9] viridisLite_0.4.0 yaml_2.2.1        utf8_1.2.1        rlang_0.4.11     
+## [13] jquerylib_0.1.3   pillar_1.6.1      glue_1.4.2        withr_2.4.2      
+## [17] DBI_1.1.1         lifecycle_1.0.0   plyr_1.8.6        munsell_0.5.0    
+## [21] gtable_0.3.0      rvest_1.0.0       evaluate_0.14     fansi_0.5.0      
+## [25] highr_0.8         Rcpp_1.0.5        scales_1.1.1      webshot_0.5.2    
+## [29] jsonlite_1.7.1    systemfonts_1.0.1 digest_0.6.27     stringi_1.5.3    
+## [33] grid_4.0.2        tools_4.0.2       magrittr_2.0.1    sass_0.3.1       
+## [37] tibble_3.1.2      crayon_1.4.1      pkgconfig_2.0.3   ellipsis_0.3.2   
+## [41] xml2_1.3.2        assertthat_0.2.1  rmarkdown_2.7     svglite_2.0.0    
+## [45] httr_1.4.2        rstudioapi_0.13   R6_2.5.0          compiler_4.0.2</code></pre>
 </div>
 </div>
 
@@ -2376,7 +2570,7 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -2394,7 +2588,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
