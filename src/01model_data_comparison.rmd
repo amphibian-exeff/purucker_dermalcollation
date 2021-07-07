@@ -23,8 +23,9 @@ Collected amphibian dermal exposure data is from 9 studies:
 * Glinski et al. 2018a (Dehydration) data includes exposure to 5 pesticides (atrazine, triadimefon, metolachlor, chlorothalonil, imidacloprid) on 2 amphibian species (Southern leopard frogs, Fowler's toads). 
 * Glinski et al. 2018b (Metabolites) data consists of exposure to 3 pesticides (atrazine, triadimefon, fipronil) on Fowler's toads. 
 * Glinski et al. 2019 (Biomarkers) data includes exposure to single, double, or triple pesticide mixtures (bifenthrin, metolachlor, triadimefon) on Southern leopard frogs.  
-* Glinski et al. 2020 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. 
+* Glinski et al. 2021 (Dermal Routes) data includes exposure to bifenthrin, chlorpyrifos, and trifloxystrobin on Leopard frogs. 
 * Henson-Ramsey et al. 2008 data consists of exposure to malathion for Tiger salamanders.
+* Van Meter et al 2019 data that jointly examined exposures of pesticides and fertilizers.
 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
@@ -65,10 +66,12 @@ amphibdir_src <- paste(amphibdir,'src/',sep='')
 #the data set
 ##################
 # import data from consolidated database
-combined_data_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
+combined_data_filename <- paste(amphibdir_data_out,"updated_amphib_dermal_collated.csv", sep="")
 combined_data <- read.csv(combined_data_filename)
 dim(combined_data)
 colnames(combined_data)
+unique(combined_data$chemical)
+unique(combined_data$species)
 summary(combined_data)
 ```
 
@@ -138,7 +141,7 @@ combined_data$tim_direct_default_ratios <- combined_data$tim_direct_default/tiss
 Scatterplots were created to visualize the model's performance, grouped by variables (study, chemical, application type), respectively. The trend line displays the 1:1 ratio.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by study
-ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$source)) + 
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = source)) + 
   geom_point() + 
   labs(title = "Modeled vs. Measured, by Study", x = "Measured Tissue Concentrations", y = "TIM Default") +
   geom_abline(intercept = 0, slope = 1) + 
@@ -147,7 +150,7 @@ ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combi
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by chemical
-ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$chemical)) + 
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = chemical)) + 
   geom_point() + 
   labs(title = "Modeled vs. Measured, by Chemical", x = "Measured Tissue Concentrations", y = "TIM Default") +
   geom_abline(intercept = 0, slope = 1) +
@@ -156,7 +159,7 @@ ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combi
 
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 # create scatterplot, categorized by application type
-ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = combined_data$application)) + 
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_default, color = application)) + 
   geom_point() + 
   labs(title = "Modeled vs. Measured, by Application Type", x = "Measured Tissue Concentrations", y = "TIM Default") +
   geom_abline(intercept = 0, slope = 1) +
@@ -204,7 +207,7 @@ combined_data$tim_direct_amphib_ratios <- combined_data$tim_direct_amphib/tissue
 Scatterplots were created to visualize the model's performance, grouped by variables (study, chemical, application type), respectively. The trend line displays the 1:1 ratio.
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by study
-ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$source)) + 
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = source)) + 
   geom_point() + 
   labs(title = "Modeled vs. Measured, by Study", x = "Measured Tissue Concentrations", y = "TIM Amphibian") +
   geom_abline(intercept = 0, slope = 1) +
@@ -213,7 +216,7 @@ ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combin
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by chemical
-ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$chemical)) + 
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = chemical)) + 
   geom_point() + 
   labs(title = "Modeled vs. Measured, by Chemical", x = "Measured Tissue Concentrations", y = "TIM Amphibian") +
   geom_abline(intercept = 0, slope = 1) +
@@ -222,7 +225,7 @@ ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combin
 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
 # create scatterplot, categorized by application type
-ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = combined_data$application)) + 
+ggplot(combined_data, aes(x = tissue_conc, y = tim_direct_amphib, color = application)) + 
   geom_point() + 
   labs(title = "Modeled vs. Measured, by Application Type", x = "Measured Tissue Concentrations", y = "TIM Amphibian") +
   geom_abline(intercept = 0, slope = 1) +
@@ -309,23 +312,30 @@ Summary statistics for false negative rates were also computed for both models. 
 
 
 #### **TIM Default**
-As displayed below, there are zero false negative rates for TIM Default. But,  134/1014 (13.2%) of the measurements are within an order of magnitude of the modeled value. 
+As displayed below, there are zero false negative rates for TIM Default. But,  138/1158 (11.9%) of the measurements are within an order of magnitude of the modeled value. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
+# number of samples
+n
 # False Negative Rate: TIM Default
 sum(tissue_conc > tim_direct_default)
+sum(tissue_conc > tim_direct_default)/n
 
 # False Negative Rate (x10): TIM Default
 sum(tissue_conc*10 > tim_direct_default)
+sum(tissue_conc*10 > tim_direct_default)/n
 ```
 
 #### **TIM Amphibian**
-There are 127/1014 (12.5%) false negative screen results for TIM Amphibian, and 786/1014 (77.5%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians. 
+There are 131/1158 (11.3%) false negative screen results for TIM Amphibian, and 786/1014 (77.5%) measurements within an order of magnitude of the modeled value. TIM Amphibian uses a less conservative but more representative surface area calculation for amphibians. 
 ```{r eval = TRUE, echo = TRUE, include = TRUE}
+#number of samples
+n
 # False Negative Rate: TIM Amphibian
 sum(tissue_conc > tim_direct_amphib)
-
+sum(tissue_conc > tim_direct_amphib)/n
 # False Negative Rate (x10): TIM Amphibian
 sum(tissue_conc*10 > tim_direct_amphib)
+sum(tissue_conc*10 > tim_direct_amphib)/n
 ```
 
 #### **By Study**
