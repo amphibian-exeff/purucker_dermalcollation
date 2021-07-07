@@ -1,6 +1,8 @@
 ---
 title: "Creating a Database of Amphibian Dermal Exposure Data"
-author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM"
+author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
+  S, Henderson WM
+output: pdf_document
 ---  
 
 ```{r eval=FALSE, echo=FALSE}
@@ -56,12 +58,12 @@ Sys.info()[4]
 library(ggplot2)
 require(gridExtra)
 library(reshape2)
-library(kableExtra)
+#library(kableExtra)
 library(knitr)
 library(dplyr)
 library(tidyr)
 library(stringr)
-library(anchors)
+#library(anchors)
 
 # Update according to the System you are using...
 # tom epa linux
@@ -76,6 +78,12 @@ if(Sys.info()[4] == "LZ2626UTPURUCKE"){
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
   amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
 }
+
+# Annie's laptop
+if(Sys.info()[4]=="LZ26EPAULUKO"){
+  amphibdir <- path.expand("C:/Users/epauluko/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/GitHub/amphib_dermal_collation")
+}
+
 
 # Variable names for data
 amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')

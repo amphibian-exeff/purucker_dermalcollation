@@ -3,6 +3,7 @@ title: "Creating a Database of Amphibian Dermal Exposure Data and Assessing Mode
 author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
   S, Henderson WM
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---  
