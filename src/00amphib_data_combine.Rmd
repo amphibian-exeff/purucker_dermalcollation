@@ -68,10 +68,9 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(anchors)
-# install.packages('tinytex')
+# install.packages('tinytex') #note that for pdf installation, this is required, as well as updates to xfun
 # tinytex::install_tinytex()
 library(tinytex)
-#options(knitr.table.format = "latex")
 
 # Update according to the System you are using...
 # tom epa linux
