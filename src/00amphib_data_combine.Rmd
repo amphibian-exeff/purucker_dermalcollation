@@ -2,12 +2,16 @@
 title: "Creating a Database of Amphibian Dermal Exposure Data"
 author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
   S, Henderson WM
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---  
 
 ```{r eval=FALSE, echo=FALSE}
 #ctrl-shift k to knit r markdown
 #https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+
 ```
 <br><br>
 
@@ -58,12 +62,16 @@ Sys.info()[4]
 library(ggplot2)
 require(gridExtra)
 library(reshape2)
-#library(kableExtra)
+library(kableExtra)
 library(knitr)
 library(dplyr)
 library(tidyr)
 library(stringr)
-#library(anchors)
+library(anchors)
+# install.packages('tinytex')
+# tinytex::install_tinytex()
+library(tinytex)
+#options(knitr.table.format = "latex")
 
 # Update according to the System you are using...
 # tom epa linux
@@ -81,9 +89,8 @@ if(Sys.info()[4]=="LZ2626UECHELSVI"){
 
 # Annie's laptop
 if(Sys.info()[4]=="LZ26EPAULUKO"){
-  amphibdir <- path.expand("C:/Users/epauluko/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/GitHub/amphib_dermal_collation")
+  amphibdir <- path.expand("C:/Users/epauluko/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/GitHub/amphib_dermal_collation/")
 }
-
 
 # Variable names for data
 amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')
