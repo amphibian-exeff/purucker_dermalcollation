@@ -46,11 +46,10 @@ bw <- read.csv(bw)
 ## rvm19
 r19$bw<-bw[match(r19$ID, bw$Frog.ID),5]
 r19<-na.omit(r19)
-r19<-r19[,c(1,6,8)]
 
 colnames(r19)[1]<-'sample_id'
-colnames(r19)[2]<-'tissue_conc_ugg'
-colnames(r19)[3]<-'body_weight_g'
+colnames(r19)[6]<-'tissue_conc_ugg'
+colnames(r19)[10]<-'body_weight_g'
 r19$application<-'soil'
 r19$exp_duration<-8
 r19$formulation<-0
@@ -59,9 +58,11 @@ r19$soil_type<-'USLOAM'
 r19$source<-'rvm2019'
 r19$soil_conc_ugg<-NA
 
-
 r19<-r19[c("app_rate_g_cm2" ,"application", "body_weight_g","chemical","exp_duration","formulation",
          "sample_id", "soil_conc_ugg", "soil_type","source", "species","tissue_conc_ugg")]
+
+rvm2019 <- file.path(amphibdir,"data_in/rvm2019.csv")
+write.csv(r19, rvm2019)
 
 ##rvm unpub
 runal$bw<-bw[match(runal$ID, bw$Frog.ID),5]
@@ -70,8 +71,6 @@ runal<-na.omit(runal)
 runat<-na.omit(runat)
 runal<-runal[,c(1,5,6,8)]
 runat<-runat[,c(1,5,6,8)]
-
-names(run)
 
 colnames(run)[1]<-'sample_id'
 colnames(run)[2]<-'tissue_conc_ugg'
