@@ -1,11 +1,17 @@
 
 
-r19al <- read.csv("data_in/rvm2019_alachlor.csv", skip = 1)
-r19at <- read.csv("data_in/rvm2019_atrazine.csv")
-runal <- read.csv("data_in/rvmunpub_alachlor.csv")
-runat <- read.csv("data_in/rvmunpub_atrazine.csv")
+r19al <- file.path(amphibdir,"data_in/rvm2019_alachlor.csv")
+r19al <-read.csv(r19al)
+r19at <- file.path(amphibdir,"data_in/rvm2019_atrazine.csv")
+r19at <-read.csv(r19at)
+r19<-rbind(r19al,r19at)
+
+
+
+runal <- file.path(amphibdir, "data_in/rvmunpub_alachlor.csv")
+runat <- file.path(amphibdir, "data_in/rvmunpub_atrazine.csv")
 lab   <- read.csv("data_out/amphib_dermal_collated.csv")
-bw    <- read.csv("data_in/bw_RVM.csv")
+bw    <- file.path(amphibdir, "data_in/bw_RVM.csv")
 lab<-lab[,c(2:13)]
 
 
@@ -25,12 +31,14 @@ lab<-lab[,c(2:13)]
 
 
 ## rvm19
-r19al$bw<-bw[match(r19al$ID, bw$Frog.ID),5]
-r19at$bw<-bw[match(r19at$ID, bw$Frog.ID),5]
-r19al<-na.omit(r19al)
-r19at<-na.omit(r19at)
-r19al<-r19al[,c(1,6,8)]
-r19at<-r19at[,c(1,6,8)]
+r19$bw<-bw[match(r19$ID, bw$Frog.ID),5]
+r19<-na.omit(r19)
+r19<-r19[,c(1,6,8)]
+colnames(r19)
+r19$chemical<-'NA'
+
+ifelse(r19[] =="Yes", r19[,8]== 'atrazine', r19[,8] == 'alachlor')
+
 r19al$chemical<-'alachlor'
 r19at$chemical<-'atrazine'
 r19al$app_rate_g_cm2<-(34.8/1000000)

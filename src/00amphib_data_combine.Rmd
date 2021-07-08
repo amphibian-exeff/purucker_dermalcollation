@@ -20,7 +20,7 @@ output:
 **Introduction**
 ========================================================
 
-The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski et al. (2018a, b, 2019, 2020), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
+The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018, 2019), Glinski et al. (2018a, b, 2019, 2020), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.    
 
 | Manuscript | Data Set (Original Source Link) | Data Set (Repo Link) | Additional Data Sets |
 | --------------------- |:-------------------------- |:------------------------ |:--------------------------|
@@ -288,6 +288,24 @@ rvm2017_merge <- read.table(rvm2017_merge_file, header = TRUE, sep = ",")
 dim(rvm2017_merge)
 colnames(rvm2017_merge)
 summary(rvm2017_merge)
+```
+<br>
+
+### Van Meter et al. 2019
+Van Meter et al. 2019  looked at joint exposure of two common herbicides (atrazine, alachlor) and a fertilizer (urea) while quantifying juvenile corticosterone stress levels, acetylcholinesterase (AChE) activity, and pesticide bioaccumulation in Southern leopard frogs. Single agrochemical or tank mixtures were applied to terrestrial microcosms, and then individual juveniles were added to microcosms for an 8-h exposure.
+
+*Note: this file does include metabolites into the total for the parents*
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Van Meter 2019
+vm2016_file <- paste(amphibdir_data_in,"vm2016_data.csv", sep="")
+file.exists(vm2016_file)
+vm2016 <- read.table(vm2016_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(vm2016)
+colnames(vm2016)
+summary(vm2016)
 ```
 <br>
 
