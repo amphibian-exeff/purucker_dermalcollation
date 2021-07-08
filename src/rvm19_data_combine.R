@@ -4,15 +4,28 @@ r19al <- file.path(amphibdir,"data_in/rvm2019_alachlor.csv")
 r19al <-read.csv(r19al)
 r19at <- file.path(amphibdir,"data_in/rvm2019_atrazine.csv")
 r19at <-read.csv(r19at)
+r19al$app_rate_g_cm2<-(34.8/1000000)
+r19at$app_rate_g_cm2<-(23.6/1000000)
+r19al$chemical<-'alachlor'
+r19at$chemical<-'atrazine'
 r19<-rbind(r19al,r19at)
 
-
-
 runal <- file.path(amphibdir, "data_in/rvmunpub_alachlor.csv")
+runal<-read.csv(runal)
 runat <- file.path(amphibdir, "data_in/rvmunpub_atrazine.csv")
-lab   <- read.csv("data_out/amphib_dermal_collated.csv")
-bw    <- file.path(amphibdir, "data_in/bw_RVM.csv")
-lab<-lab[,c(2:13)]
+runat <- read.csv(runat)
+runal$chemical<-'alachlor'
+runat$chemical<-'atrazine'
+runal$app_rate_g_cm2<-(34.8/1000000)
+runat$app_rate_g_cm2<-(23.6/1000000)
+run<-rbind(runal,runat)
+
+bw <- file.path(amphibdir, "data_in/bw_RVM.csv")
+bw <- read.csv(bw)
+# lab <- file.path(amphibdir,"data_out/amphib_dermal_collated.csv")
+# lab  <- read.csv(lab)
+# 
+# lab<-lab[,c(2:13)]
 
 
 #no need to convert ppm to ug/g
@@ -34,18 +47,6 @@ lab<-lab[,c(2:13)]
 r19$bw<-bw[match(r19$ID, bw$Frog.ID),5]
 r19<-na.omit(r19)
 r19<-r19[,c(1,6,8)]
-colnames(r19)
-r19$chemical<-'NA'
-
-ifelse(r19[] =="Yes", r19[,8]== 'atrazine', r19[,8] == 'alachlor')
-
-r19al$chemical<-'alachlor'
-r19at$chemical<-'atrazine'
-r19al$app_rate_g_cm2<-(34.8/1000000)
-r19at$app_rate_g_cm2<-(23.6/1000000)
-
-r19<-rbind(r19al,r19at)
-names(r19)
 
 colnames(r19)[1]<-'sample_id'
 colnames(r19)[2]<-'tissue_conc_ugg'
@@ -69,12 +70,7 @@ runal<-na.omit(runal)
 runat<-na.omit(runat)
 runal<-runal[,c(1,5,6,8)]
 runat<-runat[,c(1,5,6,8)]
-runal$chemical<-'alachlor'
-runat$chemical<-'atrazine'
-runal$app_rate_g_cm2<-(34.8/1000000)
-runat$app_rate_g_cm2<-(23.6/1000000)
 
-run<-rbind(runal,runat)
 names(run)
 
 colnames(run)[1]<-'sample_id'
