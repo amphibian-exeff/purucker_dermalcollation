@@ -28,9 +28,7 @@ The purpose of this script is to combine the data sets from Van Meter et al. (20
 | <a href="https://link.springer.com/article/10.1007%2Fs00244-015-0183-2">Van Meter et al. 2015 | <a href="https://github.com/puruckertom/VanMeteretal2015_AECT/tree/master/data">good_data.csv</a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2014_data.csv">vm2014_data.csv</a> ||
 | <a href="https://setac.onlinelibrary.wiley.com/doi/full/10.1002/etc.3439">Van Meter et al. 2016 | <a href="https://github.com/puruckertom/vanmeteretal2016_etc_amphibian_exposure_som/tree/master/data_in">RDATA.csv</a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2016_data.csv">vm2016_data.csv</a> ||
 | <a href="https://www.sciencedirect.com/science/article/pii/S004896971733601X?via%3Dihub">Van Meter et al. 2018 | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2017_merge.csv">vm2017_merge.csv</a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2017_merge.csv">vm2017_merge.csv</a> ||
-
-| <a href="https://setac.onlinelibrary.wiley.com/doi/10.1002/etc.4375">Van Meter et al. 2019 | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2019_alachlor.csv">rvm2019.csv</a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2017_merge.csv">vm2017_merge.csv</a> ||
-
+| <a href="https://setac.onlinelibrary.wiley.com/doi/10.1002/etc.4375">Van Meter et al. 2019 | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2019.csv">rvm2019.csv</a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2019.csv">rvm2019.csv</a> ||
 | <a href="https://link.springer.com/article/10.1007%2Fs11356-018-1830-8">Glinski et al. 2018a (dehydration) | <a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in"> dehydration3.csv </a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_dehydration.csv"> dag2016_data_dehydration.csv </a> | |
 | <a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a>| <a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> exposure_experiment.csv </a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_metabolites_4merge.csv"> dag2016_data_metabolites_4merge.csv </a>  ||
 | <a href= "http://www.publish.csiro.au/en/EN18163">Glinski et al. 2019 (biomarkers) | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv</a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2018_data_biomarkers.csv"> dag2018_data_biomarkers.csv </a> | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv) |
@@ -106,6 +104,24 @@ amphibdir_src <- paste(amphibdir,'src/',sep='')
 
 **Data from Relevant Studies**
 ========================================================
+### Henson-Ramsey 2008  
+
+Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (*Ambystoma tigrinum*). Tiger salamanders were exposed to contaminated soils with 50 ug/cm^2^ or 100 ug/cm^2^ malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm^2^ malathion. For each exposure, the malathion application rate was sprayed onto the approximately 1200g of soil in the 1060cm^2^ polyethylene cages. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm^2^ contaminated soil for 1 day, exposed to 50 ug/cm^2^ for 2 days, exposed to 50 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day. 
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Henson-Ramsey 2008
+hr2008_file <- paste(amphibdir_data_in,"hr2008_data.csv", sep="")
+file.exists(hr2008_file)
+hr2008 <- read.table(hr2008_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(hr2008)
+colnames(hr2008)
+summary(hr2008)
+```
+<br>
+
 ### Van Meter et al. 2014 and Van Meter et al. 2015
 
 Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
@@ -153,99 +169,6 @@ colnames(vm2016)
 summary(vm2016)
 ```
 <br>
-
-### Glinski et al. 2018a (Dehydration)
-
-Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (*Lithobates sphenocephala*) and Fowler's toads (*Anaxyrus fowleri*)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.
-
-*Note: this file does not combine daughters with parents*  
-*Note: this file has body burdens and soil concentrations as separate rows*
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# import data from Glinski 2016 dehydration study
-# this file does not combine daughters with parents
-# this file also has body burdens and soil concentrations as separate rows
-dag2016_dehy_file <- paste(amphibdir_data_in,"dag2016_data_dehydration.csv", sep="")
-file.exists(dag2016_dehy_file)
-dag2016_dehy0 <- read.table(dag2016_dehy_file, header = TRUE, sep = ",")
-```
-**Data Set Dimensions, column Names, and Summary:**
-```{r eval = TRUE, echo = FALSE}
-dim(dag2016_dehy0)
-colnames(dag2016_dehy0)
-summary(dag2016_dehy0)
-```
-<br>
-
-### Henson-Ramsey 2008  
-
-Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (*Ambystoma tigrinum*). Tiger salamanders were exposed to contaminated soils with 50 ug/cm^2^ or 100 ug/cm^2^ malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm^2^ malathion. For each exposure, the malathion application rate was sprayed onto the approximately 1200g of soil in the 1060cm^2^ polyethylene cages. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm^2^ contaminated soil for 1 day, exposed to 50 ug/cm^2^ for 2 days, exposed to 50 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm^2^ contaminated soil for 2 days and fed a contaminated worm on the first exposure day. 
-
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# import data from Henson-Ramsey 2008
-hr2008_file <- paste(amphibdir_data_in,"hr2008_data.csv", sep="")
-file.exists(hr2008_file)
-hr2008 <- read.table(hr2008_file, header = TRUE, sep = ",")
-```
-**Data Set Dimensions, Column Names, and Summary:**
-```{r eval = TRUE, echo = FALSE}
-dim(hr2008)
-colnames(hr2008)
-summary(hr2008)
-```
-<br>
-
-### Glinski et al. 2018b (Metabolites)
-
-Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
-
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# import data from Glinski 2017 metabolite study
-dag2016_metabolite_file <- paste(amphibdir_data_in,"dag2016_data_metabolites.csv", sep="")
-file.exists(dag2016_metabolite_file)
-dag2016_metabolite0 <- read.table(dag2016_metabolite_file, header = TRUE, sep = ",")
-```
-#### **Metabolites Data Set (1)**
-**Data Set Dimensions, Column Names, and Summary:**
-```{r eval = TRUE, echo = FALSE}
-dim(dag2016_metabolite0)
-colnames(dag2016_metabolite0)
-summary(dag2016_metabolite0)
-```
-
-The *in vitro* derived constants were assessed for their precitability by exposing Fowler's toads (*Anaxyrus fowleri*) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler's toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# import data from Glinski 2017 metabolite study
-dag2016_metabolite_merge_file <- paste(amphibdir_data_in,"dag2016_data_metabolites_4merge.csv", sep="")
-file.exists(dag2016_metabolite_merge_file)
-dag2016_metabolite_merge <- read.table(dag2016_metabolite_merge_file, header = TRUE, sep = ",")
-```
-#### **Metabolites Data Set (merged)**
-**Data Set Dimensions, Column Names, and Summary:**
-```{r eval = TRUE, echo = FALSE, include = TRUE}
-dim(dag2016_metabolite_merge)
-colnames(dag2016_metabolite_merge)
-summary(dag2016_metabolite_merge)
-```
-<br>
-
-### Glinski et al. 2019 (Biomarkers)
-
-Glinski et al. 2019 exposed Southern leopard frogs (*Lithobates sphenocephala*) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter. 
-
-```{r eval = TRUE, echo = FALSE, include = FALSE}
-# import data from Glinski 2018 biomarkers study
-dag2018_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
-file.exists(dag2018_biomarkers_file)
-dag2018_mbiomarker0 <- read.table(dag2018_biomarkers_file, header = TRUE, sep = ",")
-```
-**Data Set Dimensions, Column Names, and Summary:**
-```{r eval = TRUE, echo = FALSE}
-dim(dag2018_mbiomarker0)
-colnames(dag2018_mbiomarker0)
-summary(dag2018_mbiomarker0)
-```
-<br>
-
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
 Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (*Lithobates clamitans*) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.
@@ -312,6 +235,80 @@ summary(vm2016)
 ```
 <br>
 
+### Glinski et al. 2018a (Dehydration)
+
+Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (*Lithobates sphenocephala*) and Fowler's toads (*Anaxyrus fowleri*)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.
+
+*Note: this file does not combine daughters with parents*  
+*Note: this file has body burdens and soil concentrations as separate rows*
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Glinski 2016 dehydration study
+# this file does not combine daughters with parents
+# this file also has body burdens and soil concentrations as separate rows
+dag2016_dehy_file <- paste(amphibdir_data_in,"dag2016_data_dehydration.csv", sep="")
+file.exists(dag2016_dehy_file)
+dag2016_dehy0 <- read.table(dag2016_dehy_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(dag2016_dehy0)
+colnames(dag2016_dehy0)
+summary(dag2016_dehy0)
+```
+<br>
+
+### Glinski et al. 2018b (Metabolites)
+
+Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians.  This data set (1) contains *in vitro* and *in vivo* metabolic rate constants derived from toad (*Anaxyrus terrestris*) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Glinski 2017 metabolite study
+dag2016_metabolite_file <- paste(amphibdir_data_in,"dag2016_data_metabolites.csv", sep="")
+file.exists(dag2016_metabolite_file)
+dag2016_metabolite0 <- read.table(dag2016_metabolite_file, header = TRUE, sep = ",")
+```
+#### **Metabolites Data Set (1)**
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(dag2016_metabolite0)
+colnames(dag2016_metabolite0)
+summary(dag2016_metabolite0)
+```
+
+The *in vitro* derived constants were assessed for their precitability by exposing Fowler's toads (*Anaxyrus fowleri*) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler's toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Glinski 2017 metabolite study
+dag2016_metabolite_merge_file <- paste(amphibdir_data_in,"dag2016_data_metabolites_4merge.csv", sep="")
+file.exists(dag2016_metabolite_merge_file)
+dag2016_metabolite_merge <- read.table(dag2016_metabolite_merge_file, header = TRUE, sep = ",")
+```
+#### **Metabolites Data Set (merged)**
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE, include = TRUE}
+dim(dag2016_metabolite_merge)
+colnames(dag2016_metabolite_merge)
+summary(dag2016_metabolite_merge)
+```
+<br>
+
+### Glinski et al. 2019 (Biomarkers)
+
+Glinski et al. 2019 exposed Southern leopard frogs (*Lithobates sphenocephala*) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter. 
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Glinski 2018 biomarkers study
+dag2018_biomarkers_file <- paste(amphibdir_data_in,"dag2018_data_biomarkers.csv", sep="")
+file.exists(dag2018_biomarkers_file)
+dag2018_mbiomarker0 <- read.table(dag2018_biomarkers_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(dag2018_mbiomarker0)
+colnames(dag2018_mbiomarker0)
+summary(dag2018_mbiomarker0)
+```
+<br>
+
 ### Glinski et al. 2020 (Dermal Routes)
 
 Glinski et al. 2020 assessed dermal uptake in amphibians from exposure to three pesticides (bifenthrin, chlorpyrifos, trifloxystrobin). Pesiticide body burdens and hepatic metabolome for Leopard frogs were measured for two routes of uptake: uptake from contaminated soils versus uptake from contaminated surface water. Pesticides were applied at 1 ppm, scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.  
@@ -369,7 +366,6 @@ The process of cleaning and merging each data set is briefly described below.
 *** 
 
 ### Van Meter et al. 2014/2015
-
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 ##################
