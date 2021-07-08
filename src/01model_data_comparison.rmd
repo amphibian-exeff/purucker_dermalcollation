@@ -1,6 +1,8 @@
 ---
 title: "Compare Amphibian Dermal Exposure Data with Proposed Models"
-author: "Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM"
+author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
+  S, Henderson WM
+output: pdf_document
 ---
 
 ```{r eval=FALSE, echo=FALSE}

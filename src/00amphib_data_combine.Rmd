@@ -32,10 +32,9 @@ The purpose of this script is to combine the data sets from Van Meter et al. (20
 | <a href="https://link.springer.com/article/10.1007%2Fs11356-018-1830-8">Glinski et al. 2018a (dehydration) | <a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in"> dehydration3.csv </a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_dehydration.csv"> dag2016_data_dehydration.csv </a> | |
 | <a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a>| <a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> exposure_experiment.csv </a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_metabolites_4merge.csv"> dag2016_data_metabolites_4merge.csv </a>  ||
 | <a href= "http://www.publish.csiro.au/en/EN18163">Glinski et al. 2019 (biomarkers) | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv</a>| <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2018_data_biomarkers.csv"> dag2018_data_biomarkers.csv </a> | <a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv) |
-| Glinski et al. 2020  (dermal routes) | <a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs"> Water_soil.csv </a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2019_dermal_routes.csv"> dag2019_dermal_routes.csv </a> | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/Dermal_routes_weights.csv">Dermal_routes_weights.csv</a> (weights) |
+| Glinski et al. 2020  (dermal routes) | <a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs"> Water_soil.csv </a>|<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2019_dermal_routes.csv"> dag2019_dermal_routes.csv </a> | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/Dermal_routes_weights.csv">Dermal_routes_weights.csv</a> (weights) ||
 | <a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008 |<a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/pdf/HensonRamseyetal2008_data.pdf"> HensonRamseyetal2008_data.pdf </a> | <a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/hr2008_data.csv"> hr2008_data.csv </a>||
 
-  
 <br><br>
 
 ***     
@@ -169,6 +168,7 @@ colnames(vm2016)
 summary(vm2016)
 ```
 <br>
+
 ### Van Meter et al. 2018 (Multiple Pesticides Study)
 
 Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (*Lithobates clamitans*) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.
@@ -220,18 +220,17 @@ summary(rvm2017_merge)
 ### Van Meter et al. 2019
 Van Meter et al. 2019  looked at joint exposure of two common herbicides (atrazine, alachlor) and a fertilizer (urea) while quantifying juvenile corticosterone stress levels, acetylcholinesterase (AChE) activity, and pesticide bioaccumulation in Southern leopard frogs. Single agrochemical or tank mixtures were applied to terrestrial microcosms, and then individual juveniles were added to microcosms for an 8-h exposure.
 
-*Note: this file does include metabolites into the total for the parents*
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Van Meter 2019
-vm2016_file <- paste(amphibdir_data_in,"vm2016_data.csv", sep="")
-file.exists(vm2016_file)
-vm2016 <- read.table(vm2016_file, header = TRUE, sep = ",")
+rvm2019_file <- paste(amphibdir_data_in,"rvm2019.csv", sep="")
+file.exists(rvm2019_file)
+rvm2019 <- read.table(rvm2019_file, header = TRUE, sep = ",")
 ```
 **Data Set Dimensions, Column Names, and Summary:**
 ```{r eval = TRUE, echo = FALSE}
-dim(vm2016)
-colnames(vm2016)
-summary(vm2016)
+dim(rvm2019)
+colnames(rvm2019)
+summary(rvm2019)
 ```
 <br>
 
