@@ -61,21 +61,14 @@ r19$soil_conc_ugg<-NA
 r19<-r19[c("app_rate_g_cm2" ,"application", "body_weight_g","chemical","exp_duration","formulation",
          "sample_id", "soil_conc_ugg", "soil_type","source", "species","tissue_conc_ugg")]
 
-rvm2019 <- file.path(amphibdir,"data_in/rvm2019.csv")
-write.csv(r19, rvm2019)
-
 ##rvm unpub
-runal$bw<-bw[match(runal$ID, bw$Frog.ID),5]
-runat$bw<-bw[match(runat$ID, bw$Frog.ID),5]
-runal<-na.omit(runal)
-runat<-na.omit(runat)
-runal<-runal[,c(1,5,6,8)]
-runat<-runat[,c(1,5,6,8)]
+run$bw<-bw[match(run$ID, bw$Frog.ID),5]
+run<-na.omit(run)
 
 colnames(run)[1]<-'sample_id'
-colnames(run)[2]<-'tissue_conc_ugg'
-colnames(run)[3]<-'soil_conc_ugg'
-colnames(run)[4]<-'body_weight_g'
+colnames(run)[5]<-'tissue_conc_ugg'
+colnames(run)[6]<-'soil_conc_ugg'
+colnames(run)[10]<-'body_weight_g'
 run$application<-'soil'
 run$exp_duration<-8
 run$formulation<-0
@@ -87,8 +80,9 @@ run$source<-'rvmunpub'
 run<-run[c("app_rate_g_cm2" ,"application", "body_weight_g","chemical","exp_duration","formulation",
            "sample_id", "soil_conc_ugg", "soil_type","source", "species","tissue_conc_ugg")]
 
-add_lab<-rbind(r19,run)
+rvm19 <-rbind(r19,run)
+rvm2019 <- file.path(amphibdir,"data_in/rvm2019.csv")
+write.csv(rvm19, rvm2019)
 
-
-updated_amphib_dermal_collated<-rbind(lab,add_lab)
-write.csv(updated_amphib_dermal_collated,"data_out/updated_amphib_dermal_collated.csv")
+# updated_amphib_dermal_collated<-rbind(lab,add_lab)
+# write.csv(updated_amphib_dermal_collated,"data_out/updated_amphib_dermal_collated.csv")
