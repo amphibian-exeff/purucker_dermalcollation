@@ -33,7 +33,9 @@ Collected amphibian dermal exposure data is from 9 studies:
 library(ggplot2)
 require(gridExtra)
 library(reshape2)
-
+install.packages('tinytex') #note that for pdf installation, this is required, as well as updates to xfun
+tinytex::install_tinytex()
+library(tinytex)
 
 # tom epa linux
 if(Sys.info()[4] == "d2626ut7920d.rtpnc.epa.gov"){
@@ -46,6 +48,10 @@ if(Sys.info()[4] == "LZ2626UTPURUCKE"){
 # Emma's EPA
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
   amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
+}
+# Annie's laptop
+if(Sys.info()[4]=="LZ26EPAULUKO"){
+  amphibdir <- path.expand("C:/Users/epauluko/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/GitHub/amphib_dermal_collation/")
 }
 
 # Variable names for data

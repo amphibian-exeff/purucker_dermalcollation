@@ -85,7 +85,6 @@ if(Sys.info()[4] == "LZ2626UTPURUCKE"){
 if(Sys.info()[4]=="LZ2626UECHELSVI"){
   amphibdir <- path.expand("C:/Users/echelsvi/git/amphib_dermal_collation/")
 }
-
 # Annie's laptop
 if(Sys.info()[4]=="LZ26EPAULUKO"){
   amphibdir <- path.expand("C:/Users/epauluko/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/GitHub/amphib_dermal_collation/")
