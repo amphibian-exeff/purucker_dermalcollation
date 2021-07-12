@@ -18,6 +18,10 @@ vm_2014_atr<-filter(vm2015, Chemical== 'Atrazine' & Application == 'Soil')
 calc_2014<-vm2015 %>% 
   filter(Application == 'Soil') %>%
   group_by(Chemical, Species) %>% 
-  summarise(min = min(BCF), max = max(BCF), avg = mean(BCF), )
+  summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
+
+new_2014 <- calc_2014 %>%  unite(vals, min:avg, sep=", ")
+vm_2014_sum <- file.path(amphibdir,"data_in/vm2014_data_summarized.csv")
+write.csv(new_2014, vm_2014_sum)
 
 
