@@ -350,7 +350,7 @@ summary(dermal_routes)
 The table below concisely displays the pesticide applications rates (ug/cm^2^) used in each relevant study as well as the variables used to compute the application rates.
 
 ```{r eval = TRUE, include = FALSE}
-app_rates_file <- paste0(amphibdir_data_in, "app_rates.txt")
+app_rates_file <- paste0(amphibdir_data_in, "updated_app_rates.txt")
 file.exists(app_rates_file)
 app_rates <- read.table(app_rates_file, header = TRUE, sep = ",")
 ```
@@ -361,11 +361,13 @@ kable(app_rates[, 2:9]) %>%
   pack_rows("Van Meter et al. 2014/2015", 1, 5) %>%
   pack_rows("Van Meter et al. 2016", 6, 10) %>%
   pack_rows("Van Meter et al. 2018", 11, 15) %>%
-  pack_rows("Henson-Ramsey et al. 2008", 16, 16) %>%
-  pack_rows("Glinski et al. 2018a", 17, 21) %>%
-  pack_rows("Glinski et al. 2018b", 22, 24) %>%
-  pack_rows("Glinski et al. 2019", 25, 30) %>%
-  pack_rows("Glinski et al. 2020", 31, 33)  
+  pack_rows("Van Meter et al. 2019", 16, 17) %>%
+  pack_rows("Van Meter et al. 2021", 18, 19) %>%
+  pack_rows("Henson-Ramsey et al. 2008", 20, 20) %>%
+  pack_rows("Glinski et al. 2018a", 21, 25) %>%
+  pack_rows("Glinski et al. 2018b", 26, 28) %>%
+  pack_rows("Glinski et al. 2019", 29, 34) %>%
+  pack_rows("Glinski et al. 2020", 35, 37)  
 ```
 <br><br>
  

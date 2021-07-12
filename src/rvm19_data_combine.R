@@ -1,4 +1,11 @@
+library(dplyr)
+library(tidyr)
 
+amphibdir <- path.expand("C:/Users/epauluko/OneDrive - Environmental Protection Agency (EPA)/Profile/Documents/GitHub/amphib_dermal_collation/")
+amphibdir_data_in <- paste(amphibdir,'data_in/',sep='')
+amphibdir_data_out <- paste(amphibdir,'data_out/',sep='')
+amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
+amphibdir_src <- paste(amphibdir,'src/',sep='')
 
 r19al <- file.path(amphibdir,"data_in/rvm2019_alachlor.csv")
 r19al <-read.csv(r19al)
