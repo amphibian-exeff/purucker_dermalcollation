@@ -9,13 +9,15 @@ amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
 amphibdir_src <- paste(amphibdir,'src/',sep='')
 
 
-#RVM 2014
+##RVM 2014/2015 ----
 vm2015_file <- paste(amphibdir_data_in,"vm2014_data.csv", sep="")
 file.exists(vm2015_file)
 vm2015 <- read.table(vm2015_file, header = TRUE, sep = ",")
 
-
-#atrazine
 vm_2014_atr<-filter(vm2015, Chemical== 'Atrazine' & Application == 'Soil') 
-calc_atr<-vm_2014_atr %>% group_by(Species) %>% summarise(avg = mean(BCF), max = max(BCF), min = min(BCF))
-calc_atr
+calc_2014<-vm2015 %>% 
+  filter(Application == 'Soil') %>%
+  group_by(Chemical, Species) %>% 
+  summarise(min = min(BCF), max = max(BCF), avg = mean(BCF), )
+
+

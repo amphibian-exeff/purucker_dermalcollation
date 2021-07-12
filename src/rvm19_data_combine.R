@@ -80,9 +80,15 @@ run$source<-'rvmunpub'
 run<-run[c("app_rate_g_cm2" ,"application", "body_weight_g","chemical","exp_duration","formulation",
            "sample_id", "soil_conc_ugg", "soil_type","source", "species","tissue_conc_ugg")]
 
-rvm19 <-rbind(r19,run)
+#rvm19 <-rbind(r19, run)
+
 rvm2019 <- file.path(amphibdir,"data_in/rvm2019.csv")
-write.csv(rvm19, rvm2019)
+write.csv(r19, rvm2019)
+
+
+rvm2021 <- file.path(amphibdir,"data_in/rvm2021.csv")
+write.csv(run, rvm2021)
+
 
 # updated_amphib_dermal_collated<-rbind(lab,add_lab)
 # write.csv(updated_amphib_dermal_collated,"data_out/updated_amphib_dermal_collated.csv")

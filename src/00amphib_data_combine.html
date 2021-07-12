@@ -1877,7 +1877,7 @@ summary {
 <hr />
 <div id="introduction" class="section level1">
 <h1><strong>Introduction</strong></h1>
-<p>The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018), Glinski et al. (2018a, b, 2019, 2020), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.</p>
+<p>The purpose of this script is to combine the data sets from Van Meter et al. (2014, 2015, 2016, 2018, 2019), Glinski et al. (2018a, b, 2019, 2020), and Henson-Ramsey (2008) to create a collated database of amphibian dermal exposure data.</p>
 <table>
 <colgroup>
 <col width="21%"></col>
@@ -1919,30 +1919,36 @@ summary {
 <td align="left"></td>
 </tr>
 <tr class="odd">
+<td><a href="https://setac.onlinelibrary.wiley.com/doi/10.1002/etc.4375">Van Meter et al. 2019</td>
+<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2019.csv">rvm2019.csv</a></td>
+<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2019.csv">rvm2019.csv</a></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
 <td><a href="https://link.springer.com/article/10.1007%2Fs11356-018-1830-8">Glinski et al. 2018a (dehydration)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in"> dehydration3.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_dehydration.csv"> dag2016_data_dehydration.csv </a></td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a></td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> exposure_experiment.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_metabolites_4merge.csv"> dag2016_data_metabolites_4merge.csv </a></td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="http://www.publish.csiro.au/en/EN18163">Glinski et al. 2019 (biomarkers)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv</a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2018_data_biomarkers.csv"> dag2018_data_biomarkers.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Glinski et al. 2020 (dermal routes)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs"> Water_soil.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2019_dermal_routes.csv"> dag2019_dermal_routes.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/Dermal_routes_weights.csv">Dermal_routes_weights.csv</a> (weights)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008</td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/pdf/HensonRamseyetal2008_data.pdf"> HensonRamseyetal2008_data.pdf </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/hr2008_data.csv"> hr2008_data.csv </a></td>
@@ -1962,9 +1968,40 @@ summary {
 </div>
 <div id="data-from-relevant-studies" class="section level1">
 <h1><strong>Data from Relevant Studies</strong></h1>
+<div id="henson-ramsey-2008" class="section level3">
+<h3>Henson-Ramsey 2008</h3>
+<p>Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (<em>Ambystoma tigrinum</em>). Tiger salamanders were exposed to contaminated soils with 50 ug/cm<sup>2</sup> or 100 ug/cm<sup>2</sup> malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm<sup>2</sup> malathion. For each exposure, the malathion application rate was sprayed onto the approximately 1200g of soil in the 1060cm<sup>2</sup> polyethylene cages. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm<sup>2</sup> contaminated soil for 1 day, exposed to 50 ug/cm<sup>2</sup> for 2 days, exposed to 50 ug/cm<sup>2</sup> contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm<sup>2</sup> contaminated soil for 2 days and fed a contaminated worm on the first exposure day.</p>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
+<pre><code>## [1]  9 12</code></pre>
+<pre><code>##  [1] &quot;chemical&quot;        &quot;species&quot;         &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
+##  [5] &quot;body_weight_g&quot;   &quot;formulation&quot;     &quot;soil_type&quot;       &quot;application&quot;    
+##  [9] &quot;app_rate_g_cm2&quot;  &quot;exp_duration&quot;    &quot;soil_conc_ugg&quot;   &quot;source&quot;</code></pre>
+<pre><code>##    chemical           species          tissue_conc_ugg  sample_id        
+##  Length:9           Length:9           Min.   :0.050   Length:9          
+##  Class :character   Class :character   1st Qu.:0.350   Class :character  
+##  Mode  :character   Mode  :character   Median :1.420   Mode  :character  
+##                                        Mean   :1.186                     
+##                                        3rd Qu.:1.470                     
+##                                        Max.   :3.730                     
+##  body_weight_g   formulation    soil_type      application       
+##  Min.   :20.89   Mode:logical   Mode:logical   Length:9          
+##  1st Qu.:44.15   NA&#39;s:9         NA&#39;s:9         Class :character  
+##  Median :46.26                                 Mode  :character  
+##  Mean   :43.73                                                   
+##  3rd Qu.:48.93                                                   
+##  Max.   :50.92                                                   
+##  app_rate_g_cm2   exp_duration soil_conc_ugg     source         
+##  Min.   :5e-05   Min.   :24    Mode:logical   Length:9          
+##  1st Qu.:5e-05   1st Qu.:24    NA&#39;s:9         Class :character  
+##  Median :5e-05   Median :48                   Mode  :character  
+##  Mean   :5e-05   Mean   :40                                     
+##  3rd Qu.:5e-05   3rd Qu.:48                                     
+##  Max.   :5e-05   Max.   :48</code></pre>
+<p><br></p>
+</div>
 <div id="van-meter-et-al.-2014-and-van-meter-et-al.-2015" class="section level3">
 <h3>Van Meter et al. 2014 and Van Meter et al. 2015</h3>
-<p>Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (<em>Lithobates sphenocephala</em>), Fowler’s toad (<em>Anaxyrus fowleri</em>), gray treefrog (<em>Hyla versicolor</em>), Northern cricket frog (<em>Acris crepitans</em>), Eastern narrowmouth toad (<em>Gastrophryne carolinensis</em>), barking treefrog (<em>Hyla gratiosa</em>) and green treefrog (<em>Hyla cinerea</em>)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm<sup>2</sup>).</p>
+<p>Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (<em>Lithobates sphenocephala</em>), Fowler’s toad (<em>Anaxyrus fowleri</em>), gray treefrog (<em>Hyla versicolor</em>), Northern cricket frog (<em>Acris crepitans</em>), Eastern narrowmouth toad (<em>Gastrophryne carolinensis</em>), barking treefrog (<em>Hyla gratiosa</em>), and green treefrog (<em>Hyla cinerea</em>)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm<sup>2</sup>).</p>
 <p>Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil. These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (<em>Hyla gratiosa</em>) and green treefrog (<em>Hyla cinerea</em>)). Pesticides were applied at the maxium legally allowable application rates scaled down to the size of a 10-gallon aquarium, with the exception of pedimethalin which was applied at 30% of the permitted application rate. This was due to pedimethalin’s insolubility in the limited solvent and the water volumes used in this study.</p>
 <p>For our purposes, the Van Meter et al. 2015 essentially adds the aerial overspray exposures to the Van Meter et al. 2014 data set.</p>
 <p><em>Note: this file does include metabolites into the total for the parents</em></p>
@@ -2058,147 +2095,6 @@ summary {
 ##  Max.   :1.0000   Max.   :1.0000   Max.   :1.0000</code></pre>
 <p><br></p>
 </div>
-<div id="glinski-et-al.-2018a-dehydration" class="section level3">
-<h3>Glinski et al. 2018a (Dehydration)</h3>
-<p>Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (<em>Lithobates sphenocephala</em>) and Fowler’s toads (<em>Anaxyrus fowleri</em>)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
-<p><em>Note: this file does not combine daughters with parents</em><br />
-<em>Note: this file has body burdens and soil concentrations as separate rows</em></p>
-<p><strong>Data Set Dimensions, column Names, and Summary:</strong></p>
-<pre><code>## [1] 1494    8</code></pre>
-<pre><code>## [1] &quot;time&quot;    &quot;parent&quot;  &quot;analyte&quot; &quot;matrix&quot;  &quot;species&quot; &quot;conc&quot;    &quot;ID&quot;     
-## [8] &quot;weight&quot;</code></pre>
-<pre><code>##       time       parent            analyte             matrix         
-##  Min.   : 0   Length:1494        Length:1494        Length:1494       
-##  1st Qu.: 2   Class :character   Class :character   Class :character  
-##  Median : 5   Mode  :character   Mode  :character   Mode  :character  
-##  Mean   : 5                                                           
-##  3rd Qu.: 8                                                           
-##  Max.   :10                                                           
-##    species               conc                ID                weight      
-##  Length:1494        Min.   :  0.00000   Length:1494        Min.   :0.6821  
-##  Class :character   1st Qu.:  0.02215   Class :character   1st Qu.:1.6108  
-##  Mode  :character   Median :  0.08482   Mode  :character   Median :3.0890  
-##                     Mean   :  6.17646                      Mean   :3.0810  
-##                     3rd Qu.:  2.60007                      3rd Qu.:4.3124  
-##                     Max.   :238.15019                      Max.   :7.2481</code></pre>
-<p><br></p>
-</div>
-<div id="henson-ramsey-2008" class="section level3">
-<h3>Henson-Ramsey 2008</h3>
-<p>Henson-Ramsey 2008 tested the biological impact of exposure to malathion for tiger salamanders (<em>Ambystoma tigrinum</em>). Tiger salamanders were exposed to contaminated soils with 50 ug/cm<sup>2</sup> or 100 ug/cm<sup>2</sup> malathion and through ingestion of an earthworm exposed to contaminated soils with 200 ug/cm<sup>2</sup> malathion. For each exposure, the malathion application rate was sprayed onto the approximately 1200g of soil in the 1060cm<sup>2</sup> polyethylene cages. Tissue concentrations were assessed for five treatment groups: unexposed, exposed to 50 ug/cm<sup>2</sup> contaminated soil for 1 day, exposed to 50 ug/cm<sup>2</sup> for 2 days, exposed to 50 ug/cm<sup>2</sup> contaminated soil for 2 days and fed a contaminated worm on the first exposure day, and exposed to 100 ug/cm<sup>2</sup> contaminated soil for 2 days and fed a contaminated worm on the first exposure day.</p>
-<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
-<pre><code>## [1]  9 12</code></pre>
-<pre><code>##  [1] &quot;chemical&quot;        &quot;species&quot;         &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
-##  [5] &quot;body_weight_g&quot;   &quot;formulation&quot;     &quot;soil_type&quot;       &quot;application&quot;    
-##  [9] &quot;app_rate_g_cm2&quot;  &quot;exp_duration&quot;    &quot;soil_conc_ugg&quot;   &quot;source&quot;</code></pre>
-<pre><code>##    chemical           species          tissue_conc_ugg  sample_id        
-##  Length:9           Length:9           Min.   :0.050   Length:9          
-##  Class :character   Class :character   1st Qu.:0.350   Class :character  
-##  Mode  :character   Mode  :character   Median :1.420   Mode  :character  
-##                                        Mean   :1.186                     
-##                                        3rd Qu.:1.470                     
-##                                        Max.   :3.730                     
-##  body_weight_g   formulation    soil_type      application       
-##  Min.   :20.89   Mode:logical   Mode:logical   Length:9          
-##  1st Qu.:44.15   NA&#39;s:9         NA&#39;s:9         Class :character  
-##  Median :46.26                                 Mode  :character  
-##  Mean   :43.73                                                   
-##  3rd Qu.:48.93                                                   
-##  Max.   :50.92                                                   
-##  app_rate_g_cm2   exp_duration soil_conc_ugg     source         
-##  Min.   :5e-05   Min.   :24    Mode:logical   Length:9          
-##  1st Qu.:5e-05   1st Qu.:24    NA&#39;s:9         Class :character  
-##  Median :5e-05   Median :48                   Mode  :character  
-##  Mean   :5e-05   Mean   :40                                     
-##  3rd Qu.:5e-05   3rd Qu.:48                                     
-##  Max.   :5e-05   Max.   :48</code></pre>
-<p><br></p>
-</div>
-<div id="glinski-et-al.-2018b-metabolites" class="section level3">
-<h3>Glinski et al. 2018b (Metabolites)</h3>
-<p>Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians. This data set (1) contains <em>in vitro</em> and <em>in vivo</em> metabolic rate constants derived from toad (<em>Anaxyrus terrestris</em>) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm<sup>2</sup>).</p>
-<div id="metabolites-data-set-1" class="section level4">
-<h4><strong>Metabolites Data Set (1)</strong></h4>
-<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
-<pre><code>## [1] 352   6</code></pre>
-<pre><code>## [1] &quot;time&quot;      &quot;parent&quot;    &quot;analyte&quot;   &quot;matrix&quot;    &quot;conc&quot;      &quot;replicate&quot;</code></pre>
-<pre><code>##       time          parent            analyte             matrix         
-##  Min.   : 0.00   Length:352         Length:352         Length:352        
-##  1st Qu.: 2.00   Class :character   Class :character   Class :character  
-##  Median :12.00   Mode  :character   Mode  :character   Mode  :character  
-##  Mean   :16.41                                                           
-##  3rd Qu.:24.00                                                           
-##  Max.   :48.00                                                           
-##       conc            replicate   
-##  Min.   :-0.01244   Min.   :1.00  
-##  1st Qu.: 0.01292   1st Qu.:1.75  
-##  Median : 0.08373   Median :2.50  
-##  Mean   : 2.12963   Mean   :2.50  
-##  3rd Qu.: 0.97824   3rd Qu.:3.25  
-##  Max.   :32.47385   Max.   :4.00</code></pre>
-<p>The <em>in vitro</em> derived constants were assessed for their precitability by exposing Fowler’s toads (<em>Anaxyrus fowleri</em>) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler’s toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.</p>
-</div>
-<div id="metabolites-data-set-merged" class="section level4">
-<h4><strong>Metabolites Data Set (merged)</strong></h4>
-<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
-<pre><code>## [1] 60 12</code></pre>
-<pre><code>##  [1] &quot;exp_duration&quot;    &quot;chemical&quot;        &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
-##  [5] &quot;soil_type&quot;       &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;  
-##  [9] &quot;formulation&quot;     &quot;species&quot;         &quot;application&quot;     &quot;source&quot;</code></pre>
-<pre><code>##   exp_duration   chemical         tissue_conc_ugg    sample_id        
-##  Min.   : 2    Length:60          Min.   :0.08328   Length:60         
-##  1st Qu.: 4    Class :character   1st Qu.:0.33733   Class :character  
-##  Median :12    Mode  :character   Median :0.86010   Mode  :character  
-##  Mean   :18                       Mean   :1.42634                     
-##  3rd Qu.:24                       3rd Qu.:1.88383                     
-##  Max.   :48                       Max.   :7.62649                     
-##  soil_type      app_rate_g_cm2      soil_conc_ugg  body_weight_g   
-##  Mode:logical   Min.   :1.100e-06   Mode:logical   Min.   :0.1879  
-##  NA&#39;s:60        1st Qu.:1.100e-06   NA&#39;s:60        1st Qu.:0.5925  
-##                 Median :2.700e-06                  Median :0.7144  
-##                 Mean   :9.237e-06                  Mean   :0.7350  
-##                 3rd Qu.:2.290e-05                  3rd Qu.:0.8782  
-##                 Max.   :2.290e-05                  Max.   :1.4909  
-##   formulation   species          application           source         
-##  Min.   :0    Length:60          Length:60          Length:60         
-##  1st Qu.:0    Class :character   Class :character   Class :character  
-##  Median :0    Mode  :character   Mode  :character   Mode  :character  
-##  Mean   :0                                                            
-##  3rd Qu.:0                                                            
-##  Max.   :0</code></pre>
-<p><br></p>
-</div>
-</div>
-<div id="glinski-et-al.-2019-biomarkers" class="section level3">
-<h3>Glinski et al. 2019 (Biomarkers)</h3>
-<p>Glinski et al. 2019 exposed Southern leopard frogs (<em>Lithobates sphenocephala</em>) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
-<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
-<pre><code>## [1] 192   9</code></pre>
-<pre><code>## [1] &quot;group&quot;       &quot;met&quot;         &quot;tdt&quot;         &quot;bif&quot;         &quot;frog.weight&quot;
-## [6] &quot;sample_id&quot;   &quot;pesticide&quot;   &quot;rate&quot;        &quot;conc&quot;</code></pre>
-<pre><code>##     group                met               tdt               bif         
-##  Length:192         Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
-##  Class :character   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
-##  Mode  :character   Median : 1.0000   Median : 1.0000   Median : 1.0000  
-##                     Mean   : 0.3333   Mean   : 0.3333   Mean   : 0.3333  
-##                     3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
-##                     Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
-##   frog.weight     sample_id          pesticide             rate          
-##  Min.   :1.012   Length:192         Length:192         Length:192        
-##  1st Qu.:2.745   Class :character   Class :character   Class :character  
-##  Median :3.142   Mode  :character   Mode  :character   Mode  :character  
-##  Mean   :3.299                                                           
-##  3rd Qu.:3.789                                                           
-##  Max.   :6.739                                                           
-##       conc          
-##  Min.   : 0.001061  
-##  1st Qu.: 0.069055  
-##  Median : 0.212920  
-##  Mean   : 0.801643  
-##  3rd Qu.: 0.521471  
-##  Max.   :19.879783</code></pre>
-<p><br></p>
-</div>
 <div id="van-meter-et-al.-2018-multiple-pesticides-study" class="section level3">
 <h3>Van Meter et al. 2018 (Multiple Pesticides Study)</h3>
 <p>Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single pesticide and pesticide mixtures. The five pesticides studied were three herbicides (atrazine, metolachlor, and 2,4-D), one insecticide (malathion), and one fungicide (propiconazole). Juvenile green frogs (<em>Lithobates clamitans</em>) were exposed to contaminated soils for 8 hours and metabolic analysis of amphibian livers was conducted to measure the effects. Pesticides were applied at the maximum legally allowable application rates individually and in mixtures of two or three pesticides within an herbicide or mixed pesticide group, scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
@@ -2290,6 +2186,194 @@ summary {
 ##  Max.   :0</code></pre>
 <p><br></p>
 </div>
+</div>
+<div id="van-meter-et-al.-2019" class="section level3">
+<h3>Van Meter et al. 2019</h3>
+<p>Van Meter et al. 2019 looked at joint exposure of two common herbicides (atrazine, alachlor) and a fertilizer (urea) while quantifying juvenile corticosterone stress levels, acetylcholinesterase (AChE) activity, and pesticide bioaccumulation in Southern leopard frogs. Single agrochemical or tank mixtures were applied to terrestrial microcosms, and then individual juveniles were added to microcosms for an 8-h exposure.</p>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
+<pre><code>## [1] 96 13</code></pre>
+<pre><code>##  [1] &quot;X&quot;               &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [5] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;      
+##  [9] &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;        
+## [13] &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##        X         app_rate_g_cm2     application        body_weight_g   
+##  Min.   : 1.00   Min.   :2.36e-05   Length:96          Min.   : 1.398  
+##  1st Qu.:24.75   1st Qu.:2.36e-05   Class :character   1st Qu.: 2.084  
+##  Median :48.50   Median :2.92e-05   Mode  :character   Median : 2.550  
+##  Mean   :48.50   Mean   :2.92e-05                      Mean   : 2.986  
+##  3rd Qu.:72.25   3rd Qu.:3.48e-05                      3rd Qu.: 3.126  
+##  Max.   :96.00   Max.   :3.48e-05                      Max.   :20.235  
+##    chemical          exp_duration  formulation  sample_id        
+##  Length:96          Min.   :8     Min.   :0    Length:96         
+##  Class :character   1st Qu.:8     1st Qu.:0    Class :character  
+##  Mode  :character   Median :8     Median :0    Mode  :character  
+##                     Mean   :8     Mean   :0                      
+##                     3rd Qu.:8     3rd Qu.:0                      
+##                     Max.   :8     Max.   :0                      
+##  soil_conc_ugg   soil_type            source            species         
+##  Mode:logical   Length:96          Length:96          Length:96         
+##  NA&#39;s:96        Class :character   Class :character   Class :character  
+##                 Mode  :character   Mode  :character   Mode  :character  
+##                                                                         
+##                                                                         
+##                                                                         
+##  tissue_conc_ugg  
+##  Min.   :0.08123  
+##  1st Qu.:0.40279  
+##  Median :0.94646  
+##  Mean   :1.28035  
+##  3rd Qu.:1.43585  
+##  Max.   :6.61248</code></pre>
+<p><br></p>
+</div>
+<div id="van-meter-et-al.-2021" class="section level3">
+<h3>Van Meter et al. 2021</h3>
+<p>Van Meter et al. 2021</p>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
+<pre><code>## [1] 96 13</code></pre>
+<pre><code>##  [1] &quot;X&quot;               &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;  
+##  [5] &quot;chemical&quot;        &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;      
+##  [9] &quot;soil_conc_ugg&quot;   &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;        
+## [13] &quot;tissue_conc_ugg&quot;</code></pre>
+<pre><code>##        X         app_rate_g_cm2     application        body_weight_g  
+##  Min.   : 1.00   Min.   :2.36e-05   Length:48          Min.   :2.091  
+##  1st Qu.:12.75   1st Qu.:2.36e-05   Class :character   1st Qu.:3.313  
+##  Median :24.50   Median :2.92e-05   Mode  :character   Median :3.791  
+##  Mean   :24.50   Mean   :2.92e-05                      Mean   :3.795  
+##  3rd Qu.:36.25   3rd Qu.:3.48e-05                      3rd Qu.:4.342  
+##  Max.   :48.00   Max.   :3.48e-05                      Max.   :5.589  
+##    chemical          exp_duration  formulation  sample_id        
+##  Length:48          Min.   :8     Min.   :0    Length:48         
+##  Class :character   1st Qu.:8     1st Qu.:0    Class :character  
+##  Mode  :character   Median :8     Median :0    Mode  :character  
+##                     Mean   :8     Mean   :0                      
+##                     3rd Qu.:8     3rd Qu.:0                      
+##                     Max.   :8     Max.   :0                      
+##  soil_conc_ugg     soil_type            source            species         
+##  Min.   : 3.705   Length:48          Length:48          Length:48         
+##  1st Qu.: 7.427   Class :character   Class :character   Class :character  
+##  Median :11.115   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :11.525                                                           
+##  3rd Qu.:12.994                                                           
+##  Max.   :25.873                                                           
+##  tissue_conc_ugg  
+##  Min.   : 0.2155  
+##  1st Qu.: 1.1327  
+##  Median : 1.9263  
+##  Mean   : 3.2363  
+##  3rd Qu.: 3.9569  
+##  Max.   :13.9376</code></pre>
+<p><br></p>
+</div>
+<div id="glinski-et-al.-2018a-dehydration" class="section level3">
+<h3>Glinski et al. 2018a (Dehydration)</h3>
+<p>Glinski et al. 2018a studied how amphibian hydration status influences uptake of pesticides through dermal exposure. Amphibians (Southern leopard frogs (<em>Lithobates sphenocephala</em>) and Fowler’s toads (<em>Anaxyrus fowleri</em>)) were dehyrated for periods of 0, 2, 4, 6, 8, or 10 hours prior to exposure to pesticide-contaminated soils. Pesticides studied included atrazine, triadimefon, metolachlor, chlorothalonil, and imidacloprid. Soil and whole-body homogenates were measured after an 8 hour exposure period. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of six 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
+<p><em>Note: this file does not combine daughters with parents</em><br />
+<em>Note: this file has body burdens and soil concentrations as separate rows</em></p>
+<p><strong>Data Set Dimensions, column Names, and Summary:</strong></p>
+<pre><code>## [1] 1494    8</code></pre>
+<pre><code>## [1] &quot;time&quot;    &quot;parent&quot;  &quot;analyte&quot; &quot;matrix&quot;  &quot;species&quot; &quot;conc&quot;    &quot;ID&quot;     
+## [8] &quot;weight&quot;</code></pre>
+<pre><code>##       time       parent            analyte             matrix         
+##  Min.   : 0   Length:1494        Length:1494        Length:1494       
+##  1st Qu.: 2   Class :character   Class :character   Class :character  
+##  Median : 5   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   : 5                                                           
+##  3rd Qu.: 8                                                           
+##  Max.   :10                                                           
+##    species               conc                ID                weight      
+##  Length:1494        Min.   :  0.00000   Length:1494        Min.   :0.6821  
+##  Class :character   1st Qu.:  0.02215   Class :character   1st Qu.:1.6108  
+##  Mode  :character   Median :  0.08482   Mode  :character   Median :3.0890  
+##                     Mean   :  6.17646                      Mean   :3.0810  
+##                     3rd Qu.:  2.60007                      3rd Qu.:4.3124  
+##                     Max.   :238.15019                      Max.   :7.2481</code></pre>
+<p><br></p>
+</div>
+<div id="glinski-et-al.-2018b-metabolites" class="section level3">
+<h3>Glinski et al. 2018b (Metabolites)</h3>
+<p>Glinski et al. 2018b assessed the potential metabolic activation of pesticides (atrazine, triadimefon, fopronil) in amphibians. This data set (1) contains <em>in vitro</em> and <em>in vivo</em> metabolic rate constants derived from toad (<em>Anaxyrus terrestris</em>) livers during experiments measuring the depletion of pesticides and the formation of their metabolites. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm<sup>2</sup>).</p>
+<div id="metabolites-data-set-1" class="section level4">
+<h4><strong>Metabolites Data Set (1)</strong></h4>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
+<pre><code>## [1] 352   6</code></pre>
+<pre><code>## [1] &quot;time&quot;      &quot;parent&quot;    &quot;analyte&quot;   &quot;matrix&quot;    &quot;conc&quot;      &quot;replicate&quot;</code></pre>
+<pre><code>##       time          parent            analyte             matrix         
+##  Min.   : 0.00   Length:352         Length:352         Length:352        
+##  1st Qu.: 2.00   Class :character   Class :character   Class :character  
+##  Median :12.00   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :16.41                                                           
+##  3rd Qu.:24.00                                                           
+##  Max.   :48.00                                                           
+##       conc            replicate   
+##  Min.   :-0.01244   Min.   :1.00  
+##  1st Qu.: 0.01292   1st Qu.:1.75  
+##  Median : 0.08373   Median :2.50  
+##  Mean   : 2.12963   Mean   :2.50  
+##  3rd Qu.: 0.97824   3rd Qu.:3.25  
+##  Max.   :32.47385   Max.   :4.00</code></pre>
+<p>The <em>in vitro</em> derived constants were assessed for their precitability by exposing Fowler’s toads (<em>Anaxyrus fowleri</em>) to contaminated soils at maximum application rate for 2, 4, 12, and 48 hours. This data set (merged) contains the data from the Fowler’s toad experiment along with the tissue concentrations from data set 1; this data set (merged) is used in subsequent steps.</p>
+</div>
+<div id="metabolites-data-set-merged" class="section level4">
+<h4><strong>Metabolites Data Set (merged)</strong></h4>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
+<pre><code>## [1] 60 12</code></pre>
+<pre><code>##  [1] &quot;exp_duration&quot;    &quot;chemical&quot;        &quot;tissue_conc_ugg&quot; &quot;sample_id&quot;      
+##  [5] &quot;soil_type&quot;       &quot;app_rate_g_cm2&quot;  &quot;soil_conc_ugg&quot;   &quot;body_weight_g&quot;  
+##  [9] &quot;formulation&quot;     &quot;species&quot;         &quot;application&quot;     &quot;source&quot;</code></pre>
+<pre><code>##   exp_duration   chemical         tissue_conc_ugg    sample_id        
+##  Min.   : 2    Length:60          Min.   :0.08328   Length:60         
+##  1st Qu.: 4    Class :character   1st Qu.:0.33733   Class :character  
+##  Median :12    Mode  :character   Median :0.86010   Mode  :character  
+##  Mean   :18                       Mean   :1.42634                     
+##  3rd Qu.:24                       3rd Qu.:1.88383                     
+##  Max.   :48                       Max.   :7.62649                     
+##  soil_type      app_rate_g_cm2      soil_conc_ugg  body_weight_g   
+##  Mode:logical   Min.   :1.100e-06   Mode:logical   Min.   :0.1879  
+##  NA&#39;s:60        1st Qu.:1.100e-06   NA&#39;s:60        1st Qu.:0.5925  
+##                 Median :2.700e-06                  Median :0.7144  
+##                 Mean   :9.237e-06                  Mean   :0.7350  
+##                 3rd Qu.:2.290e-05                  3rd Qu.:0.8782  
+##                 Max.   :2.290e-05                  Max.   :1.4909  
+##   formulation   species          application           source         
+##  Min.   :0    Length:60          Length:60          Length:60         
+##  1st Qu.:0    Class :character   Class :character   Class :character  
+##  Median :0    Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :0                                                            
+##  3rd Qu.:0                                                            
+##  Max.   :0</code></pre>
+<p><br></p>
+</div>
+</div>
+<div id="glinski-et-al.-2019-biomarkers" class="section level3">
+<h3>Glinski et al. 2019 (Biomarkers)</h3>
+<p>Glinski et al. 2019 exposed Southern leopard frogs (<em>Lithobates sphenocephala</em>) to either the maximum or 1/10th maximum pesticide application rate to single, double, or triple pesticide mixtures of bifenthrin, metolachlor, and triadimefon to consider the typical co-application of pesticides during agricultural growing seasons. Tissue concentrations and metabolomic profiling of amphibian livers were studied after an 8 hour exposure period to pesticide-contaminated soil. Pesticides application rates were scaled down to the area of eight 0.94 L Pyrex glass bowls each with a 15 cm diameter.</p>
+<p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
+<pre><code>## [1] 192   9</code></pre>
+<pre><code>## [1] &quot;group&quot;       &quot;met&quot;         &quot;tdt&quot;         &quot;bif&quot;         &quot;frog.weight&quot;
+## [6] &quot;sample_id&quot;   &quot;pesticide&quot;   &quot;rate&quot;        &quot;conc&quot;</code></pre>
+<pre><code>##     group                met               tdt               bif         
+##  Length:192         Min.   :-1.0000   Min.   :-1.0000   Min.   :-1.0000  
+##  Class :character   1st Qu.:-1.0000   1st Qu.:-1.0000   1st Qu.:-1.0000  
+##  Mode  :character   Median : 1.0000   Median : 1.0000   Median : 1.0000  
+##                     Mean   : 0.3333   Mean   : 0.3333   Mean   : 0.3333  
+##                     3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.: 1.0000  
+##                     Max.   : 1.0000   Max.   : 1.0000   Max.   : 1.0000  
+##   frog.weight     sample_id          pesticide             rate          
+##  Min.   :1.012   Length:192         Length:192         Length:192        
+##  1st Qu.:2.745   Class :character   Class :character   Class :character  
+##  Median :3.142   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :3.299                                                           
+##  3rd Qu.:3.789                                                           
+##  Max.   :6.739                                                           
+##       conc          
+##  Min.   : 0.001061  
+##  1st Qu.: 0.069055  
+##  Median : 0.212920  
+##  Mean   : 0.801643  
+##  3rd Qu.: 0.521471  
+##  Max.   :19.879783</code></pre>
+<p><br></p>
 </div>
 <div id="glinski-et-al.-2020-dermal-routes" class="section level3">
 <h3>Glinski et al. 2020 (Dermal Routes)</h3>
@@ -3836,16 +3920,16 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] anchors_3.0-8    MASS_7.3-51.6    rgenoud_5.8-3.0  stringr_1.4.0   
-##  [5] tidyr_1.1.2      dplyr_1.0.5      knitr_1.31       kableExtra_1.3.4
-##  [9] reshape2_1.4.4   gridExtra_2.3    ggplot2_3.3.3   
+##  [1] tinytex_0.32     anchors_3.0-8    MASS_7.3-51.6    rgenoud_5.8-3.0 
+##  [5] stringr_1.4.0    tidyr_1.1.2      dplyr_1.0.5      knitr_1.31      
+##  [9] kableExtra_1.3.4 reshape2_1.4.4   gridExtra_2.3    ggplot2_3.3.3   
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.6        highr_0.8         pillar_1.6.0      compiler_4.0.2   
 ##  [5] plyr_1.8.6        tools_4.0.2       digest_0.6.27     viridisLite_0.3.0
 ##  [9] evaluate_0.14     lifecycle_1.0.0   tibble_3.1.1      gtable_0.3.0     
 ## [13] pkgconfig_2.0.3   rlang_0.4.10      rstudioapi_0.13   DBI_1.1.1        
-## [17] yaml_2.2.1        xfun_0.20         xml2_1.3.2        httr_1.4.2       
+## [17] yaml_2.2.1        xfun_0.24         xml2_1.3.2        httr_1.4.2       
 ## [21] withr_2.4.1       systemfonts_1.0.2 generics_0.1.0    vctrs_0.3.7      
 ## [25] webshot_0.5.2     grid_4.0.2        tidyselect_1.1.0  svglite_2.0.0    
 ## [29] glue_1.4.1        R6_2.5.0          fansi_0.4.2       rmarkdown_2.6    

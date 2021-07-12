@@ -3,9 +3,9 @@ title: "Creating a Database of Amphibian Dermal Exposure Data"
 author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
   S, Henderson WM
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---  
 
 ```{r eval=FALSE, echo=FALSE}
@@ -123,7 +123,7 @@ summary(hr2008)
 
 ### Van Meter et al. 2014 and Van Meter et al. 2015
 
-Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
+Van Meter et al. 2014 performed exposures for 5 pesticide active ingredients (imidacloprid, pendimethalin, atrazine, fipronil, tridimefon) and 7 species (Southern leopard frog (*Lithobates sphenocephala*), Fowler's toad (*Anaxyrus fowleri*), gray treefrog (*Hyla versicolor*), Northern cricket frog (*Acris crepitans*), Eastern narrowmouth toad (*Gastrophryne carolinensis*), barking treefrog (*Hyla gratiosa*), and green treefrog (*Hyla cinerea*)). Whole body tissue concentrations were measured after an 8 hour exposure period to contaminated soil. Pesticides were applied at the maximum legally allowable application rates scaled down to the area of a 10-gallon aquarium (1225 cm^2^).
 
 Van Meter et al. 2015 contrasted two pesticide exposure scenarios: direct exposure through aerial overspray and indirect exposure through soil.  These scenarios tested the same 5 pesticide active ingredients and two of the species (barking treefrog (*Hyla gratiosa*) and green treefrog (*Hyla cinerea*)). Pesticides were applied at the maxium legally allowable application rates scaled down to the size of a 10-gallon aquarium, with the exception of pedimethalin which was applied at 30% of the permitted application rate. This was due to pedimethalin's insolubility in the limited solvent and the water volumes used in this study.
 
@@ -218,7 +218,7 @@ summary(rvm2017_merge)
 <br>
 
 ### Van Meter et al. 2019
-Van Meter et al. 2019  looked at joint exposure of two common herbicides (atrazine, alachlor) and a fertilizer (urea) while quantifying juvenile corticosterone stress levels, acetylcholinesterase (AChE) activity, and pesticide bioaccumulation in Southern leopard frogs. Single agrochemical or tank mixtures were applied to terrestrial microcosms, and then individual juveniles were added to microcosms for an 8-h exposure.This dataset includes atrazine and alachlor records from a similar but as yet unpublished manuscript which will be 
+Van Meter et al. 2019  looked at joint exposure of two common herbicides (atrazine, alachlor) and a fertilizer (urea) while quantifying juvenile corticosterone stress levels, acetylcholinesterase (AChE) activity, and pesticide bioaccumulation in Southern leopard frogs. Single agrochemical or tank mixtures were applied to terrestrial microcosms, and then individual juveniles were added to microcosms for an 8-h exposure.
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Van Meter 2019
@@ -231,6 +231,24 @@ rvm2019 <- read.table(rvm2019_file, header = TRUE, sep = ",")
 dim(rvm2019)
 colnames(rvm2019)
 summary(rvm2019)
+```
+<br>
+
+
+### Van Meter et al. 2021
+Van Meter et al. 2021
+
+```{r eval = TRUE, echo = FALSE, include = FALSE}
+# import data from Van Meter 2019
+rvm2021_file <- paste(amphibdir_data_in,"rvm2021.csv", sep="")
+file.exists(rvm2021_file)
+rvm2021 <- read.table(rvm2021_file, header = TRUE, sep = ",")
+```
+**Data Set Dimensions, Column Names, and Summary:**
+```{r eval = TRUE, echo = FALSE}
+dim(rvm2019)
+colnames(rvm2021)
+summary(rvm2021)
 ```
 <br>
 
