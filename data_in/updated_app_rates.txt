@@ -17,7 +17,7 @@ vm_18,propiconazole,2.6,50 MeOH,.94 L bowl,225*6,1350,1.3,3.5
 vm_19,alachlor,34.8,75 MeOH,.94 L bowl,225*6,1350,1.13,47.0
 vm_19,atrazine,23.6,75 MeOH,.94 L bowl,225*6,1350,1.19,31.9
 vm_21,alachlor,34.8,75 MeOH,.94 L bowl,225*6,1350,1.13,47.0
-vm_21,atrazine,23.6,75 MeOH,.94 L bowl,225*10,1354,1.19,32.0
+vm_21,atrazine,23.6,75 MeOH,.94 L bowl,225*10,1354,1.19,31.9
 hr_08,malathion,50,NA,cage,1060,NA,1.23,NA
 dag_dehy,atrazine,23.95,75 MeOH,.94 L bowl,225*6,1350,1.19,32.3
 dag_dehy,chlorothalonil,44.3,75 MeOH,.94 L bowl,225*6,1350,1.8,59.8
