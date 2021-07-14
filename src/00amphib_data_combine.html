@@ -1914,8 +1914,8 @@ summary {
 </tr>
 <tr class="even">
 <td><a href="https://www.sciencedirect.com/science/article/pii/S004896971733601X?via%3Dihub">Van Meter et al. 2018</td>
-<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2017_merge.csv">vm2017_merge.csv</a></td>
-<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/vm2017_merge.csv">vm2017_merge.csv</a></td>
+<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2018.csv">rvm2018.csv</a></td>
+<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2018.csv">rvm2018.csv</a></td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
@@ -2177,13 +2177,13 @@ summary {
 ##                                                           Mean   :8    
 ##                                                           3rd Qu.:8    
 ##                                                           Max.   :8    
-##   formulation soil_conc_ugg  soil_type        species         
-##  Min.   :0    Mode:logical   Mode:logical   Length:137        
-##  1st Qu.:0    NA&#39;s:137       NA&#39;s:137       Class :character  
-##  Median :0                                  Mode  :character  
-##  Mean   :0                                                    
-##  3rd Qu.:0                                                    
-##  Max.   :0</code></pre>
+##   formulation soil_conc_ugg     soil_type        species         
+##  Min.   :0    Min.   : 0.1639   Mode:logical   Length:137        
+##  1st Qu.:0    1st Qu.: 1.7763   NA&#39;s:137       Class :character  
+##  Median :0    Median :12.5989                  Mode  :character  
+##  Mean   :0    Mean   :14.1337                                    
+##  3rd Qu.:0    3rd Qu.:23.3872                                    
+##  Max.   :0    Max.   :76.0357</code></pre>
 <p><br></p>
 </div>
 </div>
@@ -3924,7 +3924,7 @@ summary(amphib_dermal_collated$app_rate_g_cm2) </code></pre>
 ##   2.000   8.000   8.000   8.876   8.000  48.000</code></pre>
 <pre class="r"><code>summary(amphib_dermal_collated$soil_conc_ugg) # 206 NAs</code></pre>
 <pre><code>##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max.     NA&#39;s 
-##   0.1125   2.0349   5.2243  13.9480  15.6731 238.1502      146</code></pre>
+##   0.1125   2.0326   5.5791  13.9733  16.7043 238.1502        9</code></pre>
 <pre class="r"><code>summary(amphib_dermal_collated$tissue_conc_ugg)</code></pre>
 <pre><code>##     Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
 ##  0.00054  0.16908  0.52573  2.51415  2.06812 72.62672</code></pre>
@@ -3984,12 +3984,12 @@ write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></
 ##                                                        (Other)     :225  
 ##   exp_duration     formulation       sample_id         soil_conc_ugg     
 ##  Min.   : 2.000   Min.   :0.00000   Length:1014        Min.   :  0.1125  
-##  1st Qu.: 8.000   1st Qu.:0.00000   Class :character   1st Qu.:  2.0349  
-##  Median : 8.000   Median :0.00000   Mode  :character   Median :  5.2243  
-##  Mean   : 8.876   Mean   :0.03582                      Mean   : 13.9480  
-##  3rd Qu.: 8.000   3rd Qu.:0.00000                      3rd Qu.: 15.6731  
+##  1st Qu.: 8.000   1st Qu.:0.00000   Class :character   1st Qu.:  2.0326  
+##  Median : 8.000   Median :0.00000   Mode  :character   Median :  5.5791  
+##  Mean   : 8.876   Mean   :0.03582                      Mean   : 13.9733  
+##  3rd Qu.: 8.000   3rd Qu.:0.00000                      3rd Qu.: 16.7043  
 ##  Max.   :48.000   Max.   :1.00000                      Max.   :238.1502  
-##                   NA&#39;s   :9                            NA&#39;s   :146       
+##                   NA&#39;s   :9                            NA&#39;s   :9         
 ##   soil_type            source            species          tissue_conc_ugg   
 ##  Length:1014        Length:1014        Length:1014        Min.   : 0.00054  
 ##  Class :character   Class :character   Class :character   1st Qu.: 0.16908  
