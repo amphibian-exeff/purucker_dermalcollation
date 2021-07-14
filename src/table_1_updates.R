@@ -8,13 +8,11 @@ amphibdir_data_out <- paste(amphibdir,'data_out/',sep='')
 amphibdir_graphics <- paste(amphibdir,'graphics/',sep='')
 amphibdir_src <- paste(amphibdir,'src/',sep='')
 
-#rvm 2014/2015 get read in via vm2014 just to double check that they are partitioned correctly
-#all other files get directed from the amphib dermal collated csv, BCF calculated
+#read in primary derm file; note that some files will need to be uploaded from their raw dataset
 all_derm_file <- paste(amphibdir_data_out,"updated_amphib_dermal_collated.csv", sep="")
 file.exists(all_derm_file)
 derm <- read.table(all_derm_file, header = TRUE, sep = ",")
 names(derm)
-
 derm$BCF<-derm$tissue_conc_ugg/derm$soil_conc_ugg
 
 ##RVM 2014/2015 ----
@@ -70,9 +68,18 @@ r18_c<-rbind(r181,r182)
 colnames(r18_c)[1]<-'tissue_conc_ugg'
 
 rvm18<-dplyr::inner_join(r18, r18_c, by = c("tissue_conc_ugg", "sample_id"))
-rvm18<-test[!duplicated(rvm18), ]
+rvm18<-rvm18[!duplicated(rvm18), ]
 rvm2018 <- file.path(amphibdir,"data_in/rvm2018.csv")
 write.csv(rvm18, rvm2018)
+
+rvm18$BCF<-rvm18$tissue_conc_ugg/rvm18$soil
+calc_rvm18<-rvm18 %>% 
+  group_by(chemical, species) %>% 
+  summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
+
+rvm18 <- calc_rvm18 %>%  unite(vals, min:avg, sep=", ")
+rvm_2018_sum <- file.path(amphibdir,"data_in/rvm2018_data_summarized.csv")
+write.csv(rvm18, rvm_2018_sum)
 
 
 ##RVM 2019 ----
@@ -85,8 +92,8 @@ r19at<-na.omit(r19at)
 rvm19_1<-r19al %>% summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
 rvm19_2<-r19at %>% summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
 
-rvm_20191 <- rvm19_1 %>%  unite(vals, min:avg, sep=", ")
-rvm_20192 <- rvm19_2 %>%  unite(vals, min:avg, sep=", ")
+rvm_20191 <- rvm19_1 %>%  unite(vals, min:avg, sep=", ") #just left as is, easy to copy and paste
+rvm_20192 <- rvm19_2 %>%  unite(vals, min:avg, sep=", ") #just left as is, easy to copy and paste
 
 ##RVM 2021----
 runal <- file.path(amphibdir, "data_in/rvmunpub_alachlor.csv")
