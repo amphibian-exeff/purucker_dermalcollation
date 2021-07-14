@@ -53,3 +53,29 @@ calc_rvm2016<-rvm2016 %>%
 rvm_2016 <- calc_rvm2016 %>%  unite(vals, min:avg, sep=", ")
 rvm_2016_sum <- file.path(amphibdir,"data_in/vm2016_data_summarized.csv")
 write.csv(rvm_2016, rvm_2016_sum)
+
+##RVM 2019 ----
+r19al <- file.path(amphibdir,"data_in/rvm2019_alachlor.csv")
+r19al <-read.csv(r19al)
+r19at <- file.path(amphibdir,"data_in/rvm2019_atrazine.csv")
+r19at <-read.csv(r19at)
+r19at<-na.omit(r19at)
+
+rvm19_1<-r19al %>% summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
+rvm19_2<-r19at %>% summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
+
+rvm_20191 <- rvm19_1 %>%  unite(vals, min:avg, sep=", ")
+rvm_20192 <- rvm19_2 %>%  unite(vals, min:avg, sep=", ")
+
+
+##RVM 2021----gitgit
+runal <- file.path(amphibdir, "data_in/rvmunpub_alachlor.csv")
+runal<-read.csv(runal)
+runat <- file.path(amphibdir, "data_in/rvmunpub_atrazine.csv")
+runat <- read.csv(runat)
+
+rvm19_1<-r19al %>% summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
+rvm19_2<-r19at %>% summarise(min = round(min(BCF),3), max = round(max(BCF),3), avg = round(mean(BCF),3))
+
+rvm_20191 <- rvm19_1 %>%  unite(vals, min:avg, sep=", ")
+rvm_20192 <- rvm19_2 %>%  unite(vals, min:avg, sep=", ")
