@@ -176,7 +176,7 @@ Van Meter et al. 2018 evaluated risks to amphibians after exposure to a single p
 Two data sets were generated from this study, one containing data for exposure to herbicides (single and mixed) and the other containing data for exposure to mixed pesticide treatments (herbicides, insecticide, fungicide).
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Van Meter 2017 herbs
-rvm2017_herbs_file <- paste(amphibdir_data_in,"vm2017_herbs.csv", sep="")
+rvm2017_herbs_file <- paste(amphibdir_data_in,"rvm2018_herbs.csv", sep="")
 file.exists(rvm2017_herbs_file)
 rvm2017_herbs0 <- read.table(rvm2017_herbs_file, header = TRUE, sep = ",")
 ```
@@ -189,7 +189,7 @@ summary(rvm2017_herbs0)
 ```
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Van Meter 2017 hif
-rvm2017_hif_file <- paste(amphibdir_data_in,"vm2017_hif.csv", sep="")
+rvm2017_hif_file <- paste(amphibdir_data_in,"rvm2018_hif.csv", sep="")
 file.exists(rvm2017_hif_file)
 rvm2017_hif0 <- read.table(rvm2017_hif_file, header = TRUE, sep = ",")
 ```
