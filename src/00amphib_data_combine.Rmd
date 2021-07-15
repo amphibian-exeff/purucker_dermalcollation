@@ -5,8 +5,15 @@ author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ,
 output:
   html_document:
     df_print: paged
-  pdf_document: default
+  latex_engine: xelatex
+  pdf_document: null
+geometry: left = 0.5cm, right = 3cm, top = 1cm, bottom = 2cm
 ---  
+
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(message=FALSE,
+tidy.opts=list(width.cutoff=130))
+```
 
 ```{r eval=FALSE, echo=FALSE}
 #ctrl-shift k to knit r markdown
@@ -68,6 +75,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(anchors)
+library(formatR)
 # install.packages('tinytex') #note that for pdf installation, this is required, as well as updates to xfun
 # tinytex::install_tinytex()
 library(tinytex)
@@ -354,7 +362,7 @@ app_rates_file <- paste0(amphibdir_data_in, "updated_app_rates.txt")
 file.exists(app_rates_file)
 app_rates <- read.table(app_rates_file, header = TRUE, sep = ",")
 ```
-
+\begin{landscape}
 ```{r eval = TRUE, echo = FALSE, include = TRUE}
 kable(app_rates[, 2:9]) %>%
   kable_styling("striped", full_width = F) %>%
@@ -369,8 +377,9 @@ kable(app_rates[, 2:9]) %>%
   pack_rows("Glinski et al. 2019", 29, 34) %>%
   pack_rows("Glinski et al. 2020", 35, 37)  
 ```
+\end{landscape}
 <br><br>
- 
+
 ***  
 
 **Cleaning and Merging the Data Sets**
@@ -1145,6 +1154,8 @@ amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == "Total Triadi
 
 amphib_dermal_collated$chemical <- tolower(amphib_dermal_collated$chemical)
 amphib_dermal_collated$chemical <- as.factor(amphib_dermal_collated$chemical)
+
+#because we combined the
 
 # write out file
 amphib_dermal_collated_filename <- paste(amphibdir_data_out,"amphib_dermal_collated.csv", sep="")
