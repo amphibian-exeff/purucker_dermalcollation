@@ -1925,30 +1925,36 @@ summary {
 <td align="left"></td>
 </tr>
 <tr class="even">
+<td><a href="NA">Van Meter et al. 2021</td>
+<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2021.csv">rvm2021.csv</a></td>
+<td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/rvm2021.csv">rvm2021.csv</a></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
 <td><a href="https://link.springer.com/article/10.1007%2Fs11356-018-1830-8">Glinski et al. 2018a (dehydration)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_dehydration/tree/master/csv_in"> dehydration3.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_dehydration.csv"> dag2016_data_dehydration.csv </a></td>
 <td align="left"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="https://www.sciencedirect.com/science/article/pii/S0378427418300626?via%3Dihub">Glinski et al. 2018b (metabolites) </a></td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_metabolites/tree/master/csv_in"> exposure_experiment.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2016_data_metabolites_4merge.csv"> dag2016_data_metabolites_4merge.csv </a></td>
 <td align="left"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="http://www.publish.csiro.au/en/EN18163">Glinski et al. 2019 (biomarkers)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">exposure_mixtures3.csv</a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2018_data_biomarkers.csv"> dag2018_data_biomarkers.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_biomarkers/tree/master/csv_in">biomarker.csv</a> (dag_biomarker2.csv)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Glinski et al. 2020 (dermal routes)</td>
 <td align="left"><a href="https://github.com/puruckertom/glinski_dermal_routes/tree/master/inputs"> Water_soil.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/dag2019_dermal_routes.csv"> dag2019_dermal_routes.csv </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/Dermal_routes_weights.csv">Dermal_routes_weights.csv</a> (weights)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="https://link.springer.com/article/10.1007/s00244-007-9091-4">Henson-Ramsey 2008</td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/pdf/HensonRamseyetal2008_data.pdf"> HensonRamseyetal2008_data.pdf </a></td>
 <td align="left"><a href="https://github.com/puruckertom/amphib_dermal_collation/blob/master/data_in/hr2008_data.csv"> hr2008_data.csv </a></td>
@@ -2202,13 +2208,13 @@ summary {
 ##  Mean   :2.92e-05                      Mean   : 2.986                     
 ##  3rd Qu.:3.48e-05                      3rd Qu.: 3.126                     
 ##  Max.   :3.48e-05                      Max.   :20.235                     
-##   exp_duration  formulation  sample_id         soil_conc_ugg 
-##  Min.   :8     Min.   :0    Length:96          Mode:logical  
-##  1st Qu.:8     1st Qu.:0    Class :character   NA&#39;s:96       
-##  Median :8     Median :0    Mode  :character                 
-##  Mean   :8     Mean   :0                                     
-##  3rd Qu.:8     3rd Qu.:0                                     
-##  Max.   :8     Max.   :0                                     
+##   exp_duration  formulation  sample_id         soil_conc_ugg     
+##  Min.   :8     Min.   :0    Length:96          Min.   :   5.897  
+##  1st Qu.:8     1st Qu.:0    Class :character   1st Qu.:   9.053  
+##  Median :8     Median :0    Mode  :character   Median :  11.678  
+##  Mean   :8     Mean   :0                       Mean   :  26.530  
+##  3rd Qu.:8     3rd Qu.:0                       3rd Qu.:  16.966  
+##  Max.   :8     Max.   :0                       Max.   :1283.595  
 ##   soil_type            source            species          tissue_conc_ugg  
 ##  Length:96          Length:96          Length:96          Min.   :0.08123  
 ##  Class :character   Class :character   Class :character   1st Qu.:0.40279  
@@ -2222,7 +2228,7 @@ summary {
 <h3>Van Meter et al. 2021</h3>
 <p>Van Meter et al. 2021</p>
 <p><strong>Data Set Dimensions, Column Names, and Summary:</strong></p>
-<pre><code>## [1] 96 12</code></pre>
+<pre><code>## [1] 48 12</code></pre>
 <pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       
 ##  [5] &quot;exp_duration&quot;    &quot;formulation&quot;     &quot;sample_id&quot;       &quot;soil_conc_ugg&quot;  
 ##  [9] &quot;soil_type&quot;       &quot;source&quot;          &quot;species&quot;         &quot;tissue_conc_ugg&quot;</code></pre>
@@ -3956,15 +3962,17 @@ amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == &quot;Total A
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == &quot;Total Fipronil&quot;] &lt;- &quot;fipronil&quot;
 amphib_dermal_collated$chemical[amphib_dermal_collated$chemical == &quot;Total Triadimefon&quot;] &lt;- &quot;triadimefon&quot;
 
-
 amphib_dermal_collated$chemical &lt;- tolower(amphib_dermal_collated$chemical)
 amphib_dermal_collated$chemical &lt;- as.factor(amphib_dermal_collated$chemical)
 
-#because we combined the
+#the last step is to add in the most recent datasets
+add&lt;-rbind(rvm2019,rvm2021)
+updated_amphib_dermal_collated&lt;-rbind(amphib_dermal_collated,add)
+# write.csv(updated_amphib_dermal_collated,&quot;data_out/updated_amphib_dermal_collated.csv&quot;)
 
 # write out file
-amphib_dermal_collated_filename &lt;- paste(amphibdir_data_out,&quot;amphib_dermal_collated.csv&quot;, sep=&quot;&quot;)
-write.csv(amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></pre>
+amphib_dermal_collated_filename &lt;- paste(amphibdir_data_out,&quot;updated_amphib_dermal_collated.csv&quot;, sep=&quot;&quot;)
+write.csv(updated_amphib_dermal_collated, file=amphib_dermal_collated_filename)</code></pre>
 <div id="column-names" class="section level4">
 <h4><strong>Column Names</strong></h4>
 <pre><code>##  [1] &quot;app_rate_g_cm2&quot;  &quot;application&quot;     &quot;body_weight_g&quot;   &quot;chemical&quot;       

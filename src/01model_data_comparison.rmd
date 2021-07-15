@@ -3,9 +3,16 @@ title: "Compare Amphibian Dermal Exposure Data with Proposed Models"
 author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
   S, Henderson WM
 output:
+  pdf_document: null
+  latex_engine: xelatex
   html_document:
     df_print: paged
+geometry: left = 0.5cm, right = 3cm, top = 1cm, bottom = 2cm
 ---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(message=FALSE,
+tidy.opts=list(width.cutoff=130))
+```
 
 ```{r eval=FALSE, echo=FALSE}
 #ctrl-shift k to knit r markdown

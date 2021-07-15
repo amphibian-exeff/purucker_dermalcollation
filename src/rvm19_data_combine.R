@@ -29,10 +29,10 @@ run<-rbind(runal,runat)
 
 bw <- file.path(amphibdir, "data_in/bw_RVM.csv")
 bw <- read.csv(bw)
-# lab <- file.path(amphibdir,"data_out/amphib_dermal_collated.csv")
-# lab  <- read.csv(lab)
-# 
-# lab<-lab[,c(2:13)]
+lab <- file.path(amphibdir,"data_out/amphib_dermal_collated.csv")
+lab  <- read.csv(lab)
+
+lab<-lab[,c(2:13)]
 
 
 #no need to convert ppm to ug/g
@@ -63,7 +63,7 @@ r19$formulation<-0
 r19$species<-'Southern Leopard Frog'
 r19$soil_type<-'USLOAM'
 r19$source<-'rvm2019'
-r19$soil_conc_ugg<-NA
+r19$soil_conc_ugg<-r19$tissue_conc_ugg/r19$BCF
 
 r19<-r19[c("app_rate_g_cm2" ,"application", "body_weight_g","chemical","exp_duration","formulation",
          "sample_id", "soil_conc_ugg", "soil_type","source", "species","tissue_conc_ugg")]
