@@ -3,10 +3,10 @@ title: "Creating a Database of Amphibian Dermal Exposure Data"
 author: Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby
   S, Henderson WM
 output:
+  pdf_document: null
+  latex_engine: xelatex
   html_document:
     df_print: paged
-  latex_engine: xelatex
-  pdf_document: null
 geometry: left = 0.5cm, right = 3cm, top = 1cm, bottom = 2cm
 ---  
 
@@ -245,7 +245,7 @@ summary(rvm2019)
 
 
 ### Van Meter et al. 2021
-Van Meter et al. 2021
+Van Meter et al. 2021 is an unpublished dataset using the same methods as Van Meter et al. 2019.; i.e., exposures on soil. 
 
 ```{r eval = TRUE, echo = FALSE, include = FALSE}
 # import data from Van Meter 2019
@@ -378,7 +378,7 @@ kable(app_rates[, 2:9]) %>%
   pack_rows("Glinski et al. 2019", 29, 34) %>%
   pack_rows("Glinski et al. 2020", 35, 37)  
 ```
-\end{landscape}
+
 <br><br>
 
 ***  
