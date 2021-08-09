@@ -1,4 +1,6 @@
-# amphib_data
+# purucker_dermal_collation repository
+Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM, 2021. Estimating dermal contact soil exposure for amphibians. 
+
 synchronized repo of all amphib exposure data
 <br><br>
 
