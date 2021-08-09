@@ -1,4 +1,4 @@
-# purucker_dermal_collation repository
+# purucker_dermalcollation repository
 Purucker ST, Snyder MN, Glinski DA, Van Meter RJ, Garber K, Cyterski MJ, Sinnathamby S, Henderson WM, 2021. Estimating dermal contact soil exposure for amphibians. 
 
 synchronized repo of all amphib exposure data
@@ -18,10 +18,3 @@ Van Meter, R.J., Glinski, D.A., Hong, T., Cyterski, M., Henderson, W.M. and Puru
 Van Meter, R.J., Adelizzi, R., Glinski, D. & Henderson, W. Matthew. (2019). Agrochemical mixtures and amphibians: The combined effects of pesticides and fertilizer on stress, acetylcholinesterase activity and bioaccumulation in a terrestrial environment: Pesticide and fertilizer effects in juvenile frogs. Environmental Toxicology and Chemistry. 38. 10.1002/etc.4375. <br>
 Van Meter, R.J. Unpublished Data. <br>
 
-
-**Bayesian inference on dermal_af using Metropolis-Hastings MCMC:**
-
-To launch an interactive, cloud-based notebook, click below:
-
-
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/puruckertom/amphib_dermal_collation/master?filepath=notebooks%2Fbayesian_inference.ipynb)
